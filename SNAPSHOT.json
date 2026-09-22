@@ -1,0 +1,19 @@
+{
+  "node": "D3",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "original_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "bytes": 13549,
+      "group": "D3",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
