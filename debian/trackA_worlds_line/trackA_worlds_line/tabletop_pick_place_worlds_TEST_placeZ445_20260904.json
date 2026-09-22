@@ -1,0 +1,574 @@
+{
+    "schema_version": "tabletop_plan.v1",
+    "plan_id": "tabletop-ab-20260902-move-worlds-476066a41d71",
+    "status": "OFFLINE_CANDIDATE_PRECHECK_REQUIRED",
+    "real_motion_authorized": false,
+    "contract": {
+        "arm": "left",
+        "arm_id": 1,
+        "gripper_id": 2,
+        "world_frame": "sdk_world",
+        "length_unit": "millimeter",
+        "quaternion_order": "xyzw",
+        "sdk_uvw_convention": "Rz(W)*Ry(V)*Rx(U)",
+        "dynamic_transport": "MOVE_WORLDS_ONLY",
+        "move_j_policy": "VERIFIED_FIXED_SEGMENTS_ONLY_NOT_USED_IN_THIS_PLAN",
+        "runtime_authorization": "RUN_FLAG_PLUS_ENV_GATE_PLUS_OPERATOR_CONFIRMATION"
+    },
+    "input": {
+        "request_id": "tabletop-ab-20260902-move-worlds",
+        "request_sha256": "476066a41d7196dcf4dd7e90dd1a598602ad2a94c8d173766f15acb5d6969a22",
+        "observation_id": "A1-B1-shortest-arc-mean",
+        "object_id": "bottle-ab1",
+        "class_id": "bottle-70x70x200-assumption",
+        "dimensions_mm": [
+            70.0,
+            70.0,
+            200.0
+        ],
+        "pick_pose_role": "OBJECT_POSE",
+        "place_pose_role": "GRASP_POSE",
+        "place_source_kind": "MATERIAL_BOX_LOCAL_OFFSET",
+        "station_id": "material-box-a3b3"
+    },
+    "gripper_policy": {
+        "policy_id": "left-gripper2-site-tunable-v1",
+        "gripper_id": 2,
+        "tuning_status": "SITE_TUNABLE",
+        "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+        "open_command": 17,
+        "close_command": 16,
+        "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+        "value_unit": "device_native_uint16",
+        "executor_binding": "execute_tabletop_pick_place_worlds.py/v1",
+        "open": {
+            "position": 500,
+            "settle_s": 2.5
+        },
+        "close": {
+            "speed": 500,
+            "force": 1000,
+            "settle_s": 5.0
+        },
+        "source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+    },
+    "transforms": {
+        "notation": "T_A_B maps coordinates in B into A",
+        "T_endpoint_grasp": [
+            [
+                6.123233995736766e-17,
+                1.0,
+                0.0,
+                -18.0
+            ],
+            [
+                -1.0,
+                6.123233995736766e-17,
+                0.0,
+                -1.102182119232618e-15
+            ],
+            [
+                0.0,
+                0.0,
+                1.0,
+                39.0
+            ],
+            [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "T_endpoint_grasp_sha256": "127d03973c3e442c90eaf092395e6caa4bf29eec6230ac4af89523bbbeb46f72",
+        "endpoint_transform_source": {
+            "arm": "left",
+            "endpoint_frame": "sdk_arm_worlds_tcp",
+            "grasp_frame": "grasp_center_axes_parallel_to_link11",
+            "grip_center_status": "MEASURED_20260707_PLUS_MINUS_10MM",
+            "tcp_source": "calib_common.CONFIRMED_R_TCP_LINK11_MM",
+            "sdk_orientation_relation": "R_sdk=R_link11*Rz(+90deg)"
+        },
+        "T_object_grasp": [
+            [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "T_object_grasp_sha256": "2163c9d76567ed72097e8c4d524c30a2163c6be4ef7565c48b3eb350242b07ae",
+        "T_endpoint_object_at_pick": [
+            [
+                -0.14172603966994238,
+                -0.10551923899708668,
+                -0.9842659294524775,
+                -18.0
+            ],
+            [
+                -0.9323990893638968,
+                0.3481904705677102,
+                0.09692953295674338,
+                0.0
+            ],
+            [
+                0.33248408658588424,
+                0.9314660951464161,
+                -0.14773369879563025,
+                38.99999999999994
+            ],
+            [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "orientation_policy": "FIXED_ENDPOINT_ORIENTATION",
+        "place_source": {
+            "kind": "MATERIAL_BOX_LOCAL_OFFSET",
+            "datum_role": "ASSUMED_OUTER_GEOMETRY_CENTER",
+            "geometry_status": "SIMULATION_ASSUMPTION",
+            "dimensions_mm": [
+                310.0,
+                390.0,
+                130.0
+            ],
+            "inner_dimensions_mm": [
+                290.0,
+                370.0,
+                120.0
+            ],
+            "placement_wall_margin_mm": 20.0,
+            "T_box_place_grasp": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -28.8069454386343
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    90.46674981972205
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    35.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        }
+    },
+    "resolved": {
+        "pick_endpoint": {
+            "position_mm": [
+                700.0,
+                250.0,
+                360.0
+            ],
+            "quaternion_xyzw": [
+                -0.5829578492927693,
+                0.1267532371932152,
+                0.022018148116982262,
+                0.8022524315715647
+            ],
+            "sdk_world_uvw_deg": [
+                -72.77899999999998,
+                13.240999999999985,
+                -6.633999999999986
+            ]
+        },
+        "pick_hover_endpoint": {
+            "position_mm": [
+                700.0,
+                250.0,
+                540.0
+            ],
+            "quaternion_xyzw": [
+                -0.5829578492927693,
+                0.1267532371932152,
+                0.022018148116982262,
+                0.8022524315715647
+            ],
+            "sdk_world_uvw_deg": [
+                -72.77899999999998,
+                13.240999999999985,
+                -6.633999999999986
+            ]
+        },
+        "place_endpoint": {
+            "position_mm": [
+                720.0,
+                100.0,
+                445.0
+            ],
+            "quaternion_xyzw": [
+                -0.5829578492927693,
+                0.1267532371932152,
+                0.022018148116982262,
+                0.8022524315715647
+            ],
+            "sdk_world_uvw_deg": [
+                -72.77899999999998,
+                13.240999999999985,
+                -6.633999999999986
+            ]
+        },
+        "place_hover_endpoint": {
+            "position_mm": [
+                720.0,
+                100.0,
+                550.0
+            ],
+            "quaternion_xyzw": [
+                -0.5829578492927693,
+                0.1267532371932152,
+                0.022018148116982262,
+                0.8022524315715647
+            ],
+            "sdk_world_uvw_deg": [
+                -72.77899999999998,
+                13.240999999999985,
+                -6.633999999999986
+            ]
+        },
+        "place_object_after_release": {
+            "position_mm": [
+                978.7860595595957,
+                57.37205520980362,
+                383.91086622540007
+            ],
+            "quaternion_xyzw": [
+                -0.011421248380830772,
+                -0.6734216083547212,
+                0.010580952371455305,
+                0.7390946731869178
+            ],
+            "sdk_world_uvw_deg": [
+                -18.55628666713153,
+                -84.38566349942779,
+                18.48811696200525
+            ]
+        },
+        "safe_endpoint": {
+            "position_mm": [
+                692.441,
+                366.085,
+                443.775
+            ],
+            "quaternion_xyzw": [
+                -0.5829578492927693,
+                0.1267532371932152,
+                0.022018148116982262,
+                0.8022524315715647
+            ],
+            "sdk_world_uvw_deg": [
+                -72.77899999999998,
+                13.240999999999985,
+                -6.633999999999986
+            ]
+        }
+    },
+    "stages": [
+        {
+            "name": "START_ASSERT_SAFE",
+            "kind": "ASSERT_ENDPOINT",
+            "pose": {
+                "position_mm": [
+                    692.441,
+                    366.085,
+                    443.775
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false
+        },
+        {
+            "name": "OPEN_BEFORE_PICK",
+            "kind": "GRIPPER",
+            "action": "open",
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "carrying_after": false,
+            "wait_until_done": true
+        },
+        {
+            "name": "PICK_HOVER",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    700.0,
+                    250.0,
+                    540.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "PICK_DESCEND",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    700.0,
+                    250.0,
+                    360.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "CLOSE_AT_PICK",
+            "kind": "GRIPPER",
+            "action": "close",
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "carrying_after": true,
+            "wait_until_done": true
+        },
+        {
+            "name": "PICK_ASCEND",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    700.0,
+                    250.0,
+                    540.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": true,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "PLACE_HOVER",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    720.0,
+                    100.0,
+                    550.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": true,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "PLACE_DESCEND",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    720.0,
+                    100.0,
+                    445.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": true,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "OPEN_AT_PLACE",
+            "kind": "GRIPPER",
+            "action": "open",
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "carrying_after": false,
+            "wait_until_done": true
+        },
+        {
+            "name": "PLACE_ASCEND",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    720.0,
+                    100.0,
+                    550.0
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "RETURN_SAFE",
+            "kind": "MOVE_WORLDS",
+            "pose": {
+                "position_mm": [
+                    692.441,
+                    366.085,
+                    443.775
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false,
+            "interpolation_en": false,
+            "wait_until_worlds": true,
+            "critical": true
+        },
+        {
+            "name": "END_ASSERT_SAFE",
+            "kind": "ASSERT_ENDPOINT",
+            "pose": {
+                "position_mm": [
+                    692.441,
+                    366.085,
+                    443.775
+                ],
+                "quaternion_xyzw": [
+                    -0.5829578492927693,
+                    0.1267532371932152,
+                    0.022018148116982262,
+                    0.8022524315715647
+                ],
+                "sdk_world_uvw_deg": [
+                    -72.77899999999998,
+                    13.240999999999985,
+                    -6.633999999999986
+                ]
+            },
+            "carrying": false
+        }
+    ],
+    "safety": {
+        "input_geometry_gate": "BLOCKED",
+        "input_blockers": [],
+        "structural_sequence_check": "PASS",
+        "held_object_hover_endpoint_check": "PASS",
+        "held_object_hover_endpoint_bottom_min_mm": 512.4613704889174,
+        "held_object_hover_endpoint_bottom_required_mm": 437.3118898152801,
+        "dense_swept_held_object_clearance": "PENDING",
+        "table_bin_volume_geometry": "PENDING",
+        "live_armTryWorlds_dense_precheck": "PENDING",
+        "controller_limit_intersection": "PENDING",
+        "robot_gripper_held_object_collision_preflight": "PENDING",
+        "gui_review": "PENDING",
+        "real_robot_evidence": "PENDING"
+    },
+    "provenance": {
+        "arm_profiles_path": "/Users/xiaobingxin/Desktop/工作/工作1/arm_profiles.v1.json",
+        "arm_profiles_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "generator_path": "/Users/xiaobingxin/Desktop/工作/工作1/robot_mission/tabletop_plan.py",
+        "generator_sha256": "9ed90254944c08723adaf3bbaa44cd6e125f84fbadf156ace2e9a5f11a0fe433"
+    }
+}
