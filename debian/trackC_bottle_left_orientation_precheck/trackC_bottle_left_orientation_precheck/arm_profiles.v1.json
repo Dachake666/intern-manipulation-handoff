@@ -1,0 +1,73 @@
+{
+  "schema_version": "arm_profiles.v1",
+  "units": {
+    "joint_angles": "degree",
+    "cartesian": "meter",
+    "tcp": "millimeter"
+  },
+  "shared": {
+    "export_step_deg": 5.0,
+    "pulse_step_deg": 0.4,
+    "pulse_period_ms": 20,
+    "minimum_joint_margin_deg": 5.0,
+    "ik_limit_margin_deg": [5, 5, 5, 5, 12, 12, 12],
+    "workspace_z_m": [0.95, 1.1]
+  },
+  "controller_limit_profiles": {
+    "left_preview102_20260827": {
+      "status": "CANDIDATE_SESSION_READBACK_FROM_USER_LOG_PENDING_ARCHIVE",
+      "arm": "left",
+      "arm_id": 1,
+      "captured_date": "2026-08-27",
+      "source_log_sha256": "c7510af56f3740000b4d24943c20ed9d45f403ec73fc18bfbc2d7d48250a8efc",
+      "reported_limits_deg": [[-166, 166], [-10, 208], [-166, 166], [-128, 103], [-166, 166], [-40, 40], [-88, 88]],
+      "planning_limits_deg": [[-166, 166], [-10, 208], [-166, 166], [-128, 103], [-166, 166], [-40, 40], [-88, 76]],
+      "planning_note": "仅作本候选离线规划；j7 上限按既有物理停止证据继续收紧为 76deg。真机前必须重新只读回读。"
+    }
+  },
+  "arms": {
+    "left": {
+      "status": "REAL_VERIFIED_PARENT",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "joint_ids": [5, 6, 7, 8, 9, 10, 11],
+      "ee_link_id": 11,
+      "sdk_from_urdf_sign": [1, 1, 1, 1, 1, -1, 1],
+      "home_deg": [10, 10, 0, -15, 0, 0, 0],
+      "ik_seed_deg": [-80, 40, 120, -80, -70, 0, 40],
+      "workspace_m": {"x": [0.28, 0.48], "y": [0.14, 0.4], "z": [0.95, 1.1]},
+      "grip_center_link_mm": [0, 150, 0],
+      "grip_center_status": "MEASURED_20260707_PLUS_MINUS_10MM",
+      "gripper_tip_beyond_grip_mm": 18.0,
+      "gripper_collision_center_link_mm": [0, 84, 0],
+      "gripper_collision_box_m": [0.10, 0.178, 0.08],
+      "gripper_collision_status": "TRACK_C_VERIFIED_GRIP_CENTER_PLUS_18MM_TIP_CONSERVATIVE_PROXY",
+      "minimum_table_clearance_m": 0.02,
+      "grasp_capture_axis_range_m": [0.0, 0.08],
+      "grasp_capture_lateral_tolerance_m": 0.015,
+      "controller_limits_deg": [[-166, 166], [-10, 208], [-166, 166], [-128, 103], [-166, 166], [-40, 40], [-88, 76]],
+      "controller_limits_status": "LEFT_CONTROLLER_READBACK_20260827_PENDING_ARCHIVE_J7_PHYSICAL_CAP_76",
+      "track_c_parent_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968"
+    },
+    "right": {
+      "status": "CANDIDATE_HARDWARE_BLOCKED",
+      "arm_id": 2,
+      "gripper_id": 1,
+      "joint_ids": [12, 13, 14, 15, 16, 17, 18],
+      "ee_link_id": 18,
+      "sdk_from_urdf_sign": [1, 1, 1, 1, 1, -1, 1],
+      "home_deg": [-10, -10, 0, 15, 0, 0, 0],
+      "ik_seed_deg": [80, -40, -120, 80, 70, 0, -40],
+      "workspace_m": {"x": [0.28, 0.48], "y": [-0.4, -0.14], "z": [0.95, 1.1]},
+      "grip_center_link_mm": [150, 0, 0],
+      "grip_center_status": "URDF_CANDIDATE_NOT_MEASURED",
+      "gripper_collision_center_link_mm": [75, 0, 0],
+      "gripper_collision_box_m": [0.16, 0.10, 0.08],
+      "gripper_collision_status": "CANDIDATE_PROXY_PENDING_MEASUREMENT",
+      "controller_limits_deg": null,
+      "controller_limits_status": "UNRESOLVED_READ_FROM_CONTROLLER_AND_MEASURE_J7",
+      "candidate_nominal_urdf_limits_deg": [[-60, 180], [-150, 0], [-140, 140], [0, 120], [-170, 170], [-45, 45], [-90, 90]],
+      "candidate_trajectory_sha256": "7a6dc834a80960002198fa918275b9f93e8eac76f39f2bd3b24e445e9a306961"
+    }
+  }
+}

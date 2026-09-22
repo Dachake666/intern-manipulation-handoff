@@ -1,0 +1,2597 @@
+{
+  "meta": {
+    "arm_id": 1,
+    "arm": "left",
+    "gripper_id": 2,
+    "j6_flipped": true,
+    "task": "bottle_relative_pick_place_orientation_optimized_100mm",
+    "source_task": "pick_place_coord/tasks/task_bottle_left_vertical_grasp_20260827.json",
+    "source_task_sha256": "2895e3a1530c8ab1171cfbc132e638b6557d8d91cab548af6e4e7e6ca29218a0",
+    "generator": "pick_place_coord/gen_bottle_servo_candidate.py",
+    "generator_sha256": "5c82d7c998a3f9e8ada9d53d70a26e86417a8e3921ae362f84d3c441763b61c3",
+    "qualification": "STAGED_REAL_TEST_READY",
+    "requires_live_controller_limits": true,
+    "requires_live_controller_recheck": true,
+    "real_motion_authorized": true,
+    "verified_parent_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "verified_parent_reused_segments": [
+      "HOME",
+      "HOME->READY",
+      "READY->HOME"
+    ],
+    "pick_sdk_world": {
+      "sdk_world_xyz_mm": [
+        769.624,
+        119.413,
+        432.648
+      ],
+      "preferred_sdk_world_uvw_deg": [
+        -87.078,
+        18.34,
+        -0.893
+      ],
+      "selected_sdk_world_uvw_deg": [
+        -47.5845955053469,
+        80.15103180271296,
+        -18.40427802412742
+      ],
+      "position_anchor_q_sdk_deg": [
+        -38.689,
+        -7.854,
+        21.776,
+        -49.103,
+        -5.466,
+        19.822,
+        17.076
+      ],
+      "selected_q_sdk_deg": [
+        -78.16048349301992,
+        0.3080271352855098,
+        96.86236652688042,
+        -24.890365145183154,
+        -74.26762979008393,
+        -31.999255848652584,
+        62.05739759754833
+      ]
+    },
+    "place_sdk_world": {
+      "xyz_mm": [
+        769.624,
+        219.413,
+        432.648
+      ],
+      "uvw_deg": [
+        -47.5845955053469,
+        80.15103180271296,
+        -18.40427802412742
+      ]
+    },
+    "place_offset_sdk_mm": [
+      0.0,
+      100.0,
+      0.0
+    ],
+    "derived_pb_geometry_m": {
+      "grip_pick": [
+        0.5266345692890086,
+        0.12741535090976408,
+        1.1642310945949153
+      ],
+      "place": [
+        0.5266345692890086,
+        0.22741535090976409,
+        1.1642310945949153
+      ],
+      "pre_pick": [
+        0.5071582394098273,
+        0.13389587870784858,
+        1.282462542754428
+      ],
+      "high_pick": [
+        0.5071582394098273,
+        0.13389587870784858,
+        1.302462542754428
+      ],
+      "pre_place": [
+        0.5071582394098273,
+        0.2338958787078486,
+        1.282462542754428
+      ],
+      "high_place": [
+        0.5071582394098273,
+        0.2338958787078486,
+        1.302462542754428
+      ]
+    },
+    "single_point_t_observation_mm": [
+      242.98943071099143,
+      -8.00235090976409,
+      -731.5830945949152
+    ],
+    "single_point_t_is_calibration": false,
+    "q_uvw_orientation_delta_deg": 0.0036393547555851075,
+    "tool_axis_sdk": [
+      0.162302748993178,
+      -0.05400439831737086,
+      -0.9852620679959401
+    ],
+    "solver_bound_expansions": [],
+    "controller_limit_profile": "left_preview102_20260827",
+    "controller_limit_evidence": {
+      "profile_id": "left_preview102_20260827",
+      "status": "CANDIDATE_SESSION_READBACK_FROM_USER_LOG_PENDING_ARCHIVE",
+      "source_log_sha256": "c7510af56f3740000b4d24943c20ed9d45f403ec73fc18bfbc2d7d48250a8efc",
+      "reported_limits_deg": [
+        [
+          -166,
+          166
+        ],
+        [
+          -10,
+          208
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -128,
+          103
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -40,
+          40
+        ],
+        [
+          -88,
+          88
+        ]
+      ],
+      "planning_limits_deg": [
+        [
+          -166,
+          166
+        ],
+        [
+          -10,
+          208
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -128,
+          103
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -40,
+          40
+        ],
+        [
+          -88,
+          76
+        ]
+      ],
+      "planning_note": "仅作本候选离线规划；j7 上限按既有物理停止证据继续收紧为 76deg。真机前必须重新只读回读。"
+    },
+    "orientation_search": {
+      "mode": "NEAR_VERTICAL_FROM_VERIFIED_TRACK_C",
+      "selection": "MINIMIZE_TILT_TO_TRACK_C_DOWN_AXIS_WITH_8DEG_PICK_MARGIN",
+      "minimum_pick_raw_limit_margin_deg": 8.0,
+      "maximum_tool_tilt_from_down_deg": 10.0,
+      "target_tool_axis_sdk": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "selected_roll_deg": 0.0,
+      "selected_uvw_deg": [
+        -47.5845955053469,
+        80.15103180271296,
+        -18.40427802412742
+      ],
+      "selected_q_sdk_deg": [
+        -78.16048349301992,
+        0.3080271352855098,
+        96.86236652688042,
+        -24.890365145183154,
+        -74.26762979008393,
+        -31.999255848652584,
+        62.05739759754833
+      ],
+      "selected_solution": {
+        "seed": "OFFLINE_AXIS_CONSTRAINED_IK_ANCHOR",
+        "q_sdk_deg": [
+          -78.16048349301992,
+          0.3080271352855098,
+          96.86236652688042,
+          -24.890365145183154,
+          -74.26762979008393,
+          -31.999255848652584,
+          62.05739759754833
+        ],
+        "raw_limit_margin_deg": 8.000744151347416,
+        "position_error_mm": 0.0011149864351154162,
+        "tool_tilt_from_target_deg": 9.848968197287007
+      },
+      "verified_parent_close_axes": [
+        {
+          "close_index": 1,
+          "tool_axis_sdk": [
+            -0.0013942692103069765,
+            0.001364126331548197,
+            -0.9999980975845508
+          ],
+          "tilt_from_target_deg": 0.11176102627559703
+        },
+        {
+          "close_index": 2,
+          "tool_axis_sdk": [
+            0.007560683665541952,
+            0.0016832552648337695,
+            -0.9999700009071387
+          ],
+          "tilt_from_target_deg": 0.44380559918663604
+        }
+      ],
+      "seed_names": [
+        "TRACK_C_REALVERIFIED_2GRASP_DOWN_AXIS",
+        "OFFLINE_AXIS_CONSTRAINED_IK_ANCHOR"
+      ],
+      "per_roll": []
+    },
+    "local_limit_report": {
+      "status": "PASS",
+      "minimum_raw_margin_deg": 5.0,
+      "violations": []
+    },
+    "scene": {
+      "physical_table_height_m": 0.72,
+      "table_top_pb_m": 1.025,
+      "table_xy_padding_m": 0.15,
+      "table_thickness_m": 0.05,
+      "bottle_radius_m": 0.035,
+      "bottle_height_m": 0.22,
+      "bottle_dimensions_status": "ASSUMED_CONSERVATIVE_REPLACE_WITH_MEASUREMENT",
+      "bottle_base_on_table": true
+    },
+    "motion": {
+      "tool_axis_retreat_mm": 120.0,
+      "vertical_lift_mm": 20.0,
+      "cartesian_sample_mm": 10.0,
+      "maximum_anchor_joint_step_deg": 8.0
+    },
+    "bottle_geometry_pb_m": {
+      "pick_center": [
+        0.5266335154526144,
+        0.12741561124753445,
+        1.135
+      ],
+      "place_center": [
+        0.5270647427673388,
+        0.2280376411329929,
+        1.1352000043680668
+      ],
+      "actual_pick_grip": [
+        0.5266335154526144,
+        0.12741561124753445,
+        1.1642313492473253
+      ],
+      "actual_place_grip": [
+        0.5270647427673388,
+        0.2280376411329929,
+        1.164431353615392
+      ],
+      "center_offset_from_grip_world_m": [
+        0.0,
+        0.0,
+        -0.02923134924732529
+      ]
+    },
+    "gui_review": {
+      "required": true,
+      "status": "PASS",
+      "path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/bottle_left_vertical_grasp_gui_review.json",
+      "sha256": "6db3c98bda247c840ef78eb6591a18d7fbbd567139b9a8ed48b7d81b4ff7c5a8",
+      "evidence_source": "USER_CHAT_CONFIRMATION_AFTER_MANUAL_GUI_PLAYBACK"
+    },
+    "robot_object_collision_exemption": {
+      "scope": "RRT_STATIC_OBSTACLES_ONLY",
+      "reason": "已有 URDF link11 包含 278mm 虚拟手部，与抓取中心的瓶体必然重叠；故 RRT 只对桌面做机器人碰撞。",
+      "does_not_exempt": [
+        "dense robot self collision",
+        "dense robot-table collision",
+        "gripper proxy collision",
+        "carried-object collision after close"
+      ],
+      "qualification_owner": "robot_mission.qualify_candidate"
+    },
+    "pulse": {
+      "step_deg": 0.4,
+      "period_ms": 20
+    },
+    "maximum_exported_adjacent_step_deg": 5.455999999999996,
+    "cartesian_chain_reports": {
+      "pick_retreat": {
+        "samples": 14,
+        "distance_mm": 120.00000000000001,
+        "maximum_anchor_step_deg": 2.87294177072809,
+        "maximum_position_error_mm": 0.798453085439576,
+        "maximum_rotation_error_deg": 0.30556356745408597
+      },
+      "lift": {
+        "samples": 4,
+        "distance_mm": 20.000000000000018,
+        "maximum_anchor_step_deg": 1.8554894036673062,
+        "maximum_position_error_mm": 0.7889386737359709,
+        "maximum_rotation_error_deg": 0.30556356745411967
+      },
+      "transfer": {
+        "samples": 11,
+        "distance_mm": 100.0,
+        "maximum_anchor_step_deg": 1.4884138503252977,
+        "maximum_position_error_mm": 0.7251231698446852,
+        "maximum_rotation_error_deg": 0.2808548831476422
+      },
+      "place_descend": {
+        "samples": 4,
+        "distance_mm": 20.000000000000018,
+        "maximum_anchor_step_deg": 0.8830768430336633,
+        "maximum_position_error_mm": 0.23195480116409667,
+        "maximum_rotation_error_deg": 0.04959862901387423
+      },
+      "place_approach": {
+        "samples": 14,
+        "distance_mm": 120.00000000000001,
+        "maximum_anchor_step_deg": 2.559429046872836,
+        "maximum_position_error_mm": 0.7825586359290947,
+        "maximum_rotation_error_deg": 0.49754924050969673
+      }
+    },
+    "note": "RUN snapshot for one guarded staged real-robot test. This is not REAL_VERIFIED until a matching complete run log is archived.",
+    "evidence_status": "STAGED_TEST_READY_NOT_REAL_VERIFIED",
+    "enforce_live_controller_limits": true,
+    "authorization_scope": "GUARDED_SINGLE_REAL_ROBOT_TEST",
+    "authorized_at": "2026-08-28T01:01:30+08:00",
+    "authorized_by": "xiaobingxin",
+    "authorized_from_candidate": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/traj_bottle_left_vertical_grasp_20260827_CANDIDATE.json",
+    "authorized_from_candidate_sha256": "e207e4d017435e75a91d5723bf7a04c3cddec163ff1cada99b29db9e5b04e391",
+    "qualification_report": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/bottle_left_vertical_grasp_qualification_report.json",
+    "qualification_report_sha256": "c3b25c5848f8678e48106593d4a7d7edd3de105302b97f1123b8827ab05f057e",
+    "runtime_gates": [
+      "dynamic robot/local/arm IP required",
+      "local limits checked before connection",
+      "live controller limits intersected with physical operational limits",
+      "operator confirms clear entry path when current-to-first gap exceeds 20deg",
+      "point-to-point entry settles before second operator confirmation",
+      "protection and global speed restored in finally"
+    ]
+  },
+  "waypoints": [
+    {
+      "seg": "HOME",
+      "q_sdk_deg": [
+        10.0,
+        10.0,
+        0.0,
+        -15.0,
+        0.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        9.53,
+        13.0068,
+        0.885,
+        -16.4709,
+        -5.3741,
+        -0.3708,
+        1.3462
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        8.8959,
+        16.1886,
+        1.8031,
+        -18.0757,
+        -10.8171,
+        -0.7698,
+        2.6923
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        7.6065,
+        19.7791,
+        2.935,
+        -20.1016,
+        -16.2514,
+        -1.2778,
+        4.0532
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        4.3516,
+        24.5959,
+        4.7081,
+        -23.3907,
+        -21.6595,
+        -2.113,
+        5.4585
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        1.0966,
+        29.4127,
+        6.4812,
+        -26.6798,
+        -27.0677,
+        -2.9482,
+        6.8638
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -2.1584,
+        34.2295,
+        8.2544,
+        -29.9689,
+        -32.4758,
+        -3.7834,
+        8.2691
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -5.4134,
+        39.0463,
+        10.0275,
+        -33.258,
+        -37.884,
+        -4.6186,
+        9.6744
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -9.9715,
+        43.6138,
+        13.1049,
+        -37.0351,
+        -43.2804,
+        -5.7649,
+        11.7114
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -14.964,
+        48.0984,
+        16.6171,
+        -40.9748,
+        -48.673,
+        -7.0148,
+        13.9589
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -19.9565,
+        52.5829,
+        20.1294,
+        -44.9146,
+        -54.0655,
+        -8.2647,
+        16.2064
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -25.2836,
+        53.3564,
+        25.5761,
+        -47.7603,
+        -56.9169,
+        -9.6805,
+        19.2219
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -29.7706,
+        52.974,
+        30.6017,
+        -49.8071,
+        -58.5704,
+        -10.8943,
+        21.9207
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -34.2575,
+        52.5916,
+        35.6272,
+        -51.8539,
+        -60.2239,
+        -12.108,
+        24.6196
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -38.7444,
+        52.2092,
+        40.6528,
+        -53.9006,
+        -61.8775,
+        -13.3218,
+        27.3185
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -43.2313,
+        51.8269,
+        45.6783,
+        -55.9474,
+        -63.531,
+        -14.5355,
+        30.0174
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -47.7183,
+        51.4445,
+        50.7039,
+        -57.9942,
+        -65.1846,
+        -15.7493,
+        32.7163
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -52.2052,
+        51.0621,
+        55.7294,
+        -60.041,
+        -66.8381,
+        -16.963,
+        35.4152
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -56.6921,
+        50.6797,
+        60.755,
+        -62.0878,
+        -68.4916,
+        -18.1768,
+        38.1141
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -61.1791,
+        50.2973,
+        65.7806,
+        -64.1346,
+        -70.1452,
+        -19.3905,
+        40.813
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -65.631,
+        49.9344,
+        70.7868,
+        -66.1819,
+        -71.8481,
+        -20.6006,
+        43.5076
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -70.4659,
+        49.5507,
+        76.236,
+        -68.4157,
+        -73.7366,
+        -21.9183,
+        46.4445
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -75.3007,
+        49.167,
+        81.6853,
+        -70.6494,
+        -75.6251,
+        -23.236,
+        49.3814
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -80.1356,
+        48.7833,
+        87.1346,
+        -72.8832,
+        -77.5135,
+        -24.5538,
+        52.3184
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -84.9704,
+        48.3995,
+        92.5839,
+        -75.1169,
+        -79.402,
+        -25.8715,
+        55.2553
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -89.8053,
+        48.0158,
+        98.0331,
+        -77.3506,
+        -81.2905,
+        -27.1893,
+        58.1922
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -94.6401,
+        47.6321,
+        103.4824,
+        -79.5844,
+        -83.179,
+        -28.507,
+        61.1291
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -99.4749,
+        47.2483,
+        108.9317,
+        -81.8181,
+        -85.0675,
+        -29.8248,
+        64.066
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -104.2474,
+        47.1253,
+        114.3832,
+        -84.203,
+        -87.4622,
+        -31.1646,
+        67.0413
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -108.3359,
+        48.2072,
+        119.3907,
+        -87.0816,
+        -91.9774,
+        -32.4938,
+        69.9443
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -109.8227,
+        48.6006,
+        121.2116,
+        -88.1284,
+        -93.6193,
+        -32.9772,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -109.153,
+        46.8085,
+        120.5245,
+        -86.1751,
+        -93.6403,
+        -32.5829,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -108.4833,
+        45.0165,
+        119.8374,
+        -84.2218,
+        -93.6613,
+        -32.1887,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -107.8136,
+        43.2244,
+        119.1504,
+        -82.2684,
+        -93.6823,
+        -31.7944,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -107.1439,
+        41.4323,
+        118.4633,
+        -80.3151,
+        -93.7034,
+        -31.4002,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -106.4742,
+        39.6402,
+        117.7762,
+        -78.3618,
+        -93.7244,
+        -31.0059,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -105.8045,
+        37.8482,
+        117.0891,
+        -76.4085,
+        -93.7454,
+        -30.6117,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -105.1348,
+        36.0561,
+        116.4021,
+        -74.4552,
+        -93.7664,
+        -30.2174,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -104.4651,
+        34.264,
+        115.715,
+        -72.5018,
+        -93.7874,
+        -29.8232,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -103.7954,
+        32.4719,
+        115.0279,
+        -70.5485,
+        -93.8084,
+        -29.4289,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -103.1256,
+        30.6799,
+        114.3408,
+        -68.5952,
+        -93.8294,
+        -29.0347,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -102.4559,
+        28.8878,
+        113.6538,
+        -66.6419,
+        -93.8504,
+        -28.6404,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -101.7862,
+        27.0957,
+        112.9667,
+        -64.6886,
+        -93.8715,
+        -28.2462,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -101.1165,
+        25.3036,
+        112.2796,
+        -62.7352,
+        -93.8925,
+        -27.8519,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -100.4468,
+        23.5116,
+        111.5925,
+        -60.7819,
+        -93.9135,
+        -27.4577,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -99.7771,
+        21.7195,
+        110.9054,
+        -58.8286,
+        -93.9345,
+        -27.0634,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -99.1074,
+        19.9274,
+        110.2184,
+        -56.8753,
+        -93.9555,
+        -26.6692,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -98.4377,
+        18.1353,
+        109.5313,
+        -54.922,
+        -93.9765,
+        -26.2749,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -97.768,
+        16.3433,
+        108.8442,
+        -52.9686,
+        -93.9975,
+        -25.8807,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -97.0983,
+        14.5512,
+        108.1571,
+        -51.0153,
+        -94.0186,
+        -25.4864,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -96.4286,
+        12.7591,
+        107.4701,
+        -49.062,
+        -94.0396,
+        -25.0922,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -95.7589,
+        10.9671,
+        106.783,
+        -47.1087,
+        -94.0606,
+        -24.6979,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -95.7589,
+        10.9671,
+        106.783,
+        -47.1087,
+        -94.0606,
+        -24.6979,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -93.8518,
+        10.7094,
+        104.822,
+        -46.189,
+        -91.6889,
+        -24.8539,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -91.8987,
+        10.397,
+        102.7168,
+        -45.1932,
+        -89.1944,
+        -25.0974,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -89.9353,
+        9.9975,
+        100.5021,
+        -44.0822,
+        -86.5991,
+        -25.4262,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -87.9576,
+        9.5179,
+        98.1747,
+        -42.8774,
+        -83.8788,
+        -25.8407,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -85.9736,
+        8.9425,
+        95.6783,
+        -41.5573,
+        -81.0059,
+        -26.3561,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -84.4448,
+        8.2001,
+        94.1899,
+        -40.033,
+        -78.9379,
+        -27.0174,
+        70.8579
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -83.5674,
+        7.2668,
+        94.6829,
+        -38.2946,
+        -78.3188,
+        -27.4448,
+        69.6502
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -82.7119,
+        6.3766,
+        95.0372,
+        -36.5676,
+        -77.6945,
+        -28.0799,
+        68.4819
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -81.7801,
+        5.326,
+        95.3584,
+        -34.5547,
+        -76.931,
+        -28.7035,
+        67.216
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -80.8811,
+        4.1987,
+        95.7172,
+        -32.4165,
+        -76.282,
+        -29.3752,
+        66.0021
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -80.0154,
+        3.1541,
+        96.0013,
+        -30.377,
+        -75.5793,
+        -30.0925,
+        64.8031
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -79.0963,
+        1.7663,
+        96.4804,
+        -27.7072,
+        -74.9604,
+        -31.0155,
+        63.4172
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -78.1605,
+        0.308,
+        96.8624,
+        -24.8904,
+        -74.2676,
+        -31.9993,
+        62.0574
+      ]
+    },
+    {
+      "seg": "BOTTLE_PICK",
+      "gripper": "close"
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -78.1605,
+        0.308,
+        96.8624,
+        -24.8904,
+        -74.2676,
+        -31.9993,
+        62.0574
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -79.0963,
+        1.7663,
+        96.4804,
+        -27.7072,
+        -74.9604,
+        -31.0155,
+        63.4172
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -80.0154,
+        3.1541,
+        96.0013,
+        -30.377,
+        -75.5793,
+        -30.0925,
+        64.8031
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -80.8811,
+        4.1987,
+        95.7172,
+        -32.4165,
+        -76.282,
+        -29.3752,
+        66.0021
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -81.7801,
+        5.326,
+        95.3584,
+        -34.5547,
+        -76.931,
+        -28.7035,
+        67.216
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -82.7119,
+        6.3766,
+        95.0372,
+        -36.5676,
+        -77.6945,
+        -28.0799,
+        68.4819
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -83.5674,
+        7.2668,
+        94.6829,
+        -38.2946,
+        -78.3188,
+        -27.4448,
+        69.6502
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -84.4448,
+        8.2001,
+        94.1899,
+        -40.033,
+        -78.9379,
+        -27.0174,
+        70.8579
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -85.9736,
+        8.9425,
+        95.6783,
+        -41.5573,
+        -81.0059,
+        -26.3561,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -87.9576,
+        9.5179,
+        98.1747,
+        -42.8774,
+        -83.8788,
+        -25.8407,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -89.9353,
+        9.9975,
+        100.5021,
+        -44.0822,
+        -86.5991,
+        -25.4262,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -91.8987,
+        10.397,
+        102.7168,
+        -45.1932,
+        -89.1944,
+        -25.0974,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -93.8518,
+        10.7094,
+        104.822,
+        -46.189,
+        -91.6889,
+        -24.8539,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -95.7589,
+        10.9671,
+        106.783,
+        -47.1087,
+        -94.0606,
+        -24.6979,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -95.7589,
+        10.9671,
+        106.783,
+        -47.1087,
+        -94.0606,
+        -24.6979,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -97.1245,
+        10.7973,
+        108.3129,
+        -47.1706,
+        -95.8899,
+        -24.8814,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -98.4685,
+        10.5853,
+        109.826,
+        -47.1722,
+        -97.7122,
+        -25.1045,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -99.816,
+        10.352,
+        111.3621,
+        -47.1645,
+        -99.5677,
+        -25.3757,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -99.816,
+        10.352,
+        111.3621,
+        -47.1645,
+        -99.5677,
+        -25.3757,
+        71.0
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -100.0501,
+        11.8405,
+        111.5858,
+        -48.1295,
+        -99.3645,
+        -25.9414,
+        70.9763
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -100.2969,
+        13.3066,
+        111.8144,
+        -49.0466,
+        -99.0479,
+        -26.4996,
+        70.6994
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -100.4799,
+        14.7623,
+        112.0063,
+        -49.8906,
+        -98.7617,
+        -27.137,
+        70.4192
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -100.6662,
+        16.1773,
+        112.2043,
+        -50.6398,
+        -98.435,
+        -27.8108,
+        70.1224
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -100.8145,
+        17.5431,
+        112.4417,
+        -51.2895,
+        -98.0921,
+        -28.5177,
+        69.7918
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -101.0142,
+        18.8683,
+        112.6017,
+        -51.8184,
+        -97.8039,
+        -29.3384,
+        69.6027
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -101.171,
+        20.1479,
+        112.8349,
+        -52.2888,
+        -97.4455,
+        -30.1135,
+        69.2941
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -101.3035,
+        21.4242,
+        113.0039,
+        -52.7047,
+        -97.1458,
+        -30.9807,
+        69.0311
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -101.4125,
+        22.6456,
+        113.1972,
+        -53.0072,
+        -96.8064,
+        -31.9243,
+        68.7243
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -101.5783,
+        23.7892,
+        113.4247,
+        -53.2029,
+        -96.4296,
+        -32.7915,
+        68.5172
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -101.5783,
+        23.7892,
+        113.4247,
+        -53.2029,
+        -96.4296,
+        -32.7915,
+        68.5172
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -100.9337,
+        23.7748,
+        113.6469,
+        -53.2312,
+        -95.8216,
+        -32.5924,
+        67.6341
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -100.291,
+        23.7221,
+        113.8578,
+        -53.1871,
+        -95.2531,
+        -32.4301,
+        66.7851
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -99.6914,
+        23.6719,
+        114.0459,
+        -53.1562,
+        -94.712,
+        -32.2715,
+        66.0155
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -99.6914,
+        23.6719,
+        114.0459,
+        -53.1562,
+        -94.712,
+        -32.2715,
+        66.0155
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -98.6706,
+        23.2166,
+        114.2839,
+        -52.4108,
+        -94.008,
+        -32.2708,
+        64.9318
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -97.6352,
+        22.712,
+        114.5145,
+        -51.5783,
+        -93.322,
+        -32.3411,
+        63.8383
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -96.5815,
+        22.1129,
+        114.8194,
+        -50.61,
+        -92.6152,
+        -32.352,
+        62.738
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -95.5476,
+        21.518,
+        115.0851,
+        -49.5704,
+        -92.0262,
+        -32.5263,
+        61.6819
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -94.4327,
+        20.8887,
+        115.3151,
+        -48.4741,
+        -91.3186,
+        -32.6216,
+        60.5812
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -93.3512,
+        20.2088,
+        115.5316,
+        -47.2714,
+        -90.6911,
+        -32.7666,
+        59.576
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -92.193,
+        19.4938,
+        115.7043,
+        -45.961,
+        -90.0384,
+        -32.9747,
+        58.5041
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -91.0777,
+        18.735,
+        115.8965,
+        -44.5563,
+        -89.4931,
+        -33.307,
+        57.5269
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -89.9329,
+        17.9054,
+        116.1169,
+        -43.0206,
+        -88.8833,
+        -33.5088,
+        56.5509
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -88.703,
+        17.0409,
+        116.349,
+        -41.355,
+        -88.3507,
+        -33.9441,
+        55.4057
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -87.4978,
+        16.083,
+        116.6206,
+        -39.5596,
+        -87.7895,
+        -34.3239,
+        54.3502
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -86.2393,
+        15.0521,
+        116.862,
+        -37.6103,
+        -87.2055,
+        -34.7241,
+        53.3127
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -85.0379,
+        13.6798,
+        117.7303,
+        -35.0509,
+        -87.2161,
+        -35.0,
+        52.0387
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE",
+      "gripper": "open"
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -85.0379,
+        13.6798,
+        117.7303,
+        -35.0509,
+        -87.2161,
+        -35.0,
+        52.0387
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -86.2393,
+        15.0521,
+        116.862,
+        -37.6103,
+        -87.2055,
+        -34.7241,
+        53.3127
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -87.4978,
+        16.083,
+        116.6206,
+        -39.5596,
+        -87.7895,
+        -34.3239,
+        54.3502
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -88.703,
+        17.0409,
+        116.349,
+        -41.355,
+        -88.3507,
+        -33.9441,
+        55.4057
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -89.9329,
+        17.9054,
+        116.1169,
+        -43.0206,
+        -88.8833,
+        -33.5088,
+        56.5509
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -91.0777,
+        18.735,
+        115.8965,
+        -44.5563,
+        -89.4931,
+        -33.307,
+        57.5269
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -92.193,
+        19.4938,
+        115.7043,
+        -45.961,
+        -90.0384,
+        -32.9747,
+        58.5041
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -93.3512,
+        20.2088,
+        115.5316,
+        -47.2714,
+        -90.6911,
+        -32.7666,
+        59.576
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -94.4327,
+        20.8887,
+        115.3151,
+        -48.4741,
+        -91.3186,
+        -32.6216,
+        60.5812
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -95.5476,
+        21.518,
+        115.0851,
+        -49.5704,
+        -92.0262,
+        -32.5263,
+        61.6819
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -96.5815,
+        22.1129,
+        114.8194,
+        -50.61,
+        -92.6152,
+        -32.352,
+        62.738
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -97.6352,
+        22.712,
+        114.5145,
+        -51.5783,
+        -93.322,
+        -32.3411,
+        63.8383
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -98.6706,
+        23.2166,
+        114.2839,
+        -52.4108,
+        -94.008,
+        -32.2708,
+        64.9318
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -99.6914,
+        23.6719,
+        114.0459,
+        -53.1562,
+        -94.712,
+        -32.2715,
+        66.0155
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -99.6914,
+        23.6719,
+        114.0459,
+        -53.1562,
+        -94.712,
+        -32.2715,
+        66.0155
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -100.291,
+        23.7221,
+        113.8578,
+        -53.1871,
+        -95.2531,
+        -32.4301,
+        66.7851
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -100.9337,
+        23.7748,
+        113.6469,
+        -53.2312,
+        -95.8216,
+        -32.5924,
+        67.6341
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -101.5783,
+        23.7892,
+        113.4247,
+        -53.2029,
+        -96.4296,
+        -32.7915,
+        68.5172
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -101.5783,
+        23.7892,
+        113.4247,
+        -53.2029,
+        -96.4296,
+        -32.7915,
+        68.5172
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -101.9312,
+        25.3403,
+        113.689,
+        -55.3691,
+        -95.9361,
+        -32.7437,
+        68.4608
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -102.2841,
+        26.8914,
+        113.9533,
+        -57.5353,
+        -95.4426,
+        -32.6958,
+        68.4043
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -102.6369,
+        28.4426,
+        114.2176,
+        -59.7015,
+        -94.9492,
+        -32.648,
+        68.3479
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -102.9898,
+        29.9937,
+        114.4819,
+        -61.8677,
+        -94.4557,
+        -32.6001,
+        68.2915
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -103.3427,
+        31.5449,
+        114.7462,
+        -64.034,
+        -93.9622,
+        -32.5523,
+        68.2351
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -103.6956,
+        33.096,
+        115.0104,
+        -66.2002,
+        -93.4687,
+        -32.5044,
+        68.1786
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -104.0485,
+        34.6471,
+        115.2747,
+        -68.3664,
+        -92.9753,
+        -32.4566,
+        68.1222
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -104.4014,
+        36.1983,
+        115.539,
+        -70.5326,
+        -92.4818,
+        -32.4087,
+        68.0658
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -104.7542,
+        37.7494,
+        115.8033,
+        -72.6988,
+        -91.9883,
+        -32.3609,
+        68.0093
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -105.1071,
+        39.3006,
+        116.0676,
+        -74.8651,
+        -91.4948,
+        -32.313,
+        67.9529
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -105.46,
+        40.8517,
+        116.3319,
+        -77.0313,
+        -91.0014,
+        -32.2652,
+        67.8965
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -105.8129,
+        42.4028,
+        116.5962,
+        -79.1975,
+        -90.5079,
+        -32.2173,
+        67.84
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -106.1658,
+        43.954,
+        116.8605,
+        -81.3637,
+        -90.0144,
+        -32.1695,
+        67.7836
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -106.5186,
+        45.5051,
+        117.1248,
+        -83.53,
+        -89.5209,
+        -32.1216,
+        67.7272
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -106.8715,
+        47.0563,
+        117.3891,
+        -85.6962,
+        -89.0275,
+        -32.0738,
+        67.6707
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -107.2244,
+        48.6074,
+        117.6534,
+        -87.8624,
+        -88.534,
+        -32.0259,
+        67.6143
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -103.0464,
+        48.1882,
+        112.6259,
+        -86.846,
+        -86.1155,
+        -31.1709,
+        65.0185
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -98.8684,
+        47.7689,
+        107.5984,
+        -85.8296,
+        -83.6971,
+        -30.3159,
+        62.4228
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -94.6904,
+        47.3497,
+        102.571,
+        -84.8132,
+        -81.2786,
+        -29.461,
+        59.8271
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -90.5124,
+        46.9305,
+        97.5435,
+        -83.7967,
+        -78.8601,
+        -28.606,
+        57.2314
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -86.3343,
+        46.5113,
+        92.5161,
+        -82.7803,
+        -76.4417,
+        -27.751,
+        54.6357
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -82.1563,
+        46.092,
+        87.4886,
+        -81.7639,
+        -74.0232,
+        -26.896,
+        52.04
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -77.9783,
+        45.6728,
+        82.4612,
+        -80.7475,
+        -71.6048,
+        -26.041,
+        49.4443
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -73.8003,
+        45.2536,
+        77.4337,
+        -79.731,
+        -69.1863,
+        -25.186,
+        46.8486
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -69.6223,
+        44.8344,
+        72.4062,
+        -78.7146,
+        -66.7679,
+        -24.331,
+        44.2529
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -65.4443,
+        44.4151,
+        67.3788,
+        -77.6982,
+        -64.3494,
+        -23.476,
+        41.6572
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -61.2663,
+        43.9959,
+        62.3513,
+        -76.6818,
+        -61.9309,
+        -22.621,
+        39.0615
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -57.0883,
+        43.5767,
+        57.3239,
+        -75.6654,
+        -59.5125,
+        -21.7661,
+        36.4657
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -52.9103,
+        43.1575,
+        52.2964,
+        -74.6489,
+        -57.094,
+        -20.9111,
+        33.87
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -48.7323,
+        42.7382,
+        47.269,
+        -73.6325,
+        -54.6756,
+        -20.0561,
+        31.2743
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -44.5543,
+        42.319,
+        42.2415,
+        -72.6161,
+        -52.2571,
+        -19.2011,
+        28.6786
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -40.3763,
+        41.8998,
+        37.214,
+        -71.5997,
+        -49.8387,
+        -18.3461,
+        26.0829
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -36.1983,
+        41.4806,
+        32.1866,
+        -70.5832,
+        -47.4202,
+        -17.4911,
+        23.4872
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -32.0203,
+        41.0613,
+        27.1591,
+        -69.5668,
+        -45.0018,
+        -16.6361,
+        20.8915
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -27.8423,
+        40.6421,
+        22.1317,
+        -68.5504,
+        -42.5833,
+        -15.7811,
+        18.2958
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -23.6643,
+        40.2229,
+        17.1042,
+        -67.534,
+        -40.1648,
+        -14.9261,
+        15.7001
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -19.4863,
+        39.8036,
+        12.0768,
+        -66.5175,
+        -37.7464,
+        -14.0712,
+        13.1044
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -15.3083,
+        39.3844,
+        7.0493,
+        -65.5011,
+        -35.3279,
+        -13.2162,
+        10.5087
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -11.1303,
+        38.9652,
+        2.0218,
+        -64.4847,
+        -32.9095,
+        -12.3612,
+        7.9129
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -6.9523,
+        38.546,
+        -3.0056,
+        -63.4683,
+        -30.491,
+        -11.5062,
+        5.3172
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -2.6075,
+        37.7321,
+        -8.0333,
+        -62.0437,
+        -28.8146,
+        -10.7255,
+        3.1309
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        1.7372,
+        36.9182,
+        -13.061,
+        -60.6192,
+        -27.1382,
+        -9.9449,
+        0.9446
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        6.7601,
+        33.6892,
+        -17.5779,
+        -56.0959,
+        -25.7376,
+        -9.1301,
+        -0.3476
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.1473,
+        29.6228,
+        -19.5541,
+        -50.6709,
+        -25.237,
+        -8.6531,
+        -0.199
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.5345,
+        25.5563,
+        -21.5303,
+        -45.2458,
+        -24.7364,
+        -8.1761,
+        -0.0504
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.7283,
+        21.8622,
+        -19.1333,
+        -39.8503,
+        -23.5293,
+        -7.6534,
+        1.1289
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.0185,
+        18.9682,
+        -15.1862,
+        -34.3943,
+        -19.4004,
+        -6.2842,
+        1.3278
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        12.1804,
+        16.5495,
+        -11.2159,
+        -29.3737,
+        -14.7425,
+        -4.7717,
+        1.1819
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        11.3423,
+        14.1308,
+        -7.2456,
+        -24.3531,
+        -10.0846,
+        -3.2593,
+        1.036
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.5042,
+        11.7122,
+        -3.2752,
+        -19.3324,
+        -5.4266,
+        -1.7468,
+        0.8901
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        9.9952,
+        10.0288,
+        -0.1248,
+        -15.1896,
+        -0.4104,
+        -0.1307,
+        0.1329
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.0,
+        10.0,
+        0.0,
+        -15.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

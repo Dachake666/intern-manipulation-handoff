@@ -1,0 +1,49 @@
+{
+  "schema_version": "bottle_relative_pick_place.v2",
+  "status": "CANDIDATE_INPUT",
+  "comment": "固定抓取中心 XYZ 与接近轴，允许圆柱瓶抓取姿态绕接近轴搜索；给定 UVW 和关节角只作首选姿态与位置锚点，不再是唯一 IK 解。",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "controller_limit_profile": "left_preview102_20260827",
+  "pick": {
+    "sdk_world_xyz_mm": [769.624, 119.413, 432.648],
+    "preferred_sdk_world_uvw_deg": [-87.078, 18.340, -0.893],
+    "position_anchor_q_sdk_deg": [-38.689, -7.854, 21.776, -49.103, -5.466, 19.822, 17.076]
+  },
+  "orientation_policy": {
+    "mode": "FREE_ROLL_ABOUT_APPROACH_AXIS",
+    "roll_search_deg": {"start": -120, "stop": 120, "step": 10},
+    "minimum_pick_raw_limit_margin_deg": 15.0,
+    "selection": "MIN_ABS_ROLL_THEN_MAX_MARGIN_THEN_MIN_READY_DISTANCE",
+    "seed_sources": ["POSITION_ANCHOR_Q", "TRACK_C_READY", "TRACK_C_VERIFIED_PICK_ANCHORS", "ARM_PROFILE_IK_SEED"]
+  },
+  "place_offset_sdk_mm": [0.0, 100.0, 0.0],
+  "scene": {
+    "physical_table_height_m": 0.72,
+    "table_top_pb_m": 1.025,
+    "table_xy_padding_m": 0.15,
+    "table_thickness_m": 0.05,
+    "bottle_radius_m": 0.035,
+    "bottle_height_m": 0.22,
+    "bottle_dimensions_status": "ASSUMED_CONSERVATIVE_REPLACE_WITH_MEASUREMENT",
+    "bottle_base_on_table": true
+  },
+  "motion": {
+    "tool_axis_retreat_mm": 120.0,
+    "vertical_lift_mm": 120.0,
+    "cartesian_sample_mm": 10.0,
+    "maximum_anchor_joint_step_deg": 8.0
+  },
+  "gui_review": {
+    "required": true,
+    "dense_step_deg": 0.4,
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  "verified_parent": {
+    "path": "pick_place_coord/trajectories/verified/traj_multi_2grasp_20260804_REALVERIFIED.json",
+    "sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "reuse": ["HOME", "HOME->READY", "READY->HOME", "Pulse Servo 0.4deg/20ms"],
+    "role": "REAL_VERIFIED_PATH_AND_IK_SEED_PARENT"
+  }
+}

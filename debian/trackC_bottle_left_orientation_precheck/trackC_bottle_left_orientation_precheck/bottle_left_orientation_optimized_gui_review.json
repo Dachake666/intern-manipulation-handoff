@@ -1,0 +1,19 @@
+{
+  "schema_version": "pybullet_gui_review.v1",
+  "created": "2026-08-27T15:52:30+08:00",
+  "result": "PASS",
+  "reviewer": "xiaobingxin",
+  "evidence_source": "USER_CHAT_CONFIRMATION_AFTER_MANUAL_GUI_PLAYBACK",
+  "trajectory": "pick_place_coord/trajectories/candidates/traj_bottle_left_orientation_optimized_20260827_CANDIDATE.json",
+  "trajectory_sha256": "f7473ba7350401d956c5755877b0ac16c33eaf0f3531d3a1c64d2db63e9e1b2e",
+  "qualification_task": "pick_place_coord/trajectories/candidates/task_bottle_left_orientation_optimized_20260827_qualification.json",
+  "qualification_task_sha256": "fc2ebceb559de21da01812c9b3399b7bc27aeb36faa0d3a33346e46e1939af41",
+  "demo_script_sha256": "6fb2020fe7b3dc63248a6354a03c8e953c74326ab5df14c6ef3a1dd4a4066269",
+  "dense_step_deg": 0.4,
+  "period_ms": 20.0,
+  "speed_factor": 1.0,
+  "dense_move_frames": 2051,
+  "gripper_events": ["close", "open"],
+  "arm_id": 1,
+  "note": "用户在完整 PyBullet GUI 回放结束后明确确认跑完没问题；该结论只完成 GUI 人工门，不代表真机授权。"
+}

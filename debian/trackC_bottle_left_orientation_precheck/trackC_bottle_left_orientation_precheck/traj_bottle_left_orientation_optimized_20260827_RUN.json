@@ -1,0 +1,4408 @@
+{
+  "meta": {
+    "arm_id": 1,
+    "arm": "left",
+    "gripper_id": 2,
+    "j6_flipped": true,
+    "task": "bottle_relative_pick_place_orientation_optimized_100mm",
+    "source_task": "pick_place_coord/tasks/task_bottle_left_orientation_search_20260827.json",
+    "source_task_sha256": "09d15348c0312e951f2fd414de518230b382f0e6705b844ef12367ee6851fcdc",
+    "generator": "pick_place_coord/gen_bottle_servo_candidate.py",
+    "generator_sha256": "d8d1bd6b375b7f7eecfceaeab1a02c9dac75e8a6e2d1c023c7df6d06eca9a7a4",
+    "qualification": "CONTROLLER_PRECHECK_PASSED_20260827",
+    "requires_live_controller_limits": true,
+    "requires_live_controller_recheck": true,
+    "real_motion_authorized": true,
+    "verified_parent_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "verified_parent_reused_segments": [
+      "HOME",
+      "HOME->READY",
+      "READY->HOME"
+    ],
+    "pick_sdk_world": {
+      "sdk_world_xyz_mm": [
+        769.624,
+        119.413,
+        432.648
+      ],
+      "preferred_sdk_world_uvw_deg": [
+        -87.078,
+        18.34,
+        -0.893
+      ],
+      "selected_sdk_world_uvw_deg": [
+        -27.078000000000003,
+        18.34,
+        -0.893
+      ],
+      "position_anchor_q_sdk_deg": [
+        -38.689,
+        -7.854,
+        21.776,
+        -49.103,
+        -5.466,
+        19.822,
+        17.076
+      ],
+      "selected_q_sdk_deg": [
+        -43.14218484035417,
+        5.507707425772584,
+        49.458590821280666,
+        -49.090557022155245,
+        22.271024041072938,
+        8.024970250799791,
+        29.347404214309556
+      ]
+    },
+    "place_sdk_world": {
+      "xyz_mm": [
+        769.624,
+        219.413,
+        432.648
+      ],
+      "uvw_deg": [
+        -27.078000000000003,
+        18.34,
+        -0.893
+      ]
+    },
+    "place_offset_sdk_mm": [
+      0.0,
+      100.0,
+      0.0
+    ],
+    "derived_pb_geometry_m": {
+      "grip_pick": [
+        0.5266345692890086,
+        0.12741535090976408,
+        1.1642310945949153
+      ],
+      "place": [
+        0.5266345692890086,
+        0.22741535090976409,
+        1.1642310945949153
+      ],
+      "pre_pick": [
+        0.4127453794721206,
+        0.12918635444556367,
+        1.2019950455181043
+      ],
+      "high_pick": [
+        0.4127453794721206,
+        0.12918635444556367,
+        1.3219950455181042
+      ],
+      "pre_place": [
+        0.4127453794721206,
+        0.22918635444556368,
+        1.2019950455181043
+      ],
+      "high_place": [
+        0.4127453794721206,
+        0.22918635444556368,
+        1.3219950455181042
+      ]
+    },
+    "single_point_t_observation_mm": [
+      242.98943071099143,
+      -8.00235090976409,
+      -731.5830945949152
+    ],
+    "single_point_t_is_calibration": false,
+    "q_uvw_orientation_delta_deg": 0.0036393547555851075,
+    "tool_axis_sdk": [
+      0.9490765818074005,
+      -0.014758362798329927,
+      -0.3146995910265748
+    ],
+    "solver_bound_expansions": [],
+    "controller_limit_profile": "left_preview102_20260827",
+    "controller_limit_evidence": {
+      "profile_id": "left_preview102_20260827",
+      "status": "CANDIDATE_SESSION_READBACK_FROM_USER_LOG_PENDING_ARCHIVE",
+      "source_log_sha256": "c7510af56f3740000b4d24943c20ed9d45f403ec73fc18bfbc2d7d48250a8efc",
+      "reported_limits_deg": [
+        [
+          -166,
+          166
+        ],
+        [
+          -10,
+          208
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -128,
+          103
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -40,
+          40
+        ],
+        [
+          -88,
+          88
+        ]
+      ],
+      "planning_limits_deg": [
+        [
+          -166,
+          166
+        ],
+        [
+          -10,
+          208
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -128,
+          103
+        ],
+        [
+          -166,
+          166
+        ],
+        [
+          -40,
+          40
+        ],
+        [
+          -88,
+          76
+        ]
+      ],
+      "planning_note": "仅作本候选离线规划；j7 上限按既有物理停止证据继续收紧为 76deg。真机前必须重新只读回读。"
+    },
+    "orientation_search": {
+      "mode": "FREE_ROLL_ABOUT_APPROACH_AXIS",
+      "selection": "MIN_ABS_ROLL_THEN_MAX_MARGIN_THEN_MIN_READY_DISTANCE",
+      "minimum_pick_raw_limit_margin_deg": 15.0,
+      "selected_roll_deg": 60.0,
+      "selected_uvw_deg": [
+        -27.078000000000003,
+        18.34,
+        -0.893
+      ],
+      "selected_q_sdk_deg": [
+        -43.14218484035417,
+        5.507707425772584,
+        49.458590821280666,
+        -49.090557022155245,
+        22.271024041072938,
+        8.024970250799791,
+        29.347404214309556
+      ],
+      "selected_solution": {
+        "seed": "POSITION_ANCHOR_Q",
+        "q_sdk_deg": [
+          -43.14218484035417,
+          5.507707425772584,
+          49.458590821280666,
+          -49.090557022155245,
+          22.271024041072938,
+          8.024970250799791,
+          29.347404214309556
+        ],
+        "raw_limit_margin_deg": 15.507707425772583,
+        "ready_l2_distance_deg": 172.69169033349718,
+        "position_error_mm": 0.028939091153950956,
+        "rotation_error_deg": 0.000841503684606
+      },
+      "per_roll": [
+        {
+          "roll_deg": -120.0,
+          "selected_uvw_deg": [
+            152.92200000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_2",
+            "q_sdk_deg": [
+              -43.264024430579106,
+              6.189233729634964,
+              34.38277017296169,
+              -56.179239619686975,
+              -148.9839686595422,
+              6.001744524233765,
+              -29.776133388177335
+            ],
+            "raw_limit_margin_deg": 16.189233729634964,
+            "ready_l2_distance_deg": 171.8406515737476,
+            "position_error_mm": 0.04093885133270777,
+            "rotation_error_deg": 0.0009050037260266765
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -110.0,
+          "selected_uvw_deg": [
+            162.92200000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "ARM_PROFILE_IK_SEED",
+            "q_sdk_deg": [
+              -46.15891307001923,
+              8.494805390485293,
+              41.85872579695682,
+              -55.790648447285086,
+              -147.5472612113664,
+              8.012000277666656,
+              -31.158225805069474
+            ],
+            "raw_limit_margin_deg": 18.45273878863361,
+            "ready_l2_distance_deg": 167.41805155583597,
+            "position_error_mm": 0.026077269250678423,
+            "rotation_error_deg": 0.00443731632883914
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -100.0,
+          "selected_uvw_deg": [
+            172.92200000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "ARM_PROFILE_IK_SEED",
+            "q_sdk_deg": [
+              -47.918921817456955,
+              9.080768816836901,
+              45.877264499092256,
+              -55.329557991664025,
+              -142.60332431406684,
+              11.639884588455393,
+              -31.268556826138333
+            ],
+            "raw_limit_margin_deg": 19.0807688168369,
+            "ready_l2_distance_deg": 164.29819701672284,
+            "position_error_mm": 0.08168473587797725,
+            "rotation_error_deg": 0.0017698592685581028
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -90.0,
+          "selected_uvw_deg": [
+            -177.078,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -50.923397477224675,
+              10.465303641311733,
+              53.02232878349022,
+              -54.7478627268089,
+              -140.8159932636398,
+              14.212034389490903,
+              -31.861860235128862
+            ],
+            "raw_limit_margin_deg": 20.465303641311735,
+            "ready_l2_distance_deg": 160.38198038445472,
+            "position_error_mm": 0.04598886233662865,
+            "rotation_error_deg": 0.0039403611960969
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -80.0,
+          "selected_uvw_deg": [
+            -167.078,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -52.14952237906437,
+              10.27607566670793,
+              55.88202388172803,
+              -54.10645641597449,
+              -134.52651055079207,
+              18.340256890035143,
+              -30.675797652139785
+            ],
+            "raw_limit_margin_deg": 20.276075666707932,
+            "ready_l2_distance_deg": 157.68722151209056,
+            "position_error_mm": 0.015297173032037991,
+            "rotation_error_deg": 0.00022534350809499205
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -70.0,
+          "selected_uvw_deg": [
+            -157.078,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -53.407580444757684,
+              10.132813409187754,
+              59.085468762358595,
+              -53.461692084252576,
+              -128.36686353540122,
+              22.219366903539584,
+              -29.03636205309653
+            ],
+            "raw_limit_margin_deg": 17.780633096460416,
+            "ready_l2_distance_deg": 154.87156305243008,
+            "position_error_mm": 0.09205407270867383,
+            "rotation_error_deg": 0.0029140526597161097
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -60.0,
+          "selected_uvw_deg": [
+            -147.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -54.21940877721418,
+              9.718977304992048,
+              61.44612693811649,
+              -52.7269426910843,
+              -120.94448356573287,
+              26.05123325064633,
+              -26.410148306919545
+            ],
+            "raw_limit_margin_deg": 13.94876674935367,
+            "ready_l2_distance_deg": 152.14611434476944,
+            "position_error_mm": 0.024260915132469564,
+            "rotation_error_deg": 0.0016253618466235097
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -50.0,
+          "selected_uvw_deg": [
+            -137.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -55.31938466948554,
+              9.539451262884484,
+              64.73390849341153,
+              -52.02880893609839,
+              -114.18710370484766,
+              29.35258407543613,
+              -23.54632534399216
+            ],
+            "raw_limit_margin_deg": 10.64741592456387,
+            "ready_l2_distance_deg": 149.1185401073874,
+            "position_error_mm": 0.06497426867030157,
+            "rotation_error_deg": 0.004343574060660437
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -40.0,
+          "selected_uvw_deg": [
+            -127.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_PICK_1",
+            "q_sdk_deg": [
+              -56.454116917466166,
+              9.402944802946104,
+              68.30893013406707,
+              -51.321772107836416,
+              -107.36287250716198,
+              32.22740070441367,
+              -20.184275287858593
+            ],
+            "raw_limit_margin_deg": 7.772599295586332,
+            "ready_l2_distance_deg": 145.9218282745051,
+            "position_error_mm": 0.019167933834298316,
+            "rotation_error_deg": 0.0012530782099893175
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -30.0,
+          "selected_uvw_deg": [
+            -117.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_READY",
+            "q_sdk_deg": [
+              -48.64198906824298,
+              4.449433322468482,
+              50.70750181183428,
+              -50.65716169415852,
+              -73.34833524021491,
+              34.16436352696661,
+              -5.255234818583858
+            ],
+            "raw_limit_margin_deg": 5.835636473033389,
+            "ready_l2_distance_deg": 151.0002942810959,
+            "position_error_mm": 0.006564559525137255,
+            "rotation_error_deg": 0.0007921754801107048
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": -20.0,
+          "selected_uvw_deg": [
+            -107.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_READY",
+            "q_sdk_deg": [
+              -49.330583169327944,
+              4.886801714079098,
+              53.88700236315186,
+              -50.06490788768769,
+              -65.18165143818463,
+              34.87294193143211,
+              -0.7405241305665762
+            ],
+            "raw_limit_margin_deg": 5.127058068567891,
+            "ready_l2_distance_deg": 148.69656235553876,
+            "position_error_mm": 0.024545486246301436,
+            "rotation_error_deg": 0.0024307801683391126
+          },
+          "solution_count": 2
+        },
+        {
+          "roll_deg": -10.0,
+          "selected_uvw_deg": [
+            -97.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_READY",
+            "q_sdk_deg": [
+              -49.92519773251713,
+              5.346450308486389,
+              56.89843255020174,
+              -49.54759319488913,
+              -56.743359538286676,
+              34.96360903484785,
+              4.023239202025722
+            ],
+            "raw_limit_margin_deg": 5.036390965152151,
+            "ready_l2_distance_deg": 146.7820472973879,
+            "position_error_mm": 0.05600422680596451,
+            "rotation_error_deg": 0.003313402858456487
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 0.0,
+          "selected_uvw_deg": [
+            -87.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_READY",
+            "q_sdk_deg": [
+              -50.544024893091624,
+              5.9208978780656745,
+              60.03048257312251,
+              -49.113323949603334,
+              -48.522154159299106,
+              34.45879046399807,
+              8.738325270774196
+            ],
+            "raw_limit_margin_deg": 5.541209536001929,
+            "ready_l2_distance_deg": 145.11617793131424,
+            "position_error_mm": 0.02894970558215379,
+            "rotation_error_deg": 0.0008050208853823263
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 10.0,
+          "selected_uvw_deg": [
+            -77.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "TRACK_C_READY",
+            "q_sdk_deg": [
+              -52.649194285630024,
+              7.276867877807442,
+              66.7072856319363,
+              -48.79426226765761,
+              -44.574131466014144,
+              34.43329598226938,
+              12.157537937429325
+            ],
+            "raw_limit_margin_deg": 5.566704017730622,
+            "ready_l2_distance_deg": 141.09002138615304,
+            "position_error_mm": 0.037315657805652866,
+            "rotation_error_deg": 0.0006739443040853411
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 20.0,
+          "selected_uvw_deg": [
+            -67.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -39.69984717143409,
+              -3.259077633007706,
+              31.539211615247986,
+              -48.60587636672063,
+              3.953705465395338,
+              17.573411517955552,
+              21.69018186107724
+            ],
+            "raw_limit_margin_deg": 6.740922366992294,
+            "ready_l2_distance_deg": 178.09301404397675,
+            "position_error_mm": 0.03301837868087266,
+            "rotation_error_deg": 0.002345013059100531
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 30.0,
+          "selected_uvw_deg": [
+            -57.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -40.3442973278328,
+              -1.0382771251928375,
+              36.129311469032004,
+              -48.57020902899473,
+              8.714439898359153,
+              15.766467153671192,
+              23.9209198929121
+            ],
+            "raw_limit_margin_deg": 8.961722874807162,
+            "ready_l2_distance_deg": 176.5210810288497,
+            "position_error_mm": 0.09368349283762384,
+            "rotation_error_deg": 0.001390819223250978
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 40.0,
+          "selected_uvw_deg": [
+            -47.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -41.13478334323311,
+              1.1401788102628612,
+              40.607378796361516,
+              -48.593721365920025,
+              13.38412435185182,
+              13.545365443399154,
+              25.94480783692321
+            ],
+            "raw_limit_margin_deg": 11.140178810262862,
+            "ready_l2_distance_deg": 175.1416712950087,
+            "position_error_mm": 0.0326921441552109,
+            "rotation_error_deg": 0.01142504286550709
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 50.0,
+          "selected_uvw_deg": [
+            -37.078,
+            18.34,
+            -0.893
+          ],
+          "status": "BELOW_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -42.06404591641931,
+              3.349209152302731,
+              45.07952809285542,
+              -48.798133243260594,
+              17.875712326975812,
+              10.966704988024162,
+              27.798000217921373
+            ],
+            "raw_limit_margin_deg": 13.34920915230273,
+            "ready_l2_distance_deg": 173.81168884013533,
+            "position_error_mm": 0.02848848107280057,
+            "rotation_error_deg": 0.0016484641054106354
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 60.0,
+          "selected_uvw_deg": [
+            -27.078000000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -43.14218484035417,
+              5.507707425772584,
+              49.458590821280666,
+              -49.090557022155245,
+              22.271024041072938,
+              8.024970250799791,
+              29.347404214309556
+            ],
+            "raw_limit_margin_deg": 15.507707425772583,
+            "ready_l2_distance_deg": 172.69169033349718,
+            "position_error_mm": 0.028939091153950956,
+            "rotation_error_deg": 0.000841503684606
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 70.0,
+          "selected_uvw_deg": [
+            -17.078000000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -44.36227908255126,
+              7.644926202133512,
+              53.75821657528883,
+              -49.54761008110569,
+              26.57753328189938,
+              4.737391995122166,
+              30.587505512432784
+            ],
+            "raw_limit_margin_deg": 17.64492620213351,
+            "ready_l2_distance_deg": 171.76643764192312,
+            "position_error_mm": 0.04054081670078495,
+            "rotation_error_deg": 0.0008480179057000495
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 80.0,
+          "selected_uvw_deg": [
+            -7.078000000000003,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -45.76538909021032,
+              9.711265112122986,
+              58.01806527937986,
+              -50.06307012368981,
+              30.803561476559807,
+              1.1851232242715921,
+              31.43498945064622
+            ],
+            "raw_limit_margin_deg": 19.711265112122987,
+            "ready_l2_distance_deg": 171.08949255859844,
+            "position_error_mm": 0.018845950288286277,
+            "rotation_error_deg": 0.0011871433525833268
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 90.0,
+          "selected_uvw_deg": [
+            2.921999999999997,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -47.35808332945983,
+              11.703615761681702,
+              62.236621658802484,
+              -50.681589095779415,
+              34.996027931039485,
+              -2.604854906441598,
+              31.88926337318778
+            ],
+            "raw_limit_margin_deg": 21.703615761681704,
+            "ready_l2_distance_deg": 170.69727339270625,
+            "position_error_mm": 0.1349807337517313,
+            "rotation_error_deg": 0.010801422937502705
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 100.0,
+          "selected_uvw_deg": [
+            12.921999999999997,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -49.112073564540076,
+              13.569603845247512,
+              66.40031873628698,
+              -51.33074665055956,
+              39.2535794384462,
+              -6.560340005751293,
+              31.859507839279434
+            ],
+            "raw_limit_margin_deg": 23.569603845247514,
+            "ready_l2_distance_deg": 170.7522339777103,
+            "position_error_mm": 0.04067330940869432,
+            "rotation_error_deg": 0.008970485217369668
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 110.0,
+          "selected_uvw_deg": [
+            22.921999999999997,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -51.13169247832435,
+              15.320123782877884,
+              70.69025676871387,
+              -52.017479433831916,
+              43.46798056155997,
+              -10.573689008781912,
+              31.362380458512845
+            ],
+            "raw_limit_margin_deg": 25.320123782877886,
+            "ready_l2_distance_deg": 171.09824618210004,
+            "position_error_mm": 0.02105254569419669,
+            "rotation_error_deg": 0.0032799366875018595
+          },
+          "solution_count": 5
+        },
+        {
+          "roll_deg": 120.0,
+          "selected_uvw_deg": [
+            32.922,
+            18.34,
+            -0.893
+          ],
+          "status": "PASS_MARGIN",
+          "best_solution": {
+            "seed": "POSITION_ANCHOR_Q",
+            "q_sdk_deg": [
+              -53.32370735916599,
+              16.89085087888622,
+              74.94541811601113,
+              -52.729375738516275,
+              47.883804947325096,
+              -14.626958901016327,
+              30.32649602073708
+            ],
+            "raw_limit_margin_deg": 25.373041098983673,
+            "ready_l2_distance_deg": 172.06245624079673,
+            "position_error_mm": 0.033460136684651504,
+            "rotation_error_deg": 0.0013050520543383556
+          },
+          "solution_count": 5
+        }
+      ],
+      "seed_names": [
+        "POSITION_ANCHOR_Q",
+        "TRACK_C_READY",
+        "TRACK_C_PICK_1",
+        "TRACK_C_PICK_2",
+        "ARM_PROFILE_IK_SEED"
+      ]
+    },
+    "local_limit_report": {
+      "status": "PASS",
+      "minimum_raw_margin_deg": 5.0,
+      "violations": []
+    },
+    "scene": {
+      "physical_table_height_m": 0.72,
+      "table_top_pb_m": 1.025,
+      "table_xy_padding_m": 0.15,
+      "table_thickness_m": 0.05,
+      "bottle_radius_m": 0.035,
+      "bottle_height_m": 0.22,
+      "bottle_dimensions_status": "ASSUMED_CONSERVATIVE_REPLACE_WITH_MEASUREMENT",
+      "bottle_base_on_table": true
+    },
+    "motion": {
+      "tool_axis_retreat_mm": 120.0,
+      "vertical_lift_mm": 120.0,
+      "cartesian_sample_mm": 10.0,
+      "maximum_anchor_joint_step_deg": 8.0
+    },
+    "bottle_geometry_pb_m": {
+      "pick_center": [
+        0.5266539413255044,
+        0.1274064297035596,
+        1.135
+      ],
+      "place_center": [
+        0.5259655666528127,
+        0.22745171475260406,
+        1.1352686604671223
+      ],
+      "actual_pick_grip": [
+        0.5266539413255044,
+        0.1274064297035596,
+        1.1642115342452588
+      ],
+      "actual_place_grip": [
+        0.5259655666528127,
+        0.22745171475260406,
+        1.164480194712381
+      ],
+      "center_offset_from_grip_world_m": [
+        0.0,
+        0.0,
+        -0.029211534245258797
+      ]
+    },
+    "gui_review": {
+      "required": true,
+      "status": "PENDING_HUMAN_REVIEW",
+      "dense_step_deg": 0.4,
+      "demo_script": "pick_place_coord/demo_bottle_trajectory.py"
+    },
+    "robot_object_collision_exemption": {
+      "scope": "RRT_STATIC_OBSTACLES_ONLY",
+      "reason": "已有 URDF link11 包含 278mm 虚拟手部，与抓取中心的瓶体必然重叠；故 RRT 只对桌面做机器人碰撞。",
+      "does_not_exempt": [
+        "dense robot self collision",
+        "dense robot-table collision",
+        "gripper proxy collision",
+        "carried-object collision after close"
+      ],
+      "qualification_owner": "robot_mission.qualify_candidate"
+    },
+    "pulse": {
+      "step_deg": 0.4,
+      "period_ms": 20
+    },
+    "maximum_exported_adjacent_step_deg": 5.455999999999996,
+    "cartesian_chain_reports": {
+      "pick_retreat": {
+        "samples": 14,
+        "distance_mm": 120.00000000000003,
+        "maximum_anchor_step_deg": 3.8696996776515107,
+        "maximum_position_error_mm": 0.7189895565216594,
+        "maximum_rotation_error_deg": 0.08283514427105586
+      },
+      "lift": {
+        "samples": 13,
+        "distance_mm": 119.99999999999989,
+        "maximum_anchor_step_deg": 1.5416521243111134,
+        "maximum_position_error_mm": 0.5122243587858064,
+        "maximum_rotation_error_deg": 0.04296324399065495
+      },
+      "transfer": {
+        "samples": 11,
+        "distance_mm": 100.0,
+        "maximum_anchor_step_deg": 1.616765401211893,
+        "maximum_position_error_mm": 0.6999057673816532,
+        "maximum_rotation_error_deg": 0.06994899461227574
+      },
+      "place_descend": {
+        "samples": 13,
+        "distance_mm": 119.99999999999989,
+        "maximum_anchor_step_deg": 1.4925562568368065,
+        "maximum_position_error_mm": 0.4722750519072165,
+        "maximum_rotation_error_deg": 0.0379687315451999
+      },
+      "place_approach": {
+        "samples": 14,
+        "distance_mm": 120.00000000000003,
+        "maximum_anchor_step_deg": 3.6382036240411892,
+        "maximum_position_error_mm": 0.755034794416545,
+        "maximum_rotation_error_deg": 0.09199545217563165
+      }
+    },
+    "note": "CANDIDATE only; GUI review is mandatory before staged testing. Require live controller recheck, measured bottle dimensions, dense qualification and guarded partial runs."
+  },
+  "waypoints": [
+    {
+      "seg": "HOME",
+      "q_sdk_deg": [
+        10.0,
+        10.0,
+        0.0,
+        -15.0,
+        0.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        9.53,
+        13.0068,
+        0.885,
+        -16.4709,
+        -5.3741,
+        -0.3708,
+        1.3462
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        8.8959,
+        16.1886,
+        1.8031,
+        -18.0757,
+        -10.8171,
+        -0.7698,
+        2.6923
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        7.6065,
+        19.7791,
+        2.935,
+        -20.1016,
+        -16.2514,
+        -1.2778,
+        4.0532
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        4.3516,
+        24.5959,
+        4.7081,
+        -23.3907,
+        -21.6595,
+        -2.113,
+        5.4585
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        1.0966,
+        29.4127,
+        6.4812,
+        -26.6798,
+        -27.0677,
+        -2.9482,
+        6.8638
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -2.1584,
+        34.2295,
+        8.2544,
+        -29.9689,
+        -32.4758,
+        -3.7834,
+        8.2691
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -5.4134,
+        39.0463,
+        10.0275,
+        -33.258,
+        -37.884,
+        -4.6186,
+        9.6744
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -9.9715,
+        43.6138,
+        13.1049,
+        -37.0351,
+        -43.2804,
+        -5.7649,
+        11.7114
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -14.964,
+        48.0984,
+        16.6171,
+        -40.9748,
+        -48.673,
+        -7.0148,
+        13.9589
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -19.9565,
+        52.5829,
+        20.1294,
+        -44.9146,
+        -54.0655,
+        -8.2647,
+        16.2064
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -25.2836,
+        53.3564,
+        25.5761,
+        -47.7603,
+        -56.9169,
+        -9.6805,
+        19.2219
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -29.7706,
+        52.974,
+        30.6017,
+        -49.8071,
+        -58.5704,
+        -10.8943,
+        21.9207
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -34.2575,
+        52.5916,
+        35.6272,
+        -51.8539,
+        -60.2239,
+        -12.108,
+        24.6196
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -38.7444,
+        52.2092,
+        40.6528,
+        -53.9006,
+        -61.8775,
+        -13.3218,
+        27.3185
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -43.2313,
+        51.8269,
+        45.6783,
+        -55.9474,
+        -63.531,
+        -14.5355,
+        30.0174
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -47.7183,
+        51.4445,
+        50.7039,
+        -57.9942,
+        -65.1846,
+        -15.7493,
+        32.7163
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -52.2052,
+        51.0621,
+        55.7294,
+        -60.041,
+        -66.8381,
+        -16.963,
+        35.4152
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -56.6921,
+        50.6797,
+        60.755,
+        -62.0878,
+        -68.4916,
+        -18.1768,
+        38.1141
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -61.1791,
+        50.2973,
+        65.7806,
+        -64.1346,
+        -70.1452,
+        -19.3905,
+        40.813
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -65.631,
+        49.9344,
+        70.7868,
+        -66.1819,
+        -71.8481,
+        -20.6006,
+        43.5076
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -70.4659,
+        49.5507,
+        76.236,
+        -68.4157,
+        -73.7366,
+        -21.9183,
+        46.4445
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -75.3007,
+        49.167,
+        81.6853,
+        -70.6494,
+        -75.6251,
+        -23.236,
+        49.3814
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -80.1356,
+        48.7833,
+        87.1346,
+        -72.8832,
+        -77.5135,
+        -24.5538,
+        52.3184
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -84.9704,
+        48.3995,
+        92.5839,
+        -75.1169,
+        -79.402,
+        -25.8715,
+        55.2553
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -89.8053,
+        48.0158,
+        98.0331,
+        -77.3506,
+        -81.2905,
+        -27.1893,
+        58.1922
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -94.6401,
+        47.6321,
+        103.4824,
+        -79.5844,
+        -83.179,
+        -28.507,
+        61.1291
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -99.4749,
+        47.2483,
+        108.9317,
+        -81.8181,
+        -85.0675,
+        -29.8248,
+        64.066
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -104.2474,
+        47.1253,
+        114.3832,
+        -84.203,
+        -87.4622,
+        -31.1646,
+        67.0413
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -108.3359,
+        48.2072,
+        119.3907,
+        -87.0816,
+        -91.9774,
+        -32.4938,
+        69.9443
+      ]
+    },
+    {
+      "seg": "HOME->READY",
+      "q_sdk_deg": [
+        -109.8227,
+        48.6006,
+        121.2116,
+        -88.1284,
+        -93.6193,
+        -32.9772,
+        71.0
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -108.4137,
+        48.1036,
+        120.0056,
+        -88.1274,
+        -91.5761,
+        -32.3111,
+        70.6179
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -107.0047,
+        47.6065,
+        118.7997,
+        -88.1264,
+        -89.533,
+        -31.6451,
+        70.2357
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -105.5957,
+        47.1095,
+        117.5937,
+        -88.1254,
+        -87.4898,
+        -30.979,
+        69.8536
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -104.1867,
+        46.6124,
+        116.3878,
+        -88.1244,
+        -85.4467,
+        -30.313,
+        69.4714
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -102.7777,
+        46.1154,
+        115.1818,
+        -88.1234,
+        -83.4035,
+        -29.6469,
+        69.0893
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -101.3687,
+        45.6183,
+        113.9759,
+        -88.1224,
+        -81.3604,
+        -28.9809,
+        68.7072
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -99.9597,
+        45.1213,
+        112.7699,
+        -88.1214,
+        -79.3172,
+        -28.3148,
+        68.325
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -98.5507,
+        44.6243,
+        111.564,
+        -88.1204,
+        -77.2741,
+        -27.6487,
+        67.9429
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -97.1417,
+        44.1272,
+        110.358,
+        -88.1194,
+        -75.2309,
+        -26.9827,
+        67.5607
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -95.7327,
+        43.6302,
+        109.1521,
+        -88.1184,
+        -73.1878,
+        -26.3166,
+        67.1786
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -94.3238,
+        43.1331,
+        107.9461,
+        -88.1174,
+        -71.1446,
+        -25.6506,
+        66.7964
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -92.9148,
+        42.6361,
+        106.7402,
+        -88.1164,
+        -69.1014,
+        -24.9845,
+        66.4143
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -91.5058,
+        42.139,
+        105.5342,
+        -88.1154,
+        -67.0583,
+        -24.3185,
+        66.0322
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -90.0968,
+        41.642,
+        104.3283,
+        -88.1144,
+        -65.0151,
+        -23.6524,
+        65.65
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -88.6878,
+        41.145,
+        103.1223,
+        -88.1134,
+        -62.972,
+        -22.9863,
+        65.2679
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -87.2788,
+        40.6479,
+        101.9164,
+        -88.1124,
+        -60.9288,
+        -22.3203,
+        64.8857
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -85.8698,
+        40.1509,
+        100.7104,
+        -88.1114,
+        -58.8857,
+        -21.6542,
+        64.5036
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -84.4608,
+        39.6538,
+        99.5045,
+        -88.1104,
+        -56.8425,
+        -20.9882,
+        64.1215
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -83.0518,
+        39.1568,
+        98.2985,
+        -88.1095,
+        -54.7994,
+        -20.3221,
+        63.7393
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -81.6428,
+        38.6597,
+        97.0926,
+        -88.1085,
+        -52.7562,
+        -19.6561,
+        63.3572
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -80.2338,
+        38.1627,
+        95.8866,
+        -88.1075,
+        -50.7131,
+        -18.99,
+        62.975
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -78.8248,
+        37.6657,
+        94.6807,
+        -88.1065,
+        -48.6699,
+        -18.3239,
+        62.5929
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -77.4158,
+        37.1686,
+        93.4747,
+        -88.1055,
+        -46.6267,
+        -17.6579,
+        62.2107
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -76.0068,
+        36.6716,
+        92.2688,
+        -88.1045,
+        -44.5836,
+        -16.9918,
+        61.8286
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -74.5978,
+        36.1745,
+        91.0628,
+        -88.1035,
+        -42.5404,
+        -16.3258,
+        61.4465
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -73.1888,
+        35.6775,
+        89.8569,
+        -88.1025,
+        -40.4973,
+        -15.6597,
+        61.0643
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -71.7798,
+        35.1804,
+        88.6509,
+        -88.1015,
+        -38.4541,
+        -14.9937,
+        60.6822
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -70.3708,
+        34.6834,
+        87.445,
+        -88.1005,
+        -36.411,
+        -14.3276,
+        60.3
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -68.9618,
+        34.1864,
+        86.239,
+        -88.0995,
+        -34.3678,
+        -13.6616,
+        59.9179
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -67.5528,
+        33.6893,
+        85.0331,
+        -88.0985,
+        -32.3247,
+        -12.9955,
+        59.5358
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -66.1439,
+        33.1923,
+        83.8271,
+        -88.0975,
+        -30.2815,
+        -12.3294,
+        59.1536
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -64.7349,
+        32.6952,
+        82.6212,
+        -88.0965,
+        -28.2384,
+        -11.6634,
+        58.7715
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -63.3259,
+        32.1982,
+        81.4152,
+        -88.0955,
+        -26.1952,
+        -10.9973,
+        58.3893
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -61.9169,
+        31.7011,
+        80.2093,
+        -88.0945,
+        -24.152,
+        -10.3313,
+        58.0072
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -60.5079,
+        31.2041,
+        79.0033,
+        -88.0935,
+        -22.1089,
+        -9.6652,
+        57.625
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -59.0989,
+        30.7071,
+        77.7974,
+        -88.0925,
+        -20.0657,
+        -8.9992,
+        57.2429
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -57.6899,
+        30.21,
+        76.5914,
+        -88.0915,
+        -18.0226,
+        -8.3331,
+        56.8608
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -56.2809,
+        29.713,
+        75.3855,
+        -88.0905,
+        -15.9794,
+        -7.667,
+        56.4786
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -54.8719,
+        29.2159,
+        74.1795,
+        -88.0895,
+        -13.9363,
+        -7.001,
+        56.0965
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -53.4629,
+        28.7189,
+        72.9736,
+        -88.0885,
+        -11.8931,
+        -6.3349,
+        55.7143
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -52.0539,
+        28.2218,
+        71.7676,
+        -88.0875,
+        -9.85,
+        -5.6689,
+        55.3322
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -50.6449,
+        27.7248,
+        70.5617,
+        -88.0865,
+        -7.8068,
+        -5.0028,
+        54.9501
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -49.2359,
+        27.2278,
+        69.3557,
+        -88.0855,
+        -5.7637,
+        -4.3368,
+        54.5679
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -47.8269,
+        26.7307,
+        68.1498,
+        -88.0845,
+        -3.7205,
+        -3.6707,
+        54.1858
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -46.4179,
+        26.2337,
+        66.9438,
+        -88.0835,
+        -1.6774,
+        -3.0046,
+        53.8036
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -45.0089,
+        25.7366,
+        65.7379,
+        -88.0825,
+        0.3658,
+        -2.3386,
+        53.4215
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -43.5999,
+        25.2396,
+        64.5319,
+        -88.0815,
+        2.409,
+        -1.6725,
+        53.0393
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -42.1909,
+        24.7425,
+        63.326,
+        -88.0805,
+        4.4521,
+        -1.0065,
+        52.6572
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -40.7819,
+        24.2455,
+        62.12,
+        -88.0795,
+        6.4953,
+        -0.3404,
+        52.2751
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -39.3729,
+        23.7485,
+        60.9141,
+        -88.0785,
+        8.5384,
+        0.3256,
+        51.8929
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -37.964,
+        23.2514,
+        59.7081,
+        -88.0775,
+        10.5816,
+        0.9917,
+        51.5108
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -36.555,
+        22.7544,
+        58.5022,
+        -88.0765,
+        12.6247,
+        1.6578,
+        51.1286
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -35.146,
+        22.2573,
+        57.2962,
+        -88.0755,
+        14.6679,
+        2.3238,
+        50.7465
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -33.737,
+        21.7603,
+        56.0903,
+        -88.0745,
+        16.711,
+        2.9899,
+        50.3644
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -32.328,
+        21.2632,
+        54.8843,
+        -88.0735,
+        18.7542,
+        3.6559,
+        49.9822
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -30.919,
+        20.7662,
+        53.6784,
+        -88.0725,
+        20.7973,
+        4.322,
+        49.6001
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -29.51,
+        20.2692,
+        52.4724,
+        -88.0716,
+        22.8405,
+        4.988,
+        49.2179
+      ]
+    },
+    {
+      "seg": "READY->BOTTLE_PREGRASP",
+      "q_sdk_deg": [
+        -28.101,
+        19.7721,
+        51.2664,
+        -88.0706,
+        24.8837,
+        5.6541,
+        48.8358
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -28.101,
+        19.7721,
+        51.2664,
+        -88.0706,
+        24.8837,
+        5.6541,
+        48.8358
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -29.1151,
+        18.9622,
+        51.1213,
+        -85.7957,
+        24.5519,
+        5.6443,
+        47.6682
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -30.0991,
+        18.0431,
+        50.9795,
+        -83.2828,
+        24.3011,
+        5.72,
+        46.3387
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -31.1077,
+        17.1112,
+        50.8087,
+        -80.7078,
+        24.1186,
+        5.776,
+        45.013
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -32.1229,
+        16.169,
+        50.7233,
+        -78.1068,
+        23.8538,
+        5.9112,
+        43.6142
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -33.1732,
+        15.1664,
+        50.5695,
+        -75.4074,
+        23.6548,
+        6.0164,
+        42.2987
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -34.2327,
+        14.1603,
+        50.4132,
+        -72.6441,
+        23.5336,
+        6.1301,
+        40.8814
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -35.3719,
+        13.0773,
+        50.281,
+        -69.7294,
+        23.3306,
+        6.3083,
+        39.505
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -36.4791,
+        11.9085,
+        50.1197,
+        -66.5494,
+        23.2125,
+        6.5591,
+        37.8287
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -37.8008,
+        10.812,
+        50.1169,
+        -63.3917,
+        22.9066,
+        6.7932,
+        36.2923
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -39.0134,
+        9.6047,
+        49.988,
+        -60.1051,
+        22.7095,
+        7.0424,
+        34.6045
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -40.318,
+        8.3554,
+        49.8985,
+        -56.6728,
+        22.5075,
+        7.3766,
+        32.9345
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -41.7691,
+        6.9163,
+        49.7601,
+        -52.8031,
+        22.3132,
+        7.734,
+        31.1394
+      ]
+    },
+    {
+      "seg": "BOTTLE_APPROACH",
+      "q_sdk_deg": [
+        -43.1422,
+        5.5077,
+        49.4586,
+        -49.0906,
+        22.271,
+        8.025,
+        29.3474
+      ]
+    },
+    {
+      "seg": "BOTTLE_PICK",
+      "gripper": "close"
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -43.1422,
+        5.5077,
+        49.4586,
+        -49.0906,
+        22.271,
+        8.025,
+        29.3474
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -41.7691,
+        6.9163,
+        49.7601,
+        -52.8031,
+        22.3132,
+        7.734,
+        31.1394
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -40.318,
+        8.3554,
+        49.8985,
+        -56.6728,
+        22.5075,
+        7.3766,
+        32.9345
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -39.0134,
+        9.6047,
+        49.988,
+        -60.1051,
+        22.7095,
+        7.0424,
+        34.6045
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -37.8008,
+        10.812,
+        50.1169,
+        -63.3917,
+        22.9066,
+        6.7932,
+        36.2923
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -36.4791,
+        11.9085,
+        50.1197,
+        -66.5494,
+        23.2125,
+        6.5591,
+        37.8287
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -35.3719,
+        13.0773,
+        50.281,
+        -69.7294,
+        23.3306,
+        6.3083,
+        39.505
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -34.2327,
+        14.1603,
+        50.4132,
+        -72.6441,
+        23.5336,
+        6.1301,
+        40.8814
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -33.1732,
+        15.1664,
+        50.5695,
+        -75.4074,
+        23.6548,
+        6.0164,
+        42.2987
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -32.1229,
+        16.169,
+        50.7233,
+        -78.1068,
+        23.8538,
+        5.9112,
+        43.6142
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -31.1077,
+        17.1112,
+        50.8087,
+        -80.7078,
+        24.1186,
+        5.776,
+        45.013
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -30.0991,
+        18.0431,
+        50.9795,
+        -83.2828,
+        24.3011,
+        5.72,
+        46.3387
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -29.1151,
+        18.9622,
+        51.1213,
+        -85.7957,
+        24.5519,
+        5.6443,
+        47.6682
+      ]
+    },
+    {
+      "seg": "BOTTLE_RETREAT",
+      "q_sdk_deg": [
+        -28.101,
+        19.7721,
+        51.2664,
+        -88.0706,
+        24.8837,
+        5.6541,
+        48.8358
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -28.101,
+        19.7721,
+        51.2664,
+        -88.0706,
+        24.8837,
+        5.6541,
+        48.8358
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -28.6028,
+        20.1011,
+        50.9204,
+        -89.6122,
+        24.4453,
+        4.5099,
+        50.0147
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -29.1746,
+        20.3179,
+        50.5558,
+        -90.9888,
+        23.9748,
+        3.3601,
+        51.1968
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -29.7041,
+        20.4754,
+        50.1513,
+        -92.2288,
+        23.5058,
+        2.2583,
+        52.2651
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -30.3083,
+        20.5844,
+        49.7064,
+        -93.4581,
+        23.016,
+        1.0786,
+        53.4258
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -30.9079,
+        20.6631,
+        49.2646,
+        -94.6341,
+        22.5084,
+        -0.0669,
+        54.5354
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -31.5488,
+        20.7072,
+        48.8029,
+        -95.7471,
+        21.9496,
+        -1.2162,
+        55.6567
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -32.2966,
+        20.72,
+        48.354,
+        -96.8024,
+        21.3118,
+        -2.3842,
+        56.8128
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -32.9938,
+        20.6724,
+        47.8698,
+        -97.7817,
+        20.717,
+        -3.5147,
+        57.9565
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -33.7743,
+        20.5803,
+        47.3667,
+        -98.6915,
+        20.0509,
+        -4.6942,
+        59.0691
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -34.5242,
+        20.4407,
+        46.8254,
+        -99.5351,
+        19.4155,
+        -5.8474,
+        60.1973
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -35.3862,
+        20.2874,
+        46.3228,
+        -100.3197,
+        18.6591,
+        -6.9961,
+        61.3165
+      ]
+    },
+    {
+      "seg": "BOTTLE_LIFT",
+      "q_sdk_deg": [
+        -36.2611,
+        20.0557,
+        45.7381,
+        -101.0809,
+        17.9033,
+        -8.2197,
+        62.5025
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -36.2611,
+        20.0557,
+        45.7381,
+        -101.0809,
+        17.9033,
+        -8.2197,
+        62.5025
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -35.733,
+        21.6088,
+        44.8619,
+        -101.8856,
+        17.1658,
+        -8.5305,
+        61.7134
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -35.1098,
+        23.2123,
+        43.9781,
+        -102.6296,
+        16.4483,
+        -8.7445,
+        60.8332
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -34.5982,
+        24.7831,
+        43.0284,
+        -103.3147,
+        15.628,
+        -9.0579,
+        59.9863
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -33.9955,
+        26.3999,
+        42.0854,
+        -104.0088,
+        14.7942,
+        -9.3094,
+        59.0412
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -33.3777,
+        27.9558,
+        41.1209,
+        -104.5485,
+        14.0257,
+        -9.5335,
+        58.0391
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -32.7907,
+        29.5182,
+        40.1274,
+        -105.0267,
+        13.1877,
+        -9.7636,
+        57.0497
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -32.2124,
+        31.0785,
+        39.1427,
+        -105.4639,
+        12.3418,
+        -9.9743,
+        56.0544
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -31.6219,
+        32.6404,
+        38.0958,
+        -105.8999,
+        11.4563,
+        -10.242,
+        54.9752
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -30.9988,
+        34.2142,
+        37.069,
+        -106.2083,
+        10.5458,
+        -10.4445,
+        53.7894
+      ]
+    },
+    {
+      "seg": "BOTTLE_TRANSFER_100MM",
+      "q_sdk_deg": [
+        -30.363,
+        35.7434,
+        36.0625,
+        -106.3993,
+        9.6955,
+        -10.5809,
+        52.6284
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -30.363,
+        35.7434,
+        36.0625,
+        -106.3993,
+        9.6955,
+        -10.5809,
+        52.6284
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -29.3645,
+        35.8316,
+        36.5773,
+        -105.7204,
+        10.6155,
+        -9.4249,
+        51.413
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -28.473,
+        35.8002,
+        37.0684,
+        -104.9366,
+        11.4992,
+        -8.3319,
+        50.2466
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -27.6249,
+        35.7139,
+        37.6129,
+        -104.0351,
+        12.4131,
+        -7.1692,
+        49.0775
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -26.8459,
+        35.6123,
+        38.1277,
+        -103.1272,
+        13.2011,
+        -6.0612,
+        47.9112
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -26.0732,
+        35.4627,
+        38.6261,
+        -102.1184,
+        14.0426,
+        -4.9508,
+        46.7204
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -25.3638,
+        35.2641,
+        39.0992,
+        -101.0934,
+        14.7943,
+        -3.8697,
+        45.6008
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -24.7041,
+        35.0332,
+        39.6037,
+        -99.9743,
+        15.5481,
+        -2.7624,
+        44.4829
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -24.1024,
+        34.7838,
+        40.1081,
+        -98.8185,
+        16.2212,
+        -1.6536,
+        43.3513
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -23.504,
+        34.473,
+        40.594,
+        -97.5589,
+        16.9145,
+        -0.5405,
+        42.206
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -22.9942,
+        34.1335,
+        41.0947,
+        -96.2149,
+        17.5086,
+        0.5683,
+        41.0114
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -22.4951,
+        33.7699,
+        41.5289,
+        -94.9507,
+        18.1247,
+        1.5979,
+        39.9394
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_DESCEND",
+      "q_sdk_deg": [
+        -22.0337,
+        33.3243,
+        41.9806,
+        -93.4581,
+        18.7215,
+        2.699,
+        38.749
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -22.0337,
+        33.3243,
+        41.9806,
+        -93.4581,
+        18.7215,
+        2.699,
+        38.749
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -23.3086,
+        32.3249,
+        42.1894,
+        -91.1743,
+        18.6628,
+        2.5057,
+        37.7887
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -24.5198,
+        31.2229,
+        42.3186,
+        -88.712,
+        18.7399,
+        2.3323,
+        36.7552
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -25.7877,
+        30.0837,
+        42.5463,
+        -86.0319,
+        18.8197,
+        2.3091,
+        35.5745
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -27.0032,
+        29.0228,
+        42.7275,
+        -83.5372,
+        18.8745,
+        2.2328,
+        34.4871
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -28.2588,
+        27.9171,
+        42.9058,
+        -80.9081,
+        18.9595,
+        2.1902,
+        33.3366
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -29.5329,
+        26.7696,
+        43.0155,
+        -78.2533,
+        19.0718,
+        2.1046,
+        32.2355
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -30.797,
+        25.5879,
+        43.1089,
+        -75.4568,
+        19.2058,
+        2.0732,
+        30.9662
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -32.1362,
+        24.3824,
+        43.3002,
+        -72.4919,
+        19.3426,
+        2.1709,
+        29.7266
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -33.4917,
+        23.2007,
+        43.5095,
+        -69.4848,
+        19.3778,
+        2.2779,
+        28.3202
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -34.849,
+        21.9631,
+        43.6757,
+        -66.4026,
+        19.4864,
+        2.4103,
+        26.9342
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -36.3081,
+        20.6795,
+        43.8277,
+        -63.1288,
+        19.5622,
+        2.5413,
+        25.4768
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -37.8965,
+        19.2456,
+        44.019,
+        -59.4906,
+        19.6595,
+        2.8178,
+        23.9743
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_APPROACH",
+      "q_sdk_deg": [
+        -39.3583,
+        17.9407,
+        44.2089,
+        -56.1153,
+        19.7296,
+        3.0806,
+        22.5397
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE",
+      "gripper": "open"
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -39.3583,
+        17.9407,
+        44.2089,
+        -56.1153,
+        19.7296,
+        3.0806,
+        22.5397
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -37.8965,
+        19.2456,
+        44.019,
+        -59.4906,
+        19.6595,
+        2.8178,
+        23.9743
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -36.3081,
+        20.6795,
+        43.8277,
+        -63.1288,
+        19.5622,
+        2.5413,
+        25.4768
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -34.849,
+        21.9631,
+        43.6757,
+        -66.4026,
+        19.4864,
+        2.4103,
+        26.9342
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -33.4917,
+        23.2007,
+        43.5095,
+        -69.4848,
+        19.3778,
+        2.2779,
+        28.3202
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -32.1362,
+        24.3824,
+        43.3002,
+        -72.4919,
+        19.3426,
+        2.1709,
+        29.7266
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -30.797,
+        25.5879,
+        43.1089,
+        -75.4568,
+        19.2058,
+        2.0732,
+        30.9662
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -29.5329,
+        26.7696,
+        43.0155,
+        -78.2533,
+        19.0718,
+        2.1046,
+        32.2355
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -28.2588,
+        27.9171,
+        42.9058,
+        -80.9081,
+        18.9595,
+        2.1902,
+        33.3366
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -27.0032,
+        29.0228,
+        42.7275,
+        -83.5372,
+        18.8745,
+        2.2328,
+        34.4871
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -25.7877,
+        30.0837,
+        42.5463,
+        -86.0319,
+        18.8197,
+        2.3091,
+        35.5745
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -24.5198,
+        31.2229,
+        42.3186,
+        -88.712,
+        18.7399,
+        2.3323,
+        36.7552
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -23.3086,
+        32.3249,
+        42.1894,
+        -91.1743,
+        18.6628,
+        2.5057,
+        37.7887
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_RETREAT",
+      "q_sdk_deg": [
+        -22.0337,
+        33.3243,
+        41.9806,
+        -93.4581,
+        18.7215,
+        2.699,
+        38.749
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -22.0337,
+        33.3243,
+        41.9806,
+        -93.4581,
+        18.7215,
+        2.699,
+        38.749
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -22.4951,
+        33.7699,
+        41.5289,
+        -94.9507,
+        18.1247,
+        1.5979,
+        39.9394
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -22.9942,
+        34.1335,
+        41.0947,
+        -96.2149,
+        17.5086,
+        0.5683,
+        41.0114
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -23.504,
+        34.473,
+        40.594,
+        -97.5589,
+        16.9145,
+        -0.5405,
+        42.206
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -24.1024,
+        34.7838,
+        40.1081,
+        -98.8185,
+        16.2212,
+        -1.6536,
+        43.3513
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -24.7041,
+        35.0332,
+        39.6037,
+        -99.9743,
+        15.5481,
+        -2.7624,
+        44.4829
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -25.3638,
+        35.2641,
+        39.0992,
+        -101.0934,
+        14.7943,
+        -3.8697,
+        45.6008
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -26.0732,
+        35.4627,
+        38.6261,
+        -102.1184,
+        14.0426,
+        -4.9508,
+        46.7204
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -26.8459,
+        35.6123,
+        38.1277,
+        -103.1272,
+        13.2011,
+        -6.0612,
+        47.9112
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -27.6249,
+        35.7139,
+        37.6129,
+        -104.0351,
+        12.4131,
+        -7.1692,
+        49.0775
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -28.473,
+        35.8002,
+        37.0684,
+        -104.9366,
+        11.4992,
+        -8.3319,
+        50.2466
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -29.3645,
+        35.8316,
+        36.5773,
+        -105.7204,
+        10.6155,
+        -9.4249,
+        51.413
+      ]
+    },
+    {
+      "seg": "BOTTLE_PLACE_LIFT",
+      "q_sdk_deg": [
+        -30.363,
+        35.7434,
+        36.0625,
+        -106.3993,
+        9.6955,
+        -10.5809,
+        52.6284
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -30.363,
+        35.7434,
+        36.0625,
+        -106.3993,
+        9.6955,
+        -10.5809,
+        52.6284
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -31.8411,
+        35.9908,
+        37.6316,
+        -106.0428,
+        7.8065,
+        -10.9933,
+        52.9166
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -33.3192,
+        36.2382,
+        39.2006,
+        -105.6863,
+        5.9175,
+        -11.4057,
+        53.2047
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -34.7973,
+        36.4856,
+        40.7697,
+        -105.3298,
+        4.0284,
+        -11.8181,
+        53.4929
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -36.2754,
+        36.733,
+        42.3387,
+        -104.9734,
+        2.1394,
+        -12.2305,
+        53.7811
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -37.7535,
+        36.9804,
+        43.9078,
+        -104.6169,
+        0.2504,
+        -12.6429,
+        54.0693
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -39.2316,
+        37.2277,
+        45.4769,
+        -104.2604,
+        -1.6387,
+        -13.0553,
+        54.3575
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -40.7097,
+        37.4751,
+        47.0459,
+        -103.9039,
+        -3.5277,
+        -13.4677,
+        54.6457
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -42.1878,
+        37.7225,
+        48.615,
+        -103.5474,
+        -5.4167,
+        -13.8801,
+        54.9339
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -43.6659,
+        37.9699,
+        50.184,
+        -103.191,
+        -7.3058,
+        -14.2925,
+        55.2221
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -45.144,
+        38.2173,
+        51.7531,
+        -102.8345,
+        -9.1948,
+        -14.705,
+        55.5103
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -46.6221,
+        38.4647,
+        53.3221,
+        -102.478,
+        -11.0838,
+        -15.1174,
+        55.7985
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -48.1002,
+        38.712,
+        54.8912,
+        -102.1215,
+        -12.9728,
+        -15.5298,
+        56.0867
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -49.5783,
+        38.9594,
+        56.4602,
+        -101.7651,
+        -14.8619,
+        -15.9422,
+        56.3748
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -51.0564,
+        39.2068,
+        58.0293,
+        -101.4086,
+        -16.7509,
+        -16.3546,
+        56.663
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -52.5345,
+        39.4542,
+        59.5984,
+        -101.0521,
+        -18.6399,
+        -16.767,
+        56.9512
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -54.0126,
+        39.7016,
+        61.1674,
+        -100.6956,
+        -20.529,
+        -17.1794,
+        57.2394
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -55.4907,
+        39.949,
+        62.7365,
+        -100.3391,
+        -22.418,
+        -17.5918,
+        57.5276
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -56.9688,
+        40.1963,
+        64.3055,
+        -99.9827,
+        -24.307,
+        -18.0042,
+        57.8158
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -58.447,
+        40.4437,
+        65.8746,
+        -99.6262,
+        -26.196,
+        -18.4166,
+        58.104
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -59.9251,
+        40.6911,
+        67.4436,
+        -99.2697,
+        -28.0851,
+        -18.829,
+        58.3922
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -61.4032,
+        40.9385,
+        69.0127,
+        -98.9132,
+        -29.9741,
+        -19.2414,
+        58.6804
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -62.8813,
+        41.1859,
+        70.5817,
+        -98.5568,
+        -31.8631,
+        -19.6538,
+        58.9686
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -64.3594,
+        41.4333,
+        72.1508,
+        -98.2003,
+        -33.7522,
+        -20.0662,
+        59.2568
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -65.8375,
+        41.6807,
+        73.7199,
+        -97.8438,
+        -35.6412,
+        -20.4786,
+        59.5449
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -67.3156,
+        41.928,
+        75.2889,
+        -97.4873,
+        -37.5302,
+        -20.891,
+        59.8331
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -68.7937,
+        42.1754,
+        76.858,
+        -97.1308,
+        -39.4192,
+        -21.3034,
+        60.1213
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -70.2718,
+        42.4228,
+        78.427,
+        -96.7744,
+        -41.3083,
+        -21.7158,
+        60.4095
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -71.7499,
+        42.6702,
+        79.9961,
+        -96.4179,
+        -43.1973,
+        -22.1282,
+        60.6977
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -73.228,
+        42.9176,
+        81.5651,
+        -96.0614,
+        -45.0863,
+        -22.5406,
+        60.9859
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -74.7061,
+        43.165,
+        83.1342,
+        -95.7049,
+        -46.9754,
+        -22.953,
+        61.2741
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -76.1842,
+        43.4123,
+        84.7032,
+        -95.3484,
+        -48.8644,
+        -23.3654,
+        61.5623
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -77.6623,
+        43.6597,
+        86.2723,
+        -94.992,
+        -50.7534,
+        -23.7778,
+        61.8505
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -79.1404,
+        43.9071,
+        87.8414,
+        -94.6355,
+        -52.6424,
+        -24.1902,
+        62.1387
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -80.6185,
+        44.1545,
+        89.4104,
+        -94.279,
+        -54.5315,
+        -24.6026,
+        62.4269
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -82.0966,
+        44.4019,
+        90.9795,
+        -93.9225,
+        -56.4205,
+        -25.015,
+        62.7151
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -83.5747,
+        44.6493,
+        92.5485,
+        -93.5661,
+        -58.3095,
+        -25.4274,
+        63.0032
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -85.0528,
+        44.8966,
+        94.1176,
+        -93.2096,
+        -60.1986,
+        -25.8398,
+        63.2914
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -86.5309,
+        45.144,
+        95.6866,
+        -92.8531,
+        -62.0876,
+        -26.2523,
+        63.5796
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -88.009,
+        45.3914,
+        97.2557,
+        -92.4966,
+        -63.9766,
+        -26.6647,
+        63.8678
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -89.4871,
+        45.6388,
+        98.8247,
+        -92.1401,
+        -65.8657,
+        -27.0771,
+        64.156
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -90.9653,
+        45.8862,
+        100.3938,
+        -91.7837,
+        -67.7547,
+        -27.4895,
+        64.4442
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -92.4434,
+        46.1336,
+        101.9628,
+        -91.4272,
+        -69.6437,
+        -27.9019,
+        64.7324
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -93.9215,
+        46.3809,
+        103.5319,
+        -91.0707,
+        -71.5327,
+        -28.3143,
+        65.0206
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -95.3996,
+        46.6283,
+        105.101,
+        -90.7142,
+        -73.4218,
+        -28.7267,
+        65.3088
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -96.8777,
+        46.8757,
+        106.67,
+        -90.3577,
+        -75.3108,
+        -29.1391,
+        65.597
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -98.3558,
+        47.1231,
+        108.2391,
+        -90.0013,
+        -77.1998,
+        -29.5515,
+        65.8852
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -99.8339,
+        47.3705,
+        109.8081,
+        -89.6448,
+        -79.0889,
+        -29.9639,
+        66.1733
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -101.312,
+        47.6179,
+        111.3772,
+        -89.2883,
+        -80.9779,
+        -30.3763,
+        66.4615
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -102.7901,
+        47.8652,
+        112.9462,
+        -88.9318,
+        -82.8669,
+        -30.7887,
+        66.7497
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -104.2682,
+        48.1126,
+        114.5153,
+        -88.5754,
+        -84.7559,
+        -31.2011,
+        67.0379
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -105.7463,
+        48.36,
+        116.0843,
+        -88.2189,
+        -86.645,
+        -31.6135,
+        67.3261
+      ]
+    },
+    {
+      "seg": "BOTTLE_HIGH->READY",
+      "q_sdk_deg": [
+        -107.2244,
+        48.6074,
+        117.6534,
+        -87.8624,
+        -88.534,
+        -32.0259,
+        67.6143
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -103.0464,
+        48.1882,
+        112.6259,
+        -86.846,
+        -86.1155,
+        -31.1709,
+        65.0185
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -98.8684,
+        47.7689,
+        107.5984,
+        -85.8296,
+        -83.6971,
+        -30.3159,
+        62.4228
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -94.6904,
+        47.3497,
+        102.571,
+        -84.8132,
+        -81.2786,
+        -29.461,
+        59.8271
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -90.5124,
+        46.9305,
+        97.5435,
+        -83.7967,
+        -78.8601,
+        -28.606,
+        57.2314
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -86.3343,
+        46.5113,
+        92.5161,
+        -82.7803,
+        -76.4417,
+        -27.751,
+        54.6357
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -82.1563,
+        46.092,
+        87.4886,
+        -81.7639,
+        -74.0232,
+        -26.896,
+        52.04
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -77.9783,
+        45.6728,
+        82.4612,
+        -80.7475,
+        -71.6048,
+        -26.041,
+        49.4443
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -73.8003,
+        45.2536,
+        77.4337,
+        -79.731,
+        -69.1863,
+        -25.186,
+        46.8486
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -69.6223,
+        44.8344,
+        72.4062,
+        -78.7146,
+        -66.7679,
+        -24.331,
+        44.2529
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -65.4443,
+        44.4151,
+        67.3788,
+        -77.6982,
+        -64.3494,
+        -23.476,
+        41.6572
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -61.2663,
+        43.9959,
+        62.3513,
+        -76.6818,
+        -61.9309,
+        -22.621,
+        39.0615
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -57.0883,
+        43.5767,
+        57.3239,
+        -75.6654,
+        -59.5125,
+        -21.7661,
+        36.4657
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -52.9103,
+        43.1575,
+        52.2964,
+        -74.6489,
+        -57.094,
+        -20.9111,
+        33.87
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -48.7323,
+        42.7382,
+        47.269,
+        -73.6325,
+        -54.6756,
+        -20.0561,
+        31.2743
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -44.5543,
+        42.319,
+        42.2415,
+        -72.6161,
+        -52.2571,
+        -19.2011,
+        28.6786
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -40.3763,
+        41.8998,
+        37.214,
+        -71.5997,
+        -49.8387,
+        -18.3461,
+        26.0829
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -36.1983,
+        41.4806,
+        32.1866,
+        -70.5832,
+        -47.4202,
+        -17.4911,
+        23.4872
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -32.0203,
+        41.0613,
+        27.1591,
+        -69.5668,
+        -45.0018,
+        -16.6361,
+        20.8915
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -27.8423,
+        40.6421,
+        22.1317,
+        -68.5504,
+        -42.5833,
+        -15.7811,
+        18.2958
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -23.6643,
+        40.2229,
+        17.1042,
+        -67.534,
+        -40.1648,
+        -14.9261,
+        15.7001
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -19.4863,
+        39.8036,
+        12.0768,
+        -66.5175,
+        -37.7464,
+        -14.0712,
+        13.1044
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -15.3083,
+        39.3844,
+        7.0493,
+        -65.5011,
+        -35.3279,
+        -13.2162,
+        10.5087
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -11.1303,
+        38.9652,
+        2.0218,
+        -64.4847,
+        -32.9095,
+        -12.3612,
+        7.9129
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -6.9523,
+        38.546,
+        -3.0056,
+        -63.4683,
+        -30.491,
+        -11.5062,
+        5.3172
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        -2.6075,
+        37.7321,
+        -8.0333,
+        -62.0437,
+        -28.8146,
+        -10.7255,
+        3.1309
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        1.7372,
+        36.9182,
+        -13.061,
+        -60.6192,
+        -27.1382,
+        -9.9449,
+        0.9446
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        6.7601,
+        33.6892,
+        -17.5779,
+        -56.0959,
+        -25.7376,
+        -9.1301,
+        -0.3476
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.1473,
+        29.6228,
+        -19.5541,
+        -50.6709,
+        -25.237,
+        -8.6531,
+        -0.199
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.5345,
+        25.5563,
+        -21.5303,
+        -45.2458,
+        -24.7364,
+        -8.1761,
+        -0.0504
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.7283,
+        21.8622,
+        -19.1333,
+        -39.8503,
+        -23.5293,
+        -7.6534,
+        1.1289
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        13.0185,
+        18.9682,
+        -15.1862,
+        -34.3943,
+        -19.4004,
+        -6.2842,
+        1.3278
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        12.1804,
+        16.5495,
+        -11.2159,
+        -29.3737,
+        -14.7425,
+        -4.7717,
+        1.1819
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        11.3423,
+        14.1308,
+        -7.2456,
+        -24.3531,
+        -10.0846,
+        -3.2593,
+        1.036
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.5042,
+        11.7122,
+        -3.2752,
+        -19.3324,
+        -5.4266,
+        -1.7468,
+        0.8901
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        9.9952,
+        10.0288,
+        -0.1248,
+        -15.1896,
+        -0.4104,
+        -0.1307,
+        0.1329
+      ]
+    },
+    {
+      "seg": "READY->HOME",
+      "q_sdk_deg": [
+        10.0,
+        10.0,
+        0.0,
+        -15.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": "bottle_relative_pick_place.v2",
+  "status": "CANDIDATE_INPUT_ZPLUS150",
+  "comment": "基于 20260827 near-vertical 抓取任务，仅将抓取/放置目标整体沿 SDK 世界 Z +150mm；X/Y、place_offset=100mm、orientation policy、motion 参数和 verified parent 保持不变。生成时需从原 near-vertical anchor 重新求解平移后的 bounded full-pose IK。",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "controller_limit_profile": "left_preview102_20260827",
+  "pick": {
+    "sdk_world_xyz_mm": [
+      769.624,
+      119.413,
+      432.648
+    ],
+    "preferred_sdk_world_uvw_deg": [
+      -87.078,
+      18.34,
+      -0.893
+    ],
+    "position_anchor_q_sdk_deg": [
+      -38.689,
+      -7.854,
+      21.776,
+      -49.103,
+      -5.466,
+      19.822,
+      17.076
+    ]
+  },
+  "orientation_policy": {
+    "mode": "NEAR_VERTICAL_FROM_VERIFIED_TRACK_C",
+    "target_tool_axis_sdk": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "maximum_tool_tilt_from_down_deg": 10.0,
+    "minimum_pick_raw_limit_margin_deg": 8.0,
+    "maximum_anchor_position_error_mm": 0.15,
+    "orientation_anchor_q_sdk_deg": [
+      -78.16048349301992,
+      0.3080271352855098,
+      96.86236652688042,
+      -24.890365145183154,
+      -74.26762979008393,
+      -31.999255848652584,
+      62.05739759754833
+    ],
+    "selection": "MINIMIZE_TILT_TO_TRACK_C_DOWN_AXIS_WITH_8DEG_PICK_MARGIN",
+    "derivation": {
+      "reference": "两次 close 的工具轴取自 traj_multi_2grasp_20260804_REALVERIFIED.json",
+      "reference_close_axis_tolerance_deg": 1.0,
+      "solver": "offline bounded position-plus-tool-axis constrained search",
+      "strict_vertical_result": "NO_IK_WITH_5DEG_SAFETY_MARGIN",
+      "selected_tool_tilt_deg": 9.848968197,
+      "selected_position_error_mm": 0.001114986,
+      "selected_pick_raw_limit_margin_deg": 8.000744151
+    }
+  },
+  "place_offset_sdk_mm": [
+    0.0,
+    100.0,
+    0.0
+  ],
+  "scene": {
+    "physical_table_height_m": 0.72,
+    "table_top_pb_m": 1.025,
+    "table_xy_padding_m": 0.15,
+    "table_thickness_m": 0.05,
+    "bottle_radius_m": 0.035,
+    "bottle_height_m": 0.22,
+    "bottle_dimensions_status": "ASSUMED_CONSERVATIVE_REPLACE_WITH_MEASUREMENT",
+    "bottle_base_on_table": true
+  },
+  "motion": {
+    "tool_axis_retreat_mm": 120.0,
+    "vertical_lift_mm": 20.0,
+    "cartesian_sample_mm": 10.0,
+    "maximum_anchor_joint_step_deg": 8.0
+  },
+  "gui_review": {
+    "required": true,
+    "dense_step_deg": 0.4,
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  "verified_parent": {
+    "path": "pick_place_coord/trajectories/verified/traj_multi_2grasp_20260804_REALVERIFIED.json",
+    "sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "reuse": [
+      "HOME",
+      "HOME->READY",
+      "READY->HOME",
+      "two verified downward close axes",
+      "Pulse Servo 0.4deg/20ms"
+    ],
+    "role": "REAL_VERIFIED_PATH_AND_VERTICAL_GRASP_ORIENTATION_PARENT"
+  },
+  "grip_target_world_offset_mm": [
+    0.0,
+    0.0,
+    150.0
+  ]
+}

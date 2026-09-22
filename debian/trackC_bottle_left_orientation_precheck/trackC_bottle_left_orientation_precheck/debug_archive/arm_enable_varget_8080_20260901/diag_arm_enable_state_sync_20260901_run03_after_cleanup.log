@@ -1,0 +1,74 @@
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.147
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8397
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8397
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+ip192.168.8.147:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+========================================================================
+armInitData + Enable 状态同步诊断
+时间: 16:32:27.257
+========================================================================
+[16:32:27.257] sdk.start()
+[16:32:27.258] sdk.start -> True
+[16:32:28.259] soft_stop -> (0, 'CLOSE')
+
+[16:32:28.259] >>> armInitData
+[16:32:28.862] <<< armInitData: code=0, 耗时=0.604s
+[16:32:28.863] link(before enable)   -> (0, True)
+[16:32:28.863] enable(before enable) -> (0, True)
+[16:32:28.863] servo(before enable)  -> (0, True)
+
+[16:32:28.863] >>> armRobotEnableOrNot(True) 只发送一次
+[16:32:28.863] <<< enable command return: 0
+
+开始轮询状态
+------------------------------------------------------------------------
+[16:32:28.863] t=+ 0.00s  #00  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:29.363] t=+ 0.50s  #01  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:29.864] t=+ 1.00s  #02  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:30.365] t=+ 1.50s  #03  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:30.866] t=+ 2.00s  #04  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:31.367] t=+ 2.50s  #05  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:31.867] t=+ 3.00s  #06  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:32.368] t=+ 3.51s  #07  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:32.869] t=+ 4.01s  #08  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:33.370] t=+ 4.51s  #09  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:33.871] t=+ 5.01s  #10  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:34.371] t=+ 5.51s  #11  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:34.872] t=+ 6.01s  #12  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:35.373] t=+ 6.51s  #13  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:35.874] t=+ 7.01s  #14  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:36.374] t=+ 7.51s  #15  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:36.875] t=+ 8.01s  #16  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:37.376] t=+ 8.51s  #17  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:37.877] t=+ 9.01s  #18  link=(0, True)  enable=(0, True)  servo=(0, True)
+[16:32:38.378] t=+ 9.51s  #19  link=(0, True)  enable=(0, True)  servo=(0, True)
+------------------------------------------------------------------------
+[16:32:38.878] 诊断结束
+[16:32:38.879] sdk.stop()

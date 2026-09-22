@@ -1,0 +1,67 @@
+{
+  "schema_version": "trajectory_qualification.v1",
+  "qualification": "CANDIDATE",
+  "verdict": "PASS",
+  "trajectory_sha256": "f7473ba7350401d956c5755877b0ac16c33eaf0f3531d3a1c64d2db63e9e1b2e",
+  "trajectory_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/traj_bottle_left_orientation_optimized_20260827_CANDIDATE.json",
+  "task_sha256": "fc2ebceb559de21da01812c9b3399b7bc27aeb36faa0d3a33346e46e1939af41",
+  "trajectory_schema": "legacy_trajectory.v1",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "limits_source": "controller_limit_profiles.left_preview102_20260827.planning_limits_deg",
+  "gui_review": {
+    "required": true,
+    "record": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/bottle_left_orientation_optimized_gui_review.json",
+    "record_sha256": "093c8ef437cca88999131b84b5cc0037ba22dc6f0c91f12db47e734140e99977",
+    "trajectory_hash_match": true,
+    "result": "PASS"
+  },
+  "dense_frames": 2050,
+  "first_point_frames": 1,
+  "path_length_rad": 19.806680536323576,
+  "gates": {
+    "arm_gripper_contract": "PASS",
+    "limits": "PASS",
+    "collision": "PASS",
+    "pybullet_gui_review": "PASS"
+  },
+  "limit_report": {
+    "minimum_margin_deg": 5.0,
+    "minimum_at": "trajectory[400]",
+    "minimum_joint": 7,
+    "required_margin_deg": 5.0,
+    "violations": []
+  },
+  "collision_report": {
+    "checked_first_point_frames": 1,
+    "checked_trajectory_frames": 2050,
+    "minimum_clearance_m": 3.8135708935356505e-07,
+    "gripper_proxy_m": [
+      0.1,
+      0.16,
+      0.08
+    ],
+    "gripper_proxy_center_link_mm": [
+      0,
+      75,
+      0
+    ],
+    "carried_object_dimensions_m": [
+      [
+        0.07,
+        0.07,
+        0.22
+      ]
+    ],
+    "carried_center_offsets_grip_m": [
+      [
+        0.0,
+        0.0,
+        -0.029211534245258797
+      ]
+    ],
+    "violations": []
+  },
+  "hardware_ready": true
+}
