@@ -1,0 +1,173 @@
+{
+  "node": "D1",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "original_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "bytes": 4595,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "original_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "bytes": 3358,
+      "group": "D1",
+      "kind": "config",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "original_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "bytes": 67881,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "original_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "bytes": 41361,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "original_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "bytes": 18749,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "original_sha256": "40f6fd47354d163f3eb28bb08f192de9ceaabf184cbfb90026f2d7ba16fbfd01",
+      "sha256": "40f6fd47354d163f3eb28bb08f192de9ceaabf184cbfb90026f2d7ba16fbfd01",
+      "bytes": 10098,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "original_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "bytes": 17270,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+      "original_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "bytes": 6633,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+      "original_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "bytes": 2465,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+      "original_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "bytes": 34898,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/servo_common.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+      "original_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "bytes": 15311,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "original_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "bytes": 12086,
+      "group": "D1",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "original_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+      "sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+      "bytes": 663423,
+      "group": "D1",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "original_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+      "sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+      "bytes": 1178,
+      "group": "D1",
+      "kind": "config",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "original_sha256": "c98f827b75574c09b9ed0f817641c4972a730ce8a6765b24cccc6d49bcd4d6be",
+      "sha256": "c98f827b75574c09b9ed0f817641c4972a730ce8a6765b24cccc6d49bcd4d6be",
+      "bytes": 23137,
+      "group": "D1",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
