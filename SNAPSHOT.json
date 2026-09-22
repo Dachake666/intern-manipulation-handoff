@@ -1,0 +1,96 @@
+{
+  "node": "H_MAC_FROZEN",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "src/frame_calibration/records/20260709_final_acceptance_99pts/execute_trajectory_REAL_TRUE_left_gripper2.py",
+      "origin": "mac:frame_calibration/records/20260709_final_acceptance_99pts/execute_trajectory_REAL_TRUE_left_gripper2.py",
+      "original_sha256": "2fd61b809330a6c7531a8a63bde848a97f6cdc49cf7f354788e5b94eba83d227",
+      "sha256": "2fd61b809330a6c7531a8a63bde848a97f6cdc49cf7f354788e5b94eba83d227",
+      "bytes": 12428,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260709_final_acceptance_99pts/sdk_session_final_acceptance.py",
+      "origin": "mac:frame_calibration/records/20260709_final_acceptance_99pts/sdk_session_final_acceptance.py",
+      "original_sha256": "1cdf9e62a81b58d57d7ce5d2794192e3cda254a34780acfd935a54c415d513cc",
+      "sha256": "1cdf9e62a81b58d57d7ce5d2794192e3cda254a34780acfd935a54c415d513cc",
+      "bytes": 7559,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py",
+      "origin": "mac:frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py",
+      "original_sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "bytes": 23112,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py",
+      "origin": "mac:frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py",
+      "original_sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "bytes": 8449,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/execute_trajectory.py",
+      "origin": "mac:frame_calibration/records/20260720_pre_gripper_modification_baseline/code/execute_trajectory.py",
+      "original_sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "bytes": 23112,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/sdk_session.py",
+      "origin": "mac:frame_calibration/records/20260720_pre_gripper_modification_baseline/code/sdk_session.py",
+      "original_sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "bytes": 8449,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260903_tabletop_worlds_working/artifacts/execute_tabletop_pick_place_worlds.py",
+      "origin": "mac:frame_calibration/records/20260903_tabletop_worlds_working/artifacts/execute_tabletop_pick_place_worlds.py",
+      "original_sha256": "807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644",
+      "sha256": "807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644",
+      "bytes": 28100,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py",
+      "origin": "mac:frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py",
+      "original_sha256": "de5ccc1252a03248cc9a5315a2b2fc180953bd70217176116bf294ca653684c5",
+      "sha256": "de5ccc1252a03248cc9a5315a2b2fc180953bd70217176116bf294ca653684c5",
+      "bytes": 32607,
+      "group": "H_MAC_FROZEN",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
