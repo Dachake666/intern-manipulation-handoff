@@ -1,0 +1,118 @@
+{
+  "node": "B3",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/README.md",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/README.md",
+      "original_sha256": "0c011b28d81171d17169ccc8fb661ef039211732956a7953aed5a1a7729c7d88",
+      "sha256": "0c011b28d81171d17169ccc8fb661ef039211732956a7953aed5a1a7729c7d88",
+      "bytes": 3001,
+      "group": "B3",
+      "kind": "summary",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "original_sha256": "fe376432bf0f33dc62367d2afbcfbdbbb82fdb7a0fb29e9cda842bc96907ff95",
+      "sha256": "fe376432bf0f33dc62367d2afbcfbdbbb82fdb7a0fb29e9cda842bc96907ff95",
+      "bytes": 1102,
+      "group": "B3",
+      "kind": "config",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py",
+      "original_sha256": "808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1",
+      "sha256": "808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1",
+      "bytes": 22990,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/robot_lock.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/robot_lock.py",
+      "original_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "bytes": 3975,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/scrub_log.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/scrub_log.py",
+      "original_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "bytes": 2465,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/sdk_session.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/sdk_session.py",
+      "original_sha256": "2fe4426a2e7fd6f7e9ab887688d64fb502cbdcf87dcfe3a711b56f6782d3aef1",
+      "sha256": "2fe4426a2e7fd6f7e9ab887688d64fb502cbdcf87dcfe3a711b56f6782d3aef1",
+      "bytes": 32184,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/servo_common.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/servo_common.py",
+      "original_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "bytes": 12993,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/test_servo_safety.py",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/test_servo_safety.py",
+      "original_sha256": "9d0c13790b0be0da142e5e3a2daeb6e432ba125276dd89e987066115a9ab78ae",
+      "sha256": "9d0c13790b0be0da142e5e3a2daeb6e432ba125276dd89e987066115a9ab78ae",
+      "bytes": 13066,
+      "group": "B3",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/traj_minimal_joint.json",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/traj_minimal_joint.json",
+      "original_sha256": "702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4",
+      "sha256": "702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4",
+      "bytes": 1861,
+      "group": "B3",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackC_servo_stream/trackC_servo_stream/traj_multi_latest.json",
+      "origin": "workspace.zip:workspace/trackC_servo_stream/trackC_servo_stream/traj_multi_latest.json",
+      "original_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+      "sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+      "bytes": 22422,
+      "group": "B3",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
