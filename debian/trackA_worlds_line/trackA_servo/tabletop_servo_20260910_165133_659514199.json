@@ -1,0 +1,869 @@
+{
+  "schema_version": "tabletop_servo_run.v1",
+  "created_at": "2026-09-10T08:51:33.658419+00:00",
+  "trajectory_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+  "executor_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+  "source_plan_sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59",
+  "dependencies": {
+    "tabletop_servo_contract.py": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+    "servo_common.py": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+    "sdk_session.py": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+    "execute_tabletop_hybrid_trial_reviewfix_field.py": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+    "precheck_tabletop_hybrid.py": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+    "execute_tabletop_pick_place_worlds.py": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+    "robot_lock.py": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+    "scrub_log.py": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+    "arm_profiles.py": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+    "arm_profiles.v1.json": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+  },
+  "metrics": {
+    "motion_frame_count": 2484,
+    "stream_duration_s": 49.68,
+    "max_step_deg": 0.09999999999999432,
+    "max_velocity_deg_s": 4.999999999999716,
+    "max_acceleration_deg_s2": 379.6718289085632,
+    "joint_used_ranges_deg": [
+      [
+        -33.131,
+        13.604
+      ],
+      [
+        2.908,
+        29.247
+      ],
+      [
+        -0.514,
+        21.471
+      ],
+      [
+        -107.683,
+        -72.66799926757812
+      ],
+      [
+        -25.340999603271484,
+        -12.458
+      ],
+      [
+        -13.946,
+        8.78
+      ],
+      [
+        9.605405807495117,
+        42.691
+      ]
+    ],
+    "minimum_margin_per_joint_deg": [
+      132.869,
+      12.908,
+      144.529,
+      20.316999999999993,
+      140.65900039672852,
+      26.054000000000002,
+      33.309
+    ],
+    "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+  },
+  "status": "SERVO_COMPLETED_RETURNED_HOME",
+  "motion_commands_sent": 660,
+  "robot_ip": "192.168.8.148",
+  "local_ip": "192.168.8.244",
+  "arm_ip": "192.168.8.148",
+  "arm_port": 8080,
+  "speed_percent": 5.0,
+  "arm_id": 1,
+  "gripper_id": 2,
+  "reviews": {
+    "mode": "OPERATOR_SUPERVISED_FIELD_TRIAL",
+    "formal_servo_qualification_bypassed": true,
+    "scope": "FIELD_TRIAL_ONLY_NOT_FORMAL_QUALIFICATION_PASS",
+    "gui_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+    "field_wrapper_sha256": "6d19f0e3ebf791e0fc6ad7474082a7e57a79b1068c9c1db8272be7317e76920c"
+  },
+  "precheck": {
+    "status": "READONLY_PASS_HOME_ENTRY_REQUIRED",
+    "start": {
+      "worlds": [
+        693.5180053710938,
+        366.31500244140625,
+        441.00201416015625,
+        -72.76200103759766,
+        13.47700023651123,
+        -6.558000087738037
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246999740600586,
+        6.935905456542969,
+        -75.6050033569336,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.398042678833008
+      ]
+    },
+    "effective_limits_deg": [
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -10.0,
+        208.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -128.0,
+        103.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -40.0,
+        40.0
+      ],
+      [
+        -88.0,
+        76.0
+      ]
+    ],
+    "initial_gap_deg": 12.144999504089355,
+    "home_gap_deg": 0.16304267883300838,
+    "first_point_q_sdk_deg": [
+      -16.031999588012695,
+      23.22800064086914,
+      -0.35608211159706116,
+      -72.66799926757812,
+      -25.340999603271484,
+      -11.798999786376953,
+      9.605405807495117
+    ],
+    "motion_metrics": {
+      "motion_frame_count": 2484,
+      "stream_duration_s": 49.68,
+      "max_step_deg": 0.09999999999999432,
+      "max_velocity_deg_s": 4.999999999999716,
+      "max_acceleration_deg_s2": 379.6718289085632,
+      "joint_used_ranges_deg": [
+        [
+          -33.131,
+          13.604
+        ],
+        [
+          2.908,
+          29.247
+        ],
+        [
+          -0.514,
+          21.471
+        ],
+        [
+          -107.683,
+          -72.66799926757812
+        ],
+        [
+          -25.340999603271484,
+          -12.458
+        ],
+        [
+          -13.946,
+          8.78
+        ],
+        [
+          9.605405807495117,
+          42.691
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        132.869,
+        12.908,
+        144.529,
+        20.316999999999993,
+        140.65900039672852,
+        26.054000000000002,
+        33.309
+      ],
+      "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+    }
+  },
+  "enable": {
+    "started_at": "2026-09-10T08:51:38.791390+00:00",
+    "speed_before": 10.0,
+    "clear_alarm_code": 0,
+    "enable_code": 0,
+    "enable_readback": [
+      0,
+      true
+    ],
+    "servo_readback": [
+      0,
+      true
+    ],
+    "speed_set_code": 0,
+    "speed_readback": 5.0,
+    "arm_enable_readback": [
+      0,
+      true
+    ],
+    "protection_enabled": true,
+    "finished_at": "2026-09-10T08:51:39.816124+00:00"
+  },
+  "execution_precheck": {
+    "status": "READONLY_PASS_HOME_ENTRY_REQUIRED",
+    "start": {
+      "worlds": [
+        693.5180053710938,
+        366.3160095214844,
+        441.00299072265625,
+        -72.76200103759766,
+        13.47700023651123,
+        -6.558000087738037
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246999740600586,
+        6.935905456542969,
+        -75.6050033569336,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.398042678833008
+      ]
+    },
+    "effective_limits_deg": [
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -10.0,
+        208.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -128.0,
+        103.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -40.0,
+        40.0
+      ],
+      [
+        -88.0,
+        76.0
+      ]
+    ],
+    "initial_gap_deg": 12.144999504089355,
+    "home_gap_deg": 0.16304267883300838,
+    "first_point_q_sdk_deg": [
+      -16.031999588012695,
+      23.22800064086914,
+      -0.35608211159706116,
+      -72.66799926757812,
+      -25.340999603271484,
+      -11.798999786376953,
+      9.605405807495117
+    ],
+    "motion_metrics": {
+      "motion_frame_count": 2484,
+      "stream_duration_s": 49.68,
+      "max_step_deg": 0.09999999999999432,
+      "max_velocity_deg_s": 4.999999999999716,
+      "max_acceleration_deg_s2": 379.6718289085632,
+      "joint_used_ranges_deg": [
+        [
+          -33.131,
+          13.604
+        ],
+        [
+          2.908,
+          29.247
+        ],
+        [
+          -0.514,
+          21.471
+        ],
+        [
+          -107.683,
+          -72.66799926757812
+        ],
+        [
+          -25.340999603271484,
+          -12.458
+        ],
+        [
+          -13.946,
+          8.78
+        ],
+        [
+          9.605405807495117,
+          42.691
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        132.869,
+        12.908,
+        144.529,
+        20.316999999999993,
+        140.65900039672852,
+        26.054000000000002,
+        33.309
+      ],
+      "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+    }
+  },
+  "field_entry": {
+    "mode": "SERVO_BRIDGE_HOME_TO_RECORDED_SERVO_START",
+    "start": {
+      "worlds": [
+        693.5180053710938,
+        366.3160095214844,
+        441.00299072265625,
+        -72.76200103759766,
+        13.47700023651123,
+        -6.558000087738037
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246999740600586,
+        6.935905456542969,
+        -75.6050033569336,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.398042678833008
+      ]
+    },
+    "planned_target": [
+      -16.031999588012695,
+      23.22800064086914,
+      -0.35608211159706116,
+      -72.66799926757812,
+      -25.340999603271484,
+      -11.798999786376953,
+      9.605405807495117
+    ],
+    "limit_precheck_frames": 25,
+    "arrival": null,
+    "arrival_gap_deg": null,
+    "strict_precheck_after_entry": "NOT_APPLICABLE_UNIFIED_SERVO_STREAM",
+    "servo_bridge_intervals": 31,
+    "servo_bridge_generated_frames": 30,
+    "servo_bridge_period_s": 0.025,
+    "servo_bridge_max_step_deg": 0.39177417755126953,
+    "servo_bridge_extra_duration_s": 0.75,
+    "body_first_point_completes_bridge": true
+  },
+  "field_runtime_servo": {
+    "stride": 4,
+    "source_motion_frames": 2484,
+    "body_motion_frames": 630,
+    "entry_servo_frames": 30,
+    "runtime_motion_frames": 660,
+    "source_period_s": 0.02,
+    "period_s": 0.025,
+    "body_runtime_duration_s": 15.75,
+    "runtime_duration_s": 16.5,
+    "runtime_max_step_deg": 0.3954999999999984,
+    "runtime_max_velocity_deg_s": 15.819999999999936,
+    "runtime_max_acceleration_deg_s2": 490.694527363182,
+    "scope": "FIELD_TRIAL_RUNTIME_DOWNSAMPLE_OF_EXACT_A_DERIVED_PATH"
+  },
+  "events": [
+    {
+      "stage": "FIELD_HOME_TO_SERVO_START",
+      "first_frame": 0,
+      "time": "2026-09-10T08:51:40.904480+00:00"
+    },
+    {
+      "stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "first_frame": 30,
+      "time": "2026-09-10T08:51:41.636435+00:00"
+    },
+    {
+      "stage": "OPEN_BEFORE_PICK",
+      "action": "open",
+      "actual": {
+        "worlds": [
+          691.625,
+          366.7279968261719,
+          432.85101318359375,
+          -93.10700225830078,
+          8.972000122070312,
+          -5.248000144958496
+        ],
+        "joints": [
+          -16.031999588012695,
+          23.22800064086914,
+          -0.3540000021457672,
+          -72.66600036621094,
+          -25.336999893188477,
+          -11.798999786376953,
+          9.78600025177002
+        ]
+      },
+      "time": "2026-09-10T08:51:44.368783+00:00"
+    },
+    {
+      "stage": "PICK_HOVER",
+      "first_frame": 31,
+      "time": "2026-09-10T08:51:45.489704+00:00"
+    },
+    {
+      "stage": "PICK_DESCEND",
+      "first_frame": 143,
+      "time": "2026-09-10T08:51:48.446405+00:00"
+    },
+    {
+      "stage": "CLOSE_AT_PICK",
+      "action": "close",
+      "actual": {
+        "worlds": [
+          704.3980102539062,
+          248.23300170898438,
+          423.7720031738281,
+          -93.11299896240234,
+          8.880999565124512,
+          -5.249000072479248
+        ],
+        "joints": [
+          -17.538999557495117,
+          9.114999771118164,
+          8.84000015258789,
+          -75.70899963378906,
+          -14.310999870300293,
+          1.5329999923706055,
+          10.744000434875488
+        ]
+      },
+      "time": "2026-09-10T08:51:54.862269+00:00"
+    },
+    {
+      "stage": "PICK_ASCEND",
+      "first_frame": 257,
+      "time": "2026-09-10T08:51:55.894594+00:00"
+    },
+    {
+      "stage": "PLACE_HOVER",
+      "first_frame": 365,
+      "time": "2026-09-10T08:51:59.217097+00:00"
+    },
+    {
+      "stage": "PLACE_DESCEND",
+      "first_frame": 416,
+      "time": "2026-09-10T08:52:01.022554+00:00"
+    },
+    {
+      "stage": "OPEN_AT_PLACE",
+      "action": "open",
+      "actual": {
+        "worlds": [
+          700.3469848632812,
+          91.37799835205078,
+          457.31500244140625,
+          -93.11000061035156,
+          8.98799991607666,
+          -34.71799850463867
+        ],
+        "joints": [
+          -25.82200050354004,
+          3.7190001010894775,
+          21.47599983215332,
+          -74.49099731445312,
+          -17.51300048828125,
+          -13.946000099182129,
+          17.4689998626709
+        ]
+      },
+      "time": "2026-09-10T08:52:05.542249+00:00"
+    },
+    {
+      "stage": "PLACE_ASCEND",
+      "first_frame": 495,
+      "time": "2026-09-10T08:52:06.573969+00:00"
+    },
+    {
+      "stage": "RETURN_SAFE",
+      "first_frame": 574,
+      "time": "2026-09-10T08:52:08.578976+00:00"
+    }
+  ],
+  "servo_vector_prepare": {
+    "motion_vectors": 660,
+    "total_ms": 0.9954061824828386,
+    "mean_ms_per_vector": 0.0015081911855800586,
+    "mode": "PREBUILT_FLOATVECTOR_OUTSIDE_HOT_LOOP"
+  },
+  "protection_disabled_for_servo": true,
+  "final_snapshot": {
+    "worlds": [
+      693.6069946289062,
+      366.3320007324219,
+      441.0190124511719,
+      -72.76000213623047,
+      13.479999542236328,
+      -6.556000232696533
+    ],
+    "joints": [
+      -17.711000442504883,
+      29.24799919128418,
+      6.934999942779541,
+      -75.60399627685547,
+      -13.194999694824219,
+      -11.822999954223633,
+      12.399999618530273
+    ]
+  },
+  "timing": {
+    "send_slots": 660,
+    "period_s": 0.025,
+    "late_frames": 656,
+    "late_ratio": 0.9939393939393939,
+    "max_late_ms": 213.5548412334174,
+    "mean_late_ms": 2.2073872440647926,
+    "realigns": 15,
+    "catchup_bursts_allowed": false,
+    "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+  },
+  "sdk_latency_probe": {
+    "soft_stop_calls": 73,
+    "soft_stop_total_ms": 1.2780334800481796,
+    "soft_stop_max_ms": 0.027938978746533394,
+    "soft_stop_over_5ms": 0,
+    "soft_stop_over_20ms": 0,
+    "soft_stop_over_40ms": 0,
+    "pulse_calls": 660,
+    "pulse_total_ms": 5026.188365882263,
+    "pulse_max_ms": 238.49558015353978,
+    "pulse_over_5ms": 185,
+    "pulse_over_20ms": 28,
+    "pulse_over_40ms": 17,
+    "slow_events": [
+      {
+        "type": "pulse",
+        "frame": 346,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 238.49558015353978
+      },
+      {
+        "type": "pulse",
+        "frame": 79,
+        "stage": "PICK_HOVER",
+        "duration_ms": 170.5264940392226
+      },
+      {
+        "type": "pulse",
+        "frame": 379,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 126.00019201636314
+      },
+      {
+        "type": "pulse",
+        "frame": 370,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 106.53982101939619
+      },
+      {
+        "type": "pulse",
+        "frame": 376,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 105.38105294108391
+      },
+      {
+        "type": "pulse",
+        "frame": 373,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 103.93222188577056
+      },
+      {
+        "type": "pulse",
+        "frame": 382,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 94.59260199218988
+      },
+      {
+        "type": "pulse",
+        "frame": 352,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 91.39905194751918
+      },
+      {
+        "type": "pulse",
+        "frame": 361,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 91.02685400284827
+      },
+      {
+        "type": "pulse",
+        "frame": 355,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 90.91214695945382
+      },
+      {
+        "type": "pulse",
+        "frame": 358,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 90.88553418405354
+      },
+      {
+        "type": "pulse",
+        "frame": 364,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 90.83772008307278
+      },
+      {
+        "type": "pulse",
+        "frame": 349,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 90.49624297767878
+      },
+      {
+        "type": "pulse",
+        "frame": 385,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 86.99480094946921
+      },
+      {
+        "type": "pulse",
+        "frame": 388,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 79.47222702205181
+      },
+      {
+        "type": "pulse",
+        "frame": 532,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 53.030674112960696
+      },
+      {
+        "type": "pulse",
+        "frame": 367,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 43.23072708211839
+      },
+      {
+        "type": "pulse",
+        "frame": 67,
+        "stage": "PICK_HOVER",
+        "duration_ms": 36.485092947259545
+      },
+      {
+        "type": "pulse",
+        "frame": 522,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 32.512950943782926
+      },
+      {
+        "type": "pulse",
+        "frame": 117,
+        "stage": "PICK_HOVER",
+        "duration_ms": 30.7533941231668
+      },
+      {
+        "type": "pulse",
+        "frame": 236,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 30.62067716382444
+      },
+      {
+        "type": "pulse",
+        "frame": 194,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 29.690426075831056
+      },
+      {
+        "type": "pulse",
+        "frame": 502,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 27.032641926780343
+      },
+      {
+        "type": "pulse",
+        "frame": 118,
+        "stage": "PICK_HOVER",
+        "duration_ms": 27.00220700353384
+      },
+      {
+        "type": "pulse",
+        "frame": 283,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 26.11907501704991
+      },
+      {
+        "type": "pulse",
+        "frame": 281,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 23.453637957572937
+      },
+      {
+        "type": "pulse",
+        "frame": 305,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 23.143630009144545
+      },
+      {
+        "type": "pulse",
+        "frame": 197,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 21.22357301414013
+      },
+      {
+        "type": "pulse",
+        "frame": 646,
+        "stage": "RETURN_SAFE",
+        "duration_ms": 19.65454895980656
+      },
+      {
+        "type": "pulse",
+        "frame": 417,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 14.66642809100449
+      },
+      {
+        "type": "pulse",
+        "frame": 317,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 14.617853099480271
+      },
+      {
+        "type": "pulse",
+        "frame": 282,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 14.547315891832113
+      },
+      {
+        "type": "pulse",
+        "frame": 196,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 14.037885004654527
+      },
+      {
+        "type": "pulse",
+        "frame": 583,
+        "stage": "RETURN_SAFE",
+        "duration_ms": 13.703034026548266
+      },
+      {
+        "type": "pulse",
+        "frame": 128,
+        "stage": "PICK_HOVER",
+        "duration_ms": 12.749192072078586
+      },
+      {
+        "type": "pulse",
+        "frame": 238,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 12.23304308950901
+      },
+      {
+        "type": "pulse",
+        "frame": 314,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 11.33079594001174
+      },
+      {
+        "type": "pulse",
+        "frame": 569,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 11.054135859012604
+      },
+      {
+        "type": "pulse",
+        "frame": 78,
+        "stage": "PICK_HOVER",
+        "duration_ms": 10.40982617996633
+      },
+      {
+        "type": "pulse",
+        "frame": 389,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 10.085539892315865
+      },
+      {
+        "type": "pulse",
+        "frame": 307,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 10.05307910963893
+      },
+      {
+        "type": "pulse",
+        "frame": 401,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 10.028755059465766
+      },
+      {
+        "type": "pulse",
+        "frame": 246,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 10.025758994743228
+      },
+      {
+        "type": "pulse",
+        "frame": 233,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 10.018317960202694
+      },
+      {
+        "type": "pulse",
+        "frame": 517,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 10.01275796443224
+      },
+      {
+        "type": "pulse",
+        "frame": 252,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 9.913753950968385
+      },
+      {
+        "type": "pulse",
+        "frame": 284,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 9.91172599606216
+      },
+      {
+        "type": "pulse",
+        "frame": 69,
+        "stage": "PICK_HOVER",
+        "duration_ms": 9.556085104122758
+      },
+      {
+        "type": "pulse",
+        "frame": 104,
+        "stage": "PICK_HOVER",
+        "duration_ms": 9.409419959411025
+      },
+      {
+        "type": "pulse",
+        "frame": 181,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 9.182282956317067
+      }
+    ],
+    "soft_stop_mean_ms": 0.017507307945865476,
+    "pulse_mean_ms": 7.615436918003428
+  },
+  "cleanup": {
+    "started_at": "2026-09-10T08:52:12.272029+00:00",
+    "errors": [],
+    "protection_disabled_by_executor": true,
+    "speed_restore_code": 0,
+    "speed_restored_readback": 10.0,
+    "speed_expected": 10.0,
+    "speed_restore_status": "PASS",
+    "protection_enabled": true,
+    "sdk_stop_return": null,
+    "sdk_stopped": true,
+    "finished_at": "2026-09-10T08:52:12.277437+00:00",
+    "status": "PASS"
+  },
+  "finished_at": "2026-09-10T08:52:12.277584+00:00"
+}
