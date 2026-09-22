@@ -1,0 +1,206 @@
+{
+  "node": "B6",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/FINAL_ACCEPTANCE_RECORD_20260709.md",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/FINAL_ACCEPTANCE_RECORD_20260709.md",
+      "original_sha256": "7e8cf3eaf375ac685ba47e9f44f5f9977da110737f6e9aa04131e18c626abe00",
+      "sha256": "7e8cf3eaf375ac685ba47e9f44f5f9977da110737f6e9aa04131e18c626abe00",
+      "bytes": 1272,
+      "group": "B6",
+      "kind": "summary",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "original_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "bytes": 1288,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "original_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "bytes": 12597,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/execute_trajectory_REAL_TRUE_left_gripper2.py",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/execute_trajectory_REAL_TRUE_left_gripper2.py",
+      "original_sha256": "2fd61b809330a6c7531a8a63bde848a97f6cdc49cf7f354788e5b94eba83d227",
+      "sha256": "2fd61b809330a6c7531a8a63bde848a97f6cdc49cf7f354788e5b94eba83d227",
+      "bytes": 12428,
+      "group": "B6",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/sdk_session_final_acceptance.py",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/sdk_session_final_acceptance.py",
+      "original_sha256": "1cdf9e62a81b58d57d7ce5d2794192e3cda254a34780acfd935a54c415d513cc",
+      "sha256": "1cdf9e62a81b58d57d7ce5d2794192e3cda254a34780acfd935a54c415d513cc",
+      "bytes": 7559,
+      "group": "B6",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/traj_latest_99pts_final_acceptance.json",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/traj_latest_99pts_final_acceptance.json",
+      "original_sha256": "e74b50f5764b8aea4af818014e65bfa960216f9bd83745d8347726af5f9cda3e",
+      "sha256": "e74b50f5764b8aea4af818014e65bfa960216f9bd83745d8347726af5f9cda3e",
+      "bytes": 15541,
+      "group": "B6",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "original_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "bytes": 14479,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "original_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "bytes": 14475,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/trajectory/traj_p2_round1.json",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/trajectory/traj_p2_round1.json",
+      "original_sha256": "2132a4b8fa7787f7ce459e3f4714dba9cfbe7a07b1f1d6e3f66fd1deec21172d",
+      "sha256": "2132a4b8fa7787f7ce459e3f4714dba9cfbe7a07b1f1d6e3f66fd1deec21172d",
+      "bytes": 14214,
+      "group": "B6",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "original_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "bytes": 25251,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "original_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "bytes": 25247,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/trajectory/traj_multi_latest.json",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/trajectory/traj_multi_latest.json",
+      "original_sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "bytes": 24928,
+      "group": "B6",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "original_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "bytes": 25252,
+      "group": "B6",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py",
+      "original_sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "bytes": 23112,
+      "group": "B6",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py",
+      "original_sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "bytes": 8449,
+      "group": "B6",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/trajectory/traj_multi_latest.json",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/trajectory/traj_multi_latest.json",
+      "original_sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "bytes": 24928,
+      "group": "B6",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/BASELINE_NOTES.txt",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/BASELINE_NOTES.txt",
+      "original_sha256": "b7669cd40e03f3df51005dcf1801f6f22b38d1655b95fe95153660d05748e9d8",
+      "sha256": "b7669cd40e03f3df51005dcf1801f6f22b38d1655b95fe95153660d05748e9d8",
+      "bytes": 471,
+      "group": "B6",
+      "kind": "summary",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "origin": "workspace.zip:workspace/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "original_sha256": "f4aef22b2caf2f89b54c4e98940a1c30dd2dd96ce57b6dac55047456c8fb4f4f",
+      "sha256": "f4aef22b2caf2f89b54c4e98940a1c30dd2dd96ce57b6dac55047456c8fb4f4f",
+      "bytes": 279,
+      "group": "B6",
+      "kind": "config",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
