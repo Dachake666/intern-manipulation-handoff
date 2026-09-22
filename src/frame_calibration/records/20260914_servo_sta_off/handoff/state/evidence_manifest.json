@@ -1,0 +1,106 @@
+[
+  {
+    "source_name": "ping_robot_STA_OFF_servo.txt",
+    "packaged_path": "evidence/ping_robot_STA_OFF_servo.txt",
+    "original_sha256": "a55f23aa31f219f2ad6479a89b8f56c52338e00db2f70228ecfa0fd861f982f3",
+    "packaged_sha256": "a55f23aa31f219f2ad6479a89b8f56c52338e00db2f70228ecfa0fd861f982f3",
+    "redactions": 0,
+    "class": "UPLOADED_PING_LOG_20260911_NOT_20260914_UCI_TEST"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260910-020023).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260910-020023).txt",
+    "original_sha256": "97b8538c94e295e31e94330320abe7458a494154cb1e5e500abe82d2aab9212d",
+    "packaged_sha256": "f07f99f60e1e6f84b96b659994202c544c008373154242044d36dda91ee33dde",
+    "redactions": 1,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-021046).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-021046).txt",
+    "original_sha256": "9f2e7ec8025706d13867dc935db44717c479070b5c7569cca2b95bf77b082c32",
+    "packaged_sha256": "0da320322b06f31e4c5a811796f4c3a04cd2d880f549ad265312ca36a5cd7b7c",
+    "redactions": 1,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-024116).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-024116).txt",
+    "original_sha256": "c3b3f0574d04921350b69665c0892de3571d9f3ab47e22a4f1ca7bb55ae2465d",
+    "packaged_sha256": "42754703ae242a3ae0cdade4a6045c17f7e389f3df72cf6c81366a82a8ccfbe7",
+    "redactions": 1,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-025844).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-025844).txt",
+    "original_sha256": "b79532faedbeea45d7613e25a408b9df6a4763eb249419b0f6f84a5b328cb33e",
+    "packaged_sha256": "b79532faedbeea45d7613e25a408b9df6a4763eb249419b0f6f84a5b328cb33e",
+    "redactions": 0,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-032936).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-032936).txt",
+    "original_sha256": "01c267fdcbcd47c2546f1896cd657b37e94e725113e6f4d5c92e315044f1dcbc",
+    "packaged_sha256": "8169aa25f08154c11f8e637d28f8f53633cf13ed533d691a1e9597afa96aa589",
+    "redactions": 6,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-040308).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-040308).txt",
+    "original_sha256": "2eee9ee75cffe1ed08da87834b905bea5b2112ca9b3374af3e70e1d7f1a569a6",
+    "packaged_sha256": "f993046153bbb1756ea526367a910422a9d52aee477510e361fdbb59e14e41e4",
+    "redactions": 5,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-063332).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-063332).txt",
+    "original_sha256": "58a817eafefd3cb8148cf0af3eae1c413cab98055ad146d72ee5856c91ba678c",
+    "packaged_sha256": "3df361197c07933b653c94bb06a21eab3bc32cca4e414bfc15b76b05066b6902",
+    "redactions": 5,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-063932).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-063932).txt",
+    "original_sha256": "7abaf8343d2ef745d6933a8ce6dcb6d3d3ac4b52166b352f8ff6fe42a4d0b9f2",
+    "packaged_sha256": "7abaf8343d2ef745d6933a8ce6dcb6d3d3ac4b52166b352f8ff6fe42a4d0b9f2",
+    "redactions": 0,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-073004).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-073004).txt",
+    "original_sha256": "f788f2fb4cf4ce4745711eaf06b33295a548668c00e516d84c8c9092d0347712",
+    "packaged_sha256": "f788f2fb4cf4ce4745711eaf06b33295a548668c00e516d84c8c9092d0347712",
+    "redactions": 0,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260911-073945).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260911-073945).txt",
+    "original_sha256": "a898dd8b508d9ed17b99a322eb86873a35d5a4b3bb919c5b6c35c5d5a53f06d7",
+    "packaged_sha256": "61c4fefbebebd70aebc0eeb5cdb2cb651e8945446e162c553dd322c68cdc000e",
+    "redactions": 5,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260914-015229).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260914-015229).txt",
+    "original_sha256": "0953ad74630b45156f7a00144687bfcab5911e83eac5b7b1c725b33ba1b9eb14",
+    "packaged_sha256": "0953ad74630b45156f7a00144687bfcab5911e83eac5b7b1c725b33ba1b9eb14",
+    "redactions": 0,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  },
+  {
+    "source_name": "粘贴的文本 (1)(20260914-040051).txt",
+    "packaged_path": "evidence/粘贴的文本 (1)(20260914-040051).txt",
+    "original_sha256": "24d28e4a3d1d0bab3d363e0e39b907cb1b0d9c46dbe8bcf19764b294ee9e76a4",
+    "packaged_sha256": "95458bc5262c604918f82f9966c0860202a1d3ae2131feaa7d404745d7912440",
+    "redactions": 4,
+    "class": "UPLOADED_TERMINAL_TRANSCRIPT"
+  }
+]

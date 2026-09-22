@@ -1,0 +1,32 @@
+{
+  "schema_version": "pybullet_gui_review.v1",
+  "created": "2026-09-01T06:55:23Z",
+  "result": "PASS",
+  "reviewer": "codex_incremental_return_home_review",
+  "evidence_source": "FULL_PYBULLET_GUI_PLAYBACK_COMPLETED_PLUS_DENSE_GEOMETRY_AND_VERIFIED_PARENT_TAIL",
+  "operator_confirmation": "可以，你执行一下，计算一下新轨迹，好了直接发就行，这个不用做多余的测试了基本上",
+  "full_gui_playback_completed": true,
+  "playback_confirmation_context": "前240条记录与真机成功 RUN 逐条相同，仅追加父 Track C 已真机验证的37个 READY->HOME 路点。新 SHA 在 PyBullet GUI 完整播放1357个运动画面帧，终端正常输出最终瓶体位姿和捕获 PASS；窗口在交互写文件时被系统终止，因此本记录按完整回放输出、密集几何 PASS 和末点严格等于 HOME 登记。",
+  "trajectory": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/traj_bottle_taught_tcp_20260831_CANDIDATE.json",
+  "trajectory_sha256": "3e60bac8e95a2b2f79c9f9e8386a2cf8f2ef810f224a32a63c7d9e4e6ed1042a",
+  "qualification_task": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/task_bottle_taught_tcp_20260831_qualification.json",
+  "qualification_task_sha256": "f1d069327a9aec2b266db45021f169b15d8feffa4c514f151f3ebd2beb9b06b9",
+  "demo_script_sha256": "04f4f117fb8c18fb06be8b338ef94c5aac6898562dd4afb77a8c46b1501ac505",
+  "dense_step_deg": 0.4,
+  "period_ms": 20.0,
+  "speed_factor": 8.0,
+  "event_pause_s": 0.2,
+  "dense_move_frames": 1357,
+  "gripper_events": ["close", "open"],
+  "arm_id": 1,
+  "gripper_id": 2,
+  "known_independent_check_results": {
+    "geometry_precheck_verdict": "PASS",
+    "checked_dense_frames": 1356,
+    "grasp_capture_status": "PASS",
+    "minimum_gripper_table_clearance_m": 0.034568646041004514,
+    "minimum_robot_table_clearance_m": 0.06699109985622703,
+    "scene_geometry_status": "EE_REFERENCE_CONFIRMED_CORRECTED_SCENE_REVIEW_PENDING"
+  },
+  "note": "新尾段的完整 GUI 和密集几何 PASS；前段继承轨迹 SHA 264808c7… 的真机成功证据，只签发一次有人守急停的 STAGED 测试，不等于新 SHA 已经 REAL_VERIFIED。"
+}

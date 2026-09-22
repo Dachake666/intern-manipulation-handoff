@@ -1,0 +1,971 @@
+{
+  "schema_version": "tabletop_servo_run.v1",
+  "created_at": "2026-09-10T03:14:52.007068+00:00",
+  "trajectory_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+  "executor_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+  "source_plan_sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59",
+  "dependencies": {
+    "tabletop_servo_contract.py": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+    "servo_common.py": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+    "sdk_session.py": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+    "execute_tabletop_hybrid_trial_reviewfix_field.py": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+    "precheck_tabletop_hybrid.py": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+    "execute_tabletop_pick_place_worlds.py": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+    "robot_lock.py": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+    "scrub_log.py": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+    "arm_profiles.py": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+    "arm_profiles.v1.json": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+  },
+  "metrics": {
+    "motion_frame_count": 2484,
+    "stream_duration_s": 49.68,
+    "max_step_deg": 0.09999999999999432,
+    "max_velocity_deg_s": 4.999999999999716,
+    "max_acceleration_deg_s2": 379.6718289085632,
+    "joint_used_ranges_deg": [
+      [
+        -33.131,
+        13.604
+      ],
+      [
+        2.908,
+        29.247
+      ],
+      [
+        -0.514,
+        21.471
+      ],
+      [
+        -107.683,
+        -72.66799926757812
+      ],
+      [
+        -25.340999603271484,
+        -12.458
+      ],
+      [
+        -13.946,
+        8.78
+      ],
+      [
+        9.605405807495117,
+        42.691
+      ]
+    ],
+    "minimum_margin_per_joint_deg": [
+      132.869,
+      12.908,
+      144.529,
+      20.316999999999993,
+      140.65900039672852,
+      26.054000000000002,
+      33.309
+    ],
+    "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+  },
+  "status": "SERVO_COMPLETED_RETURNED_HOME",
+  "motion_commands_sent": 1248,
+  "robot_ip": "192.168.8.147",
+  "local_ip": "192.168.8.185",
+  "arm_ip": "192.168.8.147",
+  "arm_port": 8080,
+  "speed_percent": 5.0,
+  "arm_id": 1,
+  "gripper_id": 2,
+  "reviews": {
+    "mode": "OPERATOR_SUPERVISED_FIELD_TRIAL",
+    "formal_servo_qualification_bypassed": true,
+    "scope": "FIELD_TRIAL_ONLY_NOT_FORMAL_QUALIFICATION_PASS",
+    "gui_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+    "field_wrapper_sha256": "40f6fd47354d163f3eb28bb08f192de9ceaabf184cbfb90026f2d7ba16fbfd01"
+  },
+  "precheck": {
+    "status": "READONLY_PASS_HOME_ENTRY_REQUIRED",
+    "start": {
+      "worlds": [
+        693.1920166015625,
+        366.3429870605469,
+        441.614013671875,
+        -72.76000213623047,
+        13.505999565124512,
+        -6.548999786376953
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246824264526367,
+        6.935905456542969,
+        -75.60509490966797,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.428228378295898
+      ]
+    },
+    "effective_limits_deg": [
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -10.0,
+        208.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -128.0,
+        103.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -40.0,
+        40.0
+      ],
+      [
+        -88.0,
+        76.0
+      ]
+    ],
+    "initial_gap_deg": 12.144999504089355,
+    "home_gap_deg": 0.193228378295899,
+    "first_point_q_sdk_deg": [
+      -16.031999588012695,
+      23.22800064086914,
+      -0.35608211159706116,
+      -72.66799926757812,
+      -25.340999603271484,
+      -11.798999786376953,
+      9.605405807495117
+    ],
+    "motion_metrics": {
+      "motion_frame_count": 2484,
+      "stream_duration_s": 49.68,
+      "max_step_deg": 0.09999999999999432,
+      "max_velocity_deg_s": 4.999999999999716,
+      "max_acceleration_deg_s2": 379.6718289085632,
+      "joint_used_ranges_deg": [
+        [
+          -33.131,
+          13.604
+        ],
+        [
+          2.908,
+          29.247
+        ],
+        [
+          -0.514,
+          21.471
+        ],
+        [
+          -107.683,
+          -72.66799926757812
+        ],
+        [
+          -25.340999603271484,
+          -12.458
+        ],
+        [
+          -13.946,
+          8.78
+        ],
+        [
+          9.605405807495117,
+          42.691
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        132.869,
+        12.908,
+        144.529,
+        20.316999999999993,
+        140.65900039672852,
+        26.054000000000002,
+        33.309
+      ],
+      "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+    }
+  },
+  "enable": {
+    "started_at": "2026-09-10T03:14:57.115425+00:00",
+    "speed_before": 10.0,
+    "clear_alarm_code": 0,
+    "enable_code": 0,
+    "enable_readback": [
+      0,
+      true
+    ],
+    "servo_readback": [
+      0,
+      true
+    ],
+    "speed_set_code": 0,
+    "speed_readback": 5.0,
+    "arm_enable_readback": [
+      0,
+      true
+    ],
+    "protection_enabled": true,
+    "finished_at": "2026-09-10T03:14:58.123425+00:00"
+  },
+  "execution_precheck": {
+    "status": "READONLY_PASS_HOME_ENTRY_REQUIRED",
+    "start": {
+      "worlds": [
+        693.1920166015625,
+        366.3429870605469,
+        441.614013671875,
+        -72.76000213623047,
+        13.505999565124512,
+        -6.548999786376953
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246999740600586,
+        6.935999870300293,
+        -75.6050033569336,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.428000450134277
+      ]
+    },
+    "effective_limits_deg": [
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -10.0,
+        208.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -128.0,
+        103.0
+      ],
+      [
+        -166.0,
+        166.0
+      ],
+      [
+        -40.0,
+        40.0
+      ],
+      [
+        -88.0,
+        76.0
+      ]
+    ],
+    "initial_gap_deg": 12.144999504089355,
+    "home_gap_deg": 0.1930004501342779,
+    "first_point_q_sdk_deg": [
+      -16.031999588012695,
+      23.22800064086914,
+      -0.35608211159706116,
+      -72.66799926757812,
+      -25.340999603271484,
+      -11.798999786376953,
+      9.605405807495117
+    ],
+    "motion_metrics": {
+      "motion_frame_count": 2484,
+      "stream_duration_s": 49.68,
+      "max_step_deg": 0.09999999999999432,
+      "max_velocity_deg_s": 4.999999999999716,
+      "max_acceleration_deg_s2": 379.6718289085632,
+      "joint_used_ranges_deg": [
+        [
+          -33.131,
+          13.604
+        ],
+        [
+          2.908,
+          29.247
+        ],
+        [
+          -0.514,
+          21.471
+        ],
+        [
+          -107.683,
+          -72.66799926757812
+        ],
+        [
+          -25.340999603271484,
+          -12.458
+        ],
+        [
+          -13.946,
+          8.78
+        ],
+        [
+          9.605405807495117,
+          42.691
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        132.869,
+        12.908,
+        144.529,
+        20.316999999999993,
+        140.65900039672852,
+        26.054000000000002,
+        33.309
+      ],
+      "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+    }
+  },
+  "field_entry": {
+    "mode": "MOVEJ_HOME_TO_RECORDED_SERVO_START",
+    "start": {
+      "worlds": [
+        693.1920166015625,
+        366.3429870605469,
+        441.614013671875,
+        -72.76000213623047,
+        13.505999565124512,
+        -6.548999786376953
+      ],
+      "joints": [
+        -17.711000442504883,
+        29.246999740600586,
+        6.935999870300293,
+        -75.6050033569336,
+        -13.196000099182129,
+        -11.822999954223633,
+        12.428000450134277
+      ]
+    },
+    "arrival": {
+      "worlds": [
+        691.3179931640625,
+        366.77801513671875,
+        433.552001953125,
+        -93.01300048828125,
+        9.0,
+        -5.261000156402588
+      ],
+      "joints": [
+        -16.038000106811523,
+        23.270999908447266,
+        -0.31299999356269836,
+        -72.6719970703125,
+        -25.295000076293945,
+        -11.798999786376953,
+        9.795999526977539
+      ]
+    },
+    "limit_precheck_frames": 25,
+    "arrival_gap_deg": 0.19059371948242188,
+    "strict_precheck_after_entry": {
+      "status": "READONLY_PASS_NOT_COLLISION_PROOF",
+      "start": {
+        "worlds": [
+          691.3189697265625,
+          366.73699951171875,
+          433.53900146484375,
+          -93.06400299072266,
+          8.987000465393066,
+          -5.256999969482422
+        ],
+        "joints": [
+          -16.03499984741211,
+          23.249000549316406,
+          -0.3319999873638153,
+          -72.66899871826172,
+          -25.319000244140625,
+          -11.798999786376953,
+          9.791999816894531
+        ]
+      },
+      "effective_limits_deg": [
+        [
+          -166.0,
+          166.0
+        ],
+        [
+          -10.0,
+          208.0
+        ],
+        [
+          -166.0,
+          166.0
+        ],
+        [
+          -128.0,
+          103.0
+        ],
+        [
+          -166.0,
+          166.0
+        ],
+        [
+          -40.0,
+          40.0
+        ],
+        [
+          -88.0,
+          76.0
+        ]
+      ],
+      "initial_gap_deg": 0.18659400939941406,
+      "first_point_q_sdk_deg": [
+        -16.031999588012695,
+        23.22800064086914,
+        -0.35608211159706116,
+        -72.66799926757812,
+        -25.340999603271484,
+        -11.798999786376953,
+        9.605405807495117
+      ],
+      "motion_metrics": {
+        "motion_frame_count": 2484,
+        "stream_duration_s": 49.68,
+        "max_step_deg": 0.09999999999999432,
+        "max_velocity_deg_s": 4.999999999999716,
+        "max_acceleration_deg_s2": 379.6718289085632,
+        "joint_used_ranges_deg": [
+          [
+            -33.131,
+            13.604
+          ],
+          [
+            2.908,
+            29.247
+          ],
+          [
+            -0.514,
+            21.471
+          ],
+          [
+            -107.683,
+            -72.66799926757812
+          ],
+          [
+            -25.340999603271484,
+            -12.458
+          ],
+          [
+            -13.946,
+            8.78
+          ],
+          [
+            9.605405807495117,
+            42.691
+          ]
+        ],
+        "minimum_margin_per_joint_deg": [
+          132.869,
+          12.908,
+          144.529,
+          20.316999999999993,
+          140.65900039672852,
+          26.054000000000002,
+          33.309
+        ],
+        "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+      }
+    }
+  },
+  "field_runtime_servo": {
+    "stride": 2,
+    "source_motion_frames": 2484,
+    "runtime_motion_frames": 1248,
+    "period_s": 0.02,
+    "runtime_duration_s": 24.96,
+    "runtime_max_step_deg": 0.1985000000000099,
+    "runtime_max_velocity_deg_s": 9.925000000000495,
+    "runtime_max_acceleration_deg_s2": 558.3333333333318,
+    "scope": "FIELD_TRIAL_RUNTIME_DOWNSAMPLE_OF_EXACT_A_DERIVED_PATH"
+  },
+  "events": [
+    {
+      "stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "first_frame": 0,
+      "time": "2026-09-10T03:15:02.562650+00:00"
+    },
+    {
+      "stage": "OPEN_BEFORE_PICK",
+      "action": "open",
+      "actual": {
+        "worlds": [
+          691.3189697265625,
+          366.7439880371094,
+          433.552001953125,
+          -93.11299896240234,
+          8.968999862670898,
+          -5.245999813079834
+        ],
+        "joints": [
+          -16.031999588012695,
+          23.22800064086914,
+          -0.3580000102519989,
+          -72.66600036621094,
+          -25.341999053955078,
+          -11.798999786376953,
+          9.78600025177002
+        ]
+      },
+      "time": "2026-09-10T03:15:05.075081+00:00"
+    },
+    {
+      "stage": "PICK_HOVER",
+      "first_frame": 1,
+      "time": "2026-09-10T03:15:06.277500+00:00"
+    },
+    {
+      "stage": "PICK_DESCEND",
+      "first_frame": 223,
+      "time": "2026-09-10T03:15:12.786084+00:00"
+    },
+    {
+      "stage": "CLOSE_AT_PICK",
+      "action": "close",
+      "actual": {
+        "worlds": [
+          703.9099731445312,
+          248.22900390625,
+          424.3890075683594,
+          -93.11399841308594,
+          8.890000343322754,
+          -5.25
+        ],
+        "joints": [
+          -17.541000366210938,
+          9.114999771118164,
+          8.840999603271484,
+          -75.70600128173828,
+          -14.312000274658203,
+          1.5329999923706055,
+          10.751999855041504
+        ]
+      },
+      "time": "2026-09-10T03:15:22.663052+00:00"
+    },
+    {
+      "stage": "PICK_ASCEND",
+      "first_frame": 449,
+      "time": "2026-09-10T03:15:23.734885+00:00"
+    },
+    {
+      "stage": "PLACE_HOVER",
+      "first_frame": 663,
+      "time": "2026-09-10T03:15:29.956556+00:00"
+    },
+    {
+      "stage": "PLACE_DESCEND",
+      "first_frame": 764,
+      "time": "2026-09-10T03:15:32.709138+00:00"
+    },
+    {
+      "stage": "OPEN_AT_PLACE",
+      "action": "open",
+      "actual": {
+        "worlds": [
+          699.9320068359375,
+          91.38500213623047,
+          457.8819885253906,
+          -93.11000061035156,
+          9.020000457763672,
+          -34.71900177001953
+        ],
+        "joints": [
+          -25.82200050354004,
+          3.7190001010894775,
+          21.47599983215332,
+          -74.48899841308594,
+          -17.51099967956543,
+          -13.946000099182129,
+          17.499000549316406
+        ]
+      },
+      "time": "2026-09-10T03:15:39.763054+00:00"
+    },
+    {
+      "stage": "PLACE_ASCEND",
+      "first_frame": 921,
+      "time": "2026-09-10T03:15:41.090858+00:00"
+    },
+    {
+      "stage": "RETURN_SAFE",
+      "first_frame": 1078,
+      "time": "2026-09-10T03:15:48.900078+00:00"
+    }
+  ],
+  "servo_vector_prepare": {
+    "motion_vectors": 1248,
+    "total_ms": 3.6494210362434387,
+    "mean_ms_per_vector": 0.0029242155739130117,
+    "mode": "PREBUILT_FLOATVECTOR_OUTSIDE_HOT_LOOP"
+  },
+  "protection_disabled_for_servo": true,
+  "final_snapshot": {
+    "worlds": [
+      693.2109985351562,
+      366.3340148925781,
+      441.68798828125,
+      -72.76000213623047,
+      13.479999542236328,
+      -6.554999828338623
+    ],
+    "joints": [
+      -17.711000442504883,
+      29.24799919128418,
+      6.934999942779541,
+      -75.60399627685547,
+      -13.194999694824219,
+      -11.822999954223633,
+      12.399999618530273
+    ]
+  },
+  "timing": {
+    "send_slots": 1248,
+    "period_s": 0.02,
+    "late_frames": 1244,
+    "late_ratio": 0.9967948717948718,
+    "max_late_ms": 2794.8810891248286,
+    "mean_late_ms": 10.706536531174358,
+    "realigns": 73,
+    "catchup_bursts_allowed": false,
+    "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+  },
+  "sdk_latency_probe": {
+    "soft_stop_calls": 132,
+    "soft_stop_total_ms": 3.3427432645112276,
+    "soft_stop_max_ms": 0.09587197564542294,
+    "soft_stop_over_5ms": 0,
+    "soft_stop_over_20ms": 0,
+    "soft_stop_over_40ms": 0,
+    "pulse_calls": 1248,
+    "pulse_total_ms": 28497.479869052768,
+    "pulse_max_ms": 2814.8187359329313,
+    "pulse_over_5ms": 1064,
+    "pulse_over_20ms": 339,
+    "pulse_over_40ms": 140,
+    "slow_events": [
+      {
+        "type": "pulse",
+        "frame": 962,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 2814.8187359329313
+      },
+      {
+        "type": "pulse",
+        "frame": 1071,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 363.0190519616008
+      },
+      {
+        "type": "pulse",
+        "frame": 961,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 276.619256939739
+      },
+      {
+        "type": "pulse",
+        "frame": 1078,
+        "stage": "RETURN_SAFE",
+        "duration_ms": 263.36136320605874
+      },
+      {
+        "type": "pulse",
+        "frame": 133,
+        "stage": "PICK_HOVER",
+        "duration_ms": 247.570829000324
+      },
+      {
+        "type": "pulse",
+        "frame": 1064,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 205.37286694161594
+      },
+      {
+        "type": "pulse",
+        "frame": 253,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 197.70668190903962
+      },
+      {
+        "type": "pulse",
+        "frame": 761,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 191.41676602885127
+      },
+      {
+        "type": "pulse",
+        "frame": 203,
+        "stage": "PICK_HOVER",
+        "duration_ms": 181.2491361051798
+      },
+      {
+        "type": "pulse",
+        "frame": 547,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 172.56058286875486
+      },
+      {
+        "type": "pulse",
+        "frame": 174,
+        "stage": "PICK_HOVER",
+        "duration_ms": 170.30010791495442
+      },
+      {
+        "type": "pulse",
+        "frame": 1132,
+        "stage": "RETURN_SAFE",
+        "duration_ms": 170.22797488607466
+      },
+      {
+        "type": "pulse",
+        "frame": 351,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 160.48132814466953
+      },
+      {
+        "type": "pulse",
+        "frame": 175,
+        "stage": "PICK_HOVER",
+        "duration_ms": 149.4467209558934
+      },
+      {
+        "type": "pulse",
+        "frame": 781,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 146.3958511594683
+      },
+      {
+        "type": "pulse",
+        "frame": 932,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 145.13921411707997
+      },
+      {
+        "type": "pulse",
+        "frame": 444,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 140.1981411036104
+      },
+      {
+        "type": "pulse",
+        "frame": 1114,
+        "stage": "RETURN_SAFE",
+        "duration_ms": 135.63979393802583
+      },
+      {
+        "type": "pulse",
+        "frame": 949,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 130.47889899462461
+      },
+      {
+        "type": "pulse",
+        "frame": 865,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 130.20695187151432
+      },
+      {
+        "type": "pulse",
+        "frame": 104,
+        "stage": "PICK_HOVER",
+        "duration_ms": 129.9217629712075
+      },
+      {
+        "type": "pulse",
+        "frame": 579,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 124.5235709939152
+      },
+      {
+        "type": "pulse",
+        "frame": 1059,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 117.2614109236747
+      },
+      {
+        "type": "pulse",
+        "frame": 482,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 115.14952220022678
+      },
+      {
+        "type": "pulse",
+        "frame": 544,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 114.89857314154506
+      },
+      {
+        "type": "pulse",
+        "frame": 1073,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 114.39911206252873
+      },
+      {
+        "type": "pulse",
+        "frame": 867,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 113.82059589959681
+      },
+      {
+        "type": "pulse",
+        "frame": 40,
+        "stage": "PICK_HOVER",
+        "duration_ms": 111.5879628341645
+      },
+      {
+        "type": "pulse",
+        "frame": 1076,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 110.50772597081959
+      },
+      {
+        "type": "pulse",
+        "frame": 617,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 108.90451795421541
+      },
+      {
+        "type": "pulse",
+        "frame": 877,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 107.98512795008719
+      },
+      {
+        "type": "pulse",
+        "frame": 750,
+        "stage": "PLACE_HOVER",
+        "duration_ms": 107.70543105900288
+      },
+      {
+        "type": "pulse",
+        "frame": 137,
+        "stage": "PICK_HOVER",
+        "duration_ms": 107.35755413770676
+      },
+      {
+        "type": "pulse",
+        "frame": 942,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 105.83157790824771
+      },
+      {
+        "type": "pulse",
+        "frame": 869,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 101.86175513081253
+      },
+      {
+        "type": "pulse",
+        "frame": 310,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 100.77278991229832
+      },
+      {
+        "type": "pulse",
+        "frame": 158,
+        "stage": "PICK_HOVER",
+        "duration_ms": 98.76660397276282
+      },
+      {
+        "type": "pulse",
+        "frame": 103,
+        "stage": "PICK_HOVER",
+        "duration_ms": 95.39569704793394
+      },
+      {
+        "type": "pulse",
+        "frame": 631,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 95.3031750395894
+      },
+      {
+        "type": "pulse",
+        "frame": 151,
+        "stage": "PICK_HOVER",
+        "duration_ms": 94.24973698332906
+      },
+      {
+        "type": "pulse",
+        "frame": 953,
+        "stage": "PLACE_ASCEND",
+        "duration_ms": 93.68042089045048
+      },
+      {
+        "type": "pulse",
+        "frame": 552,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 93.15182198770344
+      },
+      {
+        "type": "pulse",
+        "frame": 766,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 92.40040299482644
+      },
+      {
+        "type": "pulse",
+        "frame": 405,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 91.78712498396635
+      },
+      {
+        "type": "pulse",
+        "frame": 397,
+        "stage": "PICK_DESCEND",
+        "duration_ms": 89.72354792058468
+      },
+      {
+        "type": "pulse",
+        "frame": 615,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 89.49914621189237
+      },
+      {
+        "type": "pulse",
+        "frame": 574,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 86.0168831422925
+      },
+      {
+        "type": "pulse",
+        "frame": 156,
+        "stage": "PICK_HOVER",
+        "duration_ms": 85.99678496830165
+      },
+      {
+        "type": "pulse",
+        "frame": 498,
+        "stage": "PICK_ASCEND",
+        "duration_ms": 84.79356905445457
+      },
+      {
+        "type": "pulse",
+        "frame": 787,
+        "stage": "PLACE_DESCEND",
+        "duration_ms": 84.3564469832927
+      }
+    ],
+    "soft_stop_mean_ms": 0.025323812609933542,
+    "pulse_mean_ms": 22.834519125843563
+  },
+  "cleanup": {
+    "started_at": "2026-09-10T03:15:54.540894+00:00",
+    "errors": [],
+    "protection_disabled_by_executor": true,
+    "speed_restore_code": 0,
+    "speed_restored_readback": 10.0,
+    "speed_expected": 10.0,
+    "speed_restore_status": "PASS",
+    "protection_enabled": true,
+    "sdk_stop_return": null,
+    "sdk_stopped": true,
+    "finished_at": "2026-09-10T03:15:54.548685+00:00",
+    "status": "PASS"
+  },
+  "finished_at": "2026-09-10T03:15:54.548838+00:00"
+}

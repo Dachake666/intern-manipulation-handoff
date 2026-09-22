@@ -1,0 +1,87 @@
+{
+  "schema_version": "taught_tcp_pick_place.v1",
+  "status": "CANDIDATE_INPUT",
+  "task_name": "bottle_taught_tcp_20260831",
+  "comment": "原始示教数据保留不改。用户已确认桌角为 end effector 取坐标点，不是夹爪；桌面改用 EE link 原点，不能再加工具 TCP 偏移。保留等高抓放目标，仅为新桌/瓶子修复入口；场景修正后的完整验收仍需完成。",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "controller_limit_profile": "left_preview102_20260827",
+  "tcp_link_mm": [0.0, 168.0, -39.0],
+  "tcp_source": "SDK_ARMGETWORLDS_TEACH_PENDANT",
+  "height_policy": {
+    "frame": "PYBULLET_PHYSICAL_FK",
+    "reference_point": "EE_LINK_ORIGIN",
+    "pick_place_z_reference": "pick",
+    "hover_z_reference": "max_taught_hover",
+    "orientation_reference": "pick",
+    "preserve": ["physical_ee_origin_xy", "pick_link_orientation"],
+    "note": "等高指用户确认的 EE 原点在物理 FK 中的 Z；各段保持 pick 朝向，不把夹爪中心当端点，不沿用失效会话 T。"
+  },
+  "pick": {
+    "sdk_world_xyz_mm": [785.138, 303.549, 452.363],
+    "sdk_world_uvw_deg": [-99.833, 26.249, -16.126],
+    "q_sdk_deg": [-58.933, 33.860, 71.173, -49.817, -79.157, 0.230, 10.498]
+  },
+  "pick_hover": {
+    "sdk_world_xyz_mm": [785.055, 303.536, 596.541],
+    "sdk_world_uvw_deg": [-99.851, 26.279, -16.126],
+    "q_sdk_deg": [-74.144, 41.720, 68.640, -66.737, -82.995, 11.033, 29.953]
+  },
+  "place_hover": {
+    "sdk_world_xyz_mm": [784.604, 99.104, 595.080],
+    "sdk_world_uvw_deg": [-99.877, 26.595, -16.151],
+    "q_sdk_deg": [-76.135, 14.073, 72.942, -66.696, -78.057, 38.326, 28.663]
+  },
+  "place": {
+    "sdk_world_xyz_mm": [782.370, 99.168, 498.519],
+    "sdk_world_uvw_deg": [-100.024, 27.627, -16.311],
+    "q_sdk_deg": [-64.727, 11.520, 73.466, -58.894, -76.134, 31.802, 17.906]
+  },
+  "table": {
+    "length_m": 1.20,
+    "width_m": 0.80,
+    "top_from_floor_m": 0.73,
+    "thickness_m": 0.05,
+    "corner_role": "left_arm_collision_corner_at_end_effector_reference",
+    "corner_reference": "EE_LINK_ORIGIN",
+    "corner_reference_evidence": "用户确认：end effector那里，就是我们拿坐标的位置，不是夹爪",
+    "geometry_status": "EE_REFERENCE_CONFIRMED_CORRECTED_SCENE_REVIEW_PENDING",
+    "extent_from_corner_pb": {"x": 0.80, "y": -1.20},
+    "corner": {
+      "sdk_world_xyz_mm": [610.948, 486.394, 210.649],
+      "sdk_world_uvw_deg": [-69.258, 55.490, 27.164],
+      "q_sdk_deg": [-39.509, 23.092, 70.299, 0.231, -70.371, -8.166, 7.712]
+    }
+  },
+  "scene": {
+    "support_contact_tolerance_m": 0.00005,
+    "minimum_robot_table_clearance_m": 0.02,
+    "minimum_gripper_table_clearance_m": 0.02,
+    "bottle_radius_m": 0.035,
+    "bottle_height_m": 0.20,
+    "bottle_dimensions_status": "USER_APPROX_HEIGHT_200MM_DIAMETER_60MM_PADDED_TO_70MM",
+    "bottle_position_status": "TABLE_FROM_EE_REFERENCE_BOTTLE_XY_FROM_TAUGHT_GRIP",
+    "minimum_unintended_object_clearance_m": 0.01
+  },
+  "motion": {
+    "export_step_deg": 5.0,
+    "cartesian_sample_mm": 5.0,
+    "maximum_anchor_joint_step_deg": 8.0,
+    "cartesian_position_tolerance_mm": 0.02,
+    "cartesian_rotation_tolerance_deg": 0.01,
+    "ik_extra_margin_deg": 1.0,
+    "entry_rrt_seed": 31,
+    "entry_rrt_max_time_s": 30.0
+  },
+  "gui_review": {
+    "required": true,
+    "dense_step_deg": 0.4,
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  "verified_parent": {
+    "path": "pick_place_coord/trajectories/verified/traj_multi_2grasp_20260804_REALVERIFIED.json",
+    "sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "reuse": ["HOME", "HOME->READY"]
+  }
+}

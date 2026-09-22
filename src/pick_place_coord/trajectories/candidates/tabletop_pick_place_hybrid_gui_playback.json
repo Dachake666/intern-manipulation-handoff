@@ -1,0 +1,11 @@
+{
+  "schema_version": "pybullet_gui_playback.v1",
+  "candidate_sha256": "3f3e36f370521e4ab815e377ddb491a3cd2adb24d95dcf843451d03d7587c06e",
+  "player_sha256": "ef454eb52194beb8c8beee49f7237c763e6598e01fac29d2faea3cb4c3e11a9f",
+  "gui": {
+    "status": "PLAYBACK_COMPLETED_NOT_HUMAN_REVIEW",
+    "played_motion_frames": 977,
+    "human_gui_review": "PENDING",
+    "real_motion_authorized": false
+  }
+}

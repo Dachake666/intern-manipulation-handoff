@@ -1,0 +1,436 @@
+{
+  "copies": [
+    {
+      "relative_path": "CMakeLists.txt",
+      "hashes": {
+        "vision_hand_eye": "3bebbdcdd7e03148ac6befc47da3f51e16b184e0d8a82745910bb27f79592e80",
+        "vision/vision_hand_eye": "3bebbdcdd7e03148ac6befc47da3f51e16b184e0d8a82745910bb27f79592e80",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "3bebbdcdd7e03148ac6befc47da3f51e16b184e0d8a82745910bb27f79592e80"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "README.md",
+      "hashes": {
+        "vision_hand_eye": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d",
+        "vision/vision_hand_eye": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "config/config.json",
+      "hashes": {
+        "vision_hand_eye": "ed4f5499c7bb9aedab1b6d20c2aaf4d78773bfea9132845a2a0a3aa00a7f1ec4",
+        "vision/vision_hand_eye": "ed4f5499c7bb9aedab1b6d20c2aaf4d78773bfea9132845a2a0a3aa00a7f1ec4",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "ed4f5499c7bb9aedab1b6d20c2aaf4d78773bfea9132845a2a0a3aa00a7f1ec4"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "config/mark.json",
+      "hashes": {
+        "vision_hand_eye": "6da80502cc416d3894dfefb15ffe569b426e47545827df68cddc2e44ce8b501a",
+        "vision/vision_hand_eye": "6da80502cc416d3894dfefb15ffe569b426e47545827df68cddc2e44ce8b501a",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "6da80502cc416d3894dfefb15ffe569b426e47545827df68cddc2e44ce8b501a"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/cal_logger.h",
+      "hashes": {
+        "vision_hand_eye": "50cbf02fa41976631d248c8d070a25dc25f51e80cae770e21550473067bdfc0d",
+        "vision/vision_hand_eye": "50cbf02fa41976631d248c8d070a25dc25f51e80cae770e21550473067bdfc0d",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "50cbf02fa41976631d248c8d070a25dc25f51e80cae770e21550473067bdfc0d"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/calibration_server.h",
+      "hashes": {
+        "vision_hand_eye": "a6b78a24a39b11e2dd6b3925368d022296c93d1bfbaf5db5f675461b5ef2c766",
+        "vision/vision_hand_eye": "a6b78a24a39b11e2dd6b3925368d022296c93d1bfbaf5db5f675461b5ef2c766",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "a6b78a24a39b11e2dd6b3925368d022296c93d1bfbaf5db5f675461b5ef2c766"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/cameraClient.h",
+      "hashes": {
+        "vision_hand_eye": "86ca35c14cc5bca977529fbf13ece8de8dd1e924b0c094c79b15b96462dc8335",
+        "vision/vision_hand_eye": "86ca35c14cc5bca977529fbf13ece8de8dd1e924b0c094c79b15b96462dc8335",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "86ca35c14cc5bca977529fbf13ece8de8dd1e924b0c094c79b15b96462dc8335"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/camera_calibration.h",
+      "hashes": {
+        "vision_hand_eye": "eeba8489689a0834c02d672282ec8456b9b5baf9939a9dca99019204271a5178",
+        "vision/vision_hand_eye": "eeba8489689a0834c02d672282ec8456b9b5baf9939a9dca99019204271a5178",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "eeba8489689a0834c02d672282ec8456b9b5baf9939a9dca99019204271a5178"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/data_type.h",
+      "hashes": {
+        "vision_hand_eye": "48571c84bd95760fe991c5745731e2c36d73aca81871f4684ebbb71f533aa627",
+        "vision/vision_hand_eye": "48571c84bd95760fe991c5745731e2c36d73aca81871f4684ebbb71f533aa627",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "48571c84bd95760fe991c5745731e2c36d73aca81871f4684ebbb71f533aa627"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/local_data_test.h",
+      "hashes": {
+        "vision_hand_eye": "856e44b22b2f1242612392604a69cf860de1e72d965e2ad11cbd0a4cd620a115",
+        "vision/vision_hand_eye": "856e44b22b2f1242612392604a69cf860de1e72d965e2ad11cbd0a4cd620a115",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "856e44b22b2f1242612392604a69cf860de1e72d965e2ad11cbd0a4cd620a115"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/mark_point_position.h",
+      "hashes": {
+        "vision_hand_eye": "2376b7f049a3e690cb9ce0e843710b4aef49323ec0869b05752cc73ebd22fb98",
+        "vision/vision_hand_eye": "2376b7f049a3e690cb9ce0e843710b4aef49323ec0869b05752cc73ebd22fb98",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "2376b7f049a3e690cb9ce0e843710b4aef49323ec0869b05752cc73ebd22fb98"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "include/markdetector.h",
+      "hashes": {
+        "vision_hand_eye": "907498c40ac13279b2cd33dd9b9dbe5e9a9640d601d6e9f31625a1c21e67ab69",
+        "vision/vision_hand_eye": "907498c40ac13279b2cd33dd9b9dbe5e9a9640d601d6e9f31625a1c21e67ab69",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "907498c40ac13279b2cd33dd9b9dbe5e9a9640d601d6e9f31625a1c21e67ab69"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "package.xml",
+      "hashes": {
+        "vision_hand_eye": "7ef79ba2f37b77573fb137d1fd9e8976b0c239cbf80457f0ff18a1ab74f2b0cf",
+        "vision/vision_hand_eye": "7ef79ba2f37b77573fb137d1fd9e8976b0c239cbf80457f0ff18a1ab74f2b0cf",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "7ef79ba2f37b77573fb137d1fd9e8976b0c239cbf80457f0ff18a1ab74f2b0cf"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/calibration_server.cpp",
+      "hashes": {
+        "vision_hand_eye": "ce41aafe846e63f3643f8b1d33e2db855618bb1fbd9b64fe56ad2712be4e018c",
+        "vision/vision_hand_eye": "ce41aafe846e63f3643f8b1d33e2db855618bb1fbd9b64fe56ad2712be4e018c",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "ce41aafe846e63f3643f8b1d33e2db855618bb1fbd9b64fe56ad2712be4e018c"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/cameraClient.cpp",
+      "hashes": {
+        "vision_hand_eye": "12560d9484b3a220668dd2310aca3f029da549280c5f0c50329bb903c401f3fe",
+        "vision/vision_hand_eye": "12560d9484b3a220668dd2310aca3f029da549280c5f0c50329bb903c401f3fe",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "12560d9484b3a220668dd2310aca3f029da549280c5f0c50329bb903c401f3fe"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/camera_calibration.cpp",
+      "hashes": {
+        "vision_hand_eye": "e4df51e1afb5114eda2868b592bfc9fbdc876e2c5fe507b7e8475c62eae4fbdd",
+        "vision/vision_hand_eye": "e4df51e1afb5114eda2868b592bfc9fbdc876e2c5fe507b7e8475c62eae4fbdd",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "e4df51e1afb5114eda2868b592bfc9fbdc876e2c5fe507b7e8475c62eae4fbdd"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/hand_eye_calibration_node.cpp",
+      "hashes": {
+        "vision_hand_eye": "b765e764f565725d19595435ee87a2dd7b76ee2a4d36585167f355a4bfad4ba9",
+        "vision/vision_hand_eye": "b765e764f565725d19595435ee87a2dd7b76ee2a4d36585167f355a4bfad4ba9",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "b765e764f565725d19595435ee87a2dd7b76ee2a4d36585167f355a4bfad4ba9"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/local_data_test.cpp",
+      "hashes": {
+        "vision_hand_eye": "3e27da974b85e09847d27f8b51f3170d82ef8b44a458627d15aa837a9d18bbc9",
+        "vision/vision_hand_eye": "3e27da974b85e09847d27f8b51f3170d82ef8b44a458627d15aa837a9d18bbc9",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "3e27da974b85e09847d27f8b51f3170d82ef8b44a458627d15aa837a9d18bbc9"
+      },
+      "same_in_all": true
+    },
+    {
+      "relative_path": "src/markdetector.cpp",
+      "hashes": {
+        "vision_hand_eye": "6d3b14f19f9c69a2d81b36a11289bea46352d02f89314eadb095b80de1e851cd",
+        "vision/vision_hand_eye": "6d3b14f19f9c69a2d81b36a11289bea46352d02f89314eadb095b80de1e851cd",
+        "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye": "6d3b14f19f9c69a2d81b36a11289bea46352d02f89314eadb095b80de1e851cd"
+      },
+      "same_in_all": true
+    }
+  ],
+  "git_refs": [
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect",
+      "head": "ref: refs/heads/polygon",
+      "commit": "c021ed5fcc220072d10a61c4424bdb3ff1e17889",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect/deps/vision/camera_drive",
+      "head": "ref: refs/heads/main",
+      "commit": "f7428952f26e508d72e57670d87117708daf6bde",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm",
+      "head": "ref: refs/heads/polygon",
+      "commit": "d03e74e66b663d7b13da7a47e8de1303dba9627a",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye",
+      "head": "ref: refs/heads/main",
+      "commit": "47729a52eb9e80e936673bd3b96e6ee1a5274260",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_third_party",
+      "head": "ref: refs/heads/main",
+      "commit": "c47f9398d47cdff300d639db030ff326b910105e",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_utils",
+      "head": "ref: refs/heads/main",
+      "commit": "648e88025512edd0ac1beb05d82043deb499e4bf",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision/vision_hand_eye",
+      "head": "ref: refs/heads/main",
+      "commit": "47729a52eb9e80e936673bd3b96e6ee1a5274260",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    },
+    {
+      "archive_project": "workspace/vision_hand_eye",
+      "head": "ref: refs/heads/main",
+      "commit": "47729a52eb9e80e936673bd3b96e6ee1a5274260",
+      "working_tree_clean": "NOT_ESTABLISHED_FROM_ARCHIVE"
+    }
+  ],
+  "handeye_samples": {
+    "archive_sha256": "aa83ad9a312fef8b9b1ad07a1842d6fb4eb7ebe1d91aa6ca4d9533421b7d9bf9",
+    "file_count": 199,
+    "sample_count": 39,
+    "sample_groups": {
+      "0": 11,
+      "1": 10,
+      "2": 9,
+      "3": 9
+    },
+    "missing_pair_files": [],
+    "quaternion_norm_min": 0.9999993512455696,
+    "quaternion_norm_max": 1.000000541634863,
+    "matrix": [
+      [
+        0.16149320206836082,
+        -0.0896339916684899,
+        0.9827948378086167,
+        476.4440040409515
+      ],
+      [
+        -0.06792950918303949,
+        -0.9945143874052623,
+        -0.07954065014860967,
+        201.12285867052864
+      ],
+      [
+        0.9845331520409981,
+        -0.05391549667281994,
+        -0.16669610598531484,
+        569.5639242822931
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "evidence_status": "HISTORICAL_HIGH_RESIDUAL_RESULT_NOT_CALIBRATION_PASS",
+    "sample_origins": "Four numbered groups; not proven to be four independent sessions or one qualified batch."
+  },
+  "interface_findings": {
+    "request_type_1": "captures current image then pairs supplied hand_pose",
+    "request_type_2": "Solves in-memory pairs; clears at normal function tail and the insufficient-samples branch. Early returns on config-load or output-open failure bypass final clear.",
+    "request_type_3": "Pops only the last in-memory hand/target pair; does not delete saved files or reset the whole session.",
+    "pose_input": "Position is passed directly with no implicit unit conversion. Input xyzw is assembled as Eigen(w,x,y,z) and normalized before use.",
+    "result_matrix": "Actual output is sixteen elements from a row-major 4x4 matrix; README twelve-element wording is stale.",
+    "workspace_id": "set_workspace_id only assigns the string; changing it does not clear or partition existing in-memory calibration pairs."
+  },
+  "mac_relation": "C++ ROS vision_interface services/actions are not interchangeable with Mac xifeng_vision vision_observation.v1/robot_mission contracts; needs explicit adapter and qualified transforms",
+  "configuration_snapshots": [
+    {
+      "path": "vision/ultirobotics_vision_detect/config/multiple/workstation.json",
+      "sha256": "1225e584ed87dfab730b0167e386060c172a70aeb9e9f0defaa2667b5dbfad02",
+      "workspace_id": "box1",
+      "hand_and_eye": 0,
+      "hand_eye_matrix": [
+        [
+          -0.012505240477789937,
+          0.9968737302999455,
+          -0.07801528567189299,
+          883.1569056888259
+        ],
+        [
+          0.9994766029996663,
+          0.014789535248199901,
+          0.02877133475198589,
+          330.0466872474003
+        ],
+        [
+          0.029835197617253926,
+          -0.0776146602454498,
+          -0.9965369162746185,
+          1358.0447285426237
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "path": "vision/ultirobotics_vision_detect/config/multiple/workstation.json",
+      "sha256": "1225e584ed87dfab730b0167e386060c172a70aeb9e9f0defaa2667b5dbfad02",
+      "workspace_id": "box2",
+      "hand_and_eye": 0,
+      "hand_eye_matrix": [
+        [
+          -0.012505240477789937,
+          0.9968737302999455,
+          -0.07801528567189299,
+          883.1569056888259
+        ],
+        [
+          0.9994766029996663,
+          0.014789535248199901,
+          0.02877133475198589,
+          330.0466872474003
+        ],
+        [
+          0.029835197617253926,
+          -0.0776146602454498,
+          -0.9965369162746185,
+          1358.0447285426237
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "path": "vision/ultirobotics_vision_detect/config/test1/workstation.json",
+      "sha256": "411f15bbe8e09e2151cf5dd571a6e240a488a7206f9bdb83149b74e539ac7bd2",
+      "workspace_id": "box1",
+      "hand_and_eye": 0,
+      "hand_eye_matrix": [
+        [
+          0.6453649013457409,
+          0.7638721381000324,
+          0.0018710279225072311,
+          169.38403299341408
+        ],
+        [
+          0.7637141442497228,
+          -0.6451773727227373,
+          -0.022064985825958082,
+          -732.1861347587862
+        ],
+        [
+          -0.015647683020687756,
+          0.015668897889469437,
+          -0.9997547877629859,
+          1161.650263060961
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "path": "handeye_calibration_all_20260826.tar.gz!config/test1/workstation.json",
+      "sha256": "ae7338e96a1e8b743dd88d52f3ac8b55eb56069e390f27e235222ab012242cd8",
+      "workspace_id": "box1",
+      "hand_and_eye": 0,
+      "hand_eye_matrix": [
+        [
+          0.1614931970834732,
+          -0.0896339938044548,
+          0.9827948212623596,
+          476.4440002441406
+        ],
+        [
+          -0.06792950630187988,
+          -0.9945144057273865,
+          -0.07954064756631851,
+          201.12286376953125
+        ],
+        [
+          0.9845331311225891,
+          -0.05391549691557884,
+          -0.16669610142707825,
+          569.5639038085938
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "configuration_conclusion": "Vision source test1/workstation and received handeye calibration result are distinct transforms; actual launched config path and binary identity remain unverified; do not silently replace.",
+  "sample_review_boundary": "No image corner re-detection or calibration fit was executed. Norm/pair checks and matrix identity comparison only.",
+  "confirmed_source_defects": [
+    {
+      "path": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/camera_calibration.cpp",
+      "lines": [
+        1139,
+        1140,
+        1179,
+        1200,
+        1222
+      ],
+      "finding": "High residual sets -105, but execution still writes hand_eye_matrix and later resets error_data_ to 0; service may return success=true for rejected residuals.",
+      "priority": "P0",
+      "action": "Fix in a reviewed development revision with tests; do not edit frozen received bytes."
+    },
+    {
+      "path": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/camera_calibration.cpp",
+      "lines": [
+        1167,
+        1198,
+        1225,
+        1326,
+        1327
+      ],
+      "finding": "Some error paths preserve old in-memory pairs; changing workspace_id alone does not clear them.",
+      "priority": "P1",
+      "action": "Define and test explicit calibration-session reset/identity semantics."
+    }
+  ]
+}

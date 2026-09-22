@@ -1,0 +1,3 @@
+# Core detector is deliberately OpenCV-free; ROS packages come from Humble apt.
+numpy==2.1.3
+jsonschema==4.23.0

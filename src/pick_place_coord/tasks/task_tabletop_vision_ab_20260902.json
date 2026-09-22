@@ -1,0 +1,143 @@
+{
+  "schema_version": "tabletop_scene_snapshot.v1",
+  "snapshot_id": "tabletop-vision-ab-20260902",
+  "status": "INPUT_SNAPSHOT_BLOCKED_FOR_MOTION",
+  "source": {
+    "recorded_date": "2026-09-02",
+    "evidence": "USER_PASTED_WEB_CHAT_SUMMARY",
+    "raw_box_observations_status": "NOT_PRESENT_IN_CURRENT_SOURCE"
+  },
+  "contract": {
+    "arm": "left",
+    "arm_id": 1,
+    "gripper_id": 2,
+    "frame_id": "sdk_world",
+    "length_unit": "millimeter",
+    "angle_unit": "degree",
+    "quaternion_order": "xyzw",
+    "endpoint_reference": "SDK_CONFIGURED_END_EFFECTOR_TCP",
+    "waist_base_status": "UNCHANGED_BY_USER_REPORT",
+    "sdk_tcp_status": "UNCHANGED_BY_USER_REPORT"
+  },
+  "bottle": {
+    "object_id": "bottle-ab1",
+    "class_id": "bottle",
+    "raw_observations": [
+      {
+        "observation_id": "A1",
+        "pose": {
+          "position_mm": [955.7354736328125, 261.9664611816406, 392.7784423828125],
+          "quaternion_xyzw": [0.02091191849667762, -0.6544738086286167, -0.020350468926103666, 0.7555213987031928]
+        }
+      },
+      {
+        "observation_id": "B1",
+        "pose": {
+          "position_mm": [949.7433471679688, 263.4300231933594, 362.5370178222656],
+          "quaternion_xyzw": [-0.04372436546354115, -0.690597606919616, 0.04148453472909035, 0.7207233578565503]
+        }
+      }
+    ],
+    "processing": {
+      "position_method": "ARITHMETIC_MEAN",
+      "orientation_method": "SHORTEST_ARC_QUATERNION_MIDPOINT",
+      "raw_preserved": true
+    },
+    "processed_pose": {
+      "position_mm": [952.7394104003906, 262.6982421875, 377.65773010253906],
+      "quaternion_xyzw": [-0.011421248380830784, -0.6734216083547212, 0.010580952371455296, 0.7390946731869178]
+    },
+    "processed_pose_role": "VISUAL_FEATURE_POSE",
+    "visual_feature_location": "CENTER_UPPER_RIGHT",
+    "may_be_used_as_grasp_pose": false,
+    "grasp_pose_status": "MISSING_LOCAL_FEATURE_TO_GRASP_TRANSFORM",
+    "dimensions_status": "MISSING_CURRENT_OBJECT_DIMENSIONS"
+  },
+  "material_box": {
+    "object_id": "material-box-a3b3",
+    "processed_pose": {
+      "position_mm": [1005.3442993164062, -32.95893096923828, 346.8427429199219],
+      "quaternion_xyzw": [0.012198242102158101, -0.0024860017554143446, -0.013426551936668762, 0.9998323611425973]
+    },
+    "processed_pose_role": "MERGED_CONTAINER_DETECTION_DATUM",
+    "dimensions_mm": [310.0, 390.0, 130.0],
+    "dimension_order": ["length", "width", "height"],
+    "dimensions_status": "USER_APPROXIMATE_OUTER_OR_INNER_UNKNOWN",
+    "merge_rule": {
+      "source_observations": ["A3", "B3"],
+      "x": "MINIMUM_X_MORE_CENTRAL",
+      "y": "A3_CENTER_DETECTION_Y",
+      "z": "MAXIMUM_Z",
+      "quaternion": "A3_LOWER_Z_CENTER_DETECTION_QUATERNION",
+      "raw_observations_status": "NOT_PRESENT_IN_CURRENT_SOURCE"
+    },
+    "place_pose_status": "MISSING_CONTAINER_DATUM_TO_PLACE_GRASP_TRANSFORM"
+  },
+  "safe_candidate": {
+    "pose_role": "EE_POSE",
+    "pose": {
+      "position_mm": [692.441, 366.085, 443.775],
+      "quaternion_xyzw": [-0.5829578492927693, 0.1267532371932152, 0.022018148116982255, 0.8022524315715647],
+      "sdk_world_uvw_deg": [-72.779, 13.241, -6.634]
+    },
+    "joints_sdk_deg": [-17.452, 26.477, 2.53, -75.605, -9.046, -15.335, 12.708],
+    "status": "USER_PROVIDED_START_END_CANDIDATE",
+    "may_be_used_as_transfer_corridor": false
+  },
+  "gripper_policy": {
+    "policy_id": "left-gripper2-site-tunable-v1",
+    "gripper_id": 2,
+    "tuning_status": "SITE_TUNABLE",
+    "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+    "open_command": 17,
+    "close_command": 16,
+    "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+    "value_unit": "device_native_uint16",
+    "executor_binding": "PENDING_SITE_INTEGRATION",
+    "open": {"position": null},
+    "close": {"speed": null, "force": null}
+  },
+  "missing_requirements": [
+    {
+      "requirement_id": "bottle_feature_to_grasp_transform",
+      "status": "MISSING",
+      "reason": "视觉点在瓶子中心偏右上，尚无该局部 feature 到真实抓取中心的 3D 刚体变换。"
+    },
+    {
+      "requirement_id": "bottle_dimensions_and_local_axes",
+      "status": "MISSING",
+      "reason": "本次对象尺寸、局部轴和抓取高度尚未提供。"
+    },
+    {
+      "requirement_id": "material_box_datum_role",
+      "status": "MISSING",
+      "reason": "合并点尚未确认是箱体底部中心、外形中心、口沿中心或侧面中心。"
+    },
+    {
+      "requirement_id": "material_box_inner_geometry_floor_and_rim",
+      "status": "MISSING",
+      "reason": "310x390x130mm 是约数，尚未区分内/外尺寸、壁厚、内底和口沿高度。"
+    },
+    {
+      "requirement_id": "table_surface_z_mm",
+      "status": "MISSING",
+      "reason": "本次 sdk_world 契约下的实际桌面 Z 尚未与本次观测绑定。"
+    },
+    {
+      "requirement_id": "safe_transfer_corridor_height_mm",
+      "status": "MISSING",
+      "reason": "当前 safe 是起终点候选，未证明夹爪和持物可跨越料框口沿。"
+    },
+    {
+      "requirement_id": "live_arm_try_worlds_joint_path",
+      "status": "MISSING",
+      "reason": "尚无与执行密度一致的 live armTryWorlds 逆解关节路径。"
+    },
+    {
+      "requirement_id": "frame_calibration_gate_pass",
+      "status": "MISSING",
+      "reason": "本次还没有可把 SDK worlds 安全投影到 PyBullet 全机器人的有效标定门禁 PASS。"
+    }
+  ],
+  "real_motion_authorized": false
+}

@@ -1,0 +1,310 @@
+{
+  "schema_version": "tabletop_assumption_qualification_task.v1",
+  "status": "SIMULATION_ONLY_ASSUMPTIONS_UNCONFIRMED",
+  "qualification": "SIMULATION_ASSUMPTION_CANDIDATE",
+  "scene_geometry_status": "SIMULATION_ASSUMPTIONS_UNCONFIRMED",
+  "controller_limit_profile": "left_preview102_20260827",
+  "real_motion_authorized": false,
+  "debian_execution_allowed": false,
+  "coordinate_contract_status": "MODEL_A_EE_LINK_ORIGIN_SINGLE_POSE_ASSUMPTION_CONFLICTS_WITH_SNAPSHOT_TCP_LABEL",
+  "source_snapshot_sha256": "d79a9cf8e24aa60ae49c1393ead54e08d939407b09fa395195996d3abaa89b43",
+  "assumptions": [
+    "A1/B1 processed visual feature is temporarily treated as the bottle grasp center",
+    "current bottle uses the prior 70x70x200mm conservative envelope",
+    "A3/B3 processed material-box pose is temporarily treated as outer geometry center",
+    "box dimensions 310x390x130mm are treated as local X/Y/Z outer dimensions",
+    "the supplied box quaternion defines the local X/Y/Z axes in this demo",
+    "placed bottle center uses a proxy-aware derived inset and box bottom plus half bottle height",
+    "one offline-searched task orientation is held from pick descent through place ascent",
+    "safe-to-task posture change is smooth at high clearance and reversed exactly on return",
+    "safe Worlds/Joints establish a legacy Model-A EE-link-origin display anchor only; it conflicts with the snapshot TCP label and is not calibration",
+    "transfer bottle bottom clears the highest assumed box rim by 20mm",
+    "box wall thickness is a 10mm simulation assumption and floor is a thin support proxy"
+  ],
+  "self_collision_disabled_link_pairs": [
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      17,
+      18
+    ]
+  ],
+  "pairs": [
+    {
+      "pick": [
+        0.5723566505756378,
+        0.32434630588531493,
+        1.1625980306625365
+      ],
+      "place": [
+        0.598403299734843,
+        0.11902011890761864,
+        1.1688511667853976
+      ],
+      "actual_pick_grip": [
+        0.5722360418484906,
+        0.3243192912098913,
+        1.1627265795838722
+      ],
+      "actual_place_grip": [
+        0.5979286401434302,
+        0.11911080164038075,
+        1.168849212020579
+      ],
+      "object_pick_center": [
+        0.5723566505756378,
+        0.32434630588531493,
+        1.1625980306625365
+      ],
+      "object_place_center": [
+        0.598403299734843,
+        0.11902011890761864,
+        1.1688511667853976
+      ],
+      "dimensions_m": [
+        0.07,
+        0.07,
+        0.2
+      ],
+      "carried_center_offset_grip_m": [
+        0.00012060872714714233,
+        2.7014675423653323e-05,
+        -0.000128548921335625
+      ],
+      "grasp_capture": {
+        "axis_range_m": [
+          0.0,
+          0.08
+        ],
+        "lateral_tolerance_m": 0.015,
+        "reference": "SIMULATION_ASSUMPTION_FEATURE_EQUALS_GRASP_CENTER",
+        "object_grasp_point_world_m": [
+          0.5723566505756378,
+          0.32434630588531493,
+          1.1625980306625365
+        ]
+      },
+      "object_attachment_mode": "RIGID_FROM_CLOSE"
+    }
+  ],
+  "obstacles": [
+    {
+      "source_obstacle_id": "table_from_assumed_bottle_bottom",
+      "center": [
+        0.5986590950336457,
+        0.1765177193069458,
+        1.0375980306625365
+      ],
+      "half": [
+        0.3263024444580078,
+        0.4478285865783691,
+        0.025
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support_contact_tolerance_m": 0.0001,
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0
+    },
+    {
+      "source_obstacle_id": "bin_wall_x_minus",
+      "center": [
+        0.47501747524214427,
+        0.032725520521413316,
+        1.1310865020777794
+      ],
+      "half": [
+        0.005,
+        0.195,
+        0.065
+      ],
+      "orientation_xyzw": [
+        0.012198242102158101,
+        -0.0024860017554143446,
+        -0.013426551936668762,
+        0.9998323611425973
+      ],
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0,
+      "support_contact_tolerance_m": 0.0
+    },
+    {
+      "source_obstacle_id": "bin_wall_x_plus",
+      "center": [
+        0.7749056037411626,
+        0.02465274493574001,
+        1.1324795848820595
+      ],
+      "half": [
+        0.005,
+        0.195,
+        0.065
+      ],
+      "orientation_xyzw": [
+        0.012198242102158101,
+        -0.0024860017554143446,
+        -0.013426551936668762,
+        0.9998323611425973
+      ],
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0,
+      "support_contact_tolerance_m": 0.0
+    },
+    {
+      "source_obstacle_id": "bin_wall_y_minus",
+      "center": [
+        0.6198718285076991,
+        -0.1611858208966528,
+        1.1271358047388196
+      ],
+      "half": [
+        0.155,
+        0.005,
+        0.065
+      ],
+      "orientation_xyzw": [
+        0.012198242102158101,
+        -0.0024860017554143446,
+        -0.013426551936668762,
+        0.9998323611425973
+      ],
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0,
+      "support_contact_tolerance_m": 0.0
+    },
+    {
+      "source_obstacle_id": "bin_wall_y_plus",
+      "center": [
+        0.6300512504756078,
+        0.2185640863538061,
+        1.1364302822210193
+      ],
+      "half": [
+        0.155,
+        0.005,
+        0.065
+      ],
+      "orientation_xyzw": [
+        0.012198242102158101,
+        -0.0024860017554143446,
+        -0.013426551936668762,
+        0.9998323611425973
+      ],
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0,
+      "support_contact_tolerance_m": 0.0
+    },
+    {
+      "source_obstacle_id": "bin_assumed_bottom_plane",
+      "center": [
+        0.625316554446683,
+        0.030318950443904875,
+        1.0648038104401443
+      ],
+      "half": [
+        0.155,
+        0.195,
+        0.002
+      ],
+      "orientation_xyzw": [
+        0.012198242102158101,
+        -0.0024860017554143446,
+        -0.013426551936668762,
+        0.9998323611425973
+      ],
+      "minimum_robot_clearance_m": 0.0,
+      "minimum_gripper_clearance_m": 0.0,
+      "support_contact_tolerance_m": 0.0001
+    }
+  ]
+}

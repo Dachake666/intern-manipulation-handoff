@@ -1,0 +1,113 @@
+{
+  "schema_version": "release_package_audit.v1",
+  "audited_at": "2026-09-04",
+  "source": {
+    "path": "/Users/xiaobingxin/Downloads/trackA_worlds_line.zip",
+    "sha256": "96c606335c14ff5487060d5b1d0adacc9ab65d6cdb2e24acd0f69b72e8340832",
+    "size_bytes": 151859,
+    "entry_count": 33,
+    "uncompressed_bytes": 684012,
+    "zip_integrity": "PASS",
+    "unsafe_paths": [],
+    "duplicate_names": [],
+    "symlinks": [],
+    "unredacted_sensitive_pattern_hits": 5,
+    "raw_zip_copied_into_record": false
+  },
+  "classification": {
+    "role": "USER_IDENTIFIED_SUCCESSFUL_DEBIAN_WORKING_SNAPSHOT",
+    "artifact_identity": "MATCH",
+    "bundle_consistency": "DRIFT",
+    "run_evidence": "INCONCLUSIVE",
+    "evidence_grade": "LIMITED",
+    "promotion_allowed": false
+  },
+  "artifacts": {
+    "executor": {
+      "zip_path": "trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py",
+      "sha256": "807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644",
+      "size_bytes": 28100,
+      "record_copy": "artifacts/execute_tabletop_pick_place_worlds.py",
+      "record_copy_byte_identical": true
+    },
+    "final_plan": {
+      "zip_path": "trackA_worlds_line/trackA_worlds_line/tabletop_pick_place_worlds_PASS_placeZ495_20260903.json",
+      "sha256": "6b8ad92c80b52bd380fdd5fff7f5e4c1dcf6c4b41b830a2457fd67ec7e4eb507",
+      "size_bytes": 17462,
+      "record_copy": "artifacts/tabletop_pick_place_worlds_PASS_placeZ495_20260903.json",
+      "record_copy_byte_identical": true
+    },
+    "sdk_session": {
+      "sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "matches_current_source_and_release": true
+    },
+    "robot_lock": {
+      "sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "matches_current_source_and_release": true
+    },
+    "original_problem_plan": {
+      "sha256": "0f2342768e8a11551618331681b8f974150e73331161beaefd43ec22c052a46f",
+      "matches_current_candidate_and_release": true
+    }
+  },
+  "manifest_check": {
+    "status": "FAIL",
+    "passed": ["robot_lock.py", "sdk_session.py", "tabletop_pick_place_worlds.json"],
+    "failed": ["execute_tabletop_pick_place_worlds.py"],
+    "manifest_executor_sha256": "ece4bff6f004faa17b10bf830c1c61cc1b513e3ee80b96e08555998be47f2eeb",
+    "actual_executor_sha256": "807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644",
+    "final_plan_listed": false
+  },
+  "executor_drift_from_current_source": {
+    "current_source_sha256": "267eee1b409e5a0f1511c7056febc30dc1de9a801a86e01004090683d310b30e",
+    "differences": [
+      "SAFE_POSITION_TOL_MM changed from 5.0 to 20.0",
+      "SAFE_ORIENTATION_TOL_DEG changed from 3.0 to 8.0",
+      "IK jump failure diagnostics include joint, before/after values and pose"
+    ],
+    "safety_note": "Tolerance widening changes start/end safe assertion semantics and is not adopted into current source"
+  },
+  "final_plan_review": {
+    "runtime_static_validation": "PASS",
+    "dense_points_from_exact_safe": 532,
+    "state_machine": "12 stages: 7 MoveWorlds, 3 gripper, 2 endpoint assertions",
+    "fixed_uvw_deg": [-72.779, 13.241, -6.634],
+    "pick_xyz_mm": [700.0, 250.0, 360.0],
+    "pick_hover_xyz_mm": [700.0, 250.0, 540.0],
+    "place_xyz_mm": [720.0, 100.0, 495.0],
+    "place_hover_xyz_mm": [720.0, 100.0, 550.0],
+    "safe_xyz_mm": [692.441, 366.085, 443.775],
+    "internal_consistency": "FAIL",
+    "stale_fields": [
+      "input_geometry_gate remains BLOCKED while input_blockers is empty",
+      "seven safety/evidence fields remain PENDING",
+      "material box geometry remains SIMULATION_ASSUMPTION",
+      "T_object_grasp remains identity while camera feature is described off-center",
+      "place_object_after_release remains derived from the old place point",
+      "held object hover clearance result remains derived from the old route",
+      "plan_id, request hash and generator provenance were not regenerated"
+    ],
+    "execution_note": "The archived executor reads resolved/stage poses and therefore accepted this hand-edited snapshot; stale derived fields make it unsuitable as a reusable generator template"
+  },
+  "as_run_deviations_not_embedded_in_zip_artifacts": {
+    "limit_margin_deg": 0.0,
+    "live_controller_limit_filter": "BYPASSED_BY_RUNTIME_MONKEYPATCH",
+    "default_executor_limit_margin_deg": 5.0,
+    "four_degree_adjacent_ik_jump_check": "RETAINED",
+    "local_static_limits_and_physical_j7_upper_bound": "RETAINED"
+  },
+  "zip_logs": [
+    {"name": "precheck_20260903_115755.log", "raw_sha256": "03804b9cb0f762ac5dbb91ccd18597ed754f753b1ad67c582d1e2050c21111f4", "result": "FAIL_SAFE_ENDPOINT_MISMATCH", "real_motion": false},
+    {"name": "precheck_20260903_143201.log", "raw_sha256": "e2e173118001e09461d6de8cca401bd46f4affe1cfe32295ac1080239cd96199", "result": "FAIL_PICK_HOVER_IK_JUMP", "real_motion": false},
+    {"name": "precheck_full_20260903_143743.log", "raw_sha256": "21317a7b74a43f2b6bfc6300683d6ee3055f6a985a53ac56ccf89e543bc1310b", "result": "FAIL_PICK_HOVER_IK", "real_motion": false},
+    {"name": "precheck_scan_all_20260903_144059.log", "raw_sha256": "c3ae09c8fe5f2d09829fc84723205f8a2294839463caee5f2480761591c5fd0e", "result": "FAIL_DIAGNOSTIC_615_IK_FAILURES_AND_HARD_RETURN_ERROR", "real_motion": false},
+    {"name": "precheck_assumed_20260903_154418.log", "raw_sha256": "04a20116ddcdc6c0d710c073fe3a67bf6d06c6f1fc6bbed55253223b3a5161f3", "result": "FAIL_PLACE_HOVER_LIMIT_MARGIN", "real_motion": false}
+  ],
+  "log_evidence_boundary": {
+    "all_zip_logs_are_read_only_prechecks": true,
+    "successful_final_plan_hash_appears_in_zip_logs": false,
+    "full_real_run_log_present": false,
+    "controller_varget_is_not_a_run_log": true,
+    "user_reported_video_and_success": true
+  }
+}

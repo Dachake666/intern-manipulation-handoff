@@ -1,0 +1,58 @@
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.147
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8968
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8968
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+ip192.168.8.147:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+文件上传成功: uploads/varget.log
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+executor SHA-256: 807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py
+plan SHA-256:     4567b64e72c2aa440e9895057d971790f1449298fe580047dcbda8736dcc1e01  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/tabletop_pick_place_worlds_test.json
+sdk_session SHA-256: c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/sdk_session.py
+transport: robot=192.168.8.147 local=192.168.8.185 arm=192.168.8.147:8080  ARM_ID=1
+mode: READ-ONLY LIVE PRECHECK
+[互斥锁] 已独占 192.168.8.147 #1 (pid=33847)
+============================================================
+启动 PilotSDK(只读会话)
+============================================================
+soft_stop: (0, 'CLOSE')
+armInitData: 0
+link: (0, True)
+只读会话: 不清报警 / 不使能 / 不设全局速度 / 不下发运动
+  数据就绪(第 1 次探测)
+Traceback (most recent call last):
+  File "/home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py", line 630, in <module>
+    sys.exit(main())
+  File "/home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py", line 625, in main
+    return run_with_sdk(
+  File "/home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py", line 496, in run_with_sdk
+    report = precheck_full_path(ss, readonly_sdk, plan)
+  File "/home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py", line 381, in precheck_full_path
+    raise PrecheckError(
+__main__.PrecheckError: PLACE_HOVER 密集点 73/76 限位失败:
+  j2=-5.15deg 超出 [-5.0, +203.0] (URDF 限位 [-10.0, +208.0] 收 5.0deg)
+  j2=-5.15° 不在控制器安全区间 [-5.0,+203.0]°
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!

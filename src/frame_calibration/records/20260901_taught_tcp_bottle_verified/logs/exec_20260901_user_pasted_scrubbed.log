@@ -1,0 +1,57 @@
+EVIDENCE SOURCE: complete terminal transcript pasted by the operator in chat on 2026-09-01.
+RAW FILE: not provided; this committed copy is scrubbed and excludes shell prompt fragments.
+
+XIFENG_ALLOW_REAL_MOTION=1 python3 execute_servo_grasp.py traj_bottle_taught_tcp_20260831_RUN.json --run --robot-ip 192.168.8.147 --local-ip 192.168.8.185 --arm-ip 192.168.8.147 --arm-port 8080 --step-deg 0.4 --period-ms 20 --speed 8
+轨迹 SHA-256: 264808c7da7f8a7f6b9e1844de9cb536c5f39a7c800275b95b5d7a8f1e1a522c
+轨迹: traj_bottle_taught_tcp_20260831_RUN.json  模式: 伺服透传  步长 0.4° / 周期 20ms  夹爪力度 8000
+配置: 左臂(arm_id=1) / 夹爪2; 关节速度 20°/s  全局速度 8.0%  脚本 SHA bc05bd76c2584dc6
+限位预检: 238 个路点全部通过 ✓
+透传密集点: 882 个, 预计时长 17.6s
+[机器人级互斥锁] 已独占 192.168.8.147 (pid=6434)
+PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+response 0, msg: success
+data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"busyProgram":0,"svo_on":true}
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(8.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+[夹爪2] open
+
+[轴极限] 控制器真值 vs 本地表:
+j1: 控制器 [-166.0,+166.0] 本地 [-166.0,+166.0] ✓
+j2: 控制器 [-10.0,+208.0] 本地 [-10.0,+208.0] ✓
+j3: 控制器 [-166.0,+166.0] 本地 [-166.0,+166.0] ✓
+j4: 控制器 [-128.0,+103.0] 本地 [-128.0,+103.0] ✓
+j5: 控制器 [-166.0,+166.0] 本地 [-166.0,+166.0] ✓
+j6: 控制器 [-40.0,+40.0] 本地 [-40.0,+40.0] ✓
+j7: 控制器 [-88.0,+88.0] 本地 [-88.0,+76.0] ≠
+判定用: 本地表(mode=report, 仅对比不采纳)
+当前姿态离首路点 121.2°
+等待到位: 最大误差 0.468 deg
+关闭保护状态(透传前置条件)...
+夹爪前 停稳: 误差 0.113° (连续3帧变化<0.05°, 控制器报已停)
+[夹爪2] close
+夹爪前 停稳: 误差 0.022° (连续3帧变化<0.05°, 控制器报已停)
+[夹爪2] open
+终点 停稳: 误差 0.024° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.024° (已确认停稳)
+
+[节拍统计] pulse 透传
+帧数 882  实际 18.13s  预计 17.64s  偏差 +0.49s
+跟不上的帧: 76 帧 (8.6%)  最大超时 87.6ms  平均超时 15.6ms
+放弃追赶并重新对齐 9 次 (落后超过 2 个周期时触发)
+[跟随误差] 已关闭(FOLLOW_SAMPLE_EVERY=0)
+恢复保护状态...
+保护状态回读: True ✓
+全局速度已还原为 10.0%
+PilotSDK stopped successfully
+WebSocket server stopped
+All ZMQ subscribers stopped

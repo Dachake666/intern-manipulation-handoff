@@ -1,0 +1,21 @@
+repositories:
+  vision/vision_third_party:
+    type: git
+    url: ssh://git@gitlab.ultirobotics.com:2224/vision/vision_third_party.git
+    version: main
+  vision/camera_drive:
+    type: git
+    url: ssh://git@gitlab.ultirobotics.com:2224/vision/camera_drive.git
+    version: main
+  vision/vision_utils:
+    type: git
+    url: ssh://git@gitlab.ultirobotics.com:2224/vision/vision_utils.git
+    version: main
+  vision/vision_algorithm:
+    type: git
+    url: ssh://git@gitlab.ultirobotics.com:2224/vision/vision_arm_algorithm.git
+    version: crop_region
+  vision/vision_hand_eye:
+    type: git
+    url: ssh://git@gitlab.ultirobotics.com:2224/vision/vision_hand_eye.git
+    version: main

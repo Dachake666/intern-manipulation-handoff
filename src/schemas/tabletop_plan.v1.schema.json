@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/tabletop_plan.v1.schema.json",
+  "title": "tabletop_plan.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "plan_id", "status", "real_motion_authorized", "contract", "input", "gripper_policy", "transforms", "resolved", "stages", "safety", "provenance"],
+  "properties": {
+    "schema_version": {"const": "tabletop_plan.v1"},
+    "plan_id": {"type": "string", "minLength": 1},
+    "pick_mode": {"enum": ["VERTICAL", "HORIZONTAL_X_POSITIVE"]},
+    "startup_policy": {"type": "object"},
+    "derivation": {"type": "object"},
+    "status": {"enum": ["OFFLINE_CANDIDATE_BLOCKED", "OFFLINE_CANDIDATE_PRECHECK_REQUIRED"]},
+    "real_motion_authorized": {"const": false},
+    "contract": {
+      "type": "object", "additionalProperties": false,
+      "required": ["arm", "arm_id", "gripper_id", "world_frame", "length_unit", "quaternion_order", "sdk_uvw_convention", "dynamic_transport", "move_j_policy", "runtime_authorization"],
+      "properties": {
+        "arm": {"const": "left"}, "arm_id": {"const": 1}, "gripper_id": {"const": 2},
+        "world_frame": {"const": "sdk_world"}, "length_unit": {"const": "millimeter"},
+        "quaternion_order": {"const": "xyzw"},
+        "sdk_uvw_convention": {"const": "Rz(W)*Ry(V)*Rx(U)"},
+        "dynamic_transport": {"const": "MOVE_WORLDS_ONLY"},
+        "move_j_policy": {"const": "VERIFIED_FIXED_SEGMENTS_ONLY_NOT_USED_IN_THIS_PLAN"},
+        "runtime_authorization": {"const": "RUN_FLAG_PLUS_ENV_GATE_PLUS_OPERATOR_CONFIRMATION"}
+      }
+    },
+    "input": {
+      "type": "object", "additionalProperties": false,
+      "required": ["request_id", "request_sha256", "observation_id", "object_id", "class_id", "dimensions_mm", "pick_pose_role", "place_pose_role", "place_source_kind", "station_id"],
+      "properties": {
+        "request_id": {"type": "string", "minLength": 1},
+        "request_sha256": {"$ref": "#/$defs/hash"},
+        "observation_id": {"type": "string", "minLength": 1},
+        "object_id": {"type": "string", "minLength": 1},
+        "class_id": {"type": "string", "minLength": 1},
+        "dimensions_mm": {"$ref": "#/$defs/positiveVec3"},
+        "pick_pose_role": {"$ref": "#/$defs/poseRole"},
+        "place_pose_role": {"$ref": "#/$defs/poseRole"},
+        "place_source_kind": {"enum": ["EXPLICIT_PLACE", "MATERIAL_BOX_LOCAL_OFFSET"]},
+        "station_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "gripper_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["policy_id", "gripper_id", "tuning_status", "protocol_encoding", "open_command", "close_command", "command_contract", "value_unit", "executor_binding", "open", "close", "source_sha256"],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "gripper_id": {"const": 2},
+        "tuning_status": {"const": "SITE_TUNABLE"},
+        "protocol_encoding": {"const": "EB90_UINT16_LITTLE_ENDIAN"},
+        "open_command": {"const": 17},
+        "close_command": {"const": 16},
+        "command_contract": {"const": "OPEN_POSITION_CLOSE_SPEED_FORCE"},
+        "value_unit": {"const": "device_native_uint16"},
+        "executor_binding": {"const": "execute_tabletop_pick_place_worlds.py/v1"},
+        "open": {
+          "type": "object", "additionalProperties": false,
+          "required": ["position", "settle_s"],
+          "properties": {
+            "position": {"$ref": "#/$defs/uint16"},
+            "settle_s": {"type": "number", "minimum": 0}
+          }
+        },
+        "close": {
+          "type": "object", "additionalProperties": false,
+          "required": ["speed", "force", "settle_s"],
+          "properties": {
+            "speed": {"$ref": "#/$defs/uint16"},
+            "force": {"$ref": "#/$defs/uint16"},
+            "settle_s": {"type": "number", "minimum": 0}
+          }
+        },
+        "source_sha256": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "transforms": {
+      "type": "object", "additionalProperties": false,
+      "required": ["notation", "T_endpoint_grasp", "T_endpoint_grasp_sha256", "endpoint_transform_source", "T_object_grasp", "T_object_grasp_sha256", "T_endpoint_object_at_pick", "orientation_policy", "place_source"],
+      "properties": {
+        "notation": {"const": "T_A_B maps coordinates in B into A"},
+        "T_endpoint_grasp": {"$ref": "#/$defs/mat4"},
+        "T_endpoint_grasp_sha256": {"$ref": "#/$defs/hash"},
+        "endpoint_transform_source": {"type": "object"},
+        "T_object_grasp": {"$ref": "#/$defs/mat4"},
+        "T_object_grasp_sha256": {"$ref": "#/$defs/hash"},
+        "T_endpoint_object_at_pick": {"$ref": "#/$defs/mat4"},
+        "orientation_policy": {"enum": ["FOLLOW_INPUT_FULL_POSE", "FIXED_ENDPOINT_ORIENTATION"]}
+        ,"place_source": {"type": "object"}
+      }
+    },
+    "resolved": {
+      "type": "object", "additionalProperties": false,
+      "required": ["pick_endpoint", "pick_hover_endpoint", "place_endpoint", "place_hover_endpoint", "place_object_after_release", "safe_endpoint"],
+      "properties": {
+        "pick_endpoint": {"$ref": "#/$defs/sdkPose"},
+        "pick_hover_endpoint": {"$ref": "#/$defs/sdkPose"},
+        "pick_ascend_endpoint": {"$ref": "#/$defs/sdkPose"},
+        "place_endpoint": {"$ref": "#/$defs/sdkPose"},
+        "place_hover_endpoint": {"$ref": "#/$defs/sdkPose"},
+        "place_object_after_release": {"oneOf": [{"$ref": "#/$defs/sdkPose"}, {"type": "null"}]},
+        "safe_endpoint": {"$ref": "#/$defs/sdkPose"}
+      }
+    },
+    "stages": {
+      "type": "array", "minItems": 12, "maxItems": 12,
+      "items": {"oneOf": [
+        {"$ref": "#/$defs/assertStage"},
+        {"$ref": "#/$defs/moveWorldsStage"},
+        {"$ref": "#/$defs/gripperStage"}
+      ]}
+    },
+    "safety": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_geometry_gate", "input_blockers", "structural_sequence_check", "held_object_hover_endpoint_check", "held_object_hover_endpoint_bottom_min_mm", "held_object_hover_endpoint_bottom_required_mm", "dense_swept_held_object_clearance", "table_bin_volume_geometry", "live_armTryWorlds_dense_precheck", "controller_limit_intersection", "robot_gripper_held_object_collision_preflight", "gui_review", "real_robot_evidence"],
+      "properties": {
+        "input_geometry_gate": {"enum": ["PASS", "BLOCKED"]},
+        "input_blockers": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "structural_sequence_check": {"const": "PASS"},
+        "held_object_hover_endpoint_check": {"enum": ["PASS", "PENDING"]},
+        "held_object_hover_endpoint_bottom_min_mm": {"type": ["number", "null"]},
+        "held_object_hover_endpoint_bottom_required_mm": {"type": ["number", "null"]},
+        "placement_clearance": {"type": "object"},
+        "dense_swept_held_object_clearance": {"const": "PENDING"},
+        "table_bin_volume_geometry": {"const": "PENDING"},
+        "live_armTryWorlds_dense_precheck": {"const": "PENDING"},
+        "controller_limit_intersection": {"const": "PENDING"},
+        "robot_gripper_held_object_collision_preflight": {"const": "PENDING"},
+        "gui_review": {"const": "PENDING"},
+        "real_robot_evidence": {"const": "PENDING"}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["arm_profiles_path", "arm_profiles_sha256", "generator_path", "generator_sha256"],
+      "properties": {
+        "arm_profiles_path": {"type": "string"},
+        "arm_profiles_sha256": {"$ref": "#/$defs/hash"},
+        "generator_path": {"type": "string"},
+        "generator_sha256": {"$ref": "#/$defs/hash"}
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "uint16": {"type": "integer", "minimum": 0, "maximum": 65535},
+    "poseRole": {"enum": ["OBJECT_POSE", "GRASP_POSE", "EE_POSE"]},
+    "vec3": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "positiveVec3": {"type": "array", "prefixItems": [{"type": "number", "exclusiveMinimum": 0}, {"type": "number", "exclusiveMinimum": 0}, {"type": "number", "exclusiveMinimum": 0}], "items": false},
+    "quat": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "matRow": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "mat4": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/matRow"}},
+    "sdkPose": {
+      "type": "object", "additionalProperties": false,
+      "required": ["position_mm", "quaternion_xyzw", "sdk_world_uvw_deg"],
+      "properties": {
+        "position_mm": {"$ref": "#/$defs/vec3"},
+        "quaternion_xyzw": {"$ref": "#/$defs/quat"},
+        "sdk_world_uvw_deg": {"$ref": "#/$defs/vec3"}
+      }
+    },
+    "assertStage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "kind", "pose", "carrying"],
+      "properties": {
+        "name": {"type": "string"}, "kind": {"const": "ASSERT_ENDPOINT"},
+        "pose": {"$ref": "#/$defs/sdkPose"}, "carrying": {"type": "boolean"}
+      }
+    },
+    "moveWorldsStage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "kind", "pose", "carrying", "interpolation_en", "wait_until_worlds", "critical"],
+      "properties": {
+        "name": {"type": "string"}, "kind": {"const": "MOVE_WORLDS"},
+        "pose": {"$ref": "#/$defs/sdkPose"}, "carrying": {"type": "boolean"},
+        "interpolation_en": {"const": false}, "wait_until_worlds": {"const": true},
+        "critical": {"const": true}
+      }
+    },
+    "gripperStage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "kind", "action", "policy_id", "carrying_after", "wait_until_done"],
+      "properties": {
+        "name": {"type": "string"}, "kind": {"const": "GRIPPER"},
+        "action": {"enum": ["open", "close"]}, "carrying_after": {"type": "boolean"},
+        "policy_id": {"type": "string", "minLength": 1},
+        "wait_until_done": {"const": true}
+      }
+    }
+  }
+}

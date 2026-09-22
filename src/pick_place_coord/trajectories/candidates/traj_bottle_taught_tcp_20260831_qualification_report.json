@@ -1,0 +1,272 @@
+{
+  "schema_version": "trajectory_qualification.v1",
+  "qualification": "CANDIDATE",
+  "verdict": "PASS",
+  "trajectory_sha256": "3e60bac8e95a2b2f79c9f9e8386a2cf8f2ef810f224a32a63c7d9e4e6ed1042a",
+  "trajectory_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/traj_bottle_taught_tcp_20260831_CANDIDATE.json",
+  "task_sha256": "f1d069327a9aec2b266db45021f169b15d8feffa4c514f151f3ebd2beb9b06b9",
+  "trajectory_schema": "legacy_trajectory.v1",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "limits_source": "controller_limit_profiles.left_preview102_20260827.planning_limits_deg",
+  "gui_review": {
+    "required": true,
+    "record": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/bottle_taught_tcp_20260831_gui_review.json",
+    "record_sha256": "d4d7790348b7234fe31c072e25633ba6baad3eec05ec837e8f5285276ff344cd",
+    "trajectory_hash_match": true,
+    "result": "PASS"
+  },
+  "dense_frames": 1356,
+  "first_point_frames": 1,
+  "path_length_rad": 13.380167927381647,
+  "gates": {
+    "arm_gripper_contract": "PASS",
+    "limits": "PASS",
+    "collision": "PASS",
+    "pybullet_gui_review": "PASS"
+  },
+  "limit_report": {
+    "minimum_margin_deg": 5.0,
+    "minimum_at": "trajectory[881]",
+    "minimum_joint": 7,
+    "required_margin_deg": 5.0,
+    "violations": []
+  },
+  "collision_report": {
+    "checked_first_point_frames": 1,
+    "checked_trajectory_frames": 1356,
+    "planned_trajectory_frames": 1356,
+    "completed_dense_check": true,
+    "self_collision_check_mode": "EXPLICIT_LINK_CLOSEST_POINTS",
+    "self_collision_disabled_link_pairs": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        17,
+        18
+      ]
+    ],
+    "minimum_clearance_m": -3.989664590017816e-09,
+    "gripper_proxy_m": [
+      0.1,
+      0.178,
+      0.08
+    ],
+    "gripper_proxy_center_link_mm": [
+      0,
+      84,
+      0
+    ],
+    "minimum_gripper_object_clearance_m": 0.01750601597829949,
+    "minimum_clearances_by_kind_m": {
+      "robot_environment": 0.06699109985622703,
+      "gripper_proxy_environment": 0.034568646041004514,
+      "carried_object_environment": -3.989664590017816e-09,
+      "released_or_stationary_object_environment": -5.204170427930421e-18,
+      "robot_object": 0.06393814370521293
+    },
+    "grasp_capture_checks": [
+      {
+        "where": "grasp[0]",
+        "status": "PASS",
+        "axis_offset_m": 2.7821006984306377e-06,
+        "axis_range_m": [
+          0.0,
+          0.08
+        ],
+        "lateral_error_m": 2.21977091520819e-06,
+        "lateral_tolerance_m": 0.015,
+        "grasp_point_inside_object": true,
+        "grasp_point_world_m": [
+          0.5465890278194876,
+          0.3252984801916516,
+          1.1608049190486869
+        ],
+        "object_center_world_m": [
+          0.5465890278194876,
+          0.3252984801916516,
+          1.1262680053710938
+        ],
+        "grasp_point_reference": "USER_CONFIRMED_TAUGHT_GRIP_POINT_ON_BOTTLE",
+        "environment_clearance_at_close": {
+          "robot": {
+            "obstacle": "taught_table_top",
+            "clearance_m": 0.15155587981723376,
+            "required_clearance_m": 0.02,
+            "margin_m": 0.13155587981723377
+          },
+          "gripper": {
+            "obstacle": "taught_table_top",
+            "clearance_m": 0.07453393960278626,
+            "required_clearance_m": 0.02,
+            "margin_m": 0.054533939602786255
+          },
+          "status": "PASS"
+        }
+      }
+    ],
+    "carried_object_dimensions_m": [
+      [
+        0.07,
+        0.07,
+        0.2
+      ]
+    ],
+    "carried_center_offsets_grip_m": [
+      [
+        1.5880731589756891e-06,
+        -1.01864269574925e-07,
+        -0.034539686462906394
+      ]
+    ],
+    "object_attachment_modes": [
+      "RIGID_FROM_CLOSE"
+    ],
+    "actual_release_poses": [
+      [
+        [
+          0.5268031040556308,
+          0.08176392222443289,
+          1.1262793960639519
+        ],
+        [
+          -1.3979266441310756e-05,
+          -6.30106296739541e-06,
+          -5.357346708478872e-06,
+          1.0
+        ]
+      ]
+    ],
+    "intentional_contact_exemptions": [
+      "target bottle vs full gripper envelope during final pick descend",
+      "held bottle vs gripper envelope while attached",
+      "released bottle vs gripper envelope during place ascend only; subsequent return is checked"
+    ],
+    "support_contact_tolerances_m": {
+      "taught_table_top": 5e-05
+    },
+    "violations": []
+  },
+  "geometry_precheck_verdict": "PASS",
+  "grasp_precheck": {
+    "status": "PASS",
+    "failure_mode": "NONE",
+    "captures": [
+      {
+        "grasp_index": 0,
+        "capture_status": "PASS",
+        "axis_offset_mm": 0.0027821006984306376,
+        "allowed_axis_range_mm": [
+          0.0,
+          80.0
+        ],
+        "lateral_error_mm": 0.00221977091520819,
+        "allowed_lateral_error_mm": 15.0,
+        "capture_failure_reasons": [],
+        "environment_at_close": {
+          "robot": {
+            "obstacle": "taught_table_top",
+            "clearance_m": 0.15155587981723376,
+            "required_clearance_m": 0.02,
+            "margin_m": 0.13155587981723377
+          },
+          "gripper": {
+            "obstacle": "taught_table_top",
+            "clearance_m": 0.07453393960278626,
+            "required_clearance_m": 0.02,
+            "margin_m": 0.054533939602786255
+          },
+          "status": "PASS"
+        }
+      }
+    ]
+  },
+  "hardware_ready": true
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "pybullet_gui_review.v1",
+  "result": "PASS",
+  "trajectory_sha256": "b39b6db56439b5c1deee21a35c99d02a73cbea63a30243ba654fbdf79e920ac0",
+  "reviewer": "xiaobingxin",
+  "arm_id": 1,
+  "dense_step_deg": 0.25,
+  "frame_count": 944,
+  "completed_stages": [
+    "RECORDED_FINAL_HOME_NOT_CURRENT_LIVE_START",
+    "OPEN_BEFORE_PICK",
+    "PICK_HOVER",
+    "PICK_DESCEND",
+    "CLOSE_AT_PICK",
+    "PICK_ASCEND",
+    "PLACE_HOVER",
+    "PLACE_DESCEND",
+    "OPEN_AT_PLACE",
+    "PLACE_ASCEND",
+    "RETURN_SAFE"
+  ],
+  "reviewed_motion_stages": [
+    "PICK_HOVER",
+    "PICK_DESCEND",
+    "PICK_ASCEND",
+    "PLACE_HOVER",
+    "PLACE_DESCEND",
+    "PLACE_ASCEND",
+    "RETURN_SAFE"
+  ],
+  "full_replay_completed": true,
+  "player_sha256": "aea96dd6270b2d198c0800eb5f558a08b11af9e2841aaa6420c5bb74a4f484b1",
+  "reviewed_at": "2026-09-08T11:20:22+0800",
+  "model_limitation": "GUI checks reconstructed kinematics only; unregistered table/bin/gripper/held-object and controller interpolation remain unqualified",
+  "real_motion_authorized": false
+}

@@ -1,0 +1,742 @@
+[
+  {
+    "report": "tabletop_servo_20260916_150937_394611035.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_161007_195575844.json",
+    "executor_file": "execute_tabletop_servo_mpc_active_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_active_20ms.py",
+    "wrapper_recorded": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_161804_427508716.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_161842_290824538.json",
+    "executor_file": "execute_tabletop_servo_mpc_active_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_active_20ms.py",
+    "wrapper_recorded": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_161957_559208120.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_162057_54388464.json",
+    "executor_file": "execute_tabletop_servo_mpc_active_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_active_20ms.py",
+    "wrapper_recorded": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_162340_144861635.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_162429_177216570.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_162614_575109989.json",
+    "executor_file": "execute_tabletop_servo_mpc_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_20ms.py",
+    "wrapper_recorded": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+    "wrapper_match": true
+  },
+  {
+    "report": "tabletop_servo_20260916_162706_519367266.json",
+    "executor_file": "execute_tabletop_servo_mpc_active_base.py",
+    "executor_match": true,
+    "dependencies": [
+      {
+        "file": "tabletop_servo_contract.py",
+        "match": true,
+        "recorded": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+        "snapshot": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589"
+      },
+      {
+        "file": "servo_common.py",
+        "match": true,
+        "recorded": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+        "snapshot": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89"
+      },
+      {
+        "file": "sdk_session.py",
+        "match": true,
+        "recorded": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+        "snapshot": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+      },
+      {
+        "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+        "match": true,
+        "recorded": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+        "snapshot": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+      },
+      {
+        "file": "precheck_tabletop_hybrid.py",
+        "match": true,
+        "recorded": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+        "snapshot": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+      },
+      {
+        "file": "execute_tabletop_pick_place_worlds.py",
+        "match": true,
+        "recorded": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+        "snapshot": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+      },
+      {
+        "file": "robot_lock.py",
+        "match": true,
+        "recorded": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+        "snapshot": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+      },
+      {
+        "file": "scrub_log.py",
+        "match": true,
+        "recorded": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+        "snapshot": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+      },
+      {
+        "file": "arm_profiles.py",
+        "match": true,
+        "recorded": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+        "snapshot": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef"
+      },
+      {
+        "file": "arm_profiles.v1.json",
+        "match": true,
+        "recorded": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+        "snapshot": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22"
+      }
+    ],
+    "trajectory_match": true,
+    "unrecorded_source_files": [
+      "controller.py"
+    ],
+    "wrapper_file": "execute_tabletop_servo_field_mpc_active_20ms.py",
+    "wrapper_recorded": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+    "wrapper_match": true
+  }
+]

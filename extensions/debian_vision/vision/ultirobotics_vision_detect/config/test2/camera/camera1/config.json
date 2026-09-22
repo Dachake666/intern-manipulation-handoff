@@ -1,0 +1,7 @@
+{
+    "model": "OB335L",
+    "soft_trigger": true,
+    "camera_height": 800,
+    "camera_width": 1280,
+    "save_path": "save_data"
+}

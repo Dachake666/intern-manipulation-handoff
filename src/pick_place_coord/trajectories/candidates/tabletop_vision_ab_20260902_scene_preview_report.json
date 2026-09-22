@@ -1,0 +1,106 @@
+{
+  "schema_version": "tabletop_scene_preview_report.v1",
+  "status": "SCENE_PREVIEW_ONLY_NOT_A_TRAJECTORY",
+  "created": "2026-09-02T08:32:59.640752+00:00",
+  "real_motion_authorized": false,
+  "snapshot_id": "tabletop-vision-ab-20260902",
+  "contract": {
+    "arm": "left",
+    "arm_id": 1,
+    "gripper_id": 2,
+    "frame_id": "sdk_world",
+    "length_unit": "millimeter",
+    "angle_unit": "degree",
+    "quaternion_order": "xyzw",
+    "endpoint_reference": "SDK_CONFIGURED_END_EFFECTOR_TCP",
+    "waist_base_status": "UNCHANGED_BY_USER_REPORT",
+    "sdk_tcp_status": "UNCHANGED_BY_USER_REPORT"
+  },
+  "assumptions": [
+    "material_box.processed_pose is treated as outer geometry center for display only",
+    "material_box.dimensions_mm order is treated as local X/Y/Z for display only",
+    "prior 70x70x200mm bottle envelope is centered on the unresolved visual feature for display only",
+    "a visual-only translation from one safe Worlds/Joints pair is applied; no global SDK-world to PyBullet frame transform is qualified"
+  ],
+  "metrics": {
+    "safe_to_bottle_distance_mm": 287.77695794945845,
+    "bottle_to_box_distance_mm": 301.87746158328,
+    "bottle_raw_ab_position_delta_mm": [
+      -5.992126464843817,
+      1.4635620117187664,
+      -30.241424560546903
+    ],
+    "bottle_raw_ab_distance_mm": 30.86407868030532,
+    "bottle_raw_ab_orientation_delta_deg": 11.75693758669027,
+    "bottle_to_safe_endpoint_orientation_delta_deg": 118.07549988481331,
+    "box_assumed_bottom_z_mm": 276.3735960245637,
+    "box_assumed_top_z_mm": 417.3118898152801,
+    "safe_endpoint_z_mm": 443.775,
+    "safe_gripper_proxy_bottom_z_mm": 395.8527269693842,
+    "safe_gripper_proxy_top_z_mm": 552.6558783553734,
+    "safe_proxy_clearance_over_box_top_mm": -21.459162845895886,
+    "minimum_endpoint_z_to_clear_box_proxy_mm": 465.23416284589587,
+    "minimum_endpoint_z_with_profile_clearance_mm": 485.23416284589587,
+    "safe_joint_min_raw_limit_margin_deg": 24.665,
+    "safe_joint_min_margin_after_configured_buffer_deg": 19.665
+  },
+  "gates": {
+    "source_observation_preserved": "PASS",
+    "bottle_ab_repeatability": "REVIEW_REQUIRED_NO_ACCEPTANCE_THRESHOLD_DEFINED",
+    "bottle_feature_to_object_transform": "BLOCKED_PENDING_T_OBSERVATION_OBJECT",
+    "object_to_grasp_transform": "BLOCKED_PENDING_OBJECT_TEMPLATE",
+    "bin_datum_to_place_transform": "BLOCKED_PENDING_T_BIN_OBJECT_PLACE",
+    "open_bin_collision_geometry": "BLOCKED_PENDING_INNER_GEOMETRY_AND_DATUM_ROLE",
+    "safe_candidate_as_transfer_corridor": "BLOCKED_PROXY_BELOW_ASSUMED_RIM_CLEARANCE",
+    "safe_worlds_joints_same_sample_and_tcp": "BLOCKED_PENDING_LIVE_COHERENCE_CHECK",
+    "safe_joint_values_against_stored_limits": "PRELIMINARY_PASS_NOT_LIVE_READBACK",
+    "pb_sdk_frame_gate": "BLOCKED_VISUAL_SINGLE_POSE_ANCHOR_ONLY",
+    "joint_trajectory_and_dense_collision_preflight": "PENDING",
+    "formal_gui_trajectory_review": "PENDING"
+  },
+  "provenance": {
+    "bottle_preview_envelope": {
+      "path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/tasks/task_bottle_taught_tcp_20260831.json",
+      "sha256": "762950e8bfa280edbc25404413d099a2f26fdec4ade3d32b1dd9d58e1162d4d0",
+      "status": "PRIOR_WORKSPACE_ENVELOPE_FOR_DISPLAY_ONLY_NOT_CURRENT_OBJECT_EVIDENCE"
+    }
+  },
+  "snapshot_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/tasks/task_tabletop_vision_ab_20260902.json",
+  "snapshot_sha256": "d79a9cf8e24aa60ae49c1393ead54e08d939407b09fa395195996d3abaa89b43",
+  "preview_script_sha256": "9fa59a1e1b45df1ad3c0a20950d07ca95442de91e1a470669266e7c6895e2a80",
+  "visualization": {
+    "robot_overlay": {
+      "mode": "VISUAL_ONLY_SINGLE_SAFE_POSE_ANCHOR",
+      "qualification_status": "NOT_A_FRAME_GATE_NOT_VALID_FOR_TRAJECTORY_OR_COLLISION_PASS",
+      "sdk_safe_endpoint_position_m": [
+        0.6924410000000001,
+        0.366085,
+        0.443775
+      ],
+      "pb_safe_tcp_position_m": [
+        0.46749947142255377,
+        0.3722682265607537,
+        1.1786485903656914
+      ],
+      "display_shift_pb_minus_sdk_m": [
+        -0.22494152857744631,
+        0.006183226560753707,
+        0.7348735903656913
+      ],
+      "single_anchor_t_sdk_minus_pb_m": [
+        0.22494152857744631,
+        -0.006183226560753707,
+        -0.7348735903656913
+      ],
+      "difference_from_in_use_model_a_t_mm": [
+        -50.05847142255371,
+        13.816773439246292,
+        -7.873590365691352
+      ],
+      "difference_from_in_use_model_a_t_norm_mm": 52.523777612437556,
+      "safe_orientation_residual_deg": 0.5481369553161785,
+      "note": "safe joints/worlds are rounded user input; overlay is a visual sanity check only"
+    },
+    "collision_evaluation": "NOT_PERFORMED_PREVIEW_OBJECTS_USE_VISUAL_SHAPES_ONLY"
+  }
+}

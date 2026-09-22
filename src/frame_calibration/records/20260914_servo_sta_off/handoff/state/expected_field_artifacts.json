@@ -1,0 +1,137 @@
+{
+  "status": "MISSING_CURRENT_FIELD_SOURCE_AND_RAW_REPORTS",
+  "artifacts": [
+    {
+      "path": "execute_tabletop_servo_field_20ms.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": false,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "execute_tabletop_servo_field_25ms.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": false,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "execute_tabletop_servo_field_vaj20_v3.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": false,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "vaj3_spline.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": false,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "execute_tabletop_servo.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "servo_common.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "sdk_session.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "robot_lock.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "tabletop_servo_contract.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "arm_profiles.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "arm_profiles.v1.json",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": true,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "probe_pulse_latency_stationary.py",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "legacy_version_available": false,
+      "notes": "Collect from current Debian directory; do not replace with historical copy."
+    },
+    {
+      "path": "tabletop_pick_place_SERVO_CANDIDATE.json",
+      "expected_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+      "current_field_bytes_in_package": false,
+      "reconstructed_byte_hash_match": true,
+      "required_for_field_sync": true
+    },
+    {
+      "path": "tabletop_pick_place_SERVO_gui_review.json",
+      "expected_sha256_reported": "02f94490a01c2332f50a9e5381edd19eea4fb164c600fe809a596b2fa6154b13",
+      "current_field_bytes_in_package": false,
+      "required_for_field_sync": true,
+      "notes": "Historical field rebinding is recorded; no new independent GUI review has been established."
+    },
+    {
+      "path": "tabletop_servo_20260914_101418_793393004.json",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "summary_in_package": true
+    },
+    {
+      "path": "tabletop_servo_20260914_101507_112677088.json",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "summary_in_package": true
+    },
+    {
+      "path": "tabletop_servo_20260914_101711_112650029.json",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "summary_in_package": true
+    },
+    {
+      "path": "tabletop_servo_20260914_105707_209790145.json",
+      "required_for_field_sync": true,
+      "current_field_bytes_in_package": false,
+      "summary_in_package": true
+    }
+  ],
+  "additional": [
+    "all runtime dependencies including importlib-loaded modules",
+    "*.before_gripper_sha and *.before_gui_sha",
+    "original gripper candidate/review backups",
+    "remaining tabletop_servo_*.json including failures",
+    "network_records/",
+    "current-run ping logs",
+    "strace logs and PCAP (sensitive; explicit opt-in collection)",
+    "local configuration, models and dependencies if external to this directory; list separately"
+  ]
+}

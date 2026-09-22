@@ -1,0 +1,483 @@
+........................................................................ [ 25%]
+........................................................................ [ 51%]
+..............................EEEEEEEEEE................................ [ 77%]
+...............................................................          [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_dense_path_shared_limits_and_explicit_height_tradeoff _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_field_home_exact_and_one_transfer_movej _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_hash_mismatch_refuses_input _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_horizontal_candidate_preserves_sdk_grip_for_all_six_changed_poses _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_not_authorized_by_parent_hardware_pass_or_gui_playback _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_original_pick_place_targets_and_file_preserved _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_placement_follow_tilt_requires_explicit_template _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_reviewed_start_preserves_matched_field_snapshot_and_first_gui_frame _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_taught_pose_preserves_six_grasp_targets_and_requalifies_path _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+_ ERROR at setup of OptimizedFieldPassIntegrationTest.test_taught_uvw_is_exact_and_placement_keeps_field_yaw _
+
+cls = <class 'test_gen_tabletop_hybrid_candidate.OptimizedFieldPassIntegrationTest'>
+
+    @classmethod
+    def setUpClass(cls):
+        cls.evidence = g.WORK / "frame_calibration/records/20260907_trackA_hybrid_reference"
+        if not cls.evidence.is_dir():
+            raise unittest.SkipTest("现场成功交接包未提供；纯函数测试仍执行")
+        cls.parent_path = g.DEFAULT_OUTPUT
+        cls.log_path = cls.evidence / "logs/hybrid_trial_run_20260907_175015_346600.json"
+        cls.executor_path = cls.evidence / "artifacts/execute_tabletop_hybrid_trial.py"
+        cls.parent_sha = g.sha256_file(cls.parent_path)
+        cls.parent = json.loads(cls.parent_path.read_text())
+        cls.robot = g.d.xf.load_xifeng(gui=False)
+        cls.addClassCleanup(g.d.p.disconnect)
+        with mock.patch.object(g.d.ss, "open_session", side_effect=AssertionError("禁止连接 SDK")), \
+             mock.patch.object(g.d.ss, "move_worlds", side_effect=AssertionError("禁止运动")), \
+             mock.patch.object(g.d.ss, "move_joints_abs", side_effect=AssertionError("禁止运动")):
+>           cls.plan = g.build_optimized(cls.parent_path, cls.log_path, cls.executor_path, cls.robot)
+
+pick_place_coord/test_gen_tabletop_hybrid_candidate.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pick_place_coord/gen_tabletop_hybrid_candidate.py:382: in build_optimized
+    parent, run, home = load_success_reference(plan_path, run_path, executor_path)
+pick_place_coord/gen_tabletop_hybrid_candidate.py:219: in load_success_reference
+    if run.get("executor_sha256") != sha256_file(executor_path):
+robot_mission/contracts.py:50: in sha256_file
+    with Path(path).open("rb") as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff/src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py'
+
+/opt/anaconda3/lib/python3.13/pathlib/_local.py:537: FileNotFoundError
+=============================== warnings summary ===============================
+../../../../../../../../opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1
+  /opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1: DeprecationWarning: Please import `KDTree` from the `scipy.spatial` namespace; the `scipy.spatial.kdtree` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.spatial.kdtree import KDTree
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_dense_path_shared_limits_and_explicit_height_tradeoff
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_field_home_exact_and_one_transfer_movej
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_hash_mismatch_refuses_input
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_horizontal_candidate_preserves_sdk_grip_for_all_six_changed_poses
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_not_authorized_by_parent_hardware_pass_or_gui_playback
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_original_pick_place_targets_and_file_preserved
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_placement_follow_tilt_requires_explicit_template
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_reviewed_start_preserves_matched_field_snapshot_and_first_gui_frame
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_taught_pose_preserves_six_grasp_targets_and_requalifies_path
+ERROR pick_place_coord/test_gen_tabletop_hybrid_candidate.py::OptimizedFieldPassIntegrationTest::test_taught_uvw_is_exact_and_placement_keeps_field_yaw
+269 passed, 1 warning, 10 errors in 25.08s

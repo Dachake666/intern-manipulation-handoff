@@ -1,0 +1,31 @@
+{
+  "schema_version": "tabletop_replay_generation_report.v1",
+  "verdict": "BLOCKED",
+  "reason": "IK_PATH_UNREACHABLE_OR_DISCONTINUOUS",
+  "stage": "PLACE_DESCEND",
+  "cause": "Cartesian IK failed at 57/87: {'position_error_mm': 8.24138433142579, 'rotation_error_deg': 0.6330441291975514}",
+  "attempted_start_pb_m": [
+    0.6235522532686397,
+    0.12443019828446063,
+    1.3412669124101284
+  ],
+  "attempted_end_pb_m": [
+    0.6235522532686397,
+    0.12443019828446063,
+    1.1691161100672505
+  ],
+  "source_snapshot": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/tasks/task_tabletop_vision_ab_20260902.json",
+  "source_snapshot_sha256": "d79a9cf8e24aa60ae49c1393ead54e08d939407b09fa395195996d3abaa89b43",
+  "qualification": "SIMULATION_ASSUMPTION_CANDIDATE",
+  "scene_geometry_status": "SIMULATION_ASSUMPTIONS_UNCONFIRMED",
+  "controller_limit_profile": "left_preview102_20260827",
+  "real_motion_authorized": false,
+  "debian_execution_allowed": false,
+  "coordinate_contract_status": "MODEL_A_EE_LINK_ORIGIN_SINGLE_POSE_ASSUMPTION_CONFLICTS_WITH_SNAPSHOT_TCP_LABEL",
+  "outputs_written": false,
+  "required_next_evidence": [
+    "valid current PB-SDK frame calibration",
+    "or live armTryWorlds q_sdk_deg for PICK_HIGH, PICK, PLACE_HIGH, PLACE"
+  ],
+  "message": "PLACE_DESCEND IK 不可达或不连续: Cartesian IK failed at 57/87: {'position_error_mm': 8.24138433142579, 'rotation_error_deg': 0.6330441291975514}; 禁止生成假轨迹。需要有效 PB-SDK 标定，或 Debian armTryWorlds 返回 PICK_HIGH/PICK/PLACE_HIGH/PLACE 的真实 q_sdk_deg。"
+}

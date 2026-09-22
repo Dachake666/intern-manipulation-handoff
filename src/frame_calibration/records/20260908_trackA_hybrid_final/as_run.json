@@ -1,0 +1,404 @@
+{
+  "schema_version": "robot_run_archive.v1",
+  "received_date": "2026-09-09",
+  "source_zip": {
+    "path": "/Users/xiaobingxin/Downloads/trackA_hybrid_final_20260908.zip",
+    "sha256": "d7a0ae01e898cb06dce7a96d3394cc2483efd6d79c49145839e8e4f09f5bb880"
+  },
+  "reviewer_verdict": "PASS",
+  "evidence_grade": "FULL",
+  "scope": "EXACT_DELIVERED_PLAN_EXECUTOR_DEPENDENCIES_AS_RECORDED_AT_5_AND_10_PERCENT",
+  "general_collision_qualification": "NOT_CLAIMED",
+  "new_target_or_20_percent_validation": "NOT_PROVEN",
+  "robot_identity": {
+    "robot_ip": "192.168.8.147",
+    "arm_ip": "192.168.8.147",
+    "local_ip": "192.168.8.185",
+    "arm_id": 1,
+    "gripper_id": 2,
+    "basis": "AS_RUN_CONFIG_AND_EXECUTOR_CONTRACT_NOT_A_NEW_LIVE_QUERY",
+    "serial_model_sdk_version": "NOT_PRESENT_IN_MINIMAL_JSON_LOGS"
+  },
+  "runtime_artifacts": {
+    "execute_tabletop_hybrid_trial_reviewfix_field.py": {
+      "path": "frame_calibration/robot_side/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee"
+    },
+    "tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json": {
+      "path": "pick_place_coord/trajectories/candidates/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+      "sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59"
+    },
+    "sdk_session.py": {
+      "path": "frame_calibration/robot_side/sdk_session.py",
+      "sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39"
+    },
+    "robot_lock.py": {
+      "path": "frame_calibration/robot_side/robot_lock.py",
+      "sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af"
+    },
+    "scrub_log.py": {
+      "path": "frame_calibration/robot_side/scrub_log.py",
+      "sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368"
+    },
+    "precheck_tabletop_hybrid.py": {
+      "path": "frame_calibration/robot_side/precheck_tabletop_hybrid.py",
+      "sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa"
+    },
+    "execute_tabletop_pick_place_worlds.py": {
+      "path": "frame_calibration/robot_side/execute_tabletop_pick_place_worlds.py",
+      "sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62"
+    }
+  },
+  "runs": [
+    {
+      "file": "logs/hybrid_trial_run_20260908_172336_575481.json",
+      "raw_log_sha256": "062779bc21ebdabdd13d8c145609f7333e096202e6c5675b1644b8240e840301",
+      "scrubbed_log_sha256": "062779bc21ebdabdd13d8c145609f7333e096202e6c5675b1644b8240e840301",
+      "reviewer_verdict": "PASS",
+      "scope": "AS_RECORDED_FIXED_SCENE_MOTION_AND_CLEANUP",
+      "started_at": "2026-09-08T09:23:36.575378+00:00",
+      "finished_at": "2026-09-08T09:24:20.102681+00:00",
+      "arguments": {
+        "plan": "tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+        "run": true,
+        "precheck_only": false,
+        "dry_run": false,
+        "accept_blockers": false,
+        "start_policy": "current-reviewed",
+        "gui_review": null,
+        "qualification_report": null,
+        "robot_ip": "192.168.8.147",
+        "local_ip": "192.168.8.185",
+        "arm_ip": "192.168.8.147",
+        "arm_port": 8080,
+        "speed": 5,
+        "limit_margin_deg": 5,
+        "auto_continue": false,
+        "handoff_pos_tol_mm": 60,
+        "handoff_uvw_tol_deg": 20,
+        "log": null
+      },
+      "effective_runtime_config": {
+        "robot_ip": "192.168.8.147",
+        "local_ip": "192.168.8.185",
+        "arm_ip": "192.168.8.147",
+        "arm_port": 8080,
+        "speed": 5,
+        "limit_margin_deg": 5,
+        "start_policy": "current-reviewed",
+        "auto_continue": false,
+        "handoff_pos_tol_mm": 5,
+        "handoff_uvw_tol_deg": 3
+      },
+      "event_count": 12,
+      "motion_count": 7,
+      "gripper_sequence": [
+        {
+          "action": "open",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        },
+        {
+          "action": "close",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        },
+        {
+          "action": "open",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        }
+      ],
+      "motion_duration_s": 27.399805,
+      "home_joint_error_deg": 0.23099960327148494,
+      "final_endpoint_error": {
+        "position_mm": 1.8590148925781023,
+        "orientation_deg": 0.2150003280639794
+      },
+      "place_hover_handoff_error": {
+        "position_error_mm": 0.5607681936492099,
+        "orientation_error_deg": 0.1990003814697161
+      },
+      "actual_place_descend_max_local_ik_step_deg": 0.42199999999999704,
+      "precheck_reference_to_descend_ik_delta_deg": 4.355,
+      "cleanup": {
+        "started_at": "2026-09-08T09:24:20.084203+00:00",
+        "errors": [],
+        "protection_disabled_by_executor": false,
+        "speed_restore_code": 0,
+        "speed_restored_readback": 10,
+        "speed_expected": 10,
+        "speed_restore_status": "PASS",
+        "protection_enabled": true,
+        "sdk_stop_return": null,
+        "sdk_stopped": true,
+        "finished_at": "2026-09-08T09:24:20.102408+00:00",
+        "status": "PASS"
+      },
+      "operator_review": {
+        "confirmed_at": "2026-09-08T09:23:51.525108+00:00",
+        "reviewed_state": {
+          "worlds": [
+            693.2230224609375,
+            366.3160095214844,
+            441.6929931640625,
+            -72.76200103759766,
+            13.47700023651123,
+            -6.558000087738037
+          ],
+          "joints": [
+            -17.711000442504883,
+            29.246999740600586,
+            6.935999870300293,
+            -75.6050033569336,
+            -13.196000099182129,
+            -11.822999954223633,
+            12.398423194885254
+          ]
+        },
+        "empty_gripper_confirmed": true,
+        "table_object_bin_and_first_path_reviewed": true,
+        "emergency_stop_ready": true,
+        "scope": "MANUAL_ONLY_NOT_COMPUTED_COLLISION_PASS",
+        "previous_speed_readback": 10
+      },
+      "sdk_version_or_controller_serial": "NOT_PRESENT_IN_MINIMAL_JSON_LOGS"
+    },
+    {
+      "file": "logs/hybrid_trial_run_20260908_172435_229744.json",
+      "raw_log_sha256": "f84e1521610470122b408321efc8192f92f84619106daddea04ae3ff201ecdb9",
+      "scrubbed_log_sha256": "f84e1521610470122b408321efc8192f92f84619106daddea04ae3ff201ecdb9",
+      "reviewer_verdict": "PASS",
+      "scope": "AS_RECORDED_FIXED_SCENE_MOTION_AND_CLEANUP",
+      "started_at": "2026-09-08T09:24:35.229704+00:00",
+      "finished_at": "2026-09-08T09:25:31.418646+00:00",
+      "arguments": {
+        "plan": "tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+        "run": true,
+        "precheck_only": false,
+        "dry_run": false,
+        "accept_blockers": false,
+        "start_policy": "current-reviewed",
+        "gui_review": null,
+        "qualification_report": null,
+        "robot_ip": "192.168.8.147",
+        "local_ip": "192.168.8.185",
+        "arm_ip": "192.168.8.147",
+        "arm_port": 8080,
+        "speed": 10,
+        "limit_margin_deg": 5,
+        "auto_continue": false,
+        "handoff_pos_tol_mm": 60,
+        "handoff_uvw_tol_deg": 20,
+        "log": null
+      },
+      "effective_runtime_config": {
+        "robot_ip": "192.168.8.147",
+        "local_ip": "192.168.8.185",
+        "arm_ip": "192.168.8.147",
+        "arm_port": 8080,
+        "speed": 10,
+        "limit_margin_deg": 5,
+        "start_policy": "current-reviewed",
+        "auto_continue": false,
+        "handoff_pos_tol_mm": 5,
+        "handoff_uvw_tol_deg": 3
+      },
+      "event_count": 12,
+      "motion_count": 7,
+      "gripper_sequence": [
+        {
+          "action": "open",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        },
+        {
+          "action": "close",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        },
+        {
+          "action": "open",
+          "policy": {
+            "policy_id": "left-gripper2-site-tunable-v1",
+            "gripper_id": 2,
+            "tuning_status": "SITE_TUNABLE",
+            "protocol_encoding": "EB90_UINT16_LITTLE_ENDIAN",
+            "open_command": 17,
+            "close_command": 16,
+            "command_contract": "OPEN_POSITION_CLOSE_SPEED_FORCE",
+            "value_unit": "device_native_uint16",
+            "executor_binding": "execute_tabletop_hybrid_trial.py.v2",
+            "open": {
+              "position": 500,
+              "settle_s": 1
+            },
+            "close": {
+              "speed": 500,
+              "force": 1000,
+              "settle_s": 2
+            },
+            "parent_source_sha256": "ec020e4e88bcda38b339531ed2da3254a994bf899466cca170b3ca72b262faa6"
+          }
+        }
+      ],
+      "motion_duration_s": 18.562827,
+      "home_joint_error_deg": 0.20499958038330135,
+      "final_endpoint_error": {
+        "position_mm": 1.8689941406249773,
+        "orientation_deg": 0.21000021362306143
+      },
+      "place_hover_handoff_error": {
+        "position_error_mm": 0.5917740530242099,
+        "orientation_error_deg": 0.20100023651122
+      },
+      "actual_place_descend_max_local_ik_step_deg": 0.4230000000000018,
+      "precheck_reference_to_descend_ik_delta_deg": 4.355,
+      "cleanup": {
+        "started_at": "2026-09-08T09:25:31.417924+00:00",
+        "errors": [],
+        "protection_disabled_by_executor": false,
+        "speed_restore_code": 0,
+        "speed_restored_readback": 10,
+        "speed_expected": 10,
+        "speed_restore_status": "PASS",
+        "protection_enabled": true,
+        "sdk_stop_return": null,
+        "sdk_stopped": true,
+        "finished_at": "2026-09-08T09:25:31.418480+00:00",
+        "status": "PASS"
+      },
+      "operator_review": {
+        "confirmed_at": "2026-09-08T09:25:11.736529+00:00",
+        "reviewed_state": {
+          "worlds": [
+            693.2230224609375,
+            366.3179931640625,
+            441.69000244140625,
+            -72.76200103759766,
+            13.477999687194824,
+            -6.558000087738037
+          ],
+          "joints": [
+            -17.71095848083496,
+            29.246999740600586,
+            6.935999870300293,
+            -75.6050033569336,
+            -13.196000099182129,
+            -11.822999954223633,
+            12.39900016784668
+          ]
+        },
+        "empty_gripper_confirmed": true,
+        "table_object_bin_and_first_path_reviewed": true,
+        "emergency_stop_ready": true,
+        "scope": "MANUAL_ONLY_NOT_COMPUTED_COLLISION_PASS",
+        "previous_speed_readback": 10
+      },
+      "sdk_version_or_controller_serial": "NOT_PRESENT_IN_MINIMAL_JSON_LOGS"
+    }
+  ],
+  "notes": [
+    "Source files preserved byte-for-byte; no real robot connected during this archive.",
+    "Generic terminal-log reviewer reports INCONCLUSIVE because it does not parse structured run.v2; PASS here is based on structured fields, event order, hashes, enable readbacks and cleanup readbacks.",
+    "Only two final runs are included; other speeds/runs in supplied handoff are narrative references, not additional archived evidence.",
+    "Old qualification/GUI text in delivered source/JSON is stale; field main no longer invokes those gates. No universal collision-safe or new-target authorization is inferred.",
+    "Failure-only runs are not written as JSON by this field executor; keep terminal logs for incidents.",
+    "Final precheck reference boundary is 4.355 deg; actual post-MoveJ local check is about 0.422/0.423 deg. Do not relabel the former as a measured jump."
+  ]
+}

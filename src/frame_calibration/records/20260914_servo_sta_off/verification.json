@@ -1,0 +1,156 @@
+{
+  "schema_version": "servo_handoff_verification.v1",
+  "checked_at": "2026-09-15T09:54:43+08:00",
+  "workspace": "/Users/xiaobingxin/Desktop/工作/工作1",
+  "branch": "codex/trackc-bottle-return-home",
+  "base_commit": "909b73ef8661c47af826256c8a0d3d5ecdf78417",
+  "continuation": {
+    "previous_thread_id": "01a07ebe-f534-7843-8309-653d6167fe8a",
+    "previous_title": "你现在是gpt的什么模型",
+    "previous_status": "interrupted_idle",
+    "current_thread_id": "01a05dc9-fb04-7192-825b-3956040227d5",
+    "already_present": [
+      "50 received member archive",
+      "README.md",
+      "as_run.json",
+      "START_HERE.md latest receipt section"
+    ],
+    "finished_here": [
+      "independent integrity and pasted-counter checks",
+      "repeated 166 offline regressions",
+      "validation attachments and archive checksum manifest",
+      "dated research/work-report addenda",
+      "scoped Git commit and push requested by user"
+    ]
+  },
+  "source_zip": {
+    "path": "Servo_Codex_Handoff_20260914.zip",
+    "sha256": "b8b2efef59cce1134900417c50182f72339748f31c087ec7a2c2f479066a44e8",
+    "bytes": 458996,
+    "crc": "PASS",
+    "manifest_entries_verified": 49,
+    "source_members": 50
+  },
+  "checks": {
+    "receipt_member_index": {
+      "status": "PASS",
+      "members": 50,
+      "normalized_files": 7,
+      "redaction_placeholder_normalizations": 24,
+      "reference": "as_run.json"
+    },
+    "legacy_vs_mac_as_release": {
+      "status": "PASS",
+      "runtime_and_gui_members": 13,
+      "latest_field_source_equivalence": false
+    },
+    "candidate_reconstruction": {
+      "status": "PASS",
+      "changed_fields": 5,
+      "only_settle_s": true,
+      "sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+      "original_field_file_received": false
+    },
+    "latest_summary": {
+      "status": "PASS",
+      "source": "handoff/evidence/20260914_latest_metrics_user_paste.txt",
+      "runs": 4,
+      "pulse_calls": 2780,
+      "weighted_mean_ms": 4.006274722067626,
+      "max_ms": 55.31164212152362,
+      "over_20ms": 21,
+      "over_40ms": 1,
+      "realigns_total": 0,
+      "raw_per_frame_recomputed": false
+    },
+    "credential_scan": {
+      "status": "PASS",
+      "nested_zip_text_members": 62,
+      "html_decoding_passes": 3,
+      "unredacted_matches": 0,
+      "note": "Pattern-based inspection, not an absolute guarantee; raw source ZIP retained unchanged."
+    },
+    "archive_scrub_check": {
+      "status": "PASS",
+      "tool": "frame_calibration/robot_side/scrub_log.py --check",
+      "additional_archive_rewrites_this_continuation": 0
+    },
+    "tool_syntax": {
+      "status": "PASS",
+      "python_ast_files": [
+        "collect_servo_sources.py",
+        "summarize_servo_logs.py",
+        "verify_handoff.py"
+      ],
+      "bash_n_files": [
+        "debian_readonly_snapshot.sh",
+        "router_readonly_snapshot.sh"
+      ]
+    },
+    "existing_release_manifests": {
+      "status": "PASS",
+      "count": 10,
+      "command": "/opt/anaconda3/bin/python -B releases/make_release.py --verify",
+      "rebuilt_by_receipt": false
+    }
+  },
+  "offline_tests": {
+    "status": "PASS",
+    "passed": 166,
+    "failed": 0,
+    "warnings": 1,
+    "duration_s": 46,
+    "python": "/opt/anaconda3/bin/python",
+    "test_files": [
+      "frame_calibration/robot_side/test_execute_trajectory_options.py",
+      "frame_calibration/robot_side/test_servo_safety.py",
+      "frame_calibration/robot_side/test_execute_tabletop_pick_place_worlds.py",
+      "frame_calibration/robot_side/test_precheck_tabletop_hybrid.py",
+      "frame_calibration/robot_side/test_execute_tabletop_hybrid_trial.py",
+      "frame_calibration/robot_side/test_tracka_final_handoff.py",
+      "frame_calibration/robot_side/test_tabletop_servo.py",
+      "pick_place_coord/test_gen_tabletop_hybrid_candidate.py",
+      "releases/test_make_release_hybrid.py"
+    ],
+    "command": "pwd\nXIFENG_ALLOW_REAL_MOTION=0 PYTHONDONTWRITEBYTECODE=1 TMPDIR=/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-servo-BCAihw /opt/anaconda3/bin/python -B -m pytest -q -p no:cacheprovider frame_calibration/robot_side/test_execute_trajectory_options.py frame_calibration/robot_side/test_servo_safety.py frame_calibration/robot_side/test_execute_tabletop_pick_place_worlds.py frame_calibration/robot_side/test_precheck_tabletop_hybrid.py frame_calibration/robot_side/test_execute_tabletop_hybrid_trial.py frame_calibration/robot_side/test_tracka_final_handoff.py frame_calibration/robot_side/test_tabletop_servo.py pick_place_coord/test_gen_tabletop_hybrid_candidate.py releases/test_make_release_hybrid.py",
+    "captured_output": "offline_validation.txt",
+    "warning": "Third-party pybullet_planning import of scipy.spatial.kdtree.KDTree is deprecated.",
+    "scope": "Related Mac software regressions including isolated package dry-run; not whole-repository or hardware acceptance."
+  },
+  "runtime_fingerprints": {
+    "frame_calibration/robot_side/execute_tabletop_servo.py": "c5aad779b9cdf7501baf5f4f88b38c06bb70ba36146352be049a2b58cdbf9c1c",
+    "frame_calibration/robot_side/tabletop_servo_contract.py": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+    "frame_calibration/robot_side/servo_common.py": "15fe08fe730881c065369fad9980d4ac02700b6d8390b900d2a42085d2051f83",
+    "frame_calibration/robot_side/sdk_session.py": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+    "pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_CANDIDATE.json": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+    "pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_gui_review.json": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+    "releases/trackA_servo.zip": "d651b8f848032c51338a7233f5c16c0ffb9a2f20f078a86496758900bf316a89"
+  },
+  "review": {
+    "first_pass_tool": "real-robot-run-reviewer/scripts/review_robot_log.py",
+    "terminal_sha256": "95458bc5262c604918f82f9966c0860202a1d3ae2131feaa7d404745d7912440",
+    "verdict": "INCONCLUSIVE",
+    "evidence_grade": "LIMITED",
+    "audit_verdict": "DRIFT",
+    "promotion_allowed": false,
+    "reported_complete_runs": 4,
+    "gripper_open_commands": 8,
+    "gripper_close_commands": 4,
+    "sdk_shutdown_observed": true,
+    "protection_restored": null,
+    "speed_restored": null,
+    "final_joint_error_deg": null,
+    "field_sources_synchronized": false
+  },
+  "scope": {
+    "robot_connection": false,
+    "robot_enable_or_motion": false,
+    "router_or_host_network_changes": false,
+    "gui_pass_rebinding": false,
+    "current_motion_sources_changed_by_receipt": false,
+    "unrelated_vision_right_arm_aero_hand_included": false
+  },
+  "archive_check_command": "python3 -B handoff/tools/verify_handoff.py .",
+  "git_note": "The containing commit is the delivery identity. Verify with git log; no self-referential commit SHA is embedded. Git push completion is checked separately against origin.",
+  "whitespace_policy": "Check edited source and documentation; preserve received handoff and byte-identical generated runtime whitespace. These frozen copies are excluded from formatting-only changes."
+}

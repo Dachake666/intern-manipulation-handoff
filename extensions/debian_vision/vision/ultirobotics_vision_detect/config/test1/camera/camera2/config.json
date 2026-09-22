@@ -1,0 +1,40 @@
+{
+    "camera_vendor": "percipio",
+    "camera_type": "FM851",
+    "camera_ip": "192.168.10.62",
+    "camera_sn": "",
+    "workdir": "",
+    "stabilize_frames": 10,
+    "map_depth_to_color": true,
+    "point_scale_unit": 0.001,
+    "cmos_sync": true,
+    "undistort": true,
+    "depth":{
+        "resolution": [1280,960]
+    },
+    "color":{
+        "resolution": [1280,960],
+        "analog_gain": 3.0,
+        "r_gain": 6,
+        "g_gain": 9,
+        "b_gain": 17,
+        "exposure": 384,
+        "adaptive_brightness":{
+            "enable": true,
+            "max_try_times": 3,
+            "lower_thresh": 110,
+            "upper_thresh": 150,
+            "coeff": 3
+        }
+    },
+    "left_ir":{
+        "gain": 50,
+        "analog_gain": 1,
+        "exposure": 1088
+    },
+    "right_ir":{
+        "gain": 50,
+        "analog_gain": 1,
+        "exposure": 1088
+    }
+}

@@ -1,0 +1,75 @@
+来源：用户在本对话直接粘贴的四份 JSON 字段提取输出。
+记录时间：2026-09-14 14:07 +08:00（对话标记）。
+本文件为转录，不是四份原始 JSON；原始 JSON 未上传。
+
+tabletop_servo_20260914_101418_793393004.json
+mode: PLAIN_20MS_S4
+status: SERVO_COMPLETED_RETURNED_HOME
+period_s: 0.02
+frames: 660
+nominal_duration_s: 13.2
+pulse_calls: 660
+pulse_mean_ms: 4.249409134640838
+pulse_max_ms: 35.892195999622345
+pulse_over_20ms: 6
+pulse_over_40ms: 0
+mean_late_ms: 0.2235151552623592
+max_late_ms: 15.956610906869173
+realigns: 0
+pulse_median_ms: None
+pulse_p99_ms: None
+top5_slow_events_rounded_ms: [{'frame': 522, 'duration_ms': 35.892}, {'frame': 58, 'duration_ms': 31.966}, {'frame': 11, 'duration_ms': 30.657}, {'frame': 187, 'duration_ms': 29.497}, {'frame': 533, 'duration_ms': 23.406}]
+
+tabletop_servo_20260914_101507_112677088.json
+mode: PLAIN_25MS_S4
+status: SERVO_COMPLETED_RETURNED_HOME
+period_s: 0.025
+frames: 660
+nominal_duration_s: 16.5
+pulse_calls: 660
+pulse_mean_ms: 3.916895240686382
+pulse_max_ms: 30.180495930835605
+pulse_over_20ms: 4
+pulse_over_40ms: 0
+mean_late_ms: 0.16649432442003362
+max_late_ms: 5.2528351079672575
+realigns: 0
+pulse_median_ms: None
+pulse_p99_ms: None
+top5_slow_events_rounded_ms: [{'frame': 489, 'duration_ms': 30.18}, {'frame': 367, 'duration_ms': 27.064}, {'frame': 490, 'duration_ms': 26.893}, {'frame': 33, 'duration_ms': 24.137}, {'frame': 153, 'duration_ms': 18.821}]
+
+tabletop_servo_20260914_101711_112650029.json
+mode: VAJ3_C2_SPLINE_JOINT_LIMITED
+status: SERVO_COMPLETED_RETURNED_HOME
+period_s: 0.02
+frames: 800
+nominal_duration_s: 16.0
+pulse_calls: 800
+pulse_mean_ms: 3.856271643016953
+pulse_max_ms: 31.329334946349263
+pulse_over_20ms: 5
+pulse_over_40ms: 0
+mean_late_ms: 0.1661001623318011
+max_late_ms: 11.392814107239246
+realigns: 0
+pulse_median_ms: None
+pulse_p99_ms: None
+top5_slow_events_rounded_ms: [{'frame': 701, 'duration_ms': 31.329}, {'frame': 286, 'duration_ms': 28.406}, {'frame': 554, 'duration_ms': 23.844}, {'frame': 758, 'duration_ms': 22.793}, {'frame': 125, 'duration_ms': 20.92}]
+
+tabletop_servo_20260914_105707_209790145.json
+mode: PLAIN_20MS_S4
+status: SERVO_COMPLETED_RETURNED_HOME
+period_s: 0.02
+frames: 660
+nominal_duration_s: 13.2
+pulse_calls: 660
+pulse_mean_ms: 4.034341704876472
+pulse_max_ms: 55.31164212152362
+pulse_over_20ms: 6
+pulse_over_40ms: 1
+mean_late_ms: 0.25196586559503903
+max_late_ms: 35.38301005028188
+realigns: 0
+pulse_median_ms: None
+pulse_p99_ms: None
+top5_slow_events_rounded_ms: [{'frame': 566, 'duration_ms': 55.312}, {'frame': 280, 'duration_ms': 33.875}, {'frame': 6, 'duration_ms': 29.738}, {'frame': 633, 'duration_ms': 26.899}, {'frame': 4, 'duration_ms': 25.282}]

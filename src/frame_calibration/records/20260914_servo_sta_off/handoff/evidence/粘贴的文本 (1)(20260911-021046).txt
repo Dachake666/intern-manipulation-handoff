@@ -1,0 +1,328 @@
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ strace -f -ttt -T -yy \
+  -e trace=sendto,recvfrom,sendmsg,recvmsg,send,recv,\
+poll,ppoll,select,pselect6,epoll_wait,futex,\
+nanosleep,clock_nanosleep \
+  -o pulse_corr_strace.log \
+  python3 -u probe_pulse_latency_stationary.py
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=40524)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8391
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8391
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.415]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=40524 main_tid=40524
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        11.778 ms
+median:      6.902 ms
+p90:         17.176 ms
+p95:         29.149 ms
+p99:         72.930 ms
+max:         453.955 ms
+>5ms:        264
+>20ms:       21
+>40ms:       10
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=000 start=1789092601.217993 end=1789092601.239699 latency=21.699ms
+frame=001 start=1789092601.240298 end=1789092601.694258 latency=453.955ms
+frame=004 start=1789092601.735516 end=1789092601.835800 latency=100.277ms
+frame=005 start=1789092601.835963 end=1789092601.918003 latency=82.036ms
+frame=013 start=1789092602.062901 end=1789092602.120203 latency=57.294ms
+frame=038 start=1789092602.618543 end=1789092602.684392 latency=65.839ms
+frame=039 start=1789092602.684487 end=1789092602.727890 latency=43.395ms
+frame=041 start=1789092602.749139 end=1789092602.784833 latency=35.690ms
+frame=043 start=1789092602.805673 end=1789092602.877732 latency=72.046ms
+frame=044 start=1789092602.878130 end=1789092602.901219 latency=23.082ms
+frame=049 start=1789092602.984230 end=1789092603.055723 latency=71.481ms
+frame=050 start=1789092603.056024 end=1789092603.092763 latency=36.733ms
+frame=080 start=1789092603.694265 end=1789092603.717878 latency=23.605ms
+frame=081 start=1789092603.718078 end=1789092603.752880 latency=34.798ms
+frame=090 start=1789092603.918910 end=1789092603.945885 latency=26.965ms
+frame=098 start=1789092604.091951 end=1789092604.124464 latency=32.504ms
+frame=102 start=1789092604.186882 end=1789092604.216039 latency=29.149ms
+frame=111 start=1789092604.382995 end=1789092604.406841 latency=23.835ms
+frame=176 start=1789092605.738603 end=1789092605.778629 latency=40.018ms
+frame=233 start=1789092606.941712 end=1789092607.014651 latency=72.930ms
+frame=288 start=1789092608.136840 end=1789092608.169388 latency=32.537ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ python3 - <<'PY'
+import json
+
+rows = [
+    json.loads(x)
+    for x in open("pulse_stationary_correlation.jsonl")
+]
+
+rows = sorted(
+    rows,
+    key=lambda x: x["latency_ms"],
+    reverse=True,
+)
+
+for r in rows[:20]:
+    print(
+        f"frame={r['frame']:3d}  "
+        f"{r['latency_ms']:8.3f} ms  "
+        f"{r['wall_start_s']:.6f} -> "
+        f"{r['wall_end_s']:.6f}  "
+        f"TID={r['main_tid']}"
+    )
+PY
+frame=  1   453.955 ms  1789092601.240298 -> 1789092601.694258  TID=40524
+frame=  4   100.277 ms  1789092601.735516 -> 1789092601.835800  TID=40524
+frame=  5    82.036 ms  1789092601.835963 -> 1789092601.918003  TID=40524
+frame=233    72.930 ms  1789092606.941712 -> 1789092607.014651  TID=40524
+frame= 43    72.046 ms  1789092602.805673 -> 1789092602.877732  TID=40524
+frame= 49    71.481 ms  1789092602.984230 -> 1789092603.055723  TID=40524
+frame= 38    65.839 ms  1789092602.618543 -> 1789092602.684392  TID=40524
+frame= 13    57.294 ms  1789092602.062901 -> 1789092602.120203  TID=40524
+frame= 39    43.395 ms  1789092602.684487 -> 1789092602.727890  TID=40524
+frame=176    40.018 ms  1789092605.738603 -> 1789092605.778629  TID=40524
+frame= 50    36.733 ms  1789092603.056024 -> 1789092603.092763  TID=40524
+frame= 41    35.690 ms  1789092602.749139 -> 1789092602.784833  TID=40524
+frame= 81    34.798 ms  1789092603.718078 -> 1789092603.752880  TID=40524
+frame=288    32.537 ms  1789092608.136840 -> 1789092608.169388  TID=40524
+frame= 98    32.504 ms  1789092604.091951 -> 1789092604.124464  TID=40524
+frame=102    29.149 ms  1789092604.186882 -> 1789092604.216039  TID=40524
+frame= 90    26.965 ms  1789092603.918910 -> 1789092603.945885  TID=40524
+frame=111    23.835 ms  1789092604.382995 -> 1789092604.406841  TID=40524
+frame= 80    23.605 ms  1789092603.694265 -> 1789092603.717878  TID=40524
+frame= 44    23.082 ms  1789092602.878130 -> 1789092602.901219  TID=40524
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ python3 - <<'PY'
+import json
+import re
+
+pulses = [
+    json.loads(x)
+    for x in open("pulse_stationary_correlation.jsonl")
+]
+
+pulses = sorted(
+    pulses,
+    key=lambda x: x["latency_ms"],
+    reverse=True,
+)[:10]
+
+syscalls = []
+
+rx = re.compile(
+    r'^(\d+)\s+([0-9.]+)\s+(.*?)\s+<([0-9.]+)>$'
+)
+
+with open("pulse_corr_strace.log", errors="ignore") as fh:
+    for line in fh:
+        line = line.rstrip()
+
+        m = rx.match(line)
+        if not m:
+            continue
+
+        tid = int(m.group(1))
+        ts = float(m.group(2))
+        body = m.group(3)
+        dur = float(m.group(4))
+
+        # resumed 行上的时间戳接近 syscall 返回时间；
+PY      )   f"{body}"={overlap*1000:8.2f}ms "n hits[:25]:
+
+===============================================================================================
+PULSE frame=1 latency=453.955 ms TID=40524
+window 1789092601.240298 -> 1789092601.694258
+WORKER TID=40525 sys=12954.21ms overlap=  463.96ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40527 sys=  451.83ms overlap=  451.83ms <... futex resumed>) = 0
+WORKER TID=40541 sys=  449.74ms overlap=  449.74ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=  448.96ms overlap=  448.96ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40532 sys= 1149.98ms overlap=  375.96ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  239.42ms overlap=  199.72ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40542 sys=  174.54ms overlap=  174.54ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40542 sys=  843.36ms overlap=   86.70ms <... futex resumed>) = 0
+WORKER TID=40532 sys=   69.70ms overlap=   69.71ms futex(0x7f57b6d30540, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1789092601, tv_nsec=320694638}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40532 sys=  385.34ms overlap=   15.65ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys= 3726.00ms overlap=    5.07ms <... futex resumed>) = 0
+WORKER TID=40527 sys=  141.09ms overlap=    4.54ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   20.42ms overlap=    3.95ms <... futex resumed>) = 0
+WORKER TID=40541 sys=    2.38ms overlap=    2.34ms <... futex resumed>) = 0
+WORKER TID=40541 sys=  129.13ms overlap=    2.10ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=    1.66ms overlap=    1.66ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40542 sys=    1.26ms overlap=    1.26ms futex(0x7f57b6d30b40, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1789092601, tv_nsec=498694679}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+
+===============================================================================================
+PULSE frame=4 latency=100.277 ms TID=40524
+window 1789092601.735516 -> 1789092601.835800
+WORKER TID=40525 sys=12954.21ms overlap=  110.28ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys= 1149.98ms overlap=  110.28ms <... futex resumed>) = 0
+WORKER TID=40527 sys=  141.09ms overlap=  105.29ms <... futex resumed>) = 0
+WORKER TID=40541 sys=  112.29ms overlap=  103.01ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40542 sys=  359.72ms overlap=  101.42ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+MAIN   TID=40524 sys=   98.52ms overlap=   98.52ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  239.42ms overlap=    8.44ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+MAIN   TID=40524 sys=   13.97ms overlap=    4.86ms pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=13808000}, NULL) = 0 (Timeout)
+WORKER TID=40527 sys=  656.44ms overlap=    2.64ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   77.36ms overlap=    2.00ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   78.18ms overlap=    1.99ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=    1.28ms overlap=    1.28ms <... futex resumed>) = 0
+WORKER TID=40527 sys=    1.17ms overlap=    1.17ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=5 latency=82.036 ms TID=40524
+window 1789092601.835963 -> 1789092601.918003
+WORKER TID=40525 sys=12954.21ms overlap=   92.04ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys= 1149.98ms overlap=   92.04ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  359.72ms overlap=   92.04ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys=  656.44ms overlap=   84.84ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   78.18ms overlap=   78.18ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   77.36ms overlap=   77.36ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40527 sys=  141.09ms overlap=    4.84ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   18.23ms overlap=    4.36ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   19.26ms overlap=    4.35ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   98.52ms overlap=    4.00ms <... futex resumed>) = 0
+WORKER TID=40541 sys=  112.29ms overlap=    2.57ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=    1.28ms overlap=    1.28ms <... futex resumed>) = 0
+WORKER TID=40527 sys=    1.17ms overlap=    1.17ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=233 latency=72.930 ms TID=40524
+window 1789092606.941712 -> 1789092607.014651
+WORKER TID=40525 sys=12954.21ms overlap=   82.94ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys=  880.25ms overlap=   82.94ms <... futex resumed>) = 0
+WORKER TID=40527 sys=  483.12ms overlap=   82.94ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  471.75ms overlap=   82.94ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40541 sys=   85.27ms overlap=   76.35ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   71.96ms overlap=   71.96ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   16.10ms overlap=    4.82ms <... pselect6 resumed>) = 0 (Timeout)
+WORKER TID=40541 sys=    6.20ms overlap=    4.32ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=    7.08ms overlap=    4.19ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=43 latency=72.046 ms TID=40524
+window 1789092602.805673 -> 1789092602.877732
+WORKER TID=40525 sys=12954.21ms overlap=   82.06ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys=  954.02ms overlap=   82.06ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  397.84ms overlap=   82.06ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys=  382.54ms overlap=   78.00ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   41.29ms overlap=   37.82ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   37.39ms overlap=   37.40ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   36.51ms overlap=   36.51ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   32.92ms overlap=   32.92ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=    8.22ms overlap=    4.83ms pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=7869000}, NULL) = 0 (Timeout)
+WORKER TID=40527 sys=  176.66ms overlap=    3.35ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   20.17ms overlap=    2.74ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   21.08ms overlap=    2.73ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=49 latency=71.481 ms TID=40524
+window 1789092602.984230 -> 1789092603.055723
+WORKER TID=40525 sys=12954.21ms overlap=   81.49ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys=  954.02ms overlap=   81.49ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  468.63ms overlap=   81.49ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys=  176.66ms overlap=   76.82ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   78.70ms overlap=   74.15ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   70.12ms overlap=   70.12ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=    8.90ms overlap=    4.81ms pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=8723000}, NULL) = 0 (Timeout)
+MAIN   TID=40524 sys=   19.79ms overlap=    3.66ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40527 sys=  160.96ms overlap=    3.07ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   20.22ms overlap=    2.80ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=38 latency=65.839 ms TID=40524
+window 1789092602.618543 -> 1789092602.684392
+WORKER TID=40525 sys=12954.21ms overlap=   75.85ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys=  954.02ms overlap=   75.85ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  397.84ms overlap=   75.85ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys=  382.54ms overlap=   75.85ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   43.58ms overlap=   43.58ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   42.95ms overlap=   42.95ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   32.69ms overlap=   25.64ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   20.26ms overlap=   20.26ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   11.75ms overlap=    4.79ms pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=11395000}, NULL) = 0 (Timeout)
+WORKER TID=40541 sys=   10.92ms overlap=    4.76ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   11.59ms overlap=    4.62ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=13 latency=57.294 ms TID=40524
+window 1789092602.062901 -> 1789092602.120203
+WORKER TID=40525 sys=12954.21ms overlap=   67.30ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys= 1149.98ms overlap=   67.30ms <... futex resumed>) = 0
+WORKER TID=40527 sys=  656.44ms overlap=   67.30ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   60.78ms overlap=   60.69ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   56.48ms overlap=   56.48ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  359.72ms overlap=   41.19ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40542 sys=  373.31ms overlap=   25.60ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+MAIN   TID=40524 sys=    4.83ms overlap=    4.83ms pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=4647000}, NULL) = 0 (Timeout)
+WORKER TID=40541 sys=    7.54ms overlap=    4.80ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=    7.31ms overlap=    3.68ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=39 latency=43.395 ms TID=40524
+window 1789092602.684487 -> 1789092602.727890
+WORKER TID=40525 sys=12954.21ms overlap=   53.40ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40532 sys=  954.02ms overlap=   53.40ms <... futex resumed>) = 0
+WORKER TID=40542 sys=  397.84ms overlap=   53.40ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40527 sys=  382.54ms overlap=   53.40ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   30.86ms overlap=   30.86ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=   29.85ms overlap=   29.85ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   11.59ms overlap=   11.59ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   10.92ms overlap=   10.92ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+WORKER TID=40541 sys=   43.58ms overlap=    4.76ms <... futex resumed>) = 0
+WORKER TID=40541 sys=   16.29ms overlap=    4.64ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   42.95ms overlap=    3.86ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   16.21ms overlap=    3.17ms <... futex resumed>) = 0
+
+===============================================================================================
+PULSE frame=176 latency=40.018 ms TID=40524
+window 1789092605.738603 -> 1789092605.778629
+WORKER TID=40525 sys=12954.21ms overlap=   50.03ms <... epoll_wait resumed>[{events=EPOLLIN, data={u32=751821768, u64=93905916781512}}], 128, -1) = 1
+WORKER TID=40542 sys= 1093.59ms overlap=   50.03ms <... futex resumed>) = 0
+WORKER TID=40527 sys=  808.70ms overlap=   50.03ms <... futex resumed>) = 0
+WORKER TID=40532 sys=  309.82ms overlap=   50.03ms <... futex resumed>) = -1 ETIMEDOUT (Connection timed out)
+WORKER TID=40541 sys=   42.67ms overlap=   42.67ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   38.80ms overlap=   38.80ms <... futex resumed>) = 0
+MAIN   TID=40524 sys=    7.76ms overlap=    4.82ms <... pselect6 resumed>) = 0 (Timeout)
+WORKER TID=40541 sys=   14.49ms overlap=    4.79ms <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=750706562, u64=93905915666306}}], 100, -1) = 1
+MAIN   TID=40524 sys=   14.91ms overlap=    3.86ms <... futex resumed>) = 0
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ 

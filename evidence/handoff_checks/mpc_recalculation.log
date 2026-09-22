@@ -1,0 +1,31 @@
+SHADOW RMSE=1.1086 deg P99=2.5468 deg MAX=2.9020 deg | tabletop_servo_20260916_150937_394611035.json
+ACTIVE RMSE=0.7271 deg P99=1.7867 deg MAX=2.3672 deg | tabletop_servo_20260916_161007_195575844.json
+SHADOW RMSE=1.1253 deg P99=2.5857 deg MAX=2.9730 deg | tabletop_servo_20260916_161804_427508716.json
+ACTIVE RMSE=0.7255 deg P99=1.7945 deg MAX=2.5795 deg | tabletop_servo_20260916_161842_290824538.json
+SHADOW RMSE=1.0491 deg P99=2.4596 deg MAX=2.8690 deg | tabletop_servo_20260916_161957_559208120.json
+ACTIVE RMSE=0.7146 deg P99=1.7798 deg MAX=2.5570 deg | tabletop_servo_20260916_162057_54388464.json
+SHADOW RMSE=1.1333 deg P99=2.5869 deg MAX=2.9510 deg | tabletop_servo_20260916_162340_144861635.json
+SHADOW RMSE=1.1006 deg P99=2.5430 deg MAX=2.9680 deg | tabletop_servo_20260916_162429_177216570.json
+SHADOW RMSE=1.1255 deg P99=2.5469 deg MAX=2.8455 deg | tabletop_servo_20260916_162614_575109989.json
+ACTIVE RMSE=0.7354 deg P99=1.7980 deg MAX=2.4000 deg | tabletop_servo_20260916_162706_519367266.json
+
+SHADOW: n=6
+RMSE = 1.1071 +/- 0.0309 deg
+P99  = 2.5448 +/- 0.0463 deg
+MAX  = 2.9181 +/- 0.0539 deg
+joint RMSE: 1.3138, 0.9438, 0.5927, 1.6208, 0.5868, 0.6919, 1.4699
+
+ACTIVE: n=4
+RMSE = 0.7257 +/- 0.0085 deg
+P99  = 1.7897 +/- 0.0081 deg
+MAX  = 2.4759 +/- 0.1078 deg
+joint RMSE: 0.8592, 0.6288, 0.3811, 1.0749, 0.3833, 0.4321, 0.9582
+
+Mean-RMSE reduction: 34.45%
+
+Method: same recorded reference-minus-feedback samples; entry bridge excluded.
+P99/MAX summaries are means of per-run P99/MAX, not pooled statistics.
+This reproduces the existing metric, not timestamp-aligned ground-truth accuracy.
+The first two runs start body sampling at offset 1; the others at offset 0.
+Successful runs only: these ten reports do not establish a 100% success rate.
+No MPC or SDK code executed; no robot connection attempted.

@@ -1,0 +1,441 @@
+{
+  "schema_version": "trajectory_qualification.v1",
+  "qualification": "BLOCKED",
+  "verdict": "BLOCKED",
+  "trajectory_sha256": "d27c49ebb369797e5e4fbfd996a4fc8dd0161d212ee6aad4a4f997680cae1276",
+  "trajectory_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/trajectories/candidates/traj_tabletop_vision_ab_20260902_REPLAY_CANDIDATE.json",
+  "task_sha256": "d7d4db79922fdf54c57197db97a39ae70b5e4cc47f6ee026659032748a27926a",
+  "trajectory_schema": "legacy_trajectory.v1",
+  "arm": "left",
+  "arm_id": 1,
+  "gripper_id": 2,
+  "limits_source": "controller_limit_profiles.left_preview102_20260827.planning_limits_deg",
+  "gui_review": {
+    "required": true,
+    "reason": "record_missing"
+  },
+  "dense_frames": 1260,
+  "first_point_frames": 1,
+  "path_length_rad": 9.244648668460579,
+  "gates": {
+    "arm_gripper_contract": "PASS",
+    "limits": "PASS",
+    "collision": "BLOCKED",
+    "pybullet_gui_review": "BLOCKED"
+  },
+  "limit_report": {
+    "minimum_margin_deg": 5.0,
+    "minimum_at": "trajectory[147]",
+    "minimum_joint": 6,
+    "required_margin_deg": 5.0,
+    "violations": []
+  },
+  "collision_report": {
+    "checked_first_point_frames": 1,
+    "checked_trajectory_frames": 729,
+    "planned_trajectory_frames": 1260,
+    "completed_dense_check": false,
+    "self_collision_check_mode": "EXPLICIT_LINK_CLOSEST_POINTS",
+    "self_collision_disabled_link_pairs": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        17,
+        18
+      ]
+    ],
+    "minimum_clearance_m": -0.0030780092816505714,
+    "gripper_proxy_m": [
+      0.1,
+      0.178,
+      0.08
+    ],
+    "gripper_proxy_center_link_mm": [
+      0,
+      84,
+      0
+    ],
+    "minimum_gripper_object_clearance_m": 0.016540953639582266,
+    "minimum_clearances_by_kind_m": {
+      "robot_environment": 0.0021117631876176766,
+      "gripper_proxy_environment": -0.0030780092816505714,
+      "carried_object_environment": -0.0011032984338910504,
+      "released_or_stationary_object_environment": -0.0011032984338910504,
+      "robot_object": 0.05764355120034993
+    },
+    "grasp_capture_checks": [
+      {
+        "where": "grasp[0]",
+        "status": "PASS",
+        "axis_offset_m": 0.00016649972182078673,
+        "axis_range_m": [
+          0.0,
+          0.08
+        ],
+        "lateral_error_m": 6.386451509100195e-05,
+        "lateral_tolerance_m": 0.015,
+        "grasp_point_inside_object": true,
+        "grasp_point_world_m": [
+          0.5723566505756378,
+          0.32434630588531493,
+          1.1625980306625365
+        ],
+        "object_center_world_m": [
+          0.5723566505756378,
+          0.32434630588531493,
+          1.1625980306625365
+        ],
+        "grasp_point_reference": "SIMULATION_ASSUMPTION_FEATURE_EQUALS_GRASP_CENTER",
+        "environment_clearance_at_close": {
+          "robot": {
+            "obstacle": "bin_wall_y_plus",
+            "clearance_m": 0.0817285262783745,
+            "required_clearance_m": 0.0,
+            "margin_m": 0.0817285262783745
+          },
+          "gripper": {
+            "obstacle": "bin_wall_y_plus",
+            "clearance_m": 0.03756766481672744,
+            "required_clearance_m": 0.0,
+            "margin_m": 0.03756766481672744
+          },
+          "status": "PASS"
+        }
+      }
+    ],
+    "carried_object_dimensions_m": [
+      [
+        0.07,
+        0.07,
+        0.2
+      ]
+    ],
+    "carried_center_offsets_grip_m": [
+      [
+        0.00012060872714714233,
+        2.7014675423653323e-05,
+        -0.000128548921335625
+      ]
+    ],
+    "object_attachment_modes": [
+      "RIGID_FROM_CLOSE"
+    ],
+    "actual_release_poses": [
+      [
+        [
+          0.5980492545801854,
+          0.11913783402808932,
+          1.168720673576351
+        ],
+        [
+          1.2482541933422908e-05,
+          -5.983431765343994e-05,
+          8.404802065342665e-05,
+          1.0
+        ]
+      ]
+    ],
+    "intentional_contact_exemptions": [
+      "target bottle vs full gripper envelope during final pick descend",
+      "held bottle vs gripper envelope while attached",
+      "released bottle vs gripper envelope during place ascend only; subsequent return is checked"
+    ],
+    "support_contact_tolerances_m": {
+      "table_from_assumed_bottle_bottom": 0.0001,
+      "bin_assumed_bottom_plane": 0.0001
+    },
+    "violations": [
+      {
+        "where": "dense[717]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[718]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[719]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[720]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[721]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[722]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[722]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0003052573808533252,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[723]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[723]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0008338554834175507,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[724]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[724]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0013638759785966944,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[725]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[725]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0019349437005301102,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[726]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[726]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0025062645278122186,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[726]/PLACE_DESCEND",
+        "kind": "carried_object_environment",
+        "obstacle": "bin_assumed_bottom_plane",
+        "distance_m": -0.0004064779762593489,
+        "required_clearance_m": -0.0001,
+        "allowed_support_contact_tolerance_m": 0.0001,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[727]/PLACE_DESCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[727]/PLACE_DESCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0030780092816505714,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[727]/PLACE_DESCEND",
+        "kind": "carried_object_environment",
+        "obstacle": "bin_assumed_bottom_plane",
+        "distance_m": -0.0011032984338910504,
+        "required_clearance_m": -0.0001,
+        "allowed_support_contact_tolerance_m": 0.0001,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[728]/PLACE_ASCEND",
+        "kind": "robot_self_or_dual_arm",
+        "link_pairs": []
+      },
+      {
+        "where": "dense[728]/PLACE_ASCEND",
+        "kind": "gripper_proxy_environment",
+        "obstacle": "bin_wall_x_minus",
+        "distance_m": -0.0030780092816505714,
+        "required_clearance_m": 0.0,
+        "allowed_support_contact_tolerance_m": 0.0,
+        "link_ids": [
+          -1
+        ]
+      },
+      {
+        "where": "dense[728]/PLACE_ASCEND",
+        "kind": "released_or_stationary_object_environment",
+        "obstacle": "bin_assumed_bottom_plane",
+        "distance_m": -0.0011032984338910504,
+        "required_clearance_m": -0.0001,
+        "allowed_support_contact_tolerance_m": 0.0001,
+        "link_ids": [
+          -1
+        ]
+      }
+    ]
+  },
+  "geometry_precheck_verdict": "BLOCKED",
+  "grasp_precheck": {
+    "status": "PASS",
+    "failure_mode": "NONE",
+    "captures": [
+      {
+        "grasp_index": 0,
+        "capture_status": "PASS",
+        "axis_offset_mm": 0.16649972182078673,
+        "allowed_axis_range_mm": [
+          0.0,
+          80.0
+        ],
+        "lateral_error_mm": 0.06386451509100195,
+        "allowed_lateral_error_mm": 15.0,
+        "capture_failure_reasons": [],
+        "environment_at_close": {
+          "robot": {
+            "obstacle": "bin_wall_y_plus",
+            "clearance_m": 0.0817285262783745,
+            "required_clearance_m": 0.0,
+            "margin_m": 0.0817285262783745
+          },
+          "gripper": {
+            "obstacle": "bin_wall_y_plus",
+            "clearance_m": 0.03756766481672744,
+            "required_clearance_m": 0.0,
+            "margin_m": 0.03756766481672744
+          },
+          "status": "PASS"
+        }
+      }
+    ]
+  },
+  "hardware_ready": true
+}

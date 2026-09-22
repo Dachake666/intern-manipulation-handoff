@@ -1,0 +1,78 @@
+cmake_minimum_required(VERSION 3.8)
+project(vision_algorithm)
+
+if(NOT DEFINED SOURCE_DIR)
+  set(SOURCE_DIR "$ENV{SOURCE_DIR}")
+endif()
+if(NOT DEFINED SOURCE_DIR OR SOURCE_DIR STREQUAL "")
+  get_filename_component(SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}" ABSOLUTE)
+endif()
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+
+find_package(OpenCV REQUIRED)
+find_package(PCL REQUIRED COMPONENTS common io)
+find_package(Eigen3 REQUIRED)
+
+find_package(onnxruntime REQUIRED)
+find_package(nlohmann REQUIRED)
+find_package(spdlog REQUIRED)
+find_package(vision_utils REQUIRED)
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(ZMQ REQUIRED libzmq)
+
+include_directories(
+  ${OpenCV_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIRS}
+  ${onnxruntime_INCLUDE_DIR}
+  ${nlohmann_INCLUDE_DIR}
+  ${spdlog_INCLUDE_DIR}
+  ${ZMQ_INCLUDE_DIRS}
+  ${vision_utils_INCLUDE_DIRS}
+  ${SOURCE_DIR}/include
+  ${SOURCE_DIR}/include/image_processing
+  ${SOURCE_DIR}/include/point_cloud_processing
+  ${SOURCE_DIR}/include/sam3
+  ${SOURCE_DIR}/include/yolo
+)
+
+file(GLOB HEADER_FILES 
+  ${SOURCE_DIR}/include/*.h
+  ${SOURCE_DIR}/include/image_processing/*.h
+  ${SOURCE_DIR}/include/point_cloud_processing/*.h
+  ${SOURCE_DIR}/include/sam3/*.h
+  ${SOURCE_DIR}/include/yolo/*.h
+)
+
+add_library(${PROJECT_NAME} SHARED
+  ${SOURCE_DIR}/src/result_save_io.cpp
+  ${SOURCE_DIR}/src/result_post_processor.cpp
+  ${SOURCE_DIR}/src/vision_object_detect.cpp
+  ${SOURCE_DIR}/src/image_processing/image_process.cpp
+  ${SOURCE_DIR}/src/image_processing/detector_mask_processing.cpp
+  ${SOURCE_DIR}/src/point_cloud_processing/point_cloud_object_detector.cpp
+  ${SOURCE_DIR}/src/point_cloud_processing/geometry_utils.cpp
+  ${SOURCE_DIR}/src/sam3/sam3_client.cpp
+  ${SOURCE_DIR}/src/yolo/yolov8_seg.cpp
+  ${HEADER_FILES}
+)
+
+target_compile_definitions(${PROJECT_NAME} PRIVATE LINUX)
+
+target_link_libraries(${PROJECT_NAME}
+  ${OpenCV_LIBS}
+  ${PCL_LIBRARIES}
+  ${onnxruntime_LIB}
+  ${spdlog_LIB}
+  ${ZMQ_LIBRARIES}
+  ${vision_utils_LIBRARIES}
+  pthread
+)

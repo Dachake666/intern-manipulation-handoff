@@ -1,0 +1,69 @@
+[归档说明] 用户在任务内粘贴的运行片段，换行规范化并脱敏；不是完整运行日志。
+[用户报告] 已拍视频，完整抓放已成功；桌子移动过，场景坐标存在偏移。
+[as-run] LIMIT_MARGIN_DEG=0.0; _controller_limit_violations=lambda joints,limits:[]
+[as-run] --run --speed 5.0; XIFENG_ALLOW_REAL_MOTION=1
+executor SHA-256: 807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py
+plan SHA-256: 6b8ad92c80b52bd380fdd5fff7f5e4c1dcf6c4b41b830a2457fd67ec7e4eb507  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/tabletop_pick_place_worlds_PASS_placeZ495_20260903.json
+sdk_session SHA-256: c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39  /home/dev/workspace/trackA_worlds_line/trackA_worlds_line/sdk_session.py
+transport: robot=192.168.8.147 local=192.168.8.185 arm=192.168.8.147:8080 ARM_ID=1
+mode: REAL MOVE REQUESTED
+[互斥锁] 已独占 192.168.8.147 #1 (pid=34156)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.147
+启动 PilotSDK(只读会话)
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8034
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8034
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+[归档脱敏] 登录成功响应含 token，值已删除：{"token":"<REDACTED>"}
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+只读会话: 不清报警 / 不使能 / 不设全局速度 / 不下发运动
+数据就绪(第 1 次探测)
+只读预检通过：7 条 MoveWorlds 直线，532 个 armTryWorlds 密集点。
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+只读全路径预检已通过。确认现场路径清空并手握急停后，直接回车使能执行；输入 q 中止:
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.147
+启动 PilotSDK
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8703
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8703
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+[归档脱敏] 登录成功响应含 token，值已删除：{"token":"<REDACTED>"}
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+执行前复检通过：532 个密集 IK 点；现在才打开 COM1。
+[START_ASSERT_SAFE] ASSERT_ENDPOINT
+[OPEN_BEFORE_PICK] GRIPPER
+夹爪 open: eb 90 02 03 11 f4 01 0b
+[PICK_HOVER] MOVE_WORLDS
+[PICK_DESCEND] MOVE_WORLDS
+[片段结束：未包含 CLOSE_AT_PICK、放置、RETURN_SAFE 或执行会话退出日志]

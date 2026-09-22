@@ -1,0 +1,18 @@
+# Goal
+int32 request_detect
+string[] text_prompt
+string workspace_id
+float64[] object_size 
+geometry_msgs/Pose hand_pose
+---
+# Result
+bool success
+int32 count
+VisionObject[] object_pose
+int32 material_pt_size
+geometry_msgs/Point[] material_points
+int32 error_data
+---
+# Feedback
+string status
+int32 percent_complete

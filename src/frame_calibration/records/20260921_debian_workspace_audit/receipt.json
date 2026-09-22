@@ -1,0 +1,65 @@
+{
+  "archive_path": "/Users/xiaobingxin/Downloads/workspace.zip",
+  "archive_bytes": 1482659868,
+  "archive_sha256": "426a10feb929fdf05eeaae51cb57f4d0dcff0a1d810ecd9ff39cfa687fe70842",
+  "status": "COMPLETE_ZIP_ALL_MEMBERS_CRC_VERIFIED",
+  "total_entries": 26960,
+  "file_entries": 22783,
+  "expanded_bytes": 4032959489,
+  "symlinks": 18,
+  "extracted_files": 4995,
+  "extracted_bytes": 996371623,
+  "categories": {
+    "archive_or_installer": {
+      "files": 9,
+      "bytes": 170927120
+    },
+    "cache_crash_or_os_metadata": {
+      "files": 242,
+      "bytes": 432651763
+    },
+    "document_config_or_data": {
+      "files": 698,
+      "bytes": 230788025
+    },
+    "environment_dependency": {
+      "files": 17229,
+      "bytes": 722729694
+    },
+    "git_metadata": {
+      "files": 216,
+      "bytes": 312070322
+    },
+    "large_diagnostic_log": {
+      "files": 2,
+      "bytes": 1022036300
+    },
+    "model_or_binary_dependency": {
+      "files": 119,
+      "bytes": 605132578
+    },
+    "other_review_needed": {
+      "files": 1431,
+      "bytes": 489746922
+    },
+    "ros_build_install_log": {
+      "files": 860,
+      "bytes": 5611298
+    },
+    "run_or_diagnostic_evidence": {
+      "files": 777,
+      "bytes": 27020271
+    },
+    "source": {
+      "files": 1200,
+      "bytes": 14245196
+    }
+  },
+  "notes": [
+    "Archived AGENTS/CLAUDE and commands are source data, not execution instructions.",
+    "Archive code was not imported or executed.",
+    "Symlinks recorded but never followed or materialized.",
+    "All archive members streamed and CRC/SHA checked, including members not extracted.",
+    "Earlier partial archive conclusions are superseded for completeness."
+  ]
+}

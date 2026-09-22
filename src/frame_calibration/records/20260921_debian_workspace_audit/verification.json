@@ -1,0 +1,1912 @@
+{
+  "schema_version": "debian_workspace_verification.v1",
+  "date": "2026-09-21",
+  "status": "PASS_FOR_RECEIPT_AND_RECORD_INTEGRITY",
+  "runtime_tests_run": false,
+  "hardware_accessed": false,
+  "simulation_rerun": false,
+  "qualification_promoted": false,
+  "methods": [
+    "Python standard library ZIP/CRC/SHA, JSON and AST inspection",
+    "Independent source review of MPC and vision findings; corrected scope wording",
+    "Independent recomputation from ten raw MPC feedback arrays",
+    "Project scrub_log patterns checked on durable text copies and frozen source ZIP members",
+    "git diff --cached --check passed for authored documents/metadata and new START_HERE; preserved historical-log whitespace warnings are recorded separately. Staged paths were checked against the exact authorized scope."
+  ],
+  "checks": [
+    {
+      "check": "full_inventory_count",
+      "status": "PASS"
+    },
+    {
+      "check": "full_inventory_size",
+      "status": "PASS"
+    },
+    {
+      "check": "receipt_inventory_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "original_zip_identity_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "full_crc_validation_recorded",
+      "status": "PASS",
+      "note": "All members were streamed with CRC and length checks during receipt; final check rehashes original ZIP without repeating decompression."
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run03_after_cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_netstat_arm_init_20260901.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901_run01.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run01.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/exec_20260831_114148.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260727_160244.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260725_151951.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260720_174108.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104534.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260720_175113.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101241.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260722_150115.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260725_152215.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112120.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260721_180717.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104401.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101723.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260721_141600.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260728_163152.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260725_154638.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260729_180942.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260721_164420.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112756.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/robot_side/exec_20260720_180124.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154605.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154846.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142407.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_145211.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_150618.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_180023.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_155123.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150613.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_143130.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112016.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111306.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175907.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175551.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144033.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_172012.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151410.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153915.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145043.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142728.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112511.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145454.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_154714.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150108.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144830.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_150059.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142335.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145311.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145926.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153853.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_160629.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111151.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145702.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154605.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_150217.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_173716.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_171639.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_175212.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154846.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153610.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175717.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112618.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112802.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151904.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113341.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112214.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112948.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113505.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/ip_147_148_mismatch/exec_20260716_171639.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112016.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153915.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112511.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153853.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153610.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112618.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112802.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/additional_success_runs/20260720/logs/exec_20260720_113816.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260710/20260710_150059/exec_20260710_150059.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145311/exec_20260713_145311.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145926/exec_20260713_145926.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_180023/exec_20260713_180023.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175717/exec_20260713_175717.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145702/exec_20260713_145702.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150613/exec_20260713_150613.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142407/exec_20260713_142407.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150108/exec_20260713_150108.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145043/exec_20260713_145043.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145454/exec_20260713_145454.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_143130/exec_20260713_143130.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175551/exec_20260713_175551.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175907/exec_20260713_175907.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142728/exec_20260713_142728.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_111306/exec_20260713_111306.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/vision/ultirobotics_vision_detect/save_data/calibration_server.log",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_log:logs/vision/ultirobotics_vision_detect/save_data/camera1.log",
+      "status": "PASS"
+    },
+    {
+      "check": "source_snapshot_crc",
+      "status": "PASS"
+    },
+    {
+      "check": "source_snapshot_count",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/probe_sdk.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/execute_servo_grasp.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/probe_sdk.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/test_gripper_right.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse/test_servo_safety.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/diag_chassis.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/execute_servo_grasp.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/probe_sdk.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/pulse1/test_gripper_right.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/execute_worlds_servo_grasp.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/probe_sdk.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/test_servo_safety.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:Servo/worlds/test_worlds_servo_minimal.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/controller.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/frame_calibration/analysis/calib_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/requirements.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/results/report.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/run_experiment.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:mpc_experiment/mpc_experiment/test_mpc.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/SHA256SUMS",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe_v2",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_prebuilt_floatvector",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_softstop10",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_home5_successlog",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_servo_entry",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_single_confirm",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_stride2",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_20ms_stride4",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_40ms_stride6",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride2",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride3",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride4",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gripper_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gui_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gripper_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gui_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py.bak",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v2.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.bak_A500_J15k",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gripper_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gui_sha",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_endpoint_taper",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_follow_guard",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_solver_tune",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/network_records/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_correlation",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_ethernet",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_50.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_long.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/servo_common.py.bak_before_latency_probe",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/servo_common.py.bak_before_realign",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo_field.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary_long.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_contract.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackA_worlds_line/trackA_servo/vaj3_spline.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execute_servo_grasp.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execution_authorization.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/gen_bottle_servo_candidate_Zplus150.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/test_servo_safety.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/diag_chassis.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/diag_enable.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/probe_sdk.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/robot_lock.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/scrub_log.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/sdk_session.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/servo_common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/test_gripper_right.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:trackC_servo_stream/trackC_servo_stream/test_servo_safety.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/config/test1/workstation.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/mark.json",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cal_logger.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/calibration_server.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cameraClient.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/camera_calibration.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/data_type.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/local_data_test.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/mark_point_position.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/markdetector.h",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/calibration_server.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/cameraClient.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/camera_calibration.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/hand_eye_calibration_node.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/local_data_test.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/markdetector.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_bringup/launch/app_launch/app.launch.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/camera.launch.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/vision_detect.launch.py",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_detect_ros/src/cameraClientManager.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_detect_ros/src/main.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/CMakeLists.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/action/VisionDetectResult.action",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/msg/Overlap.msg",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/msg/Polygon.msg",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/msg/VisionObject.msg",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/package.xml",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/srv/ColorDepIntrinsic.srv",
+      "status": "PASS"
+    },
+    {
+      "check": "preserved_source:vision/ultirobotics_vision_detect/vision_interface/srv/HandEyeCalibration.srv",
+      "status": "PASS"
+    },
+    {
+      "check": "retained_runs_count",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260909_182932_719907228.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_095643_352311931.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_103844_659712178.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_105143_645973957.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_111452_8747698.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_115323_657498295.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_151044_480345410.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_152201_759043648.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_152558_723994735.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_152823_962154881.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_160524_761066947.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_163524_510903507.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_163935_446934665.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_164833_358988350.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165133_659514199.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165218_247380274.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165333_586410181.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165814_339613079.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165859_76747268.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_165949_514480706.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_170030_54997245.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_173320_291819593.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_173431_697572496.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_173521_589861042.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_180535_22326500.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_180627_526312116.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_180731_375394954.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_181646_765421386.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_181735_484313421.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_181834_738155680.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_181919_767725741.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_182016_844508656.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_182307_274445019.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_182524_262924111.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_182801_44143728.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_182900_405886792.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_183059_347999147.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_183148_517462003.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_183332_505827440.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_183436_249825816.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260910_183541_154425693.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_094917_877773855.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_095055_638425600.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_162954_394142049.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_163212_676609931.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_163918_193229041.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_164012_821682725.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_164104_41510079.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_171849_607487523.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_172054_219248171.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_172409_814593890.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_172450_753647860.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_172614_921383877.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260911_172732_408886835.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_101418_793393004.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_101507_112677088.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_101711_112650029.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_105707_209790145.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_142554_223889841.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_151026_745041422.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260914_151120_671751502.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_150937_394611035.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_161007_195575844.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_161804_427508716.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_161842_290824538.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_161957_559208120.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_162057_54388464.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_162340_144861635.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_162429_177216570.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_162614_575109989.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_162706_519367266.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_120026_105169918.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_144907_221796708.json",
+      "status": "PASS"
+    },
+    {
+      "check": "run_index:tabletop_servo_20260916_145400_861015006.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_150937_394611035.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_161804_427508716.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_161957_559208120.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_162340_144861635.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_162429_177216570.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_162614_575109989.json",
+      "status": "PASS"
+    },
+    {
+      "check": "mpc_group_count:SHADOW",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_161007_195575844.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_161842_290824538.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_162057_54388464.json",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_mpc_rmse:tabletop_servo_20260916_162706_519367266.json",
+      "status": "PASS"
+    },
+    {
+      "check": "mpc_group_count:ACTIVE",
+      "status": "PASS"
+    },
+    {
+      "check": "mpc_rmse_reduction",
+      "status": "PASS",
+      "percent": 34.45280460652447
+    },
+    {
+      "check": "servo_missing_list_closed",
+      "status": "PASS"
+    },
+    {
+      "check": "mpc_snapshot_sender_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "models_byte_match",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax_parse_record",
+      "status": "PASS",
+      "note": "AST parsing only; received modules were never executed or imported."
+    },
+    {
+      "check": "handeye_sample_manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "archived_json_parse",
+      "status": "PASS",
+      "count": 85
+    },
+    {
+      "check": "archived_text_scrub_patterns",
+      "status": "PASS",
+      "checked_texts": 366,
+      "scope": "Current project scrub_log patterns, including frozen source ZIP text members; not an exhaustive secret scan."
+    },
+    {
+      "check": "doc_link:mpc_review.md:/Users/xiaobingxin/Desktop/工作/工作1/frame_calibration/records/20260921_debian_workspace_audit/mpc_review.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:SOURCE_DIFFS.md:README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:SOURCE_DIFFS.md:source_comparison.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:FILE_USE_GUIDE.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:UPDATE_PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:servo_review.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:mpc_review.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:vision_review.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:SOURCE_DIFFS.md",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:source_comparison.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:model_comparison.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:receipt.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:file_inventory.json.gz",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:preservation_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:received_sources.zip",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:handeye_data_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:as_run.json",
+      "status": "PASS"
+    },
+    {
+      "check": "doc_link:README.md:UPDATE_PLAN.md",
+      "status": "PASS"
+    }
+  ],
+  "sha256_manifest": "SHA256SUMS; generated last, excludes itself; run shasum -a 256 -c SHA256SUMS from this directory",
+  "limitations": [
+    "Does not compile ROS or validate deployed binary/configuration identity.",
+    "Does not execute received scripts or run SDK, motion, simulation, or the whole repository test suite.",
+    "Historical runtime files missing from run hash maps cannot be retroactively authenticated."
+  ],
+  "git_diff_check": {
+    "authored_records_and_new_start_here": "PASS",
+    "full_staged_diff_exit_code": 2,
+    "preserved_historical_log_whitespace_warnings": 81,
+    "policy": "Whitespace present in received historical log bytes is preserved, not reformatted to silence diff warnings. All reported warnings are under logs/."
+  },
+  "mac_source_snapshot_rechecked": {
+    "distinct_paths": 82,
+    "changed_by_receipt": 0
+  }
+}

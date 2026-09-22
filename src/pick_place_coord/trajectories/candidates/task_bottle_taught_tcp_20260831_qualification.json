@@ -1,0 +1,192 @@
+{
+  "comment": "桌面使用用户确认的 end effector 原点；瓶子 XY 由示教抓取中心推定，完整几何验收仍须通过。",
+  "scene_geometry_status": "EE_REFERENCE_CONFIRMED_CORRECTED_SCENE_REVIEW_PENDING",
+  "self_collision_disabled_link_pairs": [
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      17,
+      18
+    ]
+  ],
+  "pairs": [
+    {
+      "pick": [
+        0.5465890278194876,
+        0.3252984801916516,
+        1.1608049190486869
+      ],
+      "place": [
+        0.5268148590897055,
+        0.08176338622850537,
+        1.1608049190486869
+      ],
+      "actual_pick_grip": [
+        0.5465874397463286,
+        0.32529858205592116,
+        1.1608076918340002
+      ],
+      "actual_place_grip": [
+        0.5268011139805002,
+        0.08176543932190124,
+        1.1608190512731191
+      ],
+      "object_pick_center": [
+        0.5465890278194876,
+        0.3252984801916516,
+        1.1262680053710938
+      ],
+      "object_place_center": [
+        0.5268148590897055,
+        0.08176338622850537,
+        1.1262680053710938
+      ],
+      "dimensions_m": [
+        0.07,
+        0.07,
+        0.2
+      ],
+      "carried_center_offset_grip_m": [
+        1.5880731589756891e-06,
+        -1.01864269574925e-07,
+        -0.034539686462906394
+      ],
+      "grasp_capture": {
+        "axis_range_m": [
+          0.0,
+          0.08
+        ],
+        "lateral_tolerance_m": 0.015,
+        "reference": "USER_CONFIRMED_TAUGHT_GRIP_POINT_ON_BOTTLE",
+        "object_grasp_point_world_m": [
+          0.5465890278194876,
+          0.3252984801916516,
+          1.1608049190486869
+        ],
+        "object_grasp_point_source": "原示教抓取关节 FK 加实测夹爪偏移；必须另查在瓶体内，不是瓶体质心"
+      },
+      "object_attachment_mode": "RIGID_FROM_CLOSE"
+    }
+  ],
+  "obstacles": [
+    {
+      "source_obstacle_id": "taught_table_top",
+      "center": [
+        0.6593080401420593,
+        -0.08577684164047239,
+        1.0012680053710938
+      ],
+      "half": [
+        0.4,
+        0.6,
+        0.025
+      ],
+      "top_pb_m": 1.0262680053710938,
+      "corner_tcp_pb_m": [
+        0.3505162067799034,
+        0.5200320986504756,
+        0.8800068466471883
+      ],
+      "corner_reference": "EE_LINK_ORIGIN",
+      "corner_reference_pb_m": [
+        0.2593080401420593,
+        0.5142231583595276,
+        1.0262680053710938
+      ],
+      "corner_reference_evidence": "用户确认：end effector那里，就是我们拿坐标的位置，不是夹爪",
+      "old_tcp_table_height_error_mm": -146.26115872390542,
+      "support_contact_tolerance_m": 5e-05,
+      "minimum_robot_clearance_m": 0.02,
+      "minimum_gripper_clearance_m": 0.02,
+      "physical_top_from_floor_m": 0.73,
+      "geometry_status": "EE_REFERENCE_CONFIRMED_CORRECTED_SCENE_REVIEW_PENDING",
+      "comment": "桌角按明确的 endpoint 参考点做 FK，不给桌面叠加夹爪/TCP 偏移；XY 方向沿用任务定义。"
+    }
+  ]
+}

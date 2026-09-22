@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/vision_observation.v1.schema.json",
+  "title": "vision_observation.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "observation_id", "camera", "calibration", "evidence", "objects", "obstacles"],
+  "properties": {
+    "schema_version": {"const": "vision_observation.v1"},
+    "observation_id": {"type": "string", "minLength": 1},
+    "camera": {
+      "type": "object", "additionalProperties": false,
+      "required": ["camera_id", "ros_timestamp_ns", "frame_id", "rgb_depth_delta_ms"],
+      "properties": {
+        "camera_id": {"type": "string", "minLength": 1},
+        "ros_timestamp_ns": {"type": "integer", "minimum": 0},
+        "frame_id": {"type": "string", "minLength": 1},
+        "rgb_topic": {"type": "string"}, "depth_topic": {"type": "string"},
+        "camera_info_topic": {"type": "string"},
+        "rgb_depth_delta_ms": {"type": "number", "minimum": 0, "maximum": 50}
+      }
+    },
+    "calibration": {
+      "type": "object", "additionalProperties": false,
+      "required": ["intrinsics_id", "extrinsics_id", "extrinsics_direction", "length_unit"],
+      "properties": {
+        "intrinsics_id": {"type": "string", "minLength": 1},
+        "extrinsics_id": {"type": "string", "minLength": 1},
+        "extrinsics_direction": {"const": "T_sdk_world_camera"},
+        "length_unit": {"const": "meter"}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["rgb_sha256", "depth_sha256", "camera_info_sha256", "supporting_frames"],
+      "properties": {
+        "rgb_sha256": {"$ref": "#/$defs/hash"}, "depth_sha256": {"$ref": "#/$defs/hash"},
+        "camera_info_sha256": {"$ref": "#/$defs/hash"}, "bundle_path": {"type": "string"},
+        "supporting_frames": {"type": "array", "minItems": 3, "maxItems": 5,
+          "items": {"$ref": "#/$defs/frameEvidence"}}
+      }
+    },
+    "objects": {"type": "array", "items": {"$ref": "#/$defs/entity"}},
+    "obstacles": {"type": "array", "items": {"$ref": "#/$defs/obstacle"}}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "frameEvidence": {"type":"object","additionalProperties":false,
+      "required":["rgb_sha256","depth_sha256","camera_info_sha256"],
+      "properties":{"rgb_sha256":{"$ref":"#/$defs/hash"},"depth_sha256":{"$ref":"#/$defs/hash"},"camera_info_sha256":{"$ref":"#/$defs/hash"},"bundle_path":{"type":"string"}}},
+    "vec3": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "quat": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "pose": {
+      "type": "object", "additionalProperties": false, "required": ["position_m", "quaternion_xyzw"],
+      "properties": {"position_m": {"$ref": "#/$defs/vec3"}, "quaternion_xyzw": {"$ref": "#/$defs/quat"}}
+    },
+    "entity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["object_id", "class_id", "frame_id", "pose", "dimensions_m", "confidence", "uncertainty_1sigma_m", "depth_valid_ratio", "support_frames"],
+      "properties": {
+        "object_id": {"type": "string", "minLength": 1}, "class_id": {"type": "string", "minLength": 1},
+        "frame_id": {"type": "string", "minLength": 1}, "pose": {"$ref": "#/$defs/pose"},
+        "dimensions_m": {"$ref": "#/$defs/vec3"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "uncertainty_1sigma_m": {"$ref": "#/$defs/vec3"}, "depth_valid_ratio": {"type": "number", "minimum": 0, "maximum": 1},
+        "support_frames": {"type": "integer", "minimum": 3, "maximum": 5}, "yaw_std_deg": {"type": "number", "minimum": 0},
+        "pose_role": {"enum": ["OBJECT_POSE", "GRASP_POSE", "EE_POSE"]}
+      }
+    },
+    "obstacle": {
+      "type": "object", "additionalProperties": false,
+      "required": ["obstacle_id", "frame_id", "geometry", "pose", "dimensions_m", "confidence", "uncertainty_1sigma_m"],
+      "properties": {
+        "obstacle_id": {"type": "string", "minLength": 1}, "frame_id": {"type": "string", "minLength": 1},
+        "geometry": {"enum": ["box"]}, "pose": {"$ref": "#/$defs/pose"}, "dimensions_m": {"$ref": "#/$defs/vec3"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "uncertainty_1sigma_m": {"$ref": "#/$defs/vec3"}
+      }
+    }
+  }
+}

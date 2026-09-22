@@ -1,0 +1,134 @@
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹: world_grasp_latest.json  模式: point  夹爪力度: 100
+契约: 每点 world = [anchor.X+off.x, anchor.Y+off.y, anchor.Z+off.z, anchor.U, anchor.V, anchor.W]; off_mm 免标定(坐标轴对齐), 姿态全程用 anchor 的 tool-down UVW(固定夹爪朝向)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8488
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8488
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: {'code': 0, 'com': 'COM1', 'baudrate': 115200, 'databits': 8, 'parity': 0, 'stopbits': 1}
+anchor 世界位姿 = [414.62, 349.73, 322.56, -71.4, 28.83, 4.11]
+⚠ anchor 的 V=28.8° 不接近 90°(工具朝下), 请先把臂摆成工具竖直朝下悬停在物体正上方再跑
+回车开始(人守急停):   START            -> world [414.6, 349.7, 442.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 434.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 426.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 418.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 410.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 402.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 394.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 386.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 378.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 370.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 362.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 354.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 346.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 338.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 330.6, -71.4, 28.8, 4.1]
+  PICK_DESCEND     -> world [414.6, 349.7, 322.6, -71.4, 28.8, 4.1]
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 64 00 70
+  [夹爪2] close armWriteCom: 0
+  PICK_ASCEND      -> world [414.6, 349.7, 330.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 338.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 346.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 354.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 362.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 370.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 378.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 386.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 394.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 402.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 410.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 418.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 426.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 434.6, -71.4, 28.8, 4.1]
+  PICK_ASCEND      -> world [414.6, 349.7, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 341.9, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 334.2, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 326.4, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 318.6, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 310.8, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 303.1, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 295.3, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 287.5, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 279.7, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 271.9, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 264.2, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 256.4, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 248.6, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 240.8, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 233.1, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 225.3, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 217.5, 442.6, -71.4, 28.8, 4.1]
+  TRANSFER         -> world [414.6, 209.7, 442.6, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 435.0, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 427.4, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 419.8, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 412.2, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 404.6, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 397.0, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 389.4, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 381.8, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 374.2, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 366.6, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 359.0, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 351.4, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 343.8, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 336.2, -71.4, 28.8, 4.1]
+  PLACE_DESCEND    -> world [414.6, 209.7, 328.6, -71.4, 28.8, 4.1]
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  [夹爪2] open armWriteCom: 0
+  PLACE_ASCEND     -> world [414.6, 209.7, 336.2, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 343.8, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 351.4, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 359.0, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 366.6, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 374.2, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 381.8, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 389.4, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 397.0, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 404.6, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 412.2, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 419.8, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 427.4, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 435.0, -71.4, 28.8, 4.1]
+  PLACE_ASCEND     -> world [414.6, 209.7, 442.6, -71.4, 28.8, 4.1]
+
+完成。
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!

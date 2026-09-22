@@ -1,0 +1,10 @@
+{
+  "schema_version": "object_catalog.v1",
+  "catalog_id": "fixed_station_boxes_20260821",
+  "morphology_radius_px": 1,
+  "objects": [
+    {"class_id": "red_box_50", "hsv_ranges": [{"lower": [350, 0.55, 0.35], "upper": [15, 1.0, 1.0]}], "dimensions_m": [0.05, 0.05, 0.05], "allowed_grasp_axes": ["top_x", "top_y"], "gripper_opening_m": 0.06, "mass_range_kg": [0.05, 0.3]},
+    {"class_id": "green_box_50", "hsv_ranges": [{"lower": [75, 0.45, 0.25], "upper": [155, 1.0, 1.0]}], "dimensions_m": [0.05, 0.05, 0.05], "allowed_grasp_axes": ["top_x", "top_y"], "gripper_opening_m": 0.06, "mass_range_kg": [0.05, 0.3]},
+    {"class_id": "blue_box_50", "hsv_ranges": [{"lower": [190, 0.45, 0.25], "upper": [260, 1.0, 1.0]}], "dimensions_m": [0.05, 0.05, 0.05], "allowed_grasp_axes": ["top_x", "top_y"], "gripper_opening_m": 0.06, "mass_range_kg": [0.05, 0.3]}
+  ]
+}

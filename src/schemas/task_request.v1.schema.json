@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/task_request.v1.schema.json",
+  "title": "task_request.v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "task_id", "observation", "actions", "arm_preference", "execution_policy", "object_catalog_id", "safety_policy"],
+  "properties": {
+    "schema_version": {"const": "task_request.v1"}, "task_id": {"type": "string", "minLength": 1},
+    "observation": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/hash"}}
+    },
+    "actions": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["action_id", "type", "object_id", "place"],
+        "properties": {
+          "action_id": {"type": "string", "minLength": 1}, "type": {"const": "pick_place"},
+          "object_id": {"type": "string", "minLength": 1},
+          "place": {
+            "type": "object", "additionalProperties": false, "required": ["frame_id", "position_m", "quaternion_xyzw"],
+            "properties": {"frame_id": {"type": "string", "minLength": 1}, "position_m": {"$ref": "#/$defs/vec3"}, "quaternion_xyzw": {"$ref": "#/$defs/quat"}}
+          }
+        }
+      }
+    },
+    "arm_preference": {"enum": ["auto", "left", "right"]},
+    "execution_policy": {
+      "type": "object", "additionalProperties": false, "required": ["dual_arm_mode", "approval_required"],
+      "properties": {"dual_arm_mode": {"const": "strict_serial"}, "approval_required": {"const": true}}
+    },
+    "object_catalog_id": {"type": "string", "minLength": 1},
+    "safety_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["obstacle_inflation_min_m", "obstacle_sigma_multiplier", "scene_change_min_m", "minimum_joint_margin_deg"],
+      "properties": {
+        "obstacle_inflation_min_m": {"type": "number", "minimum": 0.02}, "obstacle_sigma_multiplier": {"type": "number", "minimum": 3},
+        "scene_change_min_m": {"type": "number", "minimum": 0.01}, "minimum_joint_margin_deg": {"type": "number", "minimum": 5}
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "vec3": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "quat": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false}
+  }
+}

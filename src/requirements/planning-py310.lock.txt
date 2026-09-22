@@ -1,0 +1,5 @@
+# CPython 3.10 / Linux x86_64 planning and replay environment
+numpy==2.1.3
+pybullet==3.2.5
+pybullet-planning==0.6.1
+jsonschema==4.23.0

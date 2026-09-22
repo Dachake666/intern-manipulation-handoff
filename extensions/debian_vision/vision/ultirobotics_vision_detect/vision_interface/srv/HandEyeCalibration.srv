@@ -1,0 +1,13 @@
+# Request
+int32 request_type
+string camera_id
+geometry_msgs/Pose hand_pose
+string save_json_file
+string workspace_id
+---
+# Response
+bool success
+float32 mean_rot_error
+float32 mean_trans_error
+float32[] result_matrix
+int32 error_data

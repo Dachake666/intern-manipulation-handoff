@@ -1,0 +1,35 @@
+2026-09-15 Mac offline regression, continued in task 01a05dc9-fb04-7192-825b-3956040227d5
+Scope: 9 related test files; not full repository, not hardware acceptance.
+Hardware motion disabled; no robot/network snapshot scripts executed.
+Working directory: /Users/xiaobingxin/Desktop/工作/工作1
+
+Command:
+pwd
+XIFENG_ALLOW_REAL_MOTION=0 PYTHONDONTWRITEBYTECODE=1 TMPDIR=/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-servo-BCAihw /opt/anaconda3/bin/python -B -m pytest -q -p no:cacheprovider frame_calibration/robot_side/test_execute_trajectory_options.py frame_calibration/robot_side/test_servo_safety.py frame_calibration/robot_side/test_execute_tabletop_pick_place_worlds.py frame_calibration/robot_side/test_precheck_tabletop_hybrid.py frame_calibration/robot_side/test_execute_tabletop_hybrid_trial.py frame_calibration/robot_side/test_tracka_final_handoff.py frame_calibration/robot_side/test_tabletop_servo.py pick_place_coord/test_gen_tabletop_hybrid_candidate.py releases/test_make_release_hybrid.py
+
+Captured output:
+/Users/xiaobingxin/Desktop/工作/工作1
+........................................................................ [ 43%]
+........................................................................ [ 86%]
+......................                                                   [100%]
+=============================== warnings summary ===============================
+../../../../../opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1
+  /opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1: DeprecationWarning: Please import `KDTree` from the `scipy.spatial` namespace; the `scipy.spatial.kdtree` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.spatial.kdtree import KDTree
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+166 passed, 1 warning in 46.00s
+
+
+Exit code: 0
+Input original ZIP: b8b2efef59cce1134900417c50182f72339748f31c087ec7a2c2f479066a44e8
+Read-only package checks: source ZIP CRC PASS; 49 incoming sums PASS; 50 archive member mappings PASS.
+Legacy ZIP vs existing AS release: 13 runtime/GUI members byte-identical.
+Candidate reconstruction: exactly five settle_s changes; field SHA 71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338.
+Nested ZIP credential scan: 62 text members scanned after HTML decoding; no unredacted credential matches found.
+Archive scrub_log.py --check: PASS. Seven earlier archive copies normalize 24 existing redaction placeholders; original ZIP unchanged.
+Tools: 3 Python AST checks PASS; 2 bash -n checks PASS. Tools were not used to collect devices.
+releases/make_release.py --verify: all 10 existing release manifests match; no release was overwritten.
+Reviewer first pass for latest terminal transcript: INCONCLUSIVE, 8 open/4 close commands, SDK stopped.
+Final review remains INCONCLUSIVE/LIMITED: field source identities/raw JSON and full final-error/protection/speed readbacks missing.
+Whitespace checks apply to editable source/docs. Received handoff members and byte-identical generated runtime snapshots retain historical whitespace rather than changing verified hashes.

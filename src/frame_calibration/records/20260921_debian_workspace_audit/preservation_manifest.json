@@ -1,0 +1,2797 @@
+{
+  "original_archive_sha256": "426a10feb929fdf05eeaae51cb57f4d0dcff0a1d810ecd9ff39cfa687fe70842",
+  "logs": [
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "raw_sha256": "88b20144c76d1f848da8c96a104556b229ed99fe9d52ed6c242b9fff1071e2b2",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "archived_sha256": "88b20144c76d1f848da8c96a104556b229ed99fe9d52ed6c242b9fff1071e2b2",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "raw_sha256": "1f48805eb79b686c11d22703aaee2957255906102b9af4fe391997bec0756d61",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "archived_sha256": "1f48805eb79b686c11d22703aaee2957255906102b9af4fe391997bec0756d61",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "raw_sha256": "0cb210f87dd416fd62b94e27787ca9e353bff177c02ad16e8d33f749e3eecaa1",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "archived_sha256": "0cb210f87dd416fd62b94e27787ca9e353bff177c02ad16e8d33f749e3eecaa1",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "raw_sha256": "ff140bfe71a9866fbdbe8d02930dcff4fdf92494749d5a7f683c2799642c99a3",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "archived_sha256": "ff140bfe71a9866fbdbe8d02930dcff4fdf92494749d5a7f683c2799642c99a3",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "raw_sha256": "c98f827b75574c09b9ed0f817641c4972a730ce8a6765b24cccc6d49bcd4d6be",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "archived_sha256": "c98f827b75574c09b9ed0f817641c4972a730ce8a6765b24cccc6d49bcd4d6be",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "raw_sha256": "e387997625031fb6710930b94e4fe4885e76c7cd569a3f3718a897db728ebf78",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "archived_sha256": "e387997625031fb6710930b94e4fe4885e76c7cd569a3f3718a897db728ebf78",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "raw_sha256": "83c1719f85cfb2ac00702b98d40f38ba1bf92cb0885cde34923ee4ccf0046393",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "archived_sha256": "83c1719f85cfb2ac00702b98d40f38ba1bf92cb0885cde34923ee4ccf0046393",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "raw_sha256": "06e0471f1b60f7ac9b196e91bd6c4705495b11a77ebfc0c68fd039168bdfda82",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "archived_sha256": "06e0471f1b60f7ac9b196e91bd6c4705495b11a77ebfc0c68fd039168bdfda82",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "raw_sha256": "c687d018c1cf44d68cc23c58bbe519846dab8e6a5bf234a370c10902ef264e4b",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "archived_sha256": "c687d018c1cf44d68cc23c58bbe519846dab8e6a5bf234a370c10902ef264e4b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "raw_sha256": "0a1419e03d645313006ca0817c41c7337fb1ee2f37fcc5fdfad704c37631b1ed",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "archived_sha256": "0a1419e03d645313006ca0817c41c7337fb1ee2f37fcc5fdfad704c37631b1ed",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "raw_sha256": "07429bb907cb66a3a09f119d8ccbadedfbe6420e2591a16911c2a58d07a61c10",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "archived_sha256": "07429bb907cb66a3a09f119d8ccbadedfbe6420e2591a16911c2a58d07a61c10",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "raw_sha256": "3508f8c85ab2b5db38ab8e3120559e8ebb00262fe45e0864beac5749c377f7e6",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "archived_sha256": "3508f8c85ab2b5db38ab8e3120559e8ebb00262fe45e0864beac5749c377f7e6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "raw_sha256": "66fd4f6272d7851c9c19af5a709110f77a13795c396b9053c9515167fa80f56f",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "archived_sha256": "66fd4f6272d7851c9c19af5a709110f77a13795c396b9053c9515167fa80f56f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "raw_sha256": "6a57ab963d31f7ba411651126a1f1814bbbe8cb2703b69022b832a59b56eadb6",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "archived_sha256": "6a57ab963d31f7ba411651126a1f1814bbbe8cb2703b69022b832a59b56eadb6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "raw_sha256": "c4556ea7ad23399d498fbb0dfd425b3d29b0c9992ea193c6168c7bdd9915cd63",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "archived_sha256": "c4556ea7ad23399d498fbb0dfd425b3d29b0c9992ea193c6168c7bdd9915cd63",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "raw_sha256": "9ab5432259b448669eba5523c8abddf20da6762c56c8ba798922737dbefd4652",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "archived_sha256": "9ab5432259b448669eba5523c8abddf20da6762c56c8ba798922737dbefd4652",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "raw_sha256": "50e16310272bd0dc619265d5b3957d89900743a9c107c727481ecf1e4b01d064",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "archived_sha256": "50e16310272bd0dc619265d5b3957d89900743a9c107c727481ecf1e4b01d064",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "raw_sha256": "bf8c559f8b32d93c6e4dc72a84d14c4840b7713dc55861e9657c2f95becfbd2c",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "archived_sha256": "bf8c559f8b32d93c6e4dc72a84d14c4840b7713dc55861e9657c2f95becfbd2c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "raw_sha256": "9df997da0a9fafd3ce409cf485386b5f71bc2a5e1aeea2aab8999bdde33edf2f",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "archived_sha256": "9df997da0a9fafd3ce409cf485386b5f71bc2a5e1aeea2aab8999bdde33edf2f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "raw_sha256": "1121bd32d8e74cab716eeb028c98c8bb407e513e3aa063a6c5072d49fe35df01",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "archived_sha256": "1121bd32d8e74cab716eeb028c98c8bb407e513e3aa063a6c5072d49fe35df01",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "raw_sha256": "f5476bc0bae5d77d7cb0dcc6e3fb04de9546824304bc4983eafca3a97bdd4120",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "archived_sha256": "f5476bc0bae5d77d7cb0dcc6e3fb04de9546824304bc4983eafca3a97bdd4120",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "raw_sha256": "aa0ed9c194b7c5c709fa191d55073a839410e856fb18cfc61454805cc5a14364",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "archived_sha256": "aa0ed9c194b7c5c709fa191d55073a839410e856fb18cfc61454805cc5a14364",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "raw_sha256": "9f61cd0721bef5e83dd780e1e94d3f98d476b0671b01382c8cf657f3171c9f1e",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "archived_sha256": "9f61cd0721bef5e83dd780e1e94d3f98d476b0671b01382c8cf657f3171c9f1e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "raw_sha256": "1e31cb4f2c86f0ff984aa98544a36319ff1742df270bd368544df92a6e7da36e",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "archived_sha256": "1e31cb4f2c86f0ff984aa98544a36319ff1742df270bd368544df92a6e7da36e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "raw_sha256": "e29cb4e41089b1228898605a390a6373d4d82fa175c7131e0e7177fe78a6869f",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "archived_sha256": "e29cb4e41089b1228898605a390a6373d4d82fa175c7131e0e7177fe78a6869f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "raw_sha256": "462eeca3bb28d33513ba3071715487a8c092f46031a74efd9ea0b642e7056720",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "archived_sha256": "462eeca3bb28d33513ba3071715487a8c092f46031a74efd9ea0b642e7056720",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "raw_sha256": "6b7ab3efd26ce63745cf598ca7a82e4578186803c7edfe0c026971ecda50a9de",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "archived_sha256": "6b7ab3efd26ce63745cf598ca7a82e4578186803c7edfe0c026971ecda50a9de",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "raw_sha256": "0f59afc90aa62cefbaaf4e6428f4a5b6ac6cca5c29906afb182a527917923b19",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "archived_sha256": "0f59afc90aa62cefbaaf4e6428f4a5b6ac6cca5c29906afb182a527917923b19",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "raw_sha256": "b2032a1af4775b6ba5e4aaedfd96292bad17c8de9e3fe35c737a76d6836150d1",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "archived_sha256": "b2032a1af4775b6ba5e4aaedfd96292bad17c8de9e3fe35c737a76d6836150d1",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "raw_sha256": "3f2d6ae18e0aeeb41a5042730c3a281a0d813a1d6fae5be6129f2f5e0d415ed7",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "archived_sha256": "3f2d6ae18e0aeeb41a5042730c3a281a0d813a1d6fae5be6129f2f5e0d415ed7",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "raw_sha256": "32cbe6188f44f2efd0fe6530194eb90425e02c5ea62eb644bee54162c8aec37b",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "archived_sha256": "32cbe6188f44f2efd0fe6530194eb90425e02c5ea62eb644bee54162c8aec37b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "raw_sha256": "3b03f150042aeb3be7246cec7418f27cdeb753ceb1fb2d3461776fde0d01be39",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "archived_sha256": "3b03f150042aeb3be7246cec7418f27cdeb753ceb1fb2d3461776fde0d01be39",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "raw_sha256": "deb77ff55c1d43d1f04dc1f04f16a0bacc3f2c4e58bc2f331a97180f6fda53fa",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "archived_sha256": "deb77ff55c1d43d1f04dc1f04f16a0bacc3f2c4e58bc2f331a97180f6fda53fa",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "raw_sha256": "43e9a8b2905d88d065e80f822109af1c20b89d6847b9ee6c77c4d7b087cdfa42",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "archived_sha256": "43e9a8b2905d88d065e80f822109af1c20b89d6847b9ee6c77c4d7b087cdfa42",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "raw_sha256": "47d8abda1fe18dab9e670d072b945017ba8c7eb33e992254a0c19ae2be99ff16",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "archived_sha256": "47d8abda1fe18dab9e670d072b945017ba8c7eb33e992254a0c19ae2be99ff16",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "raw_sha256": "2e497ffed15f6ec6a22252e193c61a0afb28d6411821d0b9d1451e0cfc718d61",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "archived_sha256": "2e497ffed15f6ec6a22252e193c61a0afb28d6411821d0b9d1451e0cfc718d61",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "raw_sha256": "3a068547eb5ccb97332375dd609ffac22e3f228876cf4327d8c0c6d5c74ec430",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "archived_sha256": "3a068547eb5ccb97332375dd609ffac22e3f228876cf4327d8c0c6d5c74ec430",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "raw_sha256": "829b31d6a3b5d29e44e42927a22e276ce901682fed44ac100b206b5e01069a66",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "archived_sha256": "829b31d6a3b5d29e44e42927a22e276ce901682fed44ac100b206b5e01069a66",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "raw_sha256": "d766a0f97a8795bf759ed54fdb4fa2d26e2223cfa932c0346fde9fa622dc2edd",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "archived_sha256": "d766a0f97a8795bf759ed54fdb4fa2d26e2223cfa932c0346fde9fa622dc2edd",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "raw_sha256": "97fd2126cf982490019cb56ab5c1729fa3244c4027a80849715d7f8130eb82d6",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "archived_sha256": "97fd2126cf982490019cb56ab5c1729fa3244c4027a80849715d7f8130eb82d6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "raw_sha256": "8d55480990d3f0245db3ced9c3f642f39c728dadd182ec4073630dd4f0472ff3",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "archived_sha256": "8d55480990d3f0245db3ced9c3f642f39c728dadd182ec4073630dd4f0472ff3",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "raw_sha256": "ecc7b79afdb6c813a1a3447f6b633a8b1813645809b47df5aafef18317b76048",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "archived_sha256": "ecc7b79afdb6c813a1a3447f6b633a8b1813645809b47df5aafef18317b76048",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "raw_sha256": "387051493eac1e597ad6ec5518be7f873fccffd0ff94e269fe87d9bc28c9663f",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "archived_sha256": "387051493eac1e597ad6ec5518be7f873fccffd0ff94e269fe87d9bc28c9663f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "raw_sha256": "58acc8945cad2edb07b79623ccd992bd5cb512d2737a934f4af278826ce4aab6",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "archived_sha256": "58acc8945cad2edb07b79623ccd992bd5cb512d2737a934f4af278826ce4aab6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "raw_sha256": "36edb36b5417fb85ea067fce9299e14f4b7d49dc08c8262c24f6181d9e656c87",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "archived_sha256": "36edb36b5417fb85ea067fce9299e14f4b7d49dc08c8262c24f6181d9e656c87",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "raw_sha256": "0091f7fbae4985ee7e74b6d8e3981841d93ed72ae2d0e75f92c9e0916f0a8d2e",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "archived_sha256": "0091f7fbae4985ee7e74b6d8e3981841d93ed72ae2d0e75f92c9e0916f0a8d2e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "raw_sha256": "2b5467e8cf4f54281f83a7e1f9ee452f2c6267a1cd14a2939d103d1739fea813",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "archived_sha256": "2b5467e8cf4f54281f83a7e1f9ee452f2c6267a1cd14a2939d103d1739fea813",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "raw_sha256": "1830b12540019bcee098dc5e30a8228f55013d58d7140d45f3135b0072140dd9",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "archived_sha256": "1830b12540019bcee098dc5e30a8228f55013d58d7140d45f3135b0072140dd9",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "raw_sha256": "f207f2b2bb6fcbd146414513fc5db645cd604f4ed2b6ed74985574c442b6ddb4",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "archived_sha256": "f207f2b2bb6fcbd146414513fc5db645cd604f4ed2b6ed74985574c442b6ddb4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "raw_sha256": "64b34e37bbfb0395776c7d4c5688fcbe0f4024bc4a06fa492530764dc1fe2adc",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "archived_sha256": "64b34e37bbfb0395776c7d4c5688fcbe0f4024bc4a06fa492530764dc1fe2adc",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "raw_sha256": "bac7c64fabc1b4a6236ec86b4f8e30678cb644fb8b58c3759a8a36dbea9d3482",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "archived_sha256": "bac7c64fabc1b4a6236ec86b4f8e30678cb644fb8b58c3759a8a36dbea9d3482",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "raw_sha256": "883620ba6627e10e3094609346991b731ab9ac74180182a57ad0c28b679491bb",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "archived_sha256": "883620ba6627e10e3094609346991b731ab9ac74180182a57ad0c28b679491bb",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "raw_sha256": "ea0bf373a7b6deaa4cc5c4d6ba2838554ec3c270e6d5a91565b7dbe9d28cc9f5",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "archived_sha256": "ea0bf373a7b6deaa4cc5c4d6ba2838554ec3c270e6d5a91565b7dbe9d28cc9f5",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "raw_sha256": "45ad50085159976c92c13374b1a7358927eebb2a458423e3205e409949d3890b",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "archived_sha256": "45ad50085159976c92c13374b1a7358927eebb2a458423e3205e409949d3890b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "raw_sha256": "7b0d618040b887db17a62fc5e9ba65481ce229772c7fdb7fdd78bc3613c4ba0b",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "archived_sha256": "7b0d618040b887db17a62fc5e9ba65481ce229772c7fdb7fdd78bc3613c4ba0b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "raw_sha256": "924c82ebb9eac46612efd3f242f902c485f782d73100ebdb45cc3ace804ab2ff",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "archived_sha256": "924c82ebb9eac46612efd3f242f902c485f782d73100ebdb45cc3ace804ab2ff",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "raw_sha256": "07e7c9b024b05750e0cece1ee4543410d271ad91ca9cd846633b70f74458b820",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "archived_sha256": "07e7c9b024b05750e0cece1ee4543410d271ad91ca9cd846633b70f74458b820",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "raw_sha256": "0f4b1b70779e75c90ded8f47be6a39c8c8bb648d0a3e30fcce8a8f1c519e20f8",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "archived_sha256": "0f4b1b70779e75c90ded8f47be6a39c8c8bb648d0a3e30fcce8a8f1c519e20f8",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "raw_sha256": "5a78266e41a7f78e21172eb3bf147cb056d0baf69cae37d0c1c1aecf16790a45",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "archived_sha256": "5a78266e41a7f78e21172eb3bf147cb056d0baf69cae37d0c1c1aecf16790a45",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "raw_sha256": "996719a25ed209e29ce82ec064b49e8dac72b316518f37ca37898b1080c6759b",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "archived_sha256": "996719a25ed209e29ce82ec064b49e8dac72b316518f37ca37898b1080c6759b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "raw_sha256": "6c01b70f3e5af94530289992d0cea70a98ba0b6e24acb76749b3127f1d8f129f",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "archived_sha256": "6c01b70f3e5af94530289992d0cea70a98ba0b6e24acb76749b3127f1d8f129f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "raw_sha256": "e66101e9374b6871f3f9184865286023cc21c9982b81554c7e05d1832331dd1e",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "archived_sha256": "e66101e9374b6871f3f9184865286023cc21c9982b81554c7e05d1832331dd1e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "raw_sha256": "bdfec89ffd03770f985c5ab6982948926233ff13867601a937b37acb2d814085",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "archived_sha256": "bdfec89ffd03770f985c5ab6982948926233ff13867601a937b37acb2d814085",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "raw_sha256": "075daf298e3bec9c613b8f064a790d8b6b6573ca7b1608dd66bda549cc674ca2",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "archived_sha256": "075daf298e3bec9c613b8f064a790d8b6b6573ca7b1608dd66bda549cc674ca2",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "raw_sha256": "972ac9a0aa01d685b9d9c23277fc4fd12d2569c420be8a2baf5a880d7258c2bf",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "archived_sha256": "972ac9a0aa01d685b9d9c23277fc4fd12d2569c420be8a2baf5a880d7258c2bf",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "raw_sha256": "26b997d85287e6d5224b0f9f4e5fd3d3d2b1c715025fdbb7459fdff51f03b301",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "archived_sha256": "26b997d85287e6d5224b0f9f4e5fd3d3d2b1c715025fdbb7459fdff51f03b301",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "raw_sha256": "fcc2bc3cc02b871ed336aa95d607374c491feff64338f2e11ca962e219077f78",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "archived_sha256": "fcc2bc3cc02b871ed336aa95d607374c491feff64338f2e11ca962e219077f78",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "raw_sha256": "5b596313955048fa7641c2de16b9ea1aafff8f26a195ac996ef8f27060cc6107",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "archived_sha256": "5b596313955048fa7641c2de16b9ea1aafff8f26a195ac996ef8f27060cc6107",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "raw_sha256": "dc47b3708c4b124f08b193f3baee333fb16e79cedbe645aca6aafa7c38652bfc",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "archived_sha256": "dc47b3708c4b124f08b193f3baee333fb16e79cedbe645aca6aafa7c38652bfc",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "raw_sha256": "a20bf8454d2d506a984a5142c20edab47e866298555ae8d34af047ae9735a065",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "archived_sha256": "a20bf8454d2d506a984a5142c20edab47e866298555ae8d34af047ae9735a065",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "raw_sha256": "a5485d77482ddf6f741cda853dda835462ed2e0beb09dc921d3ed32b3a2ca974",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "archived_sha256": "a5485d77482ddf6f741cda853dda835462ed2e0beb09dc921d3ed32b3a2ca974",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "raw_sha256": "95967f431c8a5b49b58d8b22e0c3a8431d802a3214f9dabf8ee35c03a8d5e428",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "archived_sha256": "95967f431c8a5b49b58d8b22e0c3a8431d802a3214f9dabf8ee35c03a8d5e428",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "raw_sha256": "4fd307f041fad2e198db23b1d0257d673121433f19b4d785affdfe2a2eba5fc0",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "archived_sha256": "4fd307f041fad2e198db23b1d0257d673121433f19b4d785affdfe2a2eba5fc0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "raw_sha256": "76cde1febdf2670bab373d642de5fa430f00eb7d2361e6fb77590b1b89b7b536",
+      "archived_path": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "archived_sha256": "76cde1febdf2670bab373d642de5fa430f00eb7d2361e6fb77590b1b89b7b536",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run03_after_cleanup.log",
+      "raw_sha256": "5c39b6d9ebaa26f024dc6b12c51a37d24075d55b47ca856f655447dc9492609f",
+      "archived_path": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run03_after_cleanup.log",
+      "archived_sha256": "920719d8c2e2d96b4f9bc1b520f5830514463d134dec97bf8298a6dce316efbc",
+      "scrub_replacements": 1,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_netstat_arm_init_20260901.log",
+      "raw_sha256": "7c8f40217a3217bfe79eec84edcc770d5284ac2f5ad7c8adba32b22ac61adbfd",
+      "archived_path": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_netstat_arm_init_20260901.log",
+      "archived_sha256": "7c8f40217a3217bfe79eec84edcc770d5284ac2f5ad7c8adba32b22ac61adbfd",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901_run01.log",
+      "raw_sha256": "8c72300bc13ba320a6c53c766d20236e7a7ab975c5edf90050903a35a94e893b",
+      "archived_path": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901_run01.log",
+      "archived_sha256": "001627ae6eb47def53aec86a4d436d9f4c01e3f1013af73a80a9595d61ec8bc8",
+      "scrub_replacements": 1,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run01.log",
+      "raw_sha256": "d3e12d7a15462197bf150d2c37f3553121854f3a8494f004e0df7370e2d9a56e",
+      "archived_path": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run01.log",
+      "archived_sha256": "103a147e778aa8827b31ccf8cba018dc2eb79e4020a815b2680061a3d1b2c0ab",
+      "scrub_replacements": 1,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/exec_20260831_114148.log",
+      "raw_sha256": "187bd86d4120b7390cfa91aa6d97bb7dd4996a553f44372d3765cc5ceb7af721",
+      "archived_path": "logs/sdk_tests/exec_20260831_114148.log",
+      "archived_sha256": "187bd86d4120b7390cfa91aa6d97bb7dd4996a553f44372d3765cc5ceb7af721",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260727_160244.log",
+      "raw_sha256": "6e75397c5ee06fb77e96c3bbd35a531232f97e77670e081dd25322550bef9bb6",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_160244.log",
+      "archived_sha256": "6e75397c5ee06fb77e96c3bbd35a531232f97e77670e081dd25322550bef9bb6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260725_151951.log",
+      "raw_sha256": "edad360f86665860a0956c3184d1e3eb283fd2e56118365e6e1d38167e2ab27e",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_151951.log",
+      "archived_sha256": "edad360f86665860a0956c3184d1e3eb283fd2e56118365e6e1d38167e2ab27e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260720_174108.log",
+      "raw_sha256": "d5b93c93293a21ffdd7ed772975d4a927d33417c6bcbe8a04360ef1e01ad548f",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_174108.log",
+      "archived_sha256": "d5b93c93293a21ffdd7ed772975d4a927d33417c6bcbe8a04360ef1e01ad548f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260729_104534.log",
+      "raw_sha256": "c78b270c8867330e84866ec359db57ecdaefb66ed63b908dd8004b8af416e32b",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104534.log",
+      "archived_sha256": "c78b270c8867330e84866ec359db57ecdaefb66ed63b908dd8004b8af416e32b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260720_175113.log",
+      "raw_sha256": "34e2da43e8da83421f61fcbf880d25471ab4ca27712d3c43de067599a9c08a78",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_175113.log",
+      "archived_sha256": "34e2da43e8da83421f61fcbf880d25471ab4ca27712d3c43de067599a9c08a78",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260723_101241.log",
+      "raw_sha256": "b0f4dc301e54b025bf517acc93d5c00ddadfed7ff1f4b60fce6bfba3af8e170f",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101241.log",
+      "archived_sha256": "b0f4dc301e54b025bf517acc93d5c00ddadfed7ff1f4b60fce6bfba3af8e170f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260722_150115.log",
+      "raw_sha256": "af7be0544eb34d257d57bc27169bdc7fcf46377752e218d1302771f25c17e91e",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260722_150115.log",
+      "archived_sha256": "af7be0544eb34d257d57bc27169bdc7fcf46377752e218d1302771f25c17e91e",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260725_152215.log",
+      "raw_sha256": "552bd022273cba2d98f6b188d3c4227d10bedaef8486b4e63328b31173aab77b",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_152215.log",
+      "archived_sha256": "552bd022273cba2d98f6b188d3c4227d10bedaef8486b4e63328b31173aab77b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260727_112120.log",
+      "raw_sha256": "1f7c7f83d0a198203a5f43408965fd53d60a05edf7ca22fa286e01a10952d44a",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112120.log",
+      "archived_sha256": "1f7c7f83d0a198203a5f43408965fd53d60a05edf7ca22fa286e01a10952d44a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260721_180717.log",
+      "raw_sha256": "3c617e2b7baf62d97a4cf43af06686bdcf0c31a1bffc01edde9b212ea02ac5f3",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_180717.log",
+      "archived_sha256": "3c617e2b7baf62d97a4cf43af06686bdcf0c31a1bffc01edde9b212ea02ac5f3",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260729_104401.log",
+      "raw_sha256": "0338d4bb8634a61dd7b8492f6c6bf72cae1f0e6add8ec4dc9aa2cbde0d37001f",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104401.log",
+      "archived_sha256": "0338d4bb8634a61dd7b8492f6c6bf72cae1f0e6add8ec4dc9aa2cbde0d37001f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260723_101723.log",
+      "raw_sha256": "ff582302e5bf7b1ac00d2f6f521f706f1fa6024644ef6096e5d4a4e4216094aa",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101723.log",
+      "archived_sha256": "ff582302e5bf7b1ac00d2f6f521f706f1fa6024644ef6096e5d4a4e4216094aa",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260721_141600.log",
+      "raw_sha256": "799757c0d742459f6b48e14cb149161b5648e34f8f2718beeb21545159b6d887",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_141600.log",
+      "archived_sha256": "799757c0d742459f6b48e14cb149161b5648e34f8f2718beeb21545159b6d887",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260728_163152.log",
+      "raw_sha256": "f70683825ecc9c4061ee4b79ab6793b184b29f7bcd8f8a12b138153eaffe2e57",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260728_163152.log",
+      "archived_sha256": "f70683825ecc9c4061ee4b79ab6793b184b29f7bcd8f8a12b138153eaffe2e57",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260725_154638.log",
+      "raw_sha256": "af84f8fed9a2a3f97c9773ec57ca0de307abb517eedf3292f8e379a2b7ba91f4",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_154638.log",
+      "archived_sha256": "af84f8fed9a2a3f97c9773ec57ca0de307abb517eedf3292f8e379a2b7ba91f4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260729_180942.log",
+      "raw_sha256": "0a95f02d926e1aa6992d79f868bea1a7ab6914de62cbc0b5f7a9ad7522adca33",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_180942.log",
+      "archived_sha256": "0a95f02d926e1aa6992d79f868bea1a7ab6914de62cbc0b5f7a9ad7522adca33",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260721_164420.log",
+      "raw_sha256": "384ffd4779f121896555cb76f0bdf87e0c45270d0a960c07f1e4db6862829cd5",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_164420.log",
+      "archived_sha256": "384ffd4779f121896555cb76f0bdf87e0c45270d0a960c07f1e4db6862829cd5",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260727_112756.log",
+      "raw_sha256": "28ea75f6f50a80e58bf47e131da875719a82937c64eb9202ad12d96a2e6e819b",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112756.log",
+      "archived_sha256": "28ea75f6f50a80e58bf47e131da875719a82937c64eb9202ad12d96a2e6e819b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/robot_side/exec_20260720_180124.log",
+      "raw_sha256": "20c55e08f3c4b570b70580a2a937f7637bedba6d67c124adb99fc7ba9ea9d4c4",
+      "archived_path": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_180124.log",
+      "archived_sha256": "20c55e08f3c4b570b70580a2a937f7637bedba6d67c124adb99fc7ba9ea9d4c4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154605.log",
+      "raw_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "archived_path": "logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154605.log",
+      "archived_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154846.log",
+      "raw_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "archived_path": "logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154846.log",
+      "archived_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142407.log",
+      "raw_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142407.log",
+      "archived_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_145211.log",
+      "raw_sha256": "e134d7823344a309fcec4b83742dbe256e2d2d167f686f47d20e4dbbc4ad17c4",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_145211.log",
+      "archived_sha256": "e134d7823344a309fcec4b83742dbe256e2d2d167f686f47d20e4dbbc4ad17c4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_150618.log",
+      "raw_sha256": "81152d2ee82ad73dceb274976318c638ca39d81c31c4a8fd18ce96a1727e9e82",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_150618.log",
+      "archived_sha256": "81152d2ee82ad73dceb274976318c638ca39d81c31c4a8fd18ce96a1727e9e82",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_180023.log",
+      "raw_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_180023.log",
+      "archived_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_155123.log",
+      "raw_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_155123.log",
+      "archived_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150613.log",
+      "raw_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150613.log",
+      "archived_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_143130.log",
+      "raw_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_143130.log",
+      "archived_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112016.log",
+      "raw_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112016.log",
+      "archived_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111306.log",
+      "raw_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111306.log",
+      "archived_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175907.log",
+      "raw_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175907.log",
+      "archived_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175551.log",
+      "raw_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175551.log",
+      "archived_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144033.log",
+      "raw_sha256": "cd33488320d04b53f04194c958f1ac3a84e03a9840261d236dfa22c0a4707ba5",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144033.log",
+      "archived_sha256": "cd33488320d04b53f04194c958f1ac3a84e03a9840261d236dfa22c0a4707ba5",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_172012.log",
+      "raw_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_172012.log",
+      "archived_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151410.log",
+      "raw_sha256": "b78b3c7f6e984b5fc9c75d6299cb295fe38b99daaffa6a69c69f388585c19dcf",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151410.log",
+      "archived_sha256": "b78b3c7f6e984b5fc9c75d6299cb295fe38b99daaffa6a69c69f388585c19dcf",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153915.log",
+      "raw_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153915.log",
+      "archived_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145043.log",
+      "raw_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145043.log",
+      "archived_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142728.log",
+      "raw_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142728.log",
+      "archived_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112511.log",
+      "raw_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112511.log",
+      "archived_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145454.log",
+      "raw_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145454.log",
+      "archived_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_154714.log",
+      "raw_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_154714.log",
+      "archived_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150108.log",
+      "raw_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150108.log",
+      "archived_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144830.log",
+      "raw_sha256": "ae8bca2d1aff20788661a626b4b768643d9bfa716a72273edef746425f885dc0",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144830.log",
+      "archived_sha256": "ae8bca2d1aff20788661a626b4b768643d9bfa716a72273edef746425f885dc0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_150059.log",
+      "raw_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_150059.log",
+      "archived_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142335.log",
+      "raw_sha256": "6949eee6c8cab805795144d9763d35853e8104045593d3013a2e001b6c0c83a4",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142335.log",
+      "archived_sha256": "6949eee6c8cab805795144d9763d35853e8104045593d3013a2e001b6c0c83a4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145311.log",
+      "raw_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145311.log",
+      "archived_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145926.log",
+      "raw_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145926.log",
+      "archived_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153853.log",
+      "raw_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153853.log",
+      "archived_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_160629.log",
+      "raw_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_160629.log",
+      "archived_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111151.log",
+      "raw_sha256": "0af395d2b1cf400c8dfc9899d5205c79b6bdbf9d25b56f016b19fcabf1794e29",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111151.log",
+      "archived_sha256": "0af395d2b1cf400c8dfc9899d5205c79b6bdbf9d25b56f016b19fcabf1794e29",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145702.log",
+      "raw_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145702.log",
+      "archived_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154605.log",
+      "raw_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154605.log",
+      "archived_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_150217.log",
+      "raw_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_150217.log",
+      "archived_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_173716.log",
+      "raw_sha256": "b2092f03f88b0a2e315b684a6a19a21afae11b9fab13ac34b016cdd63a88fc42",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_173716.log",
+      "archived_sha256": "b2092f03f88b0a2e315b684a6a19a21afae11b9fab13ac34b016cdd63a88fc42",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_171639.log",
+      "raw_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_171639.log",
+      "archived_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_175212.log",
+      "raw_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_175212.log",
+      "archived_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154846.log",
+      "raw_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154846.log",
+      "archived_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153610.log",
+      "raw_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153610.log",
+      "archived_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175717.log",
+      "raw_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175717.log",
+      "archived_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112618.log",
+      "raw_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112618.log",
+      "archived_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112802.log",
+      "raw_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112802.log",
+      "archived_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151904.log",
+      "raw_sha256": "cfc80374890a3b54c065474870973fba57293b03f885b502d264f43af55a7363",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151904.log",
+      "archived_sha256": "cfc80374890a3b54c065474870973fba57293b03f885b502d264f43af55a7363",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113341.log",
+      "raw_sha256": "7913b61fc414f920a56534631f86ec3b9bf484ff4b70324064ae8d1775e88bba",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113341.log",
+      "archived_sha256": "7913b61fc414f920a56534631f86ec3b9bf484ff4b70324064ae8d1775e88bba",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112214.log",
+      "raw_sha256": "56a885688e00ea279d9f7725716fd5b8102f540bf846b83819189832a238d45f",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112214.log",
+      "archived_sha256": "56a885688e00ea279d9f7725716fd5b8102f540bf846b83819189832a238d45f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112948.log",
+      "raw_sha256": "3b8d5a444ae08fc1f797a2d4f48740c289ad6faf68467e09b1b2035273a41409",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112948.log",
+      "archived_sha256": "3b8d5a444ae08fc1f797a2d4f48740c289ad6faf68467e09b1b2035273a41409",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113505.log",
+      "raw_sha256": "28fae34d1560c9f7c5e059200a62b17027778540585cd7be18d60baa5cf5ac80",
+      "archived_path": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113505.log",
+      "archived_sha256": "28fae34d1560c9f7c5e059200a62b17027778540585cd7be18d60baa5cf5ac80",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "raw_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "archived_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "raw_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "archived_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "raw_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "archived_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/ip_147_148_mismatch/exec_20260716_171639.log",
+      "raw_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/ip_147_148_mismatch/exec_20260716_171639.log",
+      "archived_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112016.log",
+      "raw_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112016.log",
+      "archived_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153915.log",
+      "raw_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153915.log",
+      "archived_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112511.log",
+      "raw_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112511.log",
+      "archived_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153853.log",
+      "raw_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153853.log",
+      "archived_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153610.log",
+      "raw_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153610.log",
+      "archived_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112618.log",
+      "raw_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112618.log",
+      "archived_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112802.log",
+      "raw_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112802.log",
+      "archived_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "raw_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "archived_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/additional_success_runs/20260720/logs/exec_20260720_113816.log",
+      "raw_sha256": "f0035792735123206658fdf83e17bf1a502a12a7180225a00e1c72142519c56b",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/additional_success_runs/20260720/logs/exec_20260720_113816.log",
+      "archived_sha256": "f0035792735123206658fdf83e17bf1a502a12a7180225a00e1c72142519c56b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "raw_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "archived_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "raw_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "archived_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "raw_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "archived_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "raw_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "archived_path": "logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "archived_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260710/20260710_150059/exec_20260710_150059.log",
+      "raw_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260710/20260710_150059/exec_20260710_150059.log",
+      "archived_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145311/exec_20260713_145311.log",
+      "raw_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145311/exec_20260713_145311.log",
+      "archived_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145926/exec_20260713_145926.log",
+      "raw_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145926/exec_20260713_145926.log",
+      "archived_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_180023/exec_20260713_180023.log",
+      "raw_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_180023/exec_20260713_180023.log",
+      "archived_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175717/exec_20260713_175717.log",
+      "raw_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175717/exec_20260713_175717.log",
+      "archived_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145702/exec_20260713_145702.log",
+      "raw_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145702/exec_20260713_145702.log",
+      "archived_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150613/exec_20260713_150613.log",
+      "raw_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150613/exec_20260713_150613.log",
+      "archived_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142407/exec_20260713_142407.log",
+      "raw_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142407/exec_20260713_142407.log",
+      "archived_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150108/exec_20260713_150108.log",
+      "raw_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150108/exec_20260713_150108.log",
+      "archived_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145043/exec_20260713_145043.log",
+      "raw_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145043/exec_20260713_145043.log",
+      "archived_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145454/exec_20260713_145454.log",
+      "raw_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145454/exec_20260713_145454.log",
+      "archived_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_143130/exec_20260713_143130.log",
+      "raw_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_143130/exec_20260713_143130.log",
+      "archived_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175551/exec_20260713_175551.log",
+      "raw_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175551/exec_20260713_175551.log",
+      "archived_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175907/exec_20260713_175907.log",
+      "raw_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175907/exec_20260713_175907.log",
+      "archived_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142728/exec_20260713_142728.log",
+      "raw_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142728/exec_20260713_142728.log",
+      "archived_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_111306/exec_20260713_111306.log",
+      "raw_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "archived_path": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_111306/exec_20260713_111306.log",
+      "archived_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/save_data/calibration_server.log",
+      "raw_sha256": "898de5514af006e1cbc4ec4cdbb7f106368778595956ea09bd0ac2172e648c52",
+      "archived_path": "logs/vision/ultirobotics_vision_detect/save_data/calibration_server.log",
+      "archived_sha256": "898de5514af006e1cbc4ec4cdbb7f106368778595956ea09bd0ac2172e648c52",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/save_data/camera1.log",
+      "raw_sha256": "f3748f198dc48336f8e897c4d3a8a1cc6d1f632068cff49382b9c622b21bed97",
+      "archived_path": "logs/vision/ultirobotics_vision_detect/save_data/camera1.log",
+      "archived_sha256": "f3748f198dc48336f8e897c4d3a8a1cc6d1f632068cff49382b9c622b21bed97",
+      "scrub_replacements": 0,
+      "review_scope": "See mpc_review.json or servo_review.json; historical logs do not inherit a pass"
+    }
+  ],
+  "source_snapshot": [
+    {
+      "archive_path": "workspace/Servo/probe_sdk.py",
+      "raw_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "snapshot_member": "Servo/probe_sdk.py",
+      "snapshot_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/execute_servo_grasp.py",
+      "raw_sha256": "9c08f459e57c9a699f3cac5dd545226df14f36b12233f3ad27920dcf9002ccd0",
+      "snapshot_member": "Servo/pulse/execute_servo_grasp.py",
+      "snapshot_sha256": "9c08f459e57c9a699f3cac5dd545226df14f36b12233f3ad27920dcf9002ccd0",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/probe_sdk.py",
+      "raw_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "snapshot_member": "Servo/pulse/probe_sdk.py",
+      "snapshot_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/robot_lock.py",
+      "raw_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "snapshot_member": "Servo/pulse/robot_lock.py",
+      "snapshot_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "Servo/pulse/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/sdk_session.py",
+      "raw_sha256": "744313cca7d12c5333b972c404424912d78fafeec3bb4c469d72a98d6b3a25b3",
+      "snapshot_member": "Servo/pulse/sdk_session.py",
+      "snapshot_sha256": "744313cca7d12c5333b972c404424912d78fafeec3bb4c469d72a98d6b3a25b3",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/servo_common.py",
+      "raw_sha256": "0fcefe95d842af42f9c68049a0f7951b0d987cd39d529d96574a5e442041f073",
+      "snapshot_member": "Servo/pulse/servo_common.py",
+      "snapshot_sha256": "0fcefe95d842af42f9c68049a0f7951b0d987cd39d529d96574a5e442041f073",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/test_gripper_right.py",
+      "raw_sha256": "45464e96219909ea9811e27744c10f26e089ac4858516b060be29a0c6d4513c5",
+      "snapshot_member": "Servo/pulse/test_gripper_right.py",
+      "snapshot_sha256": "45464e96219909ea9811e27744c10f26e089ac4858516b060be29a0c6d4513c5",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse/test_servo_safety.py",
+      "raw_sha256": "8699860925861f1741f06f5c641ec250127a8e74f638ce9214788b21d3da5260",
+      "snapshot_member": "Servo/pulse/test_servo_safety.py",
+      "snapshot_sha256": "8699860925861f1741f06f5c641ec250127a8e74f638ce9214788b21d3da5260",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/diag_chassis.py",
+      "raw_sha256": "bba0e6055b0dfb5d0c69302e29c7f1eb60fb1f7cfcf95df245f015e762241644",
+      "snapshot_member": "Servo/pulse1/diag_chassis.py",
+      "snapshot_sha256": "bba0e6055b0dfb5d0c69302e29c7f1eb60fb1f7cfcf95df245f015e762241644",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/execute_servo_grasp.py",
+      "raw_sha256": "6d84406a76ef651554b8695eb10665d61a220b11c016bf1b33b33b49a274eaa7",
+      "snapshot_member": "Servo/pulse1/execute_servo_grasp.py",
+      "snapshot_sha256": "6d84406a76ef651554b8695eb10665d61a220b11c016bf1b33b33b49a274eaa7",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/probe_sdk.py",
+      "raw_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "snapshot_member": "Servo/pulse1/probe_sdk.py",
+      "snapshot_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/robot_lock.py",
+      "raw_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "snapshot_member": "Servo/pulse1/robot_lock.py",
+      "snapshot_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "Servo/pulse1/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/sdk_session.py",
+      "raw_sha256": "f22bc4c364846afd28c9068c3057fcfceb4cf003f4be9f679c937bf25f42b24d",
+      "snapshot_member": "Servo/pulse1/sdk_session.py",
+      "snapshot_sha256": "f22bc4c364846afd28c9068c3057fcfceb4cf003f4be9f679c937bf25f42b24d",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/servo_common.py",
+      "raw_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "snapshot_member": "Servo/pulse1/servo_common.py",
+      "snapshot_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/pulse1/test_gripper_right.py",
+      "raw_sha256": "b4e47acc984de2d58d3c7b00ebbceddd2eaad86d2228897d8f0b60799ad13cee",
+      "snapshot_member": "Servo/pulse1/test_gripper_right.py",
+      "snapshot_sha256": "b4e47acc984de2d58d3c7b00ebbceddd2eaad86d2228897d8f0b60799ad13cee",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/execute_worlds_servo_grasp.py",
+      "raw_sha256": "76670d757747fc582bf1f509dbf0697238353b74472bf59c3c87feae18a93c8c",
+      "snapshot_member": "Servo/worlds/execute_worlds_servo_grasp.py",
+      "snapshot_sha256": "76670d757747fc582bf1f509dbf0697238353b74472bf59c3c87feae18a93c8c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/probe_sdk.py",
+      "raw_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "snapshot_member": "Servo/worlds/probe_sdk.py",
+      "snapshot_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/robot_lock.py",
+      "raw_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "snapshot_member": "Servo/worlds/robot_lock.py",
+      "snapshot_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "Servo/worlds/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/sdk_session.py",
+      "raw_sha256": "744313cca7d12c5333b972c404424912d78fafeec3bb4c469d72a98d6b3a25b3",
+      "snapshot_member": "Servo/worlds/sdk_session.py",
+      "snapshot_sha256": "744313cca7d12c5333b972c404424912d78fafeec3bb4c469d72a98d6b3a25b3",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/servo_common.py",
+      "raw_sha256": "0fcefe95d842af42f9c68049a0f7951b0d987cd39d529d96574a5e442041f073",
+      "snapshot_member": "Servo/worlds/servo_common.py",
+      "snapshot_sha256": "0fcefe95d842af42f9c68049a0f7951b0d987cd39d529d96574a5e442041f073",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/test_servo_safety.py",
+      "raw_sha256": "8699860925861f1741f06f5c641ec250127a8e74f638ce9214788b21d3da5260",
+      "snapshot_member": "Servo/worlds/test_servo_safety.py",
+      "snapshot_sha256": "8699860925861f1741f06f5c641ec250127a8e74f638ce9214788b21d3da5260",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/Servo/worlds/test_worlds_servo_minimal.py",
+      "raw_sha256": "2e9f3aad98d9270f94c22780561f99bf5bcb82c3f934fc9eb59c253c979d9126",
+      "snapshot_member": "Servo/worlds/test_worlds_servo_minimal.py",
+      "snapshot_sha256": "2e9f3aad98d9270f94c22780561f99bf5bcb82c3f934fc9eb59c253c979d9126",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/README.md",
+      "raw_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
+      "snapshot_member": "mpc_experiment/mpc_experiment/README.md",
+      "snapshot_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/controller.py",
+      "raw_sha256": "314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c",
+      "snapshot_member": "mpc_experiment/mpc_experiment/controller.py",
+      "snapshot_sha256": "314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/frame_calibration/analysis/calib_common.py",
+      "raw_sha256": "1c9787d57a9893d82c26eaf86c75f04640d515ea4190c8e842da7d644733bfa4",
+      "snapshot_member": "mpc_experiment/mpc_experiment/frame_calibration/analysis/calib_common.py",
+      "snapshot_sha256": "1c9787d57a9893d82c26eaf86c75f04640d515ea4190c8e842da7d644733bfa4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/requirements.txt",
+      "raw_sha256": "20b0aefed02f6918992da5b931ad7a9b9213897259c53f891361f5b1d77de1ae",
+      "snapshot_member": "mpc_experiment/mpc_experiment/requirements.txt",
+      "snapshot_sha256": "20b0aefed02f6918992da5b931ad7a9b9213897259c53f891361f5b1d77de1ae",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/results/report.json",
+      "raw_sha256": "b427f0125a25a255967ce8d55c1b9b8f1365c9707e42acc400d15316af90f061",
+      "snapshot_member": "mpc_experiment/mpc_experiment/results/report.json",
+      "snapshot_sha256": "b427f0125a25a255967ce8d55c1b9b8f1365c9707e42acc400d15316af90f061",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/run_experiment.py",
+      "raw_sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+      "snapshot_member": "mpc_experiment/mpc_experiment/run_experiment.py",
+      "snapshot_sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/mpc_experiment/mpc_experiment/test_mpc.py",
+      "raw_sha256": "a2d29393beeb9324657521e19470a71e6abd1d85e74cb339ade9e2578dc428a5",
+      "snapshot_member": "mpc_experiment/mpc_experiment/test_mpc.py",
+      "snapshot_sha256": "a2d29393beeb9324657521e19470a71e6abd1d85e74cb339ade9e2578dc428a5",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/README.md",
+      "raw_sha256": "cdab66b7dfe6161bbc9a88f64c80ce63606d085ea9ee1e7d5240f22796154361",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/README.md",
+      "snapshot_sha256": "cdab66b7dfe6161bbc9a88f64c80ce63606d085ea9ee1e7d5240f22796154361",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/SHA256SUMS",
+      "raw_sha256": "2b1ab3b453e52407453d2dfed5a41085ee748ebbc912ee444d30a5aa66bc2970",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/SHA256SUMS",
+      "snapshot_sha256": "2b1ab3b453e52407453d2dfed5a41085ee748ebbc912ee444d30a5aa66bc2970",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "raw_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "snapshot_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "raw_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "snapshot_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "raw_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "snapshot_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "raw_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "snapshot_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "raw_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "snapshot_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe",
+      "raw_sha256": "a73f3e3254182674b0e2a694e89dd43961afead5c8c062ed33d8f6f36fd648dd",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe",
+      "snapshot_sha256": "a73f3e3254182674b0e2a694e89dd43961afead5c8c062ed33d8f6f36fd648dd",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe_v2",
+      "raw_sha256": "a73f3e3254182674b0e2a694e89dd43961afead5c8c062ed33d8f6f36fd648dd",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe_v2",
+      "snapshot_sha256": "a73f3e3254182674b0e2a694e89dd43961afead5c8c062ed33d8f6f36fd648dd",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_prebuilt_floatvector",
+      "raw_sha256": "4442be2c75612e218410157af3ffb534f5020dd8091937e468548103d6b66fb5",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_prebuilt_floatvector",
+      "snapshot_sha256": "4442be2c75612e218410157af3ffb534f5020dd8091937e468548103d6b66fb5",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_softstop10",
+      "raw_sha256": "c5aad779b9cdf7501baf5f4f88b38c06bb70ba36146352be049a2b58cdbf9c1c",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_softstop10",
+      "snapshot_sha256": "c5aad779b9cdf7501baf5f4f88b38c06bb70ba36146352be049a2b58cdbf9c1c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py",
+      "raw_sha256": "6d19f0e3ebf791e0fc6ad7474082a7e57a79b1068c9c1db8272be7317e76920c",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py",
+      "snapshot_sha256": "6d19f0e3ebf791e0fc6ad7474082a7e57a79b1068c9c1db8272be7317e76920c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "raw_sha256": "40f6fd47354d163f3eb28bb08f192de9ceaabf184cbfb90026f2d7ba16fbfd01",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "snapshot_sha256": "40f6fd47354d163f3eb28bb08f192de9ceaabf184cbfb90026f2d7ba16fbfd01",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_home5_successlog",
+      "raw_sha256": "97a0e870cf886062c03cfb1ec4cec3fbb404b5099d052c13c86342e3b0ce0e83",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_home5_successlog",
+      "snapshot_sha256": "97a0e870cf886062c03cfb1ec4cec3fbb404b5099d052c13c86342e3b0ce0e83",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_servo_entry",
+      "raw_sha256": "aece1441ca69b5093fd1ac46a8e0bbbc93e3d787e3dddfdd3c48cf78b7a75483",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_servo_entry",
+      "snapshot_sha256": "aece1441ca69b5093fd1ac46a8e0bbbc93e3d787e3dddfdd3c48cf78b7a75483",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_single_confirm",
+      "raw_sha256": "d5a022b803c1037ad1b4186d3d4e05911322445ff590a71e89b53c562a3290eb",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_single_confirm",
+      "snapshot_sha256": "d5a022b803c1037ad1b4186d3d4e05911322445ff590a71e89b53c562a3290eb",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_stride2",
+      "raw_sha256": "29370f95e58471ea3aa51aefb578d1ccfeb0d6f83308513fa5554fb402a94518",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_stride2",
+      "snapshot_sha256": "29370f95e58471ea3aa51aefb578d1ccfeb0d6f83308513fa5554fb402a94518",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_20ms_stride4",
+      "raw_sha256": "f811d7eb78244f2ed20e4167f46e75ebb79277a019c3626abb28bd4043b07035",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_20ms_stride4",
+      "snapshot_sha256": "f811d7eb78244f2ed20e4167f46e75ebb79277a019c3626abb28bd4043b07035",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_40ms_stride6",
+      "raw_sha256": "f9d9cd3931a1a5e6b1d110ce68b8bfb7b7278fc42bf8ab42d85c49444dbfe80d",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_40ms_stride6",
+      "snapshot_sha256": "f9d9cd3931a1a5e6b1d110ce68b8bfb7b7278fc42bf8ab42d85c49444dbfe80d",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride2",
+      "raw_sha256": "92f2f3f5182ea8814e8daa7002a92cbe10565b72d0386b33aa5f28e5a87599e4",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride2",
+      "snapshot_sha256": "92f2f3f5182ea8814e8daa7002a92cbe10565b72d0386b33aa5f28e5a87599e4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride3",
+      "raw_sha256": "ba2350d95eb152f0f0b96ba0c852e00734e858f57d39f696214a66901c2ac150",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride3",
+      "snapshot_sha256": "ba2350d95eb152f0f0b96ba0c852e00734e858f57d39f696214a66901c2ac150",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride4",
+      "raw_sha256": "0ca4eff94c1589e8fb18bfaca8d59e24c73b190bd853506c0ca3e6fd99c7fc06",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride4",
+      "snapshot_sha256": "0ca4eff94c1589e8fb18bfaca8d59e24c73b190bd853506c0ca3e6fd99c7fc06",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py",
+      "raw_sha256": "c6e6efea7be000eb333ada6066195dc5a91aae8b6dc9466588135368e3244ed3",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py",
+      "snapshot_sha256": "c6e6efea7be000eb333ada6066195dc5a91aae8b6dc9466588135368e3244ed3",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gripper_sha",
+      "raw_sha256": "f811d7eb78244f2ed20e4167f46e75ebb79277a019c3626abb28bd4043b07035",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gripper_sha",
+      "snapshot_sha256": "f811d7eb78244f2ed20e4167f46e75ebb79277a019c3626abb28bd4043b07035",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gui_sha",
+      "raw_sha256": "595018efa7f65cd806404cd004c23974807fda621f010f40fd4e0a6f80614e42",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gui_sha",
+      "snapshot_sha256": "595018efa7f65cd806404cd004c23974807fda621f010f40fd4e0a6f80614e42",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py",
+      "raw_sha256": "f688706b3fc839534c8f5f4927ef8220d75b06571b4297dd9f45773d1dd84a54",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py",
+      "snapshot_sha256": "f688706b3fc839534c8f5f4927ef8220d75b06571b4297dd9f45773d1dd84a54",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gripper_sha",
+      "raw_sha256": "6d19f0e3ebf791e0fc6ad7474082a7e57a79b1068c9c1db8272be7317e76920c",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gripper_sha",
+      "snapshot_sha256": "6d19f0e3ebf791e0fc6ad7474082a7e57a79b1068c9c1db8272be7317e76920c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gui_sha",
+      "raw_sha256": "997ea5aec399e9a36cd8442a208a5c5493344fb8970778c366aa85399ca7a78b",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gui_sha",
+      "snapshot_sha256": "997ea5aec399e9a36cd8442a208a5c5493344fb8970778c366aa85399ca7a78b",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "raw_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "snapshot_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py.bak",
+      "raw_sha256": "c6e6efea7be000eb333ada6066195dc5a91aae8b6dc9466588135368e3244ed3",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py.bak",
+      "snapshot_sha256": "c6e6efea7be000eb333ada6066195dc5a91aae8b6dc9466588135368e3244ed3",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "raw_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "snapshot_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20.py",
+      "raw_sha256": "0b408b5ed53b9de2d30da63876c4ee525d6eeee4cbd12d4c23f2e25045175665",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20.py",
+      "snapshot_sha256": "0b408b5ed53b9de2d30da63876c4ee525d6eeee4cbd12d4c23f2e25045175665",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v2.py",
+      "raw_sha256": "9446878849da8371602b1688f707fa41cff0018c1ef91849bdfd4e13191c66b8",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v2.py",
+      "snapshot_sha256": "9446878849da8371602b1688f707fa41cff0018c1ef91849bdfd4e13191c66b8",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py",
+      "raw_sha256": "b0a5e53b715b40991800ec7738d0e5f878faa58b817f0c3b96236a145d1e09af",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py",
+      "snapshot_sha256": "b0a5e53b715b40991800ec7738d0e5f878faa58b817f0c3b96236a145d1e09af",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.bak_A500_J15k",
+      "raw_sha256": "38af7a40aa3a846d4433acca68d4420a05ca873071e9feb8242cc6c66056c7a0",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.bak_A500_J15k",
+      "snapshot_sha256": "38af7a40aa3a846d4433acca68d4420a05ca873071e9feb8242cc6c66056c7a0",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gripper_sha",
+      "raw_sha256": "40f915925d28b84ade53ee47cec33feb4df48763a4392a4a03c28f489d0ba0b8",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gripper_sha",
+      "snapshot_sha256": "40f915925d28b84ade53ee47cec33feb4df48763a4392a4a03c28f489d0ba0b8",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gui_sha",
+      "raw_sha256": "1eae64b02c9675b80f4c130b5ce83e48303189bbd8e847a523b352bb91c61300",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gui_sha",
+      "snapshot_sha256": "1eae64b02c9675b80f4c130b5ce83e48303189bbd8e847a523b352bb91c61300",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "raw_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "snapshot_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_endpoint_taper",
+      "raw_sha256": "f06be9a0f6acf0a5693f603b68594c41eb830084721c70277e6816f736030506",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_endpoint_taper",
+      "snapshot_sha256": "f06be9a0f6acf0a5693f603b68594c41eb830084721c70277e6816f736030506",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_follow_guard",
+      "raw_sha256": "6876771a1ad89a68029b78d3f82589e627767819f89ce65a2755239561446084",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_follow_guard",
+      "snapshot_sha256": "6876771a1ad89a68029b78d3f82589e627767819f89ce65a2755239561446084",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_solver_tune",
+      "raw_sha256": "747b226663d5120f345c4518ad1410c29c55cc46ec5916d6ef0353f403cbbfc4",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_solver_tune",
+      "snapshot_sha256": "747b226663d5120f345c4518ad1410c29c55cc46ec5916d6ef0353f403cbbfc4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "raw_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "snapshot_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/network_records/README.md",
+      "raw_sha256": "2fa39373f92329d4404cf79d231660e70ce95f4da2d303f142846d55e3752734",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/network_records/README.md",
+      "snapshot_sha256": "2fa39373f92329d4404cf79d231660e70ce95f4da2d303f142846d55e3752734",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "raw_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "snapshot_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py",
+      "raw_sha256": "1304a9ea8489b0645e0cf8c1fc9a8647509ec27a131f492a72265b2b2bf726e8",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py",
+      "snapshot_sha256": "1304a9ea8489b0645e0cf8c1fc9a8647509ec27a131f492a72265b2b2bf726e8",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_correlation",
+      "raw_sha256": "dc08e7d10851bc682ada84da6de1f1a23e4f50a7161367975d596766b74d13f0",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_correlation",
+      "snapshot_sha256": "dc08e7d10851bc682ada84da6de1f1a23e4f50a7161367975d596766b74d13f0",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_ethernet",
+      "raw_sha256": "3d3fd08a79205260231355f57c118e24f9712beb6fe3874e994147eda73bca86",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_ethernet",
+      "snapshot_sha256": "3d3fd08a79205260231355f57c118e24f9712beb6fe3874e994147eda73bca86",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_50.py",
+      "raw_sha256": "e899e99394a8684d5d307b2fef5261385edbaa2030860f5dec386d53431908d2",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_50.py",
+      "snapshot_sha256": "e899e99394a8684d5d307b2fef5261385edbaa2030860f5dec386d53431908d2",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_long.py",
+      "raw_sha256": "2a23e0947256335bb4d06747389da352cddd471a91d785daffd8565ae54da831",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_long.py",
+      "snapshot_sha256": "2a23e0947256335bb4d06747389da352cddd471a91d785daffd8565ae54da831",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+      "raw_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/robot_lock.py",
+      "snapshot_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+      "raw_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/sdk_session.py",
+      "snapshot_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+      "raw_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/servo_common.py",
+      "snapshot_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/servo_common.py.bak_before_latency_probe",
+      "raw_sha256": "d3eef9702cc447e9ecd51cd90bade63989b3f823009d3b1f3c235970553b429e",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/servo_common.py.bak_before_latency_probe",
+      "snapshot_sha256": "d3eef9702cc447e9ecd51cd90bade63989b3f823009d3b1f3c235970553b429e",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/servo_common.py.bak_before_realign",
+      "raw_sha256": "15fe08fe730881c065369fad9980d4ac02700b6d8390b900d2a42085d2051f83",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/servo_common.py.bak_before_realign",
+      "snapshot_sha256": "15fe08fe730881c065369fad9980d4ac02700b6d8390b900d2a42085d2051f83",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "raw_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "snapshot_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review.json",
+      "raw_sha256": "02f94490a01c2332f50a9e5381edd19eea4fb164c600fe809a596b2fa6154b13",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review.json",
+      "snapshot_sha256": "02f94490a01c2332f50a9e5381edd19eea4fb164c600fe809a596b2fa6154b13",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "raw_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "snapshot_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "raw_sha256": "287038abf5c0f783d163a549e68d29532cf84eb0da3f080ae7ef9cb7b9b9e5d6",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "snapshot_sha256": "287038abf5c0f783d163a549e68d29532cf84eb0da3f080ae7ef9cb7b9b9e5d6",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py",
+      "raw_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py",
+      "snapshot_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.v1.json",
+      "raw_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.v1.json",
+      "snapshot_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "raw_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "snapshot_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py",
+      "raw_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py",
+      "snapshot_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo.py",
+      "raw_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo.py",
+      "snapshot_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo_field.py",
+      "raw_sha256": "aece1441ca69b5093fd1ac46a8e0bbbc93e3d787e3dddfdd3c48cf78b7a75483",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo_field.py",
+      "snapshot_sha256": "aece1441ca69b5093fd1ac46a8e0bbbc93e3d787e3dddfdd3c48cf78b7a75483",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py",
+      "raw_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py",
+      "snapshot_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary.py",
+      "raw_sha256": "3d3fd08a79205260231355f57c118e24f9712beb6fe3874e994147eda73bca86",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary.py",
+      "snapshot_sha256": "3d3fd08a79205260231355f57c118e24f9712beb6fe3874e994147eda73bca86",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary_long.py",
+      "raw_sha256": "2a23e0947256335bb4d06747389da352cddd471a91d785daffd8565ae54da831",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary_long.py",
+      "snapshot_sha256": "2a23e0947256335bb4d06747389da352cddd471a91d785daffd8565ae54da831",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py",
+      "raw_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py",
+      "snapshot_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py",
+      "raw_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py",
+      "snapshot_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/servo_common.py",
+      "raw_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/servo_common.py",
+      "snapshot_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "raw_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "snapshot_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "raw_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "snapshot_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_contract.py",
+      "raw_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_contract.py",
+      "snapshot_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackA_worlds_line/trackA_servo/vaj3_spline.py",
+      "raw_sha256": "37f14cfb69030cfff7173b3d207f597469bc59ca8a93d7146468597128e2285e",
+      "snapshot_member": "trackA_worlds_line/trackA_servo/vaj3_spline.py",
+      "snapshot_sha256": "37f14cfb69030cfff7173b3d207f597469bc59ca8a93d7146468597128e2285e",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/README.md",
+      "raw_sha256": "298676ca5b6c83df7d91953d584c287a1dadd952a6b0cc774d66b8157565517f",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/README.md",
+      "snapshot_sha256": "298676ca5b6c83df7d91953d584c287a1dadd952a6b0cc774d66b8157565517f",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "raw_sha256": "1e0032f4cf90d732187033b1658628e766b984efd79b30765d7507554e34f89a",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "snapshot_sha256": "1e0032f4cf90d732187033b1658628e766b984efd79b30765d7507554e34f89a",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.py",
+      "raw_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.py",
+      "snapshot_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.v1.json",
+      "raw_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.v1.json",
+      "snapshot_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/README.md",
+      "raw_sha256": "c200c04408c51cef54315c02d2c8a63d93daf13f7db2401d258fb25f31b552c0",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/README.md",
+      "snapshot_sha256": "c200c04408c51cef54315c02d2c8a63d93daf13f7db2401d258fb25f31b552c0",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901.py",
+      "raw_sha256": "69396dabe6bb2aa3b6f81d95f5acd856fba822fc8b2808027fe8d9a04ca7ba27",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901.py",
+      "snapshot_sha256": "69396dabe6bb2aa3b6f81d95f5acd856fba822fc8b2808027fe8d9a04ca7ba27",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901.py",
+      "raw_sha256": "25df7c3d9ec950202f7fcfc4c5c57f50cf2261a7527f1c9e765492ac5c9829a8",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901.py",
+      "snapshot_sha256": "25df7c3d9ec950202f7fcfc4c5c57f50cf2261a7527f1c9e765492ac5c9829a8",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execute_servo_grasp.py",
+      "raw_sha256": "bc05bd76c2584dc61e0e2fc806b6cad0309d229a10c1a0351548c2be9778f305",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execute_servo_grasp.py",
+      "snapshot_sha256": "bc05bd76c2584dc61e0e2fc806b6cad0309d229a10c1a0351548c2be9778f305",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execution_authorization.py",
+      "raw_sha256": "baab8263a7dbddc1ca8029e09540c406fd1448e4599d0dee33b4c70fa05c00f5",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execution_authorization.py",
+      "snapshot_sha256": "baab8263a7dbddc1ca8029e09540c406fd1448e4599d0dee33b4c70fa05c00f5",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/gen_bottle_servo_candidate_Zplus150.py",
+      "raw_sha256": "16021ef3381b6f57d6cfb9d358de8b940891628c5d62f39ae3a90b2f7b253144",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/gen_bottle_servo_candidate_Zplus150.py",
+      "snapshot_sha256": "16021ef3381b6f57d6cfb9d358de8b940891628c5d62f39ae3a90b2f7b253144",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py",
+      "raw_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py",
+      "snapshot_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py",
+      "raw_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py",
+      "snapshot_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/servo_common.py",
+      "raw_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/servo_common.py",
+      "snapshot_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/test_servo_safety.py",
+      "raw_sha256": "f3564be84704c31a470daf1980c4a1bfc62d5aa7078e289cc00f73d6732c7e28",
+      "snapshot_member": "trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/test_servo_safety.py",
+      "snapshot_sha256": "f3564be84704c31a470daf1980c4a1bfc62d5aa7078e289cc00f73d6732c7e28",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/README.md",
+      "raw_sha256": "0c011b28d81171d17169ccc8fb661ef039211732956a7953aed5a1a7729c7d88",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/README.md",
+      "snapshot_sha256": "0c011b28d81171d17169ccc8fb661ef039211732956a7953aed5a1a7729c7d88",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "raw_sha256": "fe376432bf0f33dc62367d2afbcfbdbbb82fdb7a0fb29e9cda842bc96907ff95",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "snapshot_sha256": "fe376432bf0f33dc62367d2afbcfbdbbb82fdb7a0fb29e9cda842bc96907ff95",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/diag_chassis.py",
+      "raw_sha256": "bba0e6055b0dfb5d0c69302e29c7f1eb60fb1f7cfcf95df245f015e762241644",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/diag_chassis.py",
+      "snapshot_sha256": "bba0e6055b0dfb5d0c69302e29c7f1eb60fb1f7cfcf95df245f015e762241644",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/diag_enable.py",
+      "raw_sha256": "193631f5d28aab9cf32bb4b3f838131eb1fa579cbcd1b4c6e48cea316bc357e4",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/diag_enable.py",
+      "snapshot_sha256": "193631f5d28aab9cf32bb4b3f838131eb1fa579cbcd1b4c6e48cea316bc357e4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py",
+      "raw_sha256": "808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py",
+      "snapshot_sha256": "808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/probe_sdk.py",
+      "raw_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/probe_sdk.py",
+      "snapshot_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/robot_lock.py",
+      "raw_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/robot_lock.py",
+      "snapshot_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/scrub_log.py",
+      "raw_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/scrub_log.py",
+      "snapshot_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/sdk_session.py",
+      "raw_sha256": "2fe4426a2e7fd6f7e9ab887688d64fb502cbdcf87dcfe3a711b56f6782d3aef1",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/sdk_session.py",
+      "snapshot_sha256": "2fe4426a2e7fd6f7e9ab887688d64fb502cbdcf87dcfe3a711b56f6782d3aef1",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/servo_common.py",
+      "raw_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/servo_common.py",
+      "snapshot_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/test_gripper_right.py",
+      "raw_sha256": "b4e47acc984de2d58d3c7b00ebbceddd2eaad86d2228897d8f0b60799ad13cee",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/test_gripper_right.py",
+      "snapshot_sha256": "b4e47acc984de2d58d3c7b00ebbceddd2eaad86d2228897d8f0b60799ad13cee",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/trackC_servo_stream/trackC_servo_stream/test_servo_safety.py",
+      "raw_sha256": "9d0c13790b0be0da142e5e3a2daeb6e432ba125276dd89e987066115a9ab78ae",
+      "snapshot_member": "trackC_servo_stream/trackC_servo_stream/test_servo_safety.py",
+      "snapshot_sha256": "9d0c13790b0be0da142e5e3a2daeb6e432ba125276dd89e987066115a9ab78ae",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/README.md",
+      "raw_sha256": "35d17a153f37390a7a58a8c8379e1379c5efe86d9376cd5a0a513ef4e8333080",
+      "snapshot_member": "vision/ultirobotics_vision_detect/README.md",
+      "snapshot_sha256": "35d17a153f37390a7a58a8c8379e1379c5efe86d9376cd5a0a513ef4e8333080",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/config/test1/workstation.json",
+      "raw_sha256": "411f15bbe8e09e2151cf5dd571a6e240a488a7206f9bdb83149b74e539ac7bd2",
+      "snapshot_member": "vision/ultirobotics_vision_detect/config/test1/workstation.json",
+      "snapshot_sha256": "411f15bbe8e09e2151cf5dd571a6e240a488a7206f9bdb83149b74e539ac7bd2",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/README.md",
+      "raw_sha256": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/README.md",
+      "snapshot_sha256": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/config.json",
+      "raw_sha256": "ed4f5499c7bb9aedab1b6d20c2aaf4d78773bfea9132845a2a0a3aa00a7f1ec4",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/config.json",
+      "snapshot_sha256": "ed4f5499c7bb9aedab1b6d20c2aaf4d78773bfea9132845a2a0a3aa00a7f1ec4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/mark.json",
+      "raw_sha256": "6da80502cc416d3894dfefb15ffe569b426e47545827df68cddc2e44ce8b501a",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/config/mark.json",
+      "snapshot_sha256": "6da80502cc416d3894dfefb15ffe569b426e47545827df68cddc2e44ce8b501a",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cal_logger.h",
+      "raw_sha256": "50cbf02fa41976631d248c8d070a25dc25f51e80cae770e21550473067bdfc0d",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cal_logger.h",
+      "snapshot_sha256": "50cbf02fa41976631d248c8d070a25dc25f51e80cae770e21550473067bdfc0d",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/calibration_server.h",
+      "raw_sha256": "a6b78a24a39b11e2dd6b3925368d022296c93d1bfbaf5db5f675461b5ef2c766",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/calibration_server.h",
+      "snapshot_sha256": "a6b78a24a39b11e2dd6b3925368d022296c93d1bfbaf5db5f675461b5ef2c766",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cameraClient.h",
+      "raw_sha256": "86ca35c14cc5bca977529fbf13ece8de8dd1e924b0c094c79b15b96462dc8335",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/cameraClient.h",
+      "snapshot_sha256": "86ca35c14cc5bca977529fbf13ece8de8dd1e924b0c094c79b15b96462dc8335",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/camera_calibration.h",
+      "raw_sha256": "eeba8489689a0834c02d672282ec8456b9b5baf9939a9dca99019204271a5178",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/camera_calibration.h",
+      "snapshot_sha256": "eeba8489689a0834c02d672282ec8456b9b5baf9939a9dca99019204271a5178",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/data_type.h",
+      "raw_sha256": "48571c84bd95760fe991c5745731e2c36d73aca81871f4684ebbb71f533aa627",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/data_type.h",
+      "snapshot_sha256": "48571c84bd95760fe991c5745731e2c36d73aca81871f4684ebbb71f533aa627",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/local_data_test.h",
+      "raw_sha256": "856e44b22b2f1242612392604a69cf860de1e72d965e2ad11cbd0a4cd620a115",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/local_data_test.h",
+      "snapshot_sha256": "856e44b22b2f1242612392604a69cf860de1e72d965e2ad11cbd0a4cd620a115",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/mark_point_position.h",
+      "raw_sha256": "2376b7f049a3e690cb9ce0e843710b4aef49323ec0869b05752cc73ebd22fb98",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/mark_point_position.h",
+      "snapshot_sha256": "2376b7f049a3e690cb9ce0e843710b4aef49323ec0869b05752cc73ebd22fb98",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/markdetector.h",
+      "raw_sha256": "907498c40ac13279b2cd33dd9b9dbe5e9a9640d601d6e9f31625a1c21e67ab69",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/include/markdetector.h",
+      "snapshot_sha256": "907498c40ac13279b2cd33dd9b9dbe5e9a9640d601d6e9f31625a1c21e67ab69",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/calibration_server.cpp",
+      "raw_sha256": "ce41aafe846e63f3643f8b1d33e2db855618bb1fbd9b64fe56ad2712be4e018c",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/calibration_server.cpp",
+      "snapshot_sha256": "ce41aafe846e63f3643f8b1d33e2db855618bb1fbd9b64fe56ad2712be4e018c",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/cameraClient.cpp",
+      "raw_sha256": "12560d9484b3a220668dd2310aca3f029da549280c5f0c50329bb903c401f3fe",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/cameraClient.cpp",
+      "snapshot_sha256": "12560d9484b3a220668dd2310aca3f029da549280c5f0c50329bb903c401f3fe",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/camera_calibration.cpp",
+      "raw_sha256": "e4df51e1afb5114eda2868b592bfc9fbdc876e2c5fe507b7e8475c62eae4fbdd",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/camera_calibration.cpp",
+      "snapshot_sha256": "e4df51e1afb5114eda2868b592bfc9fbdc876e2c5fe507b7e8475c62eae4fbdd",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/hand_eye_calibration_node.cpp",
+      "raw_sha256": "b765e764f565725d19595435ee87a2dd7b76ee2a4d36585167f355a4bfad4ba9",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/hand_eye_calibration_node.cpp",
+      "snapshot_sha256": "b765e764f565725d19595435ee87a2dd7b76ee2a4d36585167f355a4bfad4ba9",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/local_data_test.cpp",
+      "raw_sha256": "3e27da974b85e09847d27f8b51f3170d82ef8b44a458627d15aa837a9d18bbc9",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/local_data_test.cpp",
+      "snapshot_sha256": "3e27da974b85e09847d27f8b51f3170d82ef8b44a458627d15aa837a9d18bbc9",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/markdetector.cpp",
+      "raw_sha256": "6d3b14f19f9c69a2d81b36a11289bea46352d02f89314eadb095b80de1e851cd",
+      "snapshot_member": "vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/src/markdetector.cpp",
+      "snapshot_sha256": "6d3b14f19f9c69a2d81b36a11289bea46352d02f89314eadb095b80de1e851cd",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_bringup/launch/app_launch/app.launch.py",
+      "raw_sha256": "4919dacd4fe8d60cc607db75fbda283af23de0971f59190aaa01c2909fa28fd4",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_bringup/launch/app_launch/app.launch.py",
+      "snapshot_sha256": "4919dacd4fe8d60cc607db75fbda283af23de0971f59190aaa01c2909fa28fd4",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/camera.launch.py",
+      "raw_sha256": "df9a253bd2800674d42691d864eeda209c07c1c42fb0ae090a9047a2f2248873",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/camera.launch.py",
+      "snapshot_sha256": "df9a253bd2800674d42691d864eeda209c07c1c42fb0ae090a9047a2f2248873",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/vision_detect.launch.py",
+      "raw_sha256": "f6d6a21b81e07808e2c8ddd937309354dbcb5d1430f82293d1ccf1f32e6e289e",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_bringup/launch/node_launch/vision_detect.launch.py",
+      "snapshot_sha256": "f6d6a21b81e07808e2c8ddd937309354dbcb5d1430f82293d1ccf1f32e6e289e",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_detect_ros/src/cameraClientManager.cpp",
+      "raw_sha256": "3614ecf92bad0c7ffdfeedd9c40eb7c4293037c49d9aa7456fd91c220ea3c482",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_detect_ros/src/cameraClientManager.cpp",
+      "snapshot_sha256": "3614ecf92bad0c7ffdfeedd9c40eb7c4293037c49d9aa7456fd91c220ea3c482",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_detect_ros/src/main.cpp",
+      "raw_sha256": "b4581c9288c278ac5e1671f8b90f2a473b8594cdc53cd4904c943acd5b73b5ce",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_detect_ros/src/main.cpp",
+      "snapshot_sha256": "b4581c9288c278ac5e1671f8b90f2a473b8594cdc53cd4904c943acd5b73b5ce",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
+      "raw_sha256": "c51c4427ef0c156090dc154c35145991649575a6192a7f917aec7e0f94ad8f50",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
+      "snapshot_sha256": "c51c4427ef0c156090dc154c35145991649575a6192a7f917aec7e0f94ad8f50",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/CMakeLists.txt",
+      "raw_sha256": "81037a30c512f06ce0f6561101c6e44f4e978c712460b46c0fbcf85757a88c9a",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/CMakeLists.txt",
+      "snapshot_sha256": "81037a30c512f06ce0f6561101c6e44f4e978c712460b46c0fbcf85757a88c9a",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/action/VisionDetectResult.action",
+      "raw_sha256": "ef62501a91654bec0bbd586be520273b399394d1c78243567e178f081dc082e6",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/action/VisionDetectResult.action",
+      "snapshot_sha256": "ef62501a91654bec0bbd586be520273b399394d1c78243567e178f081dc082e6",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/msg/Overlap.msg",
+      "raw_sha256": "c51a7ef745d286db3218dc5bbeff3022d21f78d8608eb4c08941da3d1f99cc0d",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/msg/Overlap.msg",
+      "snapshot_sha256": "c51a7ef745d286db3218dc5bbeff3022d21f78d8608eb4c08941da3d1f99cc0d",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/msg/Polygon.msg",
+      "raw_sha256": "afd1a84057c39ce3e9ae1802a6df6cc96d06df798a560fdf6803bce33572fc08",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/msg/Polygon.msg",
+      "snapshot_sha256": "afd1a84057c39ce3e9ae1802a6df6cc96d06df798a560fdf6803bce33572fc08",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/msg/VisionObject.msg",
+      "raw_sha256": "0c8519f551457942152f27279b5b120a3bc8a940c726bb30a82550b5a0eff6b2",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/msg/VisionObject.msg",
+      "snapshot_sha256": "0c8519f551457942152f27279b5b120a3bc8a940c726bb30a82550b5a0eff6b2",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/package.xml",
+      "raw_sha256": "5a4573b2c9089fa46d3a0815f428978a938053d9c2f805c0f197a18e258884b2",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/package.xml",
+      "snapshot_sha256": "5a4573b2c9089fa46d3a0815f428978a938053d9c2f805c0f197a18e258884b2",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/srv/ColorDepIntrinsic.srv",
+      "raw_sha256": "2afcde7d2342a58f3a0e9f68e5e4982e76d932cf5e7a38e0951a39dc799b09ba",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/srv/ColorDepIntrinsic.srv",
+      "snapshot_sha256": "2afcde7d2342a58f3a0e9f68e5e4982e76d932cf5e7a38e0951a39dc799b09ba",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "archive_path": "workspace/vision/ultirobotics_vision_detect/vision_interface/srv/HandEyeCalibration.srv",
+      "raw_sha256": "4516c7d45073747397f745d62864bb193931ed1784f3a49aebfa5732bb752154",
+      "snapshot_member": "vision/ultirobotics_vision_detect/vision_interface/srv/HandEyeCalibration.srv",
+      "snapshot_sha256": "4516c7d45073747397f745d62864bb193931ed1784f3a49aebfa5732bb752154",
+      "scrub_replacements": 0,
+      "status": "FROZEN_RECEIVED_SOURCE_NOT_EXECUTION_AUTHORIZATION"
+    }
+  ],
+  "total_scrub_replacements": 3,
+  "notes": [
+    "Raw received archive and staged raw files were not edited.",
+    "Snapshots include archived motion scripts with historical defaults. Do not execute or overwrite the current Mac runtime from them.",
+    "All in-repo logs are copies scrubbed with the current source scrub_log.py."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "B2": {
+    "ref": "handoff/b2",
+    "commit": "12b143c953f5a6d3c73031892d1b185e5642e482",
+    "files": 13,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B3": {
+    "ref": "handoff/b3",
+    "commit": "e03e85112797a4ed957d47583874a1dec11ba06b",
+    "files": 10,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B4": {
+    "ref": "handoff/b4",
+    "commit": "249ca05a90d4031abd16a5859ecae3d13b3ad3c0",
+    "files": 110,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B5": {
+    "ref": "handoff/b5",
+    "commit": "137ba68ec22606e1008eea3adf54d51c3893a44b",
+    "files": 38,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B6": {
+    "ref": "handoff/b6",
+    "commit": "6c1107c8da0e128dce270f8deef62d04ce7453e4",
+    "files": 18,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B7": {
+    "ref": "handoff/b7",
+    "commit": "ab3bd38028512239abfdaff5ced2c8bb84a4d4a0",
+    "files": 30,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "D1": {
+    "ref": "handoff/d1",
+    "commit": "e73c3edd30d2a5e36d7177efca436b2d28f744bb",
+    "files": 15,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "D2": {
+    "ref": "handoff/d2",
+    "commit": "12debcea40b79b48e3e9a084638832911c6ce568",
+    "files": 3,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "D3": {
+    "ref": "handoff/d3",
+    "commit": "a840cbf0077e16b4d15e44399288c523ace5c5d4",
+    "files": 1,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "H_MAC_FROZEN": {
+    "ref": "handoff/h-mac-frozen",
+    "commit": "46b4b2fd000761288736ea018d92637894f0914c",
+    "files": 8,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "history": {
+    "ref": "handoff/history",
+    "commit": "42d51ce25fa60c2df6a601caf4187f51d16c5f15",
+    "files": 85,
+    "motion_authorized": false,
+    "source_identity": "See SNAPSHOT.json"
+  },
+  "B1": {
+    "ref": "handoff/current",
+    "commit": null,
+    "files": "current development snapshot",
+    "motion_authorized": false,
+    "source_identity": "Mac current working files, not only tracked files"
+  }
+}

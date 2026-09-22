@@ -1,0 +1,24 @@
+{
+	"material_box_param": {
+		"is_detect": true,
+		"img_position_x": 0.5,
+		"img_position_y": 0.5,
+		"is_using_size": false,
+		"length": 600,
+		"width": 400
+	},
+    "above_point_limit":{
+		"Z_Range": 0,
+		"PointLimit": 1000
+	},
+	"background_image":{
+		"is_using": false,
+		"path": "background/color.jpg"
+	},
+	"detect_rio_2d":{
+		"is_using": true,
+		"rio": [[0.3414, 0.2425], [0.75156, 0.2525],[0.75156,0.6625],[ 0.3414,0.6625 ]],
+		"inside_ratio": 0.5
+	},
+	"result_candidate_number": 10
+}

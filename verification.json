@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-22",
+  "scope": "offline package assembly; no robot/network/ROS/C++ run",
+  "environment": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "executable": "/Users/xiaobingxin/Desktop/工作/工作1/.venv-mpc/bin/python",
+    "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "pybullet": "3.2.5",
+      "pybullet-planning": "0.6.1",
+      "osqp": "1.1.1",
+      "matplotlib": "3.10.0",
+      "pytest": "8.3.4",
+      "jsonschema": "4.23.0"
+    }
+  },
+  "offline_tests": {
+    "selected_unique_tests": 279,
+    "initial_passed": 269,
+    "initial_setup_errors": 10,
+    "cause": "Required 9/7 executor hash-reference was excluded from default working files.",
+    "fix": "Restored exact original reference bytes; no runtime source behavior changed.",
+    "affected_rerun_passed": 30,
+    "remaining_failures_in_selected_suite": 0,
+    "not_entire_repository": true,
+    "warning": "Third-party SciPy KDTree deprecation"
+  },
+  "track_c_stream": {
+    "status": "PASS",
+    "trajectory_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+    "frames_at_0_4_deg": 1633,
+    "frames_at_0_2_deg": 3232
+  },
+  "mpc_recalculation": {
+    "status": "PASS",
+    "snapshot": "B5",
+    "shadow_reports": 6,
+    "active_reports": 4,
+    "mean_rmse_reduction_percent_rounded": 34.45,
+    "hardware_rerun": false
+  },
+  "git_snapshot_files": [
+    {
+      "node": "B2",
+      "files_verified": 13,
+      "commit": "12b143c953f5a6d3c73031892d1b185e5642e482",
+      "status": "PASS"
+    },
+    {
+      "node": "B3",
+      "files_verified": 10,
+      "commit": "e03e85112797a4ed957d47583874a1dec11ba06b",
+      "status": "PASS"
+    },
+    {
+      "node": "B4",
+      "files_verified": 110,
+      "commit": "249ca05a90d4031abd16a5859ecae3d13b3ad3c0",
+      "status": "PASS"
+    },
+    {
+      "node": "B5",
+      "files_verified": 38,
+      "commit": "137ba68ec22606e1008eea3adf54d51c3893a44b",
+      "status": "PASS"
+    },
+    {
+      "node": "B6",
+      "files_verified": 18,
+      "commit": "6c1107c8da0e128dce270f8deef62d04ce7453e4",
+      "status": "PASS"
+    },
+    {
+      "node": "B7",
+      "files_verified": 30,
+      "commit": "ab3bd38028512239abfdaff5ced2c8bb84a4d4a0",
+      "status": "PASS"
+    },
+    {
+      "node": "D1",
+      "files_verified": 15,
+      "commit": "e73c3edd30d2a5e36d7177efca436b2d28f744bb",
+      "status": "PASS"
+    },
+    {
+      "node": "D2",
+      "files_verified": 3,
+      "commit": "12debcea40b79b48e3e9a084638832911c6ce568",
+      "status": "PASS"
+    },
+    {
+      "node": "D3",
+      "files_verified": 1,
+      "commit": "a840cbf0077e16b4d15e44399288c523ace5c5d4",
+      "status": "PASS"
+    },
+    {
+      "node": "H_MAC_FROZEN",
+      "files_verified": 8,
+      "commit": "46b4b2fd000761288736ea018d92637894f0914c",
+      "status": "PASS"
+    },
+    {
+      "node": "history",
+      "files_verified": 85,
+      "commit": "42d51ce25fa60c2df6a601caf4187f51d16c5f15",
+      "status": "PASS"
+    }
+  ],
+  "independent_inventory_check": {
+    "vision_files_verified": 337,
+    "handeye_members_verified": 199,
+    "handeye_sample_pairs": 39,
+    "vendor_binaries_included": false
+  },
+  "not_executed": [
+    "vendor SDK installation/import",
+    "real robot commands or network probes",
+    "GUI manual acceptance",
+    "fresh dependency installation",
+    "C++/ROS build",
+    "handeye refit"
+  ],
+  "evidence_verdict": "DRIFT: preserve historical differences; hardware identity IP_UNRESOLVED",
+  "source_workspace_head_before_export": "9f65b7619cc3ae70446a258c9276111e5eb14720"
+}

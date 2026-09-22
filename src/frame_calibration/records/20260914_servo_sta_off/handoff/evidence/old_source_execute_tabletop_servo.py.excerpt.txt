@@ -1,0 +1,57 @@
+SOURCE: trackA_servo_20260909_original.zip/trackA_servo/execute_tabletop_servo.py
+HISTORICAL ONLY; NOT THE SEPTEMBER 14 FIELD FILE
+
+29:     return hashes
+30: 
+31: 
+32: def gap(a, b):
+33:     return max(abs(x-y) for x,y in zip(contract.vector(a), contract.vector(b)))
+34: 
+35: 
+36: def require_reviews(args, plan):
+37:     if not args.gui_review or not args.qualification_report:
+38:         raise ValueError("新 Servo 需 --gui-review 和 --qualification-report；A 的真机 PASS 不能代替")
+39:     sha = contract.digest(args.trajectory)
+40:     gui = json.loads(Path(args.gui_review).read_text())
+41:     qualification = json.loads(Path(args.qualification_report).read_text())
+42:     count = plan["kinematics"]["motion_frame_count"]
+43:     if (gui.get("schema_version") != "pybullet_gui_review.v1" or gui.get("result") != "PASS"
+44:             or gui.get("trajectory_sha256") != sha or gui.get("full_replay_completed") is not True
+45:             or gui.get("frame_count") != count or gui.get("arm_id") != plan["meta"]["arm_id"]
+46:             or gui.get("dense_step_deg") != plan["stream_policy"]["max_step_deg"]):
+47:         raise ValueError("GUI 审核不是本次完整 Servo 轨迹")
+48:     if (qualification.get("schema_version") != "tabletop_servo_qualification.v1"
+49:             or qualification.get("trajectory_sha256") != sha
+50:             or qualification.get("executor_sha256") != contract.digest(__file__)
+51:             or qualification.get("servo_common_sha256") != contract.digest(sc.__file__)
+52:             or qualification.get("contract_sha256") != contract.digest(contract.__file__)
+53:             or qualification.get("runtime_hashes") != runtime_hashes()
+54:             or qualification.get("verdict") != "PASS"
+55:             or qualification.get("frame_count") != count
+56:             or qualification.get("stream_policy") != plan["stream_policy"]
+57:             or not qualification.get("scene_id")):
+58:         raise ValueError("Servo 完整资格报告未通过或与实际文件/场景/时序不匹配")
+59:     for key in ("fk_path", "self_collision", "robot_environment_collision",
+60:                 "held_and_released_object_collision", "entry_region", "servo_dynamics"):
+61:         item = qualification.get("checks", {}).get(key, {})
+62:         if item.get("status") != "PASS" or not item.get("evidence_files"):
+63:             raise ValueError(f"缺少 {key} 的实质资格证据")
+64:         for ref in item["evidence_files"]:
+65:             evidence_path = (args.qualification_report.parent / ref["path"]).resolve()
+66:             if contract.digest(evidence_path) != ref["sha256"]:
+67:                 raise ValueError(f"{key} 证据文件 SHA 不匹配")
+68:             proof = json.loads(evidence_path.read_text())
+69:             if (proof.get("schema_version") != f"tabletop_servo_{key}_evidence.v1"
+70:                     or proof.get("status") != "PASS" or proof.get("blockers") != []
+71:                     or proof.get("trajectory_sha256") != sha
+72:                     or proof.get("arm_id") != plan["meta"]["arm_id"]
+73:                     or proof.get("scene_id") != qualification["scene_id"]
+74:                     or proof.get("frame_count") != count
+75:                     or proof.get("stream_policy") != plan["stream_policy"]):
+76:                 raise ValueError(f"{key} 证据未完整通过或引用了其他轨迹/时序/场景")
+77:     return {"gui_sha256": contract.digest(args.gui_review),
+78:             "qualification_sha256": contract.digest(args.qualification_report)}
+79: 
+80: 
+81: def live_precheck(sdk, plan, report=None):
+82:     report = {} if report is None else report

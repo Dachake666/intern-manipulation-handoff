@@ -1,0 +1,493 @@
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ XIFENG_ALLOW_REAL_MOTION=1 python3 -u execute_tabletop_servo_field.py   tabletop_pick_place_SERVO_CANDIDATE.json   --field-trial   --run   --gui-review tabletop_pick_place_SERVO_gui_review.json   --robot-ip 192.168.8.147   --local-ip 192.168.8.185   --arm-ip 192.168.8.147   --arm-port 8080   --speed 5.0
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+{
+  "status": "FILE_CHECKS_PASS",
+  "trajectory_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+  "metrics": {
+    "motion_frame_count": 2484,
+    "stream_duration_s": 49.68,
+    "max_step_deg": 0.09999999999999432,
+    "max_velocity_deg_s": 4.999999999999716,
+    "max_acceleration_deg_s2": 379.6718289085632,
+    "joint_used_ranges_deg": [
+      [
+        -33.131,
+        13.604
+      ],
+      [
+        2.908,
+        29.247
+      ],
+      [
+        -0.514,
+        21.471
+      ],
+      [
+        -107.683,
+        -72.66799926757812
+      ],
+      [
+        -25.340999603271484,
+        -12.458
+      ],
+      [
+        -13.946,
+        8.78
+      ],
+      [
+        9.605405807495117,
+        42.691
+      ]
+    ],
+    "minimum_margin_per_joint_deg": [
+      132.869,
+      12.908,
+      144.529,
+      20.316999999999993,
+      140.65900039672852,
+      26.054000000000002,
+      33.309
+    ],
+    "timing_note": "离散指令差分，不是实际反馈速度/加速度；停稳等待另计"
+  },
+  "first_point": [
+    -16.031999588012695,
+    23.22800064086914,
+    -0.35608211159706116,
+    -72.66799926757812,
+    -25.340999603271484,
+    -11.798999786376953,
+    9.605405807495117
+  ],
+  "real_motion_authorized": false
+}
+[机器人级互斥锁] 已独占 192.168.8.147 (pid=38735)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.147
+============================================================
+启动 PilotSDK(只读会话)
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8055
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8055
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.147:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+只读会话: 不清报警 / 不使能 / 不设全局速度 / 不下发运动
+  数据就绪(第 1 次探测)
+新 Servo 将关闭突变保护；确认空爪、首点/整臂/持物路径净空并手握急停。回车使能，q 中止：
+FIELD ENTRY: canonical Home -> Servo 首点, max joint delta 12.144°, limit precheck 25 pts
+  等待到位: 最大误差 0.219 degg
+已到 Servo 首点。确认整臂/瓶子/框路径净空，回车开始透传，q 中止：
+FIELD SERVO: stride=2, frames=1248, duration≈24.96s, max_step=0.199°, max_vel=9.93°/s
+SERVO CAPTURED_LIVE_START_NOT_ASSERTED_SAFE
+  gripper open: eb 90 02 03 11 f4 01 0b
+SERVO PICK_HOVER
+  ⚠ Servo 迟到 91.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 113.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 256.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 74.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 82.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 478.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 563.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 192.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 98.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 254.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 99.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 84.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 53.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 63.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 92.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 40.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 105.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 181.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 236.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 280.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 118.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 230.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 143.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 499.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 729.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 151.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 172.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 48.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.2ms；放弃追赶，重新对齐节拍并继续
+文件上传成功: uploads/varget.log
+  ⚠ Servo 迟到 251.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 51.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 169.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 218.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 379.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 231.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 190.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 415.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 48.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 213.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 64.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 50.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 127.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 465.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 715.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 190.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 119.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 55.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 356.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 50.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 124.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 341.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 76.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 434.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 165.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 67.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 180.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 195.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 315.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 248.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 54.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 141.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 185.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 70.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 75.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 352.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 405.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 140.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 376.3ms；放弃追赶，重新对齐节拍并继续
+SERVO PICK_DESCEND
+  ⚠ Servo 迟到 58.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 214.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 175.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 338.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 350.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 124.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 195.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 105.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 372.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 160.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 86.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 73.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 129.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 298.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 57.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 70.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 99.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 56.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 51.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 439.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 168.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 52.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 41.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 219.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 94.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 62.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 71.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 67.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 93.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 61.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 328.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 69.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 88.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 86.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 291.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 97.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 57.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 55.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 66.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 214.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 307.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 197.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 783.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 113.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 130.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 53.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 125.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 65.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 138.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 55.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 86.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 83.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 194.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 707.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 485.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 42.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 44.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 266.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 97.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 286.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 181.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 61.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 119.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 95.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 87.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 162.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 119.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 248.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 433.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 147.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 241.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 378.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 163.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 48.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 81.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 44.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 604.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 362.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 73.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 459.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 421.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 193.7ms；放弃追赶，重新对齐节拍并继续
+  gripper close: eb 90 02 05 10 f4 01 e8 03 f7
+SERVO PICK_ASCEND
+  ⚠ Servo 迟到 40.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 99.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 118.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 82.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 65.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 52.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 55.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 54.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 40.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 606.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 75.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 70.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 139.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 155.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 142.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 278.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 95.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 360.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 88.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 209.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 142.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 41.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 92.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 56.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 61.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 50.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 519.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 67.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 126.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 543.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 111.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 513.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 344.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 548.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 393.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 268.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 65.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 373.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 672.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 51.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 94.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 441.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 350.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 471.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 50.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 149.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 74.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 80.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 146.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 44.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 365.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 312.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 246.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.4ms；放弃追赶，重新对齐节拍并继续
+SERVO PLACE_HOVER
+  ⚠ Servo 迟到 921.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 72.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 326.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 613.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 52.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 145.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 83.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 49.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 161.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 54.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 175.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 47.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 106.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 274.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 42.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 139.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 121.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 122.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 45.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 91.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 257.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 456.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 65.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 103.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 158.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 122.5ms；放弃追赶，重新对齐节拍并继续
+SERVO PLACE_DESCEND
+  ⚠ Servo 迟到 44.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 70.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 109.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 410.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 207.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 103.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 170.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 72.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 52.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 51.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 258.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 56.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 51.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 67.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 42.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 126.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 63.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 276.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 235.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 418.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 42.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 70.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 62.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 58.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 133.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 64.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 105.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 230.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 41.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 286.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 58.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 60.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 62.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 114.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 56.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 49.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 75.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 355.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 55.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 194.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 76.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 49.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 218.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 49.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 539.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 333.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 82.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 64.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 242.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 89.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 68.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 252.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 72.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 676.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 49.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 121.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 175.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 130.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 502.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 185.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 114.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 105.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 357.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 137.2ms；放弃追赶，重新对齐节拍并继续
+  gripper open: eb 90 02 03 11 f4 01 0b
+SERVO PLACE_ASCEND
+  ⚠ Servo 迟到 61.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 236.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 191.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 76.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 95.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 159.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 80.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 58.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 367.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 324.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 160.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 109.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 270.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 88.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 97.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 57.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 48.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 205.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 64.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 225.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 108.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 87.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 86.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 172.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 52.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 44.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 112.6ms；放弃追赶，重新对齐节拍并继续
+SERVO RETURN_SAFE
+  ⚠ Servo 迟到 76.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 78.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 81.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 108.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 151.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 44.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 130.3ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 61.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 118.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 41.5ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 53.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 45.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 105.7ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 161.9ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 499.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 126.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 45.6ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 41.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 76.1ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 59.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 77.2ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 66.0ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 280.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 117.4ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 43.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 103.8ms；放弃追赶，重新对齐节拍并继续
+  ⚠ Servo 迟到 90.7ms；放弃追赶，重新对齐节拍并继续
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+报告： /home/dev/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ 

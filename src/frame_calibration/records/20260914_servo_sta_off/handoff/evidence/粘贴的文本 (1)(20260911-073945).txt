@@ -1,0 +1,375 @@
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ cd ~/workspace/trackA_worlds_line/trackA_servo || exit 1
+
+for i in 1 2 3 4 5; do
+    echo "================ STA_OFF RUN $i ================"
+    python3 -u probe_pulse_latency_stationary.py
+done
+================ STA_OFF RUN 1 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41370)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8172
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8172
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41370 main_tid=41370
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        6.313 ms
+median:      4.478 ms
+p90:         10.282 ms
+p95:         16.755 ms
+p99:         26.029 ms
+max:         49.067 ms
+>5ms:        126
+>20ms:       9
+>40ms:       2
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=023 start=1789112162.258666 end=1789112162.279423 latency=20.752ms
+frame=088 start=1789112163.568786 end=1789112163.594806 latency=26.015ms
+frame=095 start=1789112163.715455 end=1789112163.737970 latency=22.512ms
+frame=171 start=1789112165.252109 end=1789112165.278069 latency=25.951ms
+frame=174 start=1789112165.318653 end=1789112165.350972 latency=32.311ms
+frame=221 start=1789112166.280084 end=1789112166.329157 latency=49.067ms
+frame=267 start=1789112167.236577 end=1789112167.258143 latency=21.560ms
+frame=268 start=1789112167.258180 end=1789112167.306743 latency=48.560ms
+frame=274 start=1789112167.407288 end=1789112167.433319 latency=26.029ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ STA_OFF RUN 2 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41389)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8020
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8020
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41389 main_tid=41389
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        5.508 ms
+median:      4.032 ms
+p90:         8.870 ms
+p95:         11.445 ms
+p99:         32.692 ms
+max:         67.173 ms
+>5ms:        81
+>20ms:       6
+>40ms:       2
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=013 start=1789112173.264350 end=1789112173.296152 latency=31.795ms
+frame=065 start=1789112174.324688 end=1789112174.350946 latency=26.252ms
+frame=110 start=1789112175.239926 end=1789112175.288252 latency=48.320ms
+frame=252 start=1789112178.132791 end=1789112178.169034 latency=36.238ms
+frame=253 start=1789112178.169098 end=1789112178.236276 latency=67.173ms
+frame=254 start=1789112178.236342 end=1789112178.269041 latency=32.692ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ STA_OFF RUN 3 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41408)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8305
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8305
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41408 main_tid=41408
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        5.828 ms
+median:      4.122 ms
+p90:         8.611 ms
+p95:         11.161 ms
+p99:         35.771 ms
+max:         86.371 ms
+>5ms:        81
+>20ms:       8
+>40ms:       3
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=001 start=1789112294.252411 end=1789112294.285585 latency=33.167ms
+frame=002 start=1789112294.285629 end=1789112294.312358 latency=26.723ms
+frame=072 start=1789112295.705255 end=1789112295.741034 latency=35.771ms
+frame=100 start=1789112296.284283 end=1789112296.304430 latency=20.143ms
+frame=151 start=1789112297.311502 end=1789112297.331731 latency=20.224ms
+frame=262 start=1789112299.551540 end=1789112299.603448 latency=51.900ms
+frame=263 start=1789112299.603504 end=1789112299.689879 latency=86.371ms
+frame=264 start=1789112299.689918 end=1789112299.775438 latency=85.514ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ STA_OFF RUN 4 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41427)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8272
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8272
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41427 main_tid=41427
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        5.915 ms
+median:      3.973 ms
+p90:         8.162 ms
+p95:         13.709 ms
+p99:         35.408 ms
+max:         109.758 ms
+>5ms:        86
+>20ms:       9
+>40ms:       3
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=124 start=1789112308.269386 end=1789112308.300521 latency=31.129ms
+frame=188 start=1789112309.571422 end=1789112309.594581 latency=23.153ms
+frame=206 start=1789112309.936611 end=1789112310.046376 latency=109.758ms
+frame=222 start=1789112310.349774 end=1789112310.400520 latency=50.731ms
+frame=223 start=1789112310.400588 end=1789112310.435265 latency=34.671ms
+frame=225 start=1789112310.455621 end=1789112310.486850 latency=31.214ms
+frame=227 start=1789112310.507066 end=1789112310.530672 latency=23.604ms
+frame=228 start=1789112310.530694 end=1789112310.574785 latency=44.088ms
+frame=272 start=1789112311.438897 end=1789112311.474307 latency=35.408ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ STA_OFF RUN 5 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41446)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8366
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8366
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41446 main_tid=41446
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        5.117 ms
+median:      3.846 ms
+p90:         7.312 ms
+p95:         10.658 ms
+p99:         22.422 ms
+max:         48.662 ms
+>5ms:        76
+>20ms:       6
+>40ms:       2
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=016 start=1789112323.594006 end=1789112323.615275 latency=21.262ms
+frame=121 start=1789112325.714318 end=1789112325.735833 latency=21.508ms
+frame=184 start=1789112326.987937 end=1789112327.026196 latency=38.249ms
+frame=185 start=1789112327.026221 end=1789112327.070730 latency=44.506ms
+frame=186 start=1789112327.070778 end=1789112327.119446 latency=48.662ms
+frame=239 start=1789112328.168859 end=1789112328.191287 latency=22.422ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ 

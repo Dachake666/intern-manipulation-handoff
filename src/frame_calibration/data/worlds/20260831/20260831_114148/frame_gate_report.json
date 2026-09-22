@@ -1,0 +1,59 @@
+{
+  "schema_version": "frame_gate_report.v1",
+  "model": "A_TRANSLATION_ONLY",
+  "transform": "p_sdk_mm = p_pb_ee_link_origin_mm + t_session_mm",
+  "arm": "left",
+  "reference": {
+    "path": "/Users/xiaobingxin/Desktop/工作/工作1/frame_calibration/data/worlds/20260710/20260710_150059/worlds_record_20260710_150059.json",
+    "sha256": "cbba2cdc39c22cb4aba8c357f27aa28bfc5a7142e7314adae060892e171ddead",
+    "sample_count": 99,
+    "t_session_mm": [
+      211.15508735947537,
+      -2.7967037889692516,
+      -800.4858902343595
+    ],
+    "residual_rms_mm": 58.09833436692755,
+    "residual_max_mm": 76.89478665545057,
+    "residual_mean_abs_axis_mm": [
+      45.23096168152521,
+      20.239285423565644,
+      18.53563062887558
+    ]
+  },
+  "candidate": {
+    "path": "/Users/xiaobingxin/Desktop/工作/工作1/frame_calibration/data/worlds/20260831/20260831_114148/worlds_record_20260831_114148.json",
+    "sha256": "593120db816c32075a0ae7dcfd13af1d6bc306df3efc7f7938dd9cb3e8647dbe",
+    "captured_at": "2026-08-31T11:41:48",
+    "sample_count": 99,
+    "t_session_mm": [
+      297.86231280321425,
+      -2.8078058187407677,
+      -860.8960139390194
+    ],
+    "residual_rms_mm": 58.13479250876571,
+    "residual_max_mm": 76.89487567175725,
+    "residual_mean_abs_axis_mm": [
+      45.292265958639334,
+      20.25412999336946,
+      18.481358330805147
+    ]
+  },
+  "drift_xyz_mm": [
+    86.70722544373888,
+    -0.011102029771516086,
+    -60.410123704659895
+  ],
+  "drift_euclidean_mm": 105.67651637624479,
+  "age_days": 0.013963302372685185,
+  "thresholds": {
+    "axis_abs_lt_mm": 5.0,
+    "euclidean_lt_mm": 8.0,
+    "age_lte_days": 7.0
+  },
+  "checks": {
+    "axis_drift": false,
+    "euclidean_drift": false,
+    "freshness": true
+  },
+  "verdict": "BLOCKED"
+}

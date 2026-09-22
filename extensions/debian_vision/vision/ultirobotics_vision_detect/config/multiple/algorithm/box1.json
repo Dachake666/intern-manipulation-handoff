@@ -1,0 +1,11 @@
+{
+	"box_information": {
+		"length": 600,
+		"width": 400,
+		"is_using": 1
+	},
+	"above_point_limit":{
+		"Z_Range": 100,
+		"PointLimit": 1000
+	}
+}

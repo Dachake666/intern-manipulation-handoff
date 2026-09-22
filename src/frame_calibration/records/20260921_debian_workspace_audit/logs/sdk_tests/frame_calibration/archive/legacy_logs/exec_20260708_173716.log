@@ -1,0 +1,28 @@
+日志文件: exec_20260708_173716.log
+轨迹复验 PASS: 89 路点, 2 夹爪事件, pick_sdk=[492.95, 294.82, 406.16], place_sdk=[492.95, 154.82, 406.16]
+armOpenCom: 0
+
+当前关节: [17.0, 17.0, 0.0, -77.99, -0.0, -0.0, 0.12]
+起始路点(#1): [10.0, 10.0, 0.0, -15.0, 0.0, -0.0, 0.0]   最大差 63.0°
+
+ENABLE_REAL_MOTION = False
+
+DRY RUN 计划(未发送任何运动):
+  HOME                           路点 #1..#1 (1 个)
+  HOME->READY                    路点 #2..#28 (27 个)
+  READY->PICK_HOVER              路点 #29..#30 (2 个)
+  PICK_DESCEND                   路点 #31..#35 (5 个)
+  PICK 夹爪:close                 
+  PICK_ASCEND                    路点 #36..#42 (7 个)
+  PICK_HOVER->READY              路点 #43..#44 (2 个)
+  READY->PLACE_HOVER             路点 #45..#47 (3 个)
+  PLACE_DESCEND                  路点 #48..#52 (5 个)
+  PLACE 夹爪:open                 
+  PLACE_SETTLE                   路点 #53..#53 (1 个)
+  PLACE_ASCEND                   路点 #54..#58 (5 个)
+  PLACE_HOVER->READY             路点 #59..#61 (3 个)
+  READY->HOME                    路点 #62..#89 (28 个)
+确认计划后改 ENABLE_REAL_MOTION=True 重跑。
+
+日志已保存: exec_20260708_173716.log
+提醒: 请确认 ENABLE_REAL_MOTION 已恢复为 False。

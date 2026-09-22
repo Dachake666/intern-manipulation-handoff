@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/tabletop_scene_snapshot.v1.schema.json",
+  "title": "tabletop_scene_snapshot.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "status",
+    "source",
+    "contract",
+    "bottle",
+    "material_box",
+    "safe_candidate",
+    "gripper_policy",
+    "missing_requirements",
+    "real_motion_authorized"
+  ],
+  "properties": {
+    "schema_version": {"const": "tabletop_scene_snapshot.v1"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "status": {"const": "INPUT_SNAPSHOT_BLOCKED_FOR_MOTION"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recorded_date", "evidence", "raw_box_observations_status"],
+      "properties": {
+        "recorded_date": {"type": "string", "format": "date"},
+        "evidence": {"const": "USER_PASTED_WEB_CHAT_SUMMARY"},
+        "raw_box_observations_status": {"const": "NOT_PRESENT_IN_CURRENT_SOURCE"}
+      }
+    },
+    "contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "arm", "arm_id", "gripper_id", "frame_id", "length_unit",
+        "angle_unit", "quaternion_order", "endpoint_reference",
+        "waist_base_status", "sdk_tcp_status"
+      ],
+      "properties": {
+        "arm": {"const": "left"},
+        "arm_id": {"const": 1},
+        "gripper_id": {"const": 2},
+        "frame_id": {"const": "sdk_world"},
+        "length_unit": {"const": "millimeter"},
+        "angle_unit": {"const": "degree"},
+        "quaternion_order": {"const": "xyzw"},
+        "endpoint_reference": {"const": "SDK_CONFIGURED_END_EFFECTOR_TCP"},
+        "waist_base_status": {"const": "UNCHANGED_BY_USER_REPORT"},
+        "sdk_tcp_status": {"const": "UNCHANGED_BY_USER_REPORT"}
+      }
+    },
+    "bottle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "object_id", "class_id", "raw_observations", "processing",
+        "processed_pose", "processed_pose_role", "visual_feature_location",
+        "may_be_used_as_grasp_pose", "grasp_pose_status", "dimensions_status"
+      ],
+      "properties": {
+        "object_id": {"type": "string", "minLength": 1},
+        "class_id": {"const": "bottle"},
+        "raw_observations": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"$ref": "#/$defs/rawObservation"}
+        },
+        "processing": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["position_method", "orientation_method", "raw_preserved"],
+          "properties": {
+            "position_method": {"const": "ARITHMETIC_MEAN"},
+            "orientation_method": {"const": "SHORTEST_ARC_QUATERNION_MIDPOINT"},
+            "raw_preserved": {"const": true}
+          }
+        },
+        "processed_pose": {"$ref": "#/$defs/pose"},
+        "processed_pose_role": {"const": "VISUAL_FEATURE_POSE"},
+        "visual_feature_location": {"const": "CENTER_UPPER_RIGHT"},
+        "may_be_used_as_grasp_pose": {"const": false},
+        "grasp_pose_status": {"const": "MISSING_LOCAL_FEATURE_TO_GRASP_TRANSFORM"},
+        "dimensions_status": {"const": "MISSING_CURRENT_OBJECT_DIMENSIONS"}
+      }
+    },
+    "material_box": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "object_id", "processed_pose", "processed_pose_role", "dimensions_mm",
+        "dimension_order", "dimensions_status", "merge_rule", "place_pose_status"
+      ],
+      "properties": {
+        "object_id": {"type": "string", "minLength": 1},
+        "processed_pose": {"$ref": "#/$defs/pose"},
+        "processed_pose_role": {"const": "MERGED_CONTAINER_DETECTION_DATUM"},
+        "dimensions_mm": {"$ref": "#/$defs/positiveVec3"},
+        "dimension_order": {
+          "type": "array",
+          "prefixItems": [
+            {"const": "length"}, {"const": "width"}, {"const": "height"}
+          ],
+          "items": false
+        },
+        "dimensions_status": {"const": "USER_APPROXIMATE_OUTER_OR_INNER_UNKNOWN"},
+        "merge_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source_observations", "x", "y", "z", "quaternion",
+            "raw_observations_status"
+          ],
+          "properties": {
+            "source_observations": {
+              "type": "array",
+              "prefixItems": [{"const": "A3"}, {"const": "B3"}],
+              "items": false
+            },
+            "x": {"const": "MINIMUM_X_MORE_CENTRAL"},
+            "y": {"const": "A3_CENTER_DETECTION_Y"},
+            "z": {"const": "MAXIMUM_Z"},
+            "quaternion": {"const": "A3_LOWER_Z_CENTER_DETECTION_QUATERNION"},
+            "raw_observations_status": {"const": "NOT_PRESENT_IN_CURRENT_SOURCE"}
+          }
+        },
+        "place_pose_status": {"const": "MISSING_CONTAINER_DATUM_TO_PLACE_GRASP_TRANSFORM"}
+      }
+    },
+    "safe_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pose_role", "pose", "joints_sdk_deg", "status",
+        "may_be_used_as_transfer_corridor"
+      ],
+      "properties": {
+        "pose_role": {"const": "EE_POSE"},
+        "pose": {"$ref": "#/$defs/sdkPose"},
+        "joints_sdk_deg": {"$ref": "#/$defs/joints7"},
+        "status": {"const": "USER_PROVIDED_START_END_CANDIDATE"},
+        "may_be_used_as_transfer_corridor": {"const": false}
+      }
+    },
+    "gripper_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "policy_id", "gripper_id", "tuning_status", "protocol_encoding",
+        "open_command", "close_command", "command_contract", "value_unit",
+        "executor_binding", "open", "close"
+      ],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "gripper_id": {"const": 2},
+        "tuning_status": {"const": "SITE_TUNABLE"},
+        "protocol_encoding": {"const": "EB90_UINT16_LITTLE_ENDIAN"},
+        "open_command": {"const": 17},
+        "close_command": {"const": 16},
+        "command_contract": {"const": "OPEN_POSITION_CLOSE_SPEED_FORCE"},
+        "value_unit": {"const": "device_native_uint16"},
+        "executor_binding": {"const": "PENDING_SITE_INTEGRATION"},
+        "open": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["position"],
+          "properties": {"position": {"type": "null"}}
+        },
+        "close": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["speed", "force"],
+          "properties": {
+            "speed": {"type": "null"},
+            "force": {"type": "null"}
+          }
+        }
+      }
+    },
+    "missing_requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/missingRequirement"}
+    },
+    "real_motion_authorized": {"const": false}
+  },
+  "$defs": {
+    "vec3": {
+      "type": "array",
+      "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}],
+      "items": false
+    },
+    "positiveVec3": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "number", "exclusiveMinimum": 0},
+        {"type": "number", "exclusiveMinimum": 0},
+        {"type": "number", "exclusiveMinimum": 0}
+      ],
+      "items": false
+    },
+    "quat": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "number"}, {"type": "number"},
+        {"type": "number"}, {"type": "number"}
+      ],
+      "items": false
+    },
+    "pose": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position_mm", "quaternion_xyzw"],
+      "properties": {
+        "position_mm": {"$ref": "#/$defs/vec3"},
+        "quaternion_xyzw": {"$ref": "#/$defs/quat"}
+      }
+    },
+    "sdkPose": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position_mm", "quaternion_xyzw", "sdk_world_uvw_deg"],
+      "properties": {
+        "position_mm": {"$ref": "#/$defs/vec3"},
+        "quaternion_xyzw": {"$ref": "#/$defs/quat"},
+        "sdk_world_uvw_deg": {"$ref": "#/$defs/vec3"}
+      }
+    },
+    "rawObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "pose"],
+      "properties": {
+        "observation_id": {"type": "string", "minLength": 1},
+        "pose": {"$ref": "#/$defs/pose"}
+      }
+    },
+    "joints7": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {"type": "number"}
+    },
+    "missingRequirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requirement_id", "status", "reason"],
+      "properties": {
+        "requirement_id": {"type": "string", "minLength": 1},
+        "status": {"const": "MISSING"},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

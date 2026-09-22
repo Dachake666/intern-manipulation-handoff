@@ -1,0 +1,647 @@
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8579
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8579
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 126.5°
+⚠ 差角较大, 确认路径无障碍后回车(先用点到点移到首路点): 
+  等待到位: 最大误差 15.537 degg
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+Traceback (most recent call last):
+  File "/home/dev/workspace/Servo/pulse/execute_servo_grasp.py", line 342, in <module>
+    sys.exit(main())
+  File "/home/dev/workspace/Servo/pulse/execute_servo_grasp.py", line 270, in main
+    ss.wait_until_joints(sdk, ARM_ID, first, label="(移到首路点)")
+  File "/home/dev/workspace/Servo/pulse/sdk_session.py", line 441, in wait_until_joints
+    raise RuntimeError(_joint_wait_report(
+RuntimeError: (移到首路点) 25.0s 内未到位, 最大误差 15.537°
+  逐关节误差(实际-目标): j1:+15.54 j2:-3.18 j3:-14.62 j4:+2.01 j5:+11.54 j6:+3.50 j7:-8.74
+  总行程 126.5° -> 已走 110.9° (25.2s, 平均 4.39°/s), 按此速率还需 4s
+  move_state=True, alarms=<pypilot.pypilot.StringVector object at 0x7f1c240b29d0>
+  判读: move_state=True 且还在改善 = 走得慢, 该加 timeout_s;
+        move_state=False 或误差不再改善 = 真停了, 加时间没用。
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8638
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8638
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 0.1°
+  等待到位: 最大误差 0.051 deg
+回车开始【伺服透传】执行(人守急停): 关闭保护状态(透传前置条件)...
+
+    夹爪前 停稳: 误差 0.101° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.043° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.052° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.052° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.50s  预计 12.50s  偏差 +0.00s
+  ⚠ 跟不上的帧: 6 帧 (1.0%)  最大超时 16.9ms  平均超时 9.6ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.852°   最大 1.015° @ t=23.3s 透传中
+  峰值处逐关节: j1:-1.01 j2:+0.51 j3:-0.33 j4:-0.78 j5:-0.44 j6:-0.33 j7:+0.77
+  随时间: 0s:0.79 1s:0.81 3s:0.92 12s:0.93 13s:0.99 15s:0.93 16s:0.83 23s:0.84 24s:0.95
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ 
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8213
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8213
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(10.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 0.0°
+  等待到位: 最大误差 0.049 deg
+回车开始【伺服透传】执行(人守急停): 
+关闭保护状态(透传前置条件)...
+    夹爪前 停稳: 误差 0.099° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.043° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.052° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.052° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.50s  预计 12.50s  偏差 +0.00s
+  ⚠ 跟不上的帧: 34 帧 (5.4%)  最大超时 181.6ms  平均超时 66.3ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.863°   最大 2.008° @ t=16.3s 透传中
+  峰值处逐关节: j1:+2.01 j2:-1.01 j3:+0.70 j4:+1.64 j5:+1.00 j6:+0.83 j7:-1.65
+  随时间: 0s:0.71 1s:0.97 3s:0.88 12s:0.82 13s:0.93 15s:0.48 16s:0.24 23s:0.87 24s:0.96
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8771
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8771
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(10.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 0.0°
+  等待到位: 最大误差 0.049 deg
+回车开始【伺服透传】执行(人守急停): 
+关闭保护状态(透传前置条件)...
+    夹爪前 停稳: 误差 0.098° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.043° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.041° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.041° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.54s  预计 12.50s  偏差 +0.04s
+  ⚠ 跟不上的帧: 9 帧 (1.4%)  最大超时 38.4ms  平均超时 16.5ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.824°   最大 1.016° @ t=15.8s 透传中
+  峰值处逐关节: j1:+1.02 j2:-0.51 j3:+0.32 j4:+0.78 j5:+0.45 j6:+0.33 j7:-0.76
+  随时间: 0s:0.66 1s:0.65 3s:0.83 12s:0.96 13s:0.44 15s:0.88 16s:0.97 23s:0.72 24s:0.85
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8030
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8030
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, False)
+Traceback (most recent call last):
+  File "/home/dev/workspace/Servo/pulse/execute_servo_grasp.py", line 342, in <module>
+    sys.exit(main())
+  File "/home/dev/workspace/Servo/pulse/execute_servo_grasp.py", line 215, in main
+    sdk = ss.open_session(ROBOT_IP, LOCAL_IP, ARM_IP, ARM_PORT, GLOBAL_SPEED,
+  File "/home/dev/workspace/Servo/pulse/sdk_session.py", line 89, in open_session
+    require_true_status(code, enabled, "整体使能")
+  File "/home/dev/workspace/Servo/pulse/sdk_session.py", line 41, in require_true_status
+    raise RuntimeError(f"{operation}状态异常: code={code}, status={status}")
+RuntimeError: 整体使能状态异常: code=0, status=False
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8483
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8483
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(10.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 126.5°
+⚠ 差角较大, 确认路径无障碍后回车(先用点到点移到首路点): 
+  等待到位: 最大误差 0.279 deggg
+回车开始【伺服透传】执行(人守急停): 
+关闭保护状态(透传前置条件)...
+    夹爪前 停稳: 误差 0.100° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.045° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.035° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.035° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.50s  预计 12.50s  偏差 +0.00s
+  ⚠ 跟不上的帧: 10 帧 (1.6%)  最大超时 20.7ms  平均超时 9.1ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.854°   最大 1.004° @ t=23.9s 透传中
+  峰值处逐关节: j1:-1.00 j2:+0.51 j3:-0.32 j4:-0.76 j5:-0.43 j6:-0.33 j7:+0.76
+  随时间: 0s:0.67 1s:0.88 3s:1.00 12s:0.87 13s:0.79 15s:0.94 16s:0.88 23s:0.87 24s:1.00
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ 
+
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8688
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8688
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(10.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 119.5°
+⚠ 差角较大, 确认路径无障碍后回车(先用点到点移到首路点): 
+  等待到位: 最大误差 0.071 deggg
+回车开始【伺服透传】执行(人守急停): 
+关闭保护状态(透传前置条件)...
+    夹爪前 停稳: 误差 0.101° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.047° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.060° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.060° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.50s  预计 12.50s  偏差 +0.00s
+  ⚠ 跟不上的帧: 8 帧 (1.3%)  最大超时 57.3ms  平均超时 29.4ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.821°   最大 1.009° @ t=2.4s 透传中
+  峰值处逐关节: j1:+1.01 j2:-0.56 j3:+0.22 j4:+0.74 j5:+0.36 j6:+0.24 j7:-0.87
+  随时间: 0s:0.85 1s:0.89 3s:0.94 12s:0.91 13s:0.98 15s:0.90 16s:0.98 23s:0.96 24s:0.70
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ python3 -u execute_servo_grasp.py traj_minimal_joint.json 
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: 702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4
+轨迹: traj_minimal_joint.json  模式: 伺服透传  步长 0.2° / 周期 20ms  夹爪力度 1000
+限位预检: 8 个路点全部通过 ✓
+透传密集点: 625 个, 预计时长 12.5s
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8674
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8674
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(20.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+⚠ 读取控制器轴极限失败(Python argument types in
+    PilotSDK.armGetAxisParameter(PilotSDK, int, int, int)
+did not match C++ signature:
+    armGetAxisParameter(PyPilotSDK {lvalue}, int, int, HCXSDKLib::RobotManager::AxisParameterIndex)), 沿用本地 LIMITS_DEG
+⚠ 设置刷新周期失败('PilotSDK' object has no attribute 'armGetPosReFreshMS'), 用默认值
+当前姿态离首路点 119.5°
+⚠ 差角较大, 确认路径无障碍后回车(先用点到点移到首路点): 
+  等待到位: 最大误差 0.056 deggg
+回车开始【伺服透传】执行(人守急停): 
+关闭保护状态(透传前置条件)...
+    夹爪前 停稳: 误差 0.100° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  ⚠ 负载设置失败(Python argument types in
+    PilotSDK.armSetRobotLoad(PilotSDK, int, LoadParameter)
+did not match C++ signature:
+    armSetRobotLoad(PyPilotSDK {lvalue}, int, int)), 继续执行
+    夹爪前 停稳: 误差 0.046° (连续3帧变化<0.05°, 控制器报已停)
+  [夹爪2] open hex=eb 90 02 03 11 f4 01 0b
+  ⚠ 负载设置失败('PilotSDK' object has no attribute 'armUnsetLoad'), 继续执行
+    终点 停稳: 误差 0.055° (连续3帧变化<0.05°, 控制器报已停)
+
+✅ 透传执行完成: 终点最大误差 0.055° (已确认停稳)
+
+[节拍统计] pulse 透传
+  帧数 625  实际 12.50s  预计 12.50s  偏差 +0.00s
+  ⚠ 跟不上的帧: 19 帧 (3.0%)  最大超时 170.9ms  平均超时 74.6ms
+    -> 单帧 SDK 往返已超过周期 20ms。卡顿在【本地节拍】, 调步长没用: 放长周期, 或减少每帧的 SDK 调用。
+
+[跟随误差] 采样 62 次 (每 10 帧一次)
+  平均 0.830°   最大 1.568° @ t=11.5s 透传中
+  峰值处逐关节: j1:-1.57 j2:+0.87 j3:-0.36 j4:-1.18 j5:-0.58 j6:-0.38 j7:+1.38
+  随时间: 0s:0.76 1s:0.64 3s:0.89 12s:0.81 13s:0.88 15s:0.81 16s:0.93 23s:0.89 24s:0.88
+  ✓ 全程跟随良好 (< 3.0°)
+恢复保护状态...
+保护状态回读: True  ✓
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/Servo/pulse$ 

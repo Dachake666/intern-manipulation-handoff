@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/tabletop_request.v1.schema.json",
+  "title": "tabletop_request.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "arm", "input_status", "observation", "object", "transforms", "station", "motion_policy", "gripper_policy"],
+  "properties": {
+    "schema_version": {"const": "tabletop_request.v1"},
+    "request_id": {"type": "string", "minLength": 1},
+    "arm": {"const": "left"},
+    "startup_policy": {"type": "object"},
+    "input_status": {
+      "type": "object", "additionalProperties": false,
+      "required": ["geometry_status", "blocking_assumptions"],
+      "properties": {
+        "geometry_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "blocking_assumptions": {
+          "type": "array", "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        }
+      }
+    },
+    "observation": {
+      "allOf": [
+        {"$ref": "#/$defs/poseSource"},
+        {"type": "object", "required": ["observation_id"],
+         "properties": {"observation_id": {"type": "string", "minLength": 1}}}
+      ]
+    },
+    "object": {
+      "type": "object", "additionalProperties": false,
+      "required": ["object_id", "class_id", "dimensions_mm", "dimensions_status", "T_object_grasp", "object_grasp_transform_status", "orientation_policy"],
+      "properties": {
+        "object_id": {"type": "string", "minLength": 1},
+        "class_id": {"type": "string", "minLength": 1},
+        "dimensions_mm": {"$ref": "#/$defs/positiveVec3"},
+        "dimensions_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "T_object_grasp": {"$ref": "#/$defs/mat4"},
+        "object_grasp_transform_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "T_object_geometry": {"$ref": "#/$defs/mat4"},
+        "object_geometry_transform_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "orientation_policy": {"enum": ["FOLLOW_INPUT_FULL_POSE", "FIXED_ENDPOINT_ORIENTATION"]},
+        "fixed_endpoint_quaternion_xyzw": {"$ref": "#/$defs/quat"}
+      }
+    },
+    "transforms": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "T_endpoint_grasp": {"$ref": "#/$defs/mat4"},
+        "endpoint_transform_source": {"type": "object"}
+      }
+    },
+    "station": {
+      "type": "object", "additionalProperties": false,
+      "dependentRequired": {"place_region": ["place"]},
+      "required": ["station_id", "table_surface_z_mm", "table_surface_status", "bin_rim_z_mm", "bin_rim_status", "safe_endpoint"],
+      "oneOf": [
+        {"required": ["place"], "not": {"required": ["material_box"]}},
+        {"required": ["material_box"], "not": {"required": ["place"]}}
+      ],
+      "properties": {
+        "station_id": {"type": "string", "minLength": 1},
+        "table_surface_z_mm": {"type": "number"},
+        "table_surface_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "bin_rim_z_mm": {"type": "number"},
+        "bin_rim_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "place": {"$ref": "#/$defs/poseSource"},
+        "place_region": {
+          "type": "object", "additionalProperties": false,
+          "required": ["x_bounds_mm", "y_bounds_mm", "geometry_status", "source"],
+          "properties": {
+            "x_bounds_mm": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+            "y_bounds_mm": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+            "geometry_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+            "source": {"type": "string", "minLength": 1}
+          }
+        },
+        "material_box": {"$ref": "#/$defs/materialBox"},
+        "safe_endpoint": {"$ref": "#/$defs/poseSource"}
+      }
+    },
+    "motion_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["minimum_lift_mm", "pick_hover_offset_mm", "place_hover_offset_mm", "held_clearance_mm"],
+      "properties": {
+        "pick_mode": {"enum": ["VERTICAL", "HORIZONTAL_X_POSITIVE"]},
+        "approach_distance_mm": {"type": "number", "exclusiveMinimum": 0},
+        "pick_ascend_offset_mm": {"type": "number", "exclusiveMinimum": 0},
+        "minimum_lift_mm": {"type": "number", "exclusiveMinimum": 0},
+        "pick_hover_offset_mm": {"type": "number", "exclusiveMinimum": 0},
+        "place_hover_offset_mm": {"type": "number", "exclusiveMinimum": 0},
+        "held_clearance_mm": {"type": "number", "exclusiveMinimum": 0},
+        "placement_clearance": {"$ref": "#/$defs/placementClearance"}
+      }
+    },
+    "gripper_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["policy_id", "gripper_id", "tuning_status", "protocol_encoding", "open_command", "close_command", "command_contract", "value_unit", "executor_binding", "open", "close"],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "gripper_id": {"const": 2},
+        "tuning_status": {"const": "SITE_TUNABLE"},
+        "protocol_encoding": {"const": "EB90_UINT16_LITTLE_ENDIAN"},
+        "open_command": {"const": 17},
+        "close_command": {"const": 16},
+        "command_contract": {"const": "OPEN_POSITION_CLOSE_SPEED_FORCE"},
+        "value_unit": {"const": "device_native_uint16"},
+        "executor_binding": {"const": "execute_tabletop_pick_place_worlds.py/v1"},
+        "open": {
+          "type": "object", "additionalProperties": false,
+          "required": ["position", "settle_s"],
+          "properties": {
+            "position": {"$ref": "#/$defs/uint16"},
+            "settle_s": {"type": "number", "minimum": 0}
+          }
+        },
+        "close": {
+          "type": "object", "additionalProperties": false,
+          "required": ["speed", "force", "settle_s"],
+          "properties": {
+            "speed": {"$ref": "#/$defs/uint16"},
+            "force": {"$ref": "#/$defs/uint16"},
+            "settle_s": {"type": "number", "minimum": 0}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "placementClearance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["strategy", "envelope_points_endpoint_mm", "envelope_status", "envelope_source", "covers_wrist_and_open_gripper", "rim_clearance_mm", "hover_z_mm", "minimum_hover_gap_mm", "support_z_mm", "support_status", "release_mode", "max_drop_mm", "support_tolerance_mm"],
+      "properties": {
+        "strategy": {"const": "KEEP_ENVELOPE_ABOVE_RIM"},
+        "envelope_points_endpoint_mm": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/vec3"}},
+        "envelope_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "envelope_source": {"type": "string", "minLength": 1},
+        "covers_wrist_and_open_gripper": {"type": "boolean"},
+        "rim_clearance_mm": {"type": "number", "exclusiveMinimum": 0},
+        "hover_z_mm": {"type": "number"},
+        "minimum_hover_gap_mm": {"type": "number", "exclusiveMinimum": 0},
+        "support_z_mm": {"type": "number"},
+        "support_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "release_mode": {"enum": ["SUPPORTED_ONLY", "ALLOW_BOUNDED_DROP"]},
+        "max_drop_mm": {"type": "number", "minimum": 0},
+        "support_tolerance_mm": {"type": "number", "minimum": 0}
+      }
+    },
+    "uint16": {"type": "integer", "minimum": 0, "maximum": 65535},
+    "poseRole": {"enum": ["OBJECT_POSE", "GRASP_POSE", "EE_POSE"]},
+    "vec3": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "positiveVec3": {"type": "array", "prefixItems": [{"type": "number", "exclusiveMinimum": 0}, {"type": "number", "exclusiveMinimum": 0}, {"type": "number", "exclusiveMinimum": 0}], "items": false},
+    "quat": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "pose": {
+      "type": "object", "additionalProperties": false,
+      "required": ["position_mm", "quaternion_xyzw"],
+      "properties": {"position_mm": {"$ref": "#/$defs/vec3"}, "quaternion_xyzw": {"$ref": "#/$defs/quat"}}
+    },
+    "poseSource": {
+      "type": "object", "additionalProperties": false,
+      "required": ["frame_id", "length_unit", "quaternion_order", "pose_role", "pose"],
+      "properties": {
+        "observation_id": {"type": "string", "minLength": 1},
+        "frame_id": {"const": "sdk_world"}, "length_unit": {"const": "millimeter"},
+        "quaternion_order": {"const": "xyzw"}, "pose_role": {"$ref": "#/$defs/poseRole"},
+        "pose": {"$ref": "#/$defs/pose"}
+      }
+    },
+    "materialBox": {
+      "type": "object", "additionalProperties": false,
+      "required": ["frame_id", "length_unit", "quaternion_order", "pose", "dimensions_mm", "inner_dimensions_mm", "geometry_status", "datum_role", "T_box_place_grasp", "placement_wall_margin_mm"],
+      "properties": {
+        "frame_id": {"const": "sdk_world"},
+        "length_unit": {"const": "millimeter"},
+        "quaternion_order": {"const": "xyzw"},
+        "pose": {"$ref": "#/$defs/pose"},
+        "dimensions_mm": {"$ref": "#/$defs/positiveVec3"},
+        "inner_dimensions_mm": {"$ref": "#/$defs/positiveVec3"},
+        "geometry_status": {"enum": ["CONFIRMED", "SIMULATION_ASSUMPTION"]},
+        "datum_role": {"type": "string", "minLength": 1},
+        "T_box_place_grasp": {"$ref": "#/$defs/mat4"},
+        "placement_wall_margin_mm": {"type": "number", "minimum": 0}
+      }
+    },
+    "matRow": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}], "items": false},
+    "mat4": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/matRow"}}
+  }
+}

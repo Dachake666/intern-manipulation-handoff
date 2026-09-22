@@ -1,0 +1,55 @@
+SOURCE: selected USER terminal output from this conversation.
+TRANSCRIPTION / EXCERPT, not a newly captured router log. Password/key value omitted.
+
+[BEFORE UCI CHANGE; later than an earlier ifconfig down]
+root@GL-SFT1200:~# ifconfig wlan-sta0
+wlan-sta0 ... inet addr:172.24.1.45 ...
+UP BROADCAST RUNNING MULTICAST
+
+root@GL-SFT1200:~# iw dev
+phy#1
+ Interface wlan1
+  ifindex 35
+  ssid GL-SFT1200-71f-5G
+  type AP
+  channel 149 (5745 MHz), width: 80 MHz, center1: 5775 MHz
+ Interface wlan-sta0
+  ifindex 34
+  ssid Ultirobotics_5G
+  type managed
+  channel 149 (5745 MHz), width: 80 MHz, center1: 5775 MHz
+phy#0
+ Interface wlan0
+  ssid GL-SFT1200-71f
+  type AP
+  channel 6 (2437 MHz), width: 20 MHz
+
+[SAFE UCI FIELDS]
+wireless.sta=wifi-iface
+wireless.sta.mode='sta'
+wireless.sta.device='radio1'
+wireless.sta.network='wwan'
+wireless.sta.ssid='Ultirobotics_5G'
+wireless.sta.ifname='wlan-sta0'
+# original output had no wireless.sta.disabled option
+# key omitted intentionally
+
+[USER-EXECUTED CHANGE]
+uci set wireless.sta.disabled='1'
+wifi reload
+sleep 5
+
+[AFTER CHANGE]
+wireless.sta.disabled='1'
+# iw dev now has wlan1 and wlan0, no wlan-sta0
+wlan1: AP, GL-SFT1200-71f-5G, channel149, width80MHz
+wlan0: AP, GL-SFT1200-71f, channel6, width20MHz
+
+iwinfo wlan1 assoclist
+9A:57:82:AE:10:42  -51 dBm / -90 dBm (SNR 39)  0 ms ago
+ RX: 78.0 MBit/s, VHT-MCS 8, 20MHz, VHT-NSS 1     90111 Pkts.
+ TX: 130.0 MBit/s, VHT-MCS 6, 20MHz, VHT-NSS 2     30379 Pkts.
+ expected throughput: 1.9 MBit/s
+
+LIMITS: No continuous timestamped interface monitoring or final restoration record was supplied.
+No 'uci commit' appears in the supplied commands. This does not guarantee nobody else changed the router later.

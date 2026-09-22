@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>camera_drive</name>
+  <version>0.0.1</version>
+  <description>Camera_drive</description>
+  <maintainer email="weiguo.shen@ultirobotics.com">Weiguo Shen</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>sensor_msgs</depend>
+
+  <depend>vision_utils</depend>
+
+  <depend>opencv2</depend>
+  <depend>vision_third_party</depend>
+  <depend>vision_lib</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

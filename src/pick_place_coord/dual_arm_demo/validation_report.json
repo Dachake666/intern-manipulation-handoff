@@ -1,0 +1,364 @@
+{
+  "schema_version": "dual_arm_simulation_validation.v1",
+  "plan_sha256": "4d9dffb1a2392c2937c05d8fb66dc5cf7aacc2ea4f8b349634400ff89c4ddef1",
+  "status": "SIMULATION_DEMO_ONLY_HARDWARE_BLOCKED",
+  "contract": "PASS",
+  "dense_frames_checked": 1624,
+  "display_duration_s": 32.480000000000004,
+  "simultaneously_moving_intervals": 1533,
+  "joint_metrics": {
+    "left": {
+      "joint_range_deg": [
+        [
+          -49.52280241004266,
+          13.604
+        ],
+        [
+          1.884918491094496,
+          36.88728637439697
+        ],
+        [
+          -0.514,
+          12.295452639245658
+        ],
+        [
+          -108.14524882666736,
+          -43.676292718792915
+        ],
+        [
+          -27.99926430129785,
+          -10.769314863505917
+        ],
+        [
+          -13.054547884204057,
+          11.960507689759735
+        ],
+        [
+          2.898633916105991,
+          48.73627426835096
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        116.47719758995734,
+        11.884918491094496,
+        153.70454736075433,
+        19.854751173332644,
+        138.00073569870216,
+        26.945452115795945,
+        27.26372573164904
+      ],
+      "max_step_deg": 0.24899999999999523,
+      "start_to_final_delta_deg": [
+        -1.6790004119873032,
+        6.018999359130859,
+        7.292082111597061,
+        -2.937000732421879,
+        12.144999603271485,
+        -0.024000213623047273,
+        2.6295941925048822
+      ],
+      "limits_basis": "CONFIGURED_LEFT_LIMITS"
+    },
+    "right": {
+      "joint_range_deg": [
+        [
+          -13.29288082861764,
+          50.85119036664534
+        ],
+        [
+          -41.01471798489275,
+          -5.0
+        ],
+        [
+          -19.931966447524665,
+          0.23298022822854633
+        ],
+        [
+          43.67728721408172,
+          108.11192988048552
+        ],
+        [
+          14.184050987312919,
+          31.6508964637301
+        ],
+        [
+          -18.92694936952144,
+          12.594829384804903
+        ],
+        [
+          -46.5974759275977,
+          -2.0605200296077375
+        ]
+      ],
+      "minimum_margin_per_joint_deg": [
+        46.70711917138236,
+        5.0,
+        120.06803355247533,
+        11.888070119514481,
+        138.3491035362699,
+        26.07305063047856,
+        43.4025240724023
+      ],
+      "max_step_deg": 0.24960130309429474,
+      "start_to_final_delta_deg": [
+        2.856699894785404,
+        -11.246296656397178,
+        -14.219149115613584,
+        2.915083675416483,
+        -5.642847444235617,
+        -4.563762916585686,
+        -1.2542495791762462
+      ],
+      "limits_basis": "NOMINAL_RIGHT_URDF_ONLY"
+    }
+  },
+  "right_ik": {
+    "position_tolerance_mm": 0.2,
+    "orientation_tolerance_deg": 0.2,
+    "max_position_error_mm": 0.1998865867660054,
+    "max_orientation_error_deg": 0.02101405177734996,
+    "limits_basis": "RIGHT_NOMINAL_ONLY_NOT_PHYSICAL_CONTROLLER_LIMITS"
+  },
+  "collision_frames_by_category": {
+    "nonadjacent_self_mesh": 1624,
+    "attached_hand_contact": 1624,
+    "own_object_robot": 548,
+    "unheld_object_gripper": 258,
+    "holding_object_gripper": 467
+  },
+  "collision_frames_by_stage": {
+    "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE": {
+      "nonadjacent_self_mesh": 1,
+      "attached_hand_contact": 1,
+      "own_object_robot": 1
+    },
+    "OPEN_BEFORE_PICK": {
+      "nonadjacent_self_mesh": 30,
+      "attached_hand_contact": 30,
+      "own_object_robot": 30
+    },
+    "PICK_HOVER": {
+      "nonadjacent_self_mesh": 197,
+      "attached_hand_contact": 197,
+      "own_object_robot": 197
+    },
+    "PICK_DESCEND": {
+      "nonadjacent_self_mesh": 167,
+      "attached_hand_contact": 167,
+      "own_object_robot": 167,
+      "unheld_object_gripper": 83
+    },
+    "CLOSE_AT_PICK": {
+      "nonadjacent_self_mesh": 30,
+      "attached_hand_contact": 30,
+      "holding_object_gripper": 30
+    },
+    "PICK_ASCEND": {
+      "nonadjacent_self_mesh": 150,
+      "attached_hand_contact": 150,
+      "holding_object_gripper": 150
+    },
+    "PLACE_HOVER": {
+      "nonadjacent_self_mesh": 149,
+      "attached_hand_contact": 149,
+      "holding_object_gripper": 149
+    },
+    "PLACE_DESCEND": {
+      "nonadjacent_self_mesh": 138,
+      "attached_hand_contact": 138,
+      "holding_object_gripper": 138
+    },
+    "OPEN_AT_PLACE": {
+      "nonadjacent_self_mesh": 30,
+      "attached_hand_contact": 30,
+      "own_object_robot": 30,
+      "unheld_object_gripper": 30
+    },
+    "PLACE_ASCEND": {
+      "nonadjacent_self_mesh": 191,
+      "attached_hand_contact": 191,
+      "own_object_robot": 123,
+      "unheld_object_gripper": 145
+    },
+    "RETREAT_CLEAR_OBJECT": {
+      "nonadjacent_self_mesh": 211,
+      "attached_hand_contact": 211
+    },
+    "RETURN_HOME_HOVER": {
+      "nonadjacent_self_mesh": 119,
+      "attached_hand_contact": 119
+    },
+    "RETURN_HOME_DESCEND": {
+      "nonadjacent_self_mesh": 200,
+      "attached_hand_contact": 200
+    },
+    "RETURN_SAFE": {
+      "nonadjacent_self_mesh": 11,
+      "attached_hand_contact": 11
+    }
+  },
+  "cross_arm_clearance": {
+    "query_radius_m": 0.5,
+    "minimum_distance_m": 0.2234099303994427,
+    "bounded_below_only": false,
+    "pair": "left_link11/right_link18",
+    "frame": 1187
+  },
+  "robot_gripper_table_clearance": {
+    "query_radius_m": 0.2,
+    "minimum_distance_m": 0.04519707584906919,
+    "bounded_below_only": false,
+    "pair": "left_gripper_proxy/link-1/table",
+    "frame": 394
+  },
+  "task_checks": {
+    "cross_arm": "PASS_SAMPLED_MODEL",
+    "environment": "PASS_SAMPLED_MODEL",
+    "complete_collision_qualification": "REJECT_UNRESOLVED_TOOL_SELF_AND_OBJECT_CONTACTS"
+  },
+  "collision_pairs": [
+    {
+      "category": "own_object_robot",
+      "pair": "right_object/link18",
+      "worst_penetration_mm": 80.54676614178713,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1014
+    },
+    {
+      "category": "own_object_robot",
+      "pair": "left_object/link11",
+      "worst_penetration_mm": 80.42537323789064,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1014
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "left_gripper_proxy/link11",
+      "worst_penetration_mm": 74.77416217754873,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "right_gripper_proxy/link18",
+      "worst_penetration_mm": 72.23283908370136,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "left_object/link11",
+      "worst_penetration_mm": 67.24416552149414,
+      "first_frame": 395,
+      "first_stage": "CLOSE_AT_PICK",
+      "last_frame": 861
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "right_object/link18",
+      "worst_penetration_mm": 67.2441597644874,
+      "first_frame": 395,
+      "first_stage": "CLOSE_AT_PICK",
+      "last_frame": 861
+    },
+    {
+      "category": "unheld_object_gripper",
+      "pair": "left_object/left_gripper",
+      "worst_penetration_mm": 65.4517655330065,
+      "first_frame": 312,
+      "first_stage": "PICK_DESCEND",
+      "last_frame": 1036
+    },
+    {
+      "category": "holding_object_gripper",
+      "pair": "left_object/left_gripper",
+      "worst_penetration_mm": 65.22820298766771,
+      "first_frame": 395,
+      "first_stage": "CLOSE_AT_PICK",
+      "last_frame": 861
+    },
+    {
+      "category": "nonadjacent_self_mesh",
+      "pair": "link16/link18",
+      "worst_penetration_mm": 48.08596432398591,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "right_gripper_proxy/link16",
+      "worst_penetration_mm": 47.869780676868274,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "unheld_object_gripper",
+      "pair": "right_object/right_gripper",
+      "worst_penetration_mm": 47.84201588246992,
+      "first_frame": 330,
+      "first_stage": "PICK_DESCEND",
+      "last_frame": 1034
+    },
+    {
+      "category": "holding_object_gripper",
+      "pair": "right_object/right_gripper",
+      "worst_penetration_mm": 47.43941327693693,
+      "first_frame": 395,
+      "first_stage": "CLOSE_AT_PICK",
+      "last_frame": 861
+    },
+    {
+      "category": "nonadjacent_self_mesh",
+      "pair": "link9/link11",
+      "worst_penetration_mm": 46.017747626397,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "left_gripper_proxy/link9",
+      "worst_penetration_mm": 43.43806493327859,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "left_gripper_proxy/link10",
+      "worst_penetration_mm": 36.99869506119373,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    },
+    {
+      "category": "attached_hand_contact",
+      "pair": "right_gripper_proxy/link17",
+      "worst_penetration_mm": 36.99752951427208,
+      "first_frame": 0,
+      "first_stage": "CAPTURED_LIVE_START_NOT_ASSERTED_SAFE",
+      "last_frame": 1623
+    }
+  ],
+  "collision_scope": "All displayed dense poses; both full arms, nonadjacent meshes, gripper boxes, carried and placed objects, table. Bin explicitly absent per new demo task. NOT a mathematical continuous swept-volume certificate.",
+  "exclusions": [
+    "Direct parent-child robot links excluded; other wrist overlaps NOT excluded.",
+    "Own last-three-link attachment/holding intersections classified separately, not declared collision-free.",
+    "Base and fixed support mesh still reported; scene and gripper dimensions are assumptions."
+  ],
+  "hardware_blockers": [
+    "Right controller limits and measured gripper/TCP unresolved.",
+    "Synthetic scene has no current hardware registration.",
+    "This scene requires the real bin and other unmodelled obstacles to be cleared from the path.",
+    "URDF mesh intersections require resolution; see collision_pairs.",
+    "SDK concurrent dispatch/timing unverified; GUI interpolation is not vendor motion.",
+    "No hardware executor exists for this demo schema."
+  ],
+  "gui_review": "PENDING_USER_REVIEW_NO_AUTOMATIC_PASS"
+}

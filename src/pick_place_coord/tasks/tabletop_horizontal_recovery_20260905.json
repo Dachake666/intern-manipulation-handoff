@@ -1,0 +1,30 @@
+{
+  "schema_version": "tabletop_working_reference_update.v1",
+  "source_sha256": "6b8ad92c80b52bd380fdd5fff7f5e4c1dcf6c4b41b830a2457fd67ec7e4eb507",
+  "summary_source": "/Users/xiaobingxin/Desktop/trackA_worlds_line_当前情况总结_20260905.md",
+  "reported_latest": {
+    "executor_sha256": "e011880560b01b2b3aa15272b02ad6a7a6625ac20e9f6eadcd25ae5009691ba9",
+    "plan_sha256": "8897c932aea102532c0b77c8492ad5c6dd35e6875ec28eafff3558a81ee6f4b3",
+    "archive_sha256": "011ffb9ca0c17f65313a7bad4fb1ae8136bc26edb7f56380b59ba88af68447b5"
+  },
+  "pick_endpoint_mm": [700, 250, 410],
+  "approach_distance_mm": 150,
+  "pick_lift_mm": 70,
+  "place_endpoint_mm": [720, 100, 445],
+  "place_hover_endpoint_mm": [720, 100, 550],
+  "startup_policy": {
+    "mode": "RECOVER_TO_TASK_SAFE_IF_NEEDED",
+    "clearance_z_mm": 550,
+    "allowed_start_xyz_bounds_mm": [[550, 720], [100, 366.085], [443.775, 550]],
+    "maximum_rotation_deg": 15,
+    "safe_joints_deg": [-17.452, 26.477, 2.530, -75.605, -9.046, -15.335, 12.708],
+    "safe_joint_tolerance_deg": 3,
+    "endpoint_exclusion_boxes_mm": [],
+    "qualification": {
+      "status": "PENDING",
+      "scope": "FULL_ARM_EMPTY_GRIPPER_RECOVERY_VOLUME",
+      "source": "由现有 EE 路点构造的只读诊断区域；不是已测量的桌面/框边安全区域；550 是测试高度而非已证明的净空高度。禁入盒需按当前桌/瓶/框和腕部开爪包络扩张后填写。",
+      "scene_revision": "20260905_CURRENT_SCENE_NOT_MEASURED"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+dev@debian:~$ docker exec -it humble_ros_core bash
+dev@humble:~/workspace$ cd ~/workspace/Servo
+python3 -u probe_sdk.py
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+==========================================================================
+pypilot 模块层
+==========================================================================
+  版本: 1.0.0422.1
+  文件: /home/dev/.local/lib/python3.10/site-packages/pypilot/__init__.py
+  向量类型: ['BatteryInfoVector', 'BoolVector', 'DoubleVector', 'FloatVector', 'Int32Vector', 'IntDoubleVectorMap', 'IntVector', 'Point3DVector', 'RobotWorldsDataVector', 'StringVector', 'UInt16Vector', 'map_indexing_suite_IntDoubleVectorMap_entry']
+    FloatVector    ✓ 有
+    DoubleVector   ✓ 有
+    Int32Vector    ✓ 有
+    StringVector   ✓ 有
+  其它导出类型: ['ActionState', 'AgvInfo', 'ArmBindMode', 'AxisParameterIndex', 'BatteryInfo', 'ButtonStatus', 'CameraData', 'ComputerInfo', 'CurrentPoseData', 'DustParticleDetectorInfo', 'E84Info', 'ErrorInfo', 'FFUInfo', 'ImuData', 'LaserData2D', 'LidarData', 'LoadDimensions', 'LoadInfo', 'LoadParameter', 'ManualControlAction', 'MapInfo', 'ModbusCommandType', 'ModbusRtuData', 'MoveJointsEndData', 'MoveWorldsEndData', 'NfcRingInfo', 'OdomData', 'Parameter', 'PilotSDK', 'Point2D', 'Point3D', 'Position', 'QrData', 'QrInfo', 'RasterInfo', 'RobotWorldsData', 'StorageDoorInfo', 'StorageInfo', 'StringMap', 'Velocity', 'VelocityData']
+
+==========================================================================
+PilotSDK 接口
+==========================================================================
+
+--- 已在用(必须存在) ---
+  ✓ armInitData                        armInitData( (PilotSDK)arg1, (str)arg2, (str)arg3, (int)arg4) -> int :
+  ✓ armGetLinkStatus                   armGetLinkStatus( (PilotSDK)arg1) -> tuple :
+  ✓ armClearAlarm                      armClearAlarm( (PilotSDK)arg1) -> int :
+  ✓ armRobotEnableOrNot                armRobotEnableOrNot( (PilotSDK)arg1, (bool)arg2) -> int :
+  ✓ armGetRobotEnableStatus            armGetRobotEnableStatus( (PilotSDK)arg1) -> tuple :
+  ✓ armServoIsOpOrNot                  armServoIsOpOrNot( (PilotSDK)arg1) -> tuple :
+  ✓ armSetGlobalSpeed                  armSetGlobalSpeed( (PilotSDK)arg1, (float)arg2) -> int :
+  ✓ armGetSingleRobotEnableStatus      armGetSingleRobotEnableStatus( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetRobotMoveState               armGetRobotMoveState( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armClearRobotRoute                 armClearRobotRoute( (PilotSDK)arg1, (int)robotId [, (bool)emergency_stop=True]) -> int :
+  ✓ armGetJoints                       armGetJoints( (PilotSDK)arg1, (int)robotId [, (bool)fb=True]) -> tuple :
+  ✓ armGetWorlds                       armGetWorlds( (PilotSDK)arg1, (int)robotId [, (bool)fb=True]) -> tuple :
+  ✓ armMoveJoints                      armMoveJoints( (PilotSDK)arg1, (int)robotId, (FloatVector)joints [, (bool)needCallback=False [, (int)delay_in_
+  ✓ armMoveWorlds                      armMoveWorlds( (PilotSDK)arg1, (int)robotId, (FloatVector)worlds [, (bool)interpolation_en=False [, (bool)need
+  ✓ armIsAlarming                      armIsAlarming( (PilotSDK)arg1) -> tuple :
+  ✓ armOpenCom                         armOpenCom( (PilotSDK)arg1, (str)com [, (int)baudrate=115200 [, (int)databits=8 [, (int)parity=0 [, (int)stopb
+  ✓ armWriteCom                        armWriteCom( (PilotSDK)arg1, (str)arg2, (object)arg3) -> int :
+  ✓ getSoftStopSwitch                  getSoftStopSwitch( (PilotSDK)arg1) -> tuple :
+
+--- 透传核心 ---
+  ✓ armSetRobotProtectStatus           armSetRobotProtectStatus( (PilotSDK)arg1, (int)arg2, (bool)arg3) -> int :
+  ✓ armPluseToServo                    armPluseToServo( (PilotSDK)arg1, (int)arg2, (FloatVector)arg3) -> int :
+  ✓ armWorldsToServo                   armWorldsToServo( (PilotSDK)arg1, (int)arg2, (FloatVector)arg3) -> int :
+
+--- 20260731 新用(已知有坑) ---
+  ✓ armTryWorlds                       armTryWorlds( (PilotSDK)arg1, (int)arg2, (DoubleVector)arg3) -> tuple :
+  ✓ armGetAxisParameter                armGetAxisParameter( (PilotSDK)arg1, (int)arg2, (int)arg3, (AxisParameterIndex)arg4) -> tuple :
+  ✓ armSetAxisParameter                armSetAxisParameter( (PilotSDK)arg1, (int)arg2, (int)arg3, (AxisParameterIndex)arg4, (float)arg5) -> tuple :
+  ✓ armJointOutLimit                   armJointOutLimit( (PilotSDK)arg1, (int)arg2, (int)arg3, (float)arg4) -> tuple :
+  ✓ armSetRobotLoad                    armSetRobotLoad( (PilotSDK)arg1, (int)arg2, (int)arg3) -> tuple :
+  ✗ armUnsetLoad                       本机没有
+  ✗ armGetPosReFreshMS                 本机没有
+  ✗ armSetPosReFreshMS                 本机没有
+  ✓ armGetRobotProtectStatus           armGetRobotProtectStatus( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetSpeedFeedback                armGetSpeedFeedback( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetRobotPaused                  armGetRobotPaused( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetRobotAxisMoveState           armGetRobotAxisMoveState( (PilotSDK)arg1, (int)arg2, (int)arg3) -> tuple :
+  ✓ armGetGlobalSpeed                  armGetGlobalSpeed( (PilotSDK)arg1) -> tuple :
+  ✓ armSetEnableTolerance              armSetEnableTolerance( (PilotSDK)arg1, (int)robot_id, (bool)enable [, (float)tolerance=0.1 [, (float)tolerance
+
+--- 暂未用(备查) ---
+  ✓ armMoveWorldsCurve                 armMoveWorldsCurve( (PilotSDK)arg1, (int)robotId, (FloatVector)midWorld, (FloatVector)endWorld [, (bool)needCa
+  ✓ armMoveWorldsRound                 armMoveWorldsRound( (PilotSDK)arg1, (int)robotId, (FloatVector)midWorld, (FloatVector)endWorld [, (bool)needCa
+  ✓ armTorqueToServo                   armTorqueToServo( (PilotSDK)arg1, (int)arg2, (Int32Vector)arg3) -> int :
+  ✓ armSpeedToServo                    armSpeedToServo( (PilotSDK)arg1, (int)arg2, (Int32Vector)arg3) -> int :
+  ✓ armPauseRobot                      armPauseRobot( (PilotSDK)arg1, (int)arg2, (bool)arg3) -> int :
+  ✓ armGetRobotPaused                  armGetRobotPaused( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetTorqueFeedbackVector         armGetTorqueFeedbackVector( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armActivateCollision               armActivateCollision( (PilotSDK)arg1, (int)arg2, (bool)arg3, (Int32Vector)arg4) -> int :
+  ✗ armRobotSoftEmergencyStop          本机没有
+  ✓ armGetVelocity                     armGetVelocity( (PilotSDK)arg1, (int)arg2) -> tuple :
+  ✓ armGetAcceleration                 armGetAcceleration( (PilotSDK)arg1, (int)arg2) -> tuple :
+
+--- 本机还有、我们没登记过的 52 个 ---
+    armActivateDragTeach
+    armAdmittanceControl
+    armAdmittanceControlInit
+    armBindModeWorldMove
+    armCancelMoveJointsEndCallback
+    armCancelMoveWorldsEndCallback
+    armDetachHMI
+    armForceKeepSwitch
+    armGetAlarmNotPrompt
+    armGetArmBindMode
+    armGetCurrentRunMode
+    armGetDetachHMIStatus
+    armGetForceKeepState
+    armGetLoadParam
+    armGetPulseFeedback
+    armGetRobotAlarmNotServoOff
+    armGetTorqueFeedbackSingle
+    armGetWaistSafePose
+    armModbusControl
+    armReadCom
+    armSetAlarmNotPrompt
+    armSetLoadParam
+    armSetMoveJointsEndCallback
+    armSetMoveWorldsEndCallback
+    armSetRobotAlarmNotServoOff
+    armSetSingleRobotEnable
+    armSetWaistSafePose
+    armSwitchRunMode
+    getActionStates
+    getAgvPosition
+    getAgvStatus
+    getBatterys
+    getButtonStatus
+    getConnectionStatus
+    getController
+    getDistanceSinceLastNode
+    getDriving
+    getE84
+    getExtendedParameters
+    getLastEdgeId
+    getLastNodeId
+    getLastNodeSequenceId
+    getLoads
+    getManualControlActions
+    getMap
+    getNfcRingInfo
+    getOperatingMode
+    getStorageDoors
+    getStorageStatusList
+    getTaskId
+    getTaskUpdateId
+    getVelocity
+
+==========================================================================
+缺失 4 个: armGetPosReFreshMS, armRobotSoftEmergencyStop, armSetPosReFreshMS, armUnsetLoad
+代码里对应的功能应当按能力门控跳过, 而不是每次运行刷警告。
+==========================================================================
+dev@humble:~/workspace/Servo$

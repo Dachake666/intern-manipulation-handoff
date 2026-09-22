@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/preflight_report.v1.schema.json",
+  "title": "preflight_report.v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "report_id", "created_at", "mode", "inputs", "robot_state", "checks", "verdict", "approval"],
+  "properties": {
+    "schema_version": {"const": "preflight_report.v1"}, "report_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"}, "mode": {"const": "no_motion_read_only"},
+    "inputs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["observation_sha256", "task_sha256", "adapted_task_sha256", "trajectory_sha256", "calibration_sha256", "arm_profiles_sha256", "robot_config_identity"],
+      "properties": {"observation_sha256": {"$ref":"#/$defs/hash"}, "task_sha256": {"$ref":"#/$defs/hash"}, "adapted_task_sha256": {"$ref":"#/$defs/hash"}, "trajectory_sha256": {"$ref":"#/$defs/hash"}, "calibration_sha256": {"$ref":"#/$defs/hash"}, "arm_profiles_sha256": {"$ref":"#/$defs/hash"}, "robot_config_identity": {"type":"string","minLength":1}}
+    },
+    "robot_state": {
+      "type":"object", "additionalProperties":false, "required":["source","left_q_sdk_deg","right_q_sdk_deg"],
+      "properties":{"source":{"enum":["live_read_only","explicit_snapshot"]},"left_q_sdk_deg":{"$ref":"#/$defs/q7"},"right_q_sdk_deg":{"$ref":"#/$defs/q7"}}
+    },
+    "checks": {"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["name","status","details"],"properties":{"name":{"type":"string"},"status":{"enum":["PASS","BLOCKED","UNRESOLVED"]},"details":{"type":"object"}}}},
+    "verdict": {"enum":["PASS","BLOCKED"]},
+    "approval": {
+      "type":"object","additionalProperties":false,"required":["required","report_sha256","token"],
+      "properties":{"required":{"const":true},"report_sha256":{"$ref":"#/$defs/hash"},"token":{"type":["string","null"]},"expires_on_change":{"const":true}}
+    }
+  },
+  "$defs": {
+    "hash":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "q7":{"type":"array","prefixItems":[{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"}],"items":false}
+  }
+}

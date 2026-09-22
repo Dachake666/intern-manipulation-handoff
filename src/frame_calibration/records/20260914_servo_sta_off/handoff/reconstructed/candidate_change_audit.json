@@ -1,0 +1,40 @@
+{
+  "artifact_class": "OFFLINE_RECONSTRUCTED_FROM_ORIGINAL_BYTES_AND_USER_CONFIRMED_FIVE_CHANGES",
+  "received_from_debian_as_original": false,
+  "field_logged_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+  "recomputed_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+  "sha256_match": true,
+  "source_archive": "../legacy/trackA_servo_20260909_original.zip",
+  "source_member": "trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+  "source_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+  "changes": [
+    {
+      "path": "gripper_policy.open.settle_s",
+      "old": 1.0,
+      "new": 0.5
+    },
+    {
+      "path": "gripper_policy.close.settle_s",
+      "old": 2.0,
+      "new": 1.0
+    },
+    {
+      "path": "waypoints[1].settle_s",
+      "old": 1.0,
+      "new": 0.5
+    },
+    {
+      "path": "waypoints[895].settle_s",
+      "old": 2.0,
+      "new": 1.0
+    },
+    {
+      "path": "waypoints[1835].settle_s",
+      "old": 1.0,
+      "new": 0.5
+    }
+  ],
+  "motion_waypoints": 2484,
+  "total_waypoints_including_gripper": 2487,
+  "authorization": "NONE; SAME HASH IS NOT A NEW GUI OR PHYSICAL SAFETY REVIEW"
+}

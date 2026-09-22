@@ -1,0 +1,1005 @@
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ cd ~/workspace/trackA_worlds_line/trackA_servo || exit 1
+
+for i in 1 2 3 4 5; do
+    echo "================ RUN $i ================"
+    python3 -u probe_pulse_latency_stationary.py
+done
+================ RUN 1 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41275)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8596
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8596
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41275 main_tid=41275
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        5.286 ms
+median:      4.081 ms
+p90:         8.580 ms
+p95:         11.440 ms
+p99:         22.196 ms
+max:         37.284 ms
+>5ms:        90
+>20ms:       6
+>40ms:       0
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=056 start=1789108170.921473 end=1789108170.943671 latency=22.196ms
+frame=088 start=1789108171.568823 end=1789108171.606109 latency=37.284ms
+frame=123 start=1789108172.290861 end=1789108172.312735 latency=21.869ms
+frame=221 start=1789108174.270950 end=1789108174.291154 latency=20.196ms
+frame=222 start=1789108174.291199 end=1789108174.320838 latency=29.636ms
+frame=285 start=1789108175.573352 end=1789108175.601216 latency=27.857ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ RUN 2 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41294)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8537
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8537
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41294 main_tid=41294
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        43.868 ms
+median:      25.504 ms
+p90:         77.018 ms
+p95:         113.662 ms
+p99:         408.687 ms
+max:         995.918 ms
+>5ms:        283
+>20ms:       173
+>40ms:       96
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=000 start=1789108205.730296 end=1789108205.757041 latency=26.728ms
+frame=001 start=1789108205.757112 end=1789108206.753040 latency=995.918ms
+frame=002 start=1789108206.753092 end=1789108206.891608 latency=138.511ms
+frame=003 start=1789108206.891688 end=1789108207.001334 latency=109.641ms
+frame=004 start=1789108207.001397 end=1789108207.045660 latency=44.259ms
+frame=006 start=1789108207.065812 end=1789108207.111746 latency=45.928ms
+frame=007 start=1789108207.111778 end=1789108207.184845 latency=73.059ms
+frame=008 start=1789108207.184914 end=1789108207.329033 latency=144.113ms
+frame=010 start=1789108207.349343 end=1789108207.409138 latency=59.789ms
+frame=011 start=1789108207.409186 end=1789108207.440408 latency=31.218ms
+frame=012 start=1789108207.440462 end=1789108207.907307 latency=466.841ms
+frame=013 start=1789108207.907346 end=1789108207.995099 latency=87.747ms
+frame=014 start=1789108207.995206 end=1789108208.061002 latency=65.791ms
+frame=015 start=1789108208.061044 end=1789108208.140537 latency=79.488ms
+frame=016 start=1789108208.140593 end=1789108208.202404 latency=61.806ms
+frame=017 start=1789108208.202451 end=1789108208.331343 latency=128.885ms
+frame=018 start=1789108208.331404 end=1789108208.372854 latency=41.445ms
+frame=019 start=1789108208.372918 end=1789108208.505526 latency=132.604ms
+frame=021 start=1789108208.525683 end=1789108208.564467 latency=38.778ms
+frame=022 start=1789108208.564512 end=1789108208.590308 latency=25.795ms
+frame=025 start=1789108208.630537 end=1789108208.698080 latency=67.541ms
+frame=026 start=1789108208.698108 end=1789108208.729958 latency=31.845ms
+frame=027 start=1789108208.730032 end=1789108208.831103 latency=101.066ms
+frame=028 start=1789108208.831167 end=1789108208.891221 latency=60.048ms
+frame=029 start=1789108208.891286 end=1789108208.962214 latency=70.922ms
+frame=030 start=1789108208.962283 end=1789108208.995720 latency=33.430ms
+frame=031 start=1789108208.995781 end=1789108209.017413 latency=21.626ms
+frame=032 start=1789108209.017478 end=1789108209.080460 latency=62.976ms
+frame=035 start=1789108209.121104 end=1789108209.146439 latency=25.322ms
+frame=036 start=1789108209.146511 end=1789108209.166624 latency=20.106ms
+frame=037 start=1789108209.166694 end=1789108209.193188 latency=26.487ms
+frame=040 start=1789108209.233764 end=1789108209.310788 latency=77.018ms
+frame=043 start=1789108209.351071 end=1789108209.383319 latency=32.241ms
+frame=044 start=1789108209.383376 end=1789108209.439107 latency=55.725ms
+frame=046 start=1789108209.459354 end=1789108209.513650 latency=54.287ms
+frame=047 start=1789108209.513690 end=1789108209.644693 latency=130.997ms
+frame=048 start=1789108209.644760 end=1789108209.710578 latency=65.814ms
+frame=050 start=1789108209.730749 end=1789108209.754799 latency=24.044ms
+frame=051 start=1789108209.754838 end=1789108209.790244 latency=35.401ms
+frame=052 start=1789108209.790302 end=1789108209.826342 latency=36.034ms
+frame=053 start=1789108209.826414 end=1789108209.857727 latency=31.307ms
+frame=054 start=1789108209.857795 end=1789108209.909151 latency=51.353ms
+frame=055 start=1789108209.909187 end=1789108209.944368 latency=35.176ms
+frame=056 start=1789108209.944438 end=1789108209.965394 latency=20.949ms
+frame=059 start=1789108210.006073 end=1789108210.080693 latency=74.604ms
+frame=060 start=1789108210.080772 end=1789108210.138031 latency=57.254ms
+frame=061 start=1789108210.138092 end=1789108210.169008 latency=30.912ms
+frame=064 start=1789108210.209234 end=1789108210.253899 latency=44.662ms
+frame=065 start=1789108210.253922 end=1789108210.307611 latency=53.688ms
+frame=066 start=1789108210.307623 end=1789108210.345716 latency=38.087ms
+frame=067 start=1789108210.345820 end=1789108210.380267 latency=34.443ms
+frame=068 start=1789108210.380314 end=1789108210.407730 latency=27.413ms
+frame=069 start=1789108210.407779 end=1789108210.432572 latency=24.789ms
+frame=070 start=1789108210.432626 end=1789108210.476590 latency=43.960ms
+frame=071 start=1789108210.476640 end=1789108210.556865 latency=80.220ms
+frame=072 start=1789108210.556916 end=1789108210.607135 latency=50.214ms
+frame=073 start=1789108210.607199 end=1789108210.665726 latency=58.522ms
+frame=074 start=1789108210.665794 end=1789108211.074486 latency=408.687ms
+frame=075 start=1789108211.074553 end=1789108211.138942 latency=64.382ms
+frame=076 start=1789108211.139013 end=1789108211.234984 latency=95.964ms
+frame=077 start=1789108211.235078 end=1789108211.325692 latency=90.611ms
+frame=078 start=1789108211.325912 end=1789108211.386010 latency=60.094ms
+frame=079 start=1789108211.386059 end=1789108211.437411 latency=51.347ms
+frame=080 start=1789108211.437473 end=1789108211.491497 latency=54.022ms
+frame=082 start=1789108211.511617 end=1789108211.548959 latency=37.337ms
+frame=083 start=1789108211.549009 end=1789108211.590468 latency=41.454ms
+frame=084 start=1789108211.590527 end=1789108211.656351 latency=65.821ms
+frame=086 start=1789108211.676698 end=1789108211.755038 latency=78.328ms
+frame=087 start=1789108211.755119 end=1789108211.782777 latency=27.654ms
+frame=088 start=1789108211.782821 end=1789108211.806941 latency=24.117ms
+frame=089 start=1789108211.806972 end=1789108211.844519 latency=37.542ms
+frame=090 start=1789108211.844572 end=1789108211.908920 latency=64.345ms
+frame=096 start=1789108212.009954 end=1789108212.061699 latency=51.738ms
+frame=097 start=1789108212.061740 end=1789108212.175406 latency=113.662ms
+frame=098 start=1789108212.175463 end=1789108212.238798 latency=63.328ms
+frame=103 start=1789108212.319509 end=1789108212.339888 latency=20.372ms
+frame=104 start=1789108212.339943 end=1789108212.500067 latency=160.119ms
+frame=105 start=1789108212.500133 end=1789108212.779220 latency=279.085ms
+frame=106 start=1789108212.779247 end=1789108212.818988 latency=39.738ms
+frame=107 start=1789108212.819016 end=1789108212.858998 latency=39.980ms
+frame=108 start=1789108212.859022 end=1789108212.923626 latency=64.600ms
+frame=109 start=1789108212.923687 end=1789108213.000419 latency=76.726ms
+frame=110 start=1789108213.000504 end=1789108213.032514 latency=32.004ms
+frame=112 start=1789108213.052857 end=1789108213.080395 latency=27.527ms
+frame=122 start=1789108213.261493 end=1789108213.289625 latency=28.127ms
+frame=131 start=1789108213.451099 end=1789108213.482018 latency=30.909ms
+frame=138 start=1789108213.603171 end=1789108213.661474 latency=58.295ms
+frame=139 start=1789108213.661546 end=1789108213.690846 latency=29.298ms
+frame=141 start=1789108213.711004 end=1789108213.731282 latency=20.267ms
+frame=142 start=1789108213.731338 end=1789108213.764042 latency=32.700ms
+frame=144 start=1789108213.784358 end=1789108213.814591 latency=30.219ms
+frame=146 start=1789108213.834846 end=1789108213.857698 latency=22.839ms
+frame=148 start=1789108213.878087 end=1789108213.908680 latency=30.583ms
+frame=149 start=1789108213.908706 end=1789108213.963152 latency=54.442ms
+frame=150 start=1789108213.963206 end=1789108213.993411 latency=30.200ms
+frame=151 start=1789108213.993475 end=1789108214.060582 latency=67.102ms
+frame=152 start=1789108214.060670 end=1789108214.094069 latency=33.394ms
+frame=153 start=1789108214.094136 end=1789108214.136133 latency=41.991ms
+frame=154 start=1789108214.136201 end=1789108214.157644 latency=21.436ms
+frame=160 start=1789108214.258978 end=1789108214.282246 latency=23.258ms
+frame=161 start=1789108214.282308 end=1789108214.311994 latency=29.682ms
+frame=164 start=1789108214.352443 end=1789108214.380117 latency=27.668ms
+frame=165 start=1789108214.380177 end=1789108214.431801 latency=51.619ms
+frame=173 start=1789108214.573678 end=1789108214.594739 latency=21.056ms
+frame=174 start=1789108214.594773 end=1789108214.638853 latency=44.078ms
+frame=177 start=1789108214.679068 end=1789108214.705918 latency=26.845ms
+frame=178 start=1789108214.705952 end=1789108214.736098 latency=30.133ms
+frame=181 start=1789108214.776652 end=1789108214.798521 latency=21.857ms
+frame=183 start=1789108214.818872 end=1789108214.863305 latency=44.424ms
+frame=185 start=1789108214.883548 end=1789108214.915252 latency=31.697ms
+frame=186 start=1789108214.915298 end=1789108214.954821 latency=39.520ms
+frame=187 start=1789108214.954856 end=1789108215.012195 latency=57.334ms
+frame=191 start=1789108215.072894 end=1789108215.118249 latency=45.349ms
+frame=192 start=1789108215.118293 end=1789108215.184210 latency=65.912ms
+frame=193 start=1789108215.184261 end=1789108215.211812 latency=27.544ms
+frame=195 start=1789108215.232122 end=1789108215.345747 latency=113.617ms
+frame=196 start=1789108215.345808 end=1789108215.367821 latency=22.007ms
+frame=197 start=1789108215.367887 end=1789108215.435552 latency=67.661ms
+frame=198 start=1789108215.435591 end=1789108215.469251 latency=33.656ms
+frame=203 start=1789108215.550344 end=1789108215.582532 latency=32.180ms
+frame=204 start=1789108215.582576 end=1789108215.638534 latency=55.954ms
+frame=205 start=1789108215.638586 end=1789108215.663211 latency=24.621ms
+frame=207 start=1789108215.683421 end=1789108215.703716 latency=20.289ms
+frame=208 start=1789108215.703760 end=1789108215.744347 latency=40.581ms
+frame=210 start=1789108215.764496 end=1789108215.833643 latency=69.142ms
+frame=211 start=1789108215.833695 end=1789108215.949008 latency=115.309ms
+frame=212 start=1789108215.949055 end=1789108216.195530 latency=246.470ms
+frame=225 start=1789108216.439157 end=1789108216.475380 latency=36.216ms
+frame=226 start=1789108216.475453 end=1789108216.496391 latency=20.934ms
+frame=230 start=1789108216.556885 end=1789108216.588835 latency=31.945ms
+frame=231 start=1789108216.588877 end=1789108216.615863 latency=26.983ms
+frame=232 start=1789108216.615907 end=1789108216.641758 latency=25.849ms
+frame=233 start=1789108216.641793 end=1789108216.667294 latency=25.497ms
+frame=237 start=1789108216.727639 end=1789108216.772516 latency=44.874ms
+frame=241 start=1789108216.832842 end=1789108216.868410 latency=35.565ms
+frame=243 start=1789108216.888597 end=1789108216.941328 latency=52.724ms
+frame=244 start=1789108216.941384 end=1789108216.966899 latency=25.512ms
+frame=245 start=1789108216.966936 end=1789108217.050090 latency=83.149ms
+frame=250 start=1789108217.130955 end=1789108217.160178 latency=29.212ms
+frame=251 start=1789108217.160248 end=1789108217.184726 latency=24.473ms
+frame=252 start=1789108217.184791 end=1789108217.255665 latency=70.868ms
+frame=253 start=1789108217.255756 end=1789108217.340814 latency=85.052ms
+frame=254 start=1789108217.340883 end=1789108217.365543 latency=24.654ms
+frame=255 start=1789108217.365606 end=1789108217.402797 latency=37.187ms
+frame=256 start=1789108217.402847 end=1789108217.463278 latency=60.428ms
+frame=257 start=1789108217.463323 end=1789108217.507177 latency=43.849ms
+frame=260 start=1789108217.547484 end=1789108217.617055 latency=69.565ms
+frame=262 start=1789108217.637384 end=1789108217.662361 latency=24.967ms
+frame=263 start=1789108217.662421 end=1789108217.707424 latency=45.001ms
+frame=264 start=1789108217.707450 end=1789108217.754149 latency=46.694ms
+frame=265 start=1789108217.754210 end=1789108217.809400 latency=55.183ms
+frame=270 start=1789108217.890691 end=1789108217.987917 latency=97.192ms
+frame=271 start=1789108217.987975 end=1789108218.027141 latency=39.159ms
+frame=272 start=1789108218.027208 end=1789108218.155131 latency=127.918ms
+frame=273 start=1789108218.155204 end=1789108218.944783 latency=789.572ms
+frame=275 start=1789108218.964977 end=1789108219.025208 latency=60.228ms
+frame=276 start=1789108219.025258 end=1789108219.074036 latency=48.775ms
+frame=277 start=1789108219.074075 end=1789108219.116779 latency=42.700ms
+frame=280 start=1789108219.157036 end=1789108219.215954 latency=58.911ms
+frame=281 start=1789108219.216017 end=1789108219.251273 latency=35.249ms
+frame=282 start=1789108219.251336 end=1789108219.278322 latency=26.983ms
+frame=283 start=1789108219.278361 end=1789108219.350617 latency=72.250ms
+frame=284 start=1789108219.350683 end=1789108219.406513 latency=55.824ms
+frame=287 start=1789108219.447047 end=1789108219.477262 latency=30.208ms
+frame=288 start=1789108219.477307 end=1789108219.500541 latency=23.228ms
+frame=289 start=1789108219.500607 end=1789108219.531209 latency=30.596ms
+frame=290 start=1789108219.531271 end=1789108219.595783 latency=64.507ms
+frame=291 start=1789108219.595841 end=1789108219.626087 latency=30.240ms
+frame=292 start=1789108219.626181 end=1789108219.862354 latency=236.167ms
+frame=296 start=1789108219.922965 end=1789108219.991069 latency=68.096ms
+frame=297 start=1789108219.991117 end=1789108220.078847 latency=87.726ms
+frame=298 start=1789108220.078891 end=1789108220.169077 latency=90.182ms
+frame=299 start=1789108220.169130 end=1789108220.216941 latency=47.807ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ RUN 3 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41313)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8485
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8485
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41313 main_tid=41313
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        128.203 ms
+median:      47.871 ms
+p90:         289.448 ms
+p95:         534.663 ms
+p99:         1726.897 ms
+max:         2741.357 ms
+>5ms:        284
+>20ms:       215
+>40ms:       164
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=000 start=1789108229.012789 end=1789108229.609565 latency=596.761ms
+frame=001 start=1789108229.609622 end=1789108229.663668 latency=54.039ms
+frame=002 start=1789108229.663734 end=1789108229.709308 latency=45.567ms
+frame=004 start=1789108229.729680 end=1789108229.796983 latency=67.291ms
+frame=006 start=1789108229.817242 end=1789108229.840479 latency=23.222ms
+frame=007 start=1789108229.840550 end=1789108230.159526 latency=318.970ms
+frame=008 start=1789108230.159595 end=1789108230.214982 latency=55.377ms
+frame=009 start=1789108230.215068 end=1789108230.397358 latency=182.287ms
+frame=010 start=1789108230.397398 end=1789108230.581371 latency=183.967ms
+frame=011 start=1789108230.581432 end=1789108232.308332 latency=1726.897ms
+frame=013 start=1789108232.328575 end=1789108232.352039 latency=23.458ms
+frame=014 start=1789108232.352101 end=1789108232.419817 latency=67.713ms
+frame=015 start=1789108232.419845 end=1789108232.480833 latency=60.981ms
+frame=016 start=1789108232.480903 end=1789108232.822202 latency=341.292ms
+frame=017 start=1789108232.822279 end=1789108233.382096 latency=559.810ms
+frame=018 start=1789108233.382165 end=1789108233.417917 latency=35.748ms
+frame=019 start=1789108233.417963 end=1789108233.445336 latency=27.369ms
+frame=022 start=1789108233.485804 end=1789108233.770643 latency=284.833ms
+frame=023 start=1789108233.770685 end=1789108234.060138 latency=289.448ms
+frame=024 start=1789108234.060185 end=1789108235.174198 latency=1114.003ms
+frame=025 start=1789108235.174272 end=1789108235.231443 latency=57.166ms
+frame=028 start=1789108235.271898 end=1789108235.327754 latency=55.849ms
+frame=029 start=1789108235.327814 end=1789108235.355140 latency=27.318ms
+frame=030 start=1789108235.355218 end=1789108235.531998 latency=176.774ms
+frame=031 start=1789108235.532061 end=1789108236.064098 latency=532.030ms
+frame=032 start=1789108236.064168 end=1789108236.101909 latency=37.734ms
+frame=033 start=1789108236.101977 end=1789108236.206666 latency=104.685ms
+frame=034 start=1789108236.206729 end=1789108236.297553 latency=90.816ms
+frame=035 start=1789108236.297637 end=1789108236.321165 latency=23.525ms
+frame=036 start=1789108236.321200 end=1789108236.419753 latency=98.548ms
+frame=038 start=1789108236.439988 end=1789108236.503805 latency=63.808ms
+frame=039 start=1789108236.503858 end=1789108236.552196 latency=48.334ms
+frame=040 start=1789108236.552239 end=1789108237.285307 latency=733.062ms
+frame=041 start=1789108237.285405 end=1789108237.401556 latency=116.146ms
+frame=042 start=1789108237.401604 end=1789108237.566228 latency=164.619ms
+frame=043 start=1789108237.566291 end=1789108237.660094 latency=93.798ms
+frame=044 start=1789108237.660158 end=1789108237.815858 latency=155.694ms
+frame=045 start=1789108237.815929 end=1789108237.964419 latency=148.483ms
+frame=046 start=1789108237.964525 end=1789108240.705888 latency=2741.357ms
+frame=055 start=1789108240.867118 end=1789108240.942808 latency=75.682ms
+frame=056 start=1789108240.942850 end=1789108241.028732 latency=85.876ms
+frame=057 start=1789108241.028796 end=1789108241.092669 latency=63.868ms
+frame=058 start=1789108241.092718 end=1789108241.141839 latency=49.117ms
+frame=059 start=1789108241.141896 end=1789108241.250268 latency=108.366ms
+frame=060 start=1789108241.250333 end=1789108241.290755 latency=40.416ms
+frame=062 start=1789108241.310985 end=1789108241.363662 latency=52.664ms
+frame=063 start=1789108241.363729 end=1789108241.435556 latency=71.820ms
+frame=064 start=1789108241.435624 end=1789108241.478104 latency=42.473ms
+frame=065 start=1789108241.478174 end=1789108241.575466 latency=97.288ms
+frame=066 start=1789108241.575506 end=1789108241.601230 latency=25.718ms
+frame=067 start=1789108241.601311 end=1789108241.674881 latency=73.564ms
+frame=068 start=1789108241.674935 end=1789108241.720169 latency=45.227ms
+frame=069 start=1789108241.720234 end=1789108241.785381 latency=65.139ms
+frame=071 start=1789108241.805597 end=1789108241.843157 latency=37.553ms
+frame=073 start=1789108241.863390 end=1789108241.885171 latency=21.768ms
+frame=074 start=1789108241.885234 end=1789108241.948580 latency=63.340ms
+frame=079 start=1789108242.029851 end=1789108242.054090 latency=24.226ms
+frame=080 start=1789108242.054171 end=1789108242.131562 latency=77.385ms
+frame=081 start=1789108242.131631 end=1789108242.207236 latency=75.597ms
+frame=083 start=1789108242.227442 end=1789108242.250414 latency=22.966ms
+frame=084 start=1789108242.250461 end=1789108242.391945 latency=141.482ms
+frame=085 start=1789108242.391968 end=1789108243.305989 latency=914.016ms
+frame=086 start=1789108243.306052 end=1789108243.391380 latency=85.320ms
+frame=087 start=1789108243.391417 end=1789108243.753169 latency=361.748ms
+frame=088 start=1789108243.753208 end=1789108243.937084 latency=183.871ms
+frame=089 start=1789108243.937144 end=1789108243.972172 latency=35.023ms
+frame=090 start=1789108243.972230 end=1789108244.018319 latency=46.085ms
+frame=091 start=1789108244.018364 end=1789108244.045824 latency=27.455ms
+frame=092 start=1789108244.045874 end=1789108244.099699 latency=53.819ms
+frame=093 start=1789108244.099770 end=1789108244.156651 latency=56.875ms
+frame=094 start=1789108244.156748 end=1789108244.217134 latency=60.380ms
+frame=095 start=1789108244.217205 end=1789108244.268419 latency=51.207ms
+frame=096 start=1789108244.268485 end=1789108244.319344 latency=50.854ms
+frame=097 start=1789108244.319400 end=1789108244.392252 latency=72.849ms
+frame=099 start=1789108244.412503 end=1789108244.469860 latency=57.351ms
+frame=100 start=1789108244.469898 end=1789108244.615717 latency=145.815ms
+frame=101 start=1789108244.615764 end=1789108244.778510 latency=162.740ms
+frame=102 start=1789108244.778585 end=1789108244.815557 latency=36.968ms
+frame=103 start=1789108244.815606 end=1789108246.503887 latency=1688.276ms
+frame=104 start=1789108246.503936 end=1789108246.577599 latency=73.657ms
+frame=105 start=1789108246.577667 end=1789108246.606074 latency=28.402ms
+frame=106 start=1789108246.606133 end=1789108246.673405 latency=67.266ms
+frame=108 start=1789108246.693812 end=1789108246.742733 latency=48.906ms
+frame=109 start=1789108246.742807 end=1789108246.831743 latency=88.928ms
+frame=111 start=1789108246.851954 end=1789108247.004700 latency=152.740ms
+frame=112 start=1789108247.004760 end=1789108247.135395 latency=130.628ms
+frame=113 start=1789108247.135462 end=1789108247.211303 latency=75.835ms
+frame=114 start=1789108247.211376 end=1789108247.239053 latency=27.671ms
+frame=115 start=1789108247.239124 end=1789108247.266837 latency=27.707ms
+frame=117 start=1789108247.287078 end=1789108247.390281 latency=103.193ms
+frame=118 start=1789108247.390319 end=1789108247.464237 latency=73.912ms
+frame=119 start=1789108247.464307 end=1789108247.513230 latency=48.918ms
+frame=120 start=1789108247.513324 end=1789108248.120415 latency=607.084ms
+frame=121 start=1789108248.120487 end=1789108248.389108 latency=268.618ms
+frame=122 start=1789108248.389149 end=1789108248.464955 latency=75.800ms
+frame=123 start=1789108248.465026 end=1789108248.607616 latency=142.587ms
+frame=127 start=1789108248.668527 end=1789108248.747085 latency=78.545ms
+frame=128 start=1789108248.747153 end=1789108248.822894 latency=75.735ms
+frame=129 start=1789108248.822970 end=1789108248.892228 latency=69.253ms
+frame=130 start=1789108248.892283 end=1789108249.004099 latency=111.810ms
+frame=131 start=1789108249.004179 end=1789108249.024832 latency=20.646ms
+frame=132 start=1789108249.024901 end=1789108249.100956 latency=76.053ms
+frame=134 start=1789108249.121225 end=1789108249.234349 latency=113.115ms
+frame=135 start=1789108249.234421 end=1789108249.275843 latency=41.416ms
+frame=136 start=1789108249.275902 end=1789108249.322104 latency=46.196ms
+frame=137 start=1789108249.322175 end=1789108249.475436 latency=153.255ms
+frame=138 start=1789108249.475506 end=1789108249.789164 latency=313.654ms
+frame=139 start=1789108249.789198 end=1789108249.822320 latency=33.117ms
+frame=140 start=1789108249.822380 end=1789108250.387039 latency=564.655ms
+frame=141 start=1789108250.387085 end=1789108250.419261 latency=32.171ms
+frame=142 start=1789108250.419322 end=1789108250.489783 latency=70.455ms
+frame=143 start=1789108250.489849 end=1789108250.608222 latency=118.368ms
+frame=144 start=1789108250.608292 end=1789108251.085476 latency=477.179ms
+frame=145 start=1789108251.085546 end=1789108251.435154 latency=349.602ms
+frame=146 start=1789108251.435223 end=1789108251.864338 latency=429.109ms
+frame=147 start=1789108251.864418 end=1789108251.978228 latency=113.804ms
+frame=149 start=1789108251.998518 end=1789108252.030193 latency=31.666ms
+frame=150 start=1789108252.030259 end=1789108252.051396 latency=21.132ms
+frame=152 start=1789108252.071728 end=1789108252.091947 latency=20.210ms
+frame=153 start=1789108252.091998 end=1789108252.267987 latency=175.982ms
+frame=154 start=1789108252.268054 end=1789108252.293951 latency=25.890ms
+frame=155 start=1789108252.294034 end=1789108252.328884 latency=34.844ms
+frame=156 start=1789108252.328955 end=1789108252.385994 latency=57.034ms
+frame=157 start=1789108252.386051 end=1789108252.430591 latency=44.533ms
+frame=158 start=1789108252.430665 end=1789108253.013168 latency=582.497ms
+frame=159 start=1789108253.013235 end=1789108253.126337 latency=113.095ms
+frame=160 start=1789108253.126441 end=1789108253.181067 latency=54.621ms
+frame=161 start=1789108253.181137 end=1789108253.715807 latency=534.663ms
+frame=162 start=1789108253.715876 end=1789108256.224528 latency=2508.648ms
+frame=163 start=1789108256.224570 end=1789108256.301443 latency=76.869ms
+frame=164 start=1789108256.301492 end=1789108256.532978 latency=231.482ms
+frame=165 start=1789108256.533010 end=1789108256.930528 latency=397.513ms
+frame=166 start=1789108256.930594 end=1789108256.979052 latency=48.450ms
+frame=170 start=1789108257.039731 end=1789108257.268454 latency=228.711ms
+frame=171 start=1789108257.268524 end=1789108257.347110 latency=78.579ms
+frame=172 start=1789108257.347179 end=1789108257.517643 latency=170.460ms
+frame=173 start=1789108257.517719 end=1789108257.544174 latency=26.452ms
+frame=174 start=1789108257.544205 end=1789108257.567580 latency=23.370ms
+frame=175 start=1789108257.567639 end=1789108257.609773 latency=42.130ms
+frame=176 start=1789108257.609830 end=1789108257.734554 latency=124.718ms
+frame=177 start=1789108257.734603 end=1789108257.861759 latency=127.154ms
+frame=178 start=1789108257.861783 end=1789108258.868193 latency=1006.404ms
+frame=188 start=1789108259.050637 end=1789108259.090200 latency=39.557ms
+frame=190 start=1789108259.110343 end=1789108259.152573 latency=42.228ms
+frame=191 start=1789108259.152589 end=1789108259.204924 latency=52.332ms
+frame=192 start=1789108259.204967 end=1789108259.225399 latency=20.429ms
+frame=193 start=1789108259.225434 end=1789108259.250267 latency=24.832ms
+frame=195 start=1789108259.270437 end=1789108259.336791 latency=66.351ms
+frame=197 start=1789108259.356885 end=1789108259.394531 latency=37.642ms
+frame=199 start=1789108259.414795 end=1789108259.468175 latency=53.361ms
+frame=200 start=1789108259.468282 end=1789108259.772147 latency=303.859ms
+frame=212 start=1789108259.994821 end=1789108260.125887 latency=131.058ms
+frame=213 start=1789108260.125973 end=1789108260.248006 latency=122.026ms
+frame=214 start=1789108260.248075 end=1789108260.331792 latency=83.712ms
+frame=217 start=1789108260.372491 end=1789108260.418519 latency=46.016ms
+frame=218 start=1789108260.418577 end=1789108260.497872 latency=79.290ms
+frame=219 start=1789108260.497924 end=1789108260.794823 latency=296.896ms
+frame=220 start=1789108260.794858 end=1789108260.831664 latency=36.802ms
+frame=222 start=1789108260.851889 end=1789108260.882972 latency=31.077ms
+frame=223 start=1789108260.883021 end=1789108260.913430 latency=30.404ms
+frame=224 start=1789108260.913483 end=1789108260.963580 latency=50.091ms
+frame=225 start=1789108260.963647 end=1789108261.016460 latency=52.809ms
+frame=226 start=1789108261.016510 end=1789108261.328925 latency=312.410ms
+frame=227 start=1789108261.328983 end=1789108261.437270 latency=108.282ms
+frame=228 start=1789108261.437322 end=1789108261.538491 latency=101.166ms
+frame=229 start=1789108261.538520 end=1789108261.645212 latency=106.684ms
+frame=230 start=1789108261.645284 end=1789108261.697555 latency=52.258ms
+frame=231 start=1789108261.697618 end=1789108261.782895 latency=85.272ms
+frame=232 start=1789108261.782941 end=1789108261.857203 latency=74.256ms
+frame=234 start=1789108261.877626 end=1789108261.902114 latency=24.475ms
+frame=235 start=1789108261.902182 end=1789108261.963770 latency=61.582ms
+frame=236 start=1789108261.963839 end=1789108261.986965 latency=23.121ms
+frame=239 start=1789108262.027408 end=1789108262.060618 latency=33.203ms
+frame=244 start=1789108262.141543 end=1789108262.168387 latency=26.837ms
+frame=245 start=1789108262.168439 end=1789108262.310260 latency=141.817ms
+frame=246 start=1789108262.310307 end=1789108262.422446 latency=112.134ms
+frame=247 start=1789108262.422489 end=1789108262.501262 latency=78.769ms
+frame=249 start=1789108262.521430 end=1789108262.561995 latency=40.560ms
+frame=250 start=1789108262.562048 end=1789108262.621245 latency=59.193ms
+frame=251 start=1789108262.621290 end=1789108262.650505 latency=29.211ms
+frame=252 start=1789108262.650547 end=1789108262.701410 latency=50.859ms
+frame=253 start=1789108262.701474 end=1789108263.180900 latency=479.422ms
+frame=255 start=1789108263.201171 end=1789108263.246917 latency=45.731ms
+frame=256 start=1789108263.246994 end=1789108263.375096 latency=128.100ms
+frame=258 start=1789108263.395233 end=1789108263.611866 latency=216.626ms
+frame=259 start=1789108263.611931 end=1789108263.831220 latency=219.286ms
+frame=260 start=1789108263.831261 end=1789108264.137050 latency=305.784ms
+frame=261 start=1789108264.137096 end=1789108264.727280 latency=590.178ms
+frame=262 start=1789108264.727338 end=1789108264.848858 latency=121.515ms
+frame=263 start=1789108264.848908 end=1789108265.062308 latency=213.394ms
+frame=264 start=1789108265.062374 end=1789108265.178924 latency=116.545ms
+frame=265 start=1789108265.178991 end=1789108265.298461 latency=119.464ms
+frame=266 start=1789108265.298565 end=1789108265.365949 latency=67.378ms
+frame=267 start=1789108265.366015 end=1789108265.416150 latency=50.130ms
+frame=268 start=1789108265.416198 end=1789108265.466970 latency=50.767ms
+frame=269 start=1789108265.467052 end=1789108265.541837 latency=74.780ms
+frame=270 start=1789108265.541885 end=1789108265.614618 latency=72.729ms
+frame=271 start=1789108265.614658 end=1789108265.647330 latency=32.665ms
+frame=272 start=1789108265.647396 end=1789108265.727682 latency=80.279ms
+frame=273 start=1789108265.727747 end=1789108265.750458 latency=22.704ms
+frame=274 start=1789108265.750530 end=1789108265.775150 latency=24.613ms
+frame=275 start=1789108265.775220 end=1789108267.507887 latency=1732.662ms
+frame=279 start=1789108267.568773 end=1789108267.666047 latency=97.260ms
+frame=283 start=1789108267.726873 end=1789108267.752991 latency=26.112ms
+frame=285 start=1789108267.773250 end=1789108267.809709 latency=36.453ms
+frame=286 start=1789108267.809735 end=1789108267.832084 latency=22.344ms
+frame=287 start=1789108267.832129 end=1789108267.916763 latency=84.629ms
+frame=289 start=1789108267.937113 end=1789108267.997920 latency=60.796ms
+frame=290 start=1789108267.997972 end=1789108268.025788 latency=27.810ms
+frame=292 start=1789108268.046183 end=1789108268.095607 latency=49.410ms
+frame=293 start=1789108268.095678 end=1789108268.133264 latency=37.579ms
+frame=294 start=1789108268.133332 end=1789108268.155303 latency=21.966ms
+frame=295 start=1789108268.155358 end=1789108268.181413 latency=26.049ms
+frame=296 start=1789108268.181479 end=1789108268.218237 latency=36.753ms
+frame=298 start=1789108268.238510 end=1789108268.285930 latency=47.407ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+[1]+  Exit 124                sudo -n timeout 90 ping -D -i 0.05 -I enp3s0 192.168.8.148 > ~/ping_robot_eth_test.txt
+================ RUN 4 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41332)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8663
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8663
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41332 main_tid=41332
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        63.103 ms
+median:      13.124 ms
+p90:         82.719 ms
+p95:         145.174 ms
+p99:         692.380 ms
+max:         3567.030 ms
+>5ms:        253
+>20ms:       113
+>40ms:       71
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=000 start=1789108273.730061 end=1789108273.806915 latency=76.848ms
+frame=001 start=1789108273.806967 end=1789108273.833433 latency=26.464ms
+frame=002 start=1789108273.833464 end=1789108273.861909 latency=28.440ms
+frame=003 start=1789108273.861992 end=1789108273.910108 latency=48.112ms
+frame=010 start=1789108274.031238 end=1789108274.051888 latency=20.643ms
+frame=011 start=1789108274.051928 end=1789108274.107335 latency=55.402ms
+frame=013 start=1789108274.127529 end=1789108274.240027 latency=112.492ms
+frame=014 start=1789108274.240095 end=1789108274.291450 latency=51.350ms
+frame=015 start=1789108274.291501 end=1789108274.364657 latency=73.153ms
+frame=017 start=1789108274.384793 end=1789108274.409968 latency=25.173ms
+frame=019 start=1789108274.430073 end=1789108274.452458 latency=22.384ms
+frame=020 start=1789108274.452471 end=1789108274.491285 latency=38.810ms
+frame=021 start=1789108274.491335 end=1789108274.545628 latency=54.288ms
+frame=022 start=1789108274.545676 end=1789108274.604087 latency=58.408ms
+frame=023 start=1789108274.604127 end=1789108274.645916 latency=41.786ms
+frame=024 start=1789108274.645953 end=1789108274.730454 latency=84.496ms
+frame=025 start=1789108274.730527 end=1789108274.752473 latency=21.943ms
+frame=027 start=1789108274.772603 end=1789108274.854039 latency=81.434ms
+frame=028 start=1789108274.854060 end=1789108275.505493 latency=651.429ms
+frame=030 start=1789108275.525760 end=1789108275.552951 latency=27.183ms
+frame=031 start=1789108275.552993 end=1789108275.585552 latency=32.555ms
+frame=036 start=1789108275.666278 end=1789108275.709255 latency=42.966ms
+frame=037 start=1789108275.709309 end=1789108275.771601 latency=62.287ms
+frame=038 start=1789108275.771659 end=1789108275.802049 latency=30.386ms
+frame=039 start=1789108275.802096 end=1789108275.898290 latency=96.188ms
+frame=040 start=1789108275.898355 end=1789108275.963176 latency=64.815ms
+frame=041 start=1789108275.963277 end=1789108276.059157 latency=95.876ms
+frame=042 start=1789108276.059195 end=1789108276.116318 latency=57.116ms
+frame=044 start=1789108276.136680 end=1789108276.189265 latency=52.572ms
+frame=045 start=1789108276.189331 end=1789108276.211246 latency=21.909ms
+frame=046 start=1789108276.211339 end=1789108276.234974 latency=23.629ms
+frame=049 start=1789108276.275372 end=1789108276.309067 latency=33.689ms
+frame=050 start=1789108276.309105 end=1789108276.398029 latency=88.918ms
+frame=051 start=1789108276.398074 end=1789108276.472739 latency=74.658ms
+frame=052 start=1789108276.472804 end=1789108276.541913 latency=69.102ms
+frame=053 start=1789108276.541983 end=1789108276.625409 latency=83.419ms
+frame=055 start=1789108276.645622 end=1789108276.672641 latency=27.014ms
+frame=056 start=1789108276.672689 end=1789108276.711000 latency=38.307ms
+frame=057 start=1789108276.711053 end=1789108276.733514 latency=22.457ms
+frame=058 start=1789108276.733554 end=1789108276.775348 latency=41.791ms
+frame=059 start=1789108276.775395 end=1789108277.187641 latency=412.238ms
+frame=061 start=1789108277.208026 end=1789108277.900420 latency=692.380ms
+frame=062 start=1789108277.900492 end=1789108278.045672 latency=145.174ms
+frame=064 start=1789108278.066003 end=1789108278.114267 latency=48.252ms
+frame=065 start=1789108278.114340 end=1789108278.200987 latency=86.640ms
+frame=066 start=1789108278.201058 end=1789108278.264345 latency=63.278ms
+frame=067 start=1789108278.264418 end=1789108278.294929 latency=30.505ms
+frame=068 start=1789108278.295009 end=1789108278.321662 latency=26.648ms
+frame=069 start=1789108278.321707 end=1789108278.362240 latency=40.528ms
+frame=070 start=1789108278.362291 end=1789108278.409979 latency=47.683ms
+frame=071 start=1789108278.410035 end=1789108278.450795 latency=40.756ms
+frame=074 start=1789108278.491306 end=1789108282.058345 latency=3567.030ms
+frame=078 start=1789108282.118935 end=1789108282.164109 latency=45.168ms
+frame=079 start=1789108282.164155 end=1789108282.246878 latency=82.719ms
+frame=080 start=1789108282.246955 end=1789108282.421474 latency=174.513ms
+frame=081 start=1789108282.421526 end=1789108282.497025 latency=75.491ms
+frame=082 start=1789108282.497107 end=1789108282.531285 latency=34.176ms
+frame=083 start=1789108282.531307 end=1789108282.619819 latency=88.507ms
+frame=084 start=1789108282.619874 end=1789108283.475997 latency=856.115ms
+frame=085 start=1789108283.476070 end=1789108283.507259 latency=31.182ms
+frame=086 start=1789108283.507323 end=1789108283.596193 latency=88.864ms
+frame=087 start=1789108283.596262 end=1789108283.646947 latency=50.681ms
+frame=088 start=1789108283.647000 end=1789108284.148954 latency=501.946ms
+frame=093 start=1789108284.230140 end=1789108284.278740 latency=48.587ms
+frame=095 start=1789108284.299022 end=1789108284.326818 latency=27.794ms
+frame=096 start=1789108284.326836 end=1789108284.405931 latency=79.094ms
+frame=097 start=1789108284.405951 end=1789108284.451110 latency=45.157ms
+frame=103 start=1789108284.551766 end=1789108284.587154 latency=35.381ms
+frame=104 start=1789108284.587202 end=1789108284.631254 latency=44.048ms
+frame=108 start=1789108284.691715 end=1789108284.734439 latency=42.717ms
+frame=109 start=1789108284.734511 end=1789108284.767190 latency=32.676ms
+frame=110 start=1789108284.767227 end=1789108284.822891 latency=55.660ms
+frame=113 start=1789108284.863163 end=1789108285.506330 latency=643.160ms
+frame=114 start=1789108285.506382 end=1789108287.808346 latency=2301.961ms
+frame=116 start=1789108287.828556 end=1789108287.912337 latency=83.776ms
+frame=118 start=1789108287.932623 end=1789108287.953968 latency=21.338ms
+frame=124 start=1789108288.055221 end=1789108288.083534 latency=28.306ms
+frame=146 start=1789108288.508343 end=1789108288.529521 latency=21.175ms
+frame=153 start=1789108288.650181 end=1789108288.680197 latency=30.006ms
+frame=166 start=1789108288.923371 end=1789108288.951346 latency=27.962ms
+frame=174 start=1789108289.092430 end=1789108289.236288 latency=143.853ms
+frame=175 start=1789108289.236338 end=1789108289.308904 latency=72.559ms
+frame=177 start=1789108289.329271 end=1789108289.364223 latency=34.939ms
+frame=178 start=1789108289.364288 end=1789108289.456809 latency=92.516ms
+frame=179 start=1789108289.456845 end=1789108289.706265 latency=249.415ms
+frame=192 start=1789108289.947466 end=1789108289.990983 latency=43.514ms
+frame=193 start=1789108289.991015 end=1789108290.049286 latency=58.266ms
+frame=206 start=1789108290.291182 end=1789108290.316658 latency=25.469ms
+frame=207 start=1789108290.316720 end=1789108290.340838 latency=24.115ms
+frame=213 start=1789108290.441449 end=1789108290.462568 latency=21.115ms
+frame=242 start=1789108291.027371 end=1789108291.048991 latency=21.614ms
+frame=243 start=1789108291.049032 end=1789108291.127570 latency=78.533ms
+frame=244 start=1789108291.127629 end=1789108291.263240 latency=135.608ms
+frame=245 start=1789108291.263274 end=1789108291.341767 latency=78.487ms
+frame=246 start=1789108291.341837 end=1789108291.375992 latency=34.149ms
+frame=247 start=1789108291.376050 end=1789108291.417083 latency=41.026ms
+frame=248 start=1789108291.417154 end=1789108291.496639 latency=79.481ms
+frame=249 start=1789108291.496686 end=1789108291.895109 latency=398.417ms
+frame=264 start=1789108292.178905 end=1789108292.202916 latency=24.006ms
+frame=267 start=1789108292.243216 end=1789108292.269401 latency=26.176ms
+frame=268 start=1789108292.269464 end=1789108292.289993 latency=20.523ms
+frame=276 start=1789108292.431771 end=1789108292.889116 latency=457.335ms
+frame=277 start=1789108292.889143 end=1789108292.912373 latency=23.228ms
+frame=279 start=1789108292.932572 end=1789108293.131254 latency=198.678ms
+frame=280 start=1789108293.131279 end=1789108293.805339 latency=674.053ms
+frame=281 start=1789108293.805407 end=1789108293.829164 latency=23.751ms
+frame=282 start=1789108293.829230 end=1789108293.871140 latency=41.902ms
+frame=283 start=1789108293.871215 end=1789108293.895655 latency=24.438ms
+frame=293 start=1789108294.077460 end=1789108294.563072 latency=485.600ms
+frame=294 start=1789108294.563139 end=1789108294.609062 latency=45.918ms
+frame=295 start=1789108294.609119 end=1789108294.701595 latency=92.471ms
+frame=296 start=1789108294.701634 end=1789108294.723324 latency=21.687ms
+frame=298 start=1789108294.743459 end=1789108294.764409 latency=20.945ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+================ RUN 5 ================
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+[互斥锁] 已独占 192.168.8.148 #1 (pid=41351)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8860
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8860
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(5.0%): 0
+左臂 single enable: (0, True)
+固定目标 q = [-17.711, 29.247, 6.936, -75.605, -13.196, -11.823, 12.424]
+测试 300 帧，同一目标，周期 20 ms
+TRACE_ID pid=41351 main_tid=41351
+保持机械臂当前位置不变；回车开始 stationary pulse latency probe，Ctrl-C 中止：
+
+=== armPluseToServo stationary latency ===
+calls:       300
+mean:        78.988 ms
+median:      22.989 ms
+p90:         114.828 ms
+p95:         259.936 ms
+p99:         969.607 ms
+max:         2941.758 ms
+>5ms:        243
+>20ms:       158
+>40ms:       101
+correlation log: pulse_stationary_correlation.jsonl
+
+=== slow Pulse calls >=20ms ===
+frame=009 start=1789108299.837214 end=1789108299.860381 latency=23.160ms
+frame=063 start=1789108300.929712 end=1789108300.970183 latency=40.458ms
+frame=071 start=1789108301.112163 end=1789108301.132927 latency=20.756ms
+frame=073 start=1789108301.153268 end=1789108301.178407 latency=25.126ms
+frame=076 start=1789108301.218851 end=1789108301.241451 latency=22.596ms
+frame=077 start=1789108301.241496 end=1789108301.273164 latency=31.665ms
+frame=079 start=1789108301.293617 end=1789108301.513400 latency=219.777ms
+frame=080 start=1789108301.513444 end=1789108304.009553 latency=2496.104ms
+frame=081 start=1789108304.009605 end=1789108304.076222 latency=66.611ms
+frame=082 start=1789108304.076290 end=1789108304.107014 latency=30.721ms
+frame=083 start=1789108304.107052 end=1789108304.149228 latency=42.170ms
+frame=084 start=1789108304.149299 end=1789108304.194412 latency=45.107ms
+frame=085 start=1789108304.194470 end=1789108304.244020 latency=49.543ms
+frame=086 start=1789108304.244085 end=1789108304.392698 latency=148.608ms
+frame=088 start=1789108304.413050 end=1789108304.505544 latency=92.484ms
+frame=089 start=1789108304.505583 end=1789108304.603603 latency=98.014ms
+frame=096 start=1789108304.725482 end=1789108304.760749 latency=35.256ms
+frame=099 start=1789108304.801303 end=1789108304.844279 latency=42.962ms
+frame=100 start=1789108304.844345 end=1789108305.813959 latency=969.607ms
+frame=101 start=1789108305.814031 end=1789108305.881055 latency=67.019ms
+frame=102 start=1789108305.881118 end=1789108306.304836 latency=423.714ms
+frame=103 start=1789108306.304876 end=1789108306.355199 latency=50.317ms
+frame=104 start=1789108306.355258 end=1789108306.470088 latency=114.828ms
+frame=106 start=1789108306.490352 end=1789108306.513880 latency=23.522ms
+frame=108 start=1789108306.534054 end=1789108306.594185 latency=60.122ms
+frame=110 start=1789108306.614567 end=1789108306.647187 latency=32.608ms
+frame=111 start=1789108306.647260 end=1789108306.696613 latency=49.349ms
+frame=112 start=1789108306.696648 end=1789108307.384840 latency=688.186ms
+frame=113 start=1789108307.384900 end=1789108307.510274 latency=125.371ms
+frame=114 start=1789108307.510311 end=1789108307.598233 latency=87.916ms
+frame=116 start=1789108307.618440 end=1789108307.647569 latency=29.117ms
+frame=119 start=1789108307.687997 end=1789108308.104822 latency=416.814ms
+frame=120 start=1789108308.104887 end=1789108308.147499 latency=42.606ms
+frame=121 start=1789108308.147561 end=1789108308.206673 latency=59.106ms
+frame=123 start=1789108308.226993 end=1789108308.296721 latency=69.714ms
+frame=125 start=1789108308.316903 end=1789108308.347678 latency=30.770ms
+frame=129 start=1789108308.408176 end=1789108308.476710 latency=68.527ms
+frame=131 start=1789108308.497070 end=1789108308.539843 latency=42.762ms
+frame=133 start=1789108308.560216 end=1789108308.631439 latency=71.212ms
+frame=134 start=1789108308.631507 end=1789108308.729520 latency=98.005ms
+frame=135 start=1789108308.729591 end=1789108308.911502 latency=181.907ms
+frame=136 start=1789108308.911540 end=1789108309.705098 latency=793.554ms
+frame=139 start=1789108309.745484 end=1789108310.350395 latency=604.906ms
+frame=140 start=1789108310.350462 end=1789108310.405737 latency=55.269ms
+frame=141 start=1789108310.405802 end=1789108310.848591 latency=442.783ms
+frame=142 start=1789108310.848664 end=1789108311.604450 latency=755.782ms
+frame=143 start=1789108311.604518 end=1789108311.669347 latency=64.824ms
+frame=144 start=1789108311.669406 end=1789108311.753864 latency=84.452ms
+frame=145 start=1789108311.753933 end=1789108311.789113 latency=35.174ms
+frame=148 start=1789108311.829499 end=1789108311.989491 latency=159.987ms
+frame=149 start=1789108311.989539 end=1789108312.026527 latency=36.985ms
+frame=155 start=1789108312.127176 end=1789108312.330863 latency=203.679ms
+frame=157 start=1789108312.351030 end=1789108312.439835 latency=88.801ms
+frame=158 start=1789108312.439874 end=1789108312.484121 latency=44.244ms
+frame=160 start=1789108312.504295 end=1789108312.537048 latency=32.750ms
+frame=162 start=1789108312.557179 end=1789108312.600301 latency=43.120ms
+frame=163 start=1789108312.600323 end=1789108312.662833 latency=62.506ms
+frame=165 start=1789108312.683058 end=1789108312.735155 latency=52.089ms
+frame=166 start=1789108312.735192 end=1789108312.764220 latency=29.026ms
+frame=170 start=1789108312.824825 end=1789108312.862199 latency=37.367ms
+frame=171 start=1789108312.862275 end=1789108312.883330 latency=21.052ms
+frame=172 start=1789108312.883379 end=1789108312.916164 latency=32.781ms
+frame=173 start=1789108312.916242 end=1789108312.958395 latency=42.147ms
+frame=174 start=1789108312.958452 end=1789108312.984168 latency=25.709ms
+frame=175 start=1789108312.984240 end=1789108313.017621 latency=33.376ms
+frame=177 start=1789108313.037954 end=1789108313.129326 latency=91.360ms
+frame=178 start=1789108313.129397 end=1789108313.175143 latency=45.741ms
+frame=179 start=1789108313.175196 end=1789108313.209607 latency=34.407ms
+frame=180 start=1789108313.209660 end=1789108313.334478 latency=124.815ms
+frame=181 start=1789108313.334520 end=1789108313.360504 latency=25.983ms
+frame=183 start=1789108313.380644 end=1789108313.420999 latency=40.351ms
+frame=184 start=1789108313.421042 end=1789108313.460685 latency=39.640ms
+frame=185 start=1789108313.460718 end=1789108313.492619 latency=31.899ms
+frame=186 start=1789108313.492666 end=1789108313.590351 latency=97.680ms
+frame=188 start=1789108313.610758 end=1789108313.647547 latency=36.775ms
+frame=189 start=1789108313.647632 end=1789108313.693707 latency=46.070ms
+frame=190 start=1789108313.693767 end=1789108313.731299 latency=37.527ms
+frame=191 start=1789108313.731350 end=1789108314.066558 latency=335.202ms
+frame=192 start=1789108314.066624 end=1789108317.008388 latency=2941.758ms
+frame=193 start=1789108317.008449 end=1789108317.059978 latency=51.523ms
+frame=195 start=1789108317.080296 end=1789108317.156349 latency=76.039ms
+frame=196 start=1789108317.156422 end=1789108317.184709 latency=28.282ms
+frame=198 start=1789108317.205034 end=1789108317.247334 latency=42.287ms
+frame=199 start=1789108317.247404 end=1789108317.615413 latency=368.001ms
+frame=200 start=1789108317.615515 end=1789108317.755511 latency=139.989ms
+frame=201 start=1789108317.755608 end=1789108317.795613 latency=40.000ms
+frame=202 start=1789108317.795660 end=1789108317.817875 latency=22.212ms
+frame=203 start=1789108317.817914 end=1789108317.841752 latency=23.835ms
+frame=204 start=1789108317.841788 end=1789108317.913553 latency=71.762ms
+frame=205 start=1789108317.913592 end=1789108318.048079 latency=134.483ms
+frame=206 start=1789108318.048117 end=1789108318.081516 latency=33.394ms
+frame=207 start=1789108318.081568 end=1789108318.111090 latency=29.518ms
+frame=209 start=1789108318.131308 end=1789108318.268461 latency=137.145ms
+frame=210 start=1789108318.268524 end=1789108318.350897 latency=82.367ms
+frame=211 start=1789108318.350958 end=1789108318.450985 latency=100.023ms
+frame=213 start=1789108318.471205 end=1789108318.555084 latency=83.870ms
+frame=214 start=1789108318.555152 end=1789108318.661455 latency=106.298ms
+frame=215 start=1789108318.661524 end=1789108318.712625 latency=51.094ms
+frame=218 start=1789108318.753173 end=1789108318.783535 latency=30.356ms
+frame=219 start=1789108318.783599 end=1789108318.811085 latency=27.480ms
+frame=220 start=1789108318.811149 end=1789108318.838387 latency=27.232ms
+frame=221 start=1789108318.838451 end=1789108318.905262 latency=66.804ms
+frame=222 start=1789108318.905331 end=1789108318.946568 latency=41.233ms
+frame=223 start=1789108318.946607 end=1789108319.095872 latency=149.260ms
+frame=224 start=1789108319.095930 end=1789108319.150095 latency=54.160ms
+frame=225 start=1789108319.150142 end=1789108319.176793 latency=26.644ms
+frame=226 start=1789108319.176886 end=1789108319.209651 latency=32.759ms
+frame=227 start=1789108319.209726 end=1789108319.232121 latency=22.388ms
+frame=228 start=1789108319.232194 end=1789108319.253036 latency=20.837ms
+frame=229 start=1789108319.253111 end=1789108319.339210 latency=86.095ms
+frame=232 start=1789108319.379784 end=1789108319.420921 latency=41.124ms
+frame=233 start=1789108319.420995 end=1789108319.477675 latency=56.675ms
+frame=234 start=1789108319.477768 end=1789108319.546305 latency=68.533ms
+frame=235 start=1789108319.546343 end=1789108319.570859 latency=24.512ms
+frame=236 start=1789108319.570913 end=1789108319.625908 latency=54.991ms
+frame=238 start=1789108319.646163 end=1789108319.671680 latency=25.507ms
+frame=241 start=1789108319.712506 end=1789108319.827723 latency=115.203ms
+frame=242 start=1789108319.827792 end=1789108319.900366 latency=72.567ms
+frame=243 start=1789108319.900435 end=1789108319.974283 latency=73.841ms
+frame=244 start=1789108319.974360 end=1789108320.015309 latency=40.942ms
+frame=245 start=1789108320.015382 end=1789108320.050386 latency=34.999ms
+frame=247 start=1789108320.070733 end=1789108320.153173 latency=82.428ms
+frame=248 start=1789108320.153239 end=1789108320.194139 latency=40.894ms
+frame=249 start=1789108320.194210 end=1789108320.217035 latency=22.819ms
+frame=250 start=1789108320.217105 end=1789108320.287239 latency=70.129ms
+frame=252 start=1789108320.307667 end=1789108320.343547 latency=35.868ms
+frame=253 start=1789108320.343597 end=1789108320.435754 latency=92.152ms
+frame=254 start=1789108320.435806 end=1789108320.455931 latency=20.119ms
+frame=255 start=1789108320.455998 end=1789108320.547597 latency=91.594ms
+frame=256 start=1789108320.547639 end=1789108320.588154 latency=40.510ms
+frame=257 start=1789108320.588212 end=1789108320.656985 latency=68.768ms
+frame=258 start=1789108320.657081 end=1789108320.682993 latency=25.904ms
+frame=259 start=1789108320.683036 end=1789108320.710972 latency=27.933ms
+frame=260 start=1789108320.711011 end=1789108320.744104 latency=33.090ms
+frame=261 start=1789108320.744136 end=1789108320.869956 latency=125.817ms
+frame=262 start=1789108320.869999 end=1789108320.992458 latency=122.453ms
+frame=263 start=1789108320.992523 end=1789108321.252466 latency=259.936ms
+frame=264 start=1789108321.252526 end=1789108321.298475 latency=45.942ms
+frame=265 start=1789108321.298543 end=1789108321.359076 latency=60.526ms
+frame=266 start=1789108321.359183 end=1789108321.394434 latency=35.245ms
+frame=271 start=1789108321.475070 end=1789108321.502225 latency=27.145ms
+frame=274 start=1789108321.542727 end=1789108322.030055 latency=487.322ms
+frame=275 start=1789108322.030107 end=1789108322.063174 latency=33.059ms
+frame=280 start=1789108322.144130 end=1789108322.178360 latency=34.224ms
+frame=281 start=1789108322.178414 end=1789108322.215544 latency=37.128ms
+frame=283 start=1789108322.235690 end=1789108322.281451 latency=45.757ms
+frame=284 start=1789108322.281482 end=1789108322.341363 latency=59.878ms
+frame=286 start=1789108322.361569 end=1789108322.384839 latency=23.264ms
+frame=288 start=1789108322.405095 end=1789108322.435323 latency=30.223ms
+frame=289 start=1789108322.435364 end=1789108322.519281 latency=83.911ms
+frame=290 start=1789108322.519335 end=1789108322.599242 latency=79.900ms
+frame=291 start=1789108322.599313 end=1789108322.627610 latency=28.294ms
+frame=294 start=1789108322.668198 end=1789108322.742379 latency=74.171ms
+frame=295 start=1789108322.742413 end=1789108324.557632 latency=1815.214ms
+frame=296 start=1789108324.557695 end=1789108324.640541 latency=82.840ms
+frame=297 start=1789108324.640604 end=1789108324.680214 latency=39.604ms
+frame=298 start=1789108324.680283 end=1789108324.703538 latency=23.252ms
+frame=299 start=1789108324.703586 end=1789108325.134198 latency=430.607ms
+全局速度已还原为 10.0%
+[INFO] PilotSDK: Stopping PilotSDK...
+WebSocket server stop successful!!
+[INFO] WebSocketServer: WebSocket server stopped
+[INFO] PilotSDK: PilotSDK stopped
+All ZMQ subscribers stopped
+zmq_manager_ size:  0
+All ZMQ subscribers stopped
+~WebSocketServer successful!!
+WebSocket server stop successful!!
+~WebSocketServerImpl successful!!
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ 
+dev@humble:~/workspace/trackA_worlds_line/trackA_servo$ 

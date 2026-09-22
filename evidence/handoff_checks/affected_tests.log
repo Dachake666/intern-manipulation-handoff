@@ -1,0 +1,8 @@
+..............................                                           [100%]
+=============================== warnings summary ===============================
+../../../../../opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1
+  /opt/anaconda3/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1: DeprecationWarning: Please import `KDTree` from the `scipy.spatial` namespace; the `scipy.spatial.kdtree` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.spatial.kdtree import KDTree
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+30 passed, 1 warning in 34.46s

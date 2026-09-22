@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://xifeng.local/schemas/eye_to_hand_calibration.v1.schema.json",
+  "title":"eye_to_hand_calibration.v1","type":"object","additionalProperties":false,
+  "required":["schema_version","calibration_id","camera_id","arm","length_unit","input_conventions","T_sdk_world_camera","T_camera_sdk_world","algorithm","fit_samples","validation_samples","residuals","input_sha256","stationary_configuration","status"],
+  "properties":{
+    "schema_version":{"const":"eye_to_hand_calibration.v1"},"calibration_id":{"type":"string","minLength":1},
+    "camera_id":{"type":"string","minLength":1},"arm":{"enum":["left","right"]},"length_unit":{"const":"meter"},
+    "input_conventions":{"type":"object","additionalProperties":false,"required":["robot_pose_direction","ros_position_unit","tcp_id","euler_tested_orders"],"properties":{"robot_pose_direction":{"enum":["base_to_hand","hand_to_base"]},"ros_position_unit":{"const":"meter"},"tcp_id":{"type":"string","minLength":1},"euler_tested_orders":{"type":"array","contains":{"const":"Rz_Ry_Rx"},"minItems":2}}},
+    "T_sdk_world_camera":{"$ref":"#/$defs/matrix4"},"T_camera_sdk_world":{"$ref":"#/$defs/matrix4"},"algorithm":{"type":"string","minLength":1},
+    "fit_samples":{"type":"integer","minimum":20},"validation_samples":{"type":"integer","minimum":5},
+    "residuals":{"type":"object","additionalProperties":false,"required":["fit_rms_m","validation_rms_m","validation_max_m","rotation_rms_deg"],"properties":{"fit_rms_m":{"type":"number","minimum":0},"validation_rms_m":{"type":"number","minimum":0},"validation_max_m":{"type":"number","minimum":0},"rotation_rms_deg":{"type":"number","minimum":0}}},
+    "input_sha256":{"type":"array","minItems":25,"items":{"$ref":"#/$defs/hash"}},
+    "stationary_configuration":{"type":"object","additionalProperties":false,"required":["waist_locked","chassis_locked","camera_mount_locked","robot_identity"],"properties":{"waist_locked":{"const":true},"chassis_locked":{"const":true},"camera_mount_locked":{"const":true},"robot_identity":{"type":"string","minLength":1}}},
+    "status":{"const":"VALIDATED"}
+  },
+  "$defs":{"hash":{"type":"string","pattern":"^[0-9a-f]{64}$"},"row4":{"type":"array","prefixItems":[{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"}],"items":false},"matrix4":{"type":"array","prefixItems":[{"$ref":"#/$defs/row4"},{"$ref":"#/$defs/row4"},{"$ref":"#/$defs/row4"},{"$ref":"#/$defs/row4"}],"items":false}}
+}

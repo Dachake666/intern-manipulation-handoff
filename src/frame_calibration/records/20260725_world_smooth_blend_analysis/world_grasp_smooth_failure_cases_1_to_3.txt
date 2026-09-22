@@ -1,0 +1,173 @@
+失败案例 1：
+
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$ python3 -u execute_world_grasp.py world_grasp_latest.json 2>&1 | tee world_grasp_point_$(date +%Y%m%d_%H%M%S).log
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: df281236cff735dfbdb7ac93c8730109b44790da1803f3a1c2a4c9e61159c507
+轨迹: world_grasp_latest.json  模式: smooth  夹爪力度: 1000
+契约: 每点 world = [anchor.X+off.x, anchor.Y+off.y, anchor.Z+off.z, anchor.U, anchor.V, anchor.W]; off_mm 免标定(坐标轴对齐), 姿态全程用 anchor 的 tool-down UVW(固定夹爪朝向)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8145
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8145
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+移动到参考 tool-down 关节姿态取 anchor(仅进场准备, armMoveJoints)...
+  等待到位: 最大误差 0.099 deggg
+anchor 世界位姿 = [472.74, 294.12, 407.63, -20.07, 90.0, 0.0]
+回车开始(人守急停): 
+拐角压缩: 79 密集点 -> 6 拐角
+  START            -> world [472.7, 294.1, 527.6, -20.1, 90.0, 0.0]
+  PICK_DESCEND     -> world [472.7, 294.1, 407.6, -20.1, 90.0, 0.0]
+    过点监控: START            最近距离  119.9mm  ⚠ 可能被抄近路跳过
+    组末到位: PICK_DESCEND 误差 0.7mm
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  PICK_ASCEND      -> world [472.7, 294.1, 527.6, -20.1, 90.0, 0.0]
+  TRANSFER         -> world [472.7, 154.1, 527.6, -20.1, 90.0, 0.0]
+  PLACE_DESCEND    -> world [472.7, 154.1, 413.6, -20.1, 90.0, 0.0]
+
+^C
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$
+
+
+失败案例 2：
+
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$ python3 -u execute_world_grasp.py world_grasp_latest.json 2>&1 | tee world_grasp_point_$(date +%Y%m%d_%H%M%S).log
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: df281236cff735dfbdb7ac93c8730109b44790da1803f3a1c2a4c9e61159c507
+轨迹: world_grasp_latest.json  模式: smooth  夹爪力度: 1000
+契约: 每点 world = [anchor.X+off.x, anchor.Y+off.y, anchor.Z+off.z, anchor.U, anchor.V, anchor.W]; off_mm 免标定(坐标轴对齐), 姿态全程用 anchor 的 tool-down UVW(固定夹爪朝向)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8271
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8271
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":false} 
+登陆成功
+文件上传成功: uploads/varget.log
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+移动到参考 tool-down 关节姿态取 anchor(仅进场准备, armMoveJoints)...
+  等待到位: 最大误差 0.094 deggg
+anchor 世界位姿 = [472.34, 294.22, 406.93, -20.08, 90.0, 0.0]
+回车开始(人守急停): 
+拐角压缩: 79 密集点 -> 6 拐角
+  START            -> world [472.3, 294.2, 526.9, -20.1, 90.0, 0.0]
+  PICK_DESCEND     -> world [472.3, 294.2, 406.9, -20.1, 90.0, 0.0]
+    过点监控: START            最近距离  120.0mm  ⚠ 可能被抄近路跳过
+    组末到位: PICK_DESCEND 误差 0.6mm
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  PICK_ASCEND      -> world [472.3, 294.2, 526.9, -20.1, 90.0, 0.0]
+  TRANSFER         -> world [472.3, 154.2, 526.9, -20.1, 90.0, 0.0]
+  PLACE_DESCEND    -> world [472.3, 154.2, 412.9, -20.1, 90.0, 0.0]
+^C
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$ python3 -u execute_world_grasp.py world_grasp_latest.json 2>&1 | tee world_grasp_point_$(date +%Y%m%d_%H%M%S).log
+
+
+失败案例 3：
+
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$ python3 -u execute_world_grasp.py world_grasp_latest.json 2>&1 | tee world_grasp_point_$(date +%Y%m%d_%H%M%S).log
+✓ 预加载库: libssl.so
+✓ 预加载库: libcrypto.so
+✓ 预加载库: libyouizmq.so
+✓ 预加载库 (LOCAL): libxoip.so
+<frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+轨迹 SHA-256: df281236cff735dfbdb7ac93c8730109b44790da1803f3a1c2a4c9e61159c507
+轨迹: world_grasp_latest.json  模式: smooth  夹爪力度: 1000
+契约: 每点 world = [anchor.X+off.x, anchor.Y+off.y, anchor.Z+off.z, anchor.U, anchor.V, anchor.W]; off_mm 免标定(坐标轴对齐), 姿态全程用 anchor 的 tool-down UVW(固定夹爪朝向)
+WebSocketServerImpl successful!!
+WebSocketServer successful!!
+[INFO] PilotSDK: PilotSDK initialized with host: 192.168.8.148
+============================================================
+启动 PilotSDK
+============================================================
+[INFO] PilotSDK: Starting PilotSDK...
+[INFO] WebSocketServer: Auto-selected WebSocket port: 8985
+[INFO] WebSocketServer: WebSocket server started on 0.0.0.0:8985
+[INFO] PilotSDK: Initializing ZMQ subscribers...
+Failed to open config file: config/interconnection_config.json
+[ERROR] PilotSDK: Failed to load ZMQ config from: config/interconnection_config.json, using default config
+[INFO] PilotSDK: Using default ZMQ port configuration
+[INFO] PilotSDK: ZMQ subscribers initialized successfully
+[INFO] PilotSDK: PilotSDK started successfully
+soft_stop: (0, 'CLOSE')
+ip192.168.8.148:8001
+response 0, msg: success
+ data: {"name":"hc-phc-arm32","token":"<REDACTED>","alarm":0,"curmold":"Mold0_0","software":{"version":"1.9.64.1-main.aarch64.ES2A.3439708","plugins":[{"name":"HC Motion Adapter","version":"1.0.83.1.9.64.b0baa13"}]},"molds":[{"name":"Mold0_0","namemap":"Mold0"}],"busyProgram":0,"svo_on":true} 
+登陆成功
+armInitData: 0
+link: (0, True)
+clear alarm: 0
+enable all: 0
+文件上传成功: uploads/varget.log
+enable status: (0, True)
+servo op: (0, True)
+set speed(3.0%): 0
+左臂 single enable: (0, True)
+armOpenCom: (0, 'COM1', 115200, 8, 0, 1)
+移动到参考 tool-down 关节姿态取 anchor(仅进场准备, armMoveJoints)...
+  等待到位: 最大误差 0.096 degg
+anchor 世界位姿 = [471.38, 294.46, 406.51, -20.08, 90.0, 0.0]
+回车开始(人守急停): 
+拐角压缩: 79 密集点 -> 6 拐角
+  START            -> world [471.4, 294.5, 526.5, -20.1, 90.0, 0.0]
+  PICK_DESCEND     -> world [471.4, 294.5, 406.5, -20.1, 90.0, 0.0]
+    过点监控: START            最近距离  120.3mm  ⚠ 可能被抄近路跳过
+    组末到位: PICK_DESCEND 误差 1.0mm
+  [夹爪2] close hex=eb 90 02 05 10 f4 01 e8 03 f7
+  PICK_ASCEND      -> world [471.4, 294.5, 526.5, -20.1, 90.0, 0.0]
+  TRANSFER         -> world [471.4, 154.5, 526.5, -20.1, 90.0, 0.0]
+  PLACE_DESCEND    -> world [471.4, 154.5, 412.5, -20.1, 90.0, 0.0]
+^C
+dev@humble:~/workspace/sdk_tests/frame_calibration/robot_side$ python3 -u execute_world_grasp.py world_grasp_latest.json 2>&1 | tee world_grasp_point_$(date +%Y%m%d_%H%M%S).log

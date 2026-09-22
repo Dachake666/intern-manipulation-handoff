@@ -1,0 +1,1471 @@
+{
+  "source_archive": "workspace/handeye_calibration_all_20260826.tar.gz",
+  "members": [
+    {
+      "path": "save_data/box1/calibration/dep_3_4.png",
+      "bytes": 553860,
+      "sha256": "1ddb1746417bad8bf300d96ec3e33959cd174d0ae99e57b942458868f0437c97"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_0.png",
+      "bytes": 1335439,
+      "sha256": "dcf182245c1ab88b9bacb5b63aa78c1da5a76ea9d4e8d4a8f0016e5b0e7ce37a"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_7.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_1.png",
+      "bytes": 1367856,
+      "sha256": "dd232c7129edbe763eeb08ad1fc8926967af4836778ea36f04b895d8dddd98b5"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_3.txt",
+      "bytes": 62,
+      "sha256": "1ea99dbbdf5372fddfc3c274debe7f2112dfa2927f38596aae14720f72b68d2c"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_1.txt",
+      "bytes": 63,
+      "sha256": "236cadc5a21776dc2a2c6c28a454c8bc52d2359842a9140b3545910238534748"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_0.txt",
+      "bytes": 63,
+      "sha256": "81ff91893cd77ecb57d6a439deaba5bf8228221accf4834a1f3816413d6ec3fb"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_9.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_2.png",
+      "bytes": 1306228,
+      "sha256": "dc646fde2a13e8b4869497ddab08deebf7b860599e26bf120a05f7eeee0a1e09"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_2.png",
+      "bytes": 1323781,
+      "sha256": "31d96558f0ab80088610138da6da07c06dd0ec6209a474e1d00a08870be4d787"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_4.png",
+      "bytes": 1297472,
+      "sha256": "2290d6cb8c2735430d1afbc473be246f1335603b3c564fe075b954c19461eb52"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_4.png",
+      "bytes": 562492,
+      "sha256": "a008df35df09728c630776870529835f28b657c13cc55a26b2cf18a8f99f645b"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_5.txt",
+      "bytes": 63,
+      "sha256": "5be71fa226de5ccb1adfbc787c198cc4276b2e9845ba34b81fb895d8623d4379"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_0.png",
+      "bytes": 405195,
+      "sha256": "d798b291337c9f242ce39a72dbe0209da508df40fd02ff4b5f65720869b29f48"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_2.txt",
+      "bytes": 61,
+      "sha256": "688c2f8cc9ed31ccf7af9379c4c669861f8bbbaa443048bfc3e665ed002fe810"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_3.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_9.png",
+      "bytes": 1330240,
+      "sha256": "4b501d395b1d2155c975ae85184c27f8fa30873db84dc7bf798a8bf6ece86cd1"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_0.png",
+      "bytes": 1186011,
+      "sha256": "659c87e71e953148cdc8a58018f8d42b6b49ce891762db577ab10bb62d982ce8"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_2.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_10.png",
+      "bytes": 1328138,
+      "sha256": "755a91200fef0808dbb44590b006440e279f5fd3c439a8b6989e3265c256c196"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_9.txt",
+      "bytes": 63,
+      "sha256": "fe58c7b44cc0b82148abbd480477d561b9585a461089ef8e62a0db84699d814a"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_10.png",
+      "bytes": 483848,
+      "sha256": "6f34a5fb1726f7ab0c54e1990fd66247f6e3a952b68d2bb63eea82bccd160831"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_6.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_6.txt",
+      "bytes": 61,
+      "sha256": "8f09eafa3eeb46c9443e824ca497f5f51bbf9c1d6bf58609920af74cdb1844ab"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_3.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_1.png",
+      "bytes": 1177436,
+      "sha256": "1fa78bbcb5a74304caad6af3d720a0e20a64ad98b7c93559d50226bdc6de2d89"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_6.png",
+      "bytes": 1297259,
+      "sha256": "96f928d61d5f8439050df7bb9ca3707e22bf90e6f69a53cfc63e10b00df5845e"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_3.png",
+      "bytes": 1337856,
+      "sha256": "8fd6dccafdce9d8d9e77e97cd674f37089a788eed42fffbe96578bee88d303f4"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_0.png",
+      "bytes": 1363510,
+      "sha256": "016b605ac90f60198d9fb0e3a247680ba83fc105dafd9c32f9bb8a3c83443d9c"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_8.png",
+      "bytes": 1242530,
+      "sha256": "64c80e8b2855faa483304e122100687c24265be5a81b5ffd066f53ded5e79af8"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_2.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_1.png",
+      "bytes": 1178779,
+      "sha256": "fc8977c50d73fa45a4cd3ae339f15ec11d22f4d562ad6c3454d0be15ed826fe4"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_0.png",
+      "bytes": 536202,
+      "sha256": "c279974662ae1b08d7a9e5c3cbd630f714b9abf24d1beaadf2144e391710704f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_7.png",
+      "bytes": 1258275,
+      "sha256": "3ed45feded2ecc3027ebc705f676046278b019f81821b8422717549838d7fab0"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_3.txt",
+      "bytes": 61,
+      "sha256": "d9e3ddfd15fff1be34af8a86542e4a043b8f94edf07edfab1c6ad8198665f7ca"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_3.png",
+      "bytes": 539940,
+      "sha256": "33e1ece28f4399bf6129747edd93cb9401adf22b82ad947bb3fff360761297c9"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_3.png",
+      "bytes": 1329999,
+      "sha256": "cf899c40b356222e71965afbeb6a25eaa3586583e35cc1ae0435f4db62eec390"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_4.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_0.png",
+      "bytes": 561824,
+      "sha256": "8d990e419fc219b63a88e65455f130067328cf89e56fce9cba87f1b118eaa079"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_2.png",
+      "bytes": 1230444,
+      "sha256": "170da52a8ae08353e349c93962d4118807442d26c3e76bb9d43396942e6355b7"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_2.png",
+      "bytes": 406224,
+      "sha256": "fcd67db74b96ae06d5b981cc12127c22375af1fbd7b82c49eddcba863770b5aa"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_0.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_8.png",
+      "bytes": 1379597,
+      "sha256": "d4feacb107cd3d649b90b0ef613904ad2ef0cf164d2181b1ffeff3f9810403da"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_0.txt",
+      "bytes": 62,
+      "sha256": "d126bb1461a3a41af49508a02034e622167a433a34aa1657219266f3b0158483"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_6.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_8.png",
+      "bytes": 1240728,
+      "sha256": "b47a8a4ce68b55893462c3d1f5c92b276f5494b946d340a4fbc80ba03fc237c2"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_6.txt",
+      "bytes": 61,
+      "sha256": "27c69fd7d9ea13e6e8ec77a5837ebb1a425a823e483ae60a6ed8bbbf1cd69c03"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_5.txt",
+      "bytes": 60,
+      "sha256": "0b63753c3d066d4151c58ccdec284175910128b92829c946aa1cc9858b3fe049"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_5.png",
+      "bytes": 515082,
+      "sha256": "14bc8e67c99c71f30141edaacc91ae547b32466af9f886273e15e25a070fd387"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_9.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_4.png",
+      "bytes": 1317880,
+      "sha256": "0b30e1ca94ad62ee25d00ae69188fa41b50ba4d4447b0c159aa67fa526b2aea3"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_5.png",
+      "bytes": 519317,
+      "sha256": "1f546c032c196861ec2854eb631c43f0e4e6f084e0291afc50c17c3810fc9e48"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_0.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_6.png",
+      "bytes": 1385247,
+      "sha256": "1fb00531c597e2476fe2bf2500e736309c82463b9a809d2d5cd4269bdfbe5f75"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_7.png",
+      "bytes": 1318806,
+      "sha256": "03993aabf6923cef0aacd03023a45c4eb897046292037afd06543f22f0ecc9ed"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_8.txt",
+      "bytes": 65,
+      "sha256": "b87429d96d365e214ddf4e4620accba1b46d1728a3e91286ca7a43e99fe59cc3"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_5.png",
+      "bytes": 1325860,
+      "sha256": "c39a3de80018a95aefe46f2a91e139868e5af192542ccf56a82646466d556642"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_5.png",
+      "bytes": 575021,
+      "sha256": "b90d9de36ed1972fb887237456795f3442122d58cf427259d77c2b5e681a61de"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_5.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_4.png",
+      "bytes": 524338,
+      "sha256": "bfa722b0d011ed8a647aaa7f262a32fbbb6a5f3fc9da9283fbf1189d86b952b6"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_6.txt",
+      "bytes": 64,
+      "sha256": "2af0f490b73fe2dd59b7fe3661c8e53b050c681de0752480f0f2290da18f511a"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_1.png",
+      "bytes": 1269333,
+      "sha256": "80f100b0fd5edeed2b75a0355845b65f632db4635be9aabade3dbd4a297a580e"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_2.png",
+      "bytes": 1305183,
+      "sha256": "2bb2f05602b9c101502198ee00e5fbc5917568558ecf334f2fb1403aff783a77"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_0.txt",
+      "bytes": 61,
+      "sha256": "afcda8a1370a14cf1606f2c3d4090878a0163f9d1dbd764e1eda974b014b3d85"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_6.png",
+      "bytes": 1266958,
+      "sha256": "f68e3b833346cc00503bb6470714a2310f22a39fbbf7e5bd2a8c9ac1f4207b33"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_3.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_4.png",
+      "bytes": 1317766,
+      "sha256": "75c16699121de6881244886866cbe50d403ac325fa44faf9c4264ecebd744408"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_5.png",
+      "bytes": 1210639,
+      "sha256": "1588ff3845972a467b39005e38536b583d70780fb4f5a6974cb704cc9178d215"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_4.txt",
+      "bytes": 60,
+      "sha256": "2511f102f75b00619ed783234314af3728ecf7e157000265365ae3be3128abbf"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_7.png",
+      "bytes": 555864,
+      "sha256": "1e99cb2115af2b246c757ff6de6f343c779dff4da11933eedc5950a45b2c9f5b"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_4.png",
+      "bytes": 1334848,
+      "sha256": "ec6580094cc148c3ce89ea61b16cef7bd45b2b90ce3cb9fefd12106efda0ad8f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_4.png",
+      "bytes": 1335808,
+      "sha256": "7e48d3f5737d48dcf70b68a1701b6dee22ee9b4ddabb592ff016d183f7959b27"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_8.png",
+      "bytes": 1272272,
+      "sha256": "0f69aa14f99f872925613310fcc56e773c39c1091ea22f4f6c702b0995b8d214"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_1.png",
+      "bytes": 1345807,
+      "sha256": "f0dc83b479e690395ad11bc0be959497ebb177c21a222c0e36f427eb8e99a0f4"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_5.png",
+      "bytes": 1261778,
+      "sha256": "c354ca96e771f93b9cb5354445fe8bfdcf889dc3235873899779e46d3917f22f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_5.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_10.txt",
+      "bytes": 63,
+      "sha256": "40f7dd12e42f903d8bd886634f9e6a2807e0652b9bec16dbaf584ffed20c38e6"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_2.png",
+      "bytes": 558464,
+      "sha256": "4ddb422c23a04f01ac7c7e1f64d1e4b026cf6082a0f6cf0687dcf88f56ece8c7"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_9.png",
+      "bytes": 296793,
+      "sha256": "fa96d3e65838f1d83544d4074409abf88c36fcececfdb94a1312e94311ac0e25"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_8.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_8.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_6.png",
+      "bytes": 546081,
+      "sha256": "4fafd704018186b89bfc4cd39b645f66c58098ffa9015aeb27d5514dc09c4835"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_7.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_8.txt",
+      "bytes": 63,
+      "sha256": "e48ebcf53a5e1739c4e0acdf542e563acec67e6cf76de3fcb904a64407a810fd"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_5.png",
+      "bytes": 1260964,
+      "sha256": "982d9e63efa7c58e685e469e06a7e7e0a98e02a998e489bc87a68375871a7fd8"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_9.png",
+      "bytes": 1211077,
+      "sha256": "a29f01c21f39bf77259a4eece188b6a29dbef8648147ea400f1fca0dd9a45946"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_7.png",
+      "bytes": 481847,
+      "sha256": "7483893b198367cc309fac615dade330a824bdec66a5bfc28dffdd5c6ed20a0f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_7.png",
+      "bytes": 1259542,
+      "sha256": "2974656ad380521204bef4904addc88320f928b66d23288075c88404061d0b2a"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_4.png",
+      "bytes": 1378491,
+      "sha256": "f6a604ab7857838267634ccaebc79deff80dfe0b971b5d2aa27a6b00d9693dda"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_2.png",
+      "bytes": 1307077,
+      "sha256": "4d7240ce0b30ef9e8a9424bb9c499344e2a46297ee71f4000962b3e21dec3944"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_1.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_2.png",
+      "bytes": 1326165,
+      "sha256": "c9726803fcf236a43042d2d157e8a43f6d6ac6664ca0285e91990d9498d035fc"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_6.png",
+      "bytes": 1264756,
+      "sha256": "a72475ff4cd8cea170f18eaf67b1d9696df4e8d22c0e4a9f6c6a5597e9a7fc5f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_0.png",
+      "bytes": 1290136,
+      "sha256": "ed0e99026ec4d81a31e1fe8a87980c41e44fcf965780f14b961a5ca30c84f353"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_9.png",
+      "bytes": 445361,
+      "sha256": "2da47f9848948781fa44b1036367607427ddd4bd7696e662b6c7798b4132919a"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_4.txt",
+      "bytes": 62,
+      "sha256": "494364a82b8f424b07b71b8da0113a149e4d051d5df7fe1f1c65f93b4f126a2a"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_4.png",
+      "bytes": 1298000,
+      "sha256": "fdbe6d2db070c801e9849955df5f0ff837aec169e3cca8abb4a03a041f72ceff"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_8.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_5.png",
+      "bytes": 558696,
+      "sha256": "18ca7a9b7308445a33d9a03067189a8acc957476f1a50a37a69f31f87e0bfbc2"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_7.png",
+      "bytes": 542434,
+      "sha256": "4d33d64601e4d726c868f1bc62754e2ef5d0a836419d33b699e8b3b093c4aea2"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_3.png",
+      "bytes": 1357391,
+      "sha256": "58ff0b7bea76234a931f494f1c85a38e8a046b8290de5080cbad3da9c56f5c93"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_10.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_1.png",
+      "bytes": 499449,
+      "sha256": "9800ca65291c952dae79172af691bbdae2496b6af977b4708ae4a8118e503f1d"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_5.png",
+      "bytes": 1209639,
+      "sha256": "985abd1b2a25b16a8c589aa4dcc43f7102c42cad0f19323d435c96a007c58612"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_6.png",
+      "bytes": 384031,
+      "sha256": "ac2fd70d1ae7bbdfe09c3d7e277c455dd07ef691ac8ad23311bda41e7d4cf47e"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_7.png",
+      "bytes": 1257734,
+      "sha256": "e35217e80dc718488e7fc98912cc0289cc9a6ebbd2423778ea2cc1593709a3a1"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_7.txt",
+      "bytes": 63,
+      "sha256": "465b8549fc20a6d575887ece922d8cf6c10448f80c00bd03f647027fac2c4c0b"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_8.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_7.png",
+      "bytes": 1259929,
+      "sha256": "bc685b8521303b5f45cd6f4986f9d74ffca226fe33b2c622263757110e61b49f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_8.png",
+      "bytes": 491722,
+      "sha256": "1682e1bbfbdd1c61e90578ac7be043b2ada4ecb29dfe8536ef17e10c7875f7c6"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_9.png",
+      "bytes": 1212113,
+      "sha256": "6daf35c6a3ea2950f2cbfb5a6426582d2b9f529b3c9fd1adbe86bc6e7265300f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_6.png",
+      "bytes": 1376138,
+      "sha256": "adab15b763d4699c444519d231e0e97862fe0aaa892fb61c67847741cb81d5f4"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_4.txt",
+      "bytes": 61,
+      "sha256": "3f4c53c28b74d1b78062c85e58a1888d5526425fbbf39bd03fa44969233becc2"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_8.txt",
+      "bytes": 63,
+      "sha256": "a35db77b987e09385be3415e0605df6debfb7e8ade4398e1ea156c34a4b6d219"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_1.png",
+      "bytes": 539901,
+      "sha256": "fab9000d094a37eb2dfda48d9ab0c3e9a5ca44bf217390d29060da77a35d4762"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_7.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_4.png",
+      "bytes": 402551,
+      "sha256": "2ae8644a53bc938bcb043cd511a1d39926957be15358f4041313eac842b6366a"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_2.png",
+      "bytes": 478250,
+      "sha256": "52622e1532198e5d3f44b2baebb043e8f6a88f6b8109cbca936ecf8f9cad446c"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_3.png",
+      "bytes": 1224619,
+      "sha256": "383f3518d07c0bc6707e9981b6a099ccc32d192d7c2308784f792664f8774156"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_0.png",
+      "bytes": 1187328,
+      "sha256": "bac773564b60ecf647db95723251e65a8537ff6d810cee50dcb29197816ba513"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_3.png",
+      "bytes": 589295,
+      "sha256": "69c84ae38b0002dc3f5f0f4c2170c466177a5bffe88fc4400378c6616161445c"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_2.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_1.txt",
+      "bytes": 63,
+      "sha256": "3f81e12e81b17b9512b0fc1237f0a098a416a6f4d3a70dfa5f116a831b8fb67c"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_8.png",
+      "bytes": 1315444,
+      "sha256": "9d05bd47a33fc63f684989cf5da84dcb4b79e219e74524c9db674630819464c5"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_5.png",
+      "bytes": 1325756,
+      "sha256": "afaebb56aba3b740b2eb8ffd6633ff656554a72f4b163b23ffe708ac7c26388c"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_4.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_0.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_1.txt",
+      "bytes": 60,
+      "sha256": "226e4b24b7cebfc271bf9bd3bffdefc33638825a42bb4082a10fbdad1fada1d9"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_3.png",
+      "bytes": 556589,
+      "sha256": "dfba700599cb95f69f14c401657a2681c5522c1307bda7f0dabc038af6f549ae"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_5.png",
+      "bytes": 1328604,
+      "sha256": "83baa82f2d42ae1e623ede1480e9e9b5820fff4e3e062ea7fa84e3f285f8eb5d"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_2.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_7.png",
+      "bytes": 1318504,
+      "sha256": "f8c3aa970a0d649ac5061e4bd31c8cff2520661fe40728b7eaf873fc1d1cfd34"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_8.txt",
+      "bytes": 63,
+      "sha256": "8f85ea16074228d3d77b3c61ba8afe9251b8463c54ec20d5d7c73cffddf78623"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_7.txt",
+      "bytes": 65,
+      "sha256": "1aebc6ca56dd578ff197191361f3bd5c0c1aa819957c046b93ff95329832b33b"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_5.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_3.txt",
+      "bytes": 61,
+      "sha256": "5a79c57837e05302c7c8bf350ee9eb5e3c84d5611d1d1e5ae164f8dd605317c4"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_8.png",
+      "bytes": 1315439,
+      "sha256": "e84fcb8dd097c7687582cde9153eb08fe1e692d439f862c343959eb180a35c3a"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_1.png",
+      "bytes": 1342753,
+      "sha256": "6e07e7d50d7190721becd37ceb2d3175952ca5951e3e2d534461e6df35cfa040"
+    },
+    {
+      "path": "save_data/box1/calibration/result2_7.png",
+      "bytes": 1260143,
+      "sha256": "24b443ad29a200c2b16373cb04772798276e74add75b6b53872f7911c3bbab0f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_3.png",
+      "bytes": 1329901,
+      "sha256": "3c728da046d4a6d511fe55a6b4c92d22aa641bd08aded4e27a8d53d7dc6f376a"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_6.png",
+      "bytes": 407804,
+      "sha256": "f8b21c5970a612114125c224924b2f2330b3a0352920e869c23dc584a4308eaf"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_10.png",
+      "bytes": 1324605,
+      "sha256": "5333672ea7e18fbe51bcbd194a650ceb0882ef890dedb62cc5bf9155c7547905"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_6.png",
+      "bytes": 1296952,
+      "sha256": "e68b56e91a85a7c6894bf971ef6e238b2621505d41035ed81898c846591d17cd"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_6.png",
+      "bytes": 1376416,
+      "sha256": "da45dcb0cbdb37a523933483e6dc952b9d77ef0ea0e37f3fb1ae54c5bbb063c5"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_8.png",
+      "bytes": 1271256,
+      "sha256": "b6c502c1715323a50d483da4ad425c9efa7559618e091610e741d98a26eb2597"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_8.png",
+      "bytes": 403333,
+      "sha256": "a00bbe3136dc3b64a003f340202df904f6c8d1d7898d7226e192cb20afa8d0f7"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_0.png",
+      "bytes": 1363780,
+      "sha256": "cdd78ee7a3f9d85c9df24cd4df62784c132e7c3c500768c094f09af140bc53e3"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_6.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_2.txt",
+      "bytes": 61,
+      "sha256": "44a4a005f6c1ebed095b7aa35aec1db787370c316c270553b98077f8e024df3b"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_9.txt",
+      "bytes": 62,
+      "sha256": "31721a6e13dc3dc06cb8173b9b15106713db5919f0f769ecc96348b970d21964"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_0.png",
+      "bytes": 1337130,
+      "sha256": "f367139b99191b0e58bc30594ae45ee002d731bc37089c172d0abda20b3fba41"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_6.png",
+      "bytes": 1382638,
+      "sha256": "2ce29309290ff81f5b27eaaf3a2d3bd8684741d962cd9899b471365b4a85da00"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_2.png",
+      "bytes": 574669,
+      "sha256": "c894f138650f59868d3495a32b42038089042422313e22853c83f17b7b1ce78f"
+    },
+    {
+      "path": "save_data/box1/calibration/result1_5.png",
+      "bytes": 1329859,
+      "sha256": "ecd7ce2fe05f8ac49eb8e8d3ce909138ae4810d2b692caba9a811de4facce487"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_1_1.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_6.png",
+      "bytes": 589390,
+      "sha256": "424bf6dee0927c7f6a88635c2c44616eeb6014f6132fd58cb7f0d1c023302c99"
+    },
+    {
+      "path": "save_data/box1/calibration/color_1_3.png",
+      "bytes": 1356266,
+      "sha256": "3688c4cc80b343874f87883e1f3c02abc235acdc08eb2db101440320a4a34328"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_3.png",
+      "bytes": 1224351,
+      "sha256": "f675aac1274754bf5e7c9ff578a784d67c275d1ef6151c19c976637099e1fcb3"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_1.png",
+      "bytes": 399941,
+      "sha256": "709c02308835c9c04df66c9bfb98af9ad60aade01b4c4f37bfaa6f8c0c594691"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_3.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_5.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_7.png",
+      "bytes": 1260484,
+      "sha256": "e9d66b30c08a3c22d8d4faebefba0bafe7e6a80db2e29ef727ceaee17afefad1"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_1.png",
+      "bytes": 1270195,
+      "sha256": "bdfd99f32bfb03f7b857ddd98c099f48a49868f2ec70503b4f2c5640d3ab21e4"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_2.txt",
+      "bytes": 61,
+      "sha256": "5a79c57837e05302c7c8bf350ee9eb5e3c84d5611d1d1e5ae164f8dd605317c4"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_4.txt",
+      "bytes": 61,
+      "sha256": "5a79c57837e05302c7c8bf350ee9eb5e3c84d5611d1d1e5ae164f8dd605317c4"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_5.txt",
+      "bytes": 60,
+      "sha256": "9e06a54f8a76312d2d028e8c028b788eb5bf4e890804dd8f5e9ed2baaa619838"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_3.png",
+      "bytes": 1342384,
+      "sha256": "fe1ba8d51fdf63cefb5e5698c013a78c7c0dc2da39ce5a1736830d153dd93060"
+    },
+    {
+      "path": "save_data/box1/calibration/result3_0.png",
+      "bytes": 1290160,
+      "sha256": "4ea1e88f7f9ae4602a0871e17e8bdf846619d7d6681401b357dbb2ae62fcfdd2"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_1.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_9.png",
+      "bytes": 1326840,
+      "sha256": "00fbd7fd6a244dfe51e3dfb0a0924cada957ba480d66bb57eb86f25e0e014f6c"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_2.txt",
+      "bytes": 62,
+      "sha256": "9a72e7b1176248c1d65a73f7d6f914d5ef036081af9fe5a0f58bffcbbc8cd7a3"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_3.txt",
+      "bytes": 65,
+      "sha256": "b5d0e41472f4feb62cb42409ab26c82e37b1526510fb84a62241a4867dccdf69"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_0_3.png",
+      "bytes": 360213,
+      "sha256": "c2cfdec872d730963718c661cc63af3491550be0da4b48d54bf6cb4ab3ea3d8f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_0.png",
+      "bytes": 538271,
+      "sha256": "f9d5e7b1b7a000919a3b02a140cb2f2a0fea196ed7484bf5a07ba616888d9c45"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_0_1.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_6.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_7.txt",
+      "bytes": 63,
+      "sha256": "be16a9a56848d8c5bb7eb5b0bdd38c8a46a36f3f0ef610fb8c9e4fdb2a63889d"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_3_4.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_0.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_0.txt",
+      "bytes": 63,
+      "sha256": "17400b6f9af07e7672de24079aaef47571b38ec7f5b96d9e46a206bd4d30e025"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_4.png",
+      "bytes": 1378269,
+      "sha256": "48480125cf28073083bd7e9baa36fe4a77cd3b5a710dadab863a16c01dff4925"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_7.png",
+      "bytes": 484159,
+      "sha256": "12ddbbd2a1e63482e123eaa260e9b9c489752d617595cc9aba37da9969c0c322"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_6.txt",
+      "bytes": 63,
+      "sha256": "f356956dd040aa3f85888640c2cfb2275da0e27722697a9f8048b51608fc6daf"
+    },
+    {
+      "path": "save_data/box1/calibration/color_3_2.png",
+      "bytes": 1306957,
+      "sha256": "7d53acf2cfc81172fc44af874538d2c39b97d0d7bbf468d64904152425d18f00"
+    },
+    {
+      "path": "save_data/box1/calibration/color_0_8.png",
+      "bytes": 1379752,
+      "sha256": "a976c2f1b5bd04b602b18dab692daaa36e433553c4b682f30205ed5be5380e20"
+    },
+    {
+      "path": "save_data/box1/calibration/result0_1.png",
+      "bytes": 1367607,
+      "sha256": "3fd25cd01c4461c2fbbd50531a3390c7a9fbc9034fbbc92b9a170644e1dcf15e"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_1.txt",
+      "bytes": 61,
+      "sha256": "8c92532b0057e7fb1697f2db501a39e8f11deb68f989fa116894171fe36baf3b"
+    },
+    {
+      "path": "save_data/box1/calibration/color_2_2.png",
+      "bytes": 1229625,
+      "sha256": "2b11d10e5711fd93a9e841debcf92f95c71f8657701e8aad200e3e0379cba0fd"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_7.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_3_8.png",
+      "bytes": 604900,
+      "sha256": "91e9d26cf9f24b4d1cd8782c08d90e5894d5a5cc209cc1e9a89176c5c62801bf"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_1_8.png",
+      "bytes": 518735,
+      "sha256": "0e14d7c1316dc98fa8bbe49a6c6137ac9faac23d490088303d0722c6d75f52b4"
+    },
+    {
+      "path": "save_data/box1/calibration/intrinsic_2_4.json",
+      "bytes": 218,
+      "sha256": "9f60c640ccbfd1bb5c51e1a213a0057a865ca5f8e685c111c13091932037463f"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_5.txt",
+      "bytes": 63,
+      "sha256": "1123631face054e06ac50525b0a4c96d8ceee3a8f03c869e3ed1df32896f7261"
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_7.txt",
+      "bytes": 60,
+      "sha256": "0ab8b746de622ca3eb6ade32bf06e41b9b5c72e4d8e4e364e0438317173c147b"
+    },
+    {
+      "path": "save_data/box1/calibration/dep_2_1.png",
+      "bytes": 471818,
+      "sha256": "3bdd07898c93ca1d83509b92432624f4ec570941ca4718ccbc7a2bd5b837ac6c"
+    },
+    {
+      "path": "calibration_result.json",
+      "bytes": 864,
+      "sha256": "e7f050d4c64461a7bc3a110404a32c7aba26692017fbffa7b1a73ca7efded374"
+    },
+    {
+      "path": "config/test1/workstation.json",
+      "bytes": 927,
+      "sha256": "ae7338e96a1e8b743dd88d52f3ac8b55eb56069e390f27e235222ab012242cd8"
+    },
+    {
+      "path": "deps/vision/vision_hand_eye/config/config.json",
+      "bytes": 85,
+      "sha256": "ece5e28e7836468bd930f15e963ba546e3168df52d53f4526ea00fcb2539c73e"
+    },
+    {
+      "path": "deps/vision/vision_hand_eye/config/mark.json",
+      "bytes": 1806,
+      "sha256": "6c5c8a8bdceda4abcf4643264207a79c4e739e07be40e1c4c455bcc9eac6fbce"
+    }
+  ],
+  "pose_samples": [
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_3.txt",
+      "values_xyz_qxyzw": [
+        760.595,
+        111.651,
+        504.796,
+        -0.74822,
+        -0.0486217,
+        0.169887,
+        0.639485
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_1.txt",
+      "values_xyz_qxyzw": [
+        810.335,
+        39.582,
+        643.825,
+        -0.584071,
+        -0.265957,
+        0.00556045,
+        0.766875
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_0.txt",
+      "values_xyz_qxyzw": [
+        791.472,
+        164.228,
+        686.157,
+        0.0744327,
+        -0.159724,
+        -0.209226,
+        0.961859
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_5.txt",
+      "values_xyz_qxyzw": [
+        605.881,
+        289.968,
+        515.439,
+        0.00169587,
+        0.0912047,
+        0.221289,
+        0.970932
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_2.txt",
+      "values_xyz_qxyzw": [
+        781.99,
+        245.63,
+        565.478,
+        -0.123879,
+        -0.079463,
+        0.0352215,
+        0.988483
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_9.txt",
+      "values_xyz_qxyzw": [
+        643.66,
+        52.296,
+        668.51,
+        -0.00308341,
+        -0.0207053,
+        -0.667636,
+        0.744193
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_6.txt",
+      "values_xyz_qxyzw": [
+        565.589,
+        94.629,
+        643.811,
+        0.306209,
+        -0.250539,
+        -0.686537,
+        0.610027
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_3.txt",
+      "values_xyz_qxyzw": [
+        608.399,
+        64.755,
+        533.375,
+        0.0946009,
+        -0.46342,
+        -0.415783,
+        0.776799
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_0.txt",
+      "values_xyz_qxyzw": [
+        567.245,
+        126.566,
+        622.369,
+        -0.404224,
+        -0.395603,
+        -0.565753,
+        0.60002
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_6.txt",
+      "values_xyz_qxyzw": [
+        717.148,
+        53.97,
+        659.389,
+        -0.300601,
+        -0.104994,
+        -0.666684,
+        0.673905
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_5.txt",
+      "values_xyz_qxyzw": [
+        638.03,
+        76.354,
+        613.521,
+        0.223163,
+        -0.174638,
+        -0.646086,
+        0.708712
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_8.txt",
+      "values_xyz_qxyzw": [
+        815.109,
+        131.952,
+        470.297,
+        -0.559671,
+        -0.0671859,
+        0.00450408,
+        0.825975
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_6.txt",
+      "values_xyz_qxyzw": [
+        610.543,
+        253.563,
+        583.342,
+        0.217646,
+        -0.0961445,
+        -0.0167079,
+        0.971137
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_0.txt",
+      "values_xyz_qxyzw": [
+        592.354,
+        146.06,
+        541.008,
+        0.126023,
+        -0.407823,
+        -0.436196,
+        0.792169
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_4.txt",
+      "values_xyz_qxyzw": [
+        643.41,
+        250.932,
+        494.243,
+        -0.122779,
+        0.145866,
+        0.020424,
+        0.981443
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_10.txt",
+      "values_xyz_qxyzw": [
+        603.354,
+        133.342,
+        593.426,
+        -0.286022,
+        -0.351121,
+        -0.553504,
+        0.698955
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_8.txt",
+      "values_xyz_qxyzw": [
+        649.734,
+        111.023,
+        596.886,
+        -0.385352,
+        -0.263234,
+        -0.553153,
+        0.690097
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_4.txt",
+      "values_xyz_qxyzw": [
+        578.213,
+        143.553,
+        544.988,
+        -0.074502,
+        -0.564852,
+        -0.16205,
+        0.805687
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_7.txt",
+      "values_xyz_qxyzw": [
+        842.037,
+        71.641,
+        594.731,
+        -0.517299,
+        -0.190119,
+        -0.0490394,
+        0.832978
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_4.txt",
+      "values_xyz_qxyzw": [
+        754.796,
+        66.639,
+        553.381,
+        -0.708519,
+        -0.158692,
+        0.165508,
+        0.667401
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_8.txt",
+      "values_xyz_qxyzw": [
+        759.57,
+        161.923,
+        673.561,
+        -0.239853,
+        -0.156346,
+        -0.0672902,
+        0.955771
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_1.txt",
+      "values_xyz_qxyzw": [
+        677.06,
+        203.087,
+        661.08,
+        0.0406973,
+        -0.0890646,
+        -0.0111149,
+        0.995132
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_1.txt",
+      "values_xyz_qxyzw": [
+        554.874,
+        111.1,
+        611.751,
+        -0.23599,
+        -0.305592,
+        -0.704536,
+        0.595442
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_8.txt",
+      "values_xyz_qxyzw": [
+        586.975,
+        66.579,
+        563.269,
+        0.0349381,
+        -0.0704411,
+        -0.690202,
+        0.719332
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_7.txt",
+      "values_xyz_qxyzw": [
+        666.676,
+        179.997,
+        623.151,
+        -0.149101,
+        -0.25045,
+        -0.000714591,
+        0.956579
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_3.txt",
+      "values_xyz_qxyzw": [
+        612.385,
+        115.72,
+        677.159,
+        -0.329321,
+        -0.36357,
+        -0.642686,
+        0.588489
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_2.txt",
+      "values_xyz_qxyzw": [
+        634.659,
+        135.223,
+        655.076,
+        0.41143,
+        -0.234882,
+        -0.662779,
+        0.579896
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_9.txt",
+      "values_xyz_qxyzw": [
+        463.973,
+        120.412,
+        637.66,
+        -0.300207,
+        -0.470744,
+        -0.626558,
+        0.543784
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_2.txt",
+      "values_xyz_qxyzw": [
+        612.385,
+        115.72,
+        677.159,
+        -0.329321,
+        -0.36357,
+        -0.642686,
+        0.588489
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_4.txt",
+      "values_xyz_qxyzw": [
+        612.385,
+        115.72,
+        677.159,
+        -0.329321,
+        -0.36357,
+        -0.642686,
+        0.588489
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_5.txt",
+      "values_xyz_qxyzw": [
+        725.935,
+        52.923,
+        516.25,
+        -0.727122,
+        -0.160423,
+        0.129529,
+        0.654813
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_2.txt",
+      "values_xyz_qxyzw": [
+        806.61,
+        156.708,
+        553.011,
+        -0.615148,
+        -0.120527,
+        0.0862756,
+        0.774353
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_2_3.txt",
+      "values_xyz_qxyzw": [
+        786.122,
+        292.792,
+        561.277,
+        -0.364736,
+        -0.0509881,
+        0.00854626,
+        0.929674
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_7.txt",
+      "values_xyz_qxyzw": [
+        673.924,
+        127.136,
+        657.73,
+        0.00567486,
+        -0.103192,
+        -0.644431,
+        0.757647
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_0.txt",
+      "values_xyz_qxyzw": [
+        775.209,
+        37.243,
+        598.957,
+        -0.559394,
+        -0.284394,
+        -0.0214166,
+        0.778292
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_3_6.txt",
+      "values_xyz_qxyzw": [
+        755.511,
+        103.754,
+        463.303,
+        -0.583038,
+        -0.175681,
+        0.0329655,
+        0.792538
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_1.txt",
+      "values_xyz_qxyzw": [
+        607.134,
+        125.379,
+        594.28,
+        0.275247,
+        -0.263111,
+        -0.623089,
+        0.683207
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_0_5.txt",
+      "values_xyz_qxyzw": [
+        756.109,
+        99.118,
+        721.763,
+        -0.0436633,
+        -0.144265,
+        -0.594727,
+        0.789671
+      ]
+    },
+    {
+      "path": "save_data/box1/calibration/hand_pose_1_7.txt",
+      "values_xyz_qxyzw": [
+        629.862,
+        158.684,
+        581.235,
+        0.124341,
+        -0.168108,
+        -0.5994,
+        0.772657
+      ]
+    }
+  ],
+  "note": "Image data remains byte-preserved in original received archive; these four historical groups are not a newly qualified calibration dataset."
+}

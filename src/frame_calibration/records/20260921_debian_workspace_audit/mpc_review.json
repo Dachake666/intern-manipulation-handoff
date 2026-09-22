@@ -1,0 +1,2483 @@
+{
+  "schema_version": "mpc_handoff_review.v1",
+  "generated_at_utc": "2026-09-21T15:47:41.530824+00:00",
+  "workspace_root": "/Users/xiaobingxin/Desktop/工作/工作1",
+  "received_root": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace",
+  "analysis_root": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full",
+  "review_scope": "只读取收到文件、用标准库计算SHA与统计并做AST静态解析；未执行收到模块、未导入SDK、未连接设备、未重新运行仿真/测试。",
+  "overall": "报告复算与已记录身份核对通过；真机正式资格仍未完成。旧partial缺件结论由本full结果接续。",
+  "archive": {
+    "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_handoff_20260921_102256_clean.tar.gz",
+    "relative_path": "mpc_handoff_20260921_102256_clean.tar.gz",
+    "sha256": "ffbbc8a1e181cbbc2544ebe91cfef580e641f6095f3ff0c8dbfab6a77ef8cb63",
+    "bytes": 44572564,
+    "sender_sha256": "ffbbc8a1e181cbbc2544ebe91cfef580e641f6095f3ff0c8dbfab6a77ef8cb63",
+    "sender_match": true,
+    "previous_verified_sha256_match": true
+  },
+  "snapshot_comparison": {
+    "expected_count": 260,
+    "matched": [
+      "XF0112048/meshes/base_link.STL",
+      "XF0112048/meshes/head_pitch_link.STL",
+      "XF0112048/meshes/head_yaw_link.STL",
+      "XF0112048/meshes/left_elbow_pitch_link.STL",
+      "XF0112048/meshes/left_shoulder_pitch_link.STL",
+      "XF0112048/meshes/left_shoulder_roll_link.STL",
+      "XF0112048/meshes/left_shoulder_yaw_link.STL",
+      "XF0112048/meshes/left_wrist_pitch_link.STL",
+      "XF0112048/meshes/left_wrist_roll_link.STL",
+      "XF0112048/meshes/left_wrist_yaw_link.STL",
+      "XF0112048/meshes/lower_torso_pitch_link.STL",
+      "XF0112048/meshes/middle_torso_pitch_link.STL",
+      "XF0112048/meshes/right_elbow_pitch_link.STL",
+      "XF0112048/meshes/right_shoulder_pitch_link.STL",
+      "XF0112048/meshes/right_shoulder_roll_link.STL",
+      "XF0112048/meshes/right_shoulder_yaw_link.STL",
+      "XF0112048/meshes/right_wrist_pitch_link.STL",
+      "XF0112048/meshes/right_wrist_roll_link.STL",
+      "XF0112048/meshes/right_wrist_yaw_link.STL",
+      "XF0112048/meshes/upper_torso_pitch_link.STL",
+      "XF0112048/metadata.json",
+      "XF0112048/robot.urdf",
+      "mpc_experiment/mpc_experiment/README.md",
+      "mpc_experiment/mpc_experiment/controller.py",
+      "mpc_experiment/mpc_experiment/controller.py.pre_rt_diagnostics",
+      "mpc_experiment/mpc_experiment/frame_calibration/__init__.py",
+      "mpc_experiment/mpc_experiment/frame_calibration/analysis/__init__.py",
+      "mpc_experiment/mpc_experiment/frame_calibration/analysis/calib_common.py",
+      "mpc_experiment/mpc_experiment/requirements.txt",
+      "mpc_experiment/mpc_experiment/results/comparison.png",
+      "mpc_experiment/mpc_experiment/results/report.json",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__interpolation__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/external_force__mpc__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__interpolation__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/lag_mismatch__mpc__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__interpolation__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__command.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__fine_q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__fine_v.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__grip_pb_mm.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__q.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__reference.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__solve_wall_ms.npy",
+      "mpc_experiment/mpc_experiment/results/traces/nominal__mpc__v.npy",
+      "mpc_experiment/mpc_experiment/results/traces.npz",
+      "mpc_experiment/mpc_experiment/run_experiment.py",
+      "mpc_experiment/mpc_experiment/test_mpc.py",
+      "trackA_worlds_line/trackA_servo/BASELINE_ACCEPTED_30ms_stride2_POST_REBOOT.json",
+      "trackA_worlds_line/trackA_servo/README.md",
+      "trackA_worlds_line/trackA_servo/SHA256SUMS",
+      "trackA_worlds_line/trackA_servo/arm_profiles.py",
+      "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_latency_probe_v2",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_prebuilt_floatvector",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py.bak_before_softstop10",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_20ms",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_home5_successlog",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_servo_entry",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_single_confirm",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_before_stride2",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_20ms_stride4",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_ethernet_40ms_stride6",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride2",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride3",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field.py.bak_unified_30ms_stride4",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gripper_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py.before_gui_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gripper_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py.before_gui_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py.bak",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v2.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.bak_A500_J15k",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gripper_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py.before_gui_sha",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_endpoint_taper",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_follow_guard",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py.pre_solver_tune",
+      "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "trackA_worlds_line/trackA_servo/network_records/ETHERNET/stationary_20ms_ETH_baseline.txt",
+      "trackA_worlds_line/trackA_servo/network_records/ETHERNET/tabletop_servo_20260910_164833_358988350.json",
+      "trackA_worlds_line/trackA_servo/network_records/README.md",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/stationary_20ms_WIFI_baseline.txt",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260909_182932_719907228.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_095643_352311931.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_103844_659712178.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_105143_645973957.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_111452_8747698.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_115323_657498295.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_151044_480345410.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_152201_759043648.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_152558_723994735.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_152823_962154881.json",
+      "trackA_worlds_line/trackA_servo/network_records/WIFI/tabletop_servo_20260910_160524_761066947.json",
+      "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+      "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py",
+      "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_correlation",
+      "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py.bak_before_ethernet",
+      "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_50.py",
+      "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary_long.py",
+      "trackA_worlds_line/trackA_servo/pulse_8001.pcap",
+      "trackA_worlds_line/trackA_servo/pulse_8001_summary.txt",
+      "trackA_worlds_line/trackA_servo/pulse_corr_strace.log",
+      "trackA_worlds_line/trackA_servo/pulse_network_strace.log",
+      "trackA_worlds_line/trackA_servo/pulse_stationary_correlation.jsonl",
+      "trackA_worlds_line/trackA_servo/pulse_stationary_strace.log",
+      "trackA_worlds_line/trackA_servo/robot_lock.py",
+      "trackA_worlds_line/trackA_servo/scrub_log.py",
+      "trackA_worlds_line/trackA_servo/sdk_session.py",
+      "trackA_worlds_line/trackA_servo/servo_common.py",
+      "trackA_worlds_line/trackA_servo/servo_common.py.bak_before_latency_probe",
+      "trackA_worlds_line/trackA_servo/servo_common.py.bak_before_realign",
+      "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE_before_gripper_fast.json",
+      "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review.json",
+      "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review_before_gripper_fast.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/README_BASELINE.md",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.v1.json",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo_field.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary_long.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/servo_common.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_pick_place_SERVO_gui_review.json",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_20260910_115323_657498295.json",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_contract.py",
+      "trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220.zip",
+      "trackA_worlds_line/trackA_servo/uploads/varget.log",
+      "trackA_worlds_line/trackA_servo/vaj3_spline.py"
+    ],
+    "missing_in_selected_extraction": [
+      "XF0112048/.DS_Store"
+    ],
+    "different": []
+  },
+  "source_files": [
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+      "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+      "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+      "sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+      "sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/controller.py",
+      "relative_path": "mpc_experiment/mpc_experiment/controller.py",
+      "sha256": "314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/run_experiment.py",
+      "relative_path": "mpc_experiment/mpc_experiment/run_experiment.py",
+      "sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/test_mpc.py",
+      "relative_path": "mpc_experiment/mpc_experiment/test_mpc.py",
+      "sha256": "a2d29393beeb9324657521e19470a71e6abd1d85e74cb339ade9e2578dc428a5",
+      "snapshot_match": true,
+      "ast_syntax_pass": true
+    }
+  ],
+  "ten_runs": [
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "sha256": "972ac9a0aa01d685b9d9c23277fc4fd12d2569c420be8a2baf5a880d7258c2bf",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 657,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 1,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.1085753368998024,
+        "p99_abs_deg": 2.546785361428951,
+        "max_abs_deg": 2.9020015869140536
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 657,
+        "period_s": 0.02,
+        "late_frames": 653,
+        "late_ratio": 0.9939117199391172,
+        "max_late_ms": 82.20239798538387,
+        "mean_late_ms": 0.8875804494746931,
+        "realigns": 3,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 657,
+        "solve_total_ms": 3325.244383653626,
+        "solve_max_ms": 10.604911018162966,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.2566420007497072,
+        "candidate_max_deviation_deg": 0.3736666866666649
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "sha256": "26b997d85287e6d5224b0f9f4e5fd3d3d2b1c715025fdbb7459fdff51f03b301",
+      "mode": "ACTIVE",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 663,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 1,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 0.727149676568182,
+        "p99_abs_deg": 1.7867012805175773,
+        "max_abs_deg": 2.367166239420584
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "reported_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "reported_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 663,
+        "period_s": 0.02,
+        "late_frames": 659,
+        "late_ratio": 0.9939668174962293,
+        "max_late_ms": 138.94854206591845,
+        "mean_late_ms": 0.47257473714909715,
+        "realigns": 1,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 663,
+        "solve_total_ms": 1498.8276134245098,
+        "solve_max_ms": 6.744557060301304,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.4175151698291302,
+        "candidate_max_deviation_deg": 1.0463238771542294
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "sha256": "fcc2bc3cc02b871ed336aa95d607374c491feff64338f2e11ca962e219077f78",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.1253448647719064,
+        "p99_abs_deg": 2.585715382350144,
+        "max_abs_deg": 2.9729984130859464
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 107.78003209270537,
+        "mean_late_ms": 0.9509420562563918,
+        "realigns": 5,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 3437.6976881176233,
+        "solve_max_ms": 10.562781011685729,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.4204888828098774,
+        "candidate_max_deviation_deg": 0.39000001999999867
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "sha256": "5b596313955048fa7641c2de16b9ea1aafff8f26a195ac996ef8f27060cc6107",
+      "mode": "ACTIVE",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 0.7254745450452339,
+        "p99_abs_deg": 1.7945221922108656,
+        "max_abs_deg": 2.5795001220703
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "reported_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "reported_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 54.81534404680133,
+        "mean_late_ms": 0.4880684978050384,
+        "realigns": 2,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 1390.3547655791044,
+        "solve_max_ms": 6.766179110854864,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.305582070723176,
+        "candidate_max_deviation_deg": 1.0335318411329695
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "sha256": "dc47b3708c4b124f08b193f3baee333fb16e79cedbe645aca6aafa7c38652bfc",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.049129486048585,
+        "p99_abs_deg": 2.45956033203125,
+        "max_abs_deg": 2.869000671386715
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 390.81631787121296,
+        "mean_late_ms": 3.7916927554406135,
+        "realigns": 15,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 2673.6502330750227,
+        "solve_max_ms": 10.188587009906769,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.34736888483166695,
+        "candidate_max_deviation_deg": 0.3255000199999998
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "sha256": "a20bf8454d2d506a984a5142c20edab47e866298555ae8d34af047ae9735a065",
+      "mode": "ACTIVE",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 0.7146208545192226,
+        "p99_abs_deg": 1.7797598896789557,
+        "max_abs_deg": 2.5569992065429688
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "reported_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "reported_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 59.87412994727492,
+        "mean_late_ms": 0.9849708411621113,
+        "realigns": 4,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 1426.2195581104606,
+        "solve_max_ms": 5.779728991910815,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.45739300549030304,
+        "candidate_max_deviation_deg": 1.0200343482301406
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "sha256": "a5485d77482ddf6f741cda853dda835462ed2e0beb09dc921d3ed32b3a2ca974",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.1333409629247853,
+        "p99_abs_deg": 2.5869001684354256,
+        "max_abs_deg": 2.9510028686523526
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 72.74640002287924,
+        "mean_late_ms": 0.5319107557425458,
+        "realigns": 2,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 3227.6474081445485,
+        "solve_max_ms": 9.996286127716303,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.46911207027733326,
+        "candidate_max_deviation_deg": 0.3736666866666649
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "sha256": "95967f431c8a5b49b58d8b22e0c3a8431d802a3214f9dabf8ee35c03a8d5e428",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.1005638210563793,
+        "p99_abs_deg": 2.5429945528508604,
+        "max_abs_deg": 2.968003173828123
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 79.13478510454297,
+        "mean_late_ms": 1.5426453667204463,
+        "realigns": 6,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 3446.8218290712684,
+        "solve_max_ms": 10.926279937848449,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.3951180260628462,
+        "candidate_max_deviation_deg": 0.38283446219269024
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "sha256": "4fd307f041fad2e198db23b1d0257d673121433f19b4d785affdfe2a2eba5fc0",
+      "mode": "SHADOW",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 1.125540751313395,
+        "p99_abs_deg": 2.546923400573739,
+        "max_abs_deg": 2.845496398925775
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_base.py",
+        "sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "reported_sha256": "270bb724e92c4d190f466f43ed1c8363ce6376f79665f2f24e0f13d7bd785add",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_20ms.py",
+        "sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "reported_sha256": "06884ecfd85ce84d66c9cb63e7df185ab7a77d3549c99f2195e2b17479c1d689",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 202.05179997719824,
+        "mean_late_ms": 0.6011333788614492,
+        "realigns": 1,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 3499.6252509299666,
+        "solve_max_ms": 10.749603156000376,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.30970084480941296,
+        "candidate_max_deviation_deg": 0.3736666866666649
+      }
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "sha256": "76cde1febdf2670bab373d642de5fa430f00eb7d2361e6fb77590b1b89b7b536",
+      "mode": "ACTIVE",
+      "snapshot_sha256_match": true,
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "arm_id": 1,
+      "gripper_id": 2,
+      "motion_commands_sent": 660,
+      "gripper_actions": [
+        "open",
+        "close",
+        "open"
+      ],
+      "final_snapshot_recorded": true,
+      "mpc_enabled_until_end": true,
+      "mpc_errors": [],
+      "body_samples": 315,
+      "body_sampling_offset": 0,
+      "body_motion_frames": 630,
+      "metrics": {
+        "rmse_deg": 0.7354011390885777,
+        "p99_abs_deg": 1.7979571068012612,
+        "max_abs_deg": 2.3999996185302734
+      },
+      "trajectory": {
+        "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+        "match": true
+      },
+      "executor": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_mpc_active_base.py",
+        "sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "reported_sha256": "c1aa7acd45064bdb45770ec34c9494713adfec97c23c96f9efe5cd87c76af00b",
+        "match": true
+      },
+      "wrapper": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_mpc_active_20ms.py",
+        "sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "reported_sha256": "11339ab42e3b04116a68f4a9ba2bdc84d4e1e4dbb233cc02d27b268d1ca8521f",
+        "match": true
+      },
+      "dependencies": [
+        {
+          "file": "tabletop_servo_contract.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "file": "servo_common.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/servo_common.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py",
+          "reported_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "received_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+          "match": true
+        },
+        {
+          "file": "sdk_session.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/sdk_session.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py",
+          "reported_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "received_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+          "match": true
+        },
+        {
+          "file": "precheck_tabletop_hybrid.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py",
+          "reported_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "received_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+          "match": true
+        },
+        {
+          "file": "execute_tabletop_pick_place_worlds.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py",
+          "reported_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "received_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+          "match": true
+        },
+        {
+          "file": "robot_lock.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/robot_lock.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py",
+          "reported_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "received_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+          "match": true
+        },
+        {
+          "file": "scrub_log.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/scrub_log.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/scrub_log.py",
+          "reported_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "received_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.py",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "file": "arm_profiles.v1.json",
+          "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        }
+      ],
+      "cleanup": {
+        "status": "PASS",
+        "errors": [],
+        "protection_enabled": true,
+        "speed_restored_readback": 10.0,
+        "speed_expected": 10.0,
+        "speed_restore_status": "PASS",
+        "sdk_stopped": true
+      },
+      "timing": {
+        "send_slots": 660,
+        "period_s": 0.02,
+        "late_frames": 656,
+        "late_ratio": 0.9939393939393939,
+        "max_late_ms": 16.82828599587083,
+        "mean_late_ms": 0.26882999994019724,
+        "realigns": 0,
+        "catchup_bursts_allowed": false,
+        "late_policy": "REALIGN_AND_CONTINUE_NEVER_CATCH_UP"
+      },
+      "mpc_solver": {
+        "solve_calls": 660,
+        "solve_total_ms": 1436.2228056415915,
+        "solve_max_ms": 6.608060095459223,
+        "feedback_calls": null,
+        "feedback_max_ms": 0.43897307477891445,
+        "candidate_max_deviation_deg": 1.059681307779968
+      }
+    }
+  ],
+  "aggregates": {
+    "SHADOW": {
+      "count": 6,
+      "rmse_deg": {
+        "mean": 1.1070825371691422,
+        "sample_sd": 0.0308771807230096
+      },
+      "p99_abs_deg": {
+        "mean": 2.5448131996117285,
+        "sample_sd": 0.046311991480830136
+      },
+      "max_abs_deg": {
+        "mean": 2.918083852132161,
+        "sample_sd": 0.05390351673427916
+      }
+    },
+    "ACTIVE": {
+      "count": 4,
+      "rmse_deg": {
+        "mean": 0.7256615538053041,
+        "sample_sd": 0.00854412164101882
+      },
+      "p99_abs_deg": {
+        "mean": 1.789735117302165,
+        "sample_sd": 0.008149162109794161
+      },
+      "max_abs_deg": {
+        "mean": 2.4759162966410315,
+        "sample_sd": 0.10784860396183457
+      }
+    }
+  },
+  "mean_rmse_reduction_percent": 34.45280460652447,
+  "metric_method": "每轮排除frame<entry_servo_frames，315个反馈样本×7轴；先算每轮RMSE/P99/MAX，再取组均值与样本标准差(ddof=1)。不是pooled P99，也不是设备时间戳对齐精度认证。",
+  "sampling_caveats": [
+    "前两轮主体样本偏移1，其余8轮偏移0。",
+    "Shadow反馈在本轮reference发送前记录；reference-minus-measured不能等同同一时刻controller-command-minus-actual。",
+    "十轮是成功子集；另有早期Shadow失效且基础抓放仍完成的记录。"
+  ],
+  "mac_comparison": [
+    {
+      "file": "controller.py",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/controller.py",
+        "relative_path": "mpc_experiment/mpc_experiment/controller.py",
+        "sha256": "314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/controller.py",
+      "mac_sha256": "4341f2fd73217591c41205f21c65022647e5dd6ec65eaf05ec7291c3bad4dc09",
+      "identical": false
+    },
+    {
+      "file": "run_experiment.py",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/run_experiment.py",
+        "relative_path": "mpc_experiment/mpc_experiment/run_experiment.py",
+        "sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/run_experiment.py",
+      "mac_sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+      "identical": true
+    },
+    {
+      "file": "test_mpc.py",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/test_mpc.py",
+        "relative_path": "mpc_experiment/mpc_experiment/test_mpc.py",
+        "sha256": "a2d29393beeb9324657521e19470a71e6abd1d85e74cb339ade9e2578dc428a5"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/test_mpc.py",
+      "mac_sha256": "a2d29393beeb9324657521e19470a71e6abd1d85e74cb339ade9e2578dc428a5",
+      "identical": true
+    },
+    {
+      "file": "requirements.txt",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/requirements.txt",
+        "relative_path": "mpc_experiment/mpc_experiment/requirements.txt",
+        "sha256": "20b0aefed02f6918992da5b931ad7a9b9213897259c53f891361f5b1d77de1ae"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/requirements.txt",
+      "mac_sha256": "20b0aefed02f6918992da5b931ad7a9b9213897259c53f891361f5b1d77de1ae",
+      "identical": true
+    },
+    {
+      "file": "README.md",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/README.md",
+        "relative_path": "mpc_experiment/mpc_experiment/README.md",
+        "sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/README.md",
+      "mac_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
+      "identical": true
+    },
+    {
+      "file": "results/report.json",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/results/report.json",
+        "relative_path": "mpc_experiment/mpc_experiment/results/report.json",
+        "sha256": "b427f0125a25a255967ce8d55c1b9b8f1365c9707e42acc400d15316af90f061"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/results/report.json",
+      "mac_sha256": "ad81c3e38544c3c8aa3f10ce3b4fed01147c3068ca9a4d70847184703e4eb21b",
+      "identical": false
+    },
+    {
+      "file": "results/traces.npz",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/results/traces.npz",
+        "relative_path": "mpc_experiment/mpc_experiment/results/traces.npz",
+        "sha256": "30906cd329b36494c2ee3e80ef196d7e3db5da970f03503a8c314fcd8c23da22"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/results/traces.npz",
+      "mac_sha256": "556f472026d2766044ea56439a0dd55fde2f328ad981eb69505d6d0bb378c1f3",
+      "identical": false
+    },
+    {
+      "file": "results/comparison.png",
+      "debian": {
+        "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/results/comparison.png",
+        "relative_path": "mpc_experiment/mpc_experiment/results/comparison.png",
+        "sha256": "552c3b13ecd825a7ec8b0d22964f71ad7340f2aaf883e85390bc434c64a267fe"
+      },
+      "mac_absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/results/comparison.png",
+      "mac_sha256": "0faed86b5614e7c3ae279fbd07e27c5a03167e2bfe4ed093e52b032d46404686",
+      "identical": false
+    }
+  ],
+  "core_change_unified_diff": "--- /Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/controller.py\n+++ /Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/controller.py\n@@ -124,7 +124,16 @@\n         self.solver.update(q=np.asarray(linear).ravel(), l=lower, u=upper)\n         result = self.solver.solve(raise_error=False)\n         if result.info.status_val != 1 or result.x is None or not np.isfinite(result.x).all():\n-            raise MPCError(f\"QP 未可靠求解: {result.info.status}; 不执行旧解\")\n+            info = result.info\n+            raise MPCError(\n+                \"QP 未可靠求解: \"\n+                f\"{info.status}; \"\n+                f\"iter={getattr(info, 'iter', None)}, \"\n+                f\"run_time_ms={1000.0 * float(getattr(info, 'run_time', 0.0)):.3f}, \"\n+                f\"prim_res={getattr(info, 'prim_res', None)}, \"\n+                f\"dual_res={getattr(info, 'dual_res', None)}; \"\n+                \"不执行旧解\"\n+            )\n         values = self.A @ result.x\n         residual = float(max(np.max(lower-values), np.max(values-upper), 0.0))\n         if residual > tol:\n",
+  "offline_experiments": {
+    "debian": {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/mpc_experiment/mpc_experiment/results/report.json",
+      "sha256": "b427f0125a25a255967ce8d55c1b9b8f1365c9707e42acc400d15316af90f061",
+      "generated_at_utc": "2026-09-16T03:08:05.201358+00:00",
+      "status": "OFFLINE_EXPERIMENT_COMPLETED_NOT_HARDWARE_QUALIFIED",
+      "platform": "Linux-6.12.101+deb13-amd64-x86_64-with-glibc2.35",
+      "python": "3.10.12",
+      "versions": {
+        "osqp": "1.1.1",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "pybullet": "3.2.5",
+        "matplotlib": "3.10.9"
+      },
+      "source_reference": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "real_motion_authorized": false,
+      "legacy_debian_execution_allowed_field": false,
+      "settings": {
+        "dt": 0.02,
+        "horizon": 15,
+        "response_alpha": 0.4,
+        "tracking_weight": 10.0,
+        "velocity_weight": 0.001,
+        "delta_velocity_weight": 0.002,
+        "solver_time_limit_s": 0.01,
+        "constraint_tolerance": 2e-05
+      },
+      "scenarios": {
+        "nominal/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.06450260141799759,
+          "max_feedback_acceleration_deg_s2": 902.829601346257,
+          "solver_wall_ms": null
+        },
+        "nominal/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.003942604571056642,
+          "max_feedback_acceleration_deg_s2": 960.6317305137989,
+          "solver_wall_ms": {
+            "p50": 0.4523259121924639,
+            "p95": 0.6488783285021782,
+            "p99": 0.8479870948940517,
+            "max": 3.1207918655127287,
+            "over_period_count": 0
+          }
+        },
+        "lag_mismatch/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.14917580696045124,
+          "max_feedback_acceleration_deg_s2": 451.54520104010334,
+          "solver_wall_ms": null
+        },
+        "lag_mismatch/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.05753596366285361,
+          "max_feedback_acceleration_deg_s2": 496.58991522789614,
+          "solver_wall_ms": {
+            "p50": 0.45119691640138626,
+            "p95": 0.6685183383524418,
+            "p99": 0.8795127738267194,
+            "max": 2.8798480052500963,
+            "over_period_count": 0
+          }
+        },
+        "external_force/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.06450207587644526,
+          "max_feedback_acceleration_deg_s2": 902.829601346257,
+          "solver_wall_ms": null
+        },
+        "external_force/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.003942441608365001,
+          "max_feedback_acceleration_deg_s2": 960.6317305137989,
+          "solver_wall_ms": {
+            "p50": 0.4496709443628788,
+            "p95": 0.6330375093966722,
+            "p99": 0.8134112320840361,
+            "max": 2.9141660779714584,
+            "over_period_count": 0
+          }
+        }
+      },
+      "source_matches": [
+        {
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json",
+          "reported_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+          "received_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+          "match": true
+        },
+        {
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json",
+          "reported_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "received_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+          "match": true
+        },
+        {
+          "relative_path": "XF0112048/robot.urdf",
+          "reported_sha256": "a69feea7828e12ea16d1554c5ea0b31e57b0fd28efabb374f92b0bd9d39e9a34",
+          "received_sha256": "a69feea7828e12ea16d1554c5ea0b31e57b0fd28efabb374f92b0bd9d39e9a34",
+          "match": true
+        },
+        {
+          "relative_path": "mpc_experiment/mpc_experiment/frame_calibration/analysis/calib_common.py",
+          "reported_sha256": "1c9787d57a9893d82c26eaf86c75f04640d515ea4190c8e842da7d644733bfa4",
+          "received_sha256": "1c9787d57a9893d82c26eaf86c75f04640d515ea4190c8e842da7d644733bfa4",
+          "match": true
+        },
+        {
+          "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py",
+          "reported_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "received_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+          "match": true
+        },
+        {
+          "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py",
+          "reported_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "received_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+          "match": true
+        },
+        {
+          "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py",
+          "reported_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "received_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+          "match": true
+        },
+        {
+          "relative_path": "mpc_experiment/mpc_experiment/controller.py",
+          "reported_sha256": "4341f2fd73217591c41205f21c65022647e5dd6ec65eaf05ec7291c3bad4dc09",
+          "received_sha256": "314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c",
+          "match": false
+        },
+        {
+          "relative_path": "mpc_experiment/mpc_experiment/run_experiment.py",
+          "reported_sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+          "received_sha256": "f692779675ad2af2f21373086995ccb8ce027258a74fd5059f81b4f747985abe",
+          "match": true
+        }
+      ],
+      "artifacts_match": [
+        {
+          "relative_path": "mpc_experiment/mpc_experiment/results/traces.npz",
+          "reported_sha256": "30906cd329b36494c2ee3e80ef196d7e3db5da970f03503a8c314fcd8c23da22",
+          "received_sha256": "30906cd329b36494c2ee3e80ef196d7e3db5da970f03503a8c314fcd8c23da22",
+          "match": true
+        },
+        {
+          "relative_path": "mpc_experiment/mpc_experiment/results/comparison.png",
+          "reported_sha256": "552c3b13ecd825a7ec8b0d22964f71ad7340f2aaf883e85390bc434c64a267fe",
+          "received_sha256": "552c3b13ecd825a7ec8b0d22964f71ad7340f2aaf883e85390bc434c64a267fe",
+          "match": true
+        }
+      ]
+    },
+    "mac": {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/pick_place_coord/mpc_experiment/results/report.json",
+      "sha256": "ad81c3e38544c3c8aa3f10ce3b4fed01147c3068ca9a4d70847184703e4eb21b",
+      "generated_at_utc": "2026-09-15T03:31:01.207800+00:00",
+      "status": "OFFLINE_EXPERIMENT_COMPLETED_NOT_HARDWARE_QUALIFIED",
+      "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+      "python": "3.13.5",
+      "versions": {
+        "osqp": "1.1.1",
+        "numpy": "2.1.3",
+        "scipy": "1.15.3",
+        "pybullet": "3.2.5",
+        "matplotlib": "3.10.0"
+      },
+      "source_reference": "frame_calibration/records/20260914_servo_sta_off/handoff/reconstructed/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "real_motion_authorized": false,
+      "legacy_debian_execution_allowed_field": false,
+      "settings": {
+        "dt": 0.02,
+        "horizon": 15,
+        "response_alpha": 0.4,
+        "tracking_weight": 10.0,
+        "velocity_weight": 0.001,
+        "delta_velocity_weight": 0.002,
+        "solver_time_limit_s": 0.01,
+        "constraint_tolerance": 2e-05
+      },
+      "scenarios": {
+        "nominal/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.06450260141799757,
+          "max_feedback_acceleration_deg_s2": 902.829601346257,
+          "solver_wall_ms": null
+        },
+        "nominal/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.003942604571056642,
+          "max_feedback_acceleration_deg_s2": 960.6317305137986,
+          "solver_wall_ms": {
+            "p50": 0.24641701020300388,
+            "p95": 0.4117667907848954,
+            "p99": 0.5791722377762198,
+            "max": 2.590166055597365,
+            "over_period_count": 0
+          }
+        },
+        "lag_mismatch/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.14917580696045124,
+          "max_feedback_acceleration_deg_s2": 451.54520104010334,
+          "solver_wall_ms": null
+        },
+        "lag_mismatch/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.057535963662853636,
+          "max_feedback_acceleration_deg_s2": 496.58991522789614,
+          "solver_wall_ms": {
+            "p50": 0.24870794732123613,
+            "p95": 0.4313746234402058,
+            "p99": 0.6008216179907322,
+            "max": 2.4879160337150097,
+            "over_period_count": 0
+          }
+        },
+        "external_force/interpolation": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.06450207587644526,
+          "max_feedback_acceleration_deg_s2": 902.829601346257,
+          "solver_wall_ms": null
+        },
+        "external_force/mpc": {
+          "cycles": 2609,
+          "simulation_duration_s": 52.18,
+          "rmse_joint_deg": 0.003942441608365007,
+          "max_feedback_acceleration_deg_s2": 960.6317305137986,
+          "solver_wall_ms": {
+            "p50": 0.24645798839628696,
+            "p95": 0.4186587873846292,
+            "p99": 0.5930486973375084,
+            "max": 2.643875079229474,
+            "over_period_count": 0
+          }
+        }
+      }
+    }
+  },
+  "early_0916_runs": [
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "sha256": "e66101e9374b6871f3f9184865286023cc21c9982b81554c7e05d1832331dd1e",
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "mode": "mpc_shadow",
+      "motion_commands_sent": 660,
+      "enabled_until_end": false,
+      "mpc_errors": [
+        "frame=0: MPCError: QP 未可靠求解: run time limit reached; 不执行旧解"
+      ],
+      "cleanup_status": "PASS",
+      "reported_executor_sha256": "f4d556e1ee47a0a9f852a178ada390653933de5b02af27ad2ecbecf4ff34ae8e",
+      "matching_executor_copies_in_received_servo_tree": []
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "sha256": "bdfec89ffd03770f985c5ab6982948926233ff13867601a937b37acb2d814085",
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "mode": "mpc_shadow",
+      "motion_commands_sent": 660,
+      "enabled_until_end": false,
+      "mpc_errors": [
+        "frame=1: MPCError: 上次指令速度超限"
+      ],
+      "cleanup_status": "PASS",
+      "reported_executor_sha256": "bdcf9a575a4459264553fc49924bbd94f8b2eb09047623a71e5d65258f39a741",
+      "matching_executor_copies_in_received_servo_tree": []
+    },
+    {
+      "absolute_path": "/Users/xiaobingxin/Desktop/工作/工作1/.handoff-review-workspace-20260921/full/recovered/workspace/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "sha256": "075daf298e3bec9c613b8f064a790d8b6b6573ca7b1608dd66bda549cc674ca2",
+      "status": "SERVO_COMPLETED_RETURNED_HOME",
+      "mode": "mpc_shadow",
+      "motion_commands_sent": 660,
+      "enabled_until_end": true,
+      "mpc_errors": [],
+      "cleanup_status": "PASS",
+      "reported_executor_sha256": "2d39d36eaaf1c2c63e0a18a70ac034c9eeeab40be720d0a973c27dbc385a1ce4",
+      "matching_executor_copies_in_received_servo_tree": []
+    }
+  ],
+  "prior_servo_requested_artifacts": [
+    {
+      "file": "execute_tabletop_servo_field_20ms.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_20ms.py"
+    },
+    {
+      "file": "execute_tabletop_servo_field_25ms.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_25ms.py"
+    },
+    {
+      "file": "execute_tabletop_servo_field_vaj20_v3.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo_field_vaj20_v3.py"
+    },
+    {
+      "file": "vaj3_spline.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/vaj3_spline.py"
+    },
+    {
+      "file": "execute_tabletop_servo.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/execute_tabletop_servo.py"
+    },
+    {
+      "file": "servo_common.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/servo_common.py"
+    },
+    {
+      "file": "sdk_session.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/sdk_session.py"
+    },
+    {
+      "file": "robot_lock.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/robot_lock.py"
+    },
+    {
+      "file": "tabletop_servo_contract.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_contract.py"
+    },
+    {
+      "file": "arm_profiles.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.py"
+    },
+    {
+      "file": "arm_profiles.v1.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/arm_profiles.v1.json"
+    },
+    {
+      "file": "probe_pulse_latency_stationary.py",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/probe_pulse_latency_stationary.py"
+    },
+    {
+      "file": "tabletop_pick_place_SERVO_CANDIDATE.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_CANDIDATE.json"
+    },
+    {
+      "file": "tabletop_pick_place_SERVO_gui_review.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_pick_place_SERVO_gui_review.json"
+    },
+    {
+      "file": "tabletop_servo_20260914_101418_793393004.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json"
+    },
+    {
+      "file": "tabletop_servo_20260914_101507_112677088.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json"
+    },
+    {
+      "file": "tabletop_servo_20260914_101711_112650029.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json"
+    },
+    {
+      "file": "tabletop_servo_20260914_105707_209790145.json",
+      "present": true,
+      "relative_path": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "EVIDENCE_COMPLETE_FOR_TEN_REPORT_RECALC",
+      "status": "CLOSED",
+      "detail": "原始 MPC tar.gz、发送端 sha256、四个执行源码、十轮原始 JSON、记录内十项依赖和 controller.py 均已收到。十轮34.4528046065%可以独立复算。"
+    },
+    {
+      "id": "CORE_NOT_BOUND_IN_HARDWARE_LOGS",
+      "status": "OPEN",
+      "detail": "十轮真机 JSON 的 dependencies 不含 controller.py。当前核心哈希仅证明本次收到的字节，不能回填成旧运行已记录的核心身份。"
+    },
+    {
+      "id": "EARLY_RUN_EXECUTOR_IDENTITY",
+      "status": "OPEN",
+      "detail": "9/16三个早期报告的executor_sha256与当前执行器不同；在本次收到的Servo源码/备份树中没有对应哈希。"
+    },
+    {
+      "id": "FAILURE_LOG_RETENTION",
+      "status": "OPEN",
+      "detail": "field wrapper rc非零时会删除新生成的失败JSON；Active诊断主要在正常循环结束后写入。全包文件齐全不能证明失败尝试记录齐全。"
+    },
+    {
+      "id": "FORMAL_QUALIFICATION_BYPASS",
+      "status": "OPEN",
+      "detail": "field wrapper明确formal_servo_qualification_bypassed=True；1.5度关节路径范围不是完整场景/全臂/持物碰撞资格。"
+    },
+    {
+      "id": "MODEL_AND_FEEDBACK_TIMING",
+      "status": "OPEN",
+      "detail": "alpha=0.4无本包真机辨识报告，偶数帧回读/奇数帧预测不证明40ms数据新鲜度；缺设备采样时间戳和序列号。"
+    },
+    {
+      "id": "POSTPROCESS_ACCELERATION",
+      "status": "OPEN",
+      "detail": "Active对QP候选进行端点渐收后仅查有限值、单步、限位和路径范围，没有独立复验后处理候选加速度。"
+    },
+    {
+      "id": "REALTIME_BOUNDARY",
+      "status": "OPEN",
+      "detail": "十轮20ms名义周期下max_late_ms最高390.8163，Active最高138.9485；求解耗时不含全部网络/SDK/调度，不能称硬实时通过。"
+    },
+    {
+      "id": "OFFLINE_REPORT_CORE_VERSION",
+      "status": "EXPLAINED_DRIFT",
+      "detail": "Debian离线报告绑定旧controller SHA4341f2fd...，与Mac当前核心一致；现场随后仅扩充QP失败诊断，收到核心SHA314f5cbe...。离线报告其余8项源码/输入以及两份产物哈希全部匹配。"
+    },
+    {
+      "id": "CALIBRATION_SHIM_NOT_AUTHORITY",
+      "status": "OPEN_DOCUMENTATION",
+      "detail": "Debian MPC包内calib_common.py是21行左臂仿真兼容层，不含CONFIRMED标定参数；不能覆盖Mac主标定真源。URDF固定Linux路径，恢复树中run_experiment默认参考/依赖路径缺失，离线移植需单独适配。"
+    },
+    {
+      "id": "HISTORICAL_README",
+      "status": "OPEN_DOCUMENTATION",
+      "detail": "Debian README与Mac9/15 README字节相同，仍写未接入SDK及仅Mac仿真；Debian离线report还遗留Mac时序注释和debian_execution_allowed=false字段，必须按实际platform和schema解释。"
+    }
+  ],
+  "recommended_next_steps": [
+    "分别登记Mac离线、Debian离线、Debian真机Shadow、Debian真机Active，固定证据与入口。",
+    "保持收到包与日志不变，在开发副本中整理路径与共享模块；MPC最小calib兼容层不得覆盖CONFIRMED真源。",
+    "把运行核心及NumPy/SciPy/OSQP/Python/SDK版本加入未来日志身份，不回填旧日志。",
+    "修复失败报告删除与异常诊断保存，完成离线回归后再考虑发布。",
+    "为后处理命令补加速度验收、反馈新鲜度/全循环时延证据、响应辨识与碰撞资格；不以调宽阈值代替验证。",
+    "原十轮统计保持固定样本清单；早期试验另列，不能算100%成功率。"
+  ]
+}

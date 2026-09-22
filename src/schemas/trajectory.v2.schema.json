@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xifeng.local/schemas/trajectory.v2.schema.json",
+  "title": "trajectory.v2",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "trajectory_id", "contract", "provenance", "pulse", "safety", "waypoints"],
+  "properties": {
+    "schema_version": {"const": "trajectory.v2"}, "trajectory_id": {"type": "string", "minLength": 1},
+    "contract": {
+      "type": "object", "additionalProperties": false,
+      "required": ["arm", "arm_id", "gripper_id", "ee_link_id", "tcp_id", "joint_angle_unit", "sdk_from_urdf_sign", "executor"],
+      "properties": {
+        "arm": {"enum": ["left", "right"]}, "arm_id": {"enum": [1, 2]}, "gripper_id": {"enum": [1, 2]},
+        "ee_link_id": {"type": "integer"}, "tcp_id": {"type": "string", "minLength": 1}, "joint_angle_unit": {"const": "degree"},
+        "sdk_from_urdf_sign": {"type": "array", "prefixItems": [{"enum": [-1,1]}, {"enum": [-1,1]}, {"enum": [-1,1]}, {"enum": [-1,1]}, {"enum": [-1,1]}, {"enum": [-1,1]}, {"enum": [-1,1]}], "items": false},
+        "executor": {"const": "track_c_armPluseToServo"}, "robot_config_identity": {"type": "string"},
+        "qualification_status": {"enum": ["CANDIDATE", "REAL_VERIFIED_PARENT"]}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["observation_sha256", "task_sha256", "adapted_task_sha256", "planner_id", "calibration_id", "dependencies_sha256", "derived_trajectory_sha256"],
+      "properties": {
+        "observation_sha256": {"$ref": "#/$defs/hash"}, "task_sha256": {"$ref": "#/$defs/hash"},
+        "adapted_task_sha256": {"$ref": "#/$defs/hash"},
+        "planner_id": {"type": "string"}, "calibration_id": {"type": "string"}, "dependencies_sha256": {"$ref": "#/$defs/hash"},
+        "derived_trajectory_sha256": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "pulse": {
+      "type": "object", "additionalProperties": false, "required": ["step_deg", "period_ms", "dense_frame_count"],
+      "properties": {"step_deg": {"const": 0.4}, "period_ms": {"const": 20}, "dense_frame_count": {"type": "integer", "minimum": 1}}
+    },
+    "safety": {
+      "type": "object", "additionalProperties": false,
+      "required": ["minimum_joint_margin_deg", "collision_report_sha256", "first_point_checked", "carried_object_checked"],
+      "properties": {"minimum_joint_margin_deg": {"type": "number", "minimum": 5}, "collision_report_sha256": {"$ref": "#/$defs/hash"}, "first_point_checked": {"const": true}, "carried_object_checked": {"const": true}}
+    },
+    "waypoints": {
+      "type": "array", "minItems": 1,
+      "items": {"oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["seg", "q_sdk_deg"], "properties": {"seg": {"type": "string"}, "q_sdk_deg": {"type": "array", "prefixItems": [{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"},{"type":"number"}], "items": false}}},
+        {"type": "object", "additionalProperties": false, "required": ["seg", "gripper"], "properties": {"seg": {"type": "string"}, "gripper": {"enum": ["open", "close"]}}},
+        {"type": "object", "additionalProperties": false, "required": ["seg", "vision_check"], "properties": {"seg": {"type": "string"}, "vision_check": {"type":"object","additionalProperties":false,"required":["kind","object_id","max_error_m"],"properties":{"kind":{"enum":["grasp_follow","placement"]},"object_id":{"type":"string","minLength":1},"max_error_m":{"type":"number","minimum":0,"maximum":0.02}}}}}
+      ]}
+    }
+  },
+  "$defs": {"hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}
