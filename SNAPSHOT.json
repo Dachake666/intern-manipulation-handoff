@@ -1,0 +1,151 @@
+{
+  "node": "B2",
+  "created_for_handoff": "2026-09-22",
+  "historical_execution_not_implied": true,
+  "notice": "原字节代码快照，可能默认开启运动；仅恢复审阅，不自动运行。",
+  "files": [
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "original_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "bytes": 67881,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_pick_place_worlds.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_pick_place_worlds.py",
+      "original_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "bytes": 41361,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_172336_575481.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_172336_575481.json",
+      "original_sha256": "062779bc21ebdabdd13d8c145609f7333e096202e6c5675b1644b8240e840301",
+      "sha256": "062779bc21ebdabdd13d8c145609f7333e096202e6c5675b1644b8240e840301",
+      "bytes": 231796,
+      "group": "B2",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_174455_765166.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_174455_765166.json",
+      "original_sha256": "317e62c34900d72ffa7251759ed15306966bc6df2d0e614ded0bbf9ae03dd4f8",
+      "sha256": "317e62c34900d72ffa7251759ed15306966bc6df2d0e614ded0bbf9ae03dd4f8",
+      "bytes": 231767,
+      "group": "B2",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_182616_452498.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_182616_452498.json",
+      "original_sha256": "17995b87db3e5bb9723df1ed0c3f09458e9e5ae56bacf014ad2f20ccbf1d0d27",
+      "sha256": "17995b87db3e5bb9723df1ed0c3f09458e9e5ae56bacf014ad2f20ccbf1d0d27",
+      "bytes": 231781,
+      "group": "B2",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260909_151034_277001.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260909_151034_277001.json",
+      "original_sha256": "4b450d6f0bc74ffcbf82671192aad9f1f7552eb8dfdbd88fc801363b772dde8d",
+      "sha256": "4b450d6f0bc74ffcbf82671192aad9f1f7552eb8dfdbd88fc801363b772dde8d",
+      "bytes": 231815,
+      "group": "B2",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/precheck_tabletop_hybrid.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/precheck_tabletop_hybrid.py",
+      "original_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "bytes": 17270,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py",
+      "original_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "bytes": 6633,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py",
+      "original_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "bytes": 2465,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py",
+      "original_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "bytes": 34898,
+      "group": "B2",
+      "kind": "source",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+      "original_sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59",
+      "sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59",
+      "bytes": 408911,
+      "group": "B2",
+      "kind": "trajectory",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_20260908/hybrid_trial_run_20260908_172435_229744.json",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_20260908/hybrid_trial_run_20260908_172435_229744.json",
+      "original_sha256": "f84e1521610470122b408321efc8192f92f84619106daddea04ae3ff201ecdb9",
+      "sha256": "f84e1521610470122b408321efc8192f92f84619106daddea04ae3ff201ecdb9",
+      "bytes": 231899,
+      "group": "B2",
+      "kind": "evidence",
+      "redactions": 0,
+      "location": "git_snapshot"
+    },
+    {
+      "path": "debian/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_handoff_20260908.md",
+      "origin": "workspace.zip:workspace/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_handoff_20260908.md",
+      "original_sha256": "b43926a256a7af901720529deb839944ca1448f08fdfdc0865e1b0062bec94f8",
+      "sha256": "b43926a256a7af901720529deb839944ca1448f08fdfdc0865e1b0062bec94f8",
+      "bytes": 10140,
+      "group": "B2",
+      "kind": "summary",
+      "redactions": 0,
+      "location": "git_snapshot"
+    }
+  ]
+}
