@@ -1,0 +1,568 @@
+{
+  "schema": "robot_history_check.v1",
+  "status": "PASS",
+  "nodes": [
+    {
+      "node": "B2",
+      "files": 13,
+      "status": "PASS"
+    },
+    {
+      "node": "B3",
+      "files": 10,
+      "status": "PASS"
+    },
+    {
+      "node": "B4",
+      "files": 110,
+      "status": "PASS"
+    },
+    {
+      "node": "B5",
+      "files": 38,
+      "status": "PASS"
+    },
+    {
+      "node": "B6",
+      "files": 18,
+      "status": "PASS"
+    },
+    {
+      "node": "B7",
+      "files": 30,
+      "status": "PASS"
+    },
+    {
+      "node": "D1",
+      "files": 15,
+      "status": "PASS"
+    },
+    {
+      "node": "D2",
+      "files": 3,
+      "status": "PASS"
+    },
+    {
+      "node": "D3",
+      "files": 1,
+      "status": "PASS"
+    },
+    {
+      "node": "H_MAC_FROZEN",
+      "files": 8,
+      "status": "PASS"
+    },
+    {
+      "node": "history",
+      "files": 85,
+      "status": "PASS"
+    }
+  ],
+  "history_only_files_verified": 574,
+  "run_assemblies": [
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "D1",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "vaj3_spline.py"
+      ]
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B4",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "status": "RECORDED_BINDINGS_VERIFIED",
+      "unresolved": []
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "B5",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "controller.py: source SHA was not recorded for this hardware run"
+      ]
+    },
+    {
+      "node": "D2",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "executor/source binding unavailable: evidence only"
+      ]
+    },
+    {
+      "node": "D2",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "executor/source binding unavailable: evidence only"
+      ]
+    },
+    {
+      "node": "D2",
+      "report_relative": "trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "status": "PARTIAL_SOURCE_IDENTITY",
+      "unresolved": [
+        "executor/source binding unavailable: evidence only"
+      ]
+    }
+  ],
+  "motion_started": false,
+  "scope": "Git objects and hash-bound restoration only; source gaps remain explicit."
+}

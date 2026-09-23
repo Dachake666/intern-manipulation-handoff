@@ -32,7 +32,7 @@ def main():
             if m.isdir():continue
             p=dest/m.name;p.parent.mkdir(parents=True,exist_ok=True)
             p.write_bytes(tf.extractfile(m).read())
-    if a.node == 'B1':
+    if (dest/'HANDOFF_MANIFEST.json').is_file():
         # Large calibration images are shipped once outside Git, with versioned hashes.
         manifest=json.loads((dest/'HANDOFF_MANIFEST.json').read_text())
         for item in manifest['files']:
@@ -46,7 +46,9 @@ def main():
                 raise ValueError('Calibration payload identity mismatch')
             p=dest/str(name);p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw)
     print(f'Restored {a.node} to {dest}. No code was executed.')
-    print('Historical files may enable real motion by default. Review SNAPSHOT.json before any use.')
+    print('Export contains no Git database. Keep the complete delivery to access other versions.')
+    if a.node != 'B1':
+        print('Historical snapshot for inspection; it is not a current installation or motion guide.')
 
 
 if __name__=='__main__':

@@ -1,43 +1,31 @@
-# frame_calibration — SDK↔PyBullet 标定与真机执行
+# 标定、真机执行与证据
 
-> 2026-07-22 部分重建。日常工作流与目录说明来自会话/记忆, 标定结论权威在
-> `analysis/calib_common.py` 的 `CONFIRMED_*` 常量。整体恢复情况见工作区根
-> 目录 `RECOVERY_STATUS.md`。
+本目录由标定分析、执行器、必要标定输入和选定运行证据组成。总入口在仓库根 `START_HERE.md`；真机版本恢复见 `robot/README.md`。
 
-## 目录
+| 目录 | 职责 | 主要入口 |
+|---|---|---|
+| `analysis/` | 离线标定与坐标核查 | `calib_common.py`、`verify_worlds_record.py`、`fit_eye_to_hand.py` |
+| `robot_side/` | 真机 SDK 会话、执行器、Servo、预检、夹爪与安全回归 | `execute_trajectory.py`、`execute_servo_grasp.py`、`execute_tabletop_*`、`sdk_session.py` |
+| `data/worlds/` | 会话漂移检查的参考与候选样本 | 7/10参考记录、8/31候选记录；历史时间戳不证明当前有效 |
+| `records/` | 选定原日志、固定输入、源码身份与测试夹具 | 由源码/输入 SHA 与运行参数共同识别 |
+
+`robot_side/test_*.py` 同时存在离线回归和硬件能力探针，不能广泛自动执行。选定离线入口为仓库根 `tools/offline_checks.py`。
+
+## 坐标与标定
+
+标定结论只认 `analysis/calib_common.py` 的 `CONFIRMED_*` 及其置信度标记。规划平移 `CONFIRMED_T_SESSIONS_MM` 与 v2 位置解释的 `CONFIRMED_T_SESSIONS_V2_MM` 服务不同模型，不能混用。UVW 说明见 [UVW_TO_QUATERNION.md](UVW_TO_QUATERNION.md)。
+
+`verify_worlds_record.py` 已实现 Model-A 会话漂移门，离线比较参考和候选的平移、残差与新鲜度。明确给入当天采样记录，避免把“最新历史文件”当成当前现场：
+
+```bash
+# 从仓库根执行；将 candidate-worlds.json 替换为已采集记录
+(cd src && python3 -B frame_calibration/analysis/verify_worlds_record.py ../.runtime/candidate-worlds.json --json-out ../.runtime/frame-gate.json)
 ```
-analysis/         Mac 侧标定计算(重建件, 部分待核)
-  calib_common.py   常量权威 + SDK<->URDF 关节换算 + FK
-robot_side/       容器内真机执行(幸存, 已升到最新)
-  execute_trajectory.py   低速回放已校验的关节轨迹(逐点/连续)
-  sdk_session.py          会话/使能/读关节/软急停封装
-  test_execute_trajectory_options.py  离线单测(11/11)
-  collect_*.py / jog_* / verify_uvw   标定采样脚本
-  容器操作手册.md
-data/             worlds_record 标定数据
-records/          真机证据归档(99/88/153/133 点各次)
-realtest_archive/ 最终验收 99 点 + 夹爪
-trajectories/validated/  按 SHA 命名的已验证轨迹快照
-```
 
-## 标定结论(权威=calib_common.CONFIRMED_*)
-- SDK 腕滚(j6)符号相对 URDF 取反(`sdk_q_to_urdf_q`)。
-- TCP: r=[0,168,-39]mm(link11 系, 0.003mm 拟合)。
-- UVW = 标准 RPY, `R_sdk = R_link11·Rz(90°)`。
-- v2 位置模型: `p_sdk = FK_link11·1000 + R_link9·D_FOREARM + R_link11·r_tcp + t`,
-  D_FOREARM=[-0.08,0.24,-85.06]mm(SDK 内部模型前臂比 URDF 长 85mm; 物理真值
-  是 URDF, 仿真抓取点无需此修正)。t 是会话级, 腰部上下移动会使其漂移。
+缺少候选、漂移超限或过期时应保持阻断。该检查不能代替工具、腰/底盘、相机与场景的现场核实。
 
-## 日常唯一还需要的操作
-每次开工(或腰动过后)用 `execute_trajectory.py --record-worlds` 跑一遍逐点轨迹
-即可重标 t; 日常运行默认不生成 worlds JSON。把产出的 `worlds_record_*.json`
-拷回 `data/`, 运行 `analysis/verify_worlds_record.py <文件>` —— 同时完成链路
-验证 + t 重标 + 漂移量化。
+`fit_eye_to_hand.py` 能计算外参，但当前输出 VALIDATED/locked 的实现缺少独立质量批准门，不能据此直接激活视觉运动。具体问题见根 `docs/KNOWN_ISSUES.md`。旧网格、腕部、触碰和命令侧采样工具及不完整的配套分析流程保存在 PRE_PRUNE，仅作历史参考。
 
-> ⚠️ `verify_worlds_record.py` 未随本次恢复重建(仅知用途), 需要时按
-> `calib_common` 现有常量重写。
+## 真机代码身份
 
-## 场景高度基准(真机实测)
-- 任务 z=1.00 ↔ 夹爪底端离地 70cm, 每 +0.01 = +1cm。
-- 当前真实桌面 72cm, 物品顶 ~80cm → 用 `task_2pairs_table72.json`(z=1.05,
-  夹爪底端约 75cm)。
+开发目录的共享依赖和冻结历史组合分别维护。B2～B7 恢复历史成果，`tools/restore_run.py` 按一轮报告装配；不把当前 `sdk_session.py` 覆盖到旧运行组合。新执行器默认关闭运动，使用互斥锁，并验证正常/异常路径的保护与速度恢复。

@@ -70,7 +70,7 @@ class DualPrecheckReleaseTests(unittest.TestCase):
         self.assertNotIn("DP", release.SUPERSEDED_RELEASES)
         self.assertNotIn("gui_review_pair", spec)
         self.assertIn("--precheck-only", spec["entry"])
-        for key in ("A", "AT", "AS", "C", "V"):
+        for key in ("A", "AT", "AS", "C", "CB"):
             self.assertNotEqual(spec["dir"], release.TRACKS[key]["dir"])
 
     def test_readme_has_direct_read_only_command_and_explicit_blockers(self):
@@ -78,7 +78,8 @@ class DualPrecheckReleaseTests(unittest.TestCase):
             _, _, _, _, spec = self.fixture(folder)
             text = release.render_readme("DP", spec, sorted(BUSINESS_FILES), [])
         self.assertIn("当前候选 12 个双臂密集帧", text)
-        self.assertIn("不必先运行离线 dry-run", text)
+        self.assertIn("先校验文件", text)
+        self.assertIn("CPython 3.10", text)
         self.assertIn("--precheck-only", text)
         self.assertIn('"$robot_ip"', text)
         self.assertNotIn("192.168.", text)

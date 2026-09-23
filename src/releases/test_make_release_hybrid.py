@@ -78,6 +78,12 @@ class HybridReleaseTests(unittest.TestCase):
         self.assertNotIn("tabletop_pick_place_hybrid_OPTIMIZED.json --run", text)
         self.assertIn("python3 releases/make_release.py AT", text)
         self.assertIn("不重建、删除或覆盖A/AP", text)
+        self.assertIn("CURRENT_DEPENDENCIES_UNVERIFIED", text)
+        self.assertIn("不继承B2整套实跑身份", text)
+        self.assertIn("本独立发布目录不附带完整历史日志", text)
+        self.assertNotIn("10%也有本组合的实跑证据", text)
+        self.assertNotIn("frame_calibration/records/20260908_trackA_hybrid_final/", text)
+        self.assertNotIn("as_run清单和审查说明", text)
 
     def test_readme_gui_pass_is_bound_to_exact_current_plan(self):
         with tempfile.TemporaryDirectory(prefix=".hybrid-release-test-", dir=WORK) as folder:
@@ -91,12 +97,12 @@ class HybridReleaseTests(unittest.TestCase):
                 json.dumps(review), encoding="utf-8")
             with patch.object(release, "CANDIDATES", str(root)):
                 text = release.render_hybrid_trial_readme(release.TRACKS["AT"], [], [])
-                self.assertIn("用户完整观看并确认GUI人工PASS", text)
+                self.assertIn("绑定轨迹SHA的完整GUI人工PASS记录", text)
                 self.assertIn("不解除物理场景/碰撞资格限制", text)
                 plan.write_bytes(b'{"changed": true}\n')
                 text = release.render_hybrid_trial_readme(release.TRACKS["AT"], [], [])
                 self.assertIn("GUI人工审核尚未匹配", text)
-                self.assertNotIn("用户完整观看并确认GUI人工PASS", text)
+                self.assertNotIn("绑定轨迹SHA的完整GUI人工PASS记录", text)
 
     def test_bad_reference_keeps_existing_package(self):
         with tempfile.TemporaryDirectory(prefix=".hybrid-release-test-", dir=WORK) as folder:

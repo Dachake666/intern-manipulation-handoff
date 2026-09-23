@@ -5,7 +5,7 @@
     {
       "workspace_id": "box1",
       "camera_id": "camera1",
-      "model_path": "best.onnx",
+      "model_path": "../../best.onnx",
       "hand_eye_matrix": [
     [
       0.6453649013457409,

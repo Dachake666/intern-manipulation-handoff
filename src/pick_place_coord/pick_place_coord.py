@@ -20,6 +20,7 @@
   python3 pick_place_coord.py --pick 0.36 0.30 1.00 --place 0.36 0.16 1.00
   # 多组抓放 + 障碍(视觉模块未来输出同一 JSON 格式)
   python3 pick_place_coord.py --task tasks/task_2pairs_table72.json --seed 7 --export-json
+  # 新导出写入 trajectories/candidates，不覆盖历史冻结输入。
   # 可达范围扫描
   python3 pick_place_coord.py --scan
 """
@@ -170,6 +171,11 @@ class Traj:
         return out
 
     def export(self, path, meta):
+        target = os.path.realpath(path)
+        frozen_dir = os.path.realpath(os.path.join(_HERE, "trajectories", "verified"))
+        legacy_alias = os.path.realpath(os.path.join(_HERE, "trajectories", "traj_multi_latest.json"))
+        if os.path.commonpath([target, frozen_dir]) == frozen_dir or target == legacy_alias:
+            raise ValueError("拒绝覆盖冻结轨迹或旧 latest 别名；请输出到 trajectories/candidates/")
         waypoints = []
         for it in self._downsample():
             if "gripper" in it:
@@ -181,7 +187,7 @@ class Traj:
                                                 cc.urdf_q_to_sdk_q(q_deg)]})
         payload = {"meta": meta, "waypoints": waypoints}
         os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-        # P2 起只写 traj_latest(不再每次留时间戳副本); 真机 as-run 版本由归档保存
+        # [20260923] 新规划只更新候选；冻结输入与真机 as-run 版本由历史归档保存。
         with open(path, "w") as f:
             json.dump(payload, f, indent=1, ensure_ascii=False)
         n_moves = sum(1 for w in waypoints if "q_sdk_deg" in w)
@@ -531,8 +537,8 @@ def pick_and_place(robot, pick, place, gui, do_export=True, out=None):
             "note": "q_sdk_deg 已含 j6 符号翻转, 可直接逐点 armMoveJoints; "
                     "腰部若动过, SDK 坐标含义随 t 漂移, 关节轨迹本身不受影响",
         }
-        traj.export(out or os.path.join(_HERE, "trajectories",
-                                        "traj_latest.json"), meta)
+        traj.export(out or os.path.join(_HERE, "trajectories", "candidates",
+                                        "traj_single_CANDIDATE.json"), meta)
     elif ok:
         print("\n轨迹 JSON: 未生成(需要时加 --export-json; --out 也会开启导出)。")
     return ok
@@ -781,8 +787,8 @@ def pick_and_place_multi(robot, pairs, obstacles_spec, gui,
             "note": "多点任务: q_sdk_deg 已含 j6 翻转, 逐点 armMoveJoints; "
                     "夹爪事件为 close/open 交替共 %d 次" % (2 * n),
         }
-        traj.export(out or os.path.join(_HERE, "trajectories",
-                                        "traj_multi_latest.json"), meta)
+        traj.export(out or os.path.join(_HERE, "trajectories", "candidates",
+                                        "traj_multi_CANDIDATE.json"), meta)
     elif all_ok:
         print("\n轨迹 JSON: 未生成(需要时加 --export-json 或 --out)。")
     return all_ok
@@ -834,7 +840,7 @@ def build_arg_parser():
     export_group.add_argument("--no-export", action="store_true",
                               help="兼容旧命令; 当前默认已不导出")
     ap.add_argument("--out", default=None,
-                    help="轨迹输出路径; 指定本项也会开启 JSON 导出")
+                    help="候选输出路径; 指定本项也会开启导出，禁止覆盖 verified/ 或旧 latest 别名")
     ap.add_argument("--seed", type=int, default=None,
                     help="固定随机种子: 同一任务生成完全相同的轨迹(可复现)")
     ap.add_argument("--arm", choices=("left", "right"), default="left",

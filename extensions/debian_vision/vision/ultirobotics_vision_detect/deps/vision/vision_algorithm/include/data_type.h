@@ -182,7 +182,7 @@ struct detect_rio_2d {
 };
 
 struct algorithmParam {
-	std::string model_path = "best.onnx";
+	std::string model_path; // Set explicitly by the caller; no working-directory fallback.
 	bool is_detect_angle = true;
     std::vector<std::vector<double>> camera_rt = {{1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
     std::vector<double> rt_inv = {1,0,0,0,0,1,0,0,0,0,1,0};

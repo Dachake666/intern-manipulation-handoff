@@ -1,18 +1,16 @@
-# 轨迹候选目录
+# 候选、固定参考与检查夹具
 
-本目录只保留仍在使用的候选和资格证据，不保存已被当前结果取代的瓶子变体。
+本目录保留开发和离线回归仍依赖的输入。文件名的 CANDIDATE、RUN 或旧状态字段不是当前运动许可；按精确 SHA、场景、配套报告和执行器共同判断。
 
-## 新桌面左臂瓶子抓放（2026-09-01）
+| 文件/组 | 用途与限制 |
+|---|---|
+| `tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json` | Track A最终固定参考，SHA `e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59`；配套现场组合为B2 |
+| `tabletop_pick_place_hybrid_CANDIDATE.json`、`_OPTIMIZED.json` | 旧候选仍作为生成器/执行器回归输入，不能因较旧而移除测试依赖 |
+| `tabletop_pick_place_SERVO_CANDIDATE.json` | 开发Servo参考，SHA前缀 `0a18545594212ecf`；B4/B5各轮可能用不同候选，按绑定恢复 |
+| `traj_bottle_taught_tcp_20260831_RUN.json` | 275运动点及夹爪事件，SHA `cce2a83fae21468f80f0aad487087b61650eac6f92dea65f9560091d0239ad2b`；完整五轮原日志不足，LIMITED |
+| 瓶子CANDIDATE、qualification task/report、GUI review | 生成/回放与来源资格证据；不能替代B7现场执行器身份 |
+| `tabletop_pick_place_worlds.json` | 逐段MoveWorlds候选，场景与资格需核对；不是通用成功基线 |
+| `traj_multi_right_20260806_CANDIDATE.json` | 右臂硬件阻断候选，实际限位、TCP和夹爪闭环未完成 |
+| `traj_tabletop_vision_ab_20260902_REPLAY_CANDIDATE.json` 及对应task/report | 视觉场景回放与候选链路，不代表自主抓放已验收 |
 
-- 生成候选：`traj_bottle_taught_tcp_20260831_CANDIDATE.json`
-- 真机测试件：`traj_bottle_taught_tcp_20260831_RUN.json`
-- 资格任务：`task_bottle_taught_tcp_20260831_qualification.json`
-- GUI 证据：`bottle_taught_tcp_20260831_gui_review.json`
-- 资格报告：`traj_bottle_taught_tcp_20260831_qualification_report.json`
-- 真机归档：`frame_calibration/records/20260901_taught_tcp_bottle_verified/`
-
-RUN SHA-256：`264808c7da7f8a7f6b9e1844de9cb536c5f39a7c800275b95b5d7a8f1e1a522c`。现场完整执行 PASS；因 Debian 执行脚本只记录 SHA 前缀且与当前发布脚本不同，证据暂为 `LIMITED`，没有迁入 `trajectories/verified/`。
-
-## 右臂候选
-
-`traj_multi_right_20260806_CANDIDATE.json` 仍为 `CANDIDATE_HARDWARE_BLOCKED`；右臂真实限位、TCP、SDK 映射和夹爪会话闭环完成前不得真机执行。
+新实验输出到 `.runtime/`，登记代码/输入/参数 SHA 和对应验证。需要成为长期参考时先补用途、依赖和证据边界，再加入根 `docs/DELIVERY_SELECTION.json`。不要覆盖历史文件、改JSON状态或改文件名来升级资格。

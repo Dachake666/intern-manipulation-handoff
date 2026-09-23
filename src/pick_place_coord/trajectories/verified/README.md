@@ -1,30 +1,17 @@
-# 真机验证通过的轨迹(冻结, 只读)
+# 冻结轨迹参考
 
-这个目录里的 JSON **不要改**。每一份都在真机上跑成功过，是出问题时的回退基准。
-改进版本一律另存到 `trajectories/` 下，验证通过后再往这里加新文件。
+本目录保存核心冻结输入。历史文件名中的 `REALVERIFIED` 是来源名称，**不代表当前已具备完整实机验收证据**；使用结论以本说明、版本表和运行身份为准。
 
-| 文件 | SHA-256(前16) | 真机战绩 | 日志 |
-|---|---|---|---|
-| `world_grasp_arc12_20260729_REALVERIFIED.json` | `947b7bc6fcbb3813` | Track A，20260729 连续 3 次成功 | [记录](../../../frame_calibration/records/20260729_world_grasp_arc12_success/) |
-| `traj_minimal_joint_8pt_REALVERIFIED.json` | `702a198ebcc35848` | Track B，8 路点，3 次成功 | — |
-| `traj_multi_2grasp_20260804_REALVERIFIED.json` | `ac5c6fd7715c81fb` | **Track C pulse 双抓放，5 轮全过**（0.4°/20ms，32.7s，终点 0.048°） | [记录](../../../frame_calibration/records/20260804_pulse_multi_grasp_verified/) |
+| 文件 | 身份 | 当前证据边界 |
+|---|---|---|
+| `traj_multi_2grasp_20260804_REALVERIFIED.json` | SHA前缀 `ac5c6fd7715c81fb`；133运动点 + 4夹爪事件 | Track C双次抓放五轮只有汇总，完整原日志不足，LIMITED |
 
-## Track A 这份是什么
-
-18 个拐角：`START → PICK_DESCEND → [close] → PICK_ASCEND → ARC01..ARC12 →
-PLACE_DESCEND → [open] → PLACE_ASCEND`，全部走 `armMoveWorlds` 直线，
-执行器 `MODE="point"`。
-
-三次运行的到位误差 0.8~3.9mm，限位预检最小余量 9.5°(RUN2 ARC09 j4)。
-
-**已知缺点(20260729 现场评价)**：ARC 那 12 个点每个都是一条独立的
-`armMoveWorlds` + 等停稳，转运段又慢又顿；PICK/PLACE 的 ascend/descend
-是单条长直线，又快又顺。这就是下一版改混合模式的直接动机。
-
-## 用法
+冻结输入只读。点流对照从仓库根运行：
 
 ```bash
-python3 execute_world_grasp.py world_grasp_arc12_20260729_REALVERIFIED.json
+(cd src && XIFENG_ALLOW_REAL_MOTION=0 python3 -B pick_place_coord/verify_left_track_c.py)
 ```
 
-执行器侧需要 `MODE="point"`、`ENABLE_REAL_MOTION=True`。
+预期0.4°步长1633帧，0.2°步长3232帧。这是纯离线计算，不构成GUI或真机验收。B3保存对应历史实现；精确历史运行身份缺口不能由当前开发执行器填补。
+
+旧Worlds/8点等参考通过PRE_PRUNE、history或对应成果节点恢复。新候选先存独立路径，完成明确范围的验证后登记，不修改已有冻结文件。

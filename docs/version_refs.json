@@ -81,6 +81,13 @@
     "commit": null,
     "files": "current development snapshot",
     "motion_authorized": false,
-    "source_identity": "Current development working files, not only tracked files"
+    "source_identity": "Current tagged delivery and handeye data; uncommitted files and Git history are not exported"
+  },
+  "PRE_PRUNE": {
+    "ref": "handoff/pre-prune",
+    "commit": "ad272bf210c65ef71410262190e7a10de03a5c6b",
+    "files": "complete pre-pruning snapshot",
+    "motion_authorized": false,
+    "source_identity": "Immutable complete snapshot with original paths and handeye data"
   }
 }

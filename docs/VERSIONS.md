@@ -1,37 +1,53 @@
 # 可恢复版本
 
-初次收件工作区HEAD为9f65b7619cc3ae70446a258c9276111e5eb14720，允许范围内的当前工作文件也纳入B1。
-本包为精简Git历史，未继承原仓库全部祖先。整理提交日期不是实跑日期。
-handoff/current随本次交接修订前移；B2～B7、D1～D3、history/H_MAC_FROZEN保持原提交与身份。
+版本按职责与证据划分。当前源码用于开发，历史组合由不可变节点恢复；提交时间不等于实验时间。目录名或 REALVERIFIED 文件名不能替代运行报告与精确 SHA。
 
 | 节点 | 内容 | Git标签 |
 |---|---|---|
-| B1 | 当前开发基础（仿真、接口、真机消费者） | `handoff/current` |
-| B2 | Track A最终固定场景 | `handoff/b2` |
-| B3 | Track C133点双次抓放 | `handoff/b3` |
-| B4 | Servo20/25/VAJ3与30ms历史 | `handoff/b4` |
+| B1 | 当前开发基础：仿真、接口、真机消费者 | `handoff/current` |
+| B2 | Track A 最终固定场景 | `handoff/b2` |
+| B3 | Track C 133点双次抓放 | `handoff/b3` |
+| B4 | Servo 20/25ms、VAJ3及30ms历史 | `handoff/b4` |
 | B5 | MPC Shadow/Active及离线参考 | `handoff/b5` |
-| B6 | Track B99/153点基础 | `handoff/b6` |
-| B7 | 瓶子示教与HOME | `handoff/b7` |
+| B6 | Track B 99/153点基础 | `handoff/b6` |
+| B7 | 瓶子示教与Home收尾 | `handoff/b7` |
 | D1 | Servo长迟到缺陷组合 | `handoff/d1` |
-| D2 | MPC两次早期失效证据 | `handoff/d2` |
+| D2 | MPC早期失效证据 | `handoff/d2` |
 | D3 | MoveJ限位/跳点缺陷证据 | `handoff/d3` |
-| H_MAC_FROZEN | 原工作区既有冻结源码 | `handoff/h-mac-frozen` |
-| history | 其他运动/诊断历史 | `handoff/history` |
+| history | 补充运动与诊断历史 | `handoff/history` |
+| H_MAC_FROZEN | 既有冻结开发源码 | `handoff/h-mac-frozen` |
+| PRE_PRUNE | 精简前完整文件树；旧工具/说明/数据恢复 | `handoff/pre-prune` |
 
-从交接根目录执行 `python3 tools/export_version.py 节点 .runtime/新目录`。目标目录必须不存在。
-B1导出当前交付工作文件和手眼数据；其他节点导出debian/或src/来源布局。
-导出副本不含.git，适合独立实验；要继续使用所有历史节点，保留原完整交接包。
+## 导出整个节点
 
-**导出不是逐轮自动装配。** 对有run_bindings的记录，必须按report_relative选择source_relative、restore_name与SHA，
-在新的实验目录组成该轮代码；工具不自动重命名备份，也不会补齐未绑定的算法身份。
-D2/D3只有证据的部分不捏造源码；D1按报告绑定的原字节保存。
+以下命令从仓库根执行，目标目录必须不存在：
 
-原提交定位：Track A为909b73e；Track C成果698b066，左臂标签指向d82af3a；早期Pulse v1为864b0a4。
-这些是来源映射，不是本包可直接checkout的祖先。以SOURCE_MAP.json、各SNAPSHOT.json的完整SHA为准。
-Servo的cc16e65是较早交接阶段，不能替代现场源码；9f65b76是收件审阅提交，不是真机执行时提交。
+```bash
+python3 tools/export_version.py B3 .runtime/track-c-reference
+python3 tools/export_version.py PRE_PRUNE .runtime/legacy-reference
+```
 
-docs/debian_selection.json内74条run_bindings记录执行器、轨迹、GUI、wrapper及依赖恢复名与来源。
-同一文件跨节点时Git对象复用；5种sdk_session不强行合并。
-9/7五轮与9/8最终五轮分开；7/31八点与8/4双抓放分开；根traj_multi_latest隔离候选不替换Track C。
-历史子目录SHA256SUMS保留原归档范围；当前交付完整性使用根清单，迁移与排除以来源映射为准。
+B1 导出 `handoff/current` 已登记交付文件及手眼样本，**没有 `.git`**。其他节点保留各自的 `src/`、`debian/` 来源布局；PRE_PRUNE 对应完整精简前树，也恢复配套手眼数据。导出副本用于独立检查或实验，保留完整仓库才能继续恢复其他节点。
+
+PRE_PRUNE 的固定提交为 `ad272bf210c65ef71410262190e7a10de03a5c6b`。该节点保存旧诊断、被替代的实验和历史说明；使用旧文档时以其时间和场景为边界，不作为当前执行指令。
+
+## 按报告装配
+
+```bash
+python3 tools/restore_run.py --list
+python3 tools/restore_run.py --list --node B5
+```
+
+复制列表中精确的报告路径，作为 `tools/restore_run.py 报告路径 .runtime/新目录` 的第一个参数。工具按 `run_bindings` 的 SHA 选择源文件并映射 `restore_name`，输出 `RESTORE_MANIFEST.json` 和 `recorded_run.json`。只验证文件绑定，不导入 SDK、不执行运动、不补猜未记录的算法依赖。
+
+`RECORDED_BINDINGS_VERIFIED` 表示已登记绑定匹配，不代表全部运行依赖、场景或动作资格已验证；`PARTIAL_SOURCE_IDENTITY` 表示仍有未绑定项。MPC controller 的历史 SHA 缺失保留在 manifest 中。
+
+## 证据使用规则
+
+- B2 的最终固定场景成功记录与早期 9/7 参考分开；5%/10%成功不证明其他速度或新场景。
+- B3 的8/4双抓汇总不能用7/31八点基础日志补齐。B7的使能故障日志不能替代抓放日志。
+- B4/B5 不同 wrapper、base、SDK、Servo 辅助件按各轮恢复；不按“最新同名文件”拼接。
+- D1 有精确缺陷对照源码；D2/D3 部分只有证据，缺失实现不捏造。
+- 当前完整性使用根 `HANDOFF_MANIFEST.json` / `SHA256SUMS`。历史内部清单只描述当时范围；原来源身份保存在 `SNAPSHOT.json` 和机器映射。
+
+新版本登记与打包流程见 [MAINTENANCE.md](MAINTENANCE.md)。

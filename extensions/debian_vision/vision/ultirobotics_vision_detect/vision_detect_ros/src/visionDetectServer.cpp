@@ -332,15 +332,28 @@ bool visionDetectServer::init(rclcpp::Node::SharedPtr node, const std::string& c
             algorithmParam param;
             param.workstation = workspace_id;
             
-            if (workspace.contains("model_path")) {
-                std::string model_name = workspace["model_path"];
-                std::string model_path = config_dir +"/models/" + model_name;
-                RCLCPP_INFO(node->get_logger(), "read model_path : %s", model_path.c_str());
-                param.model_path = model_path;
-            } else {
-                RCLCPP_ERROR(node->get_logger(), "Workspace [%s] missing 'model_path', using default: %s", 
-                            workspace_id.c_str(), param.model_path.c_str());
-            }            
+            // 显式模型路径：相对路径以配置目录为基准，旧式纯文件名仍查找 models/。
+            if (!workspace.contains("model_path") || !workspace["model_path"].is_string() ||
+                workspace["model_path"].get<std::string>().empty()) {
+                RCLCPP_ERROR(node->get_logger(), "Workspace [%s] requires a non-empty 'model_path'", 
+                             workspace_id.c_str());
+                return false;
+            }
+            const auto requested_model = std::filesystem::path(workspace["model_path"].get<std::string>());
+            const auto model_base = requested_model.has_parent_path()
+                ? std::filesystem::path(config_dir)
+                : std::filesystem::path(config_dir) / "models";
+            const auto model_candidate = requested_model.is_absolute()
+                ? requested_model : model_base / requested_model;
+            std::error_code model_error;
+            const auto model_path = std::filesystem::absolute(model_candidate, model_error).lexically_normal();
+            if (model_error || !std::filesystem::is_regular_file(model_path, model_error)) {
+                RCLCPP_ERROR(node->get_logger(), "Workspace [%s] model is not a regular file: %s",
+                             workspace_id.c_str(), model_path.string().c_str());
+                return false;
+            }
+            param.model_path = model_path.string();
+            RCLCPP_INFO(node->get_logger(), "read model_path : %s", param.model_path.c_str());
             param.result_data_path = save_path;
             param.save_image_type = save_image_type;
             param.save_color = save_color;

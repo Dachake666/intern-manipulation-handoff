@@ -1,0 +1,129 @@
+{
+  "schema": "vision_model_path_checks.v1",
+  "status": "PASS",
+  "checked_at_utc": "2026-09-23T03:35:47.886630+00:00",
+  "overlay_used": false,
+  "inputs": [
+    {
+      "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
+      "sha256": "4028f884745a65c0f86d306f2b24f4c65b4d3385a2aff30bb32885ea126b22e6",
+      "from_overlay": false
+    },
+    {
+      "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm/include/data_type.h",
+      "sha256": "0703bd0d9fea4e1fc444f277e4a925f1d019122e6715f9570d2d8bc65784ae65",
+      "from_overlay": false
+    },
+    {
+      "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/config/test1/workstation.json",
+      "sha256": "cd987b5ca3b7f79ec781d6410d019573075b29ef07808ce62dc430d54251e3ec",
+      "from_overlay": false
+    },
+    {
+      "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/config/multiple/workstation.json",
+      "sha256": "1cc4145758fc89a61ea6811d60332bbf59f322390fdbe2ab3440d52c3a930411",
+      "from_overlay": false
+    },
+    {
+      "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/best.onnx",
+      "sha256": "7264c02ef1d06815aaa367f65c41e4285ad6bf51b9803f1461e34e9e72b3aa71",
+      "from_overlay": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "test1/box1 explicit config",
+      "status": "PASS"
+    },
+    {
+      "name": "multiple/box1 explicit config",
+      "status": "PASS"
+    },
+    {
+      "name": "multiple/box2 explicit config",
+      "status": "PASS"
+    },
+    {
+      "name": "test1/box1 changed cwd",
+      "status": "PASS"
+    },
+    {
+      "name": "multiple/box1 changed cwd",
+      "status": "PASS"
+    },
+    {
+      "name": "multiple/box2 changed cwd",
+      "status": "PASS"
+    },
+    {
+      "name": "missing field rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "empty string rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "number rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "object rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "null rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "missing file rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "directory rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "absolute path preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy basename resolved under models",
+      "status": "PASS"
+    },
+    {
+      "name": "relative config file resolved",
+      "status": "PASS"
+    },
+    {
+      "name": "no per-config models directories required",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Only the production model-path parsing block is compiled; ROS logging is stubbed.",
+    "Fixtures contain dummy model bytes. No ROS node, camera, ONNX inference, or robot SDK is run."
+  ],
+  "production_block_sha256": "91ce1e00ceb7df7f31b4729a24a2c26d4b9fe268dc16c19ee104e31f54119b02",
+  "compiler": "clang++",
+  "compile": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "run": {
+    "returncode": 0,
+    "stdout": "PASS test1/box1 explicit config\nPASS multiple/box1 explicit config\nPASS multiple/box2 explicit config\nPASS test1/box1 changed cwd\nPASS multiple/box1 changed cwd\nPASS multiple/box2 changed cwd\nPASS missing field rejected\nPASS empty string rejected\nPASS number rejected\nPASS object rejected\nPASS null rejected\nPASS missing file rejected\nPASS directory rejected\nPASS absolute path preserved\nPASS legacy basename resolved under models\nPASS relative config file resolved\nPASS no per-config models directories required\nTOTAL 17 PASS\n",
+    "stderr": ""
+  },
+  "static_checks": [
+    {
+      "name": "algorithmParam has no cwd model default",
+      "status": "PASS"
+    },
+    {
+      "name": "test1/multiple explicitly share root model",
+      "status": "PASS"
+    }
+  ]
+}

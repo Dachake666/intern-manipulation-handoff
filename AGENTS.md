@@ -1,34 +1,37 @@
-# 交接副本工作约定
+# 仓库工作约定
 
-用户当前指令优先。本约定用于本交接仓库；仓库根是本文件所在目录。先读 `START_HERE.md`，按任务查 `sim/README.md`、`robot/README.md` 和 `docs/VERSIONS.md`。
+本文件适用于本仓库；仓库根为本文件所在目录。先读 `START_HERE.md`，再按职责查 `docs/CONTENTS.md`、`sim/README.md`、`robot/README.md`。任务的明确要求优先于默认约定。
 
-## 工作边界与真源
+## 源码与版本
 
-- 当前开发源码在 `src/`。规划与仿真在 `src/pick_place_coord/`，真机执行在 `src/frame_calibration/robot_side/`。同一执行模块的离线测试仍属于仿真/离线验证。
-- 原工作区为 `工作1`；其中的源码目录对应本包 `src/` 下同名目录。原工作区父目录是冻结基线，继续在原机工作时仍遵守原 `工作1/AGENTS.md` 的完整边界。迁移后不要照抄历史文档中的个人绝对路径。
-- 输出、候选、测试缓存和恢复目录放在本工作区内，默认使用 `.runtime/`。不要覆盖原件、冻结版本或其他人的未提交改动。
-- 标定结论只认 `src/frame_calibration/analysis/calib_common.py` 的 `CONFIRMED_*`。`CONFIRMED_T_SESSIONS_MM` 用于规划换算；`CONFIRMED_T_SESSIONS_V2_MM` 用于 v2 解释 `armGetWorlds`，不可混用。
-- `src/XF0112048/` 是只读厂商 URDF/STL。运行发布包只由 `src/releases/make_release.py` 再生；改源码后重建，禁止手改发布副本。交接文档由原工作区 `handoff_tools/` 维护，它与运行发布包是两件事。
-- 旧 `workspace/` 与灵巧手不在本次范围内。不要把旧快照里的 `sdk_session.py` 当作现行接口。
-- 冻结现场组合在 `handoff/*` Git 标签，通过 `tools/export_version.py` 恢复到新目录。恢复只导出节点，不自动按某一轮日志重命名依赖；还需核对 `SNAPSHOT.json` 和 `docs/debian_selection.json` 的 `run_bindings`。历史版本可能默认开启运动，恢复不等于运行授权。
+- 当前开发源码在 `src/`：规划和仿真在 `src/pick_place_coord/`，真机执行在 `src/frame_calibration/robot_side/`，视觉任务接口在 `src/vision/` 与 `src/robot_mission/`。
+- `extensions/debian_vision/` 是相机、检测和手眼工程；路径名称标记来源，运行类别由实际行为决定。
+- 输出、候选、缓存、恢复目录放在 `.runtime/`。不覆盖冻结轨迹、原日志、历史源码或其他未提交改动。
+- `src/frame_calibration/analysis/calib_common.py` 的 `CONFIRMED_*` 是标定常量依据。`CONFIRMED_T_SESSIONS_MM` 用于规划换算，`CONFIRMED_T_SESSIONS_V2_MM` 用于 v2 解释 `armGetWorlds`，不可混用。历史常量不证明当前工位有效。
+- `src/arm_profiles.py` / `arm_profiles.v1.json` 统一臂、夹爪、TCP、Home 与限位；`src/schemas/` 统一输入输出契约。禁止在新脚本复制安全常量字面量。
+- `src/XF0112048/` 的厂商 URDF/STL 只读。运行发布包只由 `src/releases/make_release.py` 生成，修改源后重建，不手改发布副本。
+- 冻结组合使用 `tools/export_version.py` 导出到新目录；有逐轮绑定的实验使用 `tools/restore_run.py` 装配。按 `SNAPSHOT.json`、`RESTORE_MANIFEST.json` 和 SHA 核对，不能按同名文件替换依赖。
+- `B1` 为 `handoff/current` 已登记交付版本的导出，不含 `.git`。完整历史必须保留整个仓库和隐藏 `.git/`；`data/handeye/` 大样本随完整包保存，不依赖 Git 恢复。
 
-## 仿真与真机边界
+## 仿真与真机
 
-- 按实际行为区分仿真、只读诊断、修改控制器设置、运动。运行机器的系统名称不决定类别；在机器人主机上跑 PyBullet 仍是仿真。
-- 交付的厂商 wheel 仅适用于 CPython 3.10 / Linux x86_64。仿真环境不导入 `pypilot` 作为验收，不将视觉 ARM/Humble 构建痕迹当作同一套 SDK 环境。
-- 新开发入口 `ENABLE_REAL_MOTION` 默认关闭。先 dry-run、离线预检与限位检查；`--precheck-only` 是否连接 SDK 以具体实现为准。
-- 真机使能、运动、夹爪动作、清故障由现场人员确认。机器人 IP、身份、当前关节和标定有效性必须现场核实；历史 IP 不作为当前事实。
-- 新生成或重规划的候选，在真机分段测试前需按执行器一致的密集步长完成全程 PyBullet GUI 回放，并形成绑定轨迹 SHA-256 的 `pybullet_gui_review.v1` PASS。headless 碰撞 PASS 不替代人工 GUI 检查。
-- 检查 IK、实际/硬限位、首点跳变、完整场景/持物碰撞、放置与撤退空间。j7 实限 76°，不能为通过预检放宽门限。
-- 真机互斥使用 `robot_lock`；结束和异常路径必须恢复保护与全局速度，避免控制器持久设置影响其他脚本。
+- 区分离线计算、连接设备只读、修改控制器设置、运动。`--precheck-only` 是否连接 SDK 以实现为准；MPC Shadow 会发送原参考运动，不是离线模式。
+- 新开发的 `ENABLE_REAL_MOTION` 默认关闭。先做离线检查、dry-run 和限位预检；仿真验收不以导入 `pypilot` 为依据。
+- 真机前由现场负责人核实机器人身份、网络地址、当前关节/夹爪、标定及工作场景。历史 IP 和位姿只作记录。
+- 清故障、使能、夹爪动作和运动必须由现场人员明确确认。历史入口可能默认开启运动，恢复文件不代表允许执行。
+- 新生成或重规划的候选，在真机分段测试前必须用执行器一致的密集步长完成 PyBullet 全程 GUI 回放，形成绑定轨迹 SHA 的 `pybullet_gui_review.v1` PASS；headless 碰撞 PASS 不能替代人工 GUI 确认。
+- 检查 IK、实际与硬限位、首点跳变、密集完整场景/持物碰撞、开爪包络、放置与撤退空间。j7 实限 76°，不能放宽门限迁就候选。
+- 真机互斥使用 `robot_lock`。正常和异常结束均恢复保护与全局速度，并验证收尾，避免持久设置污染后续运行。
 
-## 证据与代码约定
+## 证据与维护
 
-- 新运行日志记录轨迹、执行脚本及动态依赖 SHA-256、参数与身份。失败日志也要保留，报告完成不自动代表所有资格检查通过。
-- 真机验收需要归档运行日志；只有 README 汇总属于有限证据。仿真通过、编译通过或包完整均不能升级真机验收状态。
-- 不删除 `records/`，不修改历史原日志或冻结源码。脱敏只做副本，使用 `src/frame_calibration/robot_side/scrub_log.py`；明文 token 不入 Git。
-- 判定日志用 `$real-robot-run-reviewer`，归档用 `$run-evidence-archivist`，上机前标定核查用 `$frame-calibration-validity-gate`，开变体用 `$motion-variant-scaffolder`，发布核对用 `$robot-release-truth-audit`。这些是可选工作环境中的技能名，不是随包安装的依赖；没有技能时仍执行本约定的检查。
-- 中文注释保留 `[待核]`、`[已核实]`、`[重建]` 等置信度标记。安全常量（RANGE_BOX、j7、SEED_DEG、HOME_DEG、T）从共享处导入，不在新脚本复制字面量。
-- `OBJECT_POSE`、`GRASP_POSE`、`EE_POSE` 明确区分；已补偿的 SDK `EE_POSE` 不重复补 TCP。
-- 未跑相应离线测试，不声称执行器修复完成。已有锚点为 `test_execute_trajectory_options.py`、`test_servo_safety.py`；交接选定检查入口为 `tools/offline_checks.py`。
-- 提交信息用简短中文结论句。开发修复与冻结历史整理分开，不做空提交；未经用户要求不自行提交或推送。本包未配置远端。
+- `OBJECT_POSE`、`GRASP_POSE`、`EE_POSE` 必须明确；已补偿的 SDK `EE_POSE` 不再补 TCP。单位、四元数顺序、矩阵方向和标定来源必须进入契约。
+- 新日志记录执行器、wrapper、轨迹、动态算法和依赖 SHA、参数、设备身份与时间；成功和失败都留痕。日志使用 `src/frame_calibration/robot_side/scrub_log.py` 脱敏副本，明文 token 不入 Git。
+- 不删除原始 `records/` 证据，不改历史日志或冻结源码。目录整理使用可恢复节点与路径映射；不重写证据去消除缺口。
+- 只有 README 汇总属于 LIMITED；运行完成、仿真通过、编译通过、哈希一致均不能单独授予通用真机资格。成功结论仅绑定具体文件组合、参数与场景。
+- 注释保留 `[待核]`、`[已核实]`、`[重建]` 等置信度标记。改执行器后运行对应离线回归；基础锚点包括 `test_execute_trajectory_options.py`、`test_servo_safety.py`，选定套件入口为 `tools/offline_checks.py`。不要广泛自动收集 `test_*.py`，其中存在硬件探针。
+- 新增、移动、退役文件先维护 `docs/DELIVERY_SELECTION.json` 的允许清单和恢复映射，再运行 `tools/offline_checks.py --record` 和 `tools/build_package.py --refresh-manifest`，审阅提交后更新 `handoff/current`，使用 `tools/build_package.py --output 路径.zip` 生成新包；只读校验用 `--check`，不手改根哈希清单。
+- 验证结果记录命令、解释器/依赖、范围和未覆盖项；通过的选定套件不等于全仓库全绿。流程见 `docs/MAINTENANCE.md`。
+- 提交信息使用简短中文结论句，不做空提交；提交和推送遵循任务授权。本仓库不预设远端。
+
+可选审阅技能包括 `real-robot-run-reviewer`、`run-evidence-archivist`、`frame-calibration-validity-gate`、`motion-variant-scaffolder`、`robot-release-truth-audit`。它们不是运行依赖；未安装时仍执行以上检查。

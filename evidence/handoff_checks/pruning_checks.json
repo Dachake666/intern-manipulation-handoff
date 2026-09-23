@@ -1,0 +1,93 @@
+{
+  "schema": "robot_handoff_pruning_checks.v1",
+  "status": "PASS",
+  "scope": "Curated sources, document paths, generated publication inputs; no SDK or robot run.",
+  "baseline_commit": "ad272bf210c65ef71410262190e7a10de03a5c6b",
+  "active_files": 760,
+  "history_only_files": 574,
+  "unchanged_baseline_files": 709,
+  "changed_baseline_files": [
+    ".gitignore",
+    "AGENTS.md",
+    "START_HERE.md",
+    "docs/ENVIRONMENT_REFERENCE.md",
+    "docs/KNOWN_ISSUES.md",
+    "docs/SOURCE_MAP.json",
+    "docs/VERSIONS.md",
+    "docs/version_refs.json",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/README.md",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/config/multiple/workstation.json",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/config/test1/workstation.json",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/camera_drive/README.md",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm/README.md",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm/include/data_type.h",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/README.md",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_utils/README.md",
+    "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
+    "robot/README.md",
+    "sim/README.md",
+    "src/PilotSDK_enable_varget_8080_debug_20260901.md",
+    "src/frame_calibration/README.md",
+    "src/frame_calibration/UVW_TO_QUATERNION.md",
+    "src/pick_place_coord/dual_arm_demo/README.md",
+    "src/pick_place_coord/mpc_experiment/README.md",
+    "src/pick_place_coord/pick_place_coord.py",
+    "src/pick_place_coord/trajectories/candidates/README.md",
+    "src/pick_place_coord/trajectories/verified/README.md",
+    "src/releases/make_release.py",
+    "src/releases/test_make_release_dual.py",
+    "src/releases/test_make_release_hybrid.py",
+    "src/requirements/README.md",
+    "src/vision/README.md",
+    "tools/export_version.py",
+    "tools/offline_checks.py",
+    "verification.json"
+  ],
+  "python_ast_files": 112,
+  "markdown_files": 23,
+  "relative_document_links": 22,
+  "publications": [
+    {
+      "mode": "DP",
+      "sha_entries": 8,
+      "status": "PASS"
+    },
+    {
+      "mode": "AS",
+      "sha_entries": 13,
+      "status": "PASS"
+    },
+    {
+      "mode": "AT",
+      "sha_entries": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "AP",
+      "sha_entries": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "A",
+      "sha_entries": 4,
+      "status": "PASS"
+    },
+    {
+      "mode": "B",
+      "sha_entries": 5,
+      "status": "PASS"
+    },
+    {
+      "mode": "C",
+      "sha_entries": 9,
+      "status": "PASS"
+    },
+    {
+      "mode": "CB",
+      "sha_entries": 9,
+      "status": "PASS"
+    }
+  ],
+  "original_records_modified": false,
+  "motion_started": false
+}

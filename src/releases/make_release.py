@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""把某条线的"能跑的全套"打成一个自包含目录, 丢到真机上就能直接跑。
+"""按现行线路生成代码与输入自包含的发布目录；证据级别和运动门另行检查。
 
 为什么要这个: 代码平时散在 frame_calibration/robot_side/ 和 pick_place_coord/
 trajectories/ 两处, 上真机要手工挑文件, 挑漏一个(比如 sdk_session.py)就白跑一趟。
 封装后每条线一个目录, 里面是执行器 + 依赖 + 轨迹 + 说明 + 校验和, 拷过去即可。
 
 用法:
-    python3 releases/make_release.py B          # 只打 Track B
-    python3 releases/make_release.py A B C      # 全打
+    python3 releases/make_release.py AT         # 最终 A 现场参考
+    python3 releases/make_release.py B C DP     # 基础 MoveJ、冻结双抓、双臂只读
     python3 releases/make_release.py --verify   # 只校验已有封装有没有被改动
 
 校验: 每个封装目录带 SHA256SUMS, --verify 会逐个比对, 发现漂移就报出来。
@@ -28,6 +28,38 @@ ROBOT = os.path.join(_WORK, "frame_calibration", "robot_side")
 TRAJ = os.path.join(_WORK, "pick_place_coord", "trajectories")
 SCHEMAS = os.path.join(_WORK, "schemas")
 CANDIDATES = os.path.join(TRAJ, "candidates")
+VERIFIED = os.path.join(TRAJ, "verified")
+TRACK_C_FROZEN = "traj_multi_2grasp_20260804_REALVERIFIED.json"
+
+# [20260923] 退役的是当前发布入口，历史源码/失败证据留在交接包 PRE_PRUNE。
+# 不把旧算法当成已被等价实现，也不因精简而覆盖现场正在使用的组合。
+RETIRED_TRACKS = {
+    "AH": "7月 Worlds + MoveJ 转运失败研究线",
+    "CW": "旧 Worlds 求 IK 后转 Pulse 的实验线",
+    "V": "旧左右镜像候选发布；当前双臂只有 DP 只读诊断",
+}
+
+
+def retired_track_message(key):
+    return (f"线路 {key} 已退出当前发布：{RETIRED_TRACKS[key]}。"
+            "请在交接包根目录执行 "
+            "python3 tools/export_version.py PRE_PRUNE ../pre-prune-review，"
+            "再阅读恢复目录中的历史说明；恢复不代表允许真机运动。")
+
+
+def new_device_notes():
+    """独立发布目录的部署前提；不假设接手机器沿用开发机环境。"""
+    return [
+        "## 新设备准备", "",
+        "完整解压此发布目录。下列文件校验和执行命令在该目录内运行，不依赖原开发机的路径。",
+        "连接真机需要 Linux x86_64、CPython 3.10、匹配的 pypilot Linux wheel 和厂商动态库；",
+        "独立发布包不包含 SDK 安装包。先按完整交接包根目录的 `docs/ENVIRONMENT_REFERENCE.md` 配置环境，",
+        "SDK 安装材料在完整交接包的 `sdk/`。仅持有独立发布包时，需要同时取得这份环境说明和 SDK 安装材料。",
+        "先激活配置好的环境，再运行命令；`python3` 应指向该环境。只做文件检查无需连接机器人，",
+        "`--precheck-only` 等现场预检则会连接控制器，须确认当前设备身份、网络和静止状态。",
+        "轨迹与运行前提绑定具体机器人、工具、标定和场景；文件校验通过不代表新设备或新现场取得运动资格。",
+        "源码重建命令只在完整交接包的 `src/`（或对应源码根目录）执行；本独立目录不附带完整源码树。", "",
+    ]
 
 # 运行必需的共同依赖: 三条线的执行器都 import sdk_session, 漏了就 ImportError。
 # (sdk_session 自己只依赖 pypilot —— 那是装在真机容器里的 SDK 轮子, 不打包。)
@@ -48,7 +80,7 @@ NOTES = {
     "arm_profiles.py": "双臂配置加载器；右臂未测项会强制阻断真机",
     "arm_profiles.v1.json": "左右臂关节/TCP/HOME/限位/夹爪契约唯一权威",
     "execute_tabletop_pick_place_worlds.py": "两 hover 桌上抓放执行器；默认只做 live armTryWorlds 预检",
-    "tabletop_pick_place_worlds.json": "Mac 端已完成 TCP 补偿的绝对 SDK endpoint 计划",
+    "tabletop_pick_place_worlds.json": "仿真端已完成 TCP 补偿的绝对 SDK endpoint 计划",
     "execution_authorization.py": "校验 preflight、人工批准和场景复核的绑定关系",
     "soft_stop_watchdog.py": "视觉下发热循环之外的独立只读软急停监控",
     "mission_runner.py": "在一个机器人级锁内严格串行执行跨左右臂任务",
@@ -113,7 +145,7 @@ TRACKS = {
     },
     "AT": {
         "dir": "trackA_hybrid_trial",
-        "title": "Track A 混合抓放 · Debian 20260908 最终现场版",
+        "title": "Track A 混合抓放 · 现场计划/执行器参考与当前依赖",
         "files": [(ROBOT, "execute_tabletop_hybrid_trial_reviewfix_field.py"),
                   (ROBOT, "precheck_tabletop_hybrid.py"),
                   (ROBOT, "execute_tabletop_pick_place_worlds.py"),
@@ -122,8 +154,9 @@ TRACKS = {
         "minimal_release": True,
         "zip_archive": True,
         "entry": "python3 execute_tabletop_hybrid_trial_reviewfix_field.py tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json --precheck-only",
-        "status": "FIELD_TESTED：原样收到的计划/执行器在5%和10%均有完整动作及收尾PASS日志。"
-                  "仅限此次现场与文件组合，不推定任意新坐标或20%已验证。",
+        "status": "HISTORICAL_B2_FIELD_TESTED / CURRENT_DEPENDENCIES_UNVERIFIED："
+                  "5%和10%的完整动作及收尾PASS只属于历史B2中对应日志绑定的文件组合。"
+                  "本包锁定该计划和执行器，但附带当前源码依赖，不继承B2整套实跑身份。",
         "immutable_sources": [
             (CANDIDATES, "tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
              "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59"),
@@ -150,33 +183,25 @@ TRACKS = {
         "files": [(ROBOT, "execute_tabletop_pick_place_worlds.py"),
                   (CANDIDATES, "tabletop_pick_place_worlds.json")],
         "minimal_release": True,
-        "entry": ("XIFENG_ROBOT_IP=<机器人IP> XIFENG_LOCAL_IP=<本机IP> "
-                  "XIFENG_ARM_IP=<机械臂IP> \\\n"
-                  "  python3 execute_tabletop_pick_place_worlds.py "
-                  "tabletop_pick_place_worlds.json --precheck-only"),
+        "entry": ("python3 execute_tabletop_pick_place_worlds.py tabletop_pick_place_worlds.json --precheck-only \\\n"
+                  '  --robot-ip "${XIFENG_ROBOT_IP:?请设置机器人IP}" '
+                  '--local-ip "${XIFENG_LOCAL_IP:?请设置本机IP}" '
+                  '--arm-ip "${XIFENG_ARM_IP:?请设置机械臂IP}"'),
         "status": "SOFTWARE_CANDIDATE / OFFLINE_CANDIDATE_BLOCKED。水平抓取与启动恢复已实现；"
                   "Z445 放置 EE 点按 20260905 摘要重建，父 executor/JSON 精确哈希均匹配。"
                   "当前仅交付 live 无运动预检；新水平段、持瓶转运和恢复区域净空尚待确认，非 REALVERIFIED。",
-    },
-    "AH": {
-        "dir": "trackA_hybrid_joints",
-        "title": "Track A(hybrid 留档) · worlds 直线 + 一条 joints 转运",
-        "files": [(ROBOT, "execute_world_grasp.py"),
-                  (TRAJ, "world_grasp_joint_transfer.json")],
-        "tools": [(ROBOT, "diag_joint_transfer.py")],
-        "entry": "python3 execute_world_grasp.py world_grasp_joint_transfer.json "
-                 "--mode hybrid",
-        "status": "⚠ 留档研究用, 20260729 真机三次未跑通 —— 详见下方「已知问题」",
     },
     "B": {
         "dir": "trackB_move_joints",
         "title": "Track B · 关节路点(armMoveJoints 逐点停稳)",
         "files": [(ROBOT, "execute_trajectory.py"),
-                  (TRAJ, "traj_minimal_joint.json"),
-                  (TRAJ, "traj_5pt.json"),
-                  (TRAJ, "traj_4pt.json")],
+                  (TRAJ, "traj_minimal_joint.json")],
+        "tools": [(ROBOT, "scrub_log.py")],
+        "minimal_release": True,
         "entry": "python3 execute_trajectory.py traj_minimal_joint.json",
-        "status": "真机已验收(traj_minimal_joint.json 三次成功)",
+        "status": "LIMITED / HISTORICAL_REPORTED_PASS：8点轨迹有历史三次成功摘要，"
+                  "完整原始运行日志不足，不将当前源码组合称为真机已验收。"
+                  "4/5点删减试验已移入 PRE_PRUNE，不随现行 B 发布。",
     },
     "C": {
         "dir": "trackC_servo_stream",
@@ -186,15 +211,19 @@ TRACKS = {
                   (_WORK, "arm_profiles.py"),
                   (_WORK, "arm_profiles.v1.json"),
                   (_WORK, "execution_authorization.py"),
-                  (TRAJ, "traj_minimal_joint.json"),
-                  (TRAJ, "traj_multi_latest.json")],
-        "tools": [(ROBOT, "probe_sdk.py"), (ROBOT, "diag_chassis.py")],
-        "entry": "python3 execute_servo_grasp.py traj_multi_latest.json "
+                  (VERIFIED, TRACK_C_FROZEN)],
+        "tools": [(ROBOT, "scrub_log.py")],
+        "minimal_release": True,
+        "entry": f"python3 execute_servo_grasp.py {TRACK_C_FROZEN} "
                  "--step-deg 0.4 --speed 15",
-        "status": "真机已验收 —— 20260804 双抓放(traj_multi_latest.json, 133 路点/"
-                  "4 次夹爪)连跑 5 轮全过, 推荐基线 0.4°/20ms: 32.7s, 终点误差 "
-                  "0.048°, 迟到帧 1.4%。轨迹优化空间见 records/"
-                  "20260804_pulse_multi_grasp_verified/",
+        "status": "LIMITED / HISTORICAL_REPORTED_PASS：冻结双抓133路点/4次夹爪，"
+                  "五轮成功仅有摘要，0.4°/20ms、32.7s、终点误差0.048°为历史报告值。"
+                  "完整原始运行日志不足；文件名 REALVERIFIED 是历史命名，不代表当前组合获准运动。"
+                  "重新规划候选不会覆盖本冻结输入。",
+        "immutable_sources": [
+            (VERIFIED, TRACK_C_FROZEN,
+             "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968"),
+        ],
     },
     "CB": {
         "dir": "trackC_bottle_left",
@@ -208,17 +237,17 @@ TRACKS = {
                    "traj_bottle_taught_tcp_20260831_RUN.json")],
         "tools": [(_WORK, "PilotSDK_enable_varget_8080_debug_20260901.md")],
         "minimal_release": True,
-        "entry": ("XIFENG_ALLOW_REAL_MOTION=1 python3 execute_servo_grasp.py \\\n"
+        "entry": ("XIFENG_ALLOW_REAL_MOTION=0 python3 execute_servo_grasp.py \\\n"
                   "  traj_bottle_taught_tcp_20260831_RUN.json \\\n"
-                  "  --run --step-deg 0.4 --period-ms 20 --speed 8"),
+                  "  --step-deg 0.4 --period-ms 20 --speed 8"),
         "status": "OPERATOR_REPORTED_5X_PASS / INSUFFICIENT_EVIDENCE / NOT_REAL_VERIFIED（2026-09-01）。"
                   "当前 RUN SHA-256 为 `cce2a83fae21468f80f0aad487087b61650eac6f92dea65f9560091d0239ad2b`，"
                   "共 275 个运动路点及 close/open 事件。前 238 个运动路点和两次夹爪事件与"
                   "已完成真机抓放的旧 RUN（264808c7…）逐项完全一致；仅在旧终点 READY 后追加"
                   "父 Track C 已验证的 37 点 READY->HOME 收尾，最终关节与起始 HOME 完全相同。"
                   "1356 个 Servo 密集帧（GUI 含首帧 1357）已通过限位、自碰撞、"
-                  "机器人/新桌面/夹爪/刚性携带瓶体及放置后回撤检查；GUI 全程播放后用户确认 PASS。"
-                  "桌角使用用户确认的 EE link 原点，不把夹爪或配置 TCP 当取坐标点；抓放 EE Z"
+                  "机器人/新桌面/夹爪/刚性携带瓶体及放置后回撤检查；GUI 全程播放后操作者确认 PASS。"
+                  "桌角使用操作者确认的 EE link 原点，不把夹爪或配置 TCP 当取坐标点；抓放 EE Z"
                   "相同、双 hover EE Z 相同，并锁定 pick 朝向避免瓶底倾斜穿桌。"
                   "旧前缀已在现场以 882 帧完成抓放，终点误差 0.024°，保护与速度恢复。"
                   "操作者记录当前完整 SHA 在清理占用 TCP 8080 的旧 PilotSDK/Python 进程后连续运行五次成功，"
@@ -227,49 +256,7 @@ TRACKS = {
                   "现场脚本文件未提供，因此当前完整组合证据 INSUFFICIENT、不得称 REAL_VERIFIED。"
                   "现行发布包仅保留此 RUN；候选、任务、资格证据与脱敏真机记录留在工作区真源目录。",
     },
-    "CW": {
-        "dir": "trackC_worlds_servo",
-        "title": "Track C-worlds · 末端伺服透传(armWorldsToServo)",
-        "files": [(ROBOT, "execute_worlds_servo_grasp.py"),
-                  (ROBOT, "servo_common.py"),
-                  (TRAJ, "world_grasp_latest.json")],
-        "tools": [(ROBOT, "probe_sdk.py"),
-                  (ROBOT, "test_worlds_servo_minimal.py")],
-        "entry": "python3 test_worlds_servo_minimal.py --run  "
-                 "# 先跑这个; 完整抓放执行器目前只允许 --precheck-only",
-        "status": "实验线【局部笛卡尔精修】。20260804 armWorldsToServo 最小验证 5 轮"
-                  "全过(30~50mm 平移 / 10~20° W 旋转 / 25~50mm/s, 位置≤0.48mm "
-                  "姿态≤0.17° 预测差≤0.96°)。⚠ 完整抓放【未验收】: "
-                  "execute_worlds_servo_grasp.py 走的是 armTryWorlds+armPluseToServo "
-                  "而非 ToServo, 且有起手阶跃缺陷, 目前只应 --precheck-only",
-    },
-    "V": {
-        "dir": "trackV_vision_dualarm",
-        "title": "Track V · 固定工位双臂视觉抓取（软件候选，硬件门阻断）",
-        "files": [(ROBOT, "execute_servo_grasp.py"),
-                  (ROBOT, "servo_common.py"),
-                  (ROBOT, "soft_stop_watchdog.py"),
-                  (os.path.join(_WORK, "robot_mission"), "mission_runner.py"),
-                  (_WORK, "arm_profiles.py"),
-                  (_WORK, "arm_profiles.v1.json"),
-                  (_WORK, "execution_authorization.py"),
-                  (os.path.join(TRAJ, "verified"),
-                   "traj_multi_2grasp_20260804_REALVERIFIED.json"),
-                  (CANDIDATES, "traj_multi_right_20260806_CANDIDATE.json"),
-                  (SCHEMAS, "vision_observation.v1.schema.json"),
-                  (SCHEMAS, "task_request.v1.schema.json"),
-                  (SCHEMAS, "trajectory.v2.schema.json"),
-                  (SCHEMAS, "preflight_report.v1.schema.json"),
-                  (SCHEMAS, "eye_to_hand_calibration.v1.schema.json")],
-        "tools": [(ROBOT, "test_gripper_right.py")],
-        "entry": "python3 execute_servo_grasp.py "
-                 "traj_multi_2grasp_20260804_REALVERIFIED.json "
-                 "--step-deg 0.4 --period-ms 20 --speed 15",
-        "status": "SOFTWARE_CANDIDATE / HARDWARE_BLOCKED。左臂轨迹仍是 5/5 "
-                  "REAL_VERIFIED 父基线；右臂轨迹仅 CANDIDATE，真实限位/TCP/"
-                  "SDK 映射/worlds/手眼标定完成前禁止 --run。视觉 trajectory.v2 "
-                  "还必须带 PASS preflight、人工批准和批准后场景复核。",
-    },
+
 }
 
 
@@ -296,6 +283,8 @@ def matching_gui_review(plan_path, review_path):
 
 
 def build(key):
+    if key in RETIRED_TRACKS:
+        raise SystemExit(retired_track_message(key))
     spec = TRACKS[key]
     out = os.path.join(_HERE, spec["dir"])
     # [20260908] 先确认实跑参考未变，再动本线路的生成目录；不覆盖成功参考。
@@ -369,6 +358,11 @@ def remove_superseded(key, keep):
 
 
 def render_readme(key, spec, need, extra):
+    lines = _render_readme(key, spec, need, extra).splitlines()
+    return "\n".join(lines[:4] + new_device_notes() + lines[4:])
+
+
+def _render_readme(key, spec, need, extra):
     if key == "DP":
         return render_dual_precheck_readme(spec, need, extra)
     if key == "AS":
@@ -379,12 +373,7 @@ def render_readme(key, spec, need, extra):
         return render_hybrid_precheck_readme(spec, need, extra)
     checksum_command = ("sha256sum -c SHA256SUMS" if key in ("A", "CB") else
                         "shasum -a 256 -c SHA256SUMS")
-    if key == "V":
-        run_gate = ["视觉线真机执行必须同时设置 `XIFENG_ALLOW_REAL_MOTION=1`、给 `--run`，",
-                    "并提供运行时网络参数、PASS preflight、批准令牌、场景复核、视觉验收",
-                    "命令和软急停/场景两个独立看门狗命令。",
-                    "缺任一项都会拒绝下发。", ""]
-    elif key == "CB":
+    if key == "CB":
         run_gate = ["运行前设置本次现场的 `XIFENG_ROBOT_IP`、`XIFENG_LOCAL_IP`、",
                     "`XIFENG_ARM_IP`；不要把历史 `.147`/`.148` 写死。确认机器人、",
                     "左臂、夹爪/TCP、腰部、底盘、桌子和瓶子与此次已确认的固定场景相同。", "",
@@ -395,7 +384,7 @@ def render_readme(key, spec, need, extra):
     elif key == "A":
         run_gate = [
             "本包先在 Debian 做只读预检。它不会清报警、使能、开串口或运动。",
-            "不要沿用旧 python -c 命令中清空 controller_limit_violations 的 monkeypatch。",
+            "不得通过清空 controller_limit_violations 绕过控制器限位。",
             "如果需按零内缩余量诊断，用 `--limit-margin-deg 0`，实时控制器限位和 j7 物理限位仍执行。", "",
             "## 本次动作", "",
             "`SAFE → [550,250,410] → [700,250,410] → 闭爪 → [700,250,480]`",
@@ -424,7 +413,7 @@ def render_readme(key, spec, need, extra):
             "若首轮因 5° 内缩余量失败，可加 --limit-margin-deg 0 做只读比较，不能取消真实限位检查。", "",
             "## 真机测试门", "",
             "当前新任务 BLOCKED：70 mm 抬升及向 PLACE_HOVER 的斜线仍需持瓶/腕部/桌框净空核对。",
-            "armTryWorlds PASS 只证明所采样 IK/限位/连续性，不是碰撞 PASS；本轮未重复 PyBullet GUI。",
+            "armTryWorlds PASS 只证明所采样 IK/限位/连续性，不是碰撞 PASS；该候选尚缺匹配当前轨迹和场景的完整 GUI 验收。",
             "净空确认并重新生成后，使用以下命令，默认速度 1%；观察后再用 --speed 5：", "", "```bash",
             "XIFENG_ALLOW_REAL_MOTION=1 python3 execute_tabletop_pick_place_worlds.py tabletop_pick_place_worlds.json --run --recovery-only",
             "XIFENG_ALLOW_REAL_MOTION=1 python3 execute_tabletop_pick_place_worlds.py tabletop_pick_place_worlds.json --run",
@@ -433,19 +422,25 @@ def render_readme(key, spec, need, extra):
             "## 版本来源与回退", "",
             "从归档 9/3 原件精确重建摘要所报 9/5 文件：executor e0118805…、Z445 JSON 8897c932…。",
             "新的组合不是原成功组合：新增抓取几何与恢复流程，限位过滤仍按当前真值检查。",
-            "历史成功包/JSON 原件均保留。更新 Debian 前备份现行 executor；保留已有 *_placeZ445_*.json，",
+            "历史固定场景成功记录按交接包版本表恢复；本发布目录只提供当前候选。",
             "运行本包时显式选择 tabletop_pick_place_worlds.json，避免选错旧文件。", "",
-            "## Mac 再生成", "", "```bash",
-            "/opt/anaconda3/bin/python -m robot_mission.tabletop_plan pick_place_coord/tasks/tabletop_horizontal_recovery_20260905.json --working-reference frame_calibration/records/20260903_tabletop_worlds_working/artifacts/tabletop_pick_place_worlds_PASS_placeZ495_20260903.json --out pick_place_coord/trajectories/candidates/tabletop_pick_place_worlds.json",
+            "## 从源码重新生成", "", "```bash",
+            "python3 -m robot_mission.tabletop_plan pick_place_coord/tasks/tabletop_horizontal_recovery_20260905.json --working-reference frame_calibration/records/20260903_tabletop_worlds_working/artifacts/tabletop_pick_place_worlds_PASS_placeZ495_20260903.json --out pick_place_coord/trajectories/candidates/tabletop_pick_place_worlds.json",
             "python3 releases/make_release.py A", "```", "",
-            "抓取距离/抬升/放置参数集中在上述 Mac recipe；未来有明确几何时可用标准 tabletop_request.v1 生成器。", ""]
+            "抓取距离/抬升/放置参数集中在上述任务配置；未来有明确几何时可用标准 tabletop_request.v1 生成器。", ""]
+    elif key == "C":
+        run_gate = [
+            "以上命令不带 `--run`，只做离线检查。真机运行还需现场设置运行时网络参数，",
+            "通过实时限位、首点、场景与人工运动确认；不得从历史摘要推定当前现场通过。",
+            f"本包只读 `{TRACK_C_FROZEN}` 冻结输入；新规划输出在 candidates/，不自动替换它。",
+            "需要历史现场原组合时，恢复交接包 B3；本包来自当前开发源码。", ""]
     else:
-        run_gate = ["跑之前确认执行器顶部的开关：`ENABLE_REAL_MOTION` 默认 `False`",
-                    "(只打印不下发)，确认打印无误后再改 `True`。真跑人守急停。", ""]
+        run_gate = ["`ENABLE_REAL_MOTION` 必须保持 `False` 完成文件检查；打印成功不是运动资格。",
+                    "实际运行前仍需现场限位、首点、工具/场景和人工确认，按执行器接口启用运动。", ""]
     body = [f"# {spec['title']}", "",
             f"**状态**: {spec['status']}", "",
-            "**全新部署**用这个目录：整个拷过去就能跑，不用再从别处补文件。",
-            "**已经跑过的机器**只需要补送变化的那几个文件，见下面「增量更新」。",
+            "**全新部署**使用完整目录；仍需对应 SDK 环境，并按本线路的资格与运动门检查。",
+            "后续更新时以SHA比较变化文件，保留已登记历史版本。",
             "", "## 运行", "", "```bash",
             spec["entry"], "```", ""] + run_gate + [
             "## 文件", "", "运行必需（少一个就跑不起来）：", ""]
@@ -460,31 +455,9 @@ def render_readme(key, spec, need, extra):
             note = NOTES.get(n, "")
             body.append(f"- `{n}`{('  — ' + note) if note else ''}")
         body.append("")
-    if key == "AH":
-        body += ["## 已知问题（先读这段再跑）", "",
-                 "20260729 真机连续三次没跑通：", "",
-                 "| 运行 | 现象 |", "|---|---|",
-                 "| 1 | 预检说 `TRANSFER_END` j4 余量 3.3° 通过，执行前 "
-                 "`check_limits` 又拒（`j4=-116.67` 超出收 5° 后的 `[-115,-5]`）|",
-                 "| 2 | `armMoveJoints` 25s 未到位，残差 23.720° |",
-                 "| 3 | `armMoveJoints` 25s 未到位，残差 18.533° |", "",
-                 "第 1 条是代码缺陷，**已修**：`preflight()` 现在按最终生效的那套",
-                 "标准判，会在**夹爪闭合之前**中止。", "",
-                 "第 2/3 条**原因未定**。run3 的 j4 行程约 53°，25s 走了约 34°",
-                 "（1.37°/s），按此速率还差约 14s——看起来像「走得慢没走完」，但",
-                 "当时没有 `move_state`／报警／误差曲线，**排除不了中途真停住**。",
-                 "这两种情况处置完全相反（前者加 `timeout_s` 即可，后者加多久都没用）。",
-                 "", "`wait_until_joints` 现在会把这些一次打全（逐关节误差／已走多少／",
-                 "平均速率／预计还需多久／`move_state`／`alarms`／判读提示），",
-                 "并且真停住 4s 就报错，不干等到超时。", "",
-                 "想直接定性就跑 `diag_joint_transfer.py`（90s 超时 + 5Hz 全程采样，",
-                 "直接给「慢／停／报警」的判读）。", "",
-                 "**两次超时都发生在夹爪已闭合、物体在手之后** —— 异常退出时夹爪",
-                 "仍是闭合的，恢复现场前先确认物体和夹爪状态。", "",
-                 "日常抓取请用 `../trackA_worlds_line/`，这份只作研究留档。", ""]
     body += ["## 增量更新", "",
-             "真机上已经有这一套的话，按 `SHA256SUMS` 只补送哈希变化的文件。",
-             "`sdk_session.py` 只在它自己被改过时才需要重送；不要再复制一套新目录。", "",
+             "已部署版本的后续更新按 `SHA256SUMS` 比较差异，核实完整依赖身份后替换。",
+             "`sdk_session.py` 和执行器、轨迹共同登记为同一运行组合；按哈希判断是否需要更新。", "",
              "## 校验", "",
              "```bash", checksum_command, "```", "",
              "或在工作区根目录跑 `python3 releases/make_release.py --verify`。", "",
@@ -525,8 +498,8 @@ def render_dual_precheck_readme(spec, need, extra):
     return "\n".join([
         f"# {spec['title']}", "", f"状态：{spec['status']}", "",
         "## 直接在 Debian 连接只读检查", "",
-        "整个 ZIP 单独解压，不覆盖原 A/C 成功包。使用已经安装厂商 pypilot 的 Debian Python；",
-        "不需要 NumPy 或 PyBullet，不必先运行离线 dry-run。以下 IP 都要填本次现场值，",
+        "完整解压 ZIP，在已按新设备准备章节安装 pypilot 的独立 Python 环境运行；",
+        "不需要 NumPy 或 PyBullet。先校验文件；只读连接时以下 IP 必须填写现场值，",
         "不把任何历史地址当作当前机器人身份。机械臂应保持静止，关闭其他控制进程。", "",
         "```bash", "cd dual_arm_precheck", "sha256sum -c SHA256SUMS",
         "read -r -p '机器人 IP: ' robot_ip",
@@ -551,15 +524,15 @@ def render_dual_precheck_readme(spec, need, extra):
         "这版 GUI 人工确认仍待绑定当前 SHA；手部自相交/抓取区接触的模型碰撞资格未完成。",
         "场景是合成桌面，不是完成配准的现场；右臂 TCP/映射以及双臂 SDK 并发与异常收尾也未验证。",
         "本包没有 `--run` 或跳过保护的开关，不能直接把密集仿真关节点当真机执行轨迹。", "",
-        "## 测后发回", "",
-        "请回传 `dual_arm_precheck_时间.json` 和自动生成的同名 `dual_arm_precheck_时间_sdk.log`。",
+        "## 结果归档", "",
+        "归档 `dual_arm_precheck_时间.json` 和同名 `dual_arm_precheck_时间_sdk.log`。",
         "报告包含本次网络配置、当前关节/位姿、限位比较、失败原因和源码/计划/依赖 SHA-256。",
         "自动日志经 scrub_log 脱敏；不要另传含明文 token 的原始终端输出。",
         "文件检查失败或 SDK 初始化失败也不代表轨迹失败；以报告中各检查项和阻断原因分别判断。", "",
         "## 文件", "",
     ] + [f"- `{name}`" for name in sorted(need + extra)] + [
         "", "其中 sdk_session 是共用依赖；本入口只走其只读会话，不提供运动调度。", "",
-        "## Mac 重新生成", "", "```bash", "python3 releases/make_release.py DP", "```", "",
+        "## 从源码重新生成", "", "```bash", "python3 releases/make_release.py DP", "```", "",
         "只重建 dual_arm_precheck 目录和同名 ZIP，不重建、删除或覆盖现有 A/AT/AS/C 包。",
         "不要手改发布副本；改源码后由此命令再生。", "",
     ])
@@ -588,29 +561,29 @@ def render_tabletop_servo_readme(spec, need, extra):
         "只有现场已停稳且每轴距首点≤0.4°才继续；只读预检不替你移动，人工审核也不绕过首点突跳限制。",
         f"首点 SDK joints deg：`{plan['first_point_q_sdk_deg']}`。",
         f"最终 Home SDK joints deg：`{plan['home_joints_sdk_deg']}`。",
-        "若当前为 Home，先做只读预检并回传结果；不要单纯放宽起点阈值。需单独规划/审阅 Home 接入段，或者在现场确认净空后用示教器到首点。", "",
+        "若当前为 Home，先做只读预检并归档结果；不要单纯放宽起点阈值。需单独规划/审阅 Home 接入段，或者在现场确认净空后用示教器到首点。", "",
         "## Debian 目前可做的检查（不会运动）", "",
-        "保留原 trackA_hybrid_trial 目录；将本 ZIP 单独解压。使用原厂商 SDK 的 Debian Python 环境，不安装 PyBullet/NumPy。",
+        "完整解压本 ZIP；连接检查使用已配置的 SDK 环境，不需要 PyBullet/NumPy。",
         "```bash", "cd trackA_servo", "sha256sum -c SHA256SUMS",
         "python3 execute_tabletop_servo.py tabletop_pick_place_SERVO_CANDIDATE.json --dry-run", "```", "",
-        "连接只读预检时，请使用现场实际IP（以下是上次地址示例，不是实时确认）：", "",
+        "连接只读预检前设置现场 XIFENG_ROBOT_IP、XIFENG_LOCAL_IP、XIFENG_ARM_IP；缺少任一变量则命令拒绝启动：", "",
         "```bash",
         "python3 execute_tabletop_servo.py tabletop_pick_place_SERVO_CANDIDATE.json \\",
-        "  --precheck-only --robot-ip 192.168.8.147 --local-ip 192.168.8.185 --arm-ip 192.168.8.147",
+        "  --precheck-only --robot-ip \"${XIFENG_ROBOT_IP:?请设置机器人IP}\" --local-ip \"${XIFENG_LOCAL_IP:?请设置本机IP}\" --arm-ip \"${XIFENG_ARM_IP:?请设置机械臂IP}\"",
         "```", "",
         "默认生成不覆盖旧文件的 tabletop_servo_时间.json；成功/失败均含候选、执行器、全部依赖哈希和只读结果。",
-        "请回传这个 JSON。只读 PASS 只表示文件、实时限位、静止首点检查通过，不代表碰撞或真实 Servo 时序通过。", "",
+        "归档该 JSON。只读 PASS 只表示文件、实时限位、静止首点检查通过，不代表碰撞或真实 Servo 时序通过。", "",
         "## 为什么此包还不能直接真机 --run", "",
         "新 Servo 必须有当前 JSON 完整 GUI 人工 PASS，以及独立的 tabletop_servo_qualification.v1 PASS 报告。",
         "当前自碰撞模型出现非相邻腕部 link9/11 重叠，尚未核实；桌框空间配准、真实夹爪/持瓶/释放后扫掠未完成。",
         "不能拿历史 A 现场 PASS、旧GUI或仅限位 PASS 替代这些证据；包内不会提供伪造PASS或跳过检查的开关。",
         "未来资格报告须绑定轨迹/消费者/依赖 SHA、场景、步长/周期/帧数，逐项提供FK、自碰撞、环境、持物/释放、接入区域、Servo动态时序的哈希证据。",
         "合格后执行器支持 --run --gui-review <审核文件> --qualification-report <资格文件>，还需 XIFENG_ALLOW_REAL_MOTION=1 和现场回车；此处不是当前放行命令。", "",
-        "## Mac 再生与 GUI", "", "```bash",
-        "/opt/anaconda3/bin/python -B pick_place_coord/gen_tabletop_hybrid_candidate.py --servo-parent pick_place_coord/trajectories/candidates/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
-        "/opt/anaconda3/bin/python -B pick_place_coord/gen_tabletop_hybrid_candidate.py --replay pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_CANDIDATE.json --gui --gui-report pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_gui_playback.json --gui-review pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_gui_review.json --reviewer operator",
+        "## 从源码重新生成与 GUI", "", "```bash",
+        "python3 -B pick_place_coord/gen_tabletop_hybrid_candidate.py --servo-parent pick_place_coord/trajectories/candidates/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+        "python3 -B pick_place_coord/gen_tabletop_hybrid_candidate.py --replay pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_CANDIDATE.json --gui --gui-report pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_gui_playback.json --gui-review pick_place_coord/trajectories/candidates/tabletop_pick_place_SERVO_gui_review.json --reviewer operator",
         "python3 releases/make_release.py AS", "```", "",
-        "以上从工作1根目录运行。AS 仅重建 trackA_servo 和 ZIP，不改 A/AT/C 既有发布包。",
+        "以上从源码根目录（交接包的 src/）运行。AS 仅重建 trackA_servo 和 ZIP，不改 A/AT/C 既有发布包。",
         "夹爪参数仍在 gripper_policy 接口中；改参数或路径后应重新生成、校验并绑定新 SHA，不使用旧审核。", "",
         "## 文件", "",
     ] + [f"- `{name}`" for name in sorted(need + extra)] + [""])
@@ -619,9 +592,11 @@ def render_tabletop_servo_readme(spec, need, extra):
 def render_hybrid_field_readme(spec, need, extra):
     return "\n".join([
         f"# {spec['title']}", "", f"状态：{spec['status']}", "",
-        "本包7个运行文件与用户提供的最终Debian文件逐字节一致；不再混入旧CANDIDATE/OPTIMIZED或旧GUI审核。",
-        "当前真源与证据：`frame_calibration/records/20260908_trackA_hybrid_final/`，含两份脱敏JSON日志、as_run清单和审查说明。",
-        "原交接ZIP保留；工作区旧候选/旧执行器仍在源码目录，不覆盖或删除历史证据。", "",
+        "固定计划与执行器以 SHA-256 锁定 2026-09-08 现场原件；其余依赖从当前源码生成。",
+        "证据范围：历史B2对应的固定场景在5%和10%有完整成功日志；只证明各份日志绑定的计划、执行器、依赖与参数。",
+        "本独立发布目录不附带完整历史日志或交接版本导出工具，也不要求其父目录存在源码或记录目录。",
+        "需要查证时，在完整交接包根目录阅读 `docs/VERSIONS.md`，并执行 `python3 tools/export_version.py B2 ../track-a-history` 恢复历史组合；",
+        "输出目录必须尚不存在。旧研究入口对应 PRE_PRUNE。当前包的文件校验由本目录 SHA256SUMS 完成。", "",
         "## 文件和现场行为", "",
         "- 计划SHA：`e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59`。",
         "- 执行器SHA：`36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee`。",
@@ -630,30 +605,32 @@ def render_hybrid_field_readme(spec, need, extra):
         "- open等待1s、close等待2s；全程预检在启动前，运行时Worlds检查前3点接续，MoveJ检查实际关节到目标的密集限位。",
         "- 保留硬限位/5°余量、保护、到位/停止检查和异常停止；当前失败运行不保存run JSON，排错要保留终端日志。", "",
         "## 先做无运动检查", "",
-        "使用原来成功的Debian厂商SDK环境。本机无需PyBullet/NumPy。保留旧目录，按SHA更新这一现行目录。", "",
+        "在独立目录解压本发布包，按新设备准备章节安装 SDK。该执行入口不需要 PyBullet/NumPy。", "",
         "```bash", "cd trackA_hybrid_trial", "sha256sum -c SHA256SUMS",
         "python3 execute_tabletop_hybrid_trial_reviewfix_field.py tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json --dry-run",
         "```", "",
-        "下列IP仅是9/8实跑值，若现场不同就替换；本次整理未连接机器人确认当前身份。", "",
+        "先在现场确认设备身份并设置 XIFENG_ROBOT_IP、XIFENG_LOCAL_IP、XIFENG_ARM_IP；下列命令不采用历史地址。", "",
         "```bash",
         "python3 execute_tabletop_hybrid_trial_reviewfix_field.py tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json \\",
-        "  --precheck-only --robot-ip 192.168.8.147 --local-ip 192.168.8.185 --arm-ip 192.168.8.147 --arm-port 8080",
+        "  --precheck-only --robot-ip \"${XIFENG_ROBOT_IP:?请设置机器人IP}\" --local-ip \"${XIFENG_LOCAL_IP:?请设置本机IP}\" --arm-ip \"${XIFENG_ARM_IP:?请设置机械臂IP}\" --arm-port 8080",
         "```", "",
         "## 现场复测", "",
         "只有确认同一机器人/工具/场景、空爪、整只手臂和实际起点接出路径净空、预检通过且有人值守急停后，才运行。",
-        "这是收到的现场命令，不是授权从任意未知位置或任意新目标自动运动：", "",
+        "以下保留历史试验参数，仅供当前依赖组合完成资格检查后的人工复测；不能据此从未知位置或新目标自动运动：", "",
         "```bash",
         "XIFENG_ALLOW_REAL_MOTION=1 python3 execute_tabletop_hybrid_trial_reviewfix_field.py \\",
         "  tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json --run --start-policy current-reviewed \\",
-        "  --robot-ip 192.168.8.147 --local-ip 192.168.8.185 --arm-ip 192.168.8.147 --arm-port 8080 \\",
+        "  --robot-ip \"${XIFENG_ROBOT_IP:?请设置机器人IP}\" --local-ip \"${XIFENG_LOCAL_IP:?请设置本机IP}\" --arm-ip \"${XIFENG_ARM_IP:?请设置机械臂IP}\" --arm-port 8080 \\",
         "  --speed 5.0 --limit-margin-deg 5", "```", "",
-        "10%也有本组合的实跑证据，可在现场确认后改成--speed 10.0；虽然接口接受20%，本包没有20%运行证据。",
+        "历史B2中的对应组合有5%和10%实跑证据；这些记录不证明本包当前依赖组合已跑通，也不直接授权提高速度。",
+        "虽然接口接受20%，现有历史归档没有20%运行证据；当前组合的任何速度都须按现场资格单独确认。",
         "此现场文件不再调用旧qualification/GUI起点门，文件头部分描述和JSON旧诊断未同步；以实际main和本README为准。",
         "不因此认定完整场景碰撞已通过或新相机坐标可直接运行。以后改目标必须重新评估路径/构型与现场净空。", "",
         "## 文件清单", "",
     ] + [f"- `{name}`" for name in sorted(need + extra)] + ["",
-        "## Mac重建", "", "```bash", "python3 releases/make_release.py AT", "```", "",
-        "只重建trackA_hybrid_trial及ZIP，不重建、删除或覆盖A/AP。计划或执行器哈希改变会拒绝覆盖已收到的现场组合。", ""])
+        "## 从源码重建", "", "```bash", "python3 releases/make_release.py AT", "```", "",
+        "从源码根目录运行此重建命令；独立发布目录不包含 releases/make_release.py。",
+        "只重建trackA_hybrid_trial及ZIP，不重建、删除或覆盖A/AP。计划或执行器哈希改变会拒绝重建；依赖按当前源码生成。", ""])
 
 
 def render_hybrid_trial_readme(spec, need, extra):
@@ -662,7 +639,7 @@ def render_hybrid_trial_readme(spec, need, extra):
     plan_path = os.path.join(CANDIDATES, "tabletop_pick_place_hybrid_OPTIMIZED.json")
     review_path = os.path.join(CANDIDATES, "tabletop_pick_place_hybrid_OPTIMIZED_gui_review.json")
     if matching_gui_review(plan_path, review_path):
-        gui_status = ("当前OPTIMIZED已由用户完整观看并确认GUI人工PASS；绑定当前轨迹SHA的"
+        gui_status = ("当前OPTIMIZED有绑定轨迹SHA的完整GUI人工PASS记录；"
                       "`tabletop_pick_place_hybrid_OPTIMIZED_gui_review.json`已随包附带。"
                       "这只证明画面/运动观察符合预期，不解除物理场景/碰撞资格限制。")
     pose_summary = "当前姿态及高度诊断以OPTIMIZED内pose_selection/qualification为准。"
@@ -691,8 +668,8 @@ def render_hybrid_trial_readme(spec, need, extra):
         pose_summary,
         "- 新执行器不是旧 `de5ccc12…` 的相同文件，需重新测试；原成功 ZIP、脚本和日志不得覆盖。", "",
         "## 放到哪里", "",
-        "使用原来能跑成功的 Debian 厂商 SDK 容器/Python 环境。"
-        "整个 ZIP 在原成功目录旁解压，进入 `trackA_hybrid_trial`；不要混装到旧目录。",
+        "先按新设备准备章节安装匹配的 SDK 环境。"
+        "完整解压 ZIP 后进入 `trackA_hybrid_trial`。",
         "本包不需要 PyBullet/NumPy/SciPy，也不包含厂商 Linux SDK wheel。", "",
         "## 1. 离线验包（不连接机器人）", "", "```bash",
         "cd trackA_hybrid_trial",
@@ -701,11 +678,11 @@ def render_hybrid_trial_readme(spec, need, extra):
         "python3 execute_tabletop_hybrid_trial.py tabletop_pick_place_hybrid_OPTIMIZED.json --dry-run",
         "```", "",
         "## 2. 连接真机做只读预检", "",
-        "先停止其他机器人程序和示教移动。下面地址仅来自20260907最后实跑，现场不同就替换；"
-        "不把 `.147` 或 `.148` 写死为机器人身份。", "", "```bash",
-        "export XIFENG_ROBOT_IP=192.168.8.147",
-        "export XIFENG_ARM_IP=192.168.8.147",
-        "export XIFENG_LOCAL_IP=192.168.8.185",
+        "先停止其他机器人程序和示教移动，填写现场核实的网络配置。", "", "```bash",
+        "read -r -p '机器人 IP: ' XIFENG_ROBOT_IP",
+        "read -r -p '机械臂 IP: ' XIFENG_ARM_IP",
+        "read -r -p '本机 IP: ' XIFENG_LOCAL_IP",
+        "export XIFENG_ROBOT_IP XIFENG_ARM_IP XIFENG_LOCAL_IP",
         "python3 execute_tabletop_hybrid_trial.py tabletop_pick_place_hybrid_CANDIDATE.json --precheck-only",
         "python3 execute_tabletop_hybrid_trial.py tabletop_pick_place_hybrid_OPTIMIZED.json --precheck-only",
         "```", "",
@@ -733,13 +710,13 @@ def render_hybrid_trial_readme(spec, need, extra):
         "可用 --pose-template U V W 提供现场认可的姿态模板，"
         "--placement-follow-grasp-tilt 使放置采用同一U/V并保留原朝框W。"
         "这不保证MoveJ严格等高，也不保证整段保持完全相同UVW。没有实现多物品批次功能。", "",
-        "## 发回什么", "",
-        "发回本次生成的只读预检JSON/执行JSON。它们记录计划、执行器及依赖哈希、参数、起点、"
+        "## 结果归档", "",
+        "归档本次生成的只读预检JSON/执行JSON。它们记录计划、执行器及依赖哈希、参数、起点、"
         "阶段时刻和收尾结果。SDK原始终端内容可能含token，另附终端日志前先用scrub_log.py脱敏副本。",
         "不要把只有动作结束但收尾失败的报告当成完整PASS。", "",
         "## 文件清单", "",
     ] + [f"- `{name}`" for name in sorted(need + extra)] + ["",
-        "## Mac 重建", "", "```bash", "python3 releases/make_release.py AT", "```", "",
+        "## 从源码重建", "", "```bash", "python3 releases/make_release.py AT", "```", "",
         "AT只重建trackA_hybrid_trial及其ZIP，不重建、删除或覆盖A/AP及原始成功交接ZIP。", ""])
 
 
@@ -749,21 +726,21 @@ def render_hybrid_precheck_readme(spec, need, extra):
         "这是连接真实控制器、但不使能/不清故障/不改变速度保护/不运动/不操作夹爪的测试包。",
         "不是一键抓放包，也没有 `--run` 或限位绕过参数。急停和现场观察不能把未验证路径变成通过。", "",
         "## 解压位置", "",
-        "在原成功目录外解压整个ZIP；不要把这些文件合并到原 trackA_worlds_line 目录。",
-        "原成功 JSON、执行器和日志全部保留。新目录名是 trackA_hybrid_precheck。",
+        "完整解压 ZIP，进入独立的 trackA_hybrid_precheck 目录。",
+        "该目录包含检查入口和依赖；它不是运动执行包。",
         "后续仅更新这个测试目录里哈希变化的文件。", "",
         "## 依赖", "",
-        "使用原来能运行成功抓放的 Debian SDK 容器/Python 环境（已有 pypilot 和厂商动态库）。",
-        "不需要 PyBullet、NumPy、SciPy，也不需要把 Mac 规划器或 URDF 发过去。", "",
+        "按新设备准备章节配置 Linux x86_64、CPython 3.10、pypilot 和匹配厂商动态库。",
+        "不需要 PyBullet、NumPy、SciPy，也不需要携带规划器或 URDF。", "",
         "## 1. 不连接机器人，先验包", "", "```bash",
         "cd trackA_hybrid_precheck", "sha256sum -c SHA256SUMS",
         "python3 precheck_tabletop_hybrid.py tabletop_pick_place_hybrid_CANDIDATE.json --dry-run", "```", "",
         "## 2. 连接控制器，只读测试", "",
         "先停止其他机器人程序和示教移动，保持机器人静止；本程序不会自动回Home或使能。",
-        "下列地址来自你上次报告，仅在现场仍一致时使用；若变更请替换。", "", "```bash",
+        "先设置下列三个环境变量为现场核实的地址；缺少任一变量则命令拒绝启动。", "", "```bash",
         "python3 precheck_tabletop_hybrid.py tabletop_pick_place_hybrid_CANDIDATE.json \\",
-        "  --precheck-only --robot-ip 192.168.8.147 --local-ip 192.168.8.185 \\",
-        "  --arm-ip 192.168.8.147 --arm-port 8080", "```", "",
+        "  --precheck-only --robot-ip \"${XIFENG_ROBOT_IP:?请设置机器人IP}\" --local-ip \"${XIFENG_LOCAL_IP:?请设置本机IP}\" \\",
+        "  --arm-ip \"${XIFENG_ARM_IP:?请设置机械臂IP}\" --arm-port 8080", "```", "",
         "也可沿用当前 XIFENG_ROBOT_IP / XIFENG_LOCAL_IP / XIFENG_ARM_IP 环境变量。",
         "无需设置 XIFENG_ALLOW_REAL_MOTION=1；即使终端残留1，本工具也会置0。",
         "报告自动保存为 hybrid_precheck_日期_时间.json，不覆盖旧文件；发生错误/中断会尽量保留已获取诊断。", "",
@@ -775,20 +752,20 @@ def render_hybrid_precheck_readme(spec, need, extra):
         "- 查询期间机器人若移动，报告失效并停止查询；始终不下发运动或松爪。", "",
         "## 结果怎么理解", "",
         "FILE_CHECKS_PASS 只是本地文件检查；READONLY_DIAGNOSTICS_COMPLETE 只是数据采集结束。",
-        "WITH_ISSUES / 退出码2表示发现不可达、限位、构型差异等问题；保留报告发回来即可，不要清空检查。",
+        "WITH_ISSUES / 退出码2表示发现不可达、限位、构型差异等问题；保留完整报告，不清空检查项。",
         "退出码0也不是混合路径/碰撞/真机运动PASS；MoveJ未执行，SDK没有seed接口，后段逆解仍来自当前静止构型。",
         "当前位置不等于Safe时只报告差值，不擅自补回位。不要把预测PICK_ASCEND关节当成实测到位。", "",
         "## 仍未解除的运动阻断", "",
         "候选完整GUI播放已完成，但桌框物理配准/真实夹具持瓶碰撞尚未验证；URDF腕部link9/11有网格重叠。",
         "新的后段Worlds使用离线软构型引导，实际控制器能否复现要核对。",
-        "这次只补齐只读测试，不附带可执行混合运动入口；不能把状态改成PASS、改限位或套旧执行器强行运行。", "",
-        "## 发回什么", "",
-        "把新生成的 hybrid_precheck_*.json 发回即可，含候选/脚本/依赖 SHA-256。",
+        "本入口只提供只读测试，不附带可执行混合运动入口；不能把状态改成PASS、改限位或套旧执行器强行运行。", "",
+        "## 结果归档", "",
+        "归档新生成的 hybrid_precheck_*.json，包含候选、脚本和依赖 SHA-256。",
         "如果连接失败没生成报告，提供报错；厂商终端输出可能含登录token，外发前用 scrub_log.py 对日志副本脱敏。", "",
         "## 文件清单", ""] + [f"- `{name}`" for name in sorted(need + extra)] + ["",
         "其中 execute_tabletop_pick_place_worlds.py 仅作为纯计算辅助依赖，不是这份新JSON的执行入口。",
-        "不得用它覆盖Debian原成功的a97dd208…执行器。", "",
-        "## Mac 重建", "", "```bash", "python3 releases/make_release.py AP", "```", "",
+        "该依赖按本包 SHA256SUMS 绑定，不与其他历史节点的执行器互换。", "",
+        "## 从源码重建", "", "```bash", "python3 releases/make_release.py AP", "```", "",
         "只有AP会重建此只读目录和ZIP，不会重建/删除原A成功目录。", ""])
 
 
@@ -817,14 +794,18 @@ def verify():
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="按线路封装真机可运行的自包含目录")
-    ap.add_argument("tracks", nargs="*", choices=list(TRACKS))
+    ap = argparse.ArgumentParser(description="按现行线路封装代码与输入；不自动连接真机")
+    ap.add_argument("tracks", nargs="*", choices=list(TRACKS) + list(RETIRED_TRACKS))
     ap.add_argument("--verify", action="store_true", help="只校验, 不重新生成")
     a = ap.parse_args(argv)
     if a.verify:
         return verify()
     if not a.tracks:
-        ap.error("给出要封装的线路(A/B/C), 或用 --verify")
+        ap.error("给出现行线路(" + "/".join(TRACKS) + "), 或用 --verify")
+    # 混合请求在任何目录写入前拒绝，避免先更新一个包再发现后续线路已退役。
+    for key in a.tracks:
+        if key in RETIRED_TRACKS:
+            ap.error(retired_track_message(key))
     for k in a.tracks:
         build(k)
     return 0
