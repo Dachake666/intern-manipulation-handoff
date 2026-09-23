@@ -3662,7 +3662,7 @@
   },
   {
     "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
-    "sha256": "4028f884745a65c0f86d306f2b24f4c65b4d3385a2aff30bb32885ea126b22e6",
+    "sha256": "4f06807cec61d6b1b2a4a1ab1836ae0e1d94094aa2bf66a284ec0548c2cdfb71",
     "origin": "workspace.zip:workspace/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
     "imported_sha256": "c51c4427ef0c156090dc154c35145991649575a6192a7f917aec7e0f94ad8f50",
     "changed_from_import": true

@@ -1,12 +1,12 @@
 {
   "schema": "vision_model_path_checks.v1",
   "status": "PASS",
-  "checked_at_utc": "2026-09-23T03:35:47.886630+00:00",
+  "checked_at_utc": "2026-09-23T04:10:39.668684+00:00",
   "overlay_used": false,
   "inputs": [
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
-      "sha256": "4028f884745a65c0f86d306f2b24f4c65b4d3385a2aff30bb32885ea126b22e6",
+      "sha256": "4f06807cec61d6b1b2a4a1ab1836ae0e1d94094aa2bf66a284ec0548c2cdfb71",
       "from_overlay": false
     },
     {
@@ -104,7 +104,7 @@
     "Only the production model-path parsing block is compiled; ROS logging is stubbed.",
     "Fixtures contain dummy model bytes. No ROS node, camera, ONNX inference, or robot SDK is run."
   ],
-  "production_block_sha256": "91ce1e00ceb7df7f31b4729a24a2c26d4b9fe268dc16c19ee104e31f54119b02",
+  "production_block_sha256": "5b7fba570997bd7a0d43f190c61f54ed134acf3051dde9fe71f01297422b4b6e",
   "compiler": "clang++",
   "compile": {
     "returncode": 0,

@@ -1651,7 +1651,7 @@
       "baseline_sha256": "9e553929d9105e88c4820e3bae2e9f04add4fd0137d3adc0e56aec089ff41e9b",
       "purpose": "Entry point or current implementation",
       "bytes": 318950,
-      "sha256": "c0df332d3e8d48f07eabcd1e0d716de161a263e628f6ac85139c4002248a96cf"
+      "sha256": "2bbb1e5cdf6dd390b92220708a7f1acfe3aeb5e83ea428be7b50004b81804920"
     },
     {
       "path": "docs/VERSIONS.md",
@@ -1709,7 +1709,7 @@
       "path": "evidence/handoff_checks/vision_model_checks.json",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "bytes": 3926,
-      "sha256": "3fbdee4d323cf8f841478c8e77bdc4b8e94dc996c36e3119eeadd81b8752dabc"
+      "sha256": "35598234eb869db60905c8fc80958ffa66f62c5b7cc0c23ec28640394fb71d3d"
     },
     {
       "path": "evidence/mpc_review/per_run_results.csv",
@@ -3983,8 +3983,8 @@
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
       "baseline_sha256": "c51c4427ef0c156090dc154c35145991649575a6192a7f917aec7e0f94ad8f50",
       "purpose": "Runtime/build dependency or regression input",
-      "bytes": 33173,
-      "sha256": "4028f884745a65c0f86d306f2b24f4c65b4d3385a2aff30bb32885ea126b22e6"
+      "bytes": 33172,
+      "sha256": "4f06807cec61d6b1b2a4a1ab1836ae0e1d94094aa2bf66a284ec0548c2cdfb71"
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_interface/CMakeLists.txt",

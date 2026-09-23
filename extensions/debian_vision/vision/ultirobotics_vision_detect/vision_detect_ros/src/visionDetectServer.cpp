@@ -335,7 +335,7 @@ bool visionDetectServer::init(rclcpp::Node::SharedPtr node, const std::string& c
             // 显式模型路径：相对路径以配置目录为基准，旧式纯文件名仍查找 models/。
             if (!workspace.contains("model_path") || !workspace["model_path"].is_string() ||
                 workspace["model_path"].get<std::string>().empty()) {
-                RCLCPP_ERROR(node->get_logger(), "Workspace [%s] requires a non-empty 'model_path'", 
+                RCLCPP_ERROR(node->get_logger(), "Workspace [%s] requires a non-empty 'model_path'",
                              workspace_id.c_str());
                 return false;
             }
