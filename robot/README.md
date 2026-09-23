@@ -1,28 +1,37 @@
-# Debian / SDK 真机端
+# 真机执行与历史成果恢复
 
-当前开发消费者在 ../src/frame_calibration/robot_side；收到现场原字节在Git快照中，避免同名覆盖。
-从交接根目录恢复一个版本到不存在的新目录，不会执行任何收到代码：
+当前开发执行器在 `src/frame_calibration/robot_side/`；`src/robot_mission/mission_runner.py` 是真机任务编排，会向执行器传入 `--run`，不能按离线脚本试跑。职责总览见 [START_HERE](../START_HERE.md)。仿真不按运行主机分类，B5 内的 PyBullet 实验另见 [仿真说明](../sim/README.md)。
 
-```bash
-python3 tools/export_version.py B5 ../mpc-received-review
-```
+## 到哪里找历史代码
 
-恢复目录中debian/对应原包workspace/。SNAPSHOT.json记录每个原SHA及脱敏副本SHA。
-历史源码可能默认开启运动；恢复不等于运行授权。需要恢复B2/B3/B4/B6/B7或D1时替换节点名。
-仅复算MPC历史数据可在恢复后运行：
+从交接根目录导出到不存在的新目录：
 
 ```bash
-python3 evidence/mpc_review/recalculate_mpc_reports.py ../mpc-received-review/debian
+python3 tools/export_version.py B5 .runtime/mpc-reference
 ```
 
-该工具只读JSON和源码哈希，不导入MPC或SDK；固定10轮RMSE组均值改善约34.45%，不能据此计算成功率。
-安装物在sdk/；环境、ABI及视觉ARM区别见docs/ENVIRONMENT_REFERENCE.md。
-默认开发端可用src/releases/make_release.py生成AT/AS/DP等明确模式；已有Debian部署只同步SHA变化文件。
-本次交接没有调用SDK、网络诊断、使能、清故障或运动；IP仍为IP_UNRESOLVED。
+| 节点 | 恢复目录中的主要路径 |
+|---|---|
+| B2 固定场景 | `debian/trackA_worlds_line/trackA_hybrid_trial/` |
+| B3 双次抓放 | `debian/trackC_servo_stream/trackC_servo_stream/` |
+| B4 Servo | `debian/trackA_worlds_line/trackA_servo/`，30ms封存组合在其子目录 |
+| B5 MPC | field/base 在 `debian/trackA_worlds_line/trackA_servo/`；controller/仿真实验在 `debian/mpc_experiment/mpc_experiment/` |
+| B6 MoveJ基础 | `debian/sdk_tests/frame_calibration/records/` 下各日期记录 |
+| B7 瓶子 | `debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/` |
 
-下面为收到各条工作线的精简说明。所有“原相对路径”都相对于恢复目录debian/。
+`SNAPSHOT.json` 记录原文件/脱敏副本 SHA；`debian/` 是收到来源的路径布局。**导出工具只恢复节点，不按某轮日志自动执行 `restore_name` 映射。** 从 `docs/debian_selection.json` 的 `run_bindings` 选中报告，再按其 executor/wrapper/trajectory/依赖 SHA 组成独立复现目录。同名最新文件不能代替特定轮次的备份。
 
-# Debian / SDK 真机端交接
+B5 在线 base 顶层导入 `controller`，但导出节点把它保留在另一个来源目录，因此直接在 Servo 目录运行 field，即使传 `--dry-run`，也可能先因导入路径缺失而失败。先落实同轮依赖/算法版本及 `PYTHONPATH`，不能把导出成功描述为一键可运行。仅核对已有结果可使用不会导入 SDK 的工具：
+
+```bash
+python3 evidence/mpc_review/recalculate_mpc_reports.py .runtime/mpc-reference/debian
+```
+
+预期固定6 Shadow/4 Active，平均RMSE改善约34.45%；这是历史数据复算。新运行发布包使用 `src/releases/make_release.py` 的明确模式生成，不能拿开发最新版覆盖已工作的历史组合。
+
+Shadow仍向机器人发送原参考轨迹，仅不采用MPC修正量；它是有运动的现场实验，不是无运动诊断模式。
+
+## 已有结果和执行边界
 
 本交付保留收到的现场代码身份、原运行证据及必要历史。**本次没有连接机器人、运行SDK或重新验收。** 当前IP为 `IP_UNRESOLVED`，现场成功只适用于报告对应的目标、起点、姿态及文件组合。
 
@@ -35,11 +44,11 @@ python3 evidence/mpc_review/recalculate_mpc_reports.py ../mpc-received-review/de
 | 节点 | 入口与用途 | 已有证据及下一步 |
 |---|---|---|
 | B2 Track A固定场景 | `execute_tabletop_hybrid_trial_reviewfix_field.py` + SDKALIGNED轨迹 | 9/8—9/9五份成功JSON：1次5%+4次10%，记录依赖身份与cleanup PASS。先显式 `--dry-run`；新目标/场景仍需重新预检与资格检查。 |
-| B3 Track C双次抓放 | `execute_servo_grasp.py` + `traj_multi_latest.json`（133运动点+4夹爪事件，SHA ac5c6fd7…） | 8/4五轮只有README。8点基础版有自己的运行文本，不能填补双次抓放原日志。先复核左臂1/夹爪2及Mac双次任务；收到副本不是五轮精确as-run源码。 |
+| B3 Track C双次抓放 | `execute_servo_grasp.py` + `traj_multi_latest.json`（133运动点+4夹爪事件，SHA ac5c6fd7…） | 8/4五轮只有README。8点基础版有自己的运行文本，不能填补双次抓放原日志。先复核左臂1/夹爪2及双次任务；收到副本不是五轮精确as-run源码。 |
 | B4 Servo比较 | `execute_tabletop_servo_field_20ms.py`、`_25ms.py`、`_vaj20_v3.py` | 保留61份非MPC完整JSON及每轮已记录身份映射；9/14七轮全部在内。30ms/stride2另从9/10封存组合恢复。正式Servo资格曾被绕过；VAJ3历史模块哈希未记录。 |
-| B5 MPC | `execute_tabletop_servo_field_mpc_20ms.py`、`_mpc_active_20ms.py`及各自base/controller | 固定十轮：6 Shadow+4 Active；另外三轮早期报告归D2。旧真机JSON没记录controller哈希；任务完成与普遍稳定性分开。先显式 `--dry-run`，不自动转Active。 |
+| B5 MPC | `execute_tabletop_servo_field_mpc_20ms.py`、`_mpc_active_20ms.py`及各自base/controller | 固定十轮：6 Shadow+4 Active；另外三轮早期报告归D2。旧真机JSON没记录controller哈希；先恢复同轮映射和导入路径，再审阅对应 dry-run 行为，不自动转Active。 |
 | B6 Track B MoveJ基础 | 99点冻结执行器/SDK、153点 `post_run_safe_baseline`；88点轨迹/日志索引 | 99点1份、88点2份、153点3份原完成日志。99点冻结源不具备现代完整as-run哈希；153点是运行后安全快照。旧motion=True入口只恢复阅读。 |
-| B7 瓶子示教/TCP | 示教238点+2事件、HOME起步275点+2事件；四种早期变体从索引恢复 | 五轮运动只有说明；四份使能/8080诊断日志不等于抓放日志。契约为 `PYBULLET_PHYSICAL_FK / EE_LINK_ORIGIN`，不套旧T，不重复补TCP。先Mac回放和资格检查。 |
+| B7 瓶子示教/TCP | 示教238点+2事件、HOME起步275点+2事件；四种早期变体从索引恢复 | 五轮运动只有说明；四份使能/8080诊断日志不等于抓放日志。契约为 `PYBULLET_PHYSICAL_FK / EE_LINK_ORIGIN`，不套旧T，不重复补TCP。先仿真回放和资格检查。 |
 | history 局部能力 | 旧 `execute_world_grasp.py`、`test_worlds_servo_minimal.py`、`execute_worlds_10x.py` | 旧Worlds用anchor+off_mm/fixed UVW；9/3 Z495/Z445参考另保留，旧执行器hash缺口仍在。CW的 `execute_worlds_servo_grasp.py` 当前走Worlds求IK→Pulse。WorldsToServo五轮仅汇总，局限于当前anchor的小平移/W旋转。10/20/50/80mm十步JSON齐，只有80mm执行器/SDK与原报告精确相符。 |
 | history 右臂与夹爪 | 右臂latest/mirror/smooth候选、`test_gripper_right.py` | 未找到完整右臂抓放成功日志；右夹爪1、左夹爪2。夹爪工具可动作，不能叫无运动诊断；其成功也不是右臂验收。 |
 
@@ -57,8 +66,8 @@ Debian MPC离线复跑需要保留模型一份，通过显式PYTHONPATH找到同
 
 ## 现场交接次序
 
-1. 核对节点、轨迹/姿态语义、模型、参数、源文件SHA和当前标定有效性；先完成Mac离线回放、起点/限位/碰撞检查。
-2. 在Debian建立匹配SDK环境并确认IP。显式dry-run只读计划；`--precheck-only`仍可能连接SDK，按对应入口确认不会使能/运动后由现场人员执行。
+1. 核对节点、轨迹/姿态语义、模型、参数、源文件SHA和当前标定有效性；先完成离线回放、起点/限位/碰撞检查。
+2. 在现场执行机建立匹配SDK环境并确认IP。dry-run/`--precheck-only` 的导入和连接行为按对应入口核实，不仅凭参数名称判断；连接SDK的步骤由现场人员执行。
 3. 真机清故障、使能、夹爪与运动均由现场人员确认。使用互斥锁；启动前确认当前姿态/首点、保护及速度，结束必须检查保护/速度恢复与SDK收尾。
 4. 保存失败和成功日志，记录执行器、wrapper、轨迹及动态算法依赖的SHA。原件保留；交付日志先脱敏，另记脱敏副本SHA，不用它替代原身份。
 

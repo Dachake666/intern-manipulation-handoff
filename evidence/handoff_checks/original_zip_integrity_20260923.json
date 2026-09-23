@@ -1,0 +1,3563 @@
+{
+  "scope": "Independent read-only audit of original 2026-09-22 ZIP, no SDK import or hardware connection",
+  "zip_path": "/Users/xiaobingxin/Desktop/工作/工作1/handoff/robot_handoff_20260922.zip",
+  "zip_sha256": "e089124ccc6f9b70bbd12fe534a4d440d99add67e6df21f04c12f1e1dd303892",
+  "zip_bytes": 275666922,
+  "expected_checksum_file_matches": true,
+  "zip_members": 1340,
+  "duplicate_members": [],
+  "unsafe_members": [],
+  "zip_crc": "PASS",
+  "manifest_entries": 1316,
+  "manifest_mismatches": [],
+  "unmanifested_worktree_files": [],
+  "root_checksum_verification": {
+    "entries": 1317,
+    "mismatches": []
+  },
+  "excluded_path_hits": [],
+  "git_fsck": {
+    "returncode": 0,
+    "output": ""
+  },
+  "git_head": "8a575a39e0223789281b41e4a25c36b3795432ed",
+  "git_tags": [
+    "handoff/b2",
+    "handoff/b3",
+    "handoff/b4",
+    "handoff/b5",
+    "handoff/b6",
+    "handoff/b7",
+    "handoff/current",
+    "handoff/d1",
+    "handoff/d2",
+    "handoff/d3",
+    "handoff/h-mac-frozen",
+    "handoff/history"
+  ],
+  "git_remote_names": [],
+  "historical_snapshots": {
+    "B2": {
+      "files": 13,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "B3": {
+      "files": 10,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "B4": {
+      "files": 110,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "B5": {
+      "files": 38,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "B6": {
+      "files": 18,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "B7": {
+      "files": 30,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "D1": {
+      "files": 15,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "D2": {
+      "files": 3,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "D3": {
+      "files": 1,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "H_MAC_FROZEN": {
+      "files": 8,
+      "mismatches": [],
+      "tag_matches_commit": true
+    },
+    "history": {
+      "files": 85,
+      "mismatches": [],
+      "tag_matches_commit": true
+    }
+  },
+  "b1_external_data": {
+    "members": 199,
+    "mismatches": []
+  },
+  "source_map_verification": {
+    "entries": 1625,
+    "by_location": {
+      "working_tree": 1294,
+      "git_snapshot": 331
+    },
+    "mismatches": []
+  },
+  "historical_checksum_summary": {
+    "RELOCATED_EXACT_HASH": 55,
+    "PRESENT_SAME_DIRECTORY": 270,
+    "STALE_CHECKSUM_IN_RECEIVED_SOURCE": 2,
+    "EXCLUDED_BUT_AVAILABLE_IN_CURRENT_SOURCE": 2
+  },
+  "historical_checksum_details": [
+    {
+      "manifest": "evidence/debian/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "code/execute_trajectory.py",
+      "expected_sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/execute_trajectory.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "code/sdk_session.py",
+      "expected_sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/sdk_tests/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "trajectory/traj_multi_latest.json",
+      "expected_sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260715_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/trajectories/validated/multi_2pair__real-pass__153wp__656a835d.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/trajectory/traj_multi_latest.json"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./README_FINAL_HANDOFF.md",
+      "expected_sha256": "d5096cacbef87c7434efde20c160512c0c46f434c291ef5daeaa58a1936058dd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./execute_tabletop_hybrid_trial.py",
+      "expected_sha256": "de5ccc1252a03248cc9a5315a2b2fc180953bd70217176116bf294ca653684c5",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260907_trackA_hybrid_reference/artifacts/execute_tabletop_hybrid_trial.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/execute_tabletop_hybrid_trial.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./execute_tabletop_pick_place_worlds.py",
+      "expected_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/execute_tabletop_pick_place_worlds.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./hybrid_precheck_20260907_151817_557889.json",
+      "expected_sha256": "bbc2087b6ff8b50618d82033657efaffbef371d1d2e5ed96fcfbc687cc9d771c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./pass_logs/hybrid_trial_run_20260907_174447_476610.json",
+      "expected_sha256": "f29586f6679e6bba471a85695602f0e0c7d9e9711ea056ce04f28dc8a0a74050",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./pass_logs/hybrid_trial_run_20260907_174600_243222.json",
+      "expected_sha256": "08aec0e553193b030a4918a17bcb8dc8f7ff1ee4317be1d0b7a4556a7b1af907",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./pass_logs/hybrid_trial_run_20260907_174719_456256.json",
+      "expected_sha256": "1107518fedeb5514eb312021755ce99ad37512da1aa73c959dd8cf39de508b42",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./pass_logs/hybrid_trial_run_20260907_174829_713440.json",
+      "expected_sha256": "9b3957e3631d8cd726e3bb30e326020846b688d9b26a0e386eb3e4e437ff2098",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./pass_logs/hybrid_trial_run_20260907_175015_346600.json",
+      "expected_sha256": "40be6b3b2e4290a7ac98ec3a8f3afc87420d32c3f6040b0aa16cf8dc3b851233",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./precheck_tabletop_hybrid.py",
+      "expected_sha256": "e6b904225dd3c8e361029b38695f4b52d1966e585b3aea8cfb8a3faa4a605747",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/precheck_tabletop_hybrid.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./robot_lock.py",
+      "expected_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./scrub_log.py",
+      "expected_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/worlds/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/scrub_log.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./sdk_session.py",
+      "expected_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/SHA256SUMS",
+      "reference": "./tabletop_pick_place_hybrid_CANDIDATE.json",
+      "expected_sha256": "3f3e36f370521e4ab815e377ddb491a3cd2adb24d95dcf843451d03d7587c06e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "README_BASELINE.md",
+      "expected_sha256": "d7806f52547f64569341a72666ab01efd9534172bc40c1550212eb810192a8c7",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "arm_profiles.py",
+      "expected_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "arm_profiles.v1.json",
+      "expected_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "expected_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "execute_tabletop_pick_place_worlds.py",
+      "expected_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/execute_tabletop_pick_place_worlds.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "execute_tabletop_servo.py",
+      "expected_sha256": "a9948adaa48691cdc8c2e0fd6a60b7fbc166eb7a02759601ed6e84f2a002473e",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_servo.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "execute_tabletop_servo_field.py",
+      "expected_sha256": "aece1441ca69b5093fd1ac46a8e0bbbc93e3d787e3dddfdd3c48cf78b7a75483",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_servo_field.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "precheck_tabletop_hybrid.py",
+      "expected_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "probe_pulse_latency_stationary.py",
+      "expected_sha256": "3d3fd08a79205260231355f57c118e24f9712beb6fe3874e994147eda73bca86",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "probe_pulse_latency_stationary_long.py",
+      "expected_sha256": "2a23e0947256335bb4d06747389da352cddd471a91d785daffd8565ae54da831",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/probe_pulse_latency_stationary_long.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "robot_lock.py",
+      "expected_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "scrub_log.py",
+      "expected_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/worlds/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/scrub_log.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "sdk_session.py",
+      "expected_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "servo_common.py",
+      "expected_sha256": "444abaa59c2e4a547f0007e314df4fd39465572dc1ee82d3574d08463a13ad89",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/servo_common.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "tabletop_pick_place_SERVO_CANDIDATE.json",
+      "expected_sha256": "0a18545594212ecf428c36145de7525fcdd16753b89191ecc7e6730f1d1aaec1",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "tabletop_pick_place_SERVO_gui_review.json",
+      "expected_sha256": "14176342f3ed8fda12bfe82fccd18255b748bad6d17c438576a95a7380f22589",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "tabletop_servo_20260910_115323_657498295.json",
+      "expected_sha256": "e387997625031fb6710930b94e4fe4885e76c7cd569a3f3718a897db728ebf78",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/SHA256SUMS",
+      "reference": "tabletop_servo_contract.py",
+      "expected_sha256": "f61903e4435a4a78311d3dacbb78ce945379404820231c354726e15db0f2e589",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/tabletop_servo_contract.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/tabletop_servo_contract.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/tabletop_servo_contract.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_worlds_line/SHA256SUMS",
+      "reference": "execute_tabletop_pick_place_worlds.py",
+      "expected_sha256": "ece4bff6f004faa17b10bf830c1c61cc1b513e3ee80b96e08555998be47f2eeb",
+      "status": "STALE_CHECKSUM_IN_RECEIVED_SOURCE",
+      "received_member": "workspace/trackA_worlds_line/trackA_worlds_line/execute_tabletop_pick_place_worlds.py",
+      "received_actual_sha256": "e011880560b01b2b3aa15272b02ad6a7a6625ac20e9f6eadcd25ae5009691ba9"
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_worlds_line/SHA256SUMS",
+      "reference": "robot_lock.py",
+      "expected_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_worlds_line/SHA256SUMS",
+      "reference": "sdk_session.py",
+      "expected_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackA_worlds_line/trackA_worlds_line/SHA256SUMS",
+      "reference": "tabletop_pick_place_worlds.json",
+      "expected_sha256": "0f2342768e8a11551618331681b8f974150e73331161beaefd43ec22c052a46f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "arm_profiles.py",
+      "expected_sha256": "e5ddbc372cdcae38a312ef8ea781b6aa181121b8ad2a4789537a0d784300d7ef",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/arm_profiles.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/arm_profiles.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "arm_profiles.v1.json",
+      "expected_sha256": "b40ed1d974fe115e6132b0e2a4f71238c5dca1898da0431c9bd5e16876a68c22",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "execute_servo_grasp.py",
+      "expected_sha256": "73be5ab6561ccefbef7cfc9de021bd7e1b45d7f4b278783d245c362555523084",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_servo_grasp.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "execution_authorization.py",
+      "expected_sha256": "baab8263a7dbddc1ca8029e09540c406fd1448e4599d0dee33b4c70fa05c00f5",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/execution_authorization.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/execution_authorization.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "robot_lock.py",
+      "expected_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "sdk_session.py",
+      "expected_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "servo_common.py",
+      "expected_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/servo_common.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/SHA256SUMS",
+      "reference": "traj_bottle_left_elevated_vertical_20260828_RUN.json",
+      "expected_sha256": "61e0b9b134660bed6de3b872a3a4f6f89f0e12d1ac146efd398cb4f95ecfba05",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/traj_bottle_left_elevated_vertical_20260828_RUN.json"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "diag_chassis.py",
+      "expected_sha256": "bba0e6055b0dfb5d0c69302e29c7f1eb60fb1f7cfcf95df245f015e762241644",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/diag_chassis.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/sdk_tests/frame_calibration/robot_side/diag_chassis.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/diag_chassis.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "diag_enable.py",
+      "expected_sha256": "cf8bcd199fe9616bf08833bb909cbfb15c91f956aa190e59e333b650b97f909c",
+      "status": "STALE_CHECKSUM_IN_RECEIVED_SOURCE",
+      "received_member": "workspace/trackC_servo_stream/trackC_servo_stream/diag_enable.py",
+      "received_actual_sha256": "193631f5d28aab9cf32bb4b3f838131eb1fa579cbcd1b4c6e48cea316bc357e4"
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "execute_servo_grasp.py",
+      "expected_sha256": "808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/execute_servo_grasp.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "probe_sdk.py",
+      "expected_sha256": "7be40e15171e9fd3171f499de2245df4208f59c104b78060ebb03b78466a8468",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/probe_sdk.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/probe_sdk.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "robot_lock.py",
+      "expected_sha256": "064528b196f3eb0a532693e040890f52e2c51880b0d805aa6f355c451ffdf824",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/worlds/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/sdk_tests/frame_calibration/robot_side/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "scrub_log.py",
+      "expected_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/worlds/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/scrub_log.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "sdk_session.py",
+      "expected_sha256": "2fe4426a2e7fd6f7e9ab887688d64fb502cbdcf87dcfe3a711b56f6782d3aef1",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "servo_common.py",
+      "expected_sha256": "d84d6e76e6b353c62f255a518c491f44675e7214b1b28ee1fa314ec82ac6800b",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/servo_common.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/servo_common.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "test_gripper_right.py",
+      "expected_sha256": "b4e47acc984de2d58d3c7b00ebbceddd2eaad86d2228897d8f0b60799ad13cee",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/test_gripper_right.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/test_gripper_right.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "test_servo_safety.py",
+      "expected_sha256": "9d0c13790b0be0da142e5e3a2daeb6e432ba125276dd89e987066115a9ab78ae",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/test_servo_safety.py"
+        }
+      ]
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "traj_minimal_joint.json",
+      "expected_sha256": "702a198ebcc35848380503e6b7dd5a65bd0ae873825de04e6b76a02542ae07a4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "traj_multi_latest.json",
+      "expected_sha256": "ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "evidence/debian/trackC_servo_stream/trackC_servo_stream/SHA256SUMS",
+      "reference": "traj_multi_right_latest.json",
+      "expected_sha256": "7a6dc834a80960002198fa918275b9f93e8eac76f39f2bd3b24e445e9a306961",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/Servo/pulse1/traj_multi_right_latest.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/pick_place_coord/trajectories/candidates/traj_multi_right_20260806_CANDIDATE.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/traj_multi_right_latest.json"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "code/execute_trajectory.py",
+      "expected_sha256": "f6e9d93c85495ea2953b1bc1aa8bf44dd8505db40755a28cd1bccf303640baf9",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/execute_trajectory.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/execute_trajectory.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "code/sdk_session.py",
+      "expected_sha256": "f8c50c45af89b58fbfbd68cefa5f96012f11d093b3d9e02e85a36a0f149b212c",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260716_multi_pick_place_153pts/post_run_safe_baseline/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/code/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260720_pre_gripper_modification_baseline/SHA256SUMS.txt",
+      "reference": "trajectory/traj_multi_latest.json",
+      "expected_sha256": "656a835dc148ad1407d3655e01209c796596e91c0e6bac4a99f811d9666ead4d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260903_tabletop_worlds_working/artifacts/SHA256SUMS",
+      "reference": "execute_tabletop_pick_place_worlds.py",
+      "expected_sha256": "807edfceb8d2c6153564376d091275326048b6ce798f7d6a47b4ddaad0ee6644",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "git_snapshot",
+          "node": "H_MAC_FROZEN",
+          "path": "src/frame_calibration/records/20260903_tabletop_worlds_working/artifacts/execute_tabletop_pick_place_worlds.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260903_tabletop_worlds_working/artifacts/SHA256SUMS",
+      "reference": "tabletop_pick_place_worlds_PASS_placeZ495_20260903.json",
+      "expected_sha256": "6b8ad92c80b52bd380fdd5fff7f5e4c1dcf6c4b41b830a2457fd67ec7e4eb507",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "execute_tabletop_hybrid_trial_reviewfix_field.py",
+      "expected_sha256": "36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_hybrid_trial_reviewfix_field.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json",
+      "expected_sha256": "e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/trackA_worlds_line/trackA_hybrid_trial/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/pick_place_coord/trajectories/candidates/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "sdk_session.py",
+      "expected_sha256": "c3e464f49242afa0e0ada241daaced3e22e91db415944c6852a07e87258d2e39",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/sdk_session.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/sdk_session.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "execute_tabletop_pick_place_worlds.py",
+      "expected_sha256": "ad6c4c90fd5b923040dee780c7bc445b2b4b9b2d042125a2cf9f2a1ef668fc62",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/execute_tabletop_pick_place_worlds.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/execute_tabletop_pick_place_worlds.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "precheck_tabletop_hybrid.py",
+      "expected_sha256": "266ee78fcae3dcd40ef9f93a6b9af817ff0d4b5fad0a85eb33fb13656ebefafa",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/precheck_tabletop_hybrid.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "robot_lock.py",
+      "expected_sha256": "3dc07df2343a8292f420b3c768f589f978d899ee7d9497649cf58374a4df46af",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/robot_lock.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_worlds_line/robot_lock.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "scrub_log.py",
+      "expected_sha256": "076cf58b809f27456aa78ee1c70a59b7a2ecb986869d822735337ee2bbef2368",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/robot_side/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B3",
+          "path": "debian/trackC_servo_stream/trackC_servo_stream/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B4",
+          "path": "debian/trackA_worlds_line/trackA_servo/trackA_servo_baseline_30ms_stride2_20260910_142220/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B5",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B7",
+          "path": "debian/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "D1",
+          "path": "debian/trackA_worlds_line/trackA_servo/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/pulse1/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/Servo/worlds/scrub_log.py"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "history",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_precheck/trackA_hybrid_final_handoff_20260907/scrub_log.py"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "hybrid_trial_run_20260908_172336_575481.json",
+      "expected_sha256": "062779bc21ebdabdd13d8c145609f7333e096202e6c5675b1644b8240e840301",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_172336_575481.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260908_trackA_hybrid_final/logs/hybrid_trial_run_20260908_172336_575481.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/hybrid_trial_run_20260908_172336_575481.json"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260908_trackA_hybrid_final/SHA256SUMS",
+      "reference": "hybrid_trial_run_20260908_172435_229744.json",
+      "expected_sha256": "f84e1521610470122b408321efc8192f92f84619106daddea04ae3ff201ecdb9",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_20260908/hybrid_trial_run_20260908_172435_229744.json"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260908_trackA_hybrid_final/logs/hybrid_trial_run_20260908_172435_229744.json"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B2",
+          "path": "debian/trackA_worlds_line/trackA_hybrid_trial/trackA_hybrid_final_20260908/hybrid_trial_run_20260908_172435_229744.json"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "README.md",
+      "expected_sha256": "6db3ba0f4057d49063e3f03622d0caf4a4a4ac1c964ce6134a9876ce18e8e163",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "as_run.json",
+      "expected_sha256": "f81232d5a303824b8bdd41482fdf176269adf3607082f0047c93db117c58ba4f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/00_README_先读.md",
+      "expected_sha256": "77b21ca4b98b76c8a4cabe1a3bc7154af570efe76aa6aebd42daf14f8795cebd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/CODEX_HANDOFF_PROMPT.md",
+      "expected_sha256": "27d4b858f832d9e3bbb5287e4b6fb576650136f8b13f830bcbd6e9de93c8357e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/MANIFEST.received.json",
+      "expected_sha256": "07749191e74a34e61f919131418d8fb63ea4d11154943853ded23705c5d6a196",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/SHA256SUMS.received",
+      "expected_sha256": "49087d077488c54c8b649e6a42c9a8dde53bf1b2c352b3b63c1d72214f19740f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/Servo_真机控制与网络长尾排查完整归档_20260914.md",
+      "expected_sha256": "3112038a20bbfe7186b1e91837b3ccb07f281dd540bcc94bb41ec55f1bf4a2d0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/TEST_REPORT.md",
+      "expected_sha256": "446e437ccbea3ce641bd440edac34bfc2059ca16fe5dfb9f5a40860440e87c5a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/CHANGELOG_20260911_to_20260914.md",
+      "expected_sha256": "c0dd8de3895519fea47bcf7ece25c2b8831dff7c8afb0d18bd8a66f705cba328",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/FIELD_COMMANDS_REFERENCE.md",
+      "expected_sha256": "23f5b3e2f2ed549a6a9d169b1be1085784bdb6ddd1caa7bc5979ac4558f6bb19",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/FILE_MATRIX_AND_GAPS.md",
+      "expected_sha256": "f7e17255d7f44d3fb32f69d2ebf07ca58ba017a4df7c1a0cac8f0bdd8daaa0a6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/MAC_INTEGRATION.md",
+      "expected_sha256": "25c109f144c9d8c20deef94f26dc852ec66d0544a87ea937361cd21909fb8228",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/NETWORK_STATE_AND_RESTORE.md",
+      "expected_sha256": "70e55670c0658531f0097de727b44321ee8967d8a26e1438060fbd041f4220c9",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/SAFETY_AND_EVIDENCE_NOTES.md",
+      "expected_sha256": "7ee98df2ff5aad32b80f3207c5bb509fec04ecb80f8af0849b028d626f644423",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/docs/SOURCES.md",
+      "expected_sha256": "d4b4583923355472a82e3d8ef79387243361598bd5cc15bdef8b26adbc113320",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/20260914_latest_metrics_user_paste.txt",
+      "expected_sha256": "b5754154502c03a4b53db9d214b2b6edb7d293e39ff26e3a3fcac72b78c8fd2d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/20260914_router_state_user_excerpts.redacted.txt",
+      "expected_sha256": "7ae9976f84d66dbbad4bb343bfc507fbdaab0c096e0cb495efca838743bb3195",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/MAC_baseline_context_excerpt.md",
+      "expected_sha256": "462b09dd7c1875b4b635f78acf51e08de3e2651de1ac05f501158f3f3f04babe",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/old_source_execute_tabletop_servo.py.excerpt.txt",
+      "expected_sha256": "3ee2b6daa9774fec1f1f087e345f9e8ee9e65f8546e32c02d561171b34c2fa2d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/old_source_servo_common.py.excerpt.txt",
+      "expected_sha256": "57ede0d675bc3ecb43e60fa4f5d5bdbd771a544c23514fa5c05d8a790b62b64c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/ping_robot_STA_OFF_servo.txt",
+      "expected_sha256": "a55f23aa31f219f2ad6479a89b8f56c52338e00db2f70228ecfa0fd861f982f3",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260910-020023).txt",
+      "expected_sha256": "7e33e0cd3f025ee4a7b9a0625d5b658fc0adce3e6c317cfe8f31ca530a8d094f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-021046).txt",
+      "expected_sha256": "de62cb5dc329fb10052f5eab3566097d3870d023d83932784a1dc390d40d2993",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-024116).txt",
+      "expected_sha256": "df2454464a45f5c7c7be9ece4dceda371c5a883b72561f270077ca4c5b3e3f14",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-025844).txt",
+      "expected_sha256": "b79532faedbeea45d7613e25a408b9df6a4763eb249419b0f6f84a5b328cb33e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-032936).txt",
+      "expected_sha256": "167543dd25f59a18880ceb7995a2b73d6ab8133a66ca56d0626d9f7c28935503",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-040308).txt",
+      "expected_sha256": "e24ca3b9697b500db89a48262dcb3678219ca28826d25b2ebf978eb25559cb03",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-063332).txt",
+      "expected_sha256": "e025f840574c0dead92071cddf7f57f3d23ba0bc7b00c9e3f14f1b71ae79097e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-063932).txt",
+      "expected_sha256": "7abaf8343d2ef745d6933a8ce6dcb6d3d3ac4b52166b352f8ff6fe42a4d0b9f2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-073004).txt",
+      "expected_sha256": "f788f2fb4cf4ce4745711eaf06b33295a548668c00e516d84c8c9092d0347712",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260911-073945).txt",
+      "expected_sha256": "d762a203b39fa5872e7d50c7453c279cec351409ddf7962c322bbf561a9d7e49",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260914-015229).txt",
+      "expected_sha256": "0953ad74630b45156f7a00144687bfcab5911e83eac5b7b1c725b33ba1b9eb14",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/evidence/粘贴的文本 (1)(20260914-040051).txt",
+      "expected_sha256": "95458bc5262c604918f82f9966c0860202a1d3ae2131feaa7d404745d7912440",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/legacy/README_from_original_Servo_package.md",
+      "expected_sha256": "cdab66b7dfe6161bbc9a88f64c80ce63606d085ea9ee1e7d5240f22796154361",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/legacy/README_历史文件勿覆盖.md",
+      "expected_sha256": "db79bb18baba66c2fda48071c572277ae7781d212942aede7004e382407fd65a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/legacy/Servo_真机控制与网络长尾排查完整归档_20260911.md",
+      "expected_sha256": "c7b6cad008cd85a750805785d060cbc19d1d6b840c34b3a1d768a217b0fe6c8c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/legacy/trackA_servo_20260909_original.zip",
+      "expected_sha256": "d651b8f848032c51338a7233f5c16c0ffb9a2f20f078a86496758900bf316a89",
+      "status": "EXCLUDED_BUT_AVAILABLE_IN_CURRENT_SOURCE",
+      "source_path": "frame_calibration/records/20260914_servo_sta_off/handoff/legacy/trackA_servo_20260909_original.zip"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/reconstructed/README.md",
+      "expected_sha256": "61c6acdb3b9f761693efeeb7279f8e3e3e7e5ca3e780e566c7525c7aa60b0088",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/reconstructed/candidate_change_audit.json",
+      "expected_sha256": "381ff1bbd34d79d9034e11f2eb465c85ed970cbc8abb4812ae131aebdb259f68",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/reconstructed/tabletop_pick_place_SERVO_CANDIDATE.json",
+      "expected_sha256": "71bc5148f5aba59aa91635e20905918f777c765c105bff6b29c10f670a1db338",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/benchmark_comparison.md",
+      "expected_sha256": "be6e62597498fab14896266b2d1e3db19625e6354e1209517112163b878687fe",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/evidence_manifest.json",
+      "expected_sha256": "f856345e3264a32f8a4eec50a448568931c22bd8b1953fe13a9f859072208aa6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/expected_field_artifacts.json",
+      "expected_sha256": "d2abcd1be1a8120fbdc054c3fb06db7ba388e0c9af1efd51f2fdcee2c8da5696",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/handoff_state.json",
+      "expected_sha256": "ef393b3763be6b3e95ef04e4ce24e1e00d6b6ddec123645babe56b881279cbfd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/legacy_zip_inventory.json",
+      "expected_sha256": "6a0f364ce1cbdda57d736ada91a41869e6224b0983828870c009edb450a3a703",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/results_20260911_from_transcript.json",
+      "expected_sha256": "fb4b5560e7a50fa2b67f0537c10725bfbf18607ed9b4eb281e501033ef960a9e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/state/results_20260914_reported_summary.json",
+      "expected_sha256": "18adb4390ca14f03be8235eb56a25e0116522c20d897fb59f5e59ac4a3a703e2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/tools/collect_servo_sources.py",
+      "expected_sha256": "ffbf30c30c3c2a59b39c3716fe45475b675ea6b448d09af035b6dc32212bdecc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/tools/debian_readonly_snapshot.sh",
+      "expected_sha256": "bbb2290ce458f74c5f7eb433036c3310fc33aa88a1b8ea8809ad8979460976fc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/tools/router_readonly_snapshot.sh",
+      "expected_sha256": "598b70240cdf4b718638c3855c326c483d3850102ba84702291f72d9e38da909",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/tools/summarize_servo_logs.py",
+      "expected_sha256": "dc2efced2dfcde04627631a0531068e94295eee0434f4b582a5c9221600af53b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "handoff/tools/verify_handoff.py",
+      "expected_sha256": "d2729bd95a424b939d0fd82d809dfa354bb5253c260d5a7c605b678d20e43e7b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "offline_validation.txt",
+      "expected_sha256": "7eecd4c7bd39278c2612065d8ae83b4544db2b6e3e1d87c8ffabac5b303b5b0f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260914_servo_sta_off/SHA256SUMS",
+      "reference": "verification.json",
+      "expected_sha256": "a5600744cfd8627d078b65695157d05fcffa38581f9d2e50d926249c801cfe7c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "FILE_USE_GUIDE.md",
+      "expected_sha256": "ee79f221b05c9a60d60f947b200f87e203b0c603d18c153eec925fedd562ca9d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "README.md",
+      "expected_sha256": "6b5d8a7e605f2fd8752ef2c41b155d9511fd8995f3a70b9e7e13208404f05d27",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "SOURCE_DIFFS.md",
+      "expected_sha256": "b02cef3b6e4126f931b19589e81f68127333f51e57fcd0a71f96c24eedae754b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "UPDATE_PLAN.md",
+      "expected_sha256": "dac048633b28d7ce15ba2978f7068244f5cf4a855ee5aee80713aed09ec0c742",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "as_run.json",
+      "expected_sha256": "ebd79fcc1cc789c0810b4b3f48f09836ec00eff560e2073893f4af56b19006a5",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "file_inventory.json.gz",
+      "expected_sha256": "13bf0deca1d61ca6ed65e5ef4333e71b72ebe73af4ede8e8f66fcacaade193cd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "handeye_data_manifest.json",
+      "expected_sha256": "0d6bd3492d28ae73c442cf1a2580264723030ffde8e6cad29c2dab9fee3ec6dc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/exec_20260831_114148.log",
+      "expected_sha256": "187bd86d4120b7390cfa91aa6d97bb7dd4996a553f44372d3765cc5ceb7af721",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112214.log",
+      "expected_sha256": "56a885688e00ea279d9f7725716fd5b8102f540bf846b83819189832a238d45f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_112948.log",
+      "expected_sha256": "3b8d5a444ae08fc1f797a2d4f48740c289ad6faf68467e09b1b2035273a41409",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113341.log",
+      "expected_sha256": "7913b61fc414f920a56534631f86ec3b9bf484ff4b70324064ae8d1775e88bba",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/failed_or_incomplete_logs/20260720/exec_20260720_113505.log",
+      "expected_sha256": "28fae34d1560c9f7c5e059200a62b17027778540585cd7be18d60baa5cf5ac80",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_173716.log",
+      "expected_sha256": "b2092f03f88b0a2e315b684a6a19a21afae11b9fab13ac34b016cdd63a88fc42",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260708_175212.log",
+      "expected_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_150618.log",
+      "expected_sha256": "81152d2ee82ad73dceb274976318c638ca39d81c31c4a8fd18ce96a1727e9e82",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151410.log",
+      "expected_sha256": "b78b3c7f6e984b5fc9c75d6299cb295fe38b99daaffa6a69c69f388585c19dcf",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_151904.log",
+      "expected_sha256": "cfc80374890a3b54c065474870973fba57293b03f885b502d264f43af55a7363",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154605.log",
+      "expected_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154846.log",
+      "expected_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144033.log",
+      "expected_sha256": "cd33488320d04b53f04194c958f1ac3a84e03a9840261d236dfa22c0a4707ba5",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_144830.log",
+      "expected_sha256": "ae8bca2d1aff20788661a626b4b768643d9bfa716a72273edef746425f885dc0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_145211.log",
+      "expected_sha256": "e134d7823344a309fcec4b83742dbe256e2d2d167f686f47d20e4dbbc4ad17c4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260710_150059.log",
+      "expected_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111151.log",
+      "expected_sha256": "0af395d2b1cf400c8dfc9899d5205c79b6bdbf9d25b56f016b19fcabf1794e29",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_111306.log",
+      "expected_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142335.log",
+      "expected_sha256": "6949eee6c8cab805795144d9763d35853e8104045593d3013a2e001b6c0c83a4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142407.log",
+      "expected_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_142728.log",
+      "expected_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_143130.log",
+      "expected_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145043.log",
+      "expected_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145311.log",
+      "expected_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145454.log",
+      "expected_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145702.log",
+      "expected_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_145926.log",
+      "expected_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150108.log",
+      "expected_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_150613.log",
+      "expected_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175551.log",
+      "expected_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175717.log",
+      "expected_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_175907.log",
+      "expected_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260713_180023.log",
+      "expected_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153610.log",
+      "expected_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153853.log",
+      "expected_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_153915.log",
+      "expected_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_154714.log",
+      "expected_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260714_155123.log",
+      "expected_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112016.log",
+      "expected_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112511.log",
+      "expected_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112618.log",
+      "expected_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_112802.log",
+      "expected_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_150217.log",
+      "expected_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260715_160629.log",
+      "expected_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_171639.log",
+      "expected_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260716_172012.log",
+      "expected_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260710/20260710_150059/exec_20260710_150059.log",
+      "expected_sha256": "be43849778ab4daea1ff9aad9d73eba34ebb0d54e7d7895f96bbbac73d8d088c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_111306/exec_20260713_111306.log",
+      "expected_sha256": "cb9d64eb989fe62e9deeaa4e338a454359be8bdcb322052fff057e6e229954b8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142407/exec_20260713_142407.log",
+      "expected_sha256": "319411bd7ae19faf992acac25c4d319ddce69f37596b160df6f0500b0f360a91",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_142728/exec_20260713_142728.log",
+      "expected_sha256": "d85c679a46fdb4f26fbdc4ed521c095a7b75013b48bf0e2c14a9ac7051e0433b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_143130/exec_20260713_143130.log",
+      "expected_sha256": "b86df71e8e53dd78a2ce3b4e9291f8304ea03e43a4a47cb0f349fff3a6fb0255",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145043/exec_20260713_145043.log",
+      "expected_sha256": "0aeed589b1e1a73e45a83333b34c8447dcbef248f469c87f67935db7bb2f0b9d",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145311/exec_20260713_145311.log",
+      "expected_sha256": "474855da4dae46167e806d1252ba34bf2aec05dc6ef94ac1b9838c5b5bcd153b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145454/exec_20260713_145454.log",
+      "expected_sha256": "f0e6a74ea2ec3122957b5a78ae279b3e09b7071e8ea5d6155672d882ebb4ff26",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145702/exec_20260713_145702.log",
+      "expected_sha256": "fbf8588dc3ebe8650b009626386892685ca248c0f0af242fc803ed33d84039ec",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_145926/exec_20260713_145926.log",
+      "expected_sha256": "d44f7f1d0f93c5a720235a2c87bfddd2538cba5681b7d6ac99aa582c73415a69",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150108/exec_20260713_150108.log",
+      "expected_sha256": "69b225b5253a89864493d014d533a4ff5853001bf4880854712f15b6d3f8cc1c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_150613/exec_20260713_150613.log",
+      "expected_sha256": "05e69e702c3eb32bba4d331539e2ea2f223c6cc8b933488cfa532e13bd0fd03a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175551/exec_20260713_175551.log",
+      "expected_sha256": "401018a4ff1521d2b643fac1cf082c87c76e6321b50c1ccbe4e672b1b558f6d8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175717/exec_20260713_175717.log",
+      "expected_sha256": "a36f07daf41376c695d4813e3b2bcfa217206ef7660058230054eed1505085c0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_175907/exec_20260713_175907.log",
+      "expected_sha256": "6db503f505376613be3da66d717cbb2f7493c6a6e90e8811769464373bcc6ce6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/calibration_data/worlds/20260713/20260713_180023/exec_20260713_180023.log",
+      "expected_sha256": "afedfe05b310063c7ac1067e40baafa84cb18b031c1be64c711e9dac9da0f928",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154605.log",
+      "expected_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260921_debian_workspace_audit/logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154605.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260921_debian_workspace_audit/logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/realtest_archive/final_acceptance_20260709_99pts_left_gripper/exec_20260709_154846.log",
+      "expected_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "status": "RELOCATED_EXACT_HASH",
+      "found": [
+        {
+          "location": "working_tree",
+          "path": "evidence/debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260921_debian_workspace_audit/logs/sdk_tests/frame_calibration/archive/legacy_logs/exec_20260709_154846.log"
+        },
+        {
+          "location": "working_tree",
+          "path": "src/frame_calibration/records/20260921_debian_workspace_audit/logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log"
+        },
+        {
+          "location": "git_snapshot",
+          "node": "B6",
+          "path": "debian/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log"
+        }
+      ]
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154605.log",
+      "expected_sha256": "5167c80091c61cd5cdb4aada0346e9469188f3c0ae75a2468f72bb3e8b359415",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260709_final_acceptance_99pts/exec_20260709_154846.log",
+      "expected_sha256": "4f0b2bb9e9bde3499521c2453cac87ec3c3df1a46f0e68b0cfe55be75a04441a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_154714.log",
+      "expected_sha256": "715fdcfaf7ab32b6c3fd58e7552e7af97fb7fb404c6133f98a45bb383f69c7e1",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260714_p2_round1_88pts/logs/exec_20260714_155123.log",
+      "expected_sha256": "6631c47c154e23316f98630b89bbea33c987bb3ecb2e85cb8222a1213e119407",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_150217.log",
+      "expected_sha256": "93f1139f817997064fd5700ce68dcdad2f6b15514bd9caa38e8c6f37bdf14b82",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260715_multi_pick_place_153pts/logs/exec_20260715_160629.log",
+      "expected_sha256": "902eac8f29f81f4d2cb6d37e6d48d7a5db9cb225d1ed2daaa8a2fbd9ae57d859",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/20260716_multi_pick_place_153pts/logs/exec_20260716_172012.log",
+      "expected_sha256": "0894905b9b5c8b71b1ad8505c197f702f8c2383ef177a59fd75fb7a7307fa697",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/additional_success_runs/20260720/logs/exec_20260720_113816.log",
+      "expected_sha256": "f0035792735123206658fdf83e17bf1a502a12a7180225a00e1c72142519c56b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/ip_147_148_mismatch/exec_20260716_171639.log",
+      "expected_sha256": "e3f468eb33f49d8f2495776de0b4aa60aa9df9a5d5feef4cc93b090a4f02c1b0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/j7_limit_85of89/exec_20260708_175212.log",
+      "expected_sha256": "933d4921a873496370f9bef9d31d0f45305eefd45f8c6fcd08fa915edd629618",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153610.log",
+      "expected_sha256": "f40d52f99a395bb21bc6676d705f787506d12c6107ee019fd725ce69f152638c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153853.log",
+      "expected_sha256": "5fc6c3f847b0e36d0bcc2e5a57b3e14877e1de32c28d626bfb536aa5f05199bd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260714_153915.log",
+      "expected_sha256": "a14aa169a89b61236ec3d5e5e9e609206cef28361909f5c83ca095b69e0cfcd9",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112016.log",
+      "expected_sha256": "03fe4b22a1f15d82e8fd7ae87c160231cf2c93b4ea12d9e0b7e40e6ef2ae89b4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112511.log",
+      "expected_sha256": "5a993eeb742c7d79609f30fff38812824276102d7c3bb2f01b2d15b23e06c7d2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112618.log",
+      "expected_sha256": "46034db1c953ec0cad2c6abc78cd4bec35439792e6d6c3af9a9d8315b696ae18",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/records/incidents/move_state_route_compatibility/exec_20260715_112802.log",
+      "expected_sha256": "eeabbad9dc1c1c546f432ebd00babb7304636131e874b86db941d8aa44dcbe5f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_174108.log",
+      "expected_sha256": "d5b93c93293a21ffdd7ed772975d4a927d33417c6bcbe8a04360ef1e01ad548f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_175113.log",
+      "expected_sha256": "34e2da43e8da83421f61fcbf880d25471ab4ca27712d3c43de067599a9c08a78",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260720_180124.log",
+      "expected_sha256": "20c55e08f3c4b570b70580a2a937f7637bedba6d67c124adb99fc7ba9ea9d4c4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_141600.log",
+      "expected_sha256": "799757c0d742459f6b48e14cb149161b5648e34f8f2718beeb21545159b6d887",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_164420.log",
+      "expected_sha256": "384ffd4779f121896555cb76f0bdf87e0c45270d0a960c07f1e4db6862829cd5",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260721_180717.log",
+      "expected_sha256": "3c617e2b7baf62d97a4cf43af06686bdcf0c31a1bffc01edde9b212ea02ac5f3",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260722_150115.log",
+      "expected_sha256": "af7be0544eb34d257d57bc27169bdc7fcf46377752e218d1302771f25c17e91e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101241.log",
+      "expected_sha256": "b0f4dc301e54b025bf517acc93d5c00ddadfed7ff1f4b60fce6bfba3af8e170f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260723_101723.log",
+      "expected_sha256": "ff582302e5bf7b1ac00d2f6f521f706f1fa6024644ef6096e5d4a4e4216094aa",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_151951.log",
+      "expected_sha256": "edad360f86665860a0956c3184d1e3eb283fd2e56118365e6e1d38167e2ab27e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_152215.log",
+      "expected_sha256": "552bd022273cba2d98f6b188d3c4227d10bedaef8486b4e63328b31173aab77b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260725_154638.log",
+      "expected_sha256": "af84f8fed9a2a3f97c9773ec57ca0de307abb517eedf3292f8e379a2b7ba91f4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112120.log",
+      "expected_sha256": "1f7c7f83d0a198203a5f43408965fd53d60a05edf7ca22fa286e01a10952d44a",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_112756.log",
+      "expected_sha256": "28ea75f6f50a80e58bf47e131da875719a82937c64eb9202ad12d96a2e6e819b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260727_160244.log",
+      "expected_sha256": "6e75397c5ee06fb77e96c3bbd35a531232f97e77670e081dd25322550bef9bb6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260728_163152.log",
+      "expected_sha256": "f70683825ecc9c4061ee4b79ab6793b184b29f7bcd8f8a12b138153eaffe2e57",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104401.log",
+      "expected_sha256": "0338d4bb8634a61dd7b8492f6c6bf72cae1f0e6add8ec4dc9aa2cbde0d37001f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_104534.log",
+      "expected_sha256": "c78b270c8867330e84866ec359db57ecdaefb66ed63b908dd8004b8af416e32b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/sdk_tests/frame_calibration/robot_side/exec_20260729_180942.log",
+      "expected_sha256": "0a95f02d926e1aa6992d79f868bea1a7ab6914de62cbc0b5f7a9ad7522adca33",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260909_182932_719907228.json",
+      "expected_sha256": "88b20144c76d1f848da8c96a104556b229ed99fe9d52ed6c242b9fff1071e2b2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_095643_352311931.json",
+      "expected_sha256": "1f48805eb79b686c11d22703aaee2957255906102b9af4fe391997bec0756d61",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_103844_659712178.json",
+      "expected_sha256": "0cb210f87dd416fd62b94e27787ca9e353bff177c02ad16e8d33f749e3eecaa1",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_105143_645973957.json",
+      "expected_sha256": "ff140bfe71a9866fbdbe8d02930dcff4fdf92494749d5a7f683c2799642c99a3",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_111452_8747698.json",
+      "expected_sha256": "c98f827b75574c09b9ed0f817641c4972a730ce8a6765b24cccc6d49bcd4d6be",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_115323_657498295.json",
+      "expected_sha256": "e387997625031fb6710930b94e4fe4885e76c7cd569a3f3718a897db728ebf78",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json",
+      "expected_sha256": "83c1719f85cfb2ac00702b98d40f38ba1bf92cb0885cde34923ee4ccf0046393",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152201_759043648.json",
+      "expected_sha256": "06e0471f1b60f7ac9b196e91bd6c4705495b11a77ebfc0c68fd039168bdfda82",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152558_723994735.json",
+      "expected_sha256": "c687d018c1cf44d68cc23c58bbe519846dab8e6a5bf234a370c10902ef264e4b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_152823_962154881.json",
+      "expected_sha256": "0a1419e03d645313006ca0817c41c7337fb1ee2f37fcc5fdfad704c37631b1ed",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_160524_761066947.json",
+      "expected_sha256": "07429bb907cb66a3a09f119d8ccbadedfbe6420e2591a16911c2a58d07a61c10",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163524_510903507.json",
+      "expected_sha256": "3508f8c85ab2b5db38ab8e3120559e8ebb00262fe45e0864beac5749c377f7e6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_163935_446934665.json",
+      "expected_sha256": "66fd4f6272d7851c9c19af5a709110f77a13795c396b9053c9515167fa80f56f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_164833_358988350.json",
+      "expected_sha256": "6a57ab963d31f7ba411651126a1f1814bbbe8cb2703b69022b832a59b56eadb6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165133_659514199.json",
+      "expected_sha256": "c4556ea7ad23399d498fbb0dfd425b3d29b0c9992ea193c6168c7bdd9915cd63",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165218_247380274.json",
+      "expected_sha256": "9ab5432259b448669eba5523c8abddf20da6762c56c8ba798922737dbefd4652",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165333_586410181.json",
+      "expected_sha256": "50e16310272bd0dc619265d5b3957d89900743a9c107c727481ecf1e4b01d064",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165814_339613079.json",
+      "expected_sha256": "bf8c559f8b32d93c6e4dc72a84d14c4840b7713dc55861e9657c2f95becfbd2c",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165859_76747268.json",
+      "expected_sha256": "9df997da0a9fafd3ce409cf485386b5f71bc2a5e1aeea2aab8999bdde33edf2f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_165949_514480706.json",
+      "expected_sha256": "1121bd32d8e74cab716eeb028c98c8bb407e513e3aa063a6c5072d49fe35df01",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_170030_54997245.json",
+      "expected_sha256": "f5476bc0bae5d77d7cb0dcc6e3fb04de9546824304bc4983eafca3a97bdd4120",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173320_291819593.json",
+      "expected_sha256": "aa0ed9c194b7c5c709fa191d55073a839410e856fb18cfc61454805cc5a14364",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173431_697572496.json",
+      "expected_sha256": "9f61cd0721bef5e83dd780e1e94d3f98d476b0671b01382c8cf657f3171c9f1e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_173521_589861042.json",
+      "expected_sha256": "1e31cb4f2c86f0ff984aa98544a36319ff1742df270bd368544df92a6e7da36e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180535_22326500.json",
+      "expected_sha256": "e29cb4e41089b1228898605a390a6373d4d82fa175c7131e0e7177fe78a6869f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180627_526312116.json",
+      "expected_sha256": "462eeca3bb28d33513ba3071715487a8c092f46031a74efd9ea0b642e7056720",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_180731_375394954.json",
+      "expected_sha256": "6b7ab3efd26ce63745cf598ca7a82e4578186803c7edfe0c026971ecda50a9de",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181646_765421386.json",
+      "expected_sha256": "0f59afc90aa62cefbaaf4e6428f4a5b6ac6cca5c29906afb182a527917923b19",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181735_484313421.json",
+      "expected_sha256": "b2032a1af4775b6ba5e4aaedfd96292bad17c8de9e3fe35c737a76d6836150d1",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181834_738155680.json",
+      "expected_sha256": "3f2d6ae18e0aeeb41a5042730c3a281a0d813a1d6fae5be6129f2f5e0d415ed7",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_181919_767725741.json",
+      "expected_sha256": "32cbe6188f44f2efd0fe6530194eb90425e02c5ea62eb644bee54162c8aec37b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182016_844508656.json",
+      "expected_sha256": "3b03f150042aeb3be7246cec7418f27cdeb753ceb1fb2d3461776fde0d01be39",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182307_274445019.json",
+      "expected_sha256": "deb77ff55c1d43d1f04dc1f04f16a0bacc3f2c4e58bc2f331a97180f6fda53fa",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182524_262924111.json",
+      "expected_sha256": "43e9a8b2905d88d065e80f822109af1c20b89d6847b9ee6c77c4d7b087cdfa42",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182801_44143728.json",
+      "expected_sha256": "47d8abda1fe18dab9e670d072b945017ba8c7eb33e992254a0c19ae2be99ff16",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_182900_405886792.json",
+      "expected_sha256": "2e497ffed15f6ec6a22252e193c61a0afb28d6411821d0b9d1451e0cfc718d61",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183059_347999147.json",
+      "expected_sha256": "3a068547eb5ccb97332375dd609ffac22e3f228876cf4327d8c0c6d5c74ec430",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183148_517462003.json",
+      "expected_sha256": "829b31d6a3b5d29e44e42927a22e276ce901682fed44ac100b206b5e01069a66",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183332_505827440.json",
+      "expected_sha256": "d766a0f97a8795bf759ed54fdb4fa2d26e2223cfa932c0346fde9fa622dc2edd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183436_249825816.json",
+      "expected_sha256": "97fd2126cf982490019cb56ab5c1729fa3244c4027a80849715d7f8130eb82d6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260910_183541_154425693.json",
+      "expected_sha256": "8d55480990d3f0245db3ced9c3f642f39c728dadd182ec4073630dd4f0472ff3",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_094917_877773855.json",
+      "expected_sha256": "ecc7b79afdb6c813a1a3447f6b633a8b1813645809b47df5aafef18317b76048",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_095055_638425600.json",
+      "expected_sha256": "387051493eac1e597ad6ec5518be7f873fccffd0ff94e269fe87d9bc28c9663f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_162954_394142049.json",
+      "expected_sha256": "58acc8945cad2edb07b79623ccd992bd5cb512d2737a934f4af278826ce4aab6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163212_676609931.json",
+      "expected_sha256": "36edb36b5417fb85ea067fce9299e14f4b7d49dc08c8262c24f6181d9e656c87",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_163918_193229041.json",
+      "expected_sha256": "0091f7fbae4985ee7e74b6d8e3981841d93ed72ae2d0e75f92c9e0916f0a8d2e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164012_821682725.json",
+      "expected_sha256": "2b5467e8cf4f54281f83a7e1f9ee452f2c6267a1cd14a2939d103d1739fea813",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_164104_41510079.json",
+      "expected_sha256": "1830b12540019bcee098dc5e30a8228f55013d58d7140d45f3135b0072140dd9",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_171849_607487523.json",
+      "expected_sha256": "f207f2b2bb6fcbd146414513fc5db645cd604f4ed2b6ed74985574c442b6ddb4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172054_219248171.json",
+      "expected_sha256": "64b34e37bbfb0395776c7d4c5688fcbe0f4024bc4a06fa492530764dc1fe2adc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172409_814593890.json",
+      "expected_sha256": "bac7c64fabc1b4a6236ec86b4f8e30678cb644fb8b58c3759a8a36dbea9d3482",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172450_753647860.json",
+      "expected_sha256": "883620ba6627e10e3094609346991b731ab9ac74180182a57ad0c28b679491bb",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172614_921383877.json",
+      "expected_sha256": "ea0bf373a7b6deaa4cc5c4d6ba2838554ec3c270e6d5a91565b7dbe9d28cc9f5",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260911_172732_408886835.json",
+      "expected_sha256": "45ad50085159976c92c13374b1a7358927eebb2a458423e3205e409949d3890b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101418_793393004.json",
+      "expected_sha256": "7b0d618040b887db17a62fc5e9ba65481ce229772c7fdb7fdd78bc3613c4ba0b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json",
+      "expected_sha256": "924c82ebb9eac46612efd3f242f902c485f782d73100ebdb45cc3ace804ab2ff",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101711_112650029.json",
+      "expected_sha256": "07e7c9b024b05750e0cece1ee4543410d271ad91ca9cd846633b70f74458b820",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_105707_209790145.json",
+      "expected_sha256": "0f4b1b70779e75c90ded8f47be6a39c8c8bb648d0a3e30fcce8a8f1c519e20f8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_142554_223889841.json",
+      "expected_sha256": "5a78266e41a7f78e21172eb3bf147cb056d0baf69cae37d0c1c1aecf16790a45",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151026_745041422.json",
+      "expected_sha256": "996719a25ed209e29ce82ec064b49e8dac72b316518f37ca37898b1080c6759b",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json",
+      "expected_sha256": "6c01b70f3e5af94530289992d0cea70a98ba0b6e24acb76749b3127f1d8f129f",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_120026_105169918.json",
+      "expected_sha256": "e66101e9374b6871f3f9184865286023cc21c9982b81554c7e05d1832331dd1e",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_144907_221796708.json",
+      "expected_sha256": "bdfec89ffd03770f985c5ab6982948926233ff13867601a937b37acb2d814085",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_145400_861015006.json",
+      "expected_sha256": "075daf298e3bec9c613b8f064a790d8b6b6573ca7b1608dd66bda549cc674ca2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_150937_394611035.json",
+      "expected_sha256": "972ac9a0aa01d685b9d9c23277fc4fd12d2569c420be8a2baf5a880d7258c2bf",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161007_195575844.json",
+      "expected_sha256": "26b997d85287e6d5224b0f9f4e5fd3d3d2b1c715025fdbb7459fdff51f03b301",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161804_427508716.json",
+      "expected_sha256": "fcc2bc3cc02b871ed336aa95d607374c491feff64338f2e11ca962e219077f78",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161842_290824538.json",
+      "expected_sha256": "5b596313955048fa7641c2de16b9ea1aafff8f26a195ac996ef8f27060cc6107",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_161957_559208120.json",
+      "expected_sha256": "dc47b3708c4b124f08b193f3baee333fb16e79cedbe645aca6aafa7c38652bfc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162057_54388464.json",
+      "expected_sha256": "a20bf8454d2d506a984a5142c20edab47e866298555ae8d34af047ae9735a065",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162340_144861635.json",
+      "expected_sha256": "a5485d77482ddf6f741cda853dda835462ed2e0beb09dc921d3ed32b3a2ca974",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162429_177216570.json",
+      "expected_sha256": "95967f431c8a5b49b58d8b22e0c3a8431d802a3214f9dabf8ee35c03a8d5e428",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162614_575109989.json",
+      "expected_sha256": "4fd307f041fad2e198db23b1d0257d673121433f19b4d785affdfe2a2eba5fc0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackA_worlds_line/trackA_servo/tabletop_servo_20260916_162706_519367266.json",
+      "expected_sha256": "76cde1febdf2670bab373d642de5fa430f00eb7d2361e6fb77590b1b89b7b536",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run01.log",
+      "expected_sha256": "103a147e778aa8827b31ccf8cba018dc2eb79e4020a815b2680061a3d1b2c0ab",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_enable_state_sync_20260901_run03_after_cleanup.log",
+      "expected_sha256": "920719d8c2e2d96b4f9bc1b520f5830514463d134dec97bf8298a6dce316efbc",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_arm_init_state_sync_20260901_run01.log",
+      "expected_sha256": "001627ae6eb47def53aec86a4d436d9f4c01e3f1013af73a80a9595d61ec8bc8",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/trackC_bottle_left_orientation_precheck/trackC_bottle_left_orientation_precheck/debug_archive/arm_enable_varget_8080_20260901/diag_netstat_arm_init_20260901.log",
+      "expected_sha256": "7c8f40217a3217bfe79eec84edcc770d5284ac2f5ad7c8adba32b22ac61adbfd",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/vision/ultirobotics_vision_detect/save_data/calibration_server.log",
+      "expected_sha256": "898de5514af006e1cbc4ec4cdbb7f106368778595956ea09bd0ac2172e648c52",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "logs/vision/ultirobotics_vision_detect/save_data/camera1.log",
+      "expected_sha256": "f3748f198dc48336f8e897c4d3a8a1cc6d1f632068cff49382b9c622b21bed97",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "model_comparison.json",
+      "expected_sha256": "b649e730ccc60ee3adcd089266c43c8f07be6bf0d7e9ef51f326351fb51a9118",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "mpc_review.json",
+      "expected_sha256": "dcad01d175dad31bb5e88cef26af17ff03c832f408e82421aa331590630eaa94",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "mpc_review.md",
+      "expected_sha256": "97ca7d0d4024e9e6f8c250b2ff057ffd83ce698b59e3e1ffc37c3a3852c4a791",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "preservation_manifest.json",
+      "expected_sha256": "fc348403a8bf54c62b0e4641eb659a0557af3d11ce21cc8a676d05b87335de40",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "receipt.json",
+      "expected_sha256": "ebb83b7a6cf1553c0bff42bc5934edd4a709f79b3cc691a6c6e29e6c5229aaeb",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "received_sources.zip",
+      "expected_sha256": "392f3e447e2b4a6d5d2dd9852253bc06c84e4d640a42c803bcd742111f8038b9",
+      "status": "EXCLUDED_BUT_AVAILABLE_IN_CURRENT_SOURCE",
+      "source_path": "frame_calibration/records/20260921_debian_workspace_audit/received_sources.zip"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "sensitive_scan.json",
+      "expected_sha256": "4d3253d70c2cb14990aa9b434572554ebdd6e8fab867d59126009d91d426c5ea",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "servo_review.json",
+      "expected_sha256": "dd2ccc784c1211f3dc532b42872ab564ee53f73d39bfb40385d992604cad3ed4",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "servo_review.md",
+      "expected_sha256": "ad3e12e15db9f5d4ac0f440d9f796a55e222ad7eec914c0b67dde6af82a81dd6",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "source_comparison.json",
+      "expected_sha256": "4ba726f575708f5311e1a998a36ced13a6ae2a63c36f13cdacf45eb2215c4103",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "static_checks.json",
+      "expected_sha256": "a911deb0caa85e75413a56ffc31da8931d372b9ac40d6353e5c006c6d619e2d5",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "verification.json",
+      "expected_sha256": "04b7038e861335197309250b67ea92d89b8e34cb27a738c2ece4eb232bfc53c2",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "vision_review.json",
+      "expected_sha256": "b43d7fe805767ee6c245f00e0611c64e50d6eabe7dd030ae1190c8429a72f0c0",
+      "status": "PRESENT_SAME_DIRECTORY"
+    },
+    {
+      "manifest": "src/frame_calibration/records/20260921_debian_workspace_audit/SHA256SUMS",
+      "reference": "vision_review.md",
+      "expected_sha256": "ed32c82513249880a79646d5d786517887eedb86a84545f2e627e7cb91cc6edf",
+      "status": "PRESENT_SAME_DIRECTORY"
+    }
+  ],
+  "historical_checksum_note": "Original historical manifests preserve old layout; root HANDOFF_MANIFEST.json/SHA256SUMS govern this delivery. Exact hash relocation does not prove run acceptance.",
+  "credential_pattern_findings_metadata_only": [
+    {
+      "path": "src/frame_calibration/robot_side/test_precheck_dual_arm.py",
+      "kind": "json_sensitive_field",
+      "count": 3
+    },
+    {
+      "path": "src/frame_calibration/robot_side/test_precheck_dual_arm.py",
+      "kind": "bearer",
+      "count": 1
+    }
+  ],
+  "credential_findings_review": "Only deliberate test fixtures in test_precheck_dual_arm.py (lines 312, 313, 344, 365); no real credential identified by configured patterns.",
+  "limits": [
+    "No fresh Python environment installation",
+    "No SDK import or connection",
+    "No robot identity or live calibration validation",
+    "No robot motion",
+    "No new GUI acceptance",
+    "Regex credential scan is not proof of absence",
+    "Historical success/source binding evaluated separately, not implied by checksum PASS"
+  ]
+}

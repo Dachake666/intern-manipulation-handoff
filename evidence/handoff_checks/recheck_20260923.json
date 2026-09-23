@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-23",
+  "verdict": "DRIFT",
+  "meaning": "Delivery integrity passed; documented historical gaps remain. No hardware acceptance.",
+  "original_archive": {
+    "sha256": "e089124ccc6f9b70bbd12fe534a4d440d99add67e6df21f04c12f1e1dd303892",
+    "members": 1340,
+    "manifest_files": 1316,
+    "status": "PASS"
+  },
+  "original_source_map": {
+    "entries": 1625,
+    "by_location": {
+      "working_tree": 1294,
+      "git_snapshot": 331
+    },
+    "mismatches": []
+  },
+  "historical_checksums": {
+    "RELOCATED_EXACT_HASH": 55,
+    "PRESENT_SAME_DIRECTORY": 270,
+    "STALE_CHECKSUM_IN_RECEIVED_SOURCE": 2,
+    "EXCLUDED_BUT_AVAILABLE_IN_CURRENT_SOURCE": 2
+  },
+  "historical_checksum_details": "original_zip_integrity_20260923.json",
+  "offline_tests": {
+    "passed": 279,
+    "warning": "Third-party SciPy KDTree deprecation",
+    "entire_repository": false,
+    "log": "offline_tests_20260923.log"
+  },
+  "track_c": {
+    "status": "PASS",
+    "frames_0_4_deg": 1633,
+    "frames_0_2_deg": 3232,
+    "output": "PASS step=0.4° frames=1633 stream_sha=5b53efbcbe911ed0d451a91c\nPASS step=0.2° frames=3232 stream_sha=3034c58e83f0a65a96e84695\n"
+  },
+  "mpc_metrics": {
+    "status": "PASS",
+    "shadow": 6,
+    "active": 4,
+    "rmse_reduction_percent": 34.45,
+    "output": "SHADOW RMSE=1.1086 deg P99=2.5468 deg MAX=2.9020 deg | tabletop_servo_20260916_150937_394611035.json\nACTIVE RMSE=0.7271 deg P99=1.7867 deg MAX=2.3672 deg | tabletop_servo_20260916_161007_195575844.json\nSHADOW RMSE=1.1253 deg P99=2.5857 deg MAX=2.9730 deg | tabletop_servo_20260916_161804_427508716.json\nACTIVE RMSE=0.7255 deg P99=1.7945 deg MAX=2.5795 deg | tabletop_servo_20260916_161842_290824538.json\nSHADOW RMSE=1.0491 deg P99=2.4596 deg MAX=2.8690 deg | tabletop_servo_20260916_161957_559208120.json\nACTIVE RMSE=0.7146 deg P99=1.7798 deg MAX=2.5570 deg | tabletop_servo_20260916_162057_54388464.json\nSHADOW RMSE=1.1333 deg P99=2.5869 deg MAX=2.9510 deg | tabletop_servo_20260916_162340_144861635.json\nSHADOW RMSE=1.1006 deg P99=2.5430 deg MAX=2.9680 deg | tabletop_servo_20260916_162429_177216570.json\nSHADOW RMSE=1.1255 deg P99=2.5469 deg MAX=2.8455 deg | tabletop_servo_20260916_162614_575109989.json\nACTIVE RMSE=0.7354 deg P99=1.7980 deg MAX=2.4000 deg | tabletop_servo_20260916_162706_519367266.json\n\nSHADOW: n=6\nRMSE = 1.1071 +/- 0.0309 deg\nP99  = 2.5448 +/- 0.0463 deg\nMAX  = 2.9181 +/- 0.0539 deg\njoint RMSE: 1.3138, 0.9438, 0.5927, 1.6208, 0.5868, 0.6919, 1.4699\n\nACTIVE: n=4\nRMSE = 0.7257 +/- 0.0085 deg\nP99  = 1.7897 +/- 0.0081 deg\nMAX  = 2.4759 +/- 0.1078 deg\njoint RMSE: 0.8592, 0.6288, 0.3811, 1.0749, 0.3833, 0.4321, 0.9582\n\nMean-RMSE reduction: 34.45%\n\nMethod: same recorded reference-minus-feedback samples; entry bridge excluded.\nP99/MAX summaries are means of per-run P99/MAX, not pooled statistics.\nThis reproduces the existing metric, not timestamp-aligned ground-truth accuracy.\nThe first two runs start body sampling at offset 1; the others at offset 0.\nSuccessful runs only: these ten reports do not establish a 100% success rate.\nNo MPC or SDK code executed; no robot connection attempted.\n",
+    "new_robot_run": false
+  },
+  "source_identity_check": {
+    "status": "PASS",
+    "delivered_source_files_unchanged": 1294,
+    "current_workspace_source_references_unchanged": 597
+  },
+  "documentation_check": {
+    "status": "PASS",
+    "files": [
+      "START_HERE.md",
+      "AGENTS.md",
+      "sim/README.md",
+      "robot/README.md",
+      "docs/VERSIONS.md",
+      "docs/KNOWN_ISSUES.md",
+      "docs/ENVIRONMENT_REFERENCE.md"
+    ],
+    "relative_links_checked": 32,
+    "embedded_agents_matches": true,
+    "review": "Independent entry audit; Git wording and GUI cwd findings corrected."
+  },
+  "changes": {
+    "modified_package_docs_or_index": [
+      "AGENTS.md",
+      "START_HERE.md",
+      "docs/KNOWN_ISSUES.md",
+      "docs/VERSIONS.md",
+      "docs/version_refs.json",
+      "robot/README.md",
+      "sim/README.md"
+    ],
+    "added_package_check_files": [
+      "evidence/handoff_checks/recheck_20260923.json",
+      "evidence/handoff_checks/original_zip_integrity_20260923.json",
+      "evidence/handoff_checks/offline_tests_20260923.log"
+    ],
+    "regenerated": [
+      "verification.json",
+      "HANDOFF_MANIFEST.json",
+      "SHA256SUMS",
+      "canonical ZIP and sidecar"
+    ],
+    "runtime_source_changes": [],
+    "deleted_files": [],
+    "historical_node_changes": []
+  },
+  "remaining_gaps": [
+    "Frozen Track C full GUI entry missing",
+    "Some run hashes/raw logs incomplete",
+    "Vision/handeye quality and service integration pending",
+    "Dual-arm collision qualification REJECT"
+  ],
+  "not_executed": [
+    "Robot/SDK/network commands",
+    "GUI manual acceptance",
+    "Fresh dependency installation",
+    "C++/ROS build",
+    "Handeye refit"
+  ],
+  "robot_ip": "IP_UNRESOLVED"
+}

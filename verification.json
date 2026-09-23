@@ -125,5 +125,14 @@
     "handeye refit"
   ],
   "evidence_verdict": "DRIFT: preserve historical differences; hardware identity IP_UNRESOLVED",
-  "source_workspace_head_before_export": "9f65b7619cc3ae70446a258c9276111e5eb14720"
+  "source_workspace_head_before_export": "9f65b7619cc3ae70446a258c9276111e5eb14720",
+  "latest_recheck": {
+    "date": "2026-09-23",
+    "scope": "Package integrity, directory documentation and selected offline tests; no hardware",
+    "selected_offline_tests_passed": 279,
+    "report": "evidence/handoff_checks/recheck_20260923.json",
+    "runtime_sources_changed": false,
+    "historical_nodes_changed": false,
+    "evidence_verdict": "DRIFT: documented historical gaps remain; IP_UNRESOLVED"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "robot_handoff.v1",
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "files": [
     {
       "path": ".gitignore",
@@ -11,15 +11,15 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1306,
-      "sha256": "58bb939abd45334472617bd7997d5f051b807767f813b17b30e6fd890c4fd95b",
+      "bytes": 4607,
+      "sha256": "2d7ee2a7147d6217ec8763a44b207ec895e6b9e4dff1c3edefa7cd3c048029cc",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 3149,
-      "sha256": "3769c0595b7e79b750eb5108faffa205680065bbe154eaee87f30fe2d7f6460e",
+      "bytes": 14883,
+      "sha256": "2b493a785f92513b7ff44b578fd55f9d7c3e087df8c1f5adab97657c9a8c5f71",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -2022,8 +2022,8 @@
     },
     {
       "path": "docs/KNOWN_ISSUES.md",
-      "bytes": 5728,
-      "sha256": "ca93bb04eda946f2cc546fb8bec92dfc6907c93c5bd60d0757aba87541bb8d22",
+      "bytes": 7173,
+      "sha256": "22a55c1aca852ea62657c81b5afd073bef7efe1b3fa556b3d09e78ce974f18a4",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -2036,8 +2036,8 @@
     },
     {
       "path": "docs/VERSIONS.md",
-      "bytes": 2011,
-      "sha256": "2762c711413acb0ec4cebcf98ba923833f3752a2900d0a9c0c64e90ade1ecbb4",
+      "bytes": 2563,
+      "sha256": "682d35499bae64ee3d34a7b6cdb624b2807d4555f0d2f685b033c69fc18f4685",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -2050,8 +2050,8 @@
     },
     {
       "path": "docs/version_refs.json",
-      "bytes": 2338,
-      "sha256": "9ce1a9f444130392d124117d7c428654281d9d4431a1081dd2cc28087957a633",
+      "bytes": 2346,
+      "sha256": "aeb525904206175d7f54ecbe8a62b741d6d8f8a4acdc8713095298cb506b9f60",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -3760,6 +3760,27 @@
       "path": "evidence/handoff_checks/offline_tests.log",
       "bytes": 31575,
       "sha256": "7e9d4f96e916be0dfabe439d3d109736093a90c18b5de6e00629fd5dc3671292",
+      "origin": "handoff_generated",
+      "kind": "handoff_documentation_or_check"
+    },
+    {
+      "path": "evidence/handoff_checks/offline_tests_20260923.log",
+      "bytes": 926,
+      "sha256": "701d9ef319eb4da5968134b804b5fee2c9dbbf09ea643308f212531fd52cce05",
+      "origin": "handoff_generated",
+      "kind": "handoff_documentation_or_check"
+    },
+    {
+      "path": "evidence/handoff_checks/original_zip_integrity_20260923.json",
+      "bytes": 163071,
+      "sha256": "f2685d8ef8d1ea130c740ada91ec8af3c78279bbbc9a77b5a9ad15c1ea2f241b",
+      "origin": "handoff_generated",
+      "kind": "handoff_documentation_or_check"
+    },
+    {
+      "path": "evidence/handoff_checks/recheck_20260923.json",
+      "bytes": 4882,
+      "sha256": "f1c9335d02990e3ef5049e92d1d0fc9e9104fa32f773ef6ded63e35414d72d0b",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -7219,8 +7240,8 @@
     },
     {
       "path": "robot/README.md",
-      "bytes": 7918,
-      "sha256": "c6b644bad6cef6a4d1c17f5d4bd54062930cc37bacb702c346dbc066c6a228bb",
+      "bytes": 9065,
+      "sha256": "f554cc5b2e0007a1c25e53d56d26af3885fe6e3694dc435838f8cb474dd59c27",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -7246,8 +7267,8 @@
     },
     {
       "path": "sim/README.md",
-      "bytes": 2343,
-      "sha256": "736dad26c6d5427342aca9b25ee7afbed865b2019f6c1d0691634949585ac049",
+      "bytes": 4613,
+      "sha256": "00b24e013983e3d8d00be39d3885c00f26605b6805345c58c4173be99ebe2e83",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     },
@@ -13091,8 +13112,8 @@
     },
     {
       "path": "verification.json",
-      "bytes": 3710,
-      "sha256": "fb48e581f8cc77ea9a299092b4f400cfcac57f8a4a69d7c7d1ba25b3811c03a2",
+      "bytes": 4126,
+      "sha256": "50dd986e3e96372f08d2c6d4ffd708af92ae72dc0c40f3bf58fd8952ec7221c9",
       "origin": "handoff_generated",
       "kind": "handoff_documentation_or_check"
     }
