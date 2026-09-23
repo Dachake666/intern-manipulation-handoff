@@ -263,5 +263,226 @@
       "tests": 4
     },
     "clean_environment_report": "evidence/handoff_checks/clean_environment.json"
+  },
+  "startup_command_checks": {
+    "status": "PASS",
+    "scope": "Bash syntax, argparse declarations extracted from AST, Track C launcher syntax and operator gate order; no SDK import or hardware connection",
+    "checks": [
+      {
+        "check": "shell_syntax",
+        "block": 1,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 2,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 3,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 4,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 5,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 6,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 7,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 8,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 9,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 10,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 11,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 12,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 13,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 14,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 15,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 16,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 17,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 18,
+        "status": "PASS"
+      },
+      {
+        "check": "shell_syntax",
+        "block": 19,
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Track A",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Track A",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Track A",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 20ms",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 20ms",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 20ms",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 25ms",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 25ms",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 25ms",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 30ms",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 30ms",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "Servo 30ms",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Shadow",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Shadow",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Shadow",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Active",
+        "mode": "--dry-run",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Active",
+        "mode": "--precheck-only",
+        "status": "PASS"
+      },
+      {
+        "check": "source_argparse_declarations",
+        "entry": "MPC Active",
+        "mode": "--run",
+        "status": "PASS"
+      },
+      {
+        "check": "track_c_launcher_ast_and_confirmation_order",
+        "status": "PASS"
+      }
+    ],
+    "document": "robot/README.md",
+    "document_sha256": "556948bcdfb702970b1db2b224aa3a4bbc1f0a1a99f7a3aaf9587ee01f29a3f9",
+    "historical_commits": {
+      "B2": "12b143c953f5a6d3c73031892d1b185e5642e482",
+      "B3": "e03e85112797a4ed957d47583874a1dec11ba06b",
+      "B4": "249ca05a90d4031abd16a5859ecae3d13b3ad3c0",
+      "B5": "137ba68ec22606e1008eea3adf54d51c3893a44b"
+    }
   }
 }

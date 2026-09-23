@@ -51,21 +51,263 @@ python3 tools/restore_run.py trackA_worlds_line/trackA_servo/tabletop_servo_2026
 
 B5 field/base 顶层导入 `controller`，节点导出保留它们各自的来源目录。直接在 Servo 目录执行 field，即使传 `--dry-run`，也可能先发生导入错误。装配与路径核对不应绕过算法身份缺口。只需要复核历史结果时，使用 [仿真说明](../sim/README.md) 中的标准库复算工具。
 
-## Track A 的离线开始入口
+## Debian 启动前的公共设置
 
-先恢复 B2，再在其完整目录执行显式 dry-run：
+下列命令在 **Debian 的 Bash** 中执行。先激活原来可运行 SDK 的 CPython 3.10 环境，再进入本交接仓库根目录（包含 `START_HERE.md` 和 `tools/`）。SDK wheel 只支持 Linux x86_64；MPC 还需要该环境中的 NumPy、SciPy、OSQP。不要把 macOS 仿真锁直接安装到 SDK 环境。
 
 ```bash
-(cd .runtime/track-a-reference/debian/trackA_worlds_line/trackA_hybrid_trial && python3 execute_tabletop_hybrid_trial_reviewfix_field.py tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json --dry-run)
+export HANDOFF_ROOT="$PWD"
+export ROBOT_PY="$(python3 -c 'import sys; print(sys.executable)')"
+python3 tools/verify_handoff.py
+
+read -r -p '本次机器人控制器 IP: ' XIFENG_ROBOT_IP
+read -r -p '本机连接机器人网卡的 IP: ' XIFENG_LOCAL_IP
+read -r -p '本次机械臂服务 IP: ' XIFENG_ARM_IP
+export XIFENG_ROBOT_IP XIFENG_LOCAL_IP XIFENG_ARM_IP
+set -o pipefail
 ```
 
-该历史最终组合的关键身份：
+三个 IP 由现场负责人确认，不沿用历史记录中的地址；`ROBOT_PY` 固定为刚激活的解释器。下面每项的恢复目录必须尚不存在；已恢复时从该项的检查步骤继续。各代码块独立执行，**不要把整篇文档作为脚本一次运行**。
+
+| 操作 | 实际行为 |
+|---|---|
+| `verify_handoff.py` / `export_version.py` / `restore_run.py` | 只读校验或恢复文件，不连接机器人 |
+| Track C 原脚本且 `ENABLE_REAL_MOTION=False` | 本地检查，不建立会话，但顶层需要厂商SDK导入 |
+| Track A / Servo / MPC 的显式 `--dry-run` | 代码中的离线分支；仍需满足导入依赖 |
+| Track A / Servo / MPC 的 `--precheck-only` | 连接 SDK 做当前状态检查；不等于完全离线 |
+| 标为“真机运动”的代码块 | 现场确认后才执行，会使能并发送运动/夹爪指令 |
+
+以下命令经过归档源码和参数核对；本次编写未连接机器人，未在 Debian 重新完成运动验收。历史实验结果继续保留，运行时配置与当前场景需另行确认。
+
+## Track A：B2 固定场景
+
+恢复原组合，先执行离线文件检查：
+
+```bash
+python3 tools/export_version.py B2 .runtime/track-a-run
+(
+  cd "$HANDOFF_ROOT/.runtime/track-a-run/debian/trackA_worlds_line/trackA_hybrid_trial" || exit
+  "$ROBOT_PY" execute_tabletop_hybrid_trial_reviewfix_field.py \
+    tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json --dry-run
+)
+```
+
+连接 SDK 的不运动检查：
+
+```bash
+(
+  cd "$HANDOFF_ROOT/.runtime/track-a-run/debian/trackA_worlds_line/trackA_hybrid_trial" || exit
+  "$ROBOT_PY" execute_tabletop_hybrid_trial_reviewfix_field.py \
+    tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json \
+    --precheck-only --speed 5
+)
+```
+
+**真机运动：** 下面使用历史已有结果的 5% 配置，程序在使能前仍要求现场人员确认；不要用管道自动输入回车。
+
+```bash
+(
+  cd "$HANDOFF_ROOT/.runtime/track-a-run/debian/trackA_worlds_line/trackA_hybrid_trial" || exit
+  XIFENG_ALLOW_REAL_MOTION=1 "$ROBOT_PY" -u execute_tabletop_hybrid_trial_reviewfix_field.py \
+    tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json \
+    --run --speed 5 2>&1 | tee "terminal_$(date +%Y%m%d_%H%M%S).raw.log"
+)
+```
+
+这份固定 v2 计划不需要 `--accept-blockers`。不添加 `--auto-continue`，保留程序交互。成功结果应包括 `PASS_RETURNED_SAFE` 和 `cleanup.status=PASS`；失败可能不写运行 JSON，必须保留终端日志。
 
 - 轨迹 SHA：`e5fd11010815020dcc67deebfe774381b391e5462486eb67f8e5ee9150ec9c59`。
 - 执行器 SHA：`36a0f659122eb492f63616f5c34a7e3b1f342c67f28e9906e2b9d6ad5b04e7ee`。
-- SDK XYZUVW 已是补偿后的 `EE_POSE`，不能再次补 TCP；`PLACE_HOVER` 关节构型对齐关系必须保留。
+- SDK XYZUVW 已是补偿后的 `EE_POSE`，不能再次补 TCP；`PLACE_HOVER` 关节构型保持冻结值。
+- `src/releases/make_release.py AT` 的依赖来自当前开发源码，与上面恢复的 B2 完整历史组合不同；重新生成的组合单独验证。
 
-历史成功不授予新目标、起点、物体或场景的执行资格。新运行包由 `src/releases/make_release.py` 生成；可用模式以其 `--help` 为准，退役实验通过历史节点恢复。**AT 模式仅锁定计划与执行器，其他依赖取当前开发源码，因此不等于 B2 的完整历史组合；当前依赖的重新构建不能自动继承 B2 的实跑结论。**
+## Track C：B3 双次抓放
+
+先恢复冻结组合。归档脚本的 `ENABLE_REAL_MOTION=False`，下面命令仅做本地限位检查和插值；但顶层导入厂商 SDK，仍须使用已安装 SDK 的 Linux 解释器。
+
+```bash
+python3 tools/export_version.py B3 .runtime/track-c-run
+(
+  cd "$HANDOFF_ROOT/.runtime/track-c-run/debian/trackC_servo_stream/trackC_servo_stream" || exit
+  "$ROBOT_PY" -u execute_servo_grasp.py traj_multi_latest.json \
+    --step-deg 0.4 --period-ms 20 --speed 15 --arm-id 1
+)
+```
+
+预期133运动点、4夹爪事件、1633帧，纯流式时间32.66秒。该脚本没有 `--run`、`--dry-run` 或 `--precheck-only`，也不读取 IP 环境变量；不要把其他执行器的参数附加给它。
+
+**真机运动：** 以下启动器读取公共设置中的 IP，显式设置这一次运行的模块配置，不改归档脚本字节；先要求操作者输入 `RUN TRACK C`，再允许调用真机入口。原入口会清故障、使能、张开左爪，并可能先移到首点，然后才提示回车开始透传，因此必须在启动器确认前完成现场检查。
+
+```bash
+(
+  cd "$HANDOFF_ROOT/.runtime/track-c-run/debian/trackC_servo_stream/trackC_servo_stream" || exit
+  XIFENG_ALLOW_REAL_MOTION=1 "$ROBOT_PY" -u -c '
+import hashlib, ipaddress, json, os, sys, time
+from pathlib import Path
+if os.environ.get("XIFENG_ALLOW_REAL_MOTION") != "1":
+    raise SystemExit("Real motion is not enabled")
+addresses = {key: os.environ["XIFENG_" + key] for key in ("ROBOT_IP", "LOCAL_IP", "ARM_IP")}
+for value in addresses.values():
+    ipaddress.ip_address(value)
+import execute_servo_grasp as track
+for key, value in addresses.items():
+    setattr(track, key, value)
+track.ENABLE_REAL_MOTION = True
+launcher_source = sys.orig_argv[sys.orig_argv.index("-c") + 1]
+record = {"launcher_source": launcher_source,
+          "launcher_sha256": hashlib.sha256(launcher_source.encode()).hexdigest(),
+          "runtime_overrides": {**addresses, "ARM_PORT": track.ARM_PORT, "ENABLE_REAL_MOTION": True},
+          "arguments": sys.argv[1:], "python": sys.executable,
+          "source_sha256": {name: hashlib.sha256(Path(name).read_bytes()).hexdigest()
+                            for name in ("execute_servo_grasp.py", "sdk_session.py", "servo_common.py", "robot_lock.py", sys.argv[1])}}
+Path("trackc_startup_" + str(time.time_ns()) + ".json").write_text(json.dumps(record, indent=2) + "\n")
+print(json.dumps(record, indent=2))
+if input("现场确认：将使能、开左爪并移首点；输入 RUN TRACK C 才继续：").strip() != "RUN TRACK C":
+    raise SystemExit("Operator aborted before opening a robot session")
+raise SystemExit(track.main())
+' traj_multi_latest.json --step-deg 0.4 --period-ms 20 --speed 15 --arm-id 1 \
+    2>&1 | tee "terminal_$(date +%Y%m%d_%H%M%S).raw.log"
+)
+```
+
+运行结束核对保护回读、原全局速度恢复和 SDK 关闭；旧脚本初始化异常存在收尾缺口，不以退出码代替检查。启动 JSON 记录实际配置与文件 SHA，终端日志记录动作过程。原始说明记载连续5轮成功，完整逐轮日志仍待补；本次新运行单独归档。
+
+轨迹 SHA 为 `ac5c6fd7715c81fbfa2f2fc4c9eca1f676b5a3232dff99761a02c7b4812e4968`，执行器 SHA 为 `808f12e1baa8a3b58053cf6d2b42a5782543a0de643d70987b856c66d4b0e4a1`。B3旧 `SHA256SUMS` 还列有未随节点提供的右臂/诊断文件；本左臂任务使用恢复节点的 `SNAPSHOT.json` 核对已有文件，不拿其他版本补同名依赖。
+
+## Servo：B4 20ms / 25ms / 30ms
+
+每种实验用自己的逐轮装配目录。以下三条恢复命令不运行机器人，均可恢复14个已绑定文件：
+
+```bash
+python3 tools/restore_run.py trackA_worlds_line/trackA_servo/tabletop_servo_20260914_151120_671751502.json .runtime/servo-20ms
+python3 tools/restore_run.py trackA_worlds_line/trackA_servo/tabletop_servo_20260914_101507_112677088.json .runtime/servo-25ms
+python3 tools/restore_run.py trackA_worlds_line/trackA_servo/tabletop_servo_20260910_151044_480345410.json .runtime/servo-30ms
+```
+
+| 选择 | `SERVO_DIR` 后缀 | `SERVO_ENTRY` | 节拍与接入 |
+|---|---|---|---|
+| 20ms | `.runtime/servo-20ms` | `execute_tabletop_servo_field_20ms.py` | stride4，连续Servo桥接 |
+| 25ms | `.runtime/servo-25ms` | `execute_tabletop_servo_field_25ms.py` | stride4，连续Servo桥接 |
+| 30ms | `.runtime/servo-30ms` | `execute_tabletop_servo_field.py` | stride2，先MoveJ接首点 |
+
+先选一套；下面默认20ms。切换25/30ms时同时替换两个变量，候选和 GUI 文件留在各自恢复目录中，不能交叉复制：
+
+```bash
+export SERVO_DIR="$HANDOFF_ROOT/.runtime/servo-20ms"
+export SERVO_ENTRY=execute_tabletop_servo_field_20ms.py
+```
+
+离线检查：
+
+```bash
+(
+  cd "$SERVO_DIR" || exit
+  XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=0 \
+    "$ROBOT_PY" "$SERVO_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --dry-run --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "dryrun_$(date +%Y%m%d_%H%M%S).json"
+)
+```
+
+连接 SDK 的不运动检查：
+
+```bash
+(
+  cd "$SERVO_DIR" || exit
+  XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=0 \
+    "$ROBOT_PY" "$SERVO_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --precheck-only --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "precheck_$(date +%Y%m%d_%H%M%S).json"
+)
+```
+
+**真机运动：** 保留原程序的现场回车确认；30ms还会在MoveJ接首点后再次确认。
+
+```bash
+(
+  cd "$SERVO_DIR" || exit
+  RUN_ID="$(date +%Y%m%d_%H%M%S)"
+  XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=1 \
+    "$ROBOT_PY" -u "$SERVO_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --run --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "run_$RUN_ID.json" 2>&1 | tee "terminal_$RUN_ID.raw.log"
+)
+```
+
+周期和stride由wrapper固定，没有 `--frame-stride` 参数。`--field-trial` 使用历史现场试验路径，不能视为正式资格通过；`--dry-run` / `--precheck-only` 不执行wrapper的完整GUI/候选白名单核验，该核验在 `--run` 阶段执行。
+
+VAJ3历史入口为 `execute_tabletop_servo_field_vaj20_v3.py`，参数形状与上面相同，但逐轮装配缺少已绑定的 `vaj3_spline.py`，连顶层导入也依赖它。先从原Debian确认该轮算法源码并记录SHA，再单独复跑；不能用20/25ms目录或最新同名算法补齐后冒称同一版本。
+
+## MPC：B5 Shadow / Active
+
+恢复完整节点。该节点的10份报告各13项已记录源码/轨迹绑定均与节点一致，固定GUI文件也一致。现场入口不需要PyBullet或URDF；需要SDK、NumPy、SciPy、OSQP。
+
+```bash
+python3 tools/export_version.py B5 .runtime/mpc-field
+export MPC_SERVO="$HANDOFF_ROOT/.runtime/mpc-field/debian/trackA_worlds_line/trackA_servo"
+export MPC_CORE="$HANDOFF_ROOT/.runtime/mpc-field/debian/mpc_experiment/mpc_experiment"
+export MPC_ENTRY=execute_tabletop_servo_field_mpc_20ms.py
+```
+
+`MPC_ENTRY` 当前选择 **Shadow**；选择 **Active** 时改为：
+
+```bash
+export MPC_ENTRY=execute_tabletop_servo_field_mpc_active_20ms.py
+```
+
+**controller选择必须显式记录。** 上面的 `MPC_CORE` 使用包内 `controller.py`，SHA 为 `314f5cbe6c43876027bb1d25dd3a24515e4790d054a818281c78f26bc24c515c`。旧10轮报告没有记录controller SHA，以下可作为明确记录当前组合的新复跑，不能据此认定算法与旧10轮逐字节相同。需要精确历史复现时，先核对原Debian当时的controller备份/提交，再将 `MPC_CORE` 指向确认的算法目录；不要默认选择 `pre_rt_diagnostics` 备份。
+
+离线检查（Shadow与Active使用同一命令结构）：
+
+```bash
+(
+  cd "$MPC_SERVO" || exit
+  PYTHONPATH="$MPC_CORE" XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=0 \
+    "$ROBOT_PY" "$MPC_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --dry-run --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "mpc_dryrun_$(date +%Y%m%d_%H%M%S).json"
+)
+```
+
+连接 SDK 的不运动检查：
+
+```bash
+(
+  cd "$MPC_SERVO" || exit
+  PYTHONPATH="$MPC_CORE" XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=0 \
+    "$ROBOT_PY" "$MPC_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --precheck-only --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "mpc_precheck_$(date +%Y%m%d_%H%M%S).json"
+)
+```
+
+**真机运动：Shadow也驱动机器人，只是不应用MPC修正。** 以下显式记录controller身份，保留原程序回车确认；结果应核对 `SERVO_COMPLETED_RETURNED_HOME` 和 `cleanup.status=PASS`。
+
+```bash
+(
+  cd "$MPC_SERVO" || exit
+  RUN_ID="$(date +%Y%m%d_%H%M%S)"
+  sha256sum "$MPC_CORE/controller.py" > "mpc_controller_$RUN_ID.sha256" || exit
+  PYTHONPATH="$MPC_CORE" XIFENG_ARM_PROFILES="$PWD/arm_profiles.v1.json" XIFENG_ALLOW_REAL_MOTION=1 \
+    "$ROBOT_PY" -u "$MPC_ENTRY" tabletop_pick_place_SERVO_CANDIDATE.json \
+    --field-trial --run --speed 5 --gui-review tabletop_pick_place_SERVO_gui_review.json \
+    --report "mpc_run_$RUN_ID.json" 2>&1 | tee "terminal_$RUN_ID.raw.log"
+)
+```
+
+本节显式5%速度、20ms周期，与收到的10轮报告参数一致；省略 `--speed` 会回到CLI默认3%。`PYTHONPATH` 只指向本次选择的算法目录，不把其他SDK/执行器目录加进去混用。
+
+## 日志保存与归档
+
+以上运行均在独立 `.runtime/` 目录，报告采用新的文件名。部分历史wrapper会删除失败时自动生成的 `tabletop_servo_*.json`，因此命令使用自定义 `run_` / `mpc_run_` 名称并另存终端日志。每次运行保留启动配置、controller SHA、报告和终端日志；重跑不要覆盖原件。
+
+终端原日志可能包含控制器token。只对副本脱敏，检查通过后再把副本归档进Git；例如在实际运行目录中，将文件名替换为本次日志：
+
+```bash
+cp terminal_实际时间.raw.log terminal_实际时间.scrubbed.log
+"$ROBOT_PY" "$HANDOFF_ROOT/src/frame_calibration/robot_side/scrub_log.py" terminal_实际时间.scrubbed.log
+"$ROBOT_PY" "$HANDOFF_ROOT/src/frame_calibration/robot_side/scrub_log.py" --check terminal_实际时间.scrubbed.log
+```
 
 ## 现场执行前后
 

@@ -32,7 +32,7 @@
 
 **Track C 与 MPC 均已有实机成果，归档证据待补齐。** `LIMITED`、`PARTIAL_SOURCE_IDENTITY` 描述本包的证据完整度与源码追溯范围，不表示实验尚未运行或结果失败。
 
-仿真命令见 [sim/README.md](sim/README.md)，真机组合与恢复命令见 [robot/README.md](robot/README.md)。完整目录地图见 [docs/CONTENTS.md](docs/CONTENTS.md)。
+仿真命令见 [sim/README.md](sim/README.md)，Track A、Track C、Servo、MPC 的恢复、检查和真机启动命令见 [robot/README.md](robot/README.md)。完整目录地图见 [docs/CONTENTS.md](docs/CONTENTS.md)。
 
 ## 三个开始入口
 
