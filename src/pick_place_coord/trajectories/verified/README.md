@@ -4,7 +4,7 @@
 
 | 文件 | 身份 | 当前证据边界 |
 |---|---|---|
-| `traj_multi_2grasp_20260804_REALVERIFIED.json` | SHA前缀 `ac5c6fd7715c81fb`；133运动点 + 4夹爪事件 | Track C双次抓放五轮只有汇总，完整原日志不足，LIMITED |
+| `traj_multi_2grasp_20260804_REALVERIFIED.json` | SHA前缀 `ac5c6fd7715c81fb`；133运动点 + 4夹爪事件 | 原始说明记载 Track C 双次抓放连续 5 轮成功；完整逐轮原日志尚未归档到本包，LIMITED 仅描述当前归档证据范围 |
 
 冻结输入只读。点流对照从仓库根运行：
 

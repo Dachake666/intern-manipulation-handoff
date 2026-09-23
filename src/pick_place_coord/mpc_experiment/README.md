@@ -33,6 +33,6 @@ q[k+1] = (1-alpha) * q[k] + alpha * c[k+1]
 
 PyBullet 使用估算惯量和零重力，未辨识真实机器人动力学；没有完整场景/持物碰撞、力矩约束或 SDK 网络时序验收。指令加速度变小不代表反馈加速度和 jerk 都改善。改变参考附近的指令也会改变路径，不能继承父轨迹的碰撞或 GUI 批准。
 
-在线 Shadow/Active 实现与运行记录保存在 B5，使用根 `tools/restore_run.py` 按逐轮身份恢复。Shadow 会向机器人发送原参考运动。旧现场报告缺 controller SHA 的部分保持未知，不用本目录的当前算法倒填。完整职责与复算命令见根 `sim/README.md`、`robot/README.md`。
+MPC 已完成实机实验，B5 保存在线 Shadow/Active 实现及 6 次 Shadow、4 次 Active 的运行报告；使用根 `tools/restore_run.py` 按逐轮身份恢复。Shadow 会向机器人发送原参考运动。待补的是当时 controller 的版本 SHA，运行成果与报告已经存在；不用本目录的当前算法倒填历史身份。完整职责与复算命令见根 `sim/README.md`、`robot/README.md`。
 
 修改后先运行 `tools/offline_checks.py`。验证记录与新实验登记见根 `docs/MAINTENANCE.md`。

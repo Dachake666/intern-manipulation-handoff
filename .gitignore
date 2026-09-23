@@ -5,7 +5,6 @@ __pycache__/
 .venv*/
 .runtime/
 restored/
-/data/handeye/
 src/.venv*/
 src/.servo-*/
 src/.hybrid-*/

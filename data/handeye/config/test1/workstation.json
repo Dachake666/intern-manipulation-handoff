@@ -1,0 +1,33 @@
+{
+  "activate_cameras": ["camera1"],
+  "service_timeout": 4000,
+  "workspaces": [
+    {
+      "workspace_id": "box1",
+      "camera_id": "camera1",
+      "model_path": "best.onnx",
+      "hand_eye_matrix": [
+            [0.1614931970834732, -0.0896339938044548, 0.9827948212623596, 476.4440002441406],
+ [-0.06792950630187988, -0.9945144057273865, -0.07954064756631851, 201.12286376953125], 
+ [0.9845331311225891, -0.05391549691557884, -0.16669610142707825, 569.5639038085938],
+ [0.0, 0.0, 0.0, 1.0]
+	    ],
+      "ultinet_server_ip": "172.24.1.134:5555",
+      "hand_and_eye": 0,
+      "crop_region":{
+          "is_using": 0,
+          "pose": [900,320,0,0,0,20],
+          "size": [610,450,1000]
+      },
+      "algorithm_parameter": "box1"
+    }
+    ],
+    "archive": {
+       "save_path": "save_data",
+       "save_image_type": "jpg",
+       "save_color": true,
+       "save_depth": true,
+       "save_pred": true
+    }
+}
+

@@ -11,7 +11,7 @@
 - `src/arm_profiles.py` / `arm_profiles.v1.json` 统一臂、夹爪、TCP、Home 与限位；`src/schemas/` 统一输入输出契约。禁止在新脚本复制安全常量字面量。
 - `src/XF0112048/` 的厂商 URDF/STL 只读。运行发布包只由 `src/releases/make_release.py` 生成，修改源后重建，不手改发布副本。
 - 冻结组合使用 `tools/export_version.py` 导出到新目录；有逐轮绑定的实验使用 `tools/restore_run.py` 装配。按 `SNAPSHOT.json`、`RESTORE_MANIFEST.json` 和 SHA 核对，不能按同名文件替换依赖。
-- `B1` 为 `handoff/current` 已登记交付版本的导出，不含 `.git`。完整历史必须保留整个仓库和隐藏 `.git/`；`data/handeye/` 大样本随完整包保存，不依赖 Git 恢复。
+- `B1` 为 `handoff/current` 已登记交付版本的导出，不含 `.git`。完整历史必须保留整个仓库和隐藏 `.git/`；`data/handeye/` 已纳入 Git，完整克隆和完整 ZIP 均保留样本。
 
 ## 仿真与真机
 
@@ -28,7 +28,7 @@
 - `OBJECT_POSE`、`GRASP_POSE`、`EE_POSE` 必须明确；已补偿的 SDK `EE_POSE` 不再补 TCP。单位、四元数顺序、矩阵方向和标定来源必须进入契约。
 - 新日志记录执行器、wrapper、轨迹、动态算法和依赖 SHA、参数、设备身份与时间；成功和失败都留痕。日志使用 `src/frame_calibration/robot_side/scrub_log.py` 脱敏副本，明文 token 不入 Git。
 - 不删除原始 `records/` 证据，不改历史日志或冻结源码。目录整理使用可恢复节点与路径映射；不重写证据去消除缺口。
-- 只有 README 汇总属于 LIMITED；运行完成、仿真通过、编译通过、哈希一致均不能单独授予通用真机资格。成功结论仅绑定具体文件组合、参数与场景。
+- 实机成果与归档完整度分别记录：已有成功汇总但缺完整逐轮日志时，注明已完成的实验及待补材料；LIMITED 表示归档证据范围有限，不表示未运行或运行失败。运行完成、仿真通过、编译通过、哈希一致均不能单独授予通用真机资格；成功结论仅绑定具体文件组合、参数与场景。
 - 注释保留 `[待核]`、`[已核实]`、`[重建]` 等置信度标记。改执行器后运行对应离线回归；基础锚点包括 `test_execute_trajectory_options.py`、`test_servo_safety.py`，选定套件入口为 `tools/offline_checks.py`。不要广泛自动收集 `test_*.py`，其中存在硬件探针。
 - 新增、移动、退役文件先维护 `docs/DELIVERY_SELECTION.json` 的允许清单和恢复映射，再运行 `tools/offline_checks.py --record` 和 `tools/build_package.py --refresh-manifest`，审阅提交后更新 `handoff/current`，使用 `tools/build_package.py --output 路径.zip` 生成新包；只读校验用 `--check`，不手改根哈希清单。
 - 验证结果记录命令、解释器/依赖、范围和未覆盖项；通过的选定套件不等于全仓库全绿。流程见 `docs/MAINTENANCE.md`。

@@ -4,15 +4,17 @@
 
 ## 选择成果
 
-| 节点 | 执行入口 | 证据边界 |
+| 节点 | 执行入口 | 已完成成果与归档情况 |
 |---|---|---|
 | B2 Track A 固定场景 | `execute_tabletop_hybrid_trial_reviewfix_field.py` + `tabletop_pick_place_hybrid_OPTIMIZED_SDKALIGNED_REVIEW.json` | 5% 一轮、10% 四轮完整成功记录；只支持相同文件组合、任务与场景 |
-| B3 Track C 双次抓放 | `execute_servo_grasp.py` + `traj_multi_latest.json` | 133 运动点 + 4 夹爪事件；五轮成功仅汇总，LIMITED，不是完整 as-run 绑定 |
+| B3 Track C 双次抓放 | `execute_servo_grasp.py` + `traj_multi_latest.json` | 已跑出实机结果：原始说明记载双次抓放连续 5 轮成功（133 运动点 + 4 夹爪事件）；完整逐轮日志与源码绑定待补，归档证据标记 LIMITED |
 | B4 Servo | `_20ms.py`、`_25ms.py`、`_vaj20_v3.py` 等 field wrapper | 61 份非 MPC 现代 JSON；各轮依赖不同。正式资格绕过与 VAJ3 算法哈希缺口仍在 |
-| B5 MPC | `execute_tabletop_servo_field_mpc_20ms.py`、`_mpc_active_20ms.py`、各自 base 与 controller | 6 Shadow + 4 Active；旧报告未记录 controller SHA，不能补猜历史身份 |
+| B5 MPC | `execute_tabletop_servo_field_mpc_20ms.py`、`_mpc_active_20ms.py`、各自 base 与 controller | 已有 6 次 Shadow、4 次 Active 实机运行报告；待补当时 controller 的版本 SHA，以核对实际运行的算法源码 |
 | B6 MoveJ 基础 | 99 点冻结组合、153 点运行后安全快照 | 99/88/153 点历史完成日志；不具备统一的现代源码与收尾证据 |
 | B7 瓶子示教 | 238 点与带 Home 收尾的 275 点轨迹 | 五轮完整抓放日志缺失；使能/8080 诊断日志不能替代运动日志，LIMITED |
 | D1 / D2 / D3 | Servo 长迟到 / MPC 早期失效 / MoveJ 限位与跳点 | D1 有精确对照源码；D2/D3 部分仅有报告，不承诺重新触发故障 |
+
+Track C 与 MPC 的实机成果已经产生；下文的 LIMITED、missing 和未绑定项描述归档缺口，不表示未运行或运行失败。Track C 待补完整逐轮日志，MPC 已有运行报告，待补 controller 的历史版本身份。
 
 Shadow 仍发送原参考轨迹到机器人，只是不应用 MPC 修正，因此属于运动实验。
 

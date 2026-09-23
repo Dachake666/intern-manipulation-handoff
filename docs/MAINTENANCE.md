@@ -50,6 +50,26 @@ git tag -f -a handoff/current -m '当前交付版本'
 python3 tools/build_package.py --output ../robot_handoff.zip
 ```
 
-打包要求独立的 `.git/` 目录（不支持链接式 Git worktree）、工作区干净且 `handoff/current` 指向 HEAD；B2～B7、D1～D3、history、PRE_PRUNE 等历史节点不移动。输出 ZIP 必须位于仓库目录外，旁边会生成 `.sha256`。完整包包含所选文件与 Git 历史；`data/handeye/` 仍随包提供。
+打包要求独立的 `.git/` 目录（不支持链接式 Git worktree）、工作区干净且 `handoff/current` 指向 HEAD；B2～B7、D1～D3、history、PRE_PRUNE 等历史节点不移动。输出 ZIP 必须位于仓库目录外，旁边会生成 `.sha256`。完整包包含所选文件与 Git 历史；`data/handeye/` 已纳入 Git，也随包提供。
 
-在新空目录解压，运行 `python3 tools/verify_handoff.py`、`python3 tools/build_package.py --check`，并抽查所需节点/逐轮恢复。交付对象为完整 ZIP 和校验文件；不能只复制可见源码目录或单独 Git 克隆而遗漏样本。
+在新空目录解压，运行 `python3 tools/verify_handoff.py`、`python3 tools/build_package.py --check`，并抽查所需节点/逐轮恢复。交付可使用完整 ZIP 与校验文件，或完整 Git 仓库。全部允许清单文件（包括手眼样本）均需纳入 Git；推送与克隆时同时保留历史标签。
+
+## Git 远程交接
+
+本目录已是独立 Git 仓库，无需重新初始化或删除 `.git/`。由维护者设置实际 `origin` 地址后，推送当前交接分支及所有 `handoff/` 标签：
+
+```bash
+git push --atomic -u origin codex/handoff 'refs/tags/handoff/*:refs/tags/handoff/*'
+```
+
+该命令不覆盖远端历史；遇到同名分支或标签冲突，先检查目标仓库与提交关系。不要直接强推，也不要为消除拒绝而合并无关仓库历史。
+
+接手者使用实际仓库 URL 克隆 `codex/handoff` 分支，然后在仓库根补取全部交接标签并校验：
+
+```bash
+git fetch origin 'refs/tags/handoff/*:refs/tags/handoff/*'
+python3 tools/verify_handoff.py
+python3 tools/build_package.py --check
+```
+
+克隆包含代码、证据、样本与版本历史；Python 环境仍按 `docs/ENVIRONMENT_REFERENCE.md` 安装。不要把虚拟环境、缓存或整个交付 ZIP 提交进代码仓库。

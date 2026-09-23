@@ -33,7 +33,7 @@ def main():
             p=dest/m.name;p.parent.mkdir(parents=True,exist_ok=True)
             p.write_bytes(tf.extractfile(m).read())
     if (dest/'HANDOFF_MANIFEST.json').is_file():
-        # Large calibration images are shipped once outside Git, with versioned hashes.
+        # Older snapshots omit calibration images; restore their versioned bytes from this delivery.
         manifest=json.loads((dest/'HANDOFF_MANIFEST.json').read_text())
         for item in manifest['files']:
             name=PurePosixPath(item['path'])

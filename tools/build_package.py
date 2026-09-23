@@ -135,7 +135,7 @@ def package(root, output):
         raise ValueError('Update handoff/current to HEAD after committing the delivery')
     tracked = set(subprocess.check_output(['git','-C',str(root),'ls-tree','-r','--name-only','-z','HEAD']).decode().split('\0'))
     tracked.discard('')
-    expected = {x['path'] for x in manifest['files'] if not x['path'].startswith('data/handeye/')} | GENERATED
+    expected = {x['path'] for x in manifest['files']} | GENERATED
     if expected - tracked:
         raise ValueError('Selected files are absent from HEAD and would be lost in B1 export: '+str(sorted(expected-tracked)))
     if tracked - expected:

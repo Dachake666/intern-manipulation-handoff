@@ -5,22 +5,22 @@
       "path": ".gitignore",
       "baseline_sha256": "2d8bbbaebddb6cc0de6e507f8d5ca07838922307763f0126abab807be466f7ec",
       "purpose": "Entry point or current implementation",
-      "bytes": 142,
-      "sha256": "46f8b1310885394acd7f8672190ca9ef9cd68fec6a3f52de5164f22b2cb764b9"
+      "bytes": 127,
+      "sha256": "47094b6e4a8fbd6cfc270b736cf815fea7c0d926024463d636ef10b262e0aea2"
     },
     {
       "path": "AGENTS.md",
       "baseline_sha256": "2d7ee2a7147d6217ec8763a44b207ec895e6b9e4dff1c3edefa7cd3c048029cc",
       "purpose": "Entry point or current implementation",
-      "bytes": 4986,
-      "sha256": "8979b60efc4ba760c5346c83962bf3443195cca9ca9290ec3cd83ad7648aecb2"
+      "bytes": 5168,
+      "sha256": "c1fed8bb50393ee81fc27d151f1be77227c2ea64985d6680ca65ca6312b759b6"
     },
     {
       "path": "START_HERE.md",
       "baseline_sha256": "2b493a785f92513b7ff44b578fd55f9d7c3e087df8c1f5adab97657c9a8c5f71",
       "purpose": "Entry point or current implementation",
-      "bytes": 9336,
-      "sha256": "11f2855dd8e7c9cee9fd61a8c660bf98e6e2d93deeeeecd7e305a2557a89d7e8"
+      "bytes": 9880,
+      "sha256": "f2c8141a2b8e27928b24d132b83e9a9d84e9228eaf6deeeb1013d6cf58d02ef0"
     },
     {
       "path": "data/handeye/calibration_result.json",
@@ -1617,8 +1617,8 @@
     {
       "path": "docs/CONTENTS.md",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
-      "bytes": 7602,
-      "sha256": "ad54ad80ab90133394edfb43b8be060e9bf64a3e6fde994f7afd315ea8c143d6"
+      "bytes": 7616,
+      "sha256": "8e4e9b031905f3d601085a65282867735e37349d6b2eb76e88bca716cd5f5761"
     },
     {
       "path": "docs/DELIVERY_SELECTION.json",
@@ -1630,35 +1630,35 @@
       "path": "docs/ENVIRONMENT_REFERENCE.md",
       "baseline_sha256": "7e660b0c4397fa254bab3d0af8839e296ac4b2fec3ef717b2619fa18c9941d32",
       "purpose": "Entry point or current implementation",
-      "bytes": 5014,
-      "sha256": "85b9c7f03bd281a92c3efb7ec7bad4012fb47c9cc06128b59da21a70e89da92a"
+      "bytes": 5059,
+      "sha256": "6334264c2def4820553ccc4a9ee0d104ac0a43b6608bc8f32e989c0729ef8626"
     },
     {
       "path": "docs/KNOWN_ISSUES.md",
       "baseline_sha256": "22a55c1aca852ea62657c81b5afd073bef7efe1b3fa556b3d09e78ce974f18a4",
       "purpose": "Entry point or current implementation",
-      "bytes": 4103,
-      "sha256": "3a5179bf5c85e7983aa5a6503f6baa9be6123047d631194bdaeccf832ca01dea"
+      "bytes": 4735,
+      "sha256": "437b66bbcb579df65137ca1f51b80832aaff5a3123cf60c27d19c67ff16f10dc"
     },
     {
       "path": "docs/MAINTENANCE.md",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
-      "bytes": 5082,
-      "sha256": "8109a70ed68266b236c39528dde4030bafa5a8d8d356203d167ea691051a839c"
+      "bytes": 6097,
+      "sha256": "ae411bbe34336b2e3d4e557fd61cc7251933e52a663360466e3b2c7c67d3f7a0"
     },
     {
       "path": "docs/SOURCE_MAP.json",
       "baseline_sha256": "9e553929d9105e88c4820e3bae2e9f04add4fd0137d3adc0e56aec089ff41e9b",
       "purpose": "Entry point or current implementation",
       "bytes": 318950,
-      "sha256": "2bbb1e5cdf6dd390b92220708a7f1acfe3aeb5e83ea428be7b50004b81804920"
+      "sha256": "213c56d1ebebb71dffa410879523268185ca14d979d48b99feeac346cddff45b"
     },
     {
       "path": "docs/VERSIONS.md",
       "baseline_sha256": "682d35499bae64ee3d34a7b6cdb624b2807d4555f0d2f685b033c69fc18f4685",
       "purpose": "Entry point or current implementation",
-      "bytes": 3211,
-      "sha256": "f7a7db236b8ce10983c39aeec845c8abf8d0e19531aaeadb16558ba8a8740e6f"
+      "bytes": 3546,
+      "sha256": "a1dd919b621c118d968d14f1baaa4e12ea7ba36c0aabec27c11491e548b652d1"
     },
     {
       "path": "docs/debian_selection.json",
@@ -4046,8 +4046,8 @@
       "path": "robot/README.md",
       "baseline_sha256": "f554cc5b2e0007a1c25e53d56d26af3885fe6e3694dc435838f8cb474dd59c27",
       "purpose": "Entry point or current implementation",
-      "bytes": 5642,
-      "sha256": "7db3c1798284c6b6aec1839663aeedf877c681a61447ebd6fca12bd0f8f4423f"
+      "bytes": 6046,
+      "sha256": "349b1944d69455f5d25598b4043e7c5153238e2a02f19fb23fa86788240c4276"
     },
     {
       "path": "sdk/pypilot-1.0.0422.1-cp310-cp310-linux_x86_64.whl",
@@ -4807,8 +4807,8 @@
       "path": "src/pick_place_coord/mpc_experiment/README.md",
       "baseline_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
       "purpose": "Entry point or current implementation",
-      "bytes": 2868,
-      "sha256": "e73a32dfa88502ba7fb3d272de7818b58f42ada80208c6f580844b9b6bd61064"
+      "bytes": 2961,
+      "sha256": "838190e8648dc737160313fb3ddf124458fbeca43ea8b0cf2b20c2a99118ad99"
     },
     {
       "path": "src/pick_place_coord/mpc_experiment/controller.py",
@@ -5093,8 +5093,8 @@
       "path": "src/pick_place_coord/trajectories/verified/README.md",
       "baseline_sha256": "e5ecc8d3ccc31cf5b146a1fd01510dcc710207fb7719f502dc5c1d0609673197",
       "purpose": "Reviewed current dependency",
-      "bytes": 1012,
-      "sha256": "a291e30754b4f1677b97520254e8b9dcc04e53a090646d31d7325167dc521a98"
+      "bytes": 1087,
+      "sha256": "223d30062c3903a7ffcce73b26130dac2a641d747f34b8aff7211d904509bf49"
     },
     {
       "path": "src/pick_place_coord/trajectories/verified/traj_multi_2grasp_20260804_REALVERIFIED.json",
@@ -5490,8 +5490,8 @@
     {
       "path": "tools/build_package.py",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
-      "bytes": 10285,
-      "sha256": "a7da7567fc98f5e595659ff14d55fa29a11b5a3a2b63d5247ce2830cadace45b"
+      "bytes": 10240,
+      "sha256": "f155e9da7f3dd4ede8b9f6a8250a4a6c3e9e9913a40b1878cd3ff3641c706724"
     },
     {
       "path": "tools/check_history.py",
@@ -5503,8 +5503,8 @@
       "path": "tools/export_version.py",
       "baseline_sha256": "10554a516cee006c8e9e5b8cd94a167814e85b299a6e944e35ae5580e00bd734",
       "purpose": "Entry point or current implementation",
-      "bytes": 2404,
-      "sha256": "d29c05709f8087fa792c1988d543ba93cccd1f243d74043aa1595ac383e8376f"
+      "bytes": 2417,
+      "sha256": "4f9ae79903d7e2dd80c202c142e5e1d7f71e97982d82f3a3da0a7c57b9d957a8"
     },
     {
       "path": "tools/offline_checks.py",
@@ -5522,8 +5522,8 @@
     {
       "path": "tools/test_package_tools.py",
       "purpose": "Regression for source/test identity, ignored Git files and worktree rejection",
-      "bytes": 5311,
-      "sha256": "bc08cbbfb4fc59ac8cbae435359eb58ca0bff793c50f492318232ba5432f8c15"
+      "bytes": 5781,
+      "sha256": "561cbfe2924bdf19a632e4ccad102429ade9a960020ec5615cf418c57ffd74a5"
     },
     {
       "path": "tools/test_vision_model_paths.py",

@@ -6,9 +6,9 @@
 |---|---|---|
 | B1 | 当前开发基础：仿真、接口、真机消费者 | `handoff/current` |
 | B2 | Track A 最终固定场景 | `handoff/b2` |
-| B3 | Track C 133点双次抓放 | `handoff/b3` |
+| B3 | Track C 133点双次抓放实机成果：原始说明记载连续5轮成功，待补完整逐轮日志 | `handoff/b3` |
 | B4 | Servo 20/25ms、VAJ3及30ms历史 | `handoff/b4` |
-| B5 | MPC Shadow/Active及离线参考 | `handoff/b5` |
+| B5 | MPC 实机成果与离线参考：已有6次Shadow、4次Active报告，待补controller版本SHA | `handoff/b5` |
 | B6 | Track B 99/153点基础 | `handoff/b6` |
 | B7 | 瓶子示教与Home收尾 | `handoff/b7` |
 | D1 | Servo长迟到缺陷组合 | `handoff/d1` |
@@ -40,12 +40,12 @@ python3 tools/restore_run.py --list --node B5
 
 复制列表中精确的报告路径，作为 `tools/restore_run.py 报告路径 .runtime/新目录` 的第一个参数。工具按 `run_bindings` 的 SHA 选择源文件并映射 `restore_name`，输出 `RESTORE_MANIFEST.json` 和 `recorded_run.json`。只验证文件绑定，不导入 SDK、不执行运动、不补猜未记录的算法依赖。
 
-`RECORDED_BINDINGS_VERIFIED` 表示已登记绑定匹配，不代表全部运行依赖、场景或动作资格已验证；`PARTIAL_SOURCE_IDENTITY` 表示仍有未绑定项。MPC controller 的历史 SHA 缺失保留在 manifest 中。
+`RECORDED_BINDINGS_VERIFIED` 表示已登记绑定匹配，不代表全部运行依赖、场景或动作资格已验证；`PARTIAL_SOURCE_IDENTITY` 表示仍有未绑定项。MPC controller 的历史 SHA 缺失保留在 manifest 中；该标记描述源码追溯缺口，MPC 已有实机运行报告。
 
 ## 证据使用规则
 
 - B2 的最终固定场景成功记录与早期 9/7 参考分开；5%/10%成功不证明其他速度或新场景。
-- B3 的8/4双抓汇总不能用7/31八点基础日志补齐。B7的使能故障日志不能替代抓放日志。
+- B3 原始说明记载8/4双次抓放连续5轮成功；当前缺完整逐轮归档，不是未跑出结果。补档须使用对应实验原日志，不能用7/31八点基础日志替代。B7的使能故障日志不能替代抓放日志。
 - B4/B5 不同 wrapper、base、SDK、Servo 辅助件按各轮恢复；不按“最新同名文件”拼接。
 - D1 有精确缺陷对照源码；D2/D3 部分只有证据，缺失实现不捏造。
 - 当前完整性使用根 `HANDOFF_MANIFEST.json` / `SHA256SUMS`。历史内部清单只描述当时范围；原来源身份保存在 `SNAPSHOT.json` 和机器映射。

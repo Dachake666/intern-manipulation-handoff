@@ -53,10 +53,14 @@ class PackageToolsTests(unittest.TestCase):
         self.init_git()
         (self.root/'HANDOFF_MANIFEST.json').write_text('{}\n')
         (self.root/'SHA256SUMS').write_text('')
-        self.git('add','HANDOFF_MANIFEST.json','SHA256SUMS')
+        sample=self.root/'data/handeye/sample.bin'
+        sample.parent.mkdir(parents=True)
+        sample.write_bytes(b'calibration sample fixture')
+        self.git('add','HANDOFF_MANIFEST.json','SHA256SUMS','data/handeye/sample.bin')
         self.git('commit','-m','登记测试清单')
         self.git('tag','-f','-a','handoff/current','-m','测试交付')
-        manifest={'files':[{'path':'.gitignore','sha256':builder.sha(self.root/'.gitignore')}]}
+        manifest={'files':[{'path':name,'sha256':builder.sha(self.root/name)}
+                           for name in ['.gitignore','data/handeye/sample.bin']]}
         output=self.base/'delivery.zip'
         with patch.object(builder,'check',return_value=manifest):
             builder.package(self.root,output)
@@ -67,6 +71,9 @@ class PackageToolsTests(unittest.TestCase):
             archive.extractall(extracted)
         head=subprocess.check_output(['git','-C',str(extracted/'robot_handoff'),'rev-parse','HEAD'])
         self.assertEqual(head,self.git('rev-parse','HEAD'))
+        cloned=self.base/'cloned'
+        subprocess.run(['git','clone','--quiet','--no-local',str(self.root),str(cloned)],check=True)
+        self.assertEqual((cloned/'data/handeye/sample.bin').read_bytes(),sample.read_bytes())
 
     def test_worktree_cannot_create_a_zip_without_its_git_database(self):
         self.init_git()

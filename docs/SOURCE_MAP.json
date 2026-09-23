@@ -4432,7 +4432,7 @@
   },
   {
     "path": "src/pick_place_coord/mpc_experiment/README.md",
-    "sha256": "e73a32dfa88502ba7fb3d272de7818b58f42ada80208c6f580844b9b6bd61064",
+    "sha256": "838190e8648dc737160313fb3ddf124458fbeca43ea8b0cf2b20c2a99118ad99",
     "origin": "mac:pick_place_coord/mpc_experiment/README.md",
     "imported_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
     "changed_from_import": true
@@ -4717,7 +4717,7 @@
   },
   {
     "path": "src/pick_place_coord/trajectories/verified/README.md",
-    "sha256": "a291e30754b4f1677b97520254e8b9dcc04e53a090646d31d7325167dc521a98",
+    "sha256": "223d30062c3903a7ffcce73b26130dac2a641d747f34b8aff7211d904509bf49",
     "origin": "mac:pick_place_coord/trajectories/verified/README.md",
     "imported_sha256": "e5ecc8d3ccc31cf5b146a1fd01510dcc710207fb7719f502dc5c1d0609673197",
     "changed_from_import": true
