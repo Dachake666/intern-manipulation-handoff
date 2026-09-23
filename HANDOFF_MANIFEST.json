@@ -5490,8 +5490,8 @@
     {
       "path": "tools/build_package.py",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
-      "bytes": 10261,
-      "sha256": "eecdc736e0ca0cbb6e26ba685385979bc6deb95f5454de40aaff9f0712a7127d"
+      "bytes": 10285,
+      "sha256": "a7da7567fc98f5e595659ff14d55fa29a11b5a3a2b63d5247ce2830cadace45b"
     },
     {
       "path": "tools/check_history.py",
@@ -5522,8 +5522,8 @@
     {
       "path": "tools/test_package_tools.py",
       "purpose": "Regression for source/test identity, ignored Git files and worktree rejection",
-      "bytes": 4242,
-      "sha256": "e8c8bc4e156e2578afbbc7cccd81bd796122e042e8759d77c9296ac469a6b917"
+      "bytes": 5311,
+      "sha256": "bc08cbbfb4fc59ac8cbae435359eb58ca0bff793c50f492318232ba5432f8c15"
     },
     {
       "path": "tools/test_vision_model_paths.py",
@@ -5543,7 +5543,7 @@
       "baseline_sha256": "50dd986e3e96372f08d2c6d4ffd708af92ae72dc0c40f3bf58fd8952ec7221c9",
       "purpose": "Entry point or current implementation",
       "bytes": 27456,
-      "sha256": "fc37e9805d2b60b49c0fac4a8517d07672620d646adfa51612914f4f71ed5fd1"
+      "sha256": "c90eb0a2d62e3c720ea4d2f7f53ddbcf0a87721db968372054c20140d055299a"
     }
   ],
   "snapshot_map": "docs/version_refs.json",

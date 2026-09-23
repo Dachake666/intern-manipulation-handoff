@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import zipfile
 from unittest.mock import patch
 
 HERE = Path(__file__).resolve().parent
@@ -47,6 +48,25 @@ class PackageToolsTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'absent from HEAD'):
                 builder.package(self.root,self.base/'delivery.zip')
         self.assertFalse((self.base/'delivery.zip').exists())
+
+    def test_standalone_package_retains_recoverable_git_history(self):
+        self.init_git()
+        (self.root/'HANDOFF_MANIFEST.json').write_text('{}\n')
+        (self.root/'SHA256SUMS').write_text('')
+        self.git('add','HANDOFF_MANIFEST.json','SHA256SUMS')
+        self.git('commit','-m','登记测试清单')
+        self.git('tag','-f','-a','handoff/current','-m','测试交付')
+        manifest={'files':[{'path':'.gitignore','sha256':builder.sha(self.root/'.gitignore')}]}
+        output=self.base/'delivery.zip'
+        with patch.object(builder,'check',return_value=manifest):
+            builder.package(self.root,output)
+        extracted=self.base/'extracted'
+        with zipfile.ZipFile(output) as archive:
+            self.assertIsNone(archive.testzip())
+            self.assertIn('robot_handoff/.git/HEAD',archive.namelist())
+            archive.extractall(extracted)
+        head=subprocess.check_output(['git','-C',str(extracted/'robot_handoff'),'rev-parse','HEAD'])
+        self.assertEqual(head,self.git('rev-parse','HEAD'))
 
     def test_worktree_cannot_create_a_zip_without_its_git_database(self):
         self.init_git()

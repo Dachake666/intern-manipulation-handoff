@@ -260,7 +260,7 @@
     },
     "package_tool_regressions": {
       "status": "PASS",
-      "tests": 3
+      "tests": 4
     },
     "clean_environment_report": "evidence/handoff_checks/clean_environment.json"
   }
