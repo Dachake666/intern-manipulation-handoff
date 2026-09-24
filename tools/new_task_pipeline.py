@@ -12,6 +12,11 @@ import hashlib
 import json
 import shutil
 import subprocess
+
+
+def mm_to_m(values):
+    return [float(v) / 1000.0 for v in values]
+
 import sys
 from pathlib import Path
 
@@ -40,12 +45,12 @@ def validate_xyz_task(path: Path) -> dict:
         for key in ("pick", "place"):
             v = pair[key]
             if not isinstance(v, list) or len(v) != 3 or not all(isinstance(x, (int, float)) for x in v):
-                raise ValueError(f"pairs[{i}].{key} 必须是 3 个数值（PB world, m）")
+                raise ValueError(f"pairs[{i}].{key} 必须是 3 个数值（world XYZ, mm）")
     for i, ob in enumerate(raw.get("obstacles", []), 1):
         for key in ("center", "half"):
             v = ob.get(key)
             if not isinstance(v, list) or len(v) != 3 or not all(isinstance(x, (int, float)) for x in v):
-                raise ValueError(f"obstacles[{i}].{key} 必须是 3 个数值（PB world, m）")
+                raise ValueError(f"obstacles[{i}].{key} 必须是 3 个数值（world XYZ, mm）")
         if any(float(x) <= 0 for x in ob["half"]):
             raise ValueError(f"obstacles[{i}].half 必须为正")
     return raw
@@ -107,7 +112,7 @@ XYZ planning wrapper.
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--task", type=Path, required=True,
-                    help="pairs+obstacles JSON; PB world coordinates in metres")
+                    help="pairs+obstacles JSON; Robot world coordinates in millimetres")
     ap.add_argument("--out", type=Path, required=True, help="output directory")
     ap.add_argument("--stage", choices=("check", "plan", "validate", "prepare"), default="prepare")
     ap.add_argument("--seed", type=int, default=7)
@@ -131,8 +136,32 @@ def main(argv=None) -> int:
         raise SystemExit("--out 必须位于当前 handoff 仓库内（建议 .runtime/<name>）")
     outdir.mkdir(parents=True, exist_ok=True)
     input_copy = outdir / "input_task.json"
-    if task != input_copy:
-        shutil.copy2(task, input_copy)
+
+    # Convert user-facing mm coordinates into PyBullet metres
+    # Keep original task.json untouched.
+    import json
+
+    task_data = json.loads(task.read_text(encoding="utf-8"))
+
+    for pair in task_data["pairs"]:
+        pair["pick"] = mm_to_m(pair["pick"])
+        pair["place"] = mm_to_m(pair["place"])
+
+    for obs in task_data.get("obstacles", []):
+        if "center" in obs:
+            obs["center"] = mm_to_m(obs["center"])
+        if "half" in obs:
+            obs["half"] = mm_to_m(obs["half"])
+
+    task_data["unit_internal"] = {
+        "position": "m",
+        "orientation": "deg"
+    }
+
+    input_copy.write_text(
+        json.dumps(task_data, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8"
+    )
     candidate = outdir / "planned_candidate.json"
     report = outdir / "pipeline_report.json"
 
@@ -140,7 +169,7 @@ def main(argv=None) -> int:
         run([a.python, "-B", str(PLANNER), "--task", str(input_copy),
              "--seed", str(a.seed), "--arm", a.arm, "--direct", "--out", str(candidate)],
             cwd=ROOT / "src/pick_place_coord")
-    if a.stage in ("validate", "prepare"):
+    if a.stage == "validate":
         if not candidate.is_file():
             raise SystemExit(f"缺 {candidate}; 先 --stage plan 或直接 --stage prepare")
         run([a.python, str(VALIDATOR), str(candidate)] + (["--candidate"] if a.arm == "right" else []), cwd=ROOT)

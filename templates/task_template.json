@@ -1,16 +1,20 @@
 {
-  "comment": "TEMPLATE ONLY. Copy to .runtime/ and replace every placeholder/scene assumption with current-site values. Coordinates are PyBullet world XYZ in metres. This template does not authorize real-robot motion.",
+  "comment": "User input coordinates are robot world XYZ in millimetres (mm). Orientation uses degrees (deg). Pipeline converts mm to metres internally for PyBullet.",
+  "unit": {
+    "position": "mm",
+    "orientation": "deg"
+  },
   "pairs": [
     {
-      "pick": [0.32, 0.26, 1.05],
-      "place": [0.30, 0.16, 1.05]
+      "pick": [320, 260, 1050],
+      "place": [300, 160, 1050]
     }
   ],
   "obstacles": [
     {
-      "center": [0.38, 0.235, 1.0475],
-      "half": [0.08, 0.012, 0.0225],
-      "comment": "EXAMPLE ONLY: axis-aligned obstacle; center and XYZ half-extents are metres. Delete if absent; replace if scene differs."
+      "center": [380, 235, 1047.5],
+      "half": [80, 12, 22.5],
+      "unit": "mm"
     }
   ]
 }
