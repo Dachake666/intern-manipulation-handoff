@@ -19,6 +19,11 @@
       "purpose": "New-task continuation guide"
     },
     {
+      "path": "README.md",
+      "baseline_sha256": "fa8d35420df5eb6cd4a0229eb73fadf12e98f7e1c18272aa3d6d6887fdf3f7a5",
+      "purpose": "GitHub project overview and top-level handoff navigation"
+    },
+    {
       "path": "RUNBOOK.md",
       "baseline_sha256": "4ac64ac5cad9765fcaaeaee36789adb335c5e55b714367890c476ef6e686990b",
       "purpose": "Operator runbook and common handoff commands"

@@ -23,6 +23,13 @@
       "sha256": "3e05d09f9060c3b34b71dfd7d1f3aea706886984e8b54ac508ad5781593c3bc7"
     },
     {
+      "path": "README.md",
+      "baseline_sha256": "fa8d35420df5eb6cd4a0229eb73fadf12e98f7e1c18272aa3d6d6887fdf3f7a5",
+      "purpose": "GitHub project overview and top-level handoff navigation",
+      "bytes": 10691,
+      "sha256": "fa8d35420df5eb6cd4a0229eb73fadf12e98f7e1c18272aa3d6d6887fdf3f7a5"
+    },
+    {
       "path": "RUNBOOK.md",
       "baseline_sha256": "4ac64ac5cad9765fcaaeaee36789adb335c5e55b714367890c476ef6e686990b",
       "purpose": "Operator runbook and common handoff commands",
@@ -1653,8 +1660,8 @@
       "path": "docs/DELIVERY_SELECTION.json",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "35853dda66d31272f397733cc0e31660a197ead82b594cee6ab8f157b4bf181e",
-      "bytes": 471354,
-      "sha256": "7d9a0423606ba37bb5e54806fcd5eda98389ac299909997fec33f3224a5226d1"
+      "bytes": 471563,
+      "sha256": "9e21dd5f119f2193f0955910a77088652a66811bb84e820612af07ca848ffa4a"
     },
     {
       "path": "docs/ENVIRONMENT_REFERENCE.md",
