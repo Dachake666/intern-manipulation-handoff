@@ -71,6 +71,7 @@
 | `NEW_TASK_GUIDE.md`、`config/site_config.example`、`templates/task_template.json` | 新点位继续开发、现场变量与任务格式模板 |
 | `sim/README.md`、`robot/README.md` | 仿真命令、真机成果恢复与现场顺序 |
 | `docs/CONTENTS.md` | 本目录地图 |
+| `docs/CODE_MAP.md` | 逐个代码文件的职责、ACTIVE/SUPPORT/OPTIONAL/EXPERIMENTAL/HISTORICAL/TEST/TOOLING 状态与修改边界 |
 | `docs/VERSIONS.md` | 版本节点、逐轮恢复与身份边界 |
 | `docs/ENVIRONMENT_REFERENCE.md` | 新设备环境和安装边界 |
 | `docs/KNOWN_ISSUES.md` | 运动、标定、视觉与环境待解决项 |

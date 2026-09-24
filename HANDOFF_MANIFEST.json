@@ -26,8 +26,8 @@
       "path": "START_HERE.md",
       "baseline_sha256": "3990fde9d63fcec50bb800b752c006f36894c73c5fa752ff2f7333f13198c838",
       "purpose": "Entry point or current implementation",
-      "bytes": 10278,
-      "sha256": "84ef4b4ab1ec79b73c78ecdb4754e7e1b169944eb4ebf59c2cd9c787c3270351"
+      "bytes": 10355,
+      "sha256": "2ccec21ce2a584d7bc1228ba6f659e78aedda575e251f6f9b3f01da65089c611"
     },
     {
       "path": "config/site_config.example",
@@ -1629,18 +1629,25 @@
       "sha256": "9d05bd47a33fc63f684989cf5da84dcb4b79e219e74524c9db674630819464c5"
     },
     {
+      "path": "docs/CODE_MAP.md",
+      "baseline_sha256": "21baf8a25efa82c454edd051e7a994a2cb00e45d776ed60fbcfb2db102723e1f",
+      "purpose": "Entry point or current implementation",
+      "bytes": 16459,
+      "sha256": "8d77c2eb7e829ca99f8238a536d867baeaadbfbbcf21f2594db309749be380da"
+    },
+    {
       "path": "docs/CONTENTS.md",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "5596d54d012a2afd475e670188b02065c8bbc8243902b60a0bc2803eb4e015b3",
-      "bytes": 7764,
-      "sha256": "5226dbd0ea2a55a32a53adbd5869a63ec5c708a8d2b5760bac54a9c02a68baa4"
+      "bytes": 7902,
+      "sha256": "2ecfca8031521ff003b2159c2f5c2d8f143ba2bae20d9a9d49a04a521d89da51"
     },
     {
       "path": "docs/DELIVERY_SELECTION.json",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "35853dda66d31272f397733cc0e31660a197ead82b594cee6ab8f157b4bf181e",
-      "bytes": 470514,
-      "sha256": "d80d89b920ab6406e42cc41d0f3be9246f25c3b1335ad4679d6b13472384132b"
+      "bytes": 470711,
+      "sha256": "03967af87da4b03637cc225cd6b0c65d2e3de6fc3a015c54ad820e25263d650d"
     },
     {
       "path": "docs/ENVIRONMENT_REFERENCE.md",

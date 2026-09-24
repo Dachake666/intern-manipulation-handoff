@@ -3974,6 +3974,11 @@
       "baseline_sha256": "5596d54d012a2afd475e670188b02065c8bbc8243902b60a0bc2803eb4e015b3"
     },
     {
+      "path": "docs/CODE_MAP.md",
+      "baseline_sha256": "21baf8a25efa82c454edd051e7a994a2cb00e45d776ed60fbcfb2db102723e1f",
+      "purpose": "Entry point or current implementation"
+    },
+    {
       "path": "docs/MAINTENANCE.md",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "ae411bbe34336b2e3d4e557fd61cc7251933e52a663360466e3b2c7c67d3f7a0"
