@@ -18,13 +18,14 @@
 
 若场景、机器人、TCP/夹爪定义不变，只更换新的 pick/place 点位，优先看：
 
-1. `src/pick_place_coord/pick_place_coord.py` — 任务编排、IK/路径规划与轨迹导出。
-2. `src/pick_place_coord/left_arm_ik.py` — 左臂 IK。
-3. `src/pick_place_coord/xifeng_pb.py` — PyBullet 机器人/场景与碰撞基础。
-4. `src/pick_place_coord/validate_trajectory.py` — 轨迹静态检查。
-5. `src/robot_mission/preflight.py` — 候选进入执行前的限位/碰撞/首点等资格检查。
-6. `src/frame_calibration/robot_side/tabletop_servo_contract.py`、`execute_tabletop_servo.py` — Servo 候选契约与消费者。
-7. `src/arm_profiles.py` / `src/arm_profiles.v1.json` — 臂、夹爪、TCP、Home、限位的共享定义。
+1. `tools/new_task_pipeline.py` — 新 XYZ 点位统一入口；调用现有 planner/validator 并生成候选、SHA 报告和后续命令，不自动真机运动。
+2. `src/pick_place_coord/pick_place_coord.py` — 任务编排、IK/路径规划与轨迹导出。
+3. `src/pick_place_coord/left_arm_ik.py` — 左臂 IK。
+4. `src/pick_place_coord/xifeng_pb.py` — PyBullet 机器人/场景与碰撞基础。
+5. `src/pick_place_coord/validate_trajectory.py` — 轨迹静态检查。
+6. `src/robot_mission/preflight.py` — 候选进入执行前的限位/碰撞/首点等资格检查。
+7. `src/frame_calibration/robot_side/tabletop_servo_contract.py`、`execute_tabletop_servo.py` — Servo 候选契约与消费者。
+8. `src/arm_profiles.py` / `src/arm_profiles.v1.json` — 臂、夹爪、TCP、Home、限位的共享定义。
 
 **不要从历史 B2/B3/B4/B5 文件反向复制成“新任务源码”。** 历史成果用 `tools/export_version.py` / `tools/restore_run.py` 恢复；新任务在当前 `src/` 开发。
 
@@ -186,6 +187,7 @@
 | `src/releases/test_make_release_dual.py` | TEST | 双臂 release 生成回归 |
 | `src/releases/test_make_release_hybrid.py` | TEST | hybrid release 生成回归 |
 | `src/releases/test_release_pruning.py` | TEST | release 文件裁剪/白名单回归 |
+| `tools/new_task_pipeline.py` | TOOLING | 新 XYZ 点位统一编排：输入检查→现有 planner→静态验证→SHA/provenance→生成后续 dry-run/precheck 命令；自身不授权/启动真机 |
 | `tools/verify_handoff.py` | TOOLING | 按根 manifest/SHA 校验完整交付，不导入 SDK |
 | `tools/offline_checks.py` | TOOLING | 运行明确列出的离线回归并可记录结果；不广泛发现所有 `test_*` |
 | `tools/export_version.py` | TOOLING | 按 B1–B7/D/history 节点导出历史版本到新目录，不执行代码 |

@@ -54,6 +54,7 @@
 | `src/releases/make_release.py` | 从源码生成所选运行发布包 |
 | `src/frame_calibration/records/`、`evidence/` | 选定原日志、固定输入与验证报告；历史背景从版本节点恢复 |
 | `data/handeye/` | 39 组历史手眼样本，纳入 Git 并随完整包保存 |
+| `tools/new_task_pipeline.py` | 新 XYZ 点位统一入口：调用现有 planner/validator，生成候选、SHA 报告和后续 dry-run/precheck 命令；不自动真机运动 |
 | `tools/verify_handoff.py` | 对根 manifest 逐文件校验 |
 | `tools/offline_checks.py` | 选定离线回归；`--record` 写验证结果与源身份 |
 | `tools/export_version.py` | 导出整个节点，不执行代码，导出副本无 Git |

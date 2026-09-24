@@ -3949,6 +3949,11 @@
       "purpose": "Entry point or current implementation"
     },
     {
+      "path": "tools/new_task_pipeline.py",
+      "purpose": "New XYZ task orchestration; no automatic real motion",
+      "baseline_sha256": "399579f227d9a5376fb33efd009168b402b75d07fe0ad05c0cbd156532e42914"
+    },
+    {
       "path": "tools/verify_handoff.py",
       "baseline_sha256": "239230f0502cb87e9e6bae877250adf702722b7576fdce0c862f883b83e2c338",
       "purpose": "Entry point or current implementation"

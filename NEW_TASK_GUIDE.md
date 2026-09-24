@@ -55,7 +55,47 @@ python3 -B pick_place_coord.py \
 
 完整视觉自主抓放仍未作为整链验收成果。先读 `START_HERE.md` 和 `docs/CONTENTS.md` 的视觉/任务接口说明。
 
-## XYZ 新任务：标准规划流程
+## XYZ 新任务：推荐统一入口
+
+当前仓库提供 `tools/new_task_pipeline.py`。它只做 orchestration：调用现有 planner 和 validator，生成候选、SHA 报告与后续命令；**不会实现第二套 IK/RRT/Servo，也不会自动授权或启动真机运动**。
+
+最短流程：
+
+```bash
+cd "$HANDOFF_ROOT"
+mkdir -p .runtime/new-task-001
+cp templates/task_template.json .runtime/new-task-001/task.json
+# 编辑 task.json 中本次真实 pick/place/obstacles
+
+python3 tools/new_task_pipeline.py \
+  --task .runtime/new-task-001/task.json \
+  --out .runtime/new-task-001 \
+  --stage prepare --seed 7 --arm left
+```
+
+`prepare` 顺序执行：task schema 基础检查 → `pick_place_coord.py` 重新规划 → `validate_trajectory.py` 静态验证 → 写出 provenance/SHA 与 `COMMANDS.md`。输出：
+
+```text
+.runtime/new-task-001/
+├── input_task.json
+├── planned_candidate.json
+├── pipeline_report.json
+└── COMMANDS.md
+```
+
+若只想先检查输入和交接依赖，不运行 PyBullet：
+
+```bash
+python3 tools/new_task_pipeline.py \
+  --task .runtime/new-task-001/task.json \
+  --out .runtime/new-task-001 --stage check
+```
+
+也可分阶段用 `--stage plan` / `--stage validate`。`COMMANDS.md` 会给出当前新候选的离线 Track-C dry-run 和 controller read-only precheck 命令；真机执行仍是显式人工步骤。
+
+> 这条统一入口针对现有 XYZ planner 契约（PB world, m）。完整 SDK-world 姿态/视觉任务仍走本页 C 类的 `robot_mission` 契约，不应硬塞进 XYZ task。
+
+## XYZ 新任务：底层手动流程（调试/理解用）
 
 ### 1. 建立开发副本
 
@@ -109,9 +149,9 @@ python3 src/pick_place_coord/validate_trajectory.py \
 
 B4/B5 的 `tabletop_pick_place_SERVO_CANDIDATE.json` 是各轮 SHA 绑定的历史输入。`pick_place_coord.py` 新输出与 B4/B5 Servo/MPC field candidate **不是同一个契约**。
 
-当前仓库已经有候选生成、资格检查、GUI review、Servo/MPC 执行模块，但对于任意新的 XYZ planner 输出，尚未提供一个经过验收的“一键 planner JSON → B4 Servo candidate”适配器。不要靠改文件名或复制历史 JSON 绕过这一步。
+`tools/new_task_pipeline.py` 现在把新 XYZ planner 输出直接接到 **Track-C legacy consumer contract**：planner 导出的 `meta + waypoints(q_sdk_deg/gripper)` 正是 `execute_servo_grasp.py` 能读取的格式；执行器在运行时按 `--step-deg/--period-ms` 加密。因此，新同事不再需要人工猜“planner JSON 下一步给谁”。
 
-需要继续进入现代 Servo/MPC 链时，负责人应按任务类型选择并验证对应 generator/contract；相关代码入口：
+这**仍不等于**自动生成历史 B4 的 `tabletop_servo_candidate.v1`。B4/B5 是另一套 SHA 绑定的 field/MPC contract；不要改名冒充。需要进入 B4/MPC 路线时，仍按任务类型选择并验证对应 generator/contract；相关代码入口：
 
 - `src/pick_place_coord/gen_tabletop_hybrid_candidate.py`
 - `src/robot_mission/qualify_candidate.py`

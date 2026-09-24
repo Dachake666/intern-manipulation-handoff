@@ -19,15 +19,15 @@
       "path": "NEW_TASK_GUIDE.md",
       "baseline_sha256": "a738a5510299ea61132a8456e0f9f2d4368b6666b610970bbdb58b1364fcfc0c",
       "purpose": "New-task continuation guide",
-      "bytes": 6029,
-      "sha256": "63b85706d47a2fbee83e4e00cb73ec38481a7d955a612633f1882b70c9f6d40b"
+      "bytes": 7813,
+      "sha256": "3e05d09f9060c3b34b71dfd7d1f3aea706886984e8b54ac508ad5781593c3bc7"
     },
     {
       "path": "START_HERE.md",
       "baseline_sha256": "3990fde9d63fcec50bb800b752c006f36894c73c5fa752ff2f7333f13198c838",
       "purpose": "Entry point or current implementation",
-      "bytes": 10355,
-      "sha256": "2ccec21ce2a584d7bc1228ba6f659e78aedda575e251f6f9b3f01da65089c611"
+      "bytes": 10480,
+      "sha256": "e3cbdb68200038d3c62ee3d37c97336ddafcc93f1e7ff757971dfeef049e8e45"
     },
     {
       "path": "config/site_config.example",
@@ -1632,22 +1632,22 @@
       "path": "docs/CODE_MAP.md",
       "baseline_sha256": "21baf8a25efa82c454edd051e7a994a2cb00e45d776ed60fbcfb2db102723e1f",
       "purpose": "Entry point or current implementation",
-      "bytes": 16459,
-      "sha256": "8d77c2eb7e829ca99f8238a536d867baeaadbfbbcf21f2594db309749be380da"
+      "bytes": 16832,
+      "sha256": "92e04f524636c433b3c8915006f35d574acb8cde5fe3f44ae1acbb25327f925c"
     },
     {
       "path": "docs/CONTENTS.md",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "5596d54d012a2afd475e670188b02065c8bbc8243902b60a0bc2803eb4e015b3",
-      "bytes": 7902,
-      "sha256": "2ecfca8031521ff003b2159c2f5c2d8f143ba2bae20d9a9d49a04a521d89da51"
+      "bytes": 8082,
+      "sha256": "5eb7d8f42de10f9c1631ab36b5cc0ca533b659ecc581d627d71113da3aadec9e"
     },
     {
       "path": "docs/DELIVERY_SELECTION.json",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "35853dda66d31272f397733cc0e31660a197ead82b594cee6ab8f157b4bf181e",
-      "bytes": 470711,
-      "sha256": "03967af87da4b03637cc225cd6b0c65d2e3de6fc3a015c54ad820e25263d650d"
+      "bytes": 470933,
+      "sha256": "7d73fdde501c7147c103edf0764baf946e9065afdf4deed5e7322033d4c5b876"
     },
     {
       "path": "docs/ENVIRONMENT_REFERENCE.md",
@@ -5546,6 +5546,13 @@
       "purpose": "Entry point or current implementation",
       "bytes": 2417,
       "sha256": "4f9ae79903d7e2dd80c202c142e5e1d7f71e97982d82f3a3da0a7c57b9d957a8"
+    },
+    {
+      "path": "tools/new_task_pipeline.py",
+      "purpose": "New XYZ task orchestration; no automatic real motion",
+      "baseline_sha256": "399579f227d9a5376fb33efd009168b402b75d07fe0ad05c0cbd156532e42914",
+      "bytes": 7543,
+      "sha256": "399579f227d9a5376fb33efd009168b402b75d07fe0ad05c0cbd156532e42914"
     },
     {
       "path": "tools/offline_checks.py",
