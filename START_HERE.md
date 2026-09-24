@@ -34,6 +34,8 @@
 
 仿真命令见 [sim/README.md](sim/README.md)，Track A、Track C、Servo、MPC 的恢复、检查和真机启动命令见 [robot/README.md](robot/README.md)。完整目录地图见 [docs/CONTENTS.md](docs/CONTENTS.md)。
 
+**拿到新的抓取/放置点继续开发：** 先读 [NEW_TASK_GUIDE.md](NEW_TASK_GUIDE.md)。它区分 XYZ 新任务、SDK 世界坐标和完整姿态/视觉输入，并明确哪些模块已具备、哪些端到端适配尚未验收。任务格式模板见 `templates/task_template.json`，现场网络变量示例见 `config/site_config.example`。
+
 ## 三个开始入口
 
 以下均在仓库根执行：

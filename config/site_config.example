@@ -1,0 +1,8 @@
+# Copy these values into shell environment after checking the current site.
+# Historical addresses are deliberately not provided as defaults.
+export XIFENG_ROBOT_IP='<robot-controller-ip>'
+export XIFENG_ARM_IP='<arm-service-ip>'
+export XIFENG_LOCAL_IP='<local-interface-ip>'
+
+# Stable identities for the historically verified left-arm chain:
+# arm_id=1, gripper_id=2. Do not assume these values for a different arm/tool.

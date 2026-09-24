@@ -30,7 +30,7 @@ python3 tools/export_version.py B1 .runtime/simulation-work
 (cd .runtime/simulation-work/src/pick_place_coord && XIFENG_ALLOW_REAL_MOTION=0 python3 -B pick_place_coord.py --task tasks/task_2pairs_table72.json --seed 7)
 ```
 
-此命令重新规划双次任务，不保证生成历史 JSON。需要保存候选时使用程序的 `--out` 参数。导出目录没有 `.git`；版本恢复工具仍从完整仓库调用。
+此命令重新规划双次任务，不保证生成历史 JSON。需要保存候选时使用程序的 `--out` 参数。导出目录没有 `.git`；版本恢复工具仍从完整仓库调用。 新点位继续开发的完整输入约定和命令见 [NEW_TASK_GUIDE](../NEW_TASK_GUIDE.md)；不要把新的 planner JSON 直接冒充 B4/B5 的历史 Servo candidate。
 
 ## MPC 与双臂
 

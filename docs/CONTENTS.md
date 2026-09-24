@@ -68,6 +68,7 @@
 | 文档 | 阅读目的 |
 |---|---|
 | `START_HERE.md`、`AGENTS.md` | 职责入口与仓库约定 |
+| `NEW_TASK_GUIDE.md`、`config/site_config.example`、`templates/task_template.json` | 新点位继续开发、现场变量与任务格式模板 |
 | `sim/README.md`、`robot/README.md` | 仿真命令、真机成果恢复与现场顺序 |
 | `docs/CONTENTS.md` | 本目录地图 |
 | `docs/VERSIONS.md` | 版本节点、逐轮恢复与身份边界 |

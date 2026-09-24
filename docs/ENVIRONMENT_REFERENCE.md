@@ -22,7 +22,7 @@ PyBullet 3.2.5 在上述工具链直接源码编译会触发其内置旧 zlib �
 
 版本锁不包含操作系统库。若目标平台安装失败，保留失败日志，登记新的解释器/依赖组合，再跑对应回归；不得把改过的环境标为同一验证组合。GUI 显示、设备接入和现场运动不在该离线安装验收范围内。
 
-历史 `planning-py310.lock.txt` 自述 Linux x86_64 / Python 3.10，`vision-py310.lock.txt` 仅含部分视觉依赖。B5 历史仿真报告记录 Python 3.10.12、NumPy 2.2.6、SciPy 1.15.3、OSQP 1.1.1、PyBullet 3.2.5、matplotlib 3.10.9。它们不是当前开发环境的替代锁，不应混装。MPC 自带 `requirements.txt` 中的版本范围也不等于完整锁定快照。
+历史 `planning-py310.lock.txt` 自述 Linux x86_64 / Python 3.10，`vision-py310.lock.txt` 仅含部分视觉依赖。B5 历史仿真报告记录 Python 3.10.12、NumPy 2.2.6、SciPy 1.15.3、OSQP 1.1.1、PyBullet 3.2.5、matplotlib 3.10.9。它们不是当前开发环境的替代锁，不应混装。MPC 自带 `requirements.txt` 中的版本范围也不等于完整锁定快照。 在已建立的 CPython 3.10 MPC/SDK 环境中若缺 OSQP，可从仓库根显式安装模块依赖：`python3 -m pip install -r src/pick_place_coord/mpc_experiment/requirements.txt`；随后记录实际 NumPy/SciPy/OSQP 版本。
 
 ## 机器人 SDK
 

@@ -5,17 +5,17 @@
   "active": [
     {
       "path": ".gitignore",
-      "baseline_sha256": "2d8bbbaebddb6cc0de6e507f8d5ca07838922307763f0126abab807be466f7ec",
+      "baseline_sha256": "47094b6e4a8fbd6cfc270b736cf815fea7c0d926024463d636ef10b262e0aea2",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "AGENTS.md",
-      "baseline_sha256": "2d7ee2a7147d6217ec8763a44b207ec895e6b9e4dff1c3edefa7cd3c048029cc",
+      "baseline_sha256": "c1fed8bb50393ee81fc27d151f1be77227c2ea64985d6680ca65ca6312b759b6",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "START_HERE.md",
-      "baseline_sha256": "2b493a785f92513b7ff44b578fd55f9d7c3e087df8c1f5adab97657c9a8c5f71",
+      "baseline_sha256": "3990fde9d63fcec50bb800b752c006f36894c73c5fa752ff2f7333f13198c838",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -1214,22 +1214,22 @@
     },
     {
       "path": "docs/ENVIRONMENT_REFERENCE.md",
-      "baseline_sha256": "7e660b0c4397fa254bab3d0af8839e296ac4b2fec3ef717b2619fa18c9941d32",
+      "baseline_sha256": "d7ec84e8e7809a16243e997aca3638002052f8ea969d6ed9c3273df0c55e9f98",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "docs/KNOWN_ISSUES.md",
-      "baseline_sha256": "22a55c1aca852ea62657c81b5afd073bef7efe1b3fa556b3d09e78ce974f18a4",
+      "baseline_sha256": "437b66bbcb579df65137ca1f51b80832aaff5a3123cf60c27d19c67ff16f10dc",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "docs/SOURCE_MAP.json",
-      "baseline_sha256": "9e553929d9105e88c4820e3bae2e9f04add4fd0137d3adc0e56aec089ff41e9b",
+      "baseline_sha256": "213c56d1ebebb71dffa410879523268185ca14d979d48b99feeac346cddff45b",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "docs/VERSIONS.md",
-      "baseline_sha256": "682d35499bae64ee3d34a7b6cdb624b2807d4555f0d2f685b033c69fc18f4685",
+      "baseline_sha256": "a1dd919b621c118d968d14f1baaa4e12ea7ba36c0aabec27c11491e548b652d1",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -1239,7 +1239,7 @@
     },
     {
       "path": "docs/version_refs.json",
-      "baseline_sha256": "aeb525904206175d7f54ecbe8a62b741d6d8f8a4acdc8713095298cb506b9f60",
+      "baseline_sha256": "3eb2dac22c40ead338b7c445715026d15e1534adc6fb1086517a715da3562584",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -1269,7 +1269,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/README.md",
-      "baseline_sha256": "35d17a153f37390a7a58a8c8379e1379c5efe86d9376cd5a0a513ef4e8333080",
+      "baseline_sha256": "a05c5ae03f9768c6e6d01c98ce914726edb5170c9bf25828063d030835464ef3",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -1344,7 +1344,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/config/multiple/workstation.json",
-      "baseline_sha256": "1225e584ed87dfab730b0167e386060c172a70aeb9e9f0defaa2667b5dbfad02",
+      "baseline_sha256": "1cc4145758fc89a61ea6811d60332bbf59f322390fdbe2ab3440d52c3a930411",
       "purpose": "Offline regression"
     },
     {
@@ -1369,7 +1369,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/config/test1/workstation.json",
-      "baseline_sha256": "411f15bbe8e09e2151cf5dd571a6e240a488a7206f9bdb83149b74e539ac7bd2",
+      "baseline_sha256": "cd987b5ca3b7f79ec781d6410d019573075b29ef07808ce62dc430d54251e3ec",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -1389,7 +1389,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/camera_drive/README.md",
-      "baseline_sha256": "bcf0c6fdaa1a6c209bd51774d6402b6eb50aa6ac8d2defc341ffc34ed29090f9",
+      "baseline_sha256": "396711f1b8be3d568f44c6ee67fd586dfcfa8ca9e8d14a86cc290bc6dfdb3efd",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -1459,7 +1459,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm/README.md",
-      "baseline_sha256": "71dd06da8f5915544335e547e4447de6377ef369d67b6a5214c8a780d336b2e2",
+      "baseline_sha256": "58d36ea91da63718100b9e47fa7377f2962ccceddf02f67f9daef998582da4d2",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -1469,7 +1469,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_algorithm/include/data_type.h",
-      "baseline_sha256": "814d1c2e79061d2c59ad04fe451b685c44ce6b56e05fdf90384f19cd1bb45c2c",
+      "baseline_sha256": "0703bd0d9fea4e1fc444f277e4a925f1d019122e6715f9570d2d8bc65784ae65",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -1574,7 +1574,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_hand_eye/README.md",
-      "baseline_sha256": "f58d003aff345a60424ffebc3e7982ec92fc52a9620e8fc9030f4ce59cc2944d",
+      "baseline_sha256": "ae6a283b0716680eb7fb091c989018f161b2a3bd0fbea7a52d272896c375eae5",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -2759,7 +2759,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/deps/vision/vision_utils/README.md",
-      "baseline_sha256": "ceed7af13eacb3f2ef7f437ca61be58afaba1739112fe96870ff7b35381f25f8",
+      "baseline_sha256": "e3304bec574cc5e0678b7354af140421c87028e62b09fbe461ba752a0c355842",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -2869,7 +2869,7 @@
     },
     {
       "path": "extensions/debian_vision/vision/ultirobotics_vision_detect/vision_detect_ros/src/visionDetectServer.cpp",
-      "baseline_sha256": "c51c4427ef0c156090dc154c35145991649575a6192a7f917aec7e0f94ad8f50",
+      "baseline_sha256": "4f06807cec61d6b1b2a4a1ab1836ae0e1d94094aa2bf66a284ec0548c2cdfb71",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -2914,7 +2914,7 @@
     },
     {
       "path": "robot/README.md",
-      "baseline_sha256": "f554cc5b2e0007a1c25e53d56d26af3885fe6e3694dc435838f8cb474dd59c27",
+      "baseline_sha256": "3a5e00d7456c7b6ca73f20c01a04d1b0f40224791f8a73249869f73953c2f405",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -2931,12 +2931,12 @@
     },
     {
       "path": "sim/README.md",
-      "baseline_sha256": "00b24e013983e3d8d00be39d3885c00f26605b6805345c58c4173be99ebe2e83",
+      "baseline_sha256": "6e3a925346fa981a1973ee381f9297a17056e66cf830390edc5d540b782ef5d1",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "src/PilotSDK_enable_varget_8080_debug_20260901.md",
-      "baseline_sha256": "db5a6ef9bf307f2d5dc82cadecf51f392ce941bac7fe2e06b1c0b494c346d09b",
+      "baseline_sha256": "447662c84b6cbf2bfc025619af956d8a71eb45c87d8ddd1108699462da635c5d",
       "purpose": "Evidence or optional calibration dataset"
     },
     {
@@ -3088,12 +3088,12 @@
     },
     {
       "path": "src/frame_calibration/README.md",
-      "baseline_sha256": "22d32f17283c07483464a41d082eaf6fe6ffba3cf38e11ab27698a8a533b2b54",
+      "baseline_sha256": "0335c68607b26ef2c01d3c79c8b39057f4fd1cc22d08b3598cf939c02d764ac9",
       "purpose": "Reviewed current dependency"
     },
     {
       "path": "src/frame_calibration/UVW_TO_QUATERNION.md",
-      "baseline_sha256": "8ceea4b0a2958c0d1c09196d5717564260e866c8f03ec5a23db4f23dfb63bf5a",
+      "baseline_sha256": "d49d6990c29770e9793d1fcb5e0970d5cc137c43eae5bdfe510b5e34c97079e6",
       "purpose": "Reviewed current dependency"
     },
     {
@@ -3409,7 +3409,7 @@
     },
     {
       "path": "src/pick_place_coord/dual_arm_demo/README.md",
-      "baseline_sha256": "7519106ac0f46c53a42c8a36f93a8a8f26ebd40fcc35b484546ff733388bec6c",
+      "baseline_sha256": "21970465848cba7f838195f00880a644879640507cbc00e53b1ba23d8b4b727c",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3464,7 +3464,7 @@
     },
     {
       "path": "src/pick_place_coord/mpc_experiment/README.md",
-      "baseline_sha256": "01491215cd99552a5eb25a48f23580a7849291702fc79f74b3622a13b8f18222",
+      "baseline_sha256": "838190e8648dc737160313fb3ddf124458fbeca43ea8b0cf2b20c2a99118ad99",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3504,7 +3504,7 @@
     },
     {
       "path": "src/pick_place_coord/pick_place_coord.py",
-      "baseline_sha256": "ba5865f0b786b695293561436bcedf2a7b83f0abd222488891f126cfb616e8f3",
+      "baseline_sha256": "7c028d55466b2c8b6fa1bea35a45b9b228ffa5e16c7ee457836a97ee68e3da7d",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3559,7 +3559,7 @@
     },
     {
       "path": "src/pick_place_coord/trajectories/candidates/README.md",
-      "baseline_sha256": "5cd9559ed8bd271047dcda252fff8c28d57029e77f2ee67e134ef1d727fff4d1",
+      "baseline_sha256": "5193a74d69adb2d1dfd7f5f3e479c50f79d91b92e7a177e4f844b0f5b67534da",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3664,7 +3664,7 @@
     },
     {
       "path": "src/pick_place_coord/trajectories/verified/README.md",
-      "baseline_sha256": "e5ecc8d3ccc31cf5b146a1fd01510dcc710207fb7719f502dc5c1d0609673197",
+      "baseline_sha256": "223d30062c3903a7ffcce73b26130dac2a641d747f34b8aff7211d904509bf49",
       "purpose": "Reviewed current dependency"
     },
     {
@@ -3690,22 +3690,22 @@
     },
     {
       "path": "src/releases/make_release.py",
-      "baseline_sha256": "715b2433cb39f82063320187dca5d103860692ab1dccaabc1c2295f314c50873",
+      "baseline_sha256": "d4ca9d4a39f4dba623fde8d34954820a409a96005be15e47544966b61dbbd0db",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "src/releases/test_make_release_dual.py",
-      "baseline_sha256": "01cd2f500db7271454502362ae7dfa5215a360c3a09eed31a2251569dc3e5a4a",
+      "baseline_sha256": "edbac3e916f9f6ca88f5a427d647626c51167fd20372c50e891116b5cea70513",
       "purpose": "Offline regression"
     },
     {
       "path": "src/releases/test_make_release_hybrid.py",
-      "baseline_sha256": "ee45b063ce2e059e1ce2f3a4007f79828e972d44ff91fb05baf267514d77ecb9",
+      "baseline_sha256": "2da9c9b3e6738d2137c8d45743ec119ef6deaeef3ae4f32782e8560cd686442f",
       "purpose": "Offline regression"
     },
     {
       "path": "src/requirements/README.md",
-      "baseline_sha256": "e90639d38683c7d297d1c24dea5f5c43d3d9121f50fba1e601d53253d257786f",
+      "baseline_sha256": "33a35f6a8ced19e5eb7b57b2824acf909472abe3f562dabbc2eb9c2ce61a1d46",
       "purpose": "Runtime/build dependency or regression input"
     },
     {
@@ -3875,7 +3875,7 @@
     },
     {
       "path": "src/vision/README.md",
-      "baseline_sha256": "eb2a580a031f803d2a1edf5cc00f4da8eebaec29c729e7b3b313a5f4f956a5e8",
+      "baseline_sha256": "32cc6f579dd2c0a633fefb23e091932bd806b86a7f9d2386decadd2d6d21a345",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3940,12 +3940,12 @@
     },
     {
       "path": "tools/export_version.py",
-      "baseline_sha256": "10554a516cee006c8e9e5b8cd94a167814e85b299a6e944e35ae5580e00bd734",
+      "baseline_sha256": "4f9ae79903d7e2dd80c202c142e5e1d7f71e97982d82f3a3da0a7c57b9d957a8",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "tools/offline_checks.py",
-      "baseline_sha256": "be852662a285eeb0841f6a48a52429a68b97a98dcd9408e3fae97f817d9193a0",
+      "baseline_sha256": "508e8802ba73b77ddae78745847ba2c4cbb0fca6d3c5618bcd94f5bc27eaf653",
       "purpose": "Entry point or current implementation"
     },
     {
@@ -3955,60 +3955,73 @@
     },
     {
       "path": "verification.json",
-      "baseline_sha256": "50dd986e3e96372f08d2c6d4ffd708af92ae72dc0c40f3bf58fd8952ec7221c9",
+      "baseline_sha256": "5871262ca28b587e3218cbce29ba14081b0b4bee114cb384be9cb5906ad1c718",
       "purpose": "Entry point or current implementation"
     },
     {
       "path": "src/releases/test_release_pruning.py",
-      "purpose": "Offline regression for supported publishing and candidate output paths"
+      "purpose": "Offline regression for supported publishing and candidate output paths",
+      "baseline_sha256": "5b62f92a1aadd8c28ece382274ecc0c3338216749b6c77b5f20e601ad4bb54f8"
     },
     {
       "path": "src/pick_place_coord/test_export_paths.py",
-      "purpose": "Offline regression for supported publishing and candidate output paths"
+      "purpose": "Offline regression for supported publishing and candidate output paths",
+      "baseline_sha256": "c59b936dbf358e24fff2ea1d8df396930c2e5e71f8c11ff34aa2dbb2adedcaad"
     },
     {
       "path": "docs/CONTENTS.md",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "5596d54d012a2afd475e670188b02065c8bbc8243902b60a0bc2803eb4e015b3"
     },
     {
       "path": "docs/MAINTENANCE.md",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "ae411bbe34336b2e3d4e557fd61cc7251933e52a663360466e3b2c7c67d3f7a0"
     },
     {
       "path": "docs/DELIVERY_SELECTION.json",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "35853dda66d31272f397733cc0e31660a197ead82b594cee6ab8f157b4bf181e"
     },
     {
       "path": "tools/build_package.py",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "f155e9da7f3dd4ede8b9f6a8250a4a6c3e9e9913a40b1878cd3ff3641c706724"
     },
     {
       "path": "tools/restore_run.py",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "8635c90b0c06326df34c322bd03b48390c33841cdd72b18663817fd532b62185"
     },
     {
       "path": "tools/check_history.py",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "4855439882a050d3a5d02d1a55fd74f5de30d948f3e8f5aebcb70af0b0b02cef"
     },
     {
       "path": "tools/test_vision_model_paths.py",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "d0042f858010a6c812a48178e79bd86a27947f615cf96f91e102a0b933847429"
     },
     {
       "path": "evidence/handoff_checks/offline_tests.log",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "aab2af424d6cfe0abe2742c0117be988d6621694746ae204e9b1156ccb049d54"
     },
     {
       "path": "evidence/handoff_checks/history_checks.json",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "eda56c31397862a47d5ba1d797882f47ebf7e21ba9cf58c7074efdea59f0b150"
     },
     {
       "path": "evidence/handoff_checks/vision_model_checks.json",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "35598234eb869db60905c8fc80958ffa66f62c5b7cc0c23ec28640394fb71d3d"
     },
     {
       "path": "evidence/handoff_checks/pruning_checks.json",
-      "purpose": "Maintained delivery documentation, recovery tool or current verification"
+      "purpose": "Maintained delivery documentation, recovery tool or current verification",
+      "baseline_sha256": "7e05b7bd391bc5908726e3a412514a255a79145ebaaf404f6c4c5b3b98c57c09"
     },
     {
       "path": "src/frame_calibration/robot_side/execute_worlds_servo_grasp.py",
@@ -4017,15 +4030,33 @@
     },
     {
       "path": "tools/test_package_tools.py",
-      "purpose": "Regression for source/test identity, ignored Git files and worktree rejection"
+      "purpose": "Regression for source/test identity, ignored Git files and worktree rejection",
+      "baseline_sha256": "561cbfe2924bdf19a632e4ccad102429ade9a960020ec5615cf418c57ffd74a5"
     },
     {
       "path": "src/requirements/simulation-py313-macos-arm64.lock.txt",
-      "purpose": "Complete dependency lock for isolated simulation installation on Python 3.13/macOS arm64"
+      "purpose": "Complete dependency lock for isolated simulation installation on Python 3.13/macOS arm64",
+      "baseline_sha256": "34082d3e4f238bce414fb03d57803e0b2023fb7bf0c1086871c3d5fa6880ea6d"
     },
     {
       "path": "evidence/handoff_checks/clean_environment.json",
-      "purpose": "Isolated installation and regression environment identity"
+      "purpose": "Isolated installation and regression environment identity",
+      "baseline_sha256": "8cb2da858487ebc229fda9b8270183cf8677b8f7cf1adc74978441f119495db7"
+    },
+    {
+      "path": "NEW_TASK_GUIDE.md",
+      "baseline_sha256": "a738a5510299ea61132a8456e0f9f2d4368b6666b610970bbdb58b1364fcfc0c",
+      "purpose": "New-task continuation guide"
+    },
+    {
+      "path": "config/site_config.example",
+      "baseline_sha256": "d43d4a5d28c676e16efacbbdd594bbb20251f0ff0f830be115ccd6d752ad6fba",
+      "purpose": "Site-specific runtime configuration template"
+    },
+    {
+      "path": "templates/task_template.json",
+      "baseline_sha256": "f22fc5d09c56375dc74a7476f4fdc627435ba12e16f3ad70c5ac650735764358",
+      "purpose": "New XYZ pick/place task template"
     }
   ],
   "historical": [

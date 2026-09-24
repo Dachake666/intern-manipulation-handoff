@@ -1,6 +1,6 @@
 # 真机执行与历史实验
 
-真机执行开发源在 `src/frame_calibration/robot_side/`；`src/robot_mission/mission_runner.py` 编排任务并调用执行器 `--run`。先选择具体成果和运行记录，再恢复完整组合。只恢复文件不会连接设备；历史脚本的启动行为需要逐项核实。
+真机执行开发源在 `src/frame_calibration/robot_side/`；`src/robot_mission/mission_runner.py` 编排任务并调用执行器 `--run`。先选择具体成果和运行记录，再恢复完整组合。只恢复文件不会连接设备；历史脚本的启动行为需要逐项核实。 本文 B2～B5 主要用于历史成果恢复；**新的抓取/放置点不要直接替换历史绑定 JSON**，先按 [NEW_TASK_GUIDE](../NEW_TASK_GUIDE.md) 重新规划并建立新的候选/资格证据。
 
 ## 选择成果
 
