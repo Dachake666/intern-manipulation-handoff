@@ -1,3 +1,4 @@
+- 最短操作手册与常用命令：`RUNBOOK.md`
 - 当前冻结能力、实测结果与 MPC 边界：`docs/HANDOFF_STATUS.md`
 
 # 从这里开始
