@@ -23,11 +23,18 @@
       "sha256": "3e05d09f9060c3b34b71dfd7d1f3aea706886984e8b54ac508ad5781593c3bc7"
     },
     {
+      "path": "RUNBOOK.md",
+      "baseline_sha256": "4ac64ac5cad9765fcaaeaee36789adb335c5e55b714367890c476ef6e686990b",
+      "purpose": "Operator runbook and common handoff commands",
+      "bytes": 5510,
+      "sha256": "4ac64ac5cad9765fcaaeaee36789adb335c5e55b714367890c476ef6e686990b"
+    },
+    {
       "path": "START_HERE.md",
       "baseline_sha256": "3990fde9d63fcec50bb800b752c006f36894c73c5fa752ff2f7333f13198c838",
       "purpose": "Entry point or current implementation",
-      "bytes": 10480,
-      "sha256": "e3cbdb68200038d3c62ee3d37c97336ddafcc93f1e7ff757971dfeef049e8e45"
+      "bytes": 10609,
+      "sha256": "42fe40d6d2c7b99784b476f3949c010f5ee0a0a1ef69ac3e5cd6afe3425643da"
     },
     {
       "path": "config/site_config.example",
@@ -1646,8 +1653,8 @@
       "path": "docs/DELIVERY_SELECTION.json",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "35853dda66d31272f397733cc0e31660a197ead82b594cee6ab8f157b4bf181e",
-      "bytes": 470933,
-      "sha256": "7d73fdde501c7147c103edf0764baf946e9065afdf4deed5e7322033d4c5b876"
+      "bytes": 471354,
+      "sha256": "7d9a0423606ba37bb5e54806fcd5eda98389ac299909997fec33f3224a5226d1"
     },
     {
       "path": "docs/ENVIRONMENT_REFERENCE.md",
@@ -1655,6 +1662,13 @@
       "purpose": "Entry point or current implementation",
       "bytes": 5290,
       "sha256": "d7ec84e8e7809a16243e997aca3638002052f8ea969d6ed9c3273df0c55e9f98"
+    },
+    {
+      "path": "docs/HANDOFF_STATUS.md",
+      "baseline_sha256": "ba0f4cfd077312665dfe1b421fa515a324d78087979d384a7fabbb6bab8f8fbc",
+      "purpose": "Current verified capability boundary and Servo/MPC status",
+      "bytes": 5388,
+      "sha256": "ba0f4cfd077312665dfe1b421fa515a324d78087979d384a7fabbb6bab8f8fbc"
     },
     {
       "path": "docs/KNOWN_ISSUES.md",
@@ -1723,8 +1737,8 @@
       "path": "evidence/handoff_checks/offline_tests.log",
       "purpose": "Maintained delivery documentation, recovery tool or current verification",
       "baseline_sha256": "aab2af424d6cfe0abe2742c0117be988d6621694746ae204e9b1156ccb049d54",
-      "bytes": 970,
-      "sha256": "aab2af424d6cfe0abe2742c0117be988d6621694746ae204e9b1156ccb049d54"
+      "bytes": 1194,
+      "sha256": "dfc0da8ce750b38a60a0c6b227701ef334767bd4c11d7a88e7bc46a1a7b51dae"
     },
     {
       "path": "evidence/handoff_checks/pruning_checks.json",
@@ -5523,8 +5537,8 @@
       "path": "templates/task_template.json",
       "baseline_sha256": "f22fc5d09c56375dc74a7476f4fdc627435ba12e16f3ad70c5ac650735764358",
       "purpose": "New XYZ pick/place task template",
-      "bytes": 571,
-      "sha256": "f22fc5d09c56375dc74a7476f4fdc627435ba12e16f3ad70c5ac650735764358"
+      "bytes": 448,
+      "sha256": "16a1393eb39d9b32752566a8f7c51f40075c159ff160f8557b7f4881d366dea1"
     },
     {
       "path": "tools/build_package.py",
@@ -5551,8 +5565,8 @@
       "path": "tools/new_task_pipeline.py",
       "purpose": "New XYZ task orchestration; no automatic real motion",
       "baseline_sha256": "399579f227d9a5376fb33efd009168b402b75d07fe0ad05c0cbd156532e42914",
-      "bytes": 7543,
-      "sha256": "399579f227d9a5376fb33efd009168b402b75d07fe0ad05c0cbd156532e42914"
+      "bytes": 8281,
+      "sha256": "4a7deae83b65af8059f32c8318c519e502d64963d33dfe5732485484a1be275c"
     },
     {
       "path": "tools/offline_checks.py",
@@ -5593,8 +5607,8 @@
       "path": "verification.json",
       "baseline_sha256": "5871262ca28b587e3218cbce29ba14081b0b4bee114cb384be9cb5906ad1c718",
       "purpose": "Entry point or current implementation",
-      "bytes": 32717,
-      "sha256": "5871262ca28b587e3218cbce29ba14081b0b4bee114cb384be9cb5906ad1c718"
+      "bytes": 32718,
+      "sha256": "c4e532e7442fcf249958cda0c4a607552a35931542581c6ddb37cef18c5873e1"
     }
   ],
   "snapshot_map": "docs/version_refs.json",
