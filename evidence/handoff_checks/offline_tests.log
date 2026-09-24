@@ -3,10 +3,13 @@
 ........................................................................ [ 75%]
 .....................................................................    [100%]
 =============================== warnings summary ===============================
-$SIM_ENV/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1
-  $SIM_ENV/lib/python3.13/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1: DeprecationWarning: Please import `KDTree` from the `scipy.spatial` namespace; the `scipy.spatial.kdtree` namespace is deprecated and will be removed in SciPy 2.0.0.
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: RuntimeWarning: to-Python converter for std::vector<int, std::allocator<int> > already registered; second conversion method ignored.
+
+../../../../.local/lib/python3.10/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1
+  /home/dev/.local/lib/python3.10/site-packages/pybullet_planning/motion_planners/lazy_prm.py:1: DeprecationWarning: Please import `KDTree` from the `scipy.spatial` namespace; the `scipy.spatial.kdtree` namespace is deprecated and will be removed in SciPy 2.0.0.
     from scipy.spatial.kdtree import KDTree
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 - generated xml file: $HANDOFF_ROOT/.runtime/tmp/offline-tests.xml -
-285 passed, 1 warning in 80.80s (0:01:20)
+285 passed, 2 warnings in 75.14s (0:01:15)
