@@ -17,6 +17,28 @@ Delivery verification: 767 files match
 
 > 新任务 generic `SERVO_CANDIDATE → MPC` 尚未正式接入；历史 B5 MPC Shadow / Active 仍完整保留。详见 `docs/HANDOFF_STATUS.md`。
 
+## 位置、姿态与参考点约定
+
+**四元数只描述姿态，不能解算出位置 XYZ。** 完整位姿需要同时提供位置和姿态，例如 `position_mm` 与 `quaternion_xyzw`；UVW 和四元数是同一姿态的不同表示，不是额外的位置数据。
+
+- **表示与单位：** 本项目 SDK 端的 XYZ 使用 mm，UVW 使用 deg；四元数顺序为 `[qx, qy, qz, qw]`，没有角度单位，须检查归一化。视觉契约中的 `position_m` 使用 m，先核对实际输入字段与单位。
+- **旋转约定：** 项目采用 `R = Rz(W) × Ry(V) × Rx(U)`，即 `U=roll、V=pitch、W=yaw`。这是本项目采用的 SDK 姿态解释，不能直接套到任意设备接口；依据见 [标定常量](src/frame_calibration/analysis/calib_common.py) 与 [UVW／四元数说明](src/frame_calibration/UVW_TO_QUATERNION.md)。
+- **相机输入：** 若位姿在相机坐标系，先使用当前有效的外参把位置和姿态一起变换到目标世界系，再处理抓取参考点和末端补偿。已经在 `sdk_world` 中的数据不再重复应用相机外参；mm/m 换算本身不是坐标系转换。
+
+必须明确输入位姿所描述的参考点：
+
+| `pose_role` | 含义与处理 |
+|---|---|
+| `OBJECT_POSE` | 物体参考系位姿；结合物体到抓取点的关系、工具/TCP 变换，求 SDK 末端位姿 |
+| `GRASP_POSE` | 已是抓取中心位姿；结合工具/TCP 变换求 SDK 末端，不再重复施加物体到抓取点的偏移 |
+| `EE_POSE` | 已是 SDK 末端位姿；在 SDK 世界系下直接使用，**不再重复补 TCP** |
+
+TCP 补偿随姿态旋转，不能用一个固定的世界 Z 偏移代替。只有在位置和四元数都已经描述同一 SDK 世界系下的末端后，才能把四元数转换为 UVW，并与该位置组成 `[X,Y,Z,U,V,W]`。
+
+对应实现集中在 [grasp_pose.py](src/robot_mission/grasp_pose.py)：`resolve_sdk_endpoint_pose()` 处理参考点与 TCP，`quaternion_xyzw_to_matrix()` 和 `matrix_to_sdk_uvw_deg()` 处理姿态表示转换。相机完整位姿变换见 [task_adapter.py](src/robot_mission/task_adapter.py)；完整位姿任务入口见 [NEW_TASK_GUIDE.md](NEW_TASK_GUIDE.md#c-新点位包含完整姿态或来自视觉)。
+
+**当前 `task_template.json → new_task_pipeline.py` 是 XYZ 简化入口，不接收指定的 UVW／四元数目标。** 规划器默认采用工具轴朝下的方向约束，绕工具轴的转角没有完整指定，不能视为锁定了完整姿态。模板中的 `orientation: deg` 只是未被该入口消费的单位元数据；不要直接把三元素 `pick/place` 扩成六元素。
+
 ---
 
 ## 1. 第一次接手，请按这个顺序看
@@ -152,11 +174,12 @@ cp templates/task_template.json \
 .runtime/new-task/task.json
 ```
 
-用户侧单位：
+当前 XYZ 模板的用户侧输入：
 
 ```text
 Position XYZ = mm
-Orientation   = deg
+Frame        = PyBullet world
+UVW / quaternion target = unsupported by this XYZ-only entry
 ```
 
 示例：
@@ -172,7 +195,7 @@ Orientation   = deg
 }
 ```
 
-Pipeline 内部会将 mm 转换为 PyBullet planner 使用的 m。
+Pipeline 内部只将 mm 转换为 PyBullet planner 使用的 m，不执行 SDK-world／camera-world 到 PB-world 的坐标变换。需要完整姿态或视觉输入时，先按首页“位置、姿态与参考点约定”选择对应契约与入口。
 
 ---
 
@@ -589,6 +612,7 @@ python3 tools/build_package.py --check
 | 所有常用 command | `RUNBOOK.md` |
 | 新点位怎么继续开发 | `NEW_TASK_GUIDE.md` |
 | 每个代码文件干什么 | `docs/CODE_MAP.md` |
+| XYZ、UVW、四元数、参考点与 TCP | [首页约定](#位置姿态与参考点约定)、[详细旋转说明](src/frame_calibration/UVW_TO_QUATERNION.md)、[转换实现](src/robot_mission/grasp_pose.py) |
 | 真机 / Servo / B2-B5 | `robot/README.md` |
 | 仿真 / 离线复现 | `sim/README.md` |
 | 当前测试记录 | `verification.json` |
